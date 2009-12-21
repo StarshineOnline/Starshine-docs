@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/fonction/forum.inc.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_5992c3ce1eca1153c6737efdfb55c8f0.html">fonction</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier forum.inc.php</h1>
+<p>Interactions avec le forum.  
+<a href="#_details">Plus de détails...</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="forum_8inc_8php.html#a1b0d5be6a8bd6418a6c147ecee4aebeb">creer_sujet_forum</a> ($titre, $msg, $forum, $posteur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un post dans le forum.  <a href="#a1b0d5be6a8bd6418a6c147ecee4aebeb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="forum_8inc_8php.html#acad8ce3506b88015be9a75af0c842782">creer_annonce</a> ($titre, $msg, $posteur=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un post dans le forum annonce.  <a href="#acad8ce3506b88015be9a75af0c842782"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="forum_8inc_8php.html#a33fa9610ec667ef9a3572ebc05046050">creer_cdn</a> ($nom)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un complément du nom en adaptant la prépsisiton au non.  <a href="#a33fa9610ec667ef9a3572ebc05046050"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="forum_8inc_8php.html#a1240da1ca7e0179abf1bf3edf00e35d2">nom_mois</a> ($mois=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nom du mois en français.  <a href="#a1240da1ca7e0179abf1bf3edf00e35d2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="forum_8inc_8php.html#a5e7f234bb16d748fa264c7561a5602c6">nom_mois_prec</a> ($mois=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nom du mois précédant en français.  <a href="#a5e7f234bb16d748fa264c7561a5602c6"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="forum_8inc_8php.html#a06268c4e25db40cfb9a582941d509c8d">$G_prefixe_forum</a> = &quot;punbb&quot;</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Préfixe des noms des tables.  <a href="#a06268c4e25db40cfb9a582941d509c8d"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Interactions avec le forum. </p>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="acad8ce3506b88015be9a75af0c842782"></a><!-- doxytag: member="forum.inc.php::creer_annonce" ref="acad8ce3506b88015be9a75af0c842782" args="($titre, $msg, $posteur=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">creer_annonce </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>titre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>posteur</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Crée un post dans le forum annonce. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$titre</em>&nbsp;</td><td>Titre du post. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$msg</em>&nbsp;</td><td>Message du post. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$posteur</em>&nbsp;</td><td>id du posteur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="forum_8inc_8php_acad8ce3506b88015be9a75af0c842782_cgraph.png" border="0" usemap="#forum_8inc_8php_acad8ce3506b88015be9a75af0c842782_cgraph_map" alt=""></div>
+<map name="forum_8inc_8php_acad8ce3506b88015be9a75af0c842782_cgraph_map" id="forum_8inc_8php_acad8ce3506b88015be9a75af0c842782_cgraph">
+<area shape="rect" href="forum_8inc_8php.html#a1b0d5be6a8bd6418a6c147ecee4aebeb" title="Crée un post dans le forum." alt="" coords="165,5,299,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a33fa9610ec667ef9a3572ebc05046050"></a><!-- doxytag: member="forum.inc.php::creer_cdn" ref="a33fa9610ec667ef9a3572ebc05046050" args="($nom)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">creer_cdn </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>nom</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Crée un complément du nom en adaptant la prépsisiton au non. </p>
+<p>Utilise "de" ou "d'" suivant que le nom commence par une consonne ou une voyelle</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nom</em>&nbsp;</td><td>Nom</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Complément du nom sous la bonne forme </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b0d5be6a8bd6418a6c147ecee4aebeb"></a><!-- doxytag: member="forum.inc.php::creer_sujet_forum" ref="a1b0d5be6a8bd6418a6c147ecee4aebeb" args="($titre, $msg, $forum, $posteur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">creer_sujet_forum </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>titre</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>forum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>posteur</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Crée un post dans le forum. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$titre</em>&nbsp;</td><td>Titre du post. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$msg</em>&nbsp;</td><td>Message du post. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$forum</em>&nbsp;</td><td>id du forum. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$posteur</em>&nbsp;</td><td>id du posteur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="forum_8inc_8php_a1b0d5be6a8bd6418a6c147ecee4aebeb_icgraph.png" border="0" usemap="#forum_8inc_8php_a1b0d5be6a8bd6418a6c147ecee4aebeb_icgraph_map" alt=""></div>
+<map name="forum_8inc_8php_a1b0d5be6a8bd6418a6c147ecee4aebeb_icgraph_map" id="forum_8inc_8php_a1b0d5be6a8bd6418a6c147ecee4aebeb_icgraph">
+<area shape="rect" href="forum_8inc_8php.html#acad8ce3506b88015be9a75af0c842782" title="Crée un post dans le forum annonce." alt="" coords="187,5,299,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1240da1ca7e0179abf1bf3edf00e35d2"></a><!-- doxytag: member="forum.inc.php::nom_mois" ref="a1240da1ca7e0179abf1bf3edf00e35d2" args="($mois=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nom_mois </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mois</em> = <code>0</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le nom du mois en français. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$mois</em>&nbsp;</td><td>Numéro du mois</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>nom du mois </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="forum_8inc_8php_a1240da1ca7e0179abf1bf3edf00e35d2_icgraph.png" border="0" usemap="#forum_8inc_8php_a1240da1ca7e0179abf1bf3edf00e35d2_icgraph_map" alt=""></div>
+<map name="forum_8inc_8php_a1240da1ca7e0179abf1bf3edf00e35d2_icgraph_map" id="forum_8inc_8php_a1240da1ca7e0179abf1bf3edf00e35d2_icgraph">
+<area shape="rect" href="forum_8inc_8php.html#a5e7f234bb16d748fa264c7561a5602c6" title="Renvoie le nom du mois précédant en français." alt="" coords="143,5,263,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e7f234bb16d748fa264c7561a5602c6"></a><!-- doxytag: member="forum.inc.php::nom_mois_prec" ref="a5e7f234bb16d748fa264c7561a5602c6" args="($mois=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nom_mois_prec </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mois</em> = <code>0</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le nom du mois précédant en français. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$mois</em>&nbsp;</td><td>Numéro du mois</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>nom du mois </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="forum_8inc_8php_a5e7f234bb16d748fa264c7561a5602c6_cgraph.png" border="0" usemap="#forum_8inc_8php_a5e7f234bb16d748fa264c7561a5602c6_cgraph_map" alt=""></div>
+<map name="forum_8inc_8php_a5e7f234bb16d748fa264c7561a5602c6_cgraph_map" id="forum_8inc_8php_a5e7f234bb16d748fa264c7561a5602c6_cgraph">
+<area shape="rect" href="forum_8inc_8php.html#a1240da1ca7e0179abf1bf3edf00e35d2" title="Renvoie le nom du mois en français." alt="" coords="176,5,264,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a06268c4e25db40cfb9a582941d509c8d"></a><!-- doxytag: member="forum.inc.php::$G_prefixe_forum" ref="a06268c4e25db40cfb9a582941d509c8d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$G_prefixe_forum = &quot;punbb&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Préfixe des noms des tables. </p>
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:42 2009 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

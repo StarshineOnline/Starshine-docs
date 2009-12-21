@@ -1,65 +1,67 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Starshine Online: Référence du fichier trunk/roi/gestion_groupe.php</title>
-<link href="doxygen.css" rel="stylesheet" type="text/css">
-<link href="tabs.css" rel="stylesheet" type="text/css">
-</head><body>
-<!-- Généré par Doxygen 1.5.6 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/roi/gestion_groupe.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
 <div class="navigation" id="top">
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="classes.html"><span>Classes</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_7f4fe0632d45c90f93345ace9e6e77d1.html">roi</a>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_7f4fe0632d45c90f93345ace9e6e77d1.html">roi</a>
   </div>
 </div>
 <div class="contents">
 <h1>Référence du fichier gestion_groupe.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td></td></tr>
-<tr><td colspan="2"><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestion__groupe_8php.html#1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT groupe.id as groupeid, groupe.nom as groupenom, groupe_joueur.id_joueur, perso.nom, perso.race FROM <a class="el" href="classgroupe.html">groupe</a> LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON groupe.id = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = perso.ID WHERE groupe_joueur.leader = 'y' AND perso.race = '&quot;.$joueur-&gt;get_race().&quot;'&quot;</td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestion__groupe_8php.html#63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestion__groupe_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> as groupeid, groupe.nom as groupenom, groupe_joueur.id_joueur, perso.nom, perso.race FROM <a class="el" href="classgroupe.html">groupe</a> LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = perso.ID WHERE groupe_joueur.leader = 'y' AND perso.race = '&quot;.$joueur-&gt;get_race().&quot;'&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestion__groupe_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
 </table>
-<hr><h2>Documentation des variables</h2>
-<a class="anchor" name="63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="gestion_groupe.php::$req" ref="63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="gestion_groupe.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)          </td>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>
-
 </div>
-</div><p>
-<a class="anchor" name="1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="gestion_groupe.php::$requete" ref="1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+</div>
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="gestion_groupe.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT groupe.id as groupeid, groupe.nom as groupenom, groupe_joueur.id_joueur, perso.nom, perso.race FROM <a class="el" href="classgroupe.html">groupe</a> LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON groupe.id = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = perso.ID WHERE groupe_joueur.leader = 'y' AND perso.race = '&quot;.$joueur-&gt;get_race().&quot;'&quot;          </td>
+          <td class="memname">$requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> as groupeid, groupe.nom as groupenom, groupe_joueur.id_joueur, perso.nom, perso.race FROM <a class="el" href="classgroupe.html">groupe</a> LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = perso.ID WHERE groupe_joueur.leader = 'y' AND perso.race = '&quot;.$joueur-&gt;get_race().&quot;'&quot;</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>
-
 </div>
-</div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Généré le Thu Sep 3 23:11:18 2009 pour Starshine Online par&nbsp;
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:56 2009 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
-<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
 </html>

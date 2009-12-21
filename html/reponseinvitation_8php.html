@@ -1,116 +1,109 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Starshine Online: Référence du fichier trunk/reponseinvitation.php</title>
-<link href="doxygen.css" rel="stylesheet" type="text/css">
-<link href="tabs.css" rel="stylesheet" type="text/css">
-</head><body>
-<!-- Généré par Doxygen 1.5.6 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/reponseinvitation.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
 <div class="navigation" id="top">
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="classes.html"><span>Classes</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
   </div>
 </div>
 <div class="contents">
 <h1>Référence du fichier reponseinvitation.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td></td></tr>
-<tr><td colspan="2"><br><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#20f940ecc4a1340781f167fb69a76622">$W_ID</a> = sSQL($_GET['ID'])</td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#f7d6640d378af5f8d08b6107b31952bc">$W_groupe</a> = sSQL($_GET['<a class="el" href="classgroupe.html">groupe</a>'])</td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#389e4dadddcb1c97dc14e9d7468d08cf">$W_reponse</a> = $_GET['reponse']</td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#beea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-
-<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#b2e00865feeb778426523cdf81f92a9f">$invitation</a> = new <a class="el" href="classinvitation.html">invitation</a>($W_ID)</td></tr>
-
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#a20f940ecc4a1340781f167fb69a76622">$W_ID</a> = sSQL($_GET['ID'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#af7d6640d378af5f8d08b6107b31952bc">$W_groupe</a> = sSQL($_GET['<a class="el" href="classgroupe.html">groupe</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#a389e4dadddcb1c97dc14e9d7468d08cf">$W_reponse</a> = $_GET['reponse']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="reponseinvitation_8php.html#ab2e00865feeb778426523cdf81f92a9f">$invitation</a> = new <a class="el" href="classinvitation.html">invitation</a>($W_ID)</td></tr>
 </table>
-<hr><h2>Documentation des variables</h2>
-<a class="anchor" name="b2e00865feeb778426523cdf81f92a9f"></a><!-- doxytag: member="reponseinvitation.php::$invitation" ref="b2e00865feeb778426523cdf81f92a9f" args="" -->
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="ab2e00865feeb778426523cdf81f92a9f"></a><!-- doxytag: member="reponseinvitation.php::$invitation" ref="ab2e00865feeb778426523cdf81f92a9f" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classinvitation.html">invitation</a> = new <a class="el" href="classinvitation.html">invitation</a>($W_ID)          </td>
+          <td class="memname">$<a class="el" href="classinvitation.html">invitation</a> = new <a class="el" href="classinvitation.html">invitation</a>($W_ID)</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>
-
 </div>
-</div><p>
-<a class="anchor" name="beea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="reponseinvitation.php::$joueur" ref="beea5db7af13b1bdd70c46e49f512b26" args="" -->
+</div>
+<a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="reponseinvitation.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])          </td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>
-
 </div>
-</div><p>
-<a class="anchor" name="f7d6640d378af5f8d08b6107b31952bc"></a><!-- doxytag: member="reponseinvitation.php::$W_groupe" ref="f7d6640d378af5f8d08b6107b31952bc" args="" -->
+</div>
+<a class="anchor" id="af7d6640d378af5f8d08b6107b31952bc"></a><!-- doxytag: member="reponseinvitation.php::$W_groupe" ref="af7d6640d378af5f8d08b6107b31952bc" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_groupe = sSQL($_GET['<a class="el" href="classgroupe.html">groupe</a>'])          </td>
+          <td class="memname">$W_groupe = sSQL($_GET['<a class="el" href="classgroupe.html">groupe</a>'])</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>
-
 </div>
-</div><p>
-<a class="anchor" name="20f940ecc4a1340781f167fb69a76622"></a><!-- doxytag: member="reponseinvitation.php::$W_ID" ref="20f940ecc4a1340781f167fb69a76622" args="" -->
+</div>
+<a class="anchor" id="a20f940ecc4a1340781f167fb69a76622"></a><!-- doxytag: member="reponseinvitation.php::$W_ID" ref="a20f940ecc4a1340781f167fb69a76622" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_ID = sSQL($_GET['ID'])          </td>
+          <td class="memname">$W_ID = sSQL($_GET['ID'])</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>
-
 </div>
-</div><p>
-<a class="anchor" name="389e4dadddcb1c97dc14e9d7468d08cf"></a><!-- doxytag: member="reponseinvitation.php::$W_reponse" ref="389e4dadddcb1c97dc14e9d7468d08cf" args="" -->
+</div>
+<a class="anchor" id="a389e4dadddcb1c97dc14e9d7468d08cf"></a><!-- doxytag: member="reponseinvitation.php::$W_reponse" ref="a389e4dadddcb1c97dc14e9d7468d08cf" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_reponse = $_GET['reponse']          </td>
+          <td class="memname">$W_reponse = $_GET['reponse']</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>
-
 </div>
-</div><p>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Généré le Thu Sep 3 23:11:18 2009 pour Starshine Online par&nbsp;
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:55 2009 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
-<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
 </html>
