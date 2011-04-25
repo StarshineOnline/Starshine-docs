@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Starshine Online: Référence du fichier SSO/trunk/arenes.php</title>
+<title>Starshine Online: Référence du fichier SSO/trunk/admin/arenes.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -23,26 +23,32 @@
       <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_b6f6c9a278ee5699522198f90537aaa3.html">admin</a>
   </div>
 </div>
 <div class="contents">
 <h1>Référence du fichier arenes.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#aa720998827fe9e92a5fe573a62edc0b8">$connexion</a> = true</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#a676d5318e23377117551e5ead156fdf7">$arene_masters</a> = array('Irulan', 'Azeroth')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['teleport_in'])) <br class="typebreak"/>
-<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['remove']))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#ab3e4bd82c6a6334cece3d8b1e1f549fb">$requete_arene</a> = &quot;select * from arenes&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#acebf83966ef6d7e5645a6b62ba368f9f">$a</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#ad3b3c64b25fbbb6aec24407e4333aa71">$admin</a> = true</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#a4cc29887688496d88fb335d523e4102d">$admin_nom</a> = $_SESSION['admin_nom']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_arene)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['teleport_in'])) <br class="typebreak"/>
+<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['remove'])) <br class="typebreak"/>
+<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['decal'])) <br class="typebreak"/>
+<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['calc'])) <br class="typebreak"/>
+<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['close'])) <br class="typebreak"/>
+<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['open']))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#ab3e4bd82c6a6334cece3d8b1e1f549fb">$requete_arene</a> = &quot;select * from arenes where open = 1&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#a8d377b93f6a3a196a78b6c6fa512d5a7">$textures</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="arenes_8php.html#af367468f1a28d8674fccdf9a45fdace2">if</a> ($G_maintenance)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
-<a class="anchor" id="a676d5318e23377117551e5ead156fdf7"></a><!-- doxytag: member="arenes.php::$arene_masters" ref="a676d5318e23377117551e5ead156fdf7" args="" -->
+<a class="anchor" id="acebf83966ef6d7e5645a6b62ba368f9f"></a><!-- doxytag: member="arenes.php::$a" ref="acebf83966ef6d7e5645a6b62ba368f9f" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$arene_masters = array('Irulan', 'Azeroth')</td>
+          <td class="memname">$a = 0</td>
         </tr>
       </table>
 </div>
@@ -50,12 +56,12 @@
 
 </div>
 </div>
-<a class="anchor" id="aa720998827fe9e92a5fe573a62edc0b8"></a><!-- doxytag: member="arenes.php::$connexion" ref="aa720998827fe9e92a5fe573a62edc0b8" args="" -->
+<a class="anchor" id="ad3b3c64b25fbbb6aec24407e4333aa71"></a><!-- doxytag: member="arenes.php::$admin" ref="ad3b3c64b25fbbb6aec24407e4333aa71" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$connexion = true</td>
+          <td class="memname">$admin = true</td>
         </tr>
       </table>
 </div>
@@ -63,12 +69,12 @@
 
 </div>
 </div>
-<a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="arenes.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
+<a class="anchor" id="a4cc29887688496d88fb335d523e4102d"></a><!-- doxytag: member="arenes.php::$admin_nom" ref="a4cc29887688496d88fb335d523e4102d" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$admin_nom = $_SESSION['admin_nom']</td>
         </tr>
       </table>
 </div>
@@ -94,7 +100,33 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($<a class="el" href="classdb.html">db</a>-&gt;num_rows &gt; 0) $requete_arene = &quot;select * from arenes&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($<a class="el" href="classdb.html">db</a>-&gt;num_rows &gt; 0) $requete_arene = &quot;select * from arenes where open = 1&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d377b93f6a3a196a78b6c6fa512d5a7"></a><!-- doxytag: member="arenes.php::$textures" ref="a8d377b93f6a3a196a78b6c6fa512d5a7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$textures = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af367468f1a28d8674fccdf9a45fdace2"></a><!-- doxytag: member="arenes.php::if" ref="af367468f1a28d8674fccdf9a45fdace2" args="($G_maintenance)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($<a class="el" href="classdb.html">db</a>-&gt;num_rows &gt; 0)</td>
         </tr>
       </table>
 </div>
@@ -103,7 +135,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:17 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:17 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

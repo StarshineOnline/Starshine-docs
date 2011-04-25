@@ -28,14 +28,12 @@
 </div>
 <div class="contents">
 <h1>Référence de la classe effect</h1><!-- doxytag: class="effect" -->
-<p>Classe de base pour la gestion des effets en combat.  
+<p>Classe de base pour la gestion des effets en <a class="el" href="classcombat.html">combat</a>.  
 <a href="#_details">Plus de détails...</a></p>
 <div class="dynheader">
 Graphe d'héritage de effect:</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect__inherit__graph.png" border="0" usemap="#effect_inherit__map" alt="Inheritance graph"/></div>
-<map name="effect_inherit__map" id="effect_inherit__map">
-<area shape="rect" href="classactive__effect.html" title="Effect actif : buff ou compétence de combat." alt="" coords="931,1019,1043,1219"/><area shape="rect" href="classbuff__actif.html" title="{buff_actif\n|+ $type\l+ $buff\l+ $acteur\l&#45; $esquive_buff\l|+ __construct()\l+ debut_round()\l+ factory()\l}" alt="" coords="1325,1028,1445,1209"/><area shape="rect" href="classcompetence.html" title="Compétence : c&#39;est un effet qui peut s&#39;améliorer." alt="" coords="1469,1065,1584,1172"/><area shape="rect" href="classempoisonne.html" title="empoisonné" alt="" coords="1803,1056,1915,1181"/><area shape="rect" href="classetat.html" title="{etat\n|+ $effet\l|+ __construct()\l+ fin_round()\l}" alt="" coords="1939,1065,2051,1172"/><area shape="rect" href="classgemme__enchassee.html" title="{gemme_enchassee\n|+ $id\l+ $enchantement_type\l+ $enchantement_effet\l+ $enchantement_effet2\l+ $poison\l|+ __construct()\l+ init()\l+ inflige_degats()\l+ applique_bloquage()\l+ calcul_bloquage()\l+ calcul_mp()\l+ factory()\l}" alt="" coords="2075,981,2243,1256"/><area shape="rect" href="classmagnetique.html" title="{magnetique\n|+ $nb\l+ $chance\l+ $titre\l+ $hit\l|+ __construct()\l+ calcul_degats()\l+ fin_round()\l+ magnetise()\l}" alt="" coords="2303,1019,2428,1219"/><area shape="rect" href="classpoison__lent.html" title="Poison lent: pas d&#39;atténuation de la vigueur." alt="" coords="2452,1056,2564,1181"/><area shape="rect" href="classcomp__combat.html" title="Competence de combat." alt="" coords="672,1332,784,1420"/><area shape="rect" href="classbotte.html" title="botte : competence de combat avec une condition" alt="" coords="377,1515,489,1621"/><area shape="rect" href="classfleche__poison.html" title="{fleche_poison\n|+ $poison\l|+ __construct()\l+ calcul_arme()\l+ inflige_degats()\l+ fin_round()\l}" alt="" coords="513,1496,641,1640"/><area shape="rect" href="classfleche__sable.html" title="{fleche_sable\n||+ __construct()\l+ calcul_degats()\l}" alt="" coords="665,1515,791,1621"/><area shape="rect" href="classprecision__chirurgicale.html" title="{precision_chirurgicale\n||+ __construct()\l+ calcul_critique()\l}" alt="" coords="815,1515,975,1621"/><area shape="rect" href="classpreparation.html" title="{preparation\n||+ __construct()\l+ debut_round()\l}" alt="" coords="999,1515,1119,1621"/><area shape="rect" href="classbotte__aigle.html" title="{botte_aigle\n||+ __construct()\l+ debut_round()\l}" alt="" coords="5,1697,125,1804"/><area shape="rect" href="classbotte__chat.html" title="{botte_chat\n||+ __construct()\l+ debut_round()\l}" alt="" coords="149,1697,269,1804"/><area shape="rect" href="classbotte__crabe.html" title="{botte_crabe\n||+ __construct()\l+ inflige_degats()\l}" alt="" coords="293,1697,421,1804"/><area shape="rect" href="classbotte__ours.html" title="{botte_ours\n||+ __construct()\l+ etourdit()\l+ inflige_degats()\l}" alt="" coords="445,1688,573,1813"/><area shape="rect" href="classbotte__scorpion.html" title="{botte_scorpion\n||+ __construct()\l+ calcul_critique()\l}" alt="" coords="597,1697,728,1804"/><area shape="rect" href="classbotte__tigre.html" title="{botte_tigre\n||+ __construct()\l+ calcul_degats()\l}" alt="" coords="752,1697,877,1804"/><area shape="rect" href="classart__critique.html" title="{art_critique\n|+ $critique\l|+ __construct()\l+ fin_round()\l+ calcul_mult_critique()\l}" alt="" coords="808,1313,976,1439"/><area shape="rect" href="classmaitrise__arc.html" title="{maitrise_arc\n||+ __construct()\l+ debut_round()\l+ fin_round()\l+ factory()\l}" alt="" coords="1000,1304,1120,1448"/><area shape="rect" href="classmaitrise__bouclier.html" title="{maitrise_bouclier\n||+ __construct()\l+ calcul_bloquage()\l+ fin_round()\l+ factory()\l}" alt="" coords="1144,1304,1288,1448"/><area shape="rect" href="classmaitrise__critique.html" title="{maitrise_critique\n||+ __construct()\l+ calcul_critique()\l+ fin_round()\l+ factory()\l}" alt="" coords="1312,1304,1443,1448"/><area shape="rect" href="classmaitrise__dague.html" title="{maitrise_dague\n||+ __construct()\l+ debut_round()\l+ fin_round()\l+ factory()\l}" alt="" coords="1467,1304,1587,1448"/><area shape="rect" href="classmaitrise__epee.html" title="{maitrise_epee\n||+ __construct()\l+ debut_round()\l+ fin_round()\l+ factory()\l}" alt="" coords="1611,1304,1731,1448"/><area shape="rect" href="classmaitrise__hache.html" title="{maitrise_hache\n||+ __construct()\l+ debut_round()\l+ fin_round()\l+ factory()\l}" alt="" coords="1755,1304,1875,1448"/><area shape="rect" href="classensable.html" title="Ensablé : sous l&#39;effet de flèche de sable." alt="" coords="1899,1304,2091,1448"/><area shape="rect" href="classtellurique.html" title="Tellurique: est sous l&#39;effet de frappe tellurique." alt="" coords="2115,1313,2309,1439"/><area shape="rect" href="classfleche__magnetique.html" title="{fleche_magnetique\n||+ __construct()\l}" alt="" coords="2333,1332,2472,1420"/><area shape="rect" href="classglobe__foudre.html" title="{globe_foudre\n||+ __construct()\l}" alt="" coords="2496,1332,2608,1420"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classeffect-members.html">Liste de tous les membres</a></p>
@@ -43,62 +41,66 @@ Graphe d'héritage de effect:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ab0d55424478d6a027f340cb8599ae301">__construct</a> ($aNom)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#ab0d55424478d6a027f340cb8599ae301"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c">hit</a> ($aMessage, $br=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le message de dégâts correspondant à l'effet.  <a href="#a5b5b088988547cd1f62bb6ce96b12a8c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a5027fa036a347d56b15a9204028593c2">heal</a> ($aMessage, $br=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le message de dégâts correspondant à l'effet.  <a href="#a5027fa036a347d56b15a9204028593c2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ab8be2d8e576cbabc5238edd3782fb3e4">notice</a> ($aMessage, $br=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le message d'informations correspondant à l'effet.  <a href="#ab8be2d8e576cbabc5238edd3782fb3e4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#aabfbf94cf2f3e3ace4586fadef556cae">debug</a> ($aMessage, $br=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le message de debug correspondant à l'effet.  <a href="#aabfbf94cf2f3e3ace4586fadef556cae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a5027fa036a347d56b15a9204028593c2">heal</a> ($aMessage, $br=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le message de dégâts correspondant à l'effet.  <a href="#a5027fa036a347d56b15a9204028593c2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c">hit</a> ($aMessage, $br=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le message de dégâts correspondant à l'effet.  <a href="#a5b5b088988547cd1f62bb6ce96b12a8c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a8a36b50e355bbadc959c3d23ae5a4d15">message</a> ($aMessage)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche un message correspondant à l'effet.  <a href="#a8a36b50e355bbadc959c3d23ae5a4d15"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ab8be2d8e576cbabc5238edd3782fb3e4">notice</a> ($aMessage, $br=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le message d'informations correspondant à l'effet.  <a href="#ab8be2d8e576cbabc5238edd3782fb3e4"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Actions des effets</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpdcc23e077bf8bc2b1ed91dfd0f835938"></a>Méthodes à dériver selon les besoins </p>
 <br/><br/></div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a4cabf23d0fccc8184be223b7faacc981">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a4cabf23d0fccc8184be223b7faacc981"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#aa870f4930d597671c2b63bea973af99f">calcul_mp</a> (&amp;$actif, $mp)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul du mana requis.  <a href="#aa870f4930d597671c2b63bea973af99f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#afbfa14e62cda95021f732d736cc6fbeb">calcul_attaque_magique</a> (&amp;$actif, &amp;$passif, $att)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#afbfa14e62cda95021f732d736cc6fbeb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#accb52f4577b3d4b317fa4f708ddf50da">calcul_defense_magique</a> (&amp;$actif, &amp;$passif, $def)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel parer magique.  <a href="#accb52f4577b3d4b317fa4f708ddf50da"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a0ce31601ca3b9a4dc1cd3c874fa87bc7">applique_bloquage</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués) Ceci se fait apres l'affichage du blocage, donc si les degats sont modifies, la modification ne sera pas imputee au bouclier lui-meme.  <a href="#a0ce31601ca3b9a4dc1cd3c874fa87bc7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a3cb7f9caa0cb892aa871e3ac228f3d7f">calcul_arme</a> (&amp;$actif, &amp;$passif, $<a class="el" href="classarme.html">arme</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le facteur de dégâts de l'arme.  <a href="#a3cb7f9caa0cb892aa871e3ac228f3d7f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a4301f062fc2f675e82c5f625e90e9b36">calcul_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts.  <a href="#a4301f062fc2f675e82c5f625e90e9b36"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a39f406ab84f7024e663af944edb352af">calcul_degats_magiques</a> (&amp;$actif, &amp;$passif, $degats, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le bonos aux dégâts des sorts.  <a href="#a39f406ab84f7024e663af944edb352af"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#afbfa14e62cda95021f732d736cc6fbeb">calcul_attaque_magique</a> (&amp;$actif, &amp;$passif, $att)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#afbfa14e62cda95021f732d736cc6fbeb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a9efcd30034830b43d47209fcd0ba5625">calcul_attaque_physique</a> (&amp;$actif, &amp;$passif, $att)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#a9efcd30034830b43d47209fcd0ba5625"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ab9bb1a0cc66823062995c0bce19a1aab">calcul_bloquage</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effectue les modifications concernant le blocage (potentiel blocage, maitrise du bouclier).  <a href="#ab9bb1a0cc66823062995c0bce19a1aab"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a690f26b12f98d743ef1d243c772893d4">calcul_bloquage_reduction</a> (&amp;$actif, &amp;$passif, $reduction)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les degats bloques par le blocage reussi.  <a href="#a690f26b12f98d743ef1d243c772893d4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a0ce31601ca3b9a4dc1cd3c874fa87bc7">applique_bloquage</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués) Ceci se fait apres l'affichage du blocage, donc si les degats sont modifies, la modification ne sera pas imputee au bouclier lui-meme.  <a href="#a0ce31601ca3b9a4dc1cd3c874fa87bc7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a0b010ca0b7783cd25352b4c4b4417c56">calcul_pp</a> (&amp;$actif, &amp;$passif, $pp)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la PP.  <a href="#a0b010ca0b7783cd25352b4c4b4417c56"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a0953a93e8c4d3dfc28942a7597ffc8f4">calcul_pm</a> (&amp;$actif, &amp;$passif, $pm)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la PM.  <a href="#a0953a93e8c4d3dfc28942a7597ffc8f4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a7bf3a8ebd28a35e5ff506bec4a64f242">calcul_critique</a> (&amp;$actif, &amp;$passif, $chance)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel critique physique.  <a href="#a7bf3a8ebd28a35e5ff506bec4a64f242"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#accb52f4577b3d4b317fa4f708ddf50da">calcul_defense_magique</a> (&amp;$actif, &amp;$passif, $def)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel parer magique.  <a href="#accb52f4577b3d4b317fa4f708ddf50da"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a2ba0352d88049aaebb89b3ae8bc126a0">calcul_defense_physique</a> (&amp;$actif, &amp;$passif, $def)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel parer physique.  <a href="#a2ba0352d88049aaebb89b3ae8bc126a0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a4301f062fc2f675e82c5f625e90e9b36">calcul_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts.  <a href="#a4301f062fc2f675e82c5f625e90e9b36"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a39f406ab84f7024e663af944edb352af">calcul_degats_magiques</a> (&amp;$actif, &amp;$passif, $degats, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le bonos aux dégâts des sorts.  <a href="#a39f406ab84f7024e663af944edb352af"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#aa870f4930d597671c2b63bea973af99f">calcul_mp</a> (&amp;$actif, $mp)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul du mana requis.  <a href="#aa870f4930d597671c2b63bea973af99f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ab2fa97e104853c3a3ee47a6f1f164d99">calcul_mult_critique</a> (&amp;$actif, &amp;$passif, $mult)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le multiplicateur de dégâts en cas ce coup critique.  <a href="#ab2fa97e104853c3a3ee47a6f1f164d99"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#a6066d3efba0d40d45b81e0f8239ecf4e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a0953a93e8c4d3dfc28942a7597ffc8f4">calcul_pm</a> (&amp;$actif, &amp;$passif, $pm)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la PM.  <a href="#a0953a93e8c4d3dfc28942a7597ffc8f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a0b010ca0b7783cd25352b4c4b4417c56">calcul_pp</a> (&amp;$actif, &amp;$passif, $pp)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la PP.  <a href="#a0b010ca0b7783cd25352b4c4b4417c56"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a4cabf23d0fccc8184be223b7faacc981">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a4cabf23d0fccc8184be223b7faacc981"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a99575298294cf4cc6bebd4be759c8460">fin_combat</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de <a class="el" href="classcombat.html">combat</a>.  <a href="#a99575298294cf4cc6bebd4be759c8460"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a8907603b4e1152922cd9a1c8befd6bb5">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a8907603b4e1152922cd9a1c8befd6bb5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a99575298294cf4cc6bebd4be759c8460">fin_combat</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de combat.  <a href="#a99575298294cf4cc6bebd4be759c8460"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#a6066d3efba0d40d45b81e0f8239ecf4e"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#af5b96a5b3202e5c05d1853b9e1bdfd3b">compare_effects</a> ($a, $b)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compare l'ordre de deux effets.  <a href="#af5b96a5b3202e5c05d1853b9e1bdfd3b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a05ca7643c1f1e3147b23067edcd525c4">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a05ca7643c1f1e3147b23067edcd525c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ae92caf54fb05775b45a62b1e782afd0d">general_factory</a> (&amp;$attaquant, &amp;$defenseur, $mode)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée le tableau des effets.  <a href="#ae92caf54fb05775b45a62b1e782afd0d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a3bc5324321cb8b58898790a20aebeb8b">general_simple_factory</a> (&amp;$joueur)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée le tableau des effets.  <a href="#a3bc5324321cb8b58898790a20aebeb8b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a05ca7643c1f1e3147b23067edcd525c4">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a05ca7643c1f1e3147b23067edcd525c4"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a7b22b68cddaa91a20ca073c8bf4b1d51">$nom</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Nom de l'effet.  <a href="#a7b22b68cddaa91a20ca073c8bf4b1d51"></a><br/></td></tr>
@@ -106,9 +108,19 @@ Graphe d'héritage de effect:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sert à déterminer l'ordre des effets.  <a href="#a11b6d75ef923774863a175bd865be7db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ac45a4cca43bf442217c2d324c2193f3d">$used</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">true si l'effet a été utilisé, false sinon.  <a href="#ac45a4cca43bf442217c2d324c2193f3d"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Attributs publics statiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a5b45808f513dc8fa6312239ab39b42e2">$DEBUT_ADD</a> = -1000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ac5433d2f92d827dffb4b3243b3bde3f3">$DEBUT_DEBUT</a> = -10000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a651a18f1bd79649104d2c944848d5826">$DEBUT_MULT</a> = -100</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#af0ac55bfee5fbb83920dcea35adb949a">$FIN_ADD</a> = 1000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#adb00cf3def9dd8f0cacb49b54b361cf8">$FIN_FIN</a> = 10000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a4a1b3783a36ef820de9f15af06c4d84c">$FIN_MULT</a> = 100</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a954c1385100c8fdcb9c4aa6d752ed63d">$STANDARD</a> = 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a48132aa265fd7049fc44b1aaf1de9c63">$STANDARD_ADD</a> = 10</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a16e16e20d0fb356a7cd17f7f1a18f0b8">$STANDARD_MULT</a> = -10</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
-<p>Classe de base pour la gestion des effets en combat. </p>
+<p>Classe de base pour la gestion des effets en <a class="el" href="classcombat.html">combat</a>. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="ab0d55424478d6a027f340cb8599ae301"></a><!-- doxytag: member="effect::__construct" ref="ab0d55424478d6a027f340cb8599ae301" args="($aNom)" -->
 <div class="memitem">
@@ -134,7 +146,7 @@ Graphe d'héritage de effect:</div>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classmaitrise__bouclier.html#a90d2232f49a3af03426d86eb4bb3c991">maitrise_bouclier</a>, <a class="el" href="classmaitrise__dague.html#a8049aa783151930b2b338a8e09e37306">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#ad7e8a7a19f98059ee9b12b021c2e4799">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#aee90df670fd50f0198987b1147e6f5cd">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#aea48c4b1e7b2ec70a86a5c9cd9facb84">maitrise_arc</a>, <a class="el" href="classmaitrise__critique.html#ad4a812b2d2a3571d7b4ecbbbb9823929">maitrise_critique</a>, <a class="el" href="classart__critique.html#afc9e86b5cf30ac1ac1852b4328eb846a">art_critique</a>, <a class="el" href="classpreparation.html#adfa362d130f3212e7113a445843063ae">preparation</a>, <a class="el" href="classprecision__chirurgicale.html#adda7a8e73d78ab9028ded71a15319a0e">precision_chirurgicale</a>, <a class="el" href="classbotte__scorpion.html#ac129ea982b45168a2dafe66b5f69c176">botte_scorpion</a>, <a class="el" href="classbotte__crabe.html#a94c54892121ed971093cbff96dae67a3">botte_crabe</a>, <a class="el" href="classbotte__aigle.html#a7e8376e4aef0653045bd88c38d975db6">botte_aigle</a>, <a class="el" href="classbotte__chat.html#a5e5f2b3501dc0c37c68e182567d28e7b">botte_chat</a>, <a class="el" href="classbotte__tigre.html#a72ae70fe6c2f8b4cbcdc3fed7e49b50b">botte_tigre</a>, <a class="el" href="classbotte__ours.html#a6fe5a53226a379be711b9697bcac17cc">botte_ours</a>, <a class="el" href="classempoisonne.html#add677ba0ae60f4db01c568012332d419">empoisonne</a>, <a class="el" href="classpoison__lent.html#aff0b05f55b8197b12774fafee675b346">poison_lent</a>, <a class="el" href="classensable.html#a46ac442d53ca05447d0340da2021627e">ensable</a>, <a class="el" href="classtellurique.html#ad23005f3ef18b3df65d90504d9314491">tellurique</a>, et <a class="el" href="classgemme__enchassee.html#a24394ccc62b8642e1dc97610097c2100">gemme_enchassee</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classmaitrise__bouclier.html#a90d2232f49a3af03426d86eb4bb3c991">maitrise_bouclier</a>, <a class="el" href="classmaitrise__dague.html#a8049aa783151930b2b338a8e09e37306">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#ad7e8a7a19f98059ee9b12b021c2e4799">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#aee90df670fd50f0198987b1147e6f5cd">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#aea48c4b1e7b2ec70a86a5c9cd9facb84">maitrise_arc</a>, <a class="el" href="classmaitrise__critique.html#ad4a812b2d2a3571d7b4ecbbbb9823929">maitrise_critique</a>, <a class="el" href="classart__critique.html#afc9e86b5cf30ac1ac1852b4328eb846a">art_critique</a>, <a class="el" href="classpreparation.html#adfa362d130f3212e7113a445843063ae">preparation</a>, <a class="el" href="classprecision__chirurgicale.html#adda7a8e73d78ab9028ded71a15319a0e">precision_chirurgicale</a>, <a class="el" href="classbotte__scorpion.html#ac129ea982b45168a2dafe66b5f69c176">botte_scorpion</a>, <a class="el" href="classbotte__crabe.html#a94c54892121ed971093cbff96dae67a3">botte_crabe</a>, <a class="el" href="classbotte__aigle.html#a7e8376e4aef0653045bd88c38d975db6">botte_aigle</a>, <a class="el" href="classbotte__chat.html#a5e5f2b3501dc0c37c68e182567d28e7b">botte_chat</a>, <a class="el" href="classbotte__tigre.html#a72ae70fe6c2f8b4cbcdc3fed7e49b50b">botte_tigre</a>, <a class="el" href="classbotte__ours.html#a6fe5a53226a379be711b9697bcac17cc">botte_ours</a>, <a class="el" href="classbouclier__protecteur.html#a3515e72ff240787425cf8fea2251ea91">bouclier_protecteur</a>, <a class="el" href="classempoisonne.html#add677ba0ae60f4db01c568012332d419">empoisonne</a>, <a class="el" href="classpoison__lent.html#aff0b05f55b8197b12774fafee675b346">poison_lent</a>, <a class="el" href="classensable.html#a46ac442d53ca05447d0340da2021627e">ensable</a>, <a class="el" href="classtellurique.html#ad23005f3ef18b3df65d90504d9314491">tellurique</a>, et <a class="el" href="classgemme__enchassee.html#a24394ccc62b8642e1dc97610097c2100">gemme_enchassee</a>.</p>
 
 </div>
 </div>
@@ -174,8 +186,8 @@ Graphe d'héritage de effect:</div>
 <p>Il y a peu de raisons de modifier les degats a ce niveau.</p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés avant modification.</td></tr>
   </table>
   </dd>
@@ -220,8 +232,8 @@ Graphe d'héritage de effect:</div>
 <p>Modifie le facteur de dégâts de l'arme. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$arme</em>&nbsp;</td><td>Facteur de dégâts avant modification.</td></tr>
   </table>
   </dd>
@@ -266,15 +278,61 @@ Graphe d'héritage de effect:</div>
 <p>Modifie le potentiel toucher magique. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$att</em>&nbsp;</td><td>Potentiel toucher avant modification.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel toucher après modification. </dd></dl>
 
-<p>Réimplémentée dans <a class="el" href="classensable.html#ac7f544a6b20ea7ac8a1c3141731fc8e6">ensable</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classensable.html#ac7f544a6b20ea7ac8a1c3141731fc8e6">ensable</a>, et <a class="el" href="classtoucher__humainnoir.html#a998872a4cf2102308effe2479fe8b341">toucher_humainnoir</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9efcd30034830b43d47209fcd0ba5625"></a><!-- doxytag: member="effect::calcul_attaque_physique" ref="a9efcd30034830b43d47209fcd0ba5625" args="(&amp;$actif, &amp;$passif, $att)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::calcul_attaque_physique </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>att</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le potentiel toucher physique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$att</em>&nbsp;</td><td>Potentiel toucher avant modification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel toucher après modification. </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="classtoucher__humainnoir.html#ad3523236b350b8229d459c58956e1d3f">toucher_humainnoir</a>.</p>
 
 </div>
 </div>
@@ -306,8 +364,8 @@ Graphe d'héritage de effect:</div>
 <p>Effectue les modifications concernant le blocage (potentiel blocage, maitrise du bouclier). </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,12 +408,15 @@ Graphe d'héritage de effect:</div>
 <p>Modifie les degats bloques par le blocage reussi. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action.</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$reduction</em>&nbsp;</td><td>La reduction avant modification</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>reduction des degats </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="classprotection__artistique.html#a947ef7850e466be34200818a04b197bb">protection_artistique</a>.</p>
 
 </div>
 </div>
@@ -393,8 +454,8 @@ Graphe d'héritage de effect:</div>
 <p>Modifie le potentiel critique physique. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$chance</em>&nbsp;</td><td>Potentiel critique avant modification.</td></tr>
   </table>
   </dd>
@@ -439,8 +500,52 @@ Graphe d'héritage de effect:</div>
 <p>Modifie le potentiel parer magique. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$def</em>&nbsp;</td><td>Potentiel parer avant modification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel parer après modification. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ba0352d88049aaebb89b3ae8bc126a0"></a><!-- doxytag: member="effect::calcul_defense_physique" ref="a2ba0352d88049aaebb89b3ae8bc126a0" args="(&amp;$actif, &amp;$passif, $def)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::calcul_defense_physique </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>def</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le potentiel parer physique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$def</em>&nbsp;</td><td>Potentiel parer avant modification.</td></tr>
   </table>
   </dd>
@@ -483,15 +588,15 @@ Graphe d'héritage de effect:</div>
 <p>Modifie les dégâts. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts avant modification.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Dégâts après modification. </dd></dl>
 
-<p>Réimplémentée dans <a class="el" href="classbotte__tigre.html#a1b5e1e03688fe2a3442dfb05dbeeecee">botte_tigre</a>, <a class="el" href="classmagnetique.html#a7e212fbedf6704c0d7f6ac9fbdd3d030">magnetique</a>, et <a class="el" href="classfleche__sable.html#a1c6ddcaacd4a484d1b43969aa923cf88">fleche_sable</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classbotte__tigre.html#a1b5e1e03688fe2a3442dfb05dbeeecee">botte_tigre</a>.</p>
 
 </div>
 </div>
@@ -535,8 +640,8 @@ Graphe d'héritage de effect:</div>
 <p>Modifie le bonos aux dégâts des sorts. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Bonus dégâts avant modification. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Type de sort.</td></tr>
   </table>
@@ -576,7 +681,7 @@ Graphe d'héritage de effect:</div>
 <p>Calcul du mana requis. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$mp</em>&nbsp;</td><td>MP requis</td></tr>
   </table>
   </dd>
@@ -621,8 +726,8 @@ Graphe d'héritage de effect:</div>
 <p>Modifie le multiplicateur de dégâts en cas ce coup critique. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$mult</em>&nbsp;</td><td>Multiplicateur de dégâts avant modification.</td></tr>
   </table>
   </dd>
@@ -667,13 +772,15 @@ Graphe d'héritage de effect:</div>
 <p>Modifie la PM. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$PM</em>&nbsp;</td><td>PM avant modification.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>PM après modification. </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="classbouclier__protecteur.html#ab7b6b083b70fecbc8371838d017e6fa4">bouclier_protecteur</a>.</p>
 
 </div>
 </div>
@@ -711,8 +818,8 @@ Graphe d'héritage de effect:</div>
 <p>Modifie la PP. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$PP</em>&nbsp;</td><td>PP avant modification.</td></tr>
   </table>
   </dd>
@@ -794,8 +901,6 @@ Graphe d'héritage de effect:</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_aabfbf94cf2f3e3ace4586fadef556cae_icgraph.png" border="0" usemap="#classeffect_aabfbf94cf2f3e3ace4586fadef556cae_icgraph_map" alt=""></div>
-<map name="classeffect_aabfbf94cf2f3e3ace4586fadef556cae_icgraph_map" id="classeffect_aabfbf94cf2f3e3ace4586fadef556cae_icgraph">
-<area shape="rect" href="classgemme__enchassee.html#a3075289d64883083e79fcb577bb10005" title="Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués)..." alt="" coords="155,5,421,35"/><area shape="rect" href="classensable.html#ac7f544a6b20ea7ac8a1c3141731fc8e6" title="Modifie le potentiel toucher magique." alt="" coords="175,59,401,88"/><area shape="rect" href="classbotte__tigre.html#a1b5e1e03688fe2a3442dfb05dbeeecee" title="Modifie les dégâts." alt="" coords="487,29,665,59"/><area shape="rect" href="classbotte.html#ae99f544c95d4ec7622daa3f6439c02e4" title="botte::canUse" alt="" coords="236,163,340,192"/><area shape="rect" href="classbotte__crabe.html#a27032b857366b9504c3ce54561a0e160" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="483,296,669,325"/><area shape="rect" href="classensable.html#a50a7d281df66b6d44a7d7ecbab122cd5" title="Action a effectuer en début de round." alt="" coords="211,267,365,296"/><area shape="rect" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="171,320,405,349"/><area shape="rect" href="classfleche__poison.html#ad0c01ef2b8d32af6595eadd8780a1274" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="187,373,389,403"/><area shape="rect" href="classbotte__scorpion.html#a4a1c40ec721ca3614d0b07b685f43a7f" title="Modifie le potentiel critique physique." alt="" coords="469,83,683,112"/><area shape="rect" href="classbotte__chat.html#aeb2fc10d3b98187814f6a4559878ccc2" title="Action a effectuer en début de round." alt="" coords="491,136,661,165"/><area shape="rect" href="classbotte__aigle.html#a2e61e1f46def374d1b891334072d41a0" title="Action a effectuer en début de round." alt="" coords="488,189,664,219"/><area shape="rect" href="classbotte__ours.html#a82e7f504db3826813481b51eeb93dd0e" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="485,243,667,272"/></map>
 </div>
 </p>
 
@@ -829,8 +934,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Action a effectuer en début de round. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -880,21 +985,19 @@ Voici le graphe d'appel pour cette fonction :</div>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>Tableau des effets. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$acteur</em>&nbsp;</td><td>Indique si le personnage à l'origine de l'effet est l'attaquant ("attaquant") ou le défenseur. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classbuff__actif.html#a6c49e85031c186b1daa5d41d828dc34c">buff_actif</a>, <a class="el" href="classmaitrise__bouclier.html#a81b8592bd75257f7091ca30bbbf6a5cf">maitrise_bouclier</a>, <a class="el" href="classmaitrise__dague.html#a3837420dbec871a1d4e1e9e51f44dd59">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#a27ccfed1bc84a55c0ede8a56fdd18703">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#a21176c7122b0e4cfe13994975b90832f">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#af51059e8cd81fb5792e75e5d8196bcc3">maitrise_arc</a>, <a class="el" href="classmaitrise__critique.html#ae8711e1c24edf7dc6ae432951fdab53d">maitrise_critique</a>, <a class="el" href="classempoisonne.html#a6e275a389c313fa0e7b9a85c80cbd156">empoisonne</a>, <a class="el" href="classpoison__lent.html#a91afb57736ab0e496a86c06af24de1b7">poison_lent</a>, <a class="el" href="classensable.html#ae26f88715c4251b14f1d350af4556adb">ensable</a>, <a class="el" href="classtellurique.html#af445673cee44759ee85afd3545a5a006">tellurique</a>, et <a class="el" href="classgemme__enchassee.html#ab3ef89d2a8aade379226eca3644328ef">gemme_enchassee</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classbuff__actif.html#a6c49e85031c186b1daa5d41d828dc34c">buff_actif</a>, <a class="el" href="classmaitrise__bouclier.html#a81b8592bd75257f7091ca30bbbf6a5cf">maitrise_bouclier</a>, <a class="el" href="classmaitrise__dague.html#a3837420dbec871a1d4e1e9e51f44dd59">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#a27ccfed1bc84a55c0ede8a56fdd18703">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#a21176c7122b0e4cfe13994975b90832f">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#af51059e8cd81fb5792e75e5d8196bcc3">maitrise_arc</a>, <a class="el" href="classmaitrise__critique.html#ae8711e1c24edf7dc6ae432951fdab53d">maitrise_critique</a>, <a class="el" href="classbouclier__protecteur.html#a7a4df3687bcf5757dbb7fa762e7c5bcc">bouclier_protecteur</a>, <a class="el" href="classempoisonne.html#a6e275a389c313fa0e7b9a85c80cbd156">empoisonne</a>, <a class="el" href="classpoison__lent.html#a91afb57736ab0e496a86c06af24de1b7">poison_lent</a>, <a class="el" href="classensable.html#ae26f88715c4251b14f1d350af4556adb">ensable</a>, <a class="el" href="classtellurique.html#af445673cee44759ee85afd3545a5a006">tellurique</a>, <a class="el" href="classtoucher__humainnoir.html#a0ba87e10f5c5b5448d51b77cde30d5f4">toucher_humainnoir</a>, et <a class="el" href="classgemme__enchassee.html#ab3ef89d2a8aade379226eca3644328ef">gemme_enchassee</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_a05ca7643c1f1e3147b23067edcd525c4_icgraph.png" border="0" usemap="#classeffect_a05ca7643c1f1e3147b23067edcd525c4_icgraph_map" alt=""></div>
-<map name="classeffect_a05ca7643c1f1e3147b23067edcd525c4_icgraph_map" id="classeffect_a05ca7643c1f1e3147b23067edcd525c4_icgraph">
-<area shape="rect" href="classeffect.html#ae92caf54fb05775b45a62b1e782afd0d" title="Crée le tableau des effets." alt="" coords="183,5,340,35"/><area shape="rect" href="classeffect.html#a3bc5324321cb8b58898790a20aebeb8b" title="Crée le tableau des effets." alt="" coords="159,59,364,88"/></map>
 </div>
 </p>
 
@@ -925,11 +1028,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Action a effectuer en fin de combat. </p>
+<p>Action a effectuer en fin de <a class="el" href="classcombat.html">combat</a>. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -964,8 +1067,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Action a effectuer en fin de round. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1012,8 +1115,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_ae92caf54fb05775b45a62b1e782afd0d_cgraph.png" border="0" usemap="#classeffect_ae92caf54fb05775b45a62b1e782afd0d_cgraph_map" alt=""></div>
-<map name="classeffect_ae92caf54fb05775b45a62b1e782afd0d_cgraph_map" id="classeffect_ae92caf54fb05775b45a62b1e782afd0d_cgraph">
-<area shape="rect" href="classeffect.html#a05ca7643c1f1e3147b23067edcd525c4" title="Crée l&#39;effet." alt="" coords="211,5,315,35"/><area shape="rect" href="effect_8class_8php.html#a6629c09106d50d1c7d8d03c48d370436" title="Tri un tableau d&#39;effets." alt="" coords="217,59,308,88"/></map>
 </div>
 </p>
 
@@ -1042,8 +1143,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_a3bc5324321cb8b58898790a20aebeb8b_cgraph.png" border="0" usemap="#classeffect_a3bc5324321cb8b58898790a20aebeb8b_cgraph_map" alt=""></div>
-<map name="classeffect_a3bc5324321cb8b58898790a20aebeb8b_cgraph_map" id="classeffect_a3bc5324321cb8b58898790a20aebeb8b_cgraph">
-<area shape="rect" href="classeffect.html#a05ca7643c1f1e3147b23067edcd525c4" title="Crée l&#39;effet." alt="" coords="261,5,365,35"/><area shape="rect" href="effect_8class_8php.html#a6629c09106d50d1c7d8d03c48d370436" title="Tri un tableau d&#39;effets." alt="" coords="268,59,359,88"/></map>
 </div>
 </p>
 
@@ -1086,8 +1185,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_a5027fa036a347d56b15a9204028593c2_icgraph.png" border="0" usemap="#classeffect_a5027fa036a347d56b15a9204028593c2_icgraph_map" alt=""></div>
-<map name="classeffect_a5027fa036a347d56b15a9204028593c2_icgraph_map" id="classeffect_a5027fa036a347d56b15a9204028593c2_icgraph">
-<area shape="rect" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="141,5,376,35"/></map>
 </div>
 </p>
 
@@ -1130,8 +1227,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_a5b5b088988547cd1f62bb6ce96b12a8c_icgraph.png" border="0" usemap="#classeffect_a5b5b088988547cd1f62bb6ce96b12a8c_icgraph_map" alt=""></div>
-<map name="classeffect_a5b5b088988547cd1f62bb6ce96b12a8c_icgraph_map" id="classeffect_a5b5b088988547cd1f62bb6ce96b12a8c_icgraph">
-<area shape="rect" href="classglobe__foudre.html#aba37eab0bbcea38bf04338b35d2e694e" title="globe_foudre::__construct" alt="" coords="175,5,359,35"/><area shape="rect" href="classmagnetique.html#a2b239ad153a758decd8c75174c80e477" title="magnetique::__construct" alt="" coords="180,59,353,88"/><area shape="rect" href="classgemme__enchassee.html#a3075289d64883083e79fcb577bb10005" title="Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués)..." alt="" coords="133,112,400,141"/><area shape="rect" href="classmagnetique.html#a7e212fbedf6704c0d7f6ac9fbdd3d030" title="Modifie les dégâts." alt="" coords="173,165,360,195"/><area shape="rect" href="classpoison__lent.html#a55f4b0f9d7c542610c5ff46b35a6ec03" title="Action a effectuer en fin de round." alt="" coords="185,219,348,248"/><area shape="rect" href="classempoisonne.html#ad855640411136a518c1fc302838a3c7a" title="Action a effectuer en fin de round." alt="" coords="184,272,349,301"/><area shape="rect" href="classmagnetique.html#a80fb56483bbd15fa02ab492bb718d522" title="Action a effectuer en fin de round." alt="" coords="185,325,348,355"/><area shape="rect" href="classfleche__poison.html#aa268d3331a123d871170899452a8ef90" title="Action a effectuer en fin de round." alt="" coords="179,379,355,408"/><area shape="rect" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="149,432,384,461"/></map>
 </div>
 </p>
 
@@ -1171,14 +1266,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Applique les effets ayant lieu lorsque les dégâts ont lieu. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classbotte__crabe.html#a27032b857366b9504c3ce54561a0e160">botte_crabe</a>, <a class="el" href="classbotte__ours.html#a82e7f504db3826813481b51eeb93dd0e">botte_ours</a>, <a class="el" href="classfleche__poison.html#ad0c01ef2b8d32af6595eadd8780a1274">fleche_poison</a>, et <a class="el" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550">gemme_enchassee</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classbotte__crabe.html#a27032b857366b9504c3ce54561a0e160">botte_crabe</a>, <a class="el" href="classbotte__ours.html#a82e7f504db3826813481b51eeb93dd0e">botte_ours</a>, <a class="el" href="classfleche__poison.html#ad0c01ef2b8d32af6595eadd8780a1274">fleche_poison</a>, <a class="el" href="classmagnetique.html#ae7e839eaaab7ccdb1e6664279a89dce3">magnetique</a>, <a class="el" href="classfleche__sable.html#a32b82aad67a51b6a285ed424405acf32">fleche_sable</a>, <a class="el" href="classeffet__vampirisme.html#a9b022cc89705a3950d99cc6b1d64f780">effet_vampirisme</a>, et <a class="el" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550">gemme_enchassee</a>.</p>
 
 </div>
 </div>
@@ -1210,8 +1305,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_a8a36b50e355bbadc959c3d23ae5a4d15_icgraph.png" border="0" usemap="#classeffect_a8a36b50e355bbadc959c3d23ae5a4d15_icgraph_map" alt=""></div>
-<map name="classeffect_a8a36b50e355bbadc959c3d23ae5a4d15_icgraph_map" id="classeffect_a8a36b50e355bbadc959c3d23ae5a4d15_icgraph">
-<area shape="rect" href="classgemme__enchassee.html#a3075289d64883083e79fcb577bb10005" title="Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués)..." alt="" coords="171,112,437,141"/><area shape="rect" href="classbotte.html#ae99f544c95d4ec7622daa3f6439c02e4" title="botte::canUse" alt="" coords="252,165,356,195"/><area shape="rect" href="classmagnetique.html#a763a8710c892c062dc8adb7fe795267a" title="magnetique::magnetise" alt="" coords="221,272,387,301"/><area shape="rect" href="classbotte__scorpion.html#a4a1c40ec721ca3614d0b07b685f43a7f" title="Modifie le potentiel critique physique." alt="" coords="485,5,699,35"/><area shape="rect" href="classbotte__tigre.html#a1b5e1e03688fe2a3442dfb05dbeeecee" title="Modifie les dégâts." alt="" coords="503,59,681,88"/><area shape="rect" href="classbotte__chat.html#aeb2fc10d3b98187814f6a4559878ccc2" title="Action a effectuer en début de round." alt="" coords="507,112,677,141"/><area shape="rect" href="classbotte__aigle.html#a2e61e1f46def374d1b891334072d41a0" title="Action a effectuer en début de round." alt="" coords="504,165,680,195"/><area shape="rect" href="classbotte__ours.html#a82e7f504db3826813481b51eeb93dd0e" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="501,219,683,248"/><area shape="rect" href="classbotte__crabe.html#a27032b857366b9504c3ce54561a0e160" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="499,272,685,301"/><area shape="rect" href="classmagnetique.html#a80fb56483bbd15fa02ab492bb718d522" title="Action a effectuer en fin de round." alt="" coords="511,325,673,355"/></map>
 </div>
 </p>
 
@@ -1254,14 +1347,90 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classeffect_ab8be2d8e576cbabc5238edd3782fb3e4_icgraph.png" border="0" usemap="#classeffect_ab8be2d8e576cbabc5238edd3782fb3e4_icgraph_map" alt=""></div>
-<map name="classeffect_ab8be2d8e576cbabc5238edd3782fb3e4_icgraph_map" id="classeffect_ab8be2d8e576cbabc5238edd3782fb3e4_icgraph">
-<area shape="rect" href="classfleche__sable.html#a1c6ddcaacd4a484d1b43969aa923cf88" title="Modifie les dégâts." alt="" coords="161,5,353,35"/><area shape="rect" href="classfleche__poison.html#ad0c01ef2b8d32af6595eadd8780a1274" title="Applique les effets ayant lieu lorsque les dégâts ont lieu." alt="" coords="156,59,359,88"/><area shape="rect" href="classmagnetique.html#a763a8710c892c062dc8adb7fe795267a" title="magnetique::magnetise" alt="" coords="175,112,340,141"/><area shape="rect" href="classmagnetique.html#a80fb56483bbd15fa02ab492bb718d522" title="Action a effectuer en fin de round." alt="" coords="408,112,571,141"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a5b45808f513dc8fa6312239ab39b42e2"></a><!-- doxytag: member="effect::$DEBUT_ADD" ref="a5b45808f513dc8fa6312239ab39b42e2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$DEBUT_ADD = -1000<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac5433d2f92d827dffb4b3243b3bde3f3"></a><!-- doxytag: member="effect::$DEBUT_DEBUT" ref="ac5433d2f92d827dffb4b3243b3bde3f3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$DEBUT_DEBUT = -10000<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a651a18f1bd79649104d2c944848d5826"></a><!-- doxytag: member="effect::$DEBUT_MULT" ref="a651a18f1bd79649104d2c944848d5826" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$DEBUT_MULT = -100<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0ac55bfee5fbb83920dcea35adb949a"></a><!-- doxytag: member="effect::$FIN_ADD" ref="af0ac55bfee5fbb83920dcea35adb949a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$FIN_ADD = 1000<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb00cf3def9dd8f0cacb49b54b361cf8"></a><!-- doxytag: member="effect::$FIN_FIN" ref="adb00cf3def9dd8f0cacb49b54b361cf8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$FIN_FIN = 10000<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a1b3783a36ef820de9f15af06c4d84c"></a><!-- doxytag: member="effect::$FIN_MULT" ref="a4a1b3783a36ef820de9f15af06c4d84c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$FIN_MULT = 100<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7b22b68cddaa91a20ca073c8bf4b1d51"></a><!-- doxytag: member="effect::$nom" ref="a7b22b68cddaa91a20ca073c8bf4b1d51" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1292,6 +1461,45 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a954c1385100c8fdcb9c4aa6d752ed63d"></a><!-- doxytag: member="effect::$STANDARD" ref="a954c1385100c8fdcb9c4aa6d752ed63d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$STANDARD = 1<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48132aa265fd7049fc44b1aaf1de9c63"></a><!-- doxytag: member="effect::$STANDARD_ADD" ref="a48132aa265fd7049fc44b1aaf1de9c63" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$STANDARD_ADD = 10<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16e16e20d0fb356a7cd17f7f1a18f0b8"></a><!-- doxytag: member="effect::$STANDARD_MULT" ref="a16e16e20d0fb356a7cd17f7f1a18f0b8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">effect::$STANDARD_MULT = -10<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac45a4cca43bf442217c2d324c2193f3d"></a><!-- doxytag: member="effect::$used" ref="ac45a4cca43bf442217c2d324c2193f3d" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1308,7 +1516,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:41:50 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:22 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -30,10 +30,10 @@
 <h1>Référence du fichier edit_donjon.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#ad3b3c64b25fbbb6aec24407e4333aa71">$admin</a> = true</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#a8d377b93f6a3a196a78b6c6fa512d5a7">$textures</a> = false</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM donjon&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#a1fd809190e4b4640b1be514e7f12484d">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) = &quot;SELECT * FROM action_perso WHERE id_joueur = &quot;.$joueur-&gt;get_id().&quot; ORDER BY nom ASC&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM donjon&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#a8d377b93f6a3a196a78b6c6fa512d5a7">$textures</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__donjon_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="ad3b3c64b25fbbb6aec24407e4333aa71"></a><!-- doxytag: member="edit_donjon.php::$admin" ref="ad3b3c64b25fbbb6aec24407e4333aa71" args="" -->
@@ -88,12 +88,12 @@
 
 </div>
 </div>
-<a class="anchor" id="a1fd809190e4b4640b1be514e7f12484d"></a><!-- doxytag: member="edit_donjon.php::while" ref="a1fd809190e4b4640b1be514e7f12484d" args="($row=$db&#45;&gt;read_assoc($req))" -->
+<a class="anchor" id="a9a68e908775966a9b3e9a90097cdacc7"></a><!-- doxytag: member="edit_donjon.php::while" ref="a9a68e908775966a9b3e9a90097cdacc7" args="($row=$db&#45;&gt;read_assoc($req))" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> = &quot;SELECT * FROM action_perso WHERE id_joueur = &quot;.$joueur-&gt;get_id().&quot; ORDER BY nom ASC&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))</td>
         </tr>
       </table>
 </div>
@@ -102,7 +102,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:17 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:17 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

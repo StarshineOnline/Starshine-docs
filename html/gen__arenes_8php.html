@@ -29,10 +29,12 @@
 <div class="contents">
 <h1>Référence du fichier gen_arenes.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#a08512a18b4f6029916ee2d5b45b5a10a">make_attr</a> (&amp;$xml, &amp;$element, $name, $value)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#a947a873a67de318c5c0a968604e8f97c">create_joueur</a> (&amp;$xml, $row)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#aeab1c26c6765149c802f57eac69fe23d">gen_arene</a> ($x, $y, $size, $nom, $import=false, $make_import=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#a24a93a0941e792d8f043e8aed845864f">create_joueur_adm</a> (&amp;$xml, $row)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#ab06b310c2deafd0ae6e22c3cf51bf903">gen_all</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#aeab1c26c6765149c802f57eac69fe23d">gen_arene</a> ($x, $y, $size, $nom, $import=false, $make_import=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#a3e6bad69fff94fd773211e6fcd417f7f">journal</a> (&amp;$xml, $joueurs_id, $x, $y, $size)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#a08512a18b4f6029916ee2d5b45b5a10a">make_attr</a> (&amp;$xml, &amp;$element, $name, $value)</td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="gen__arenes_8php.html#ad8f0964af7d5a62169b1ae2863a2d8df">if</a> (file_exists('../root.php'))</td></tr>
 </table>
@@ -66,8 +68,6 @@
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_cgraph.png" border="0" usemap="#gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_cgraph_map" alt=""></div>
-<map name="gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_cgraph_map" id="gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_cgraph">
-<area shape="rect" href="gen__arenes_8php.html#a08512a18b4f6029916ee2d5b45b5a10a" title="make_attr" alt="" coords="161,5,241,35"/></map>
 </div>
 </p>
 
@@ -75,8 +75,47 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_icgraph.png" border="0" usemap="#gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_icgraph_map" alt=""></div>
-<map name="gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_icgraph_map" id="gen__arenes_8php_a947a873a67de318c5c0a968604e8f97c_icgraph">
-<area shape="rect" href="gen__arenes_8php.html#aeab1c26c6765149c802f57eac69fe23d" title="gen_arene" alt="" coords="160,32,245,61"/><area shape="rect" href="gen__arenes_8php.html#ab06b310c2deafd0ae6e22c3cf51bf903" title="gen_all" alt="" coords="333,5,400,35"/><area shape="rect" href="classperso.html#a96e29f5c80dd91d3903ec0dc6621f8df" title="perso::trigger_arene" alt="" coords="293,59,440,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a24a93a0941e792d8f043e8aed845864f"></a><!-- doxytag: member="gen_arenes.php::create_joueur_adm" ref="a24a93a0941e792d8f043e8aed845864f" args="(&amp;$xml, $row)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">create_joueur_adm </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>row</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="gen__arenes_8php_a24a93a0941e792d8f043e8aed845864f_cgraph.png" border="0" usemap="#gen__arenes_8php_a24a93a0941e792d8f043e8aed845864f_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="gen__arenes_8php_a24a93a0941e792d8f043e8aed845864f_icgraph.png" border="0" usemap="#gen__arenes_8php_a24a93a0941e792d8f043e8aed845864f_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -101,8 +140,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="gen__arenes_8php_ab06b310c2deafd0ae6e22c3cf51bf903_cgraph.png" border="0" usemap="#gen__arenes_8php_ab06b310c2deafd0ae6e22c3cf51bf903_cgraph_map" alt=""></div>
-<map name="gen__arenes_8php_ab06b310c2deafd0ae6e22c3cf51bf903_cgraph_map" id="gen__arenes_8php_ab06b310c2deafd0ae6e22c3cf51bf903_cgraph">
-<area shape="rect" href="gen__arenes_8php.html#aeab1c26c6765149c802f57eac69fe23d" title="gen_arene" alt="" coords="120,32,205,61"/><area shape="rect" href="gen__arenes_8php.html#a947a873a67de318c5c0a968604e8f97c" title="create_joueur" alt="" coords="255,5,359,35"/><area shape="rect" href="gen__arenes_8php.html#a08512a18b4f6029916ee2d5b45b5a10a" title="make_attr" alt="" coords="409,32,489,61"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="gen__arenes_8php_ab06b310c2deafd0ae6e22c3cf51bf903_icgraph.png" border="0" usemap="#gen__arenes_8php_ab06b310c2deafd0ae6e22c3cf51bf903_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -161,8 +205,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_cgraph.png" border="0" usemap="#gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_cgraph_map" alt=""></div>
-<map name="gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_cgraph_map" id="gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_cgraph">
-<area shape="rect" href="gen__arenes_8php.html#a947a873a67de318c5c0a968604e8f97c" title="create_joueur" alt="" coords="140,5,244,35"/><area shape="rect" href="gen__arenes_8php.html#a08512a18b4f6029916ee2d5b45b5a10a" title="make_attr" alt="" coords="295,32,375,61"/></map>
 </div>
 </p>
 
@@ -170,8 +212,65 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_icgraph.png" border="0" usemap="#gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_icgraph_map" alt=""></div>
-<map name="gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_icgraph_map" id="gen__arenes_8php_aeab1c26c6765149c802f57eac69fe23d_icgraph">
-<area shape="rect" href="gen__arenes_8php.html#ab06b310c2deafd0ae6e22c3cf51bf903" title="gen_all" alt="" coords="179,5,245,35"/><area shape="rect" href="classperso.html#a96e29f5c80dd91d3903ec0dc6621f8df" title="perso::trigger_arene" alt="" coords="139,59,285,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e6bad69fff94fd773211e6fcd417f7f"></a><!-- doxytag: member="gen_arenes.php::journal" ref="a3e6bad69fff94fd773211e6fcd417f7f" args="(&amp;$xml, $joueurs_id, $x, $y, $size)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">journal </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>xml</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>joueurs_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>size</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="gen__arenes_8php_a3e6bad69fff94fd773211e6fcd417f7f_cgraph.png" border="0" usemap="#gen__arenes_8php_a3e6bad69fff94fd773211e6fcd417f7f_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="gen__arenes_8php_a3e6bad69fff94fd773211e6fcd417f7f_icgraph.png" border="0" usemap="#gen__arenes_8php_a3e6bad69fff94fd773211e6fcd417f7f_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -218,8 +317,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="gen__arenes_8php_a08512a18b4f6029916ee2d5b45b5a10a_icgraph.png" border="0" usemap="#gen__arenes_8php_a08512a18b4f6029916ee2d5b45b5a10a_icgraph_map" alt=""></div>
-<map name="gen__arenes_8php_a08512a18b4f6029916ee2d5b45b5a10a_icgraph_map" id="gen__arenes_8php_a08512a18b4f6029916ee2d5b45b5a10a_icgraph">
-<area shape="rect" href="gen__arenes_8php.html#a947a873a67de318c5c0a968604e8f97c" title="create_joueur" alt="" coords="137,5,241,35"/><area shape="rect" href="gen__arenes_8php.html#aeab1c26c6765149c802f57eac69fe23d" title="gen_arene" alt="" coords="291,32,376,61"/><area shape="rect" href="gen__arenes_8php.html#ab06b310c2deafd0ae6e22c3cf51bf903" title="gen_all" alt="" coords="464,5,531,35"/><area shape="rect" href="classperso.html#a96e29f5c80dd91d3903ec0dc6621f8df" title="perso::trigger_arene" alt="" coords="424,59,571,88"/></map>
 </div>
 </p>
 
@@ -240,7 +337,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:21 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:17 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

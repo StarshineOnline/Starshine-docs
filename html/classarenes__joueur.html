@@ -1,0 +1,1438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence de la classe arenes_joueur</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Liste&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&nbsp;de&nbsp;classe</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence de la classe arenes_joueur</h1><!-- doxytag: class="arenes_joueur" --><!-- doxytag: inherits="table" -->
+<p>Classe de base pour les personnages dans les arènes, liée à la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> arenes_joueurs de la base de données.  
+<a href="#_details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe d'héritage de arenes_joueur:</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur__inherit__graph.png" border="0" usemap="#arenes__joueur_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de arenes_joueur:</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur__coll__graph.png" border="0" usemap="#arenes__joueur_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+
+<p><a href="classarenes__joueur-members.html">Liste de tous les membres</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a6ea1912727cc4829796523ee3e1e63f2">__construct</a> ($<a class="el" href="classevent.html">event</a>, $<a class="el" href="classperso.html">perso</a>, $statut=0, $<a class="el" href="classarene.html">arene</a>=0, $partie=0, $x=0, $y=0, $<a class="el" href="classgroupe.html">groupe</a>=0, $hp=1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a6ea1912727cc4829796523ee3e1e63f2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a32a6cfff8fa7d8f13b1c4387ff00cdf9">teleporte</a> ($admin='SSObot')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Téléporte le personnage en fonction des données objet.  <a href="#a32a6cfff8fa7d8f13b1c4387ff00cdf9"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a4d5e2a0a7eb22ddfe692e21e9620e4dd">creer</a> ($<a class="el" href="classevent.html">event</a>, $<a class="el" href="classclasse.html">classe</a>, $champ=null, $valeur=null)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée les objets ou un objet en particulier Peut être utilisé de plusieurs façons :</p>
+<ul>
+<li>creer($event, $classe) renvoie un tableau contenant tous les équipes</li>
+<li>creer($event, $classe, $champ, $valeur) renvoie une ou plusieurs équipes suivant la valeur d'un champ précis. </li>
+</ul>
+ <a href="#a4d5e2a0a7eb22ddfe692e21e9620e4dd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#ab3e966177c50a89fe9712d76d63620f9">tp_arene</a> ($<a class="el" href="classperso.html">perso</a>, $<a class="el" href="classarene.html">arene</a>, $x, $y, $<a class="el" href="classgroupe.html">groupe</a>, $hp, $<a class="el" href="classevent.html">event</a>=0, $partie=0, $admin='SSObot')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un nouvel objet et télporte le personnage dans l'arène.  <a href="#ab3e966177c50a89fe9712d76d63620f9"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a4b9e381d827d8d3df07b3c5b9fe2a9d4">tp</a> ($<a class="el" href="classarene.html">arene</a>, $x, $y, $<a class="el" href="classgroupe.html">groupe</a>, $hp, $admin)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gestion interne du TP.  <a href="#a4b9e381d827d8d3df07b3c5b9fe2a9d4"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Gestion interne des données</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp48baf852202b75b6e473e3558daf6eaf"></a>Méthodes, surchargées ou à surcharger, necessaire à l'initialisation de l'objet et à sa sauvegarde dans la base de données. </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a0a858c1822ff588414e20789c966a888">get_champ</a> ($champ)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la valeur d'un champ de la base de donnée.  <a href="#a0a858c1822ff588414e20789c966a888"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a9f7ef09a1c4b30d2337ed86c1113c9c3">get_liste_champs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a9f7ef09a1c4b30d2337ed86c1113c9c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#af88e0593e5dab4ee686287be5db0fba0">get_liste_update</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base.  <a href="#af88e0593e5dab4ee686287be5db0fba0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a4a29706b55ee90dae53c11c5f805f836">get_table</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nom de la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a>.  <a href="#a4a29706b55ee90dae53c11c5f805f836"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a5fa8541a9e64fb596ccced6cf992c09e">get_valeurs_insert</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des valeurs des champspour une insertion dans la base.  <a href="#a5fa8541a9e64fb596ccced6cf992c09e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a325d15c4a948392b7fcef82d07b999cd">init_tab</a> ($vals)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise les données membres à l'aide d'un tableau.  <a href="#a325d15c4a948392b7fcef82d07b999cd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#afab175d39a25917fb90b4a083cf8696a">serializeDonnees</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">serialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger)  <a href="#afab175d39a25917fb90b4a083cf8696a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#adc8e5f37b2c18dc9646988e9cf30adf2">unserializeDonnees</a> ($donnees)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">déserialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger)  <a href="#adc8e5f37b2c18dc9646988e9cf30adf2"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Paramètres</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpe7785de91330713fc2d12404bb6bd556"></a>Paramètres de l'event et accesseurs. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#af68ab1a98677bd973797d198735e4472">$arene</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">arène concernée  <a href="#af68ab1a98677bd973797d198735e4472"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a46bf310f606cf9d4047299079883f5b7">$event</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> concerné  <a href="#a46bf310f606cf9d4047299079883f5b7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a7419e14bcfef85c35ab2b84ad15d2300">$groupe</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classgroupe.html">groupe</a> du personnage  <a href="#a7419e14bcfef85c35ab2b84ad15d2300"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a2b86f7e477e284abf64d7b9763ee6e14">$hp</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">décalage de l'heure SSO  <a href="#a2b86f7e477e284abf64d7b9763ee6e14"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#add38af46315472d8d0ffd7f7185f9f9e">$id_perso</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">personnage  <a href="#add38af46315472d8d0ffd7f7185f9f9e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#aed80d42220cc7a0d5532b8e9b1ae9591">$partie</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">partie de l'event concernée  <a href="#aed80d42220cc7a0d5532b8e9b1ae9591"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#aa8f6bf22e488da0babe5d8f4885de752">$statut</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique si l'arène correspond est de type donjon  <a href="#aa8f6bf22e488da0babe5d8f4885de752"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a8bfcc03cd4aa8b771185794424c8ae59">$x</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">position horizontale où téléporter  <a href="#a8bfcc03cd4aa8b771185794424c8ae59"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a3b57d8615a8534486589c8d5ff8f4e05">$y</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">position verticale où téléporter  <a href="#a3b57d8615a8534486589c8d5ff8f4e05"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#ab606cd51bef350a47880b57e8ecd0110">en_attente</a> = 10</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le personnage attend d'être téléporté dans l'arène  <a href="#ab606cd51bef350a47880b57e8ecd0110"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#ae9eeeada477285a504afbc2d4d59b859">en_cours</a> = 20</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le personnage est dans l'arène  <a href="#ae9eeeada477285a504afbc2d4d59b859"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a207d4f7b60bcc48f26062496cec01bf3">fini</a> = 30</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">le personnage est sorti de l'arène  <a href="#a207d4f7b60bcc48f26062496cec01bf3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a4d649c709bb563ea5bdcc4f9f155adff">get_arene</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'arène sous forme d'objet.  <a href="#a4d649c709bb563ea5bdcc4f9f155adff"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#ae6b8da76b3fe97cddb2d3951532e9e86">get_event</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'event.  <a href="#ae6b8da76b3fe97cddb2d3951532e9e86"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a1f5e2379c1f5dec8172aa7cb0e232a5b">get_groupe</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le <a class="el" href="classgroupe.html">groupe</a> sous forme d'objet.  <a href="#a1f5e2379c1f5dec8172aa7cb0e232a5b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a79fa0ad562637fb953d0173eba4ba11a">get_hp</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les HP.  <a href="#a79fa0ad562637fb953d0173eba4ba11a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a9843a787d0a3460f43b331342d5d9a62">get_id_arene</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id de l'arène.  <a href="#a9843a787d0a3460f43b331342d5d9a62"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a1f923d255bff52f3e8d6651ec7dc75f0">get_id_event</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'event.  <a href="#a1f923d255bff52f3e8d6651ec7dc75f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a7cd0837d7d15b1f76802733b4431ab40">get_id_groupe</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du <a class="el" href="classgroupe.html">groupe</a>.  <a href="#a7cd0837d7d15b1f76802733b4431ab40"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#ab78548db24d65dceb94797bf768b4b55">get_id_partie</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id de la partie.  <a href="#ab78548db24d65dceb94797bf768b4b55"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a77591e6bc5c2f6209b7bddc56f52ae96">get_id_perso</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.  <a href="#a77591e6bc5c2f6209b7bddc56f52ae96"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#adf71d6aa86511a619a2bc343561c28ec">get_partie</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la partie sous forme d'objet.  <a href="#adf71d6aa86511a619a2bc343561c28ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#ade43db7c0538ebbb2eca5af32ffded19">get_perso</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> sous forme d'objet.  <a href="#ade43db7c0538ebbb2eca5af32ffded19"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#accdd241f90850a4540bdfcf2520ce67b">get_statut</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le statut.  <a href="#accdd241f90850a4540bdfcf2520ce67b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#adfa3e5854e66f33551aab70a08975ae6">get_x</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la position horizontale.  <a href="#adfa3e5854e66f33551aab70a08975ae6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#abc8fff45d960f55b3017662a27092eb5">get_y</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la position verticale.  <a href="#abc8fff45d960f55b3017662a27092eb5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a760e5361ef99538b49dd21f76149a2ac">set_arene</a> ($<a class="el" href="classarene.html">arene</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'arène.  <a href="#a760e5361ef99538b49dd21f76149a2ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#ad4400c9a2bc10c7bd7d898ed5ae4551a">set_groupe</a> ($<a class="el" href="classgroupe.html">groupe</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le <a class="el" href="classgroupe.html">groupe</a>.  <a href="#ad4400c9a2bc10c7bd7d898ed5ae4551a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#acd361bafd32a366578119b6d8c4f4989">set_hp</a> ($hp)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les HP.  <a href="#acd361bafd32a366578119b6d8c4f4989"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#abb0a274ae63fed4bf64f1c96b9c3c3d1">set_partie</a> ($partie)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la partie.  <a href="#abb0a274ae63fed4bf64f1c96b9c3c3d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a87de54b7b015f12f7031394b7f9546d4">set_perso</a> ($<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le personnage.  <a href="#a87de54b7b015f12f7031394b7f9546d4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a4beb39e1e5f0a7749935c724329093be">set_statut</a> ($statut)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le statut.  <a href="#a4beb39e1e5f0a7749935c724329093be"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a2f294fa74b916d4e4dc24aca440f26b5">set_x</a> ($x)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la position horizontale.  <a href="#a2f294fa74b916d4e4dc24aca440f26b5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classarenes__joueur.html#a79522848bfa24268a4b37452ac7514ce">set_y</a> ($y)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la position verticale.  <a href="#a79522848bfa24268a4b37452ac7514ce"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Classe de base pour les personnages dans les arènes, liée à la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> arenes_joueurs de la base de données. </p>
+<hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a6ea1912727cc4829796523ee3e1e63f2"></a><!-- doxytag: member="arenes_joueur::__construct" ref="a6ea1912727cc4829796523ee3e1e63f2" args="($event, $perso, $statut=0, $arene=0, $partie=0, $x=0, $y=0, $groupe=0, $hp=1)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::__construct </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>statut</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>arene</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>partie</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>groupe</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>hp</em> = <code>1</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructeur. </p>
+<p>Le constructeur peut être utilisé de plusieurs façons: -arenes_joueur($event, $id) qui récupère les informations de l'objet dans la base. -arenes_joueur($event, $vals) qui crée l'objet à partir d'information déjà récupèrées sans la base. -arenes_joueur($event, $perso, $statut, $arene, $partie, $x, $y, $groupe, $hp) qui crée une nouvelle arène.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$event</em>&nbsp;</td><td>object <a class="el" href="class_objet.html" title="Classe abstraite représentant un objet.">Objet</a> représentant l'event dont le participant fait parti </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>int Id de l'entrée dans la base. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$vals</em>&nbsp;</td><td>array Tableau associatif contenant les entrées de la base de données. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$perso</em>&nbsp;</td><td>int/object objet représentant le personnage ou id de celui-ci. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$statut</em>&nbsp;</td><td>int statut du personnage par rapport au passage dans l'arène (en attente, en cours, fini). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$arene</em>&nbsp;</td><td>int/object arène où a lieu la partie. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$partie</em>&nbsp;</td><td>int/object partie de l'event à laquelle correspond ce passage dans l'arène. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$x</em>&nbsp;</td><td>int position horizontale du personnage où il doit être téléporté. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$y</em>&nbsp;</td><td>int position verticale du personnage où il doit être téléporté. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$groupe</em>&nbsp;</td><td>int/object <a class="el" href="classgroupe.html">groupe</a> du personnage. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$hp</em>&nbsp;</td><td>int hp du personnage après le téléport. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a6ea1912727cc4829796523ee3e1e63f2_cgraph.png" border="0" usemap="#classarenes__joueur_a6ea1912727cc4829796523ee3e1e63f2_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a4d5e2a0a7eb22ddfe692e21e9620e4dd"></a><!-- doxytag: member="arenes_joueur::creer" ref="a4d5e2a0a7eb22ddfe692e21e9620e4dd" args="($event, $classe, $champ=null, $valeur=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static arenes_joueur::creer </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>classe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>champ</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>valeur</em> = <code>null</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Crée les objets ou un objet en particulier Peut être utilisé de plusieurs façons :</p>
+<ul>
+<li>creer($event, $classe) renvoie un tableau contenant tous les équipes</li>
+<li>creer($event, $classe, $champ, $valeur) renvoie une ou plusieurs équipes suivant la valeur d'un champ précis. </li>
+</ul>
+</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$event</em>&nbsp;</td><td>string objet <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$classe</em>&nbsp;</td><td>string <a class="el" href="classclasse.html">classe</a> à créer </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$champ</em>&nbsp;</td><td>string champ sur lequel porte la condition </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$valeur</em>&nbsp;</td><td>string valeur du champ demandée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a4d5e2a0a7eb22ddfe692e21e9620e4dd_icgraph.png" border="0" usemap="#classarenes__joueur_a4d5e2a0a7eb22ddfe692e21e9620e4dd_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d649c709bb563ea5bdcc4f9f155adff"></a><!-- doxytag: member="arenes_joueur::get_arene" ref="a4d649c709bb563ea5bdcc4f9f155adff" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_arene </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'arène sous forme d'objet. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a4d649c709bb563ea5bdcc4f9f155adff_icgraph.png" border="0" usemap="#classarenes__joueur_a4d649c709bb563ea5bdcc4f9f155adff_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a858c1822ff588414e20789c966a888"></a><!-- doxytag: member="arenes_joueur::get_champ" ref="a0a858c1822ff588414e20789c966a888" args="($champ)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_champ </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>champ</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la valeur d'un champ de la base de donnée. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a9cc0113a3d97b3971c1fcdff587c67c1">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a0a858c1822ff588414e20789c966a888_cgraph.png" border="0" usemap="#classarenes__joueur_a0a858c1822ff588414e20789c966a888_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6b8da76b3fe97cddb2d3951532e9e86"></a><!-- doxytag: member="arenes_joueur::get_event" ref="ae6b8da76b3fe97cddb2d3951532e9e86" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_event </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'event. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1f5e2379c1f5dec8172aa7cb0e232a5b"></a><!-- doxytag: member="arenes_joueur::get_groupe" ref="a1f5e2379c1f5dec8172aa7cb0e232a5b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_groupe </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le <a class="el" href="classgroupe.html">groupe</a> sous forme d'objet. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a1f5e2379c1f5dec8172aa7cb0e232a5b_icgraph.png" border="0" usemap="#classarenes__joueur_a1f5e2379c1f5dec8172aa7cb0e232a5b_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a79fa0ad562637fb953d0173eba4ba11a"></a><!-- doxytag: member="arenes_joueur::get_hp" ref="a79fa0ad562637fb953d0173eba4ba11a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_hp </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie les HP. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a79fa0ad562637fb953d0173eba4ba11a_icgraph.png" border="0" usemap="#classarenes__joueur_a79fa0ad562637fb953d0173eba4ba11a_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9843a787d0a3460f43b331342d5d9a62"></a><!-- doxytag: member="arenes_joueur::get_id_arene" ref="a9843a787d0a3460f43b331342d5d9a62" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_id_arene </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'id de l'arène. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a9843a787d0a3460f43b331342d5d9a62_icgraph.png" border="0" usemap="#classarenes__joueur_a9843a787d0a3460f43b331342d5d9a62_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f923d255bff52f3e8d6651ec7dc75f0"></a><!-- doxytag: member="arenes_joueur::get_id_event" ref="a1f923d255bff52f3e8d6651ec7dc75f0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_id_event </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'event. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a1f923d255bff52f3e8d6651ec7dc75f0_icgraph.png" border="0" usemap="#classarenes__joueur_a1f923d255bff52f3e8d6651ec7dc75f0_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7cd0837d7d15b1f76802733b4431ab40"></a><!-- doxytag: member="arenes_joueur::get_id_groupe" ref="a7cd0837d7d15b1f76802733b4431ab40" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_id_groupe </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'id du <a class="el" href="classgroupe.html">groupe</a>. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a7cd0837d7d15b1f76802733b4431ab40_icgraph.png" border="0" usemap="#classarenes__joueur_a7cd0837d7d15b1f76802733b4431ab40_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab78548db24d65dceb94797bf768b4b55"></a><!-- doxytag: member="arenes_joueur::get_id_partie" ref="ab78548db24d65dceb94797bf768b4b55" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_id_partie </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'id de la partie. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_ab78548db24d65dceb94797bf768b4b55_icgraph.png" border="0" usemap="#classarenes__joueur_ab78548db24d65dceb94797bf768b4b55_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a77591e6bc5c2f6209b7bddc56f52ae96"></a><!-- doxytag: member="arenes_joueur::get_id_perso" ref="a77591e6bc5c2f6209b7bddc56f52ae96" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_id_perso </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'id du <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a77591e6bc5c2f6209b7bddc56f52ae96_icgraph.png" border="0" usemap="#classarenes__joueur_a77591e6bc5c2f6209b7bddc56f52ae96_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f7ef09a1c4b30d2337ed86c1113c9c3"></a><!-- doxytag: member="arenes_joueur::get_liste_champs" ref="a9f7ef09a1c4b30d2337ed86c1113c9c3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_liste_champs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs pour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a454c5e935a7faaa2ac25a32dab48ca19">table</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af88e0593e5dab4ee686287be5db0fba0"></a><!-- doxytag: member="arenes_joueur::get_liste_update" ref="af88e0593e5dab4ee686287be5db0fba0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_liste_update </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a2ddeda6d602c10e1951e1fe31a1559ee">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_af88e0593e5dab4ee686287be5db0fba0_cgraph.png" border="0" usemap="#classarenes__joueur_af88e0593e5dab4ee686287be5db0fba0_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adf71d6aa86511a619a2bc343561c28ec"></a><!-- doxytag: member="arenes_joueur::get_partie" ref="adf71d6aa86511a619a2bc343561c28ec" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_partie </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la partie sous forme d'objet. </p>
+
+</div>
+</div>
+<a class="anchor" id="ade43db7c0538ebbb2eca5af32ffded19"></a><!-- doxytag: member="arenes_joueur::get_perso" ref="ade43db7c0538ebbb2eca5af32ffded19" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_perso </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> sous forme d'objet. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_ade43db7c0538ebbb2eca5af32ffded19_icgraph.png" border="0" usemap="#classarenes__joueur_ade43db7c0538ebbb2eca5af32ffded19_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="accdd241f90850a4540bdfcf2520ce67b"></a><!-- doxytag: member="arenes_joueur::get_statut" ref="accdd241f90850a4540bdfcf2520ce67b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_statut </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le statut. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_accdd241f90850a4540bdfcf2520ce67b_icgraph.png" border="0" usemap="#classarenes__joueur_accdd241f90850a4540bdfcf2520ce67b_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a29706b55ee90dae53c11c5f805f836"></a><!-- doxytag: member="arenes_joueur::get_table" ref="a4a29706b55ee90dae53c11c5f805f836" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_table </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le nom de la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a>. </p>
+<p>Doit être redéfinie à cause des classes filles </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a0a79cb918213b79d91a431286f26f9ae">table</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fa8541a9e64fb596ccced6cf992c09e"></a><!-- doxytag: member="arenes_joueur::get_valeurs_insert" ref="a5fa8541a9e64fb596ccced6cf992c09e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_valeurs_insert </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des valeurs des champspour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a66689a9c1b06476f027e6396885411a6">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a5fa8541a9e64fb596ccced6cf992c09e_cgraph.png" border="0" usemap="#classarenes__joueur_a5fa8541a9e64fb596ccced6cf992c09e_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adfa3e5854e66f33551aab70a08975ae6"></a><!-- doxytag: member="arenes_joueur::get_x" ref="adfa3e5854e66f33551aab70a08975ae6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_x </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la position horizontale. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_adfa3e5854e66f33551aab70a08975ae6_icgraph.png" border="0" usemap="#classarenes__joueur_adfa3e5854e66f33551aab70a08975ae6_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abc8fff45d960f55b3017662a27092eb5"></a><!-- doxytag: member="arenes_joueur::get_y" ref="abc8fff45d960f55b3017662a27092eb5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::get_y </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la position verticale. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_abc8fff45d960f55b3017662a27092eb5_icgraph.png" border="0" usemap="#classarenes__joueur_abc8fff45d960f55b3017662a27092eb5_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a325d15c4a948392b7fcef82d07b999cd"></a><!-- doxytag: member="arenes_joueur::init_tab" ref="a325d15c4a948392b7fcef82d07b999cd" args="($vals)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::init_tab </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>vals</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialise les données membres à l'aide d'un tableau. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>array</em>&nbsp;</td><td>$vals Tableau contenant les valeurs des données. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a647da6a65b9d9e4937778f81df19cbfb">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a325d15c4a948392b7fcef82d07b999cd_cgraph.png" border="0" usemap="#classarenes__joueur_a325d15c4a948392b7fcef82d07b999cd_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a325d15c4a948392b7fcef82d07b999cd_icgraph.png" border="0" usemap="#classarenes__joueur_a325d15c4a948392b7fcef82d07b999cd_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afab175d39a25917fb90b4a083cf8696a"></a><!-- doxytag: member="arenes_joueur::serializeDonnees" ref="afab175d39a25917fb90b4a083cf8696a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::serializeDonnees </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>serialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger) </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_afab175d39a25917fb90b4a083cf8696a_icgraph.png" border="0" usemap="#classarenes__joueur_afab175d39a25917fb90b4a083cf8696a_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a760e5361ef99538b49dd21f76149a2ac"></a><!-- doxytag: member="arenes_joueur::set_arene" ref="a760e5361ef99538b49dd21f76149a2ac" args="($arene)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_arene </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>arene</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie l'arène. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4400c9a2bc10c7bd7d898ed5ae4551a"></a><!-- doxytag: member="arenes_joueur::set_groupe" ref="ad4400c9a2bc10c7bd7d898ed5ae4551a" args="($groupe)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_groupe </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>groupe</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le <a class="el" href="classgroupe.html">groupe</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="acd361bafd32a366578119b6d8c4f4989"></a><!-- doxytag: member="arenes_joueur::set_hp" ref="acd361bafd32a366578119b6d8c4f4989" args="($hp)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_hp </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>hp</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie les HP. </p>
+
+</div>
+</div>
+<a class="anchor" id="abb0a274ae63fed4bf64f1c96b9c3c3d1"></a><!-- doxytag: member="arenes_joueur::set_partie" ref="abb0a274ae63fed4bf64f1c96b9c3c3d1" args="($partie)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_partie </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>partie</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie la partie. </p>
+
+</div>
+</div>
+<a class="anchor" id="a87de54b7b015f12f7031394b7f9546d4"></a><!-- doxytag: member="arenes_joueur::set_perso" ref="a87de54b7b015f12f7031394b7f9546d4" args="($perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_perso </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le personnage. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4beb39e1e5f0a7749935c724329093be"></a><!-- doxytag: member="arenes_joueur::set_statut" ref="a4beb39e1e5f0a7749935c724329093be" args="($statut)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_statut </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>statut</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le statut. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a4beb39e1e5f0a7749935c724329093be_icgraph.png" border="0" usemap="#classarenes__joueur_a4beb39e1e5f0a7749935c724329093be_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f294fa74b916d4e4dc24aca440f26b5"></a><!-- doxytag: member="arenes_joueur::set_x" ref="a2f294fa74b916d4e4dc24aca440f26b5" args="($x)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_x </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie la position horizontale. </p>
+
+</div>
+</div>
+<a class="anchor" id="a79522848bfa24268a4b37452ac7514ce"></a><!-- doxytag: member="arenes_joueur::set_y" ref="a79522848bfa24268a4b37452ac7514ce" args="($y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::set_y </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie la position verticale. </p>
+
+</div>
+</div>
+<a class="anchor" id="a32a6cfff8fa7d8f13b1c4387ff00cdf9"></a><!-- doxytag: member="arenes_joueur::teleporte" ref="a32a6cfff8fa7d8f13b1c4387ff00cdf9" args="($admin='SSObot')" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::teleporte </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>admin</em> = <code>'SSObot'</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Téléporte le personnage en fonction des données objet. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$admin</em>&nbsp;</td><td>string nom à afficher pour le téléport </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a32a6cfff8fa7d8f13b1c4387ff00cdf9_cgraph.png" border="0" usemap="#classarenes__joueur_a32a6cfff8fa7d8f13b1c4387ff00cdf9_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b9e381d827d8d3df07b3c5b9fe2a9d4"></a><!-- doxytag: member="arenes_joueur::tp" ref="a4b9e381d827d8d3df07b3c5b9fe2a9d4" args="($arene, $x, $y, $groupe, $hp, $admin)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::tp </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>arene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>groupe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>hp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>admin</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gestion interne du TP. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$arene</em>&nbsp;</td><td>objet/null arène où le personnage doit être téléporté, ou null s'il faut le ramener sur la carte principale </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$x</em>&nbsp;</td><td>int position horizontale (relative si le téléport à lieu vers un donjon) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$y</em>&nbsp;</td><td>int position verticale (relative si le téléport à lieu vers un donjon) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$groupe</em>&nbsp;</td><td>objet/null <a class="el" href="classgroupe.html">groupe</a> du personnage après le téléport ou null si on ne le change pas de <a class="el" href="classgroupe.html">groupe</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$hp</em>&nbsp;</td><td>int/bool HP du personnage après téléport, true pour une remise au maximim, false s'il ne faut pas y toucher </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$admin</em>&nbsp;</td><td>string nom à afficher pour le téléport </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a4b9e381d827d8d3df07b3c5b9fe2a9d4_cgraph.png" border="0" usemap="#classarenes__joueur_a4b9e381d827d8d3df07b3c5b9fe2a9d4_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_a4b9e381d827d8d3df07b3c5b9fe2a9d4_icgraph.png" border="0" usemap="#classarenes__joueur_a4b9e381d827d8d3df07b3c5b9fe2a9d4_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3e966177c50a89fe9712d76d63620f9"></a><!-- doxytag: member="arenes_joueur::tp_arene" ref="ab3e966177c50a89fe9712d76d63620f9" args="($perso, $arene, $x, $y, $groupe, $hp, $event=0, $partie=0, $admin='SSObot')" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static arenes_joueur::tp_arene </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>arene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>groupe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>hp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>event</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>partie</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>admin</em> = <code>'SSObot'</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Crée un nouvel objet et télporte le personnage dans l'arène. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$perso</em>&nbsp;</td><td>objet personnage à téléporter </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$arene</em>&nbsp;</td><td>objet/null arène où le personnage doit être téléporté, ou null s'il faut le ramener sur la carte principale </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$x</em>&nbsp;</td><td>int position horizontale (relative si le téléport à lieu vers un donjon) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$y</em>&nbsp;</td><td>int position verticale (relative si le téléport à lieu vers un donjon) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$groupe</em>&nbsp;</td><td>objet/null <a class="el" href="classgroupe.html">groupe</a> du personnage après le téléport ou null si on ne le change pas de <a class="el" href="classgroupe.html">groupe</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$hp</em>&nbsp;</td><td>int/bool HP du personnage après téléport, true pour une remise au maximim, false s'il ne faut pas y toucher </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$event</em>&nbsp;</td><td>objet <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> concerné </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$partie</em>&nbsp;</td><td>objet partie de l'event concernée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$admin</em>&nbsp;</td><td>string nom à afficher pour le téléport. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adc8e5f37b2c18dc9646988e9cf30adf2"></a><!-- doxytag: member="arenes_joueur::unserializeDonnees" ref="adc8e5f37b2c18dc9646988e9cf30adf2" args="($donnees)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::unserializeDonnees </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>donnees</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>déserialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger) </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classarenes__joueur_adc8e5f37b2c18dc9646988e9cf30adf2_icgraph.png" border="0" usemap="#classarenes__joueur_adc8e5f37b2c18dc9646988e9cf30adf2_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="af68ab1a98677bd973797d198735e4472"></a><!-- doxytag: member="arenes_joueur::$arene" ref="af68ab1a98677bd973797d198735e4472" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$<a class="el" href="classarene.html">arene</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>arène concernée </p>
+
+</div>
+</div>
+<a class="anchor" id="a46bf310f606cf9d4047299079883f5b7"></a><!-- doxytag: member="arenes_joueur::$event" ref="a46bf310f606cf9d4047299079883f5b7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$<a class="el" href="classevent.html">event</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> concerné </p>
+
+</div>
+</div>
+<a class="anchor" id="a7419e14bcfef85c35ab2b84ad15d2300"></a><!-- doxytag: member="arenes_joueur::$groupe" ref="a7419e14bcfef85c35ab2b84ad15d2300" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$<a class="el" href="classgroupe.html">groupe</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="classgroupe.html">groupe</a> du personnage </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b86f7e477e284abf64d7b9763ee6e14"></a><!-- doxytag: member="arenes_joueur::$hp" ref="a2b86f7e477e284abf64d7b9763ee6e14" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$hp<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>décalage de l'heure SSO </p>
+
+</div>
+</div>
+<a class="anchor" id="add38af46315472d8d0ffd7f7185f9f9e"></a><!-- doxytag: member="arenes_joueur::$id_perso" ref="add38af46315472d8d0ffd7f7185f9f9e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$id_perso<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>personnage </p>
+
+</div>
+</div>
+<a class="anchor" id="aed80d42220cc7a0d5532b8e9b1ae9591"></a><!-- doxytag: member="arenes_joueur::$partie" ref="aed80d42220cc7a0d5532b8e9b1ae9591" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$partie<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>partie de l'event concernée </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8f6bf22e488da0babe5d8f4885de752"></a><!-- doxytag: member="arenes_joueur::$statut" ref="aa8f6bf22e488da0babe5d8f4885de752" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$statut<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indique si l'arène correspond est de type donjon </p>
+
+</div>
+</div>
+<a class="anchor" id="a8bfcc03cd4aa8b771185794424c8ae59"></a><!-- doxytag: member="arenes_joueur::$x" ref="a8bfcc03cd4aa8b771185794424c8ae59" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$x<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>position horizontale où téléporter </p>
+
+</div>
+</div>
+<a class="anchor" id="a3b57d8615a8534486589c8d5ff8f4e05"></a><!-- doxytag: member="arenes_joueur::$y" ref="a3b57d8615a8534486589c8d5ff8f4e05" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arenes_joueur::$y<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>position verticale où téléporter </p>
+
+</div>
+</div>
+<a class="anchor" id="ab606cd51bef350a47880b57e8ecd0110"></a><!-- doxytag: member="arenes_joueur::en_attente" ref="ab606cd51bef350a47880b57e8ecd0110" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classarenes__joueur.html#ab606cd51bef350a47880b57e8ecd0110">arenes_joueur::en_attente</a> = 10</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>le personnage attend d'être téléporté dans l'arène </p>
+
+</div>
+</div>
+<a class="anchor" id="ae9eeeada477285a504afbc2d4d59b859"></a><!-- doxytag: member="arenes_joueur::en_cours" ref="ae9eeeada477285a504afbc2d4d59b859" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classarenes__joueur.html#ae9eeeada477285a504afbc2d4d59b859">arenes_joueur::en_cours</a> = 20</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>le personnage est dans l'arène </p>
+
+</div>
+</div>
+<a class="anchor" id="a207d4f7b60bcc48f26062496cec01bf3"></a><!-- doxytag: member="arenes_joueur::fini" ref="a207d4f7b60bcc48f26062496cec01bf3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classarenes__joueur.html#a207d4f7b60bcc48f26062496cec01bf3">arenes_joueur::fini</a> = 30</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>le personnage est sorti de l'arène </p>
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:20 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

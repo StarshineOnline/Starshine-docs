@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/journalier2-archives.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier journalier2-archives.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#af110d665048f4479b68ccc66953d108f">$level_moyen</a> = ceil($row[1])</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Arrondi par excés du niveau moyen.  <a href="#af110d665048f4479b68ccc66953d108f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#ac409786c163a1974d1e24a6767a95166">$mail</a> = &quot;\nJoueur et Stars de chaque <a class="el" href="classroyaume.html">royaume</a>\n\n&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#a93f3a8ec5738784390a396d6d40d2665">$nbr_monstre</a> = $row[0]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Nombre de monstres.  <a href="#a93f3a8ec5738784390a396d6d40d2665"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#a333e47705d06fe22396c3b598d3f267b">$nbr_perso</a> = $row[0]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Nombre de personnages actifs.  <a href="#a333e47705d06fe22396c3b598d3f267b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#a069d8b4c92522a203236e0007c02a139">$niveau_moyen</a> = $row[1]</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Niveau moyen.  <a href="#a069d8b4c92522a203236e0007c02a139"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT race, COUNT(*) as total FROM <a class="el" href="classperso.html">perso</a> WHERE statut = 'actif' GROUP BY race&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_row($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#a54cb0e855bb7409245168d7059e1dbb2">$tableau_race</a> = array()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stats à mémoriser pour chaque race.  <a href="#a54cb0e855bb7409245168d7059e1dbb2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-archives_8php.html#a241b818f48030b628685b2e5119c5624">$total</a> = 0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Population totale.  <a href="#a241b818f48030b628685b2e5119c5624"></a><br/></td></tr>
+</table>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="af110d665048f4479b68ccc66953d108f"></a><!-- doxytag: member="journalier2&#45;archives.php::$level_moyen" ref="af110d665048f4479b68ccc66953d108f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$level_moyen = ceil($row[1])</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Arrondi par excés du niveau moyen. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac409786c163a1974d1e24a6767a95166"></a><!-- doxytag: member="journalier2&#45;archives.php::$mail" ref="ac409786c163a1974d1e24a6767a95166" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$mail = &quot;\nJoueur et Stars de chaque <a class="el" href="classroyaume.html">royaume</a>\n\n&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a93f3a8ec5738784390a396d6d40d2665"></a><!-- doxytag: member="journalier2&#45;archives.php::$nbr_monstre" ref="a93f3a8ec5738784390a396d6d40d2665" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nbr_monstre = $row[0]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Nombre de monstres. </p>
+
+</div>
+</div>
+<a class="anchor" id="a333e47705d06fe22396c3b598d3f267b"></a><!-- doxytag: member="journalier2&#45;archives.php::$nbr_perso" ref="a333e47705d06fe22396c3b598d3f267b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nbr_perso = $row[0]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Nombre de personnages actifs. </p>
+
+</div>
+</div>
+<a class="anchor" id="a069d8b4c92522a203236e0007c02a139"></a><!-- doxytag: member="journalier2&#45;archives.php::$niveau_moyen" ref="a069d8b4c92522a203236e0007c02a139" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$niveau_moyen = $row[1]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Niveau moyen. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="journalier2&#45;archives.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="journalier2&#45;archives.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$requete = &quot;SELECT race, COUNT(*) as total FROM <a class="el" href="classperso.html">perso</a> WHERE statut = 'actif' GROUP BY race&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1d731aa570613e5bcff831bb10e9b87"></a><!-- doxytag: member="journalier2&#45;archives.php::$row" ref="aa1d731aa570613e5bcff831bb10e9b87" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$row = $<a class="el" href="classdb.html">db</a>-&gt;read_row($req)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a54cb0e855bb7409245168d7059e1dbb2"></a><!-- doxytag: member="journalier2&#45;archives.php::$tableau_race" ref="a54cb0e855bb7409245168d7059e1dbb2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$tableau_race = array()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Stats à mémoriser pour chaque race. </p>
+<p>Tableau bi-dimensionnel, la première clé est la race, la deuxième un indice indexant les stats à conserver : </p>
+<ol>
+<li>
+Stars du <a class="el" href="classroyaume.html">royaume</a> </li>
+<li>
+Population du <a class="el" href="classroyaume.html">royaume</a> </li>
+<li>
+Argent gagné par l'hotel de vente </li>
+<li>
+Argent gagné par la taverne </li>
+<li>
+Argent gagné par le forgeron </li>
+<li>
+Argent gagné par l'armurerie </li>
+<li>
+Argent gagné par l'alchimiste </li>
+<li>
+Argent gagné par l'enchanteur </li>
+<li>
+Argent gagné par l'école de magie </li>
+<li>
+Argent gagné par l'école de <a class="el" href="classcombat.html">combat</a> </li>
+<li>
+Argent gagné par la téléportation </li>
+<li>
+Argent gagné par le chasse </li>
+<li>
+Somme de l'honneur </li>
+<li>
+Somme des niveaux </li>
+<li>
+Total des coûts des bâtiments hors ville </li>
+<li>
+Nombre de cases contôlées </li>
+<li>
+Total des coûts des bâtiments de la ville </li>
+<li>
+Total des coûts des quêtes achetées </li>
+<li>
+Pierre gagnée par les terrains, mines et extracteurs </li>
+<li>
+Bois gagnée par les terrains, scieries et extracteurs </li>
+<li>
+Eau gagnée par les terrains, puits et extracteurs </li>
+<li>
+Sable gagnée par les terrains, carrière de sable et extracteurs </li>
+<li>
+Charbon gagnée par les terrains, meules et extracteurs </li>
+<li>
+Essence Magique gagnée par les terrains, puits à essence et extracteurs </li>
+<li>
+Star gagnée par les terrains et extracteurs </li>
+<li>
+Nourriture gagnée par les terrains, fermes et extracteurs </li>
+</ol>
+
+</div>
+</div>
+<a class="anchor" id="a241b818f48030b628685b2e5119c5624"></a><!-- doxytag: member="journalier2&#45;archives.php::$total" ref="a241b818f48030b628685b2e5119c5624" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$total = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Population totale. </p>
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

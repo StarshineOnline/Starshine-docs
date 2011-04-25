@@ -27,146 +27,311 @@
   </div>
 </div>
 <div class="contents">
-<h1>Référence de la classe entite</h1><!-- doxytag: class="entite" -->
-<p>Description of <a class="el" href="classentite.html" title="Description of entite.">entite</a>.  
+<h1>Référence de la classe entite</h1><!-- doxytag: class="entite" --><!-- doxytag: inherits="placable" -->
+<p>Classe représentant les participants à un <a class="el" href="classcombat.html">combat</a>.  
 <a href="#_details">Plus de détails...</a></p>
 <div class="dynheader">
 Graphe d'héritage de entite:</div>
 <div class="dynsection">
-<div class="center"><img src="classentite__inherit__graph.png" border="0" usemap="#entite_inherit__map" alt="Inheritance graph"/></div>
-<map name="entite_inherit__map" id="entite_inherit__map">
-<area shape="rect" href="classperso.html" title="{perso\n|+ $poscase\l+ $pospita\l+ $share_xp\l+ $grade\l+ $enchantement\l+ $competences\l+ $inventaire_array\l+ $inventaire_slot_array\l+ $pp\l+ $pm\l+ $pp_base\l+ $pm_base\l+ $enchant\l+ $armure\l+ $reserve\l+ $coef_melee\l+ $coef_incantation\l+ $coef_distance\l+ $coef_blocage\l+ $hp_maximum\l+ $mp_maximum\l+ $reserve_bonus\l+ $arme\l+ $arme_gauche\l+ $bouclier\l+ $accessoire\l+ $action\l+ $action_do\l&#45; $id\l&#45; $mort\l&#45; $nom\l&#45; $password\l&#45; $exp\l&#45; $honneur\l&#45; $reputation\l&#45; $level\l&#45; $rang_royaume\l&#45; $vie\l&#45; $forcex\l&#45; $dexterite\l&#45; $puissance\l&#45; $volonte\l&#45; $energie\l&#45; $race\l&#45; $classe\l&#45; $classe_id\l&#45; $inventaire\l&#45; $inventaire_slot\l&#45; $pa\l&#45; $dernieraction\l&#45; $action_a\l&#45; $action_d\l&#45; $sort_jeu\l&#45; $sort_combat\l&#45; $comp_combat\l&#45; $comp_jeu\l&#45; $star\l&#45; $x\l&#45; $y\l&#45; $groupe\l&#45; $hp\l&#45; $hp_max\l&#45; $mp\l&#45; $mp_max\l&#45; $melee\l&#45; $distance\l&#45; $esquive\l&#45; $blocage\l&#45; $incantation\l&#45; $sort_vie\l&#45; $sort_element\l&#45; $sort_mort\l&#45; $identification\l&#45; $craft\l&#45; $alchimie\l&#45; $architecture\l&#45; $forge\l&#45; $survie\l&#45; $facteur_magie\l&#45; $facteur_sort_vie\l&#45; $facteur_sort_mort\l&#45; $facteur_sort_element\l&#45; $regen_hp\l&#45; $maj_hp\l&#45; $maj_mp\l&#45; $point_sso\l&#45; $quete\l&#45; $quete_fini\l&#45; $dernier_connexion\l&#45; $statut\l&#45; $fin_ban\l&#45; $frag\l&#45; $crime\l&#45; $amende\l&#45; $teleport_roi\l&#45; $cache_classe\l&#45; $cache_stat\l&#45; $cache_niveau\l&#45; $beta\l&#45; $champs_modif\l&#45; $bonus_permanents\l|+ __construct()\l+ sauver()\l+ supprimer()\l+ __toString()\l+ get_id()\l+ get_mort()\l+ get_nom()\l+ get_password()\l+ get_exp()\l+ get_honneur()\l+ get_reputation()\l+ get_level()\l+ get_rang_royaume()\l+ get_vie()\l+ get_forcex()\l+ get_dexterite()\l+ get_puissance()\l+ get_volonte()\l+ get_energie()\l+ get_race()\l+ get_classe()\l+ get_classe_id()\l+ get_inventaire()\l+ get_inventaire_slot()\l+ get_pa()\l+ get_dernieraction()\l+ get_action_a()\l+ get_action_d()\l+ get_sort_jeu()\l+ get_sort_combat()\l+ get_comp_combat()\l+ get_comp_jeu()\l+ get_star()\l+ get_x()\l+ get_y()\l+ get_groupe()\l+ get_hp()\l+ get_hp_max()\l+ get_mp()\l+ get_mp_max()\l+ get_melee()\l+ get_distance()\l+ get_esquive()\l+ get_blocage()\l+ get_incantation()\l+ get_sort_vie()\l+ get_sort_element()\l+ get_sort_mort()\l+ get_identification()\l+ get_craft()\l+ get_alchimie()\l+ get_architecture()\l+ get_forge()\l+ get_survie()\l+ get_facteur_magie()\l+ get_facteur_sort_vie()\l+ get_facteur_sort_mort()\l+ get_facteur_sort_element()\l+ get_regen_hp()\l+ get_maj_hp()\l+ get_maj_mp()\l+ get_point_sso()\l+ get_quete()\l+ get_quete_fini()\l+ get_dernier_connexion()\l+ get_statut()\l+ get_fin_ban()\l+ get_frag()\l+ get_crime()\l+ get_amende()\l+ get_teleport_roi()\l+ get_cache_classe()\l+ get_cache_stat()\l+ get_cache_niveau()\l+ get_beta()\l+ set_id()\l+ set_mort()\l+ set_nom()\l+ set_password()\l+ set_exp()\l+ set_honneur()\l+ set_reputation()\l+ set_level()\l+ set_rang_royaume()\l+ set_vie()\l+ set_forcex()\l+ set_dexterite()\l+ set_puissance()\l+ set_volonte()\l+ set_energie()\l+ set_race()\l+ set_classe()\l+ set_classe_id()\l+ set_inventaire()\l+ set_inventaire_slot()\l+ set_pa()\l+ set_dernieraction()\l+ set_action_a()\l+ set_action_d()\l+ set_sort_jeu()\l+ set_sort_combat()\l+ set_comp_combat()\l+ set_comp_jeu()\l+ set_star()\l+ set_x()\l+ set_y()\l+ set_groupe()\l+ set_hp()\l+ set_hp_max()\l+ set_mp()\l+ set_mp_max()\l+ set_melee()\l+ set_distance()\l+ set_esquive()\l+ set_blocage()\l+ set_incantation()\l+ set_sort_vie()\l+ set_sort_element()\l+ set_sort_mort()\l+ set_identification()\l+ set_craft()\l+ set_alchimie()\l+ set_architecture()\l+ set_forge()\l+ set_survie()\l+ set_facteur_magie()\l+ set_facteur_sort_vie()\l+ set_facteur_sort_mort()\l+ set_facteur_sort_element()\l+ set_regen_hp()\l+ set_maj_hp()\l+ set_maj_mp()\l+ set_point_sso()\l+ set_quete()\l+ set_quete_fini()\l+ set_dernier_connexion()\l+ set_statut()\l+ set_fin_ban()\l+ set_frag()\l+ set_crime()\l+ set_amende()\l+ set_teleport_roi()\l+ set_cache_classe()\l+ set_cache_stat()\l+ set_cache_niveau()\l+ set_beta()\l+ get_comp()\l+ set_comp()\l+ get_comp_perso()\l+ is_comp_perso()\l+ get_buff()\l+ get_nb_buff()\l+ is_buff()\l+ add_buff()\l+ get_grade()\l+ get_enchantement()\l+ is_enchantement()\l+ is_competence()\l+ get_competence()\l+ set_competence()\l+ get_arme_degat()\l+ get_artisanat()\l+ get_inventaire_partie()\l+ get_inventaire_slot_partie()\l+ set_inventaire_slot_partie()\l+ get_armure()\l+ get_pm()\l+ get_pp()\l+ get_reserve()\l+ get_coef_melee()\l+ get_coef_incantation()\l+ get_coef_distance()\l+ get_coef_blocage()\l+ get_pos()\l+ get_distance_joueur()\l+ get_distance_pytagore()\l+ get_force()\l+ set_force()\l+ get_hp_maximum()\l+ get_mp_maximum()\l+ get_reserve_bonus()\l+ inventaire()\l+ get_arme()\l+ get_arme_gauche()\l+ get_bouclier()\l+ get_accessoire()\l+ register_gemme_enchantement()\l+ get_distance_tir()\l+ get_arme_type()\l+ get_liste_quete()\l+ prend_quete()\l+ get_case()\l+ is_groupe()\l+ recupaction()\l+ check_materiel()\l+ check_perso()\l+ recherche_objet()\l+ supprime_objet()\l+ prend_objet()\l+ desequip()\l+ equip_objet()\l+ get_bonus_permanents()\l+ add_bonus_permanents()\l+ get_bonus_shine()\l+ applique_bonus()\l+ add_pa()\l+ add_hp()\l+ add_mp()\l+ in_arene()\l+ trigger_arene()\l+ create()\l}" alt="" coords="5,2363,240,8237"/></map>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de entite:</div>
+<div class="dynsection">
+<div class="center"><img src="classentite__coll__graph.png" border="0" usemap="#entite_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classentite-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9d07f1e86ab7755eed1c975bc4a87e61">__construct</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, &amp;$objet)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7a7d1fb2228d05b60a201f0b9039f715">get_type</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a4809138556ccd78d74a2eef19597ca01">is_type</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#addd1a3e60fb051e32896f323da18041a">get_objet</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a80561cd9a9994a21bda0017f75127dbd">get_id</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae67a4e4a1f18fcbff2718bf2a5569ae5">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a492da547fa064a452ffd6876468229b6">get_action</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab19a796a0679c7a80243280f1dd20bc8">get_rang_royaume</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aec8abde4dcbce187f7a80cc31357a5c8">get_rang</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aca75a951cd404b2e2109e73f4987542f">get_arme_type</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab3daf9359c8f2583f644e1a741d542bd">get_bouclier_type</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9ad48c50d467a4ffcab1f69d0bf53373">get_comp_combat</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0126c98f35c52bb65447aa7256cabe57">get_comp</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a77acd8eab95047134b2e92f458d9c8ba">set_comp</a> ($valeur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af960d681bfcf2d11d12b4dab8e8aabcf">get_x</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac518eafc978e5be47fb339ea33ad964d">get_y</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0b9f4554a0735f3f04f47bf8a25f6d1b">get_hp</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#acb642ef0db02370f88e78470fba6a586">set_hp</a> ($valeur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5c77dd23213cbbdff96c1944792fa377">get_hp_max</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aefbe610a1ca6c08387eb9cf0960e421c">get_reserve</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a91119512c63d3591957ea58cfcbf5c7d">set_reserve</a> ($valeur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a4f3e709130c00181e01ee424ecbc2c76">get_pa</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6b7e24bd971a159f160064ff0296e464">get_nom</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1a12fcd2dbb967f145f1a33f09fd9971">get_race</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a81dfc3bfd265bb53c9b77ced3256747e">get_pp</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a45b15a048e4153923d2aa059bff103f4">set_pp</a> ($valeur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab34c8ec50cc6373d5c46fdbfc0b3ce90">get_pm</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af556930c753a52a5a6cf8f719c9d4a89">set_pm</a> ($valeur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7c7358d37a498dae78e1349e9fcba293">get_distance_tir</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a4c75ba7841bb4a398b664d762e7c710a">get_esquive</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8356c39545eccfc52941cd16a5a347b2">get_distance</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1b9b7ab89988866c601da83f57ba795a">get_melee</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a996e5143659e5f4add73d86183b0c48b">get_incantation</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5e1b81b730fbcb728f1778889427747b">get_sort_mort</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a01a71ba38e30644455651e1e401cc4b2">get_sort_vie</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9bc9d27875f23959c4f66e803a16e7bf">get_sort_element</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aed45d22bb625cd6260cbd735c62b8ae6">get_buff</a> ($nom=false, $champ=false, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=false)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a09ee5bc28a4a40a5bc2f697f96aa3a15">get_buff_only</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6481394e9a8f9bbfd9d190e279e5fcab">get_etat</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7f954b89fcf6ffa5b91b08fdeaf06c77">get_force</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa1ee64c6263935df75c8f8f04fe3feec">get_puissance</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a057737bbdf2ebe3a3bac727e63ce6c6b">get_energie</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac323c4d3d3781f94638c9be95be5e894">get_vie</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab4c56b24d587a328484e76ff4e7be089">get_volonte</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9ab0e1dde991a4d9dcb4303625061321">set_volonte</a> ($volonte)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf93b88455a50bda430b2e2d8d2b4a82">get_dexterite</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf1c28c2e16f57e63f0d923f5b67ad53">set_dexterite</a> ($dexterite)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1f33edc71552e2e40705f861faff0c73">get_enchantement</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#acd5052bd180487be3c79438132195785">get_arme_degat</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a606da42e879119fc196fffbb67876066">get_bouclier_degat</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6825d31b3108c9bcd58aa76c043712f7">get_level</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aedf08b50782ac15602a33262c3acb391">get_grade</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3250a12c51b795318448670b16fff47d">get_potentiel_toucher</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa2727a6b9a2fdefabdf06b2a57501332">set_potentiel_toucher</a> ($valeur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf515065d5ea697ddc5069963114a95c">get_potentiel_parer</a> ($esquive=false)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a675d1737625b6c7055f2d4c06c7cc464">set_potentiel_parer</a> ($valeur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a225099bd3284b916049d8b8588f95399">is_buff</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac46be739e21731b8e7ab9c562b91f3ef">is_competence</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=false)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae852d975781ccfe18a1fabd0b2a81203">get_competence</a> ($nom)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9b8852c45a6e451ea772759c6b1c3871">get_pos</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a993a5c98aa5cebacad220a0343548ceb">get_espece</a> ()</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Effes parmanents</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp295bcce4c4a282856f720f0ba409849b"></a>Effets modifiant les caractéristiques et les compétences.</p>
+<p>Ces effets peuvent être dus aux bonus raciaux, aux objets portés… </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac3d3fc92d0bf9b68b7a203f4ab82bc56">get_bonus_permanents</a> ($bonus)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">renvoie un bonus permanent particulier  <a href="#ac3d3fc92d0bf9b68b7a203f4ab82bc56"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0c7fffeb36469379224b196dbf88fbc2">get_effets_permanents</a> (&amp;$effets, $mode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les effets présents d'un certains type.  <a href="#a0c7fffeb36469379224b196dbf88fbc2"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Groupe &amp; quêtes</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpd833809aff414ef2e175f8acda1c4f5b"></a>Données et méthodes liées au <a class="el" href="classgroupe.html">groupe</a> et aux quêtes. </p>
+<br/><br/></div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6473d0e8b7a3debe1d4b37ee95849a33">get_groupe</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du <a class="el" href="classgroupe.html">groupe</a> du personnage.  <a href="#a6473d0e8b7a3debe1d4b37ee95849a33"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aaeb86024bf3155914be7e3c8577e3c14">get_liste_quete</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abd8c94b03c40132f9a35f6c2cfa64a0a">get_honneur</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1999c0991d3f993ae913a44ba3643787">get_reputation</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a312855eddfab87719a49204d82cc5fd8">dump</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a10646a5407cc0a2696b665fb6cc76be5">bouclier</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a2ad3977293b3d1567013ad55da110777">get_inventaire</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad79d71303d014bf02e107b46d4c9c327">get_blocage</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abf05c6628084772245241f956b268c2b">maj_comp</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aea948e98cdbb07348b1d20111ed56cd1">get_exp</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3ea577f4439559fe40d34b4e60f12c6f">get_star</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adc5c2f8db846fe24562d47941f6a57f0">get_point_victoire</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5d7260b1ab0e4aa3b150c332ead67957">set_pa</a> ($new_pa)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af90ef7f64b5dc739e3cf8de98607f795">get_arme</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a552a33898107d1f1d96708bda58447a5">add_hp</a> ($add_hp)</td></tr>
-<tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3142078b1b447809a3aa63f5c7a06af7">$buff</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a680187e10b8bbb9aaa075170f585b15e">$etat</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aeb2fc0fc4f88bf748681d2dd8faf18ca">$potentiel_bloquer</a></td></tr>
-<tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae59dd43ec75bfc244c6a8905c9d5d73b">$id</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a42b2637d7951d34a80f26a7717767895">$action</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5ceaeae138f94cfc4956c4c9b59aaa1d">$arme_type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a55b7bbf4d2f8dd05fd2f9cff9647d7a6">$comp_combat</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#acf296d11a6a95a3899e52f10481161c9">$comp</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abda20efc3e0c7e331ca122dec1685954">$x</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac29b038d1aaba2c78633fe913dcf1192">$y</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8b84dc225825cbc0f30ec329b6f25ea2">$hp</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a106ff46c0e27f5c528ee5f0cf3d1abac">$hp_max</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abe497187858249e18d3c4139d2c30fec">$reserve</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab3f1a16d6dfa583b6e251852a9f3f421">$pa</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a797ecc45811815de502af58a061bf087">$nom</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7008430f1f0452768e243aa014b16fff">$race</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#afb5b99f24c61ec190d6d2e9db4c99386">$pp</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a381ee766e3bd31fddf23f6805e78a8b5">$pm</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad9c1cde3c44feae480876fca8aeaf02b">$distance_tir</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa746ff5d6780a8b4105230e99e7bdfca">$esquive</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae4cbab14d5d073426bbbda8d0abbe013">$distance</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des quêtes que possède le personnage sous forme de tableau.  <a href="#aaeb86024bf3155914be7e3c8577e3c14"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Position &amp; déplacement</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp979f4cf8a403eaa17c449d8fec843f30"></a>Données et méthodes liées à la position et au déplacement. </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9b8852c45a6e451ea772759c6b1c3871">get_pos</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la position sous forme d'un seul entier.  <a href="#a9b8852c45a6e451ea772759c6b1c3871"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aac49d716c87774de394425926f2cc76e">in_arene</a> ($filter= '')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si le personnage est dans une arène.  <a href="#aac49d716c87774de394425926f2cc76e"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae17b44316307a4442799a83a15926d89">get_table</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pour compatibilité (le temps de refaire la hiérarchie).  <a href="#ae17b44316307a4442799a83a15926d89"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Compétences</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpe268456e42b5f2786070bdd09f149240"></a>Données et méthodes liées aux compténtences du personnage : mêlée, esquive, incatation, … </p>
+<br/><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aef4d5325b2c63249e28ee1beda4b81ac">$blocage</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a520ca662ce817807fef70256223ff1d2">$melee</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence blocage.  <a href="#aef4d5325b2c63249e28ee1beda4b81ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae4cbab14d5d073426bbbda8d0abbe013">$distance</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence tir à distance.  <a href="#ae4cbab14d5d073426bbbda8d0abbe013"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa746ff5d6780a8b4105230e99e7bdfca">$esquive</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence esquive.  <a href="#aa746ff5d6780a8b4105230e99e7bdfca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a26c92e8cf9f83d8bc9e08610666ae704">$incantation</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a07e5cd6b4dd7e558802d8919083cdd12">$sort_mort</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#afcaa189deede5bc5c8b0f6f7cfbfa200">$sort_vie</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence incantation.  <a href="#a26c92e8cf9f83d8bc9e08610666ae704"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a520ca662ce817807fef70256223ff1d2">$melee</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence mêlée.  <a href="#a520ca662ce817807fef70256223ff1d2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae3aa3789e3d5a283c00510d6c19ae6c1">$sort_element</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5fd1bf3494c454a75dff81046bf49cfd">$force</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac21af561d72821fcb4a047557a7d402b">$puissance</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aaef7777fdb9df9053c0d4f69a60a43ea">$energie</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abae7999dd3dd7af49110a000c68745ad">$vie</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5e31b27d48cf2b09c054ce301d11e553">$volonte</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3bd30c0d7c2b453cc66ff85336521bfc">$dexterite</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7906f3754ae65006ee4315121c47b959">$enchantement</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aecd236007e55ba2bb9d571505663b7fe">$arme_degat</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8038c597d23c0a9fb0825d1d55b2c15e">$bouclier_degat</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab82eadbc6685606cf4ef3f2ca5632ac2">$level</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a59d316ce2d718a2b4a1f4cb83071d50c">$type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9369d9339ea1ef0f8f36a0e9e4edfbbb">$rang_royaume</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1cfc7b257768b43c4e93c6179ee96e72">$espece</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad836236d4db669efdcde81aa0dcc2ff3">$point_victoire</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence magie élémentaire.  <a href="#ae3aa3789e3d5a283c00510d6c19ae6c1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a07e5cd6b4dd7e558802d8919083cdd12">$sort_mort</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence nécromancie.  <a href="#a07e5cd6b4dd7e558802d8919083cdd12"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#afcaa189deede5bc5c8b0f6f7cfbfa200">$sort_vie</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compétence magie de la vie.  <a href="#afcaa189deede5bc5c8b0f6f7cfbfa200"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#acf296d11a6a95a3899e52f10481161c9">$comp</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8e577fe40082ea32e1ad92d17e0f9457">$competence</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a42099f5ceac03e530602fdfd1eb1c866">$objet_ref</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad79d71303d014bf02e107b46d4c9c327">get_blocage</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le blocage.  <a href="#ad79d71303d014bf02e107b46d4c9c327"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0126c98f35c52bb65447aa7256cabe57">get_comp</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">???  <a href="#a0126c98f35c52bb65447aa7256cabe57"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9ad48c50d467a4ffcab1f69d0bf53373">get_comp_combat</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les compétence de <a class="el" href="classcombat.html">combat</a>.  <a href="#a9ad48c50d467a4ffcab1f69d0bf53373"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac1a252768caecf1ec34cd384deb4f417">get_competence</a> ($nom, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la compétence demandée.  <a href="#ac1a252768caecf1ec34cd384deb4f417"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8356c39545eccfc52941cd16a5a347b2">get_distance</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le tir à distance.  <a href="#a8356c39545eccfc52941cd16a5a347b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a4c75ba7841bb4a398b664d762e7c710a">get_esquive</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'esquive.  <a href="#a4c75ba7841bb4a398b664d762e7c710a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a996e5143659e5f4add73d86183b0c48b">get_incantation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'incantation.  <a href="#a996e5143659e5f4add73d86183b0c48b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1b9b7ab89988866c601da83f57ba795a">get_melee</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la mêlée.  <a href="#a1b9b7ab89988866c601da83f57ba795a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9bc9d27875f23959c4f66e803a16e7bf">get_sort_element</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la magie élémentaire.  <a href="#a9bc9d27875f23959c4f66e803a16e7bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5e1b81b730fbcb728f1778889427747b">get_sort_mort</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la nécromancie.  <a href="#a5e1b81b730fbcb728f1778889427747b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a01a71ba38e30644455651e1e401cc4b2">get_sort_vie</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la magie de vie.  <a href="#a01a71ba38e30644455651e1e401cc4b2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac46be739e21731b8e7ab9c562b91f3ef">is_competence</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si l'entité posède une certaine compétence ou s'il en a de manière générale.  <a href="#ac46be739e21731b8e7ab9c562b91f3ef"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abf05c6628084772245241f956b268c2b">maj_comp</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Mise-à-jour des compétences à partir de l'objet.  <a href="#abf05c6628084772245241f956b268c2b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a77acd8eab95047134b2e92f458d9c8ba">set_comp</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">???  <a href="#a77acd8eab95047134b2e92f458d9c8ba"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Sorts, compétences &amp; buffs</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpbb317c890da011222af6452938be354f"></a>Données et méthodes ayant trait aux sorts et compétences de <a class="el" href="classcombat.html">combat</a> et hors <a class="el" href="classcombat.html">combat</a>.</p>
+<p>Ainsi que les buffs et débuffs du actifs sur l'entité. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a55b7bbf4d2f8dd05fd2f9cff9647d7a6">$comp_combat</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Liste des compétences de <a class="el" href="classcombat.html">combat</a>.  <a href="#a55b7bbf4d2f8dd05fd2f9cff9647d7a6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3142078b1b447809a3aa63f5c7a06af7">$buff</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Buffs &amp; débuffs actifs sur le personnage.  <a href="#a3142078b1b447809a3aa63f5c7a06af7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aae8e8681d427c55fb8dfc5b451069348">add_buff</a> ($nom, $effet, $effet2=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute un <a class="el" href="classbuff.html">buff</a>.  <a href="#aae8e8681d427c55fb8dfc5b451069348"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aed45d22bb625cd6260cbd735c62b8ae6">get_buff</a> ($nom=false, $champ=false, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci.  <a href="#aed45d22bb625cd6260cbd735c62b8ae6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a09ee5bc28a4a40a5bc2f697f96aa3a15">get_buff_only</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie un tableau contenant uniqument les buffs (c'est-à-dire sans les débuffs).  <a href="#a09ee5bc28a4a40a5bc2f697f96aa3a15"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a225099bd3284b916049d8b8588f95399">is_buff</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html">buff</a> nom.  <a href="#a225099bd3284b916049d8b8588f95399"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af43179a81b452402e86236617178622c">supprime_buff</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime un <a class="el" href="classbuff.html">buff</a>.  <a href="#af43179a81b452402e86236617178622c"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Les achievements</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpd50c84fb738c633a4599af35845cc9a3"></a>Gestion des achievements </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a53cd7f6a62b4b251893a3c84f3ae80f3">$compteur_critique</a> = 0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Compteur de coups critiques.  <a href="#a53cd7f6a62b4b251893a3c84f3ae80f3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf61f81b0b28aefe6ac8512a99903017">get_compteur</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Revnoie la valeur d'un compteur.  <a href="#adf61f81b0b28aefe6ac8512a99903017"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae79e848ca88b8b8ed6238de7aad6f0f5">get_compteur_critique</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la valeur du compteur de critiques.  <a href="#ae79e848ca88b8b8ed6238de7aad6f0f5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ace6a630b6b672b17d5c7e0ab674ad512">set_compteur_critique</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Incrémente le compteur de critiques.  <a href="#ace6a630b6b672b17d5c7e0ab674ad512"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Caractéristiques</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrp72ce987b34bc8d43aa28b79844aedef6"></a>Données et méthodes liées aux caractéristiques de l'entité : constitution, force, dextérité, puissance, volonté et énergie. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3bd30c0d7c2b453cc66ff85336521bfc">$dexterite</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Caractéristique "dextérité".  <a href="#a3bd30c0d7c2b453cc66ff85336521bfc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aaef7777fdb9df9053c0d4f69a60a43ea">$energie</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Caractéristique "énergie".  <a href="#aaef7777fdb9df9053c0d4f69a60a43ea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5fd1bf3494c454a75dff81046bf49cfd">$force</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Caractéristique "force".  <a href="#a5fd1bf3494c454a75dff81046bf49cfd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac21af561d72821fcb4a047557a7d402b">$puissance</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Caractéristique "puissance".  <a href="#ac21af561d72821fcb4a047557a7d402b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abae7999dd3dd7af49110a000c68745ad">$vie</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Caractéristique "constitution".  <a href="#abae7999dd3dd7af49110a000c68745ad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5e31b27d48cf2b09c054ce301d11e553">$volonte</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Caractéristique "volonté".  <a href="#a5e31b27d48cf2b09c054ce301d11e553"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf93b88455a50bda430b2e2d8d2b4a82">get_dexterite</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la dextérité.  <a href="#adf93b88455a50bda430b2e2d8d2b4a82"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a057737bbdf2ebe3a3bac727e63ce6c6b">get_energie</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'énergie.  <a href="#a057737bbdf2ebe3a3bac727e63ce6c6b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7f954b89fcf6ffa5b91b08fdeaf06c77">get_force</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la force.  <a href="#a7f954b89fcf6ffa5b91b08fdeaf06c77"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa1ee64c6263935df75c8f8f04fe3feec">get_puissance</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la puissance.  <a href="#aa1ee64c6263935df75c8f8f04fe3feec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ac323c4d3d3781f94638c9be95be5e894">get_vie</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la constitution.  <a href="#ac323c4d3d3781f94638c9be95be5e894"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab4c56b24d587a328484e76ff4e7be089">get_volonte</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la volonté.  <a href="#ab4c56b24d587a328484e76ff4e7be089"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf1c28c2e16f57e63f0d923f5b67ad53">set_dexterite</a> ($dexterite)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la dextérité.  <a href="#adf1c28c2e16f57e63f0d923f5b67ad53"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9ab0e1dde991a4d9dcb4303625061321">set_volonte</a> ($volonte)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la volonté.  <a href="#a9ab0e1dde991a4d9dcb4303625061321"></a><br/></td></tr>
+<tr><td colspan="2"><h2>PA, HP &amp; MP</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrp7d0bbc080666a538237d81c0c1a231a6"></a>Données et méthodes ayant trait aux PA, HP &amp; MP : valeur actuelle, maximale, prochaine régénération et augmentation. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8b84dc225825cbc0f30ec329b6f25ea2">$hp</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">&lt; Nombre de PA.  <a href="#a8b84dc225825cbc0f30ec329b6f25ea2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a106ff46c0e27f5c528ee5f0cf3d1abac">$hp_max</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">HP maximums.  <a href="#a106ff46c0e27f5c528ee5f0cf3d1abac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab3f1a16d6dfa583b6e251852a9f3f421">$pa</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a552a33898107d1f1d96708bda58447a5">add_hp</a> ($add_hp)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute de HP à la valeur actuelle.  <a href="#a552a33898107d1f1d96708bda58447a5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0b9f4554a0735f3f04f47bf8a25f6d1b">get_hp</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les HP actuels.  <a href="#a0b9f4554a0735f3f04f47bf8a25f6d1b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5c77dd23213cbbdff96c1944792fa377">get_hp_max</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les HP maximaux.  <a href="#a5c77dd23213cbbdff96c1944792fa377"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a4f3e709130c00181e01ee424ecbc2c76">get_pa</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nomnre de PA.  <a href="#a4f3e709130c00181e01ee424ecbc2c76"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#acb642ef0db02370f88e78470fba6a586">set_hp</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les HP actuels.  <a href="#acb642ef0db02370f88e78470fba6a586"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5d7260b1ab0e4aa3b150c332ead67957">set_pa</a> ($new_pa)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les PA.  <a href="#a5d7260b1ab0e4aa3b150c332ead67957"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrp9c2ff6d0683497ad43281c742be15d58"></a>Donnée et méthode sur les inforamations "générales" : <a class="el" href="classclasse.html">classe</a>, rang, niveau, stars, mort, points crimes, … </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab82eadbc6685606cf4ef3f2ca5632ac2">$level</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Niveau de l'entité.  <a href="#ab82eadbc6685606cf4ef3f2ca5632ac2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7008430f1f0452768e243aa014b16fff">$race</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Race de l'entité.  <a href="#a7008430f1f0452768e243aa014b16fff"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9369d9339ea1ef0f8f36a0e9e4edfbbb">$rang_royaume</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Grade de l'entité au sein de son <a class="el" href="classroyaume.html">royaume</a>.  <a href="#a9369d9339ea1ef0f8f36a0e9e4edfbbb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1cfc7b257768b43c4e93c6179ee96e72">$espece</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Espèce de l'entité.  <a href="#a1cfc7b257768b43c4e93c6179ee96e72"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad836236d4db669efdcde81aa0dcc2ff3">$point_victoire</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Points de victoire gagnés si l'entité est détruite.  <a href="#ad836236d4db669efdcde81aa0dcc2ff3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a59d316ce2d718a2b4a1f4cb83071d50c">$type</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Type de l'entité.  <a href="#a59d316ce2d718a2b4a1f4cb83071d50c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a680187e10b8bbb9aaa075170f585b15e">$etat</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">État de l'entité.  <a href="#a680187e10b8bbb9aaa075170f585b15e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a993a5c98aa5cebacad220a0343548ceb">get_espece</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'espèce de l'entité.  <a href="#a993a5c98aa5cebacad220a0343548ceb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6481394e9a8f9bbfd9d190e279e5fcab">get_etat</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'état.  <a href="#a6481394e9a8f9bbfd9d190e279e5fcab"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aea948e98cdbb07348b1d20111ed56cd1">get_exp</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'expérience.  <a href="#aea948e98cdbb07348b1d20111ed56cd1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aedf08b50782ac15602a33262c3acb391">get_grade</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le <a class="el" href="classgrade.html">grade</a> sous forme d'objet.  <a href="#aedf08b50782ac15602a33262c3acb391"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abd8c94b03c40132f9a35f6c2cfa64a0a">get_honneur</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'honneur.  <a href="#abd8c94b03c40132f9a35f6c2cfa64a0a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6825d31b3108c9bcd58aa76c043712f7">get_level</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le niveau de l'entité.  <a href="#a6825d31b3108c9bcd58aa76c043712f7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adc5c2f8db846fe24562d47941f6a57f0">get_point_victoire</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les points de victoire gagnés.  <a href="#adc5c2f8db846fe24562d47941f6a57f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1a12fcd2dbb967f145f1a33f09fd9971">get_race</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la race.  <a href="#a1a12fcd2dbb967f145f1a33f09fd9971"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aec8abde4dcbce187f7a80cc31357a5c8">get_rang</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le <a class="el" href="classgrade.html">grade</a>.  <a href="#aec8abde4dcbce187f7a80cc31357a5c8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab19a796a0679c7a80243280f1dd20bc8">get_rang_royaume</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le <a class="el" href="classgrade.html">grade</a> de l'entité au sein de son <a class="el" href="classroyaume.html">royaume</a>.  <a href="#ab19a796a0679c7a80243280f1dd20bc8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1999c0991d3f993ae913a44ba3643787">get_reputation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la réputation.  <a href="#a1999c0991d3f993ae913a44ba3643787"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3ea577f4439559fe40d34b4e60f12c6f">get_star</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les stars.  <a href="#a3ea577f4439559fe40d34b4e60f12c6f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7a7d1fb2228d05b60a201f0b9039f715">get_type</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le type de l'entité.  <a href="#a7a7d1fb2228d05b60a201f0b9039f715"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a4809138556ccd78d74a2eef19597ca01">is_type</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si l'entité est du type demandé.  <a href="#a4809138556ccd78d74a2eef19597ca01"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Inventaires et objets</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpadcc357c37b3d18fbc57fa9b68fee740"></a>Données et méthodes liées à l'inventaire et aux objets portés ou utiliser par les perosnnages. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aecd236007e55ba2bb9d571505663b7fe">$arme_degat</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dégâts de l'arme.  <a href="#aecd236007e55ba2bb9d571505663b7fe"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5ceaeae138f94cfc4956c4c9b59aaa1d">$arme_type</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Type de l'arme utilisée.  <a href="#a5ceaeae138f94cfc4956c4c9b59aaa1d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8038c597d23c0a9fb0825d1d55b2c15e">$bouclier_degat</a> = 0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dégâts bloqués par le bouclier.  <a href="#a8038c597d23c0a9fb0825d1d55b2c15e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a241a4da148bdc007e861f12663e566e7">$malus_hache</a> = 1</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Malus d'esquive dû au port d'une hache.  <a href="#a241a4da148bdc007e861f12663e566e7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3ab36c0b2c1675fa24e6e58729ed5b58">$saved_inventaire</a> = null</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inventaire.  <a href="#a3ab36c0b2c1675fa24e6e58729ed5b58"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7906f3754ae65006ee4315121c47b959">$enchantement</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Liste des enchantements de gemmes.  <a href="#a7906f3754ae65006ee4315121c47b959"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a381ee766e3bd31fddf23f6805e78a8b5">$pm</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Protection magique.  <a href="#a381ee766e3bd31fddf23f6805e78a8b5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#afb5b99f24c61ec190d6d2e9db4c99386">$pp</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Protection physique.  <a href="#afb5b99f24c61ec190d6d2e9db4c99386"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a10646a5407cc0a2696b665fb6cc76be5">bouclier</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le bouclier.  <a href="#a10646a5407cc0a2696b665fb6cc76be5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af90ef7f64b5dc739e3cf8de98607f795">get_arme</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'arme utilisée.  <a href="#af90ef7f64b5dc739e3cf8de98607f795"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#acd5052bd180487be3c79438132195785">get_arme_degat</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les dégâts de l'arme.  <a href="#acd5052bd180487be3c79438132195785"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aca75a951cd404b2e2109e73f4987542f">get_arme_type</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le type de l'arme utilisée.  <a href="#aca75a951cd404b2e2109e73f4987542f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a606da42e879119fc196fffbb67876066">get_bouclier_degat</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les dégâts bloqués par le bouclier.  <a href="#a606da42e879119fc196fffbb67876066"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab3daf9359c8f2583f644e1a741d542bd">get_bouclier_type</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le type de bouclier ('bouclier' ou '').  <a href="#ab3daf9359c8f2583f644e1a741d542bd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1f33edc71552e2e40705f861faff0c73">get_enchantement</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des enchantements de gemmes.  <a href="#a1f33edc71552e2e40705f861faff0c73"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a2ad3977293b3d1567013ad55da110777">get_inventaire</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'inventaire.  <a href="#a2ad3977293b3d1567013ad55da110777"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab34c8ec50cc6373d5c46fdbfc0b3ce90">get_pm</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la PM.  <a href="#ab34c8ec50cc6373d5c46fdbfc0b3ce90"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a81dfc3bfd265bb53c9b77ced3256747e">get_pp</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la PP.  <a href="#a81dfc3bfd265bb53c9b77ced3256747e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af556930c753a52a5a6cf8f719c9d4a89">set_pm</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la PM.  <a href="#af556930c753a52a5a6cf8f719c9d4a89"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a45b15a048e4153923d2aa059bff103f4">set_pp</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la PP.  <a href="#a45b15a048e4153923d2aa059bff103f4"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Combats</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpfe42498454c475c6382232b949c18daf"></a>Données et méthodes liées aux combats. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad9c1cde3c44feae480876fca8aeaf02b">$distance_tir</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Distance de tir.  <a href="#ad9c1cde3c44feae480876fca8aeaf02b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a42b2637d7951d34a80f26a7717767895">$action</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé.  <a href="#a42b2637d7951d34a80f26a7717767895"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aeb2fc0fc4f88bf748681d2dd8faf18ca">$potentiel_bloquer</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Potentiel bloquer.  <a href="#aeb2fc0fc4f88bf748681d2dd8faf18ca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abe497187858249e18d3c4139d2c30fec">$reserve</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Réserve de mana.  <a href="#abe497187858249e18d3c4139d2c30fec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a492da547fa064a452ffd6876468229b6">get_action</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé.  <a href="#a492da547fa064a452ffd6876468229b6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7c7358d37a498dae78e1349e9fcba293">get_distance_tir</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la distance de tir.  <a href="#a7c7358d37a498dae78e1349e9fcba293"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf515065d5ea697ddc5069963114a95c">get_potentiel_parer</a> ($esquive=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel parer physique.  <a href="#adf515065d5ea697ddc5069963114a95c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3250a12c51b795318448670b16fff47d">get_potentiel_toucher</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel toucher physique.  <a href="#a3250a12c51b795318448670b16fff47d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a07d9473fe4dfd2a7943bc3d2cdf3fb79">get_reserve</a> ($base=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la réerve de mana.  <a href="#a07d9473fe4dfd2a7943bc3d2cdf3fb79"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a675d1737625b6c7055f2d4c06c7cc464">set_potentiel_parer</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel parer physique.  <a href="#a675d1737625b6c7055f2d4c06c7cc464"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa2727a6b9a2fdefabdf06b2a57501332">set_potentiel_toucher</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#aa2727a6b9a2fdefabdf06b2a57501332"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a91119512c63d3591957ea58cfcbf5c7d">set_reserve</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la réerve de mana.  <a href="#a91119512c63d3591957ea58cfcbf5c7d"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Accès à la base de données &amp; création</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpbdcacbe99ec45d1001ea34303647ee28"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a42099f5ceac03e530602fdfd1eb1c866">$objet_ref</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Référence vers l'objet source.  <a href="#a42099f5ceac03e530602fdfd1eb1c866"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aefb65c56a77220a5527271e2b77d0084">get_liste_champs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#aefb65c56a77220a5527271e2b77d0084"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a1ccbb0faeccd89a0f63433fc42cf718b">get_liste_update</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base.  <a href="#a1ccbb0faeccd89a0f63433fc42cf718b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a56a5f582958ac79c18cfd26d9ba1c4c7">get_valeurs_insert</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des valeurs des champspour une insertion dans la base.  <a href="#a56a5f582958ac79c18cfd26d9ba1c4c7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9d07f1e86ab7755eed1c975bc4a87e61">__construct</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, &amp;$objet)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'objet à partir d'un objet source.  <a href="#a9d07f1e86ab7755eed1c975bc4a87e61"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a312855eddfab87719a49204d82cc5fd8">dump</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche un "dump" de l'objet.  <a href="#a312855eddfab87719a49204d82cc5fd8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#addd1a3e60fb051e32896f323da18041a">get_objet</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'objet source.  <a href="#addd1a3e60fb051e32896f323da18041a"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
-<p>Description of <a class="el" href="classentite.html" title="Description of entite.">entite</a>. </p>
+<p>Classe représentant les participants à un <a class="el" href="classcombat.html">combat</a>. </p>
 <dl class="author"><dt><b>Auteur:</b></dt><dd>florian </dd></dl>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a9d07f1e86ab7755eed1c975bc4a87e61"></a><!-- doxytag: member="entite::__construct" ref="a9d07f1e86ab7755eed1c975bc4a87e61" args="($type, &amp;$objet)" -->
@@ -194,9 +359,69 @@ Graphe d'héritage de entite:</div>
 </div>
 <div class="memdoc">
 
+<p>Crée l'objet à partir d'un objet source. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Type de l'entité  $objet Référence vers l'objet source. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="aae8e8681d427c55fb8dfc5b451069348"></a><!-- doxytag: member="entite::add_buff" ref="aae8e8681d427c55fb8dfc5b451069348" args="($nom, $effet, $effet2=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::add_buff </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet2</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Ajoute un <a class="el" href="classbuff.html">buff</a>. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom du <a class="el" href="classbuff.html">buff</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effet</em>&nbsp;</td><td>Effet principal </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effet</em>&nbsp;</td><td>Effet secondaire </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="classperso.html#a3d19333b26dbc24acf19d8c60280409d">perso</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_aae8e8681d427c55fb8dfc5b451069348_cgraph.png" border="0" usemap="#classentite_aae8e8681d427c55fb8dfc5b451069348_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a552a33898107d1f1d96708bda58447a5"></a><!-- doxytag: member="entite::add_hp" ref="a552a33898107d1f1d96708bda58447a5" args="($add_hp)" -->
 <div class="memitem">
 <div class="memproto">
@@ -212,6 +437,8 @@ Graphe d'héritage de entite:</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Ajoute de HP à la valeur actuelle. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#a5f716c6bd373c10444f7d8c92d49068d">perso</a>.</p>
 
@@ -232,12 +459,12 @@ Graphe d'héritage de entite:</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le bouclier. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a10646a5407cc0a2696b665fb6cc76be5_icgraph.png" border="0" usemap="#classentite_a10646a5407cc0a2696b665fb6cc76be5_icgraph_map" alt=""></div>
-<map name="classentite_a10646a5407cc0a2696b665fb6cc76be5_icgraph_map" id="classentite_a10646a5407cc0a2696b665fb6cc76be5_icgraph">
-<area shape="rect" href="classperso.html#a11dc1459070d174cf36fba8d62c2e5ec" title="perso::get_bouclier" alt="" coords="184,5,325,35"/><area shape="rect" href="classentite.html#ab3daf9359c8f2583f644e1a741d542bd" title="entite::get_bouclier_type" alt="" coords="168,59,341,88"/><area shape="rect" href="classperso.html#a9cf5d916fa231054128ae0a93b864bb0" title="perso::check_materiel" alt="" coords="389,5,547,35"/><area shape="rect" href="classperso.html#ae547965052d57c0b329dd055f9846d31" title="perso::check_perso" alt="" coords="596,5,737,35"/></map>
 </div>
 </p>
 
@@ -258,6 +485,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Affiche un "dump" de l'objet. </p>
+
 </div>
 </div>
 <a class="anchor" id="a492da547fa064a452ffd6876468229b6"></a><!-- doxytag: member="entite::get_action" ref="a492da547fa064a452ffd6876468229b6" args="()" -->
@@ -275,6 +504,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé. </p>
+
 </div>
 </div>
 <a class="anchor" id="af90ef7f64b5dc739e3cf8de98607f795"></a><!-- doxytag: member="entite::get_arme" ref="af90ef7f64b5dc739e3cf8de98607f795" args="()" -->
@@ -291,6 +522,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Renvoie l'arme utilisée. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#a94a27bdb23e16947e0414446d94ab840">perso</a>.</p>
 
@@ -311,6 +544,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie les dégâts de l'arme. </p>
+
 </div>
 </div>
 <a class="anchor" id="aca75a951cd404b2e2109e73f4987542f"></a><!-- doxytag: member="entite::get_arme_type" ref="aca75a951cd404b2e2109e73f4987542f" args="()" -->
@@ -328,14 +563,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le type de l'arme utilisée. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a332861352cd3f63880184e4292b381d0">perso</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_aca75a951cd404b2e2109e73f4987542f_icgraph.png" border="0" usemap="#classentite_aca75a951cd404b2e2109e73f4987542f_icgraph_map" alt=""></div>
-<map name="classentite_aca75a951cd404b2e2109e73f4987542f_icgraph_map" id="classentite_aca75a951cd404b2e2109e73f4987542f_icgraph">
-<area shape="rect" href="classentite.html#a3250a12c51b795318448670b16fff47d" title="entite::get_potentiel_toucher" alt="" coords="208,5,405,35"/></map>
 </div>
 </p>
 
@@ -356,6 +591,30 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le blocage. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3d3fc92d0bf9b68b7a203f4ab82bc56"></a><!-- doxytag: member="entite::get_bonus_permanents" ref="ac3d3fc92d0bf9b68b7a203f4ab82bc56" args="($bonus)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_bonus_permanents </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>bonus</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>renvoie un bonus permanent particulier </p>
+
+<p>Réimplémentée dans <a class="el" href="classperso.html#a9235c36e5198d3dae488a7fa0de983ef">perso</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a606da42e879119fc196fffbb67876066"></a><!-- doxytag: member="entite::get_bouclier_degat" ref="a606da42e879119fc196fffbb67876066" args="()" -->
@@ -372,6 +631,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Renvoie les dégâts bloqués par le bouclier. </p>
 
 </div>
 </div>
@@ -390,12 +651,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le type de bouclier ('bouclier' ou ''). </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_ab3daf9359c8f2583f644e1a741d542bd_cgraph.png" border="0" usemap="#classentite_ab3daf9359c8f2583f644e1a741d542bd_cgraph_map" alt=""></div>
-<map name="classentite_ab3daf9359c8f2583f644e1a741d542bd_cgraph_map" id="classentite_ab3daf9359c8f2583f644e1a741d542bd_cgraph">
-<area shape="rect" href="classentite.html#a10646a5407cc0a2696b665fb6cc76be5" title="entite::bouclier" alt="" coords="227,5,341,35"/></map>
 </div>
 </p>
 
@@ -432,14 +693,23 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom (type) du (dé)<a class="el" href="classbuff.html">buff</a> recherché, renvoie tous les buffs actifs si vaut false. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$champ</em>&nbsp;</td><td>Propriété recherchée (correspond à un champ dans la bdd). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Si false on prend le premier <a class="el" href="classbuff.html">buff</a>, si true celui dont le type correspond à $nom. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Tableau des buffs ou valeur demandée. </dd></dl>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a23e0eed728570cb56ab057208988b678">perso</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph.png" border="0" usemap="#classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph_map" alt=""></div>
-<map name="classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph_map" id="classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph">
-<area shape="rect" href="classentite.html#a09ee5bc28a4a40a5bc2f697f96aa3a15" title="entite::get_buff_only" alt="" coords="169,5,316,35"/></map>
 </div>
 </p>
 
@@ -460,12 +730,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie un tableau contenant uniqument les buffs (c'est-à-dire sans les débuffs). </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a09ee5bc28a4a40a5bc2f697f96aa3a15_cgraph.png" border="0" usemap="#classentite_a09ee5bc28a4a40a5bc2f697f96aa3a15_cgraph_map" alt=""></div>
-<map name="classentite_a09ee5bc28a4a40a5bc2f697f96aa3a15_cgraph_map" id="classentite_a09ee5bc28a4a40a5bc2f697f96aa3a15_cgraph">
-<area shape="rect" href="classentite.html#aed45d22bb625cd6260cbd735c62b8ae6" title="entite::get_buff" alt="" coords="204,5,316,35"/></map>
 </div>
 </p>
 
@@ -486,6 +756,15 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>??? </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_a0126c98f35c52bb65447aa7256cabe57_icgraph.png" border="0" usemap="#classentite_a0126c98f35c52bb65447aa7256cabe57_icgraph_map" alt=""></div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a9ad48c50d467a4ffcab1f69d0bf53373"></a><!-- doxytag: member="entite::get_comp_combat" ref="a9ad48c50d467a4ffcab1f69d0bf53373" args="()" -->
@@ -503,11 +782,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie les compétence de <a class="el" href="classcombat.html">combat</a>. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#adafa3b2bf602466ed990409bd73f9b1b">perso</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae852d975781ccfe18a1fabd0b2a81203"></a><!-- doxytag: member="entite::get_competence" ref="ae852d975781ccfe18a1fabd0b2a81203" args="($nom)" -->
+<a class="anchor" id="ac1a252768caecf1ec34cd384deb4f417"></a><!-- doxytag: member="entite::get_competence" ref="ac1a252768caecf1ec34cd384deb4f417" args="($nom, $type=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -515,13 +796,72 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">entite::get_competence </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>nom</em></td>
+          <td class="paramname"> <em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>type</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la compétence demandée. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>nom ou type de la compétence. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>true si $nom est le type de la compétence, $false si c'est son nom. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adf61f81b0b28aefe6ac8512a99903017"></a><!-- doxytag: member="entite::get_compteur" ref="adf61f81b0b28aefe6ac8512a99903017" args="($type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_compteur </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>type</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Revnoie la valeur d'un compteur. </p>
+
+<p>Réimplémentée dans <a class="el" href="classperso.html#aca239b40ec860c3633e0c0cd5a869bee">perso</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae79e848ca88b8b8ed6238de7aad6f0f5"></a><!-- doxytag: member="entite::get_compteur_critique" ref="ae79e848ca88b8b8ed6238de7aad6f0f5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_compteur_critique </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la valeur du compteur de critiques. </p>
 
 </div>
 </div>
@@ -540,12 +880,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la dextérité. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_adf93b88455a50bda430b2e2d8d2b4a82_icgraph.png" border="0" usemap="#classentite_adf93b88455a50bda430b2e2d8d2b4a82_icgraph_map" alt=""></div>
-<map name="classentite_adf93b88455a50bda430b2e2d8d2b4a82_icgraph_map" id="classentite_adf93b88455a50bda430b2e2d8d2b4a82_icgraph">
-<area shape="rect" href="classperso.html#a8ad84bc2a35ec9886be225ad3c1b5dcb" title="perso::get_coef_distance" alt="" coords="208,5,384,35"/><area shape="rect" href="classentite.html#adf515065d5ea697ddc5069963114a95c" title="entite::get_potentiel_parer" alt="" coords="205,59,387,88"/><area shape="rect" href="classentite.html#a3250a12c51b795318448670b16fff47d" title="entite::get_potentiel_toucher" alt="" coords="197,112,395,141"/></map>
 </div>
 </p>
 
@@ -566,12 +906,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le tir à distance. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a8356c39545eccfc52941cd16a5a347b2_icgraph.png" border="0" usemap="#classentite_a8356c39545eccfc52941cd16a5a347b2_icgraph_map" alt=""></div>
-<map name="classentite_a8356c39545eccfc52941cd16a5a347b2_icgraph_map" id="classentite_a8356c39545eccfc52941cd16a5a347b2_icgraph">
-<area shape="rect" href="classperso.html#a8ad84bc2a35ec9886be225ad3c1b5dcb" title="perso::get_coef_distance" alt="" coords="205,5,381,35"/><area shape="rect" href="classentite.html#a3250a12c51b795318448670b16fff47d" title="entite::get_potentiel_toucher" alt="" coords="195,59,392,88"/></map>
 </div>
 </p>
 
@@ -592,7 +932,47 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la distance de tir. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a5d0866e538cacdcd4876f31ebe181ba0">perso</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c7fffeb36469379224b196dbf88fbc2"></a><!-- doxytag: member="entite::get_effets_permanents" ref="a0c7fffeb36469379224b196dbf88fbc2" args="(&amp;$effets, $mode)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_effets_permanents </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mode</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie les effets présents d'un certains type. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>&amp;$effets</em>&nbsp;</td><td>tableau auquel sera ajouté les effets trouvés </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>type des effets </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="classperso.html#a7094d092938f81cf8f504219ba359211">perso</a>.</p>
 
 </div>
 </div>
@@ -611,12 +991,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la liste des enchantements de gemmes. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a1f33edc71552e2e40705f861faff0c73_icgraph.png" border="0" usemap="#classentite_a1f33edc71552e2e40705f861faff0c73_icgraph_map" alt=""></div>
-<map name="classentite_a1f33edc71552e2e40705f861faff0c73_icgraph_map" id="classentite_a1f33edc71552e2e40705f861faff0c73_icgraph">
-<area shape="rect" href="classperso.html#ae547965052d57c0b329dd055f9846d31" title="perso::check_perso" alt="" coords="231,5,372,35"/></map>
 </div>
 </p>
 
@@ -637,12 +1017,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'énergie. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a057737bbdf2ebe3a3bac727e63ce6c6b_icgraph.png" border="0" usemap="#classentite_a057737bbdf2ebe3a3bac727e63ce6c6b_icgraph_map" alt=""></div>
-<map name="classentite_a057737bbdf2ebe3a3bac727e63ce6c6b_icgraph_map" id="classentite_a057737bbdf2ebe3a3bac727e63ce6c6b_icgraph">
-<area shape="rect" href="classperso.html#ae547965052d57c0b329dd055f9846d31" title="perso::check_perso" alt="" coords="191,5,332,35"/></map>
 </div>
 </p>
 
@@ -663,6 +1043,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'espèce de l'entité. </p>
+
 </div>
 </div>
 <a class="anchor" id="a4c75ba7841bb4a398b664d762e7c710a"></a><!-- doxytag: member="entite::get_esquive" ref="a4c75ba7841bb4a398b664d762e7c710a" args="()" -->
@@ -680,12 +1062,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'esquive. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph.png" border="0" usemap="#classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph_map" alt=""></div>
-<map name="classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph_map" id="classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph">
-<area shape="rect" href="classentite.html#adf515065d5ea697ddc5069963114a95c" title="entite::get_potentiel_parer" alt="" coords="193,5,375,35"/></map>
 </div>
 </p>
 
@@ -706,6 +1088,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'état. </p>
+
 </div>
 </div>
 <a class="anchor" id="aea948e98cdbb07348b1d20111ed56cd1"></a><!-- doxytag: member="entite::get_exp" ref="aea948e98cdbb07348b1d20111ed56cd1" args="()" -->
@@ -722,6 +1106,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Renvoie l'expérience. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#ab86a17014ca3f1d4232f7f946ff92aac">perso</a>.</p>
 
@@ -742,6 +1128,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la force. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a0423eaf53c97692e8f19a654012d8ebe">perso</a>.</p>
 
 </div>
@@ -761,14 +1149,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le <a class="el" href="classgrade.html">grade</a> sous forme d'objet. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a357af61efe0982b216588fcf82c1b1fd">perso</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_aedf08b50782ac15602a33262c3acb391_cgraph.png" border="0" usemap="#classentite_aedf08b50782ac15602a33262c3acb391_cgraph_map" alt=""></div>
-<map name="classentite_aedf08b50782ac15602a33262c3acb391_cgraph_map" id="classentite_aedf08b50782ac15602a33262c3acb391_cgraph">
-<area shape="rect" href="classgrade.html#a0e74efea43d955111a3951e67bb52f9c" title="Supprime de la base de donnée &#160;static." alt="" coords="179,5,280,35"/></map>
 </div>
 </p>
 
@@ -789,6 +1177,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'id du <a class="el" href="classgroupe.html">groupe</a> du personnage. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a433e043cfc66d12da56e16e7e1ffdc16">perso</a>.</p>
 
 </div>
@@ -807,6 +1197,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Renvoie l'honneur. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#ae599d1d9458b1659e2dc36fe60a88ff2">perso</a>.</p>
 
@@ -827,7 +1219,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a8cb2962d7c4a31813430399cc6022196">perso</a>.</p>
+<p>Renvoie les HP actuels. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_a0b9f4554a0735f3f04f47bf8a25f6d1b_icgraph.png" border="0" usemap="#classentite_a0b9f4554a0735f3f04f47bf8a25f6d1b_icgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -846,26 +1245,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a034fa26197dc87a0c0a562cdc6e81482">perso</a>.</p>
+<p>Renvoie les HP maximaux. </p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_a5c77dd23213cbbdff96c1944792fa377_icgraph.png" border="0" usemap="#classentite_a5c77dd23213cbbdff96c1944792fa377_icgraph_map" alt=""></div>
 </div>
-</div>
-<a class="anchor" id="a80561cd9a9994a21bda0017f75127dbd"></a><!-- doxytag: member="entite::get_id" ref="a80561cd9a9994a21bda0017f75127dbd" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::get_id </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#a0f191d4134348f40158f7ac2dac4bab3">perso</a>.</p>
+</p>
 
 </div>
 </div>
@@ -884,12 +1271,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'incantation. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a996e5143659e5f4add73d86183b0c48b_icgraph.png" border="0" usemap="#classentite_a996e5143659e5f4add73d86183b0c48b_icgraph_map" alt=""></div>
-<map name="classentite_a996e5143659e5f4add73d86183b0c48b_icgraph_map" id="classentite_a996e5143659e5f4add73d86183b0c48b_icgraph">
-<area shape="rect" href="classperso.html#af5f544ca4995b54dd2a6d0725501f8b5" title="perso::get_coef_incantation" alt="" coords="213,5,405,35"/></map>
 </div>
 </p>
 
@@ -910,6 +1297,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'inventaire. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a5a64081a28c8ac8be7c793efa9f009f1">perso</a>.</p>
 
 </div>
@@ -929,7 +1318,28 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a2b20830898f7c178f3615df503199986">perso</a>.</p>
+<p>Renvoie le niveau de l'entité. </p>
+
+</div>
+</div>
+<a class="anchor" id="aefb65c56a77220a5527271e2b77d0084"></a><!-- doxytag: member="entite::get_liste_champs" ref="aefb65c56a77220a5527271e2b77d0084" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_liste_champs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs pour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classplacable.html#a0623e7cf997319baf38e21c0eeb65a99">placable</a>.</p>
 
 </div>
 </div>
@@ -948,7 +1358,30 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la liste des quêtes que possède le personnage sous forme de tableau. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#aa61e9833eb91d0cbbd6a74c000e5fe31">perso</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ccbb0faeccd89a0f63433fc42cf718b"></a><!-- doxytag: member="entite::get_liste_update" ref="a1ccbb0faeccd89a0f63433fc42cf718b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_liste_update </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classplacable.html#a6045da079ba4101558bb5c388d8b7ac3">placable</a>.</p>
 
 </div>
 </div>
@@ -967,33 +1400,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la mêlée. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a1b9b7ab89988866c601da83f57ba795a_icgraph.png" border="0" usemap="#classentite_a1b9b7ab89988866c601da83f57ba795a_icgraph_map" alt=""></div>
-<map name="classentite_a1b9b7ab89988866c601da83f57ba795a_icgraph_map" id="classentite_a1b9b7ab89988866c601da83f57ba795a_icgraph">
-<area shape="rect" href="classperso.html#a22ba40a0d91b6e7e7b6d8537def6bf8c" title="perso::get_coef_melee" alt="" coords="200,5,360,35"/><area shape="rect" href="classentite.html#a3250a12c51b795318448670b16fff47d" title="entite::get_potentiel_toucher" alt="" coords="181,59,379,88"/></map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="a6b7e24bd971a159f160064ff0296e464"></a><!-- doxytag: member="entite::get_nom" ref="a6b7e24bd971a159f160064ff0296e464" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::get_nom </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#aafb4ca0c3c5f670e60552308f7d27c3f">perso</a>.</p>
 
 </div>
 </div>
@@ -1012,6 +1426,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie l'objet source. </p>
+
 </div>
 </div>
 <a class="anchor" id="a4f3e709130c00181e01ee424ecbc2c76"></a><!-- doxytag: member="entite::get_pa" ref="a4f3e709130c00181e01ee424ecbc2c76" args="()" -->
@@ -1029,7 +1445,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#af2933acbca724d5e24f43559657868a2">perso</a>.</p>
+<p>Renvoie le nomnre de PA. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_a4f3e709130c00181e01ee424ecbc2c76_icgraph.png" border="0" usemap="#classentite_a4f3e709130c00181e01ee424ecbc2c76_icgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -1048,6 +1471,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la PM. </p>
+
 </div>
 </div>
 <a class="anchor" id="adc5c2f8db846fe24562d47941f6a57f0"></a><!-- doxytag: member="entite::get_point_victoire" ref="adc5c2f8db846fe24562d47941f6a57f0" args="()" -->
@@ -1064,6 +1489,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Renvoie les points de victoire gagnés. </p>
 
 </div>
 </div>
@@ -1082,14 +1509,19 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a4f083c09f32cf3715ffe9f88362247fc">perso</a>.</p>
+<p>Renvoie la position sous forme d'un seul entier. </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a9b8852c45a6e451ea772759c6b1c3871_cgraph.png" border="0" usemap="#classentite_a9b8852c45a6e451ea772759c6b1c3871_cgraph_map" alt=""></div>
-<map name="classentite_a9b8852c45a6e451ea772759c6b1c3871_cgraph_map" id="classentite_a9b8852c45a6e451ea772759c6b1c3871_cgraph">
-<area shape="rect" href="base_8inc_8php.html#ade6991be5ce13525640bddfc5ea407c8" title="Convertion des coordonnés de deux nombre en un nombre." alt="" coords="167,5,281,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_a9b8852c45a6e451ea772759c6b1c3871_icgraph.png" border="0" usemap="#classentite_a9b8852c45a6e451ea772759c6b1c3871_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1111,12 +1543,18 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Calcul et renvoie le potentiel parer physique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$esquive</em>&nbsp;</td><td>Valeur de la compétence esquive à prendre en compte si elle est différente de celle de l'entité (sinon false). </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_adf515065d5ea697ddc5069963114a95c_cgraph.png" border="0" usemap="#classentite_adf515065d5ea697ddc5069963114a95c_cgraph_map" alt=""></div>
-<map name="classentite_adf515065d5ea697ddc5069963114a95c_cgraph_map" id="classentite_adf515065d5ea697ddc5069963114a95c_cgraph">
-<area shape="rect" href="classentite.html#adf93b88455a50bda430b2e2d8d2b4a82" title="entite::get_dexterite" alt="" coords="239,5,380,35"/><area shape="rect" href="classentite.html#a4c75ba7841bb4a398b664d762e7c710a" title="entite::get_esquive" alt="" coords="241,59,377,88"/></map>
 </div>
 </p>
 
@@ -1137,12 +1575,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Calcul et renvoie le potentiel toucher physique. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_a3250a12c51b795318448670b16fff47d_cgraph.png" border="0" usemap="#classentite_a3250a12c51b795318448670b16fff47d_cgraph_map" alt=""></div>
-<map name="classentite_a3250a12c51b795318448670b16fff47d_cgraph_map" id="classentite_a3250a12c51b795318448670b16fff47d_cgraph">
-<area shape="rect" href="classentite.html#aca75a951cd404b2e2109e73f4987542f" title="entite::get_arme_type" alt="" coords="252,5,404,35"/><area shape="rect" href="classentite.html#adf93b88455a50bda430b2e2d8d2b4a82" title="entite::get_dexterite" alt="" coords="257,59,399,88"/><area shape="rect" href="classentite.html#a8356c39545eccfc52941cd16a5a347b2" title="entite::get_distance" alt="" coords="257,112,399,141"/><area shape="rect" href="classentite.html#a1b9b7ab89988866c601da83f57ba795a" title="entite::get_melee" alt="" coords="265,165,391,195"/></map>
 </div>
 </p>
 
@@ -1163,6 +1601,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la PP. </p>
+
 </div>
 </div>
 <a class="anchor" id="aa1ee64c6263935df75c8f8f04fe3feec"></a><!-- doxytag: member="entite::get_puissance" ref="aa1ee64c6263935df75c8f8f04fe3feec" args="()" -->
@@ -1180,12 +1620,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la puissance. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_aa1ee64c6263935df75c8f8f04fe3feec_icgraph.png" border="0" usemap="#classentite_aa1ee64c6263935df75c8f8f04fe3feec_icgraph_map" alt=""></div>
-<map name="classentite_aa1ee64c6263935df75c8f8f04fe3feec_icgraph_map" id="classentite_aa1ee64c6263935df75c8f8f04fe3feec_icgraph">
-<area shape="rect" href="classperso.html#af5f544ca4995b54dd2a6d0725501f8b5" title="perso::get_coef_incantation" alt="" coords="205,5,397,35"/></map>
 </div>
 </p>
 
@@ -1206,7 +1646,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#afc43b3014dc35169b3eae17e932d78fa">perso</a>.</p>
+<p>Renvoie la race. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_a1a12fcd2dbb967f145f1a33f09fd9971_icgraph.png" border="0" usemap="#classentite_a1a12fcd2dbb967f145f1a33f09fd9971_icgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -1225,6 +1672,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le <a class="el" href="classgrade.html">grade</a>. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab19a796a0679c7a80243280f1dd20bc8"></a><!-- doxytag: member="entite::get_rang_royaume" ref="ab19a796a0679c7a80243280f1dd20bc8" args="()" -->
@@ -1242,7 +1691,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#af7190ffc36965a4d60c2e172badc4676">perso</a>.</p>
+<p>Renvoie le <a class="el" href="classgrade.html">grade</a> de l'entité au sein de son <a class="el" href="classroyaume.html">royaume</a>. </p>
 
 </div>
 </div>
@@ -1261,18 +1710,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la réputation. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#ad42be8ab5b30a6f53163e51ce3d0235d">perso</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aefbe610a1ca6c08387eb9cf0960e421c"></a><!-- doxytag: member="entite::get_reserve" ref="aefbe610a1ca6c08387eb9cf0960e421c" args="()" -->
+<a class="anchor" id="a07d9473fe4dfd2a7943bc3d2cdf3fb79"></a><!-- doxytag: member="entite::get_reserve" ref="a07d9473fe4dfd2a7943bc3d2cdf3fb79" args="($base=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">entite::get_reserve </td>
           <td>(</td>
-          <td class="paramname"></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>base</em> = <code>false</code></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -1280,14 +1732,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dynsection">
-<div class="center"><img src="classentite_aefbe610a1ca6c08387eb9cf0960e421c_icgraph.png" border="0" usemap="#classentite_aefbe610a1ca6c08387eb9cf0960e421c_icgraph_map" alt=""></div>
-<map name="classentite_aefbe610a1ca6c08387eb9cf0960e421c_icgraph_map" id="classentite_aefbe610a1ca6c08387eb9cf0960e421c_icgraph">
-<area shape="rect" href="classperso.html#a917f8b97476428bf17bec5be3539ea7c" title="perso::get_reserve_bonus" alt="" coords="189,5,371,35"/></map>
-</div>
-</p>
+<p>Renvoie la réerve de mana. </p>
+
+<p>Réimplémentée dans <a class="el" href="classperso.html#ac3d1a0c3d0059fefc85a5a53768df564">perso</a>.</p>
 
 </div>
 </div>
@@ -1306,6 +1753,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la magie élémentaire. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5e1b81b730fbcb728f1778889427747b"></a><!-- doxytag: member="entite::get_sort_mort" ref="a5e1b81b730fbcb728f1778889427747b" args="()" -->
@@ -1322,6 +1771,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Renvoie la nécromancie. </p>
 
 </div>
 </div>
@@ -1340,6 +1791,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la magie de vie. </p>
+
 </div>
 </div>
 <a class="anchor" id="a3ea577f4439559fe40d34b4e60f12c6f"></a><!-- doxytag: member="entite::get_star" ref="a3ea577f4439559fe40d34b4e60f12c6f" args="()" -->
@@ -1357,7 +1810,30 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie les stars. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#aea524475d15209d7e2be54880d6fc487">perso</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae17b44316307a4442799a83a15926d89"></a><!-- doxytag: member="entite::get_table" ref="ae17b44316307a4442799a83a15926d89" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_table </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pour compatibilité (le temps de refaire la hiérarchie). </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a0a79cb918213b79d91a431286f26f9ae">table</a>.</p>
 
 </div>
 </div>
@@ -1376,6 +1852,29 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie le type de l'entité. </p>
+
+</div>
+</div>
+<a class="anchor" id="a56a5f582958ac79c18cfd26d9ba1c4c7"></a><!-- doxytag: member="entite::get_valeurs_insert" ref="a56a5f582958ac79c18cfd26d9ba1c4c7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_valeurs_insert </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des valeurs des champspour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classplacable.html#a997ab5b5d1ca44b29693e4b14ff9f657">placable</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac323c4d3d3781f94638c9be95be5e894"></a><!-- doxytag: member="entite::get_vie" ref="ac323c4d3d3781f94638c9be95be5e894" args="()" -->
@@ -1393,12 +1892,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la constitution. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classentite_ac323c4d3d3781f94638c9be95be5e894_icgraph.png" border="0" usemap="#classentite_ac323c4d3d3781f94638c9be95be5e894_icgraph_map" alt=""></div>
-<map name="classentite_ac323c4d3d3781f94638c9be95be5e894_icgraph_map" id="classentite_ac323c4d3d3781f94638c9be95be5e894_icgraph">
-<area shape="rect" href="classperso.html#ae547965052d57c0b329dd055f9846d31" title="perso::check_perso" alt="" coords="164,5,305,35"/></map>
 </div>
 </p>
 
@@ -1419,16 +1918,19 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie la volonté. </p>
+
 </div>
 </div>
-<a class="anchor" id="af960d681bfcf2d11d12b4dab8e8aabcf"></a><!-- doxytag: member="entite::get_x" ref="af960d681bfcf2d11d12b4dab8e8aabcf" args="()" -->
+<a class="anchor" id="aac49d716c87774de394425926f2cc76e"></a><!-- doxytag: member="entite::in_arene" ref="aac49d716c87774de394425926f2cc76e" args="($filter= '')" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::get_x </td>
+          <td class="memname">entite::in_arene </td>
           <td>(</td>
-          <td class="paramname"></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>filter</em> = <code>''</code></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -1436,26 +1938,10 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a61ecdab130045db054cb8c4d6b3dc2db">perso</a>.</p>
+<p>Indique si le personnage est dans une arène. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>false s'il n'est pas dans une arène, sinon objet contenant la description de l'arène dans laquelle il se trouve. </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="ac518eafc978e5be47fb339ea33ad964d"></a><!-- doxytag: member="entite::get_y" ref="ac518eafc978e5be47fb339ea33ad964d" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::get_y </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#a0884c2fcf834aae13c0b2866d84afc45">perso</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classperso.html#a7d75b645082382abed2ca84ac396adc0">perso</a>.</p>
 
 </div>
 </div>
@@ -1483,6 +1969,16 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html">buff</a> nom. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>le nom du <a class="el" href="classbuff.html">buff</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>si le nom est le type du <a class="el" href="classbuff.html">buff</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>true si le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> est sous le <a class="el" href="classbuff.html">buff</a> false sinon. </dd></dl>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#a272f76c038a24e1e3026d1f47e5afd63">perso</a>.</p>
 
@@ -1513,6 +2009,15 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Indique si l'entité posède une certaine compétence ou s'il en a de manière générale. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>nom ou type de la compétence. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>true si $nom est le type de la compétence, $false si c'est son nom. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a48e208fa7d8e2ee866f50006435e3a73">perso</a>.</p>
 
 </div>
@@ -1533,6 +2038,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Indique si l'entité est du type demandé. </p>
+
 </div>
 </div>
 <a class="anchor" id="abf05c6628084772245241f956b268c2b"></a><!-- doxytag: member="entite::maj_comp" ref="abf05c6628084772245241f956b268c2b" args="()" -->
@@ -1549,6 +2056,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Mise-à-jour des compétences à partir de l'objet. </p>
 
 </div>
 </div>
@@ -1568,6 +2077,27 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>??? </p>
+
+</div>
+</div>
+<a class="anchor" id="ace6a630b6b672b17d5c7e0ab674ad512"></a><!-- doxytag: member="entite::set_compteur_critique" ref="ace6a630b6b672b17d5c7e0ab674ad512" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::set_compteur_critique </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Incrémente le compteur de critiques. </p>
+
 </div>
 </div>
 <a class="anchor" id="adf1c28c2e16f57e63f0d923f5b67ad53"></a><!-- doxytag: member="entite::set_dexterite" ref="adf1c28c2e16f57e63f0d923f5b67ad53" args="($dexterite)" -->
@@ -1585,6 +2115,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Modifie la dextérité. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#af4d385060dcbdf0e5fb29ca7f5594728">perso</a>.</p>
 
@@ -1606,27 +2138,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Modifie les HP actuels. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#a03778c6f293885fc0c06644bbc572d10">perso</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae67a4e4a1f18fcbff2718bf2a5569ae5"></a><!-- doxytag: member="entite::set_id" ref="ae67a4e4a1f18fcbff2718bf2a5569ae5" args="($id)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::set_id </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>id</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#a73b21547fc5a67ee26978057b4f70a95">perso</a>.</p>
 
 </div>
 </div>
@@ -1645,6 +2159,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Modifie les PA. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#a98d5a14e80df0126dba22eec36fa177b">perso</a>.</p>
 
@@ -1666,6 +2182,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Modifie la PM. </p>
+
 </div>
 </div>
 <a class="anchor" id="a675d1737625b6c7055f2d4c06c7cc464"></a><!-- doxytag: member="entite::set_potentiel_parer" ref="a675d1737625b6c7055f2d4c06c7cc464" args="($valeur)" -->
@@ -1683,6 +2201,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Modifie le potentiel parer physique. </p>
 
 </div>
 </div>
@@ -1702,6 +2222,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Modifie le potentiel toucher physique. </p>
+
 </div>
 </div>
 <a class="anchor" id="a45b15a048e4153923d2aa059bff103f4"></a><!-- doxytag: member="entite::set_pp" ref="a45b15a048e4153923d2aa059bff103f4" args="($valeur)" -->
@@ -1719,6 +2241,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Modifie la PP. </p>
 
 </div>
 </div>
@@ -1738,6 +2262,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Modifie la réerve de mana. </p>
+
 </div>
 </div>
 <a class="anchor" id="a9ab0e1dde991a4d9dcb4303625061321"></a><!-- doxytag: member="entite::set_volonte" ref="a9ab0e1dde991a4d9dcb4303625061321" args="($volonte)" -->
@@ -1756,7 +2282,42 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Modifie la volonté. </p>
+
 <p>Réimplémentée dans <a class="el" href="classperso.html#ace06884aa26873d15871db16853896bf">perso</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af43179a81b452402e86236617178622c"></a><!-- doxytag: member="entite::supprime_buff" ref="af43179a81b452402e86236617178622c" args="($id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::supprime_buff </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>id</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Supprime un <a class="el" href="classbuff.html">buff</a>. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>id du <a class="el" href="classbuff.html">buff</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classentite_af43179a81b452402e86236617178622c_cgraph.png" border="0" usemap="#classentite_af43179a81b452402e86236617178622c_cgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -1766,13 +2327,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$action<code> [private]</code></td>
+          <td class="memname">entite::$action</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a517b678903b1d22fee9e3ba64d1e1fad">perso</a>.</p>
+<p>Contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé. </p>
 
 </div>
 </div>
@@ -1787,6 +2348,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Dégâts de l'arme. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5ceaeae138f94cfc4956c4c9b59aaa1d"></a><!-- doxytag: member="entite::$arme_type" ref="a5ceaeae138f94cfc4956c4c9b59aaa1d" args="" -->
@@ -1800,6 +2363,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Type de l'arme utilisée. </p>
+
 </div>
 </div>
 <a class="anchor" id="aef4d5325b2c63249e28ee1beda4b81ac"></a><!-- doxytag: member="entite::$blocage" ref="aef4d5325b2c63249e28ee1beda4b81ac" args="" -->
@@ -1807,13 +2372,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$blocage<code> [private]</code></td>
+          <td class="memname">entite::$blocage<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#afb07859562f7c78339e5ee0d6dd57ad9">perso</a>.</p>
+<p>Compétence blocage. </p>
 
 </div>
 </div>
@@ -1828,6 +2393,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Dégâts bloqués par le bouclier. </p>
+
 </div>
 </div>
 <a class="anchor" id="a3142078b1b447809a3aa63f5c7a06af7"></a><!-- doxytag: member="entite::$buff" ref="a3142078b1b447809a3aa63f5c7a06af7" args="" -->
@@ -1840,6 +2407,8 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Buffs &amp; débuffs actifs sur le personnage. </p>
 
 </div>
 </div>
@@ -1861,13 +2430,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$<a class="el" href="classcomp__combat.html">comp_combat</a><code> [private]</code></td>
+          <td class="memname">entite::$<a class="el" href="classcomp__combat.html">comp_combat</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#aefeffe5716d1a8ec847aa323c9235712">perso</a>.</p>
+<p>Liste des compétences de <a class="el" href="classcombat.html">combat</a>. </p>
 
 </div>
 </div>
@@ -1884,18 +2453,33 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a3bd30c0d7c2b453cc66ff85336521bfc"></a><!-- doxytag: member="entite::$dexterite" ref="a3bd30c0d7c2b453cc66ff85336521bfc" args="" -->
+<a class="anchor" id="a53cd7f6a62b4b251893a3c84f3ae80f3"></a><!-- doxytag: member="entite::$compteur_critique" ref="a53cd7f6a62b4b251893a3c84f3ae80f3" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$dexterite<code> [private]</code></td>
+          <td class="memname">entite::$compteur_critique = 0<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#afe31ea25877adcfdc62a2a7ab4cf5867">perso</a>.</p>
+<p>Compteur de coups critiques. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3bd30c0d7c2b453cc66ff85336521bfc"></a><!-- doxytag: member="entite::$dexterite" ref="a3bd30c0d7c2b453cc66ff85336521bfc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::$dexterite<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Caractéristique "dextérité". </p>
 
 </div>
 </div>
@@ -1904,13 +2488,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$distance<code> [private]</code></td>
+          <td class="memname">entite::$distance<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a028ab7626e84db144c1b7152bae8ae51">perso</a>.</p>
+<p>Compétence tir à distance. </p>
 
 </div>
 </div>
@@ -1925,6 +2509,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Distance de tir. </p>
+
 </div>
 </div>
 <a class="anchor" id="a7906f3754ae65006ee4315121c47b959"></a><!-- doxytag: member="entite::$enchantement" ref="a7906f3754ae65006ee4315121c47b959" args="" -->
@@ -1932,11 +2518,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$enchantement<code> [private]</code></td>
+          <td class="memname">entite::$enchantement</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Liste des enchantements de gemmes. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#a9486db78a68f9acd70183bed2e6078b6">perso</a>.</p>
 
@@ -1947,13 +2535,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$energie<code> [private]</code></td>
+          <td class="memname">entite::$energie<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#afb95d194544aaf392c392bf4ca89c7a3">perso</a>.</p>
+<p>Caractéristique "énergie". </p>
 
 </div>
 </div>
@@ -1968,6 +2556,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Espèce de l'entité. </p>
+
 </div>
 </div>
 <a class="anchor" id="aa746ff5d6780a8b4105230e99e7bdfca"></a><!-- doxytag: member="entite::$esquive" ref="aa746ff5d6780a8b4105230e99e7bdfca" args="" -->
@@ -1975,13 +2565,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$esquive<code> [private]</code></td>
+          <td class="memname">entite::$esquive<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a598b2111cfb3d8d689ccbe14bccfe504">perso</a>.</p>
+<p>Compétence esquive. </p>
 
 </div>
 </div>
@@ -1996,6 +2586,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>État de l'entité. </p>
+
 </div>
 </div>
 <a class="anchor" id="a5fd1bf3494c454a75dff81046bf49cfd"></a><!-- doxytag: member="entite::$force" ref="a5fd1bf3494c454a75dff81046bf49cfd" args="" -->
@@ -2003,11 +2595,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$force<code> [private]</code></td>
+          <td class="memname">entite::$force<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Caractéristique "force". </p>
 
 </div>
 </div>
@@ -2016,13 +2610,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$hp<code> [private]</code></td>
+          <td class="memname">entite::$hp<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#ae9868745919e824ec3183d01f2d221ea">perso</a>.</p>
+<p>&lt; Nombre de PA. </p>
+<p>HP actuels de l'entité </p>
 
 </div>
 </div>
@@ -2031,28 +2626,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$hp_max<code> [private]</code></td>
+          <td class="memname">entite::$hp_max<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a83aebbfe1ba04c7058f7e9a7ef0b39f2">perso</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae59dd43ec75bfc244c6a8905c9d5d73b"></a><!-- doxytag: member="entite::$id" ref="ae59dd43ec75bfc244c6a8905c9d5d73b" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#a049cb19b1e74aa15311bb2f1c9a2b661">perso</a>.</p>
+<p>HP maximums. </p>
 
 </div>
 </div>
@@ -2061,13 +2641,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$incantation<code> [private]</code></td>
+          <td class="memname">entite::$incantation<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#aded65a859c0895113693e01261853645">perso</a>.</p>
+<p>Compétence incantation. </p>
 
 </div>
 </div>
@@ -2076,13 +2656,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$level<code> [private]</code></td>
+          <td class="memname">entite::$level<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#af37e2138aeb5995aa7f4f5f1559111bc">perso</a>.</p>
+<p>Niveau de l'entité. </p>
 
 </div>
 </div>
@@ -2097,6 +2677,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Malus d'esquive dû au port d'une hache. </p>
+
 </div>
 </div>
 <a class="anchor" id="a520ca662ce817807fef70256223ff1d2"></a><!-- doxytag: member="entite::$melee" ref="a520ca662ce817807fef70256223ff1d2" args="" -->
@@ -2104,28 +2686,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$melee<code> [private]</code></td>
+          <td class="memname">entite::$melee<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a6e77b5449f5c1a08989f04719932e89e">perso</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a797ecc45811815de502af58a061bf087"></a><!-- doxytag: member="entite::$nom" ref="a797ecc45811815de502af58a061bf087" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::$nom<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#ac8ec73f83c92285030b8b34892dfa382">perso</a>.</p>
+<p>Compétence mêlée. </p>
 
 </div>
 </div>
@@ -2140,6 +2707,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Référence vers l'objet source. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab3f1a16d6dfa583b6e251852a9f3f421"></a><!-- doxytag: member="entite::$pa" ref="ab3f1a16d6dfa583b6e251852a9f3f421" args="" -->
@@ -2147,13 +2716,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$pa<code> [private]</code></td>
+          <td class="memname">entite::$pa<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#a39c02414a5c80570fabffba3c7ef127a">perso</a>.</p>
 
 </div>
 </div>
@@ -2162,13 +2729,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$pm<code> [private]</code></td>
+          <td class="memname">entite::$pm</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a728d625e251440ce3e4df951a2af32c7">perso</a>.</p>
+<p>Protection magique. </p>
 
 </div>
 </div>
@@ -2183,6 +2750,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Points de victoire gagnés si l'entité est détruite. </p>
+
 </div>
 </div>
 <a class="anchor" id="aeb2fc0fc4f88bf748681d2dd8faf18ca"></a><!-- doxytag: member="entite::$potentiel_bloquer" ref="aeb2fc0fc4f88bf748681d2dd8faf18ca" args="" -->
@@ -2196,6 +2765,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Potentiel bloquer. </p>
+
 </div>
 </div>
 <a class="anchor" id="afb5b99f24c61ec190d6d2e9db4c99386"></a><!-- doxytag: member="entite::$pp" ref="afb5b99f24c61ec190d6d2e9db4c99386" args="" -->
@@ -2203,13 +2774,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$pp<code> [private]</code></td>
+          <td class="memname">entite::$pp</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a18d56976117e3be2feea30fa3e3ce5e0">perso</a>.</p>
+<p>Protection physique. </p>
 
 </div>
 </div>
@@ -2218,13 +2789,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$<a class="el" href="create_8php.html#aeb047387a45a9e11265609a224e11b31">puissance</a><code> [private]</code></td>
+          <td class="memname">entite::$<a class="el" href="create_8php.html#aeb047387a45a9e11265609a224e11b31">puissance</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#ae84fca2dd072d986954d96309ddb533e">perso</a>.</p>
+<p>Caractéristique "puissance". </p>
 
 </div>
 </div>
@@ -2233,13 +2804,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$race<code> [private]</code></td>
+          <td class="memname">entite::$race<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a3d61f78f9af8773c58b2374710740e0a">perso</a>.</p>
+<p>Race de l'entité. </p>
 
 </div>
 </div>
@@ -2248,13 +2819,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$rang_royaume<code> [private]</code></td>
+          <td class="memname">entite::$rang_royaume<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#addb0b8d87cbe8d29ff21619c3ec8152d">perso</a>.</p>
+<p>Grade de l'entité au sein de son <a class="el" href="classroyaume.html">royaume</a>. </p>
 
 </div>
 </div>
@@ -2263,13 +2834,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$reserve<code> [private]</code></td>
+          <td class="memname">entite::$reserve</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#adfecf0b0ba526f2750778c333f8783dd">perso</a>.</p>
+<p>Réserve de mana. </p>
 
 </div>
 </div>
@@ -2284,6 +2855,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Inventaire. </p>
+
 </div>
 </div>
 <a class="anchor" id="ae3aa3789e3d5a283c00510d6c19ae6c1"></a><!-- doxytag: member="entite::$sort_element" ref="ae3aa3789e3d5a283c00510d6c19ae6c1" args="" -->
@@ -2291,13 +2864,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$sort_element<code> [private]</code></td>
+          <td class="memname">entite::$sort_element<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a6a04f489e196d19dea1c89de637bf538">perso</a>.</p>
+<p>Compétence magie élémentaire. </p>
 
 </div>
 </div>
@@ -2306,13 +2879,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$sort_mort<code> [private]</code></td>
+          <td class="memname">entite::$sort_mort<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#ae6fa2a61f506e5a4d778afb0f446df30">perso</a>.</p>
+<p>Compétence nécromancie. </p>
 
 </div>
 </div>
@@ -2321,13 +2894,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$sort_vie<code> [private]</code></td>
+          <td class="memname">entite::$sort_vie<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a46edb62a56d9acb92bfda61775a55824">perso</a>.</p>
+<p>Compétence magie de la vie. </p>
 
 </div>
 </div>
@@ -2342,6 +2915,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Type de l'entité. </p>
+
 </div>
 </div>
 <a class="anchor" id="abae7999dd3dd7af49110a000c68745ad"></a><!-- doxytag: member="entite::$vie" ref="abae7999dd3dd7af49110a000c68745ad" args="" -->
@@ -2349,13 +2924,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$vie<code> [private]</code></td>
+          <td class="memname">entite::$vie<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a7c04b1edc89fd377505f193af463d1af">perso</a>.</p>
+<p>Caractéristique "constitution". </p>
 
 </div>
 </div>
@@ -2364,48 +2939,18 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$volonte<code> [private]</code></td>
+          <td class="memname">entite::$volonte<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#ac4fb0f417bd1fde355c19b9fe7540353">perso</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abda20efc3e0c7e331ca122dec1685954"></a><!-- doxytag: member="entite::$x" ref="abda20efc3e0c7e331ca122dec1685954" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::$x<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#a7e27231a52f48b4668c8b1efe95fcf6d">perso</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ac29b038d1aaba2c78633fe913dcf1192"></a><!-- doxytag: member="entite::$y" ref="ac29b038d1aaba2c78633fe913dcf1192" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">entite::$y<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classperso.html#aad0655ed8852cb481f258c4290a6d256">perso</a>.</p>
+<p>Caractéristique "volonté". </p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:41:59 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:22 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

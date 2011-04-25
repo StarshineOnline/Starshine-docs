@@ -31,15 +31,11 @@
 Graphe d'héritage de art_critique:</div>
 <div class="dynsection">
 <div class="center"><img src="classart__critique__inherit__graph.png" border="0" usemap="#art__critique_inherit__map" alt="Inheritance graph"/></div>
-<map name="art__critique_inherit__map" id="art__critique_inherit__map">
-<area shape="rect" href="classcompetence.html" title="Compétence : c&#39;est un effet qui peut s&#39;améliorer." alt="" coords="52,981,167,1088"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de art_critique:</div>
 <div class="dynsection">
 <div class="center"><img src="classart__critique__coll__graph.png" border="0" usemap="#art__critique_coll__map" alt="Collaboration graph"/></div>
-<map name="art__critique_coll__map" id="art__critique_coll__map">
-<area shape="rect" href="classcompetence.html" title="Compétence : c&#39;est un effet qui peut s&#39;améliorer." alt="" coords="52,981,167,1088"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classart__critique-members.html">Liste de tous les membres</a></p>
@@ -47,10 +43,10 @@ Graphe de collaboration de art_critique:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#afc9e86b5cf30ac1ac1852b4328eb846a">__construct</a> ($aPrintUp=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#afc9e86b5cf30ac1ac1852b4328eb846a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#a5c053fdffbe1e4a74ef6fc4a1f4c88f6">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a5c053fdffbe1e4a74ef6fc4a1f4c88f6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#af48f757a707fdf2b973b7ea003fe01bf">calcul_mult_critique</a> (&amp;$actif, &amp;$passif, $mult)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le multiplicateur de dégâts en cas ce coup critique.  <a href="#af48f757a707fdf2b973b7ea003fe01bf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#a5c053fdffbe1e4a74ef6fc4a1f4c88f6">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a5c053fdffbe1e4a74ef6fc4a1f4c88f6"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#a63ec2787d244ac98236c50330919a336">$critique</a></td></tr>
 </table>
@@ -118,8 +114,8 @@ Graphe de collaboration de art_critique:</div>
 <p>Modifie le multiplicateur de dégâts en cas ce coup critique. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$mult</em>&nbsp;</td><td>Multiplicateur de dégâts avant modification.</td></tr>
   </table>
   </dd>
@@ -158,8 +154,8 @@ Graphe de collaboration de art_critique:</div>
 <p>Action a effectuer en fin de round. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -170,8 +166,6 @@ Graphe de collaboration de art_critique:</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classart__critique_a5c053fdffbe1e4a74ef6fc4a1f4c88f6_cgraph.png" border="0" usemap="#classart__critique_a5c053fdffbe1e4a74ef6fc4a1f4c88f6_cgraph_map" alt=""></div>
-<map name="classart__critique_a5c053fdffbe1e4a74ef6fc4a1f4c88f6_cgraph_map" id="classart__critique_a5c053fdffbe1e4a74ef6fc4a1f4c88f6_cgraph">
-<area shape="rect" href="classcompetence.html#a133f24d03a1417764b5b94f0c7c421ab" title="competence::test_montee" alt="" coords="215,5,393,35"/><area shape="rect" href="base_8inc_8php.html#a19a8179130215d05ff50b9e72f2c46d3" title="Permet de savoir si lors d&#39;une action la compétence augmente de 1." alt="" coords="444,5,631,35"/><area shape="rect" href="print_8inc_8php.html#a90fce48a5722cb80e12ead8780662585" title="print_montee_comp" alt="" coords="681,5,825,35"/></map>
 </div>
 </p>
 
@@ -192,7 +186,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:41:06 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:20 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

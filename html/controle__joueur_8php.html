@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/admin/controle_joueur.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_b6f6c9a278ee5699522198f90537aaa3.html">admin</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier controle_joueur.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#ad3b3c64b25fbbb6aec24407e4333aa71">$admin</a> = true</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#a5766e80b096314e3e65b09ce3f84e6e4">$is_admin</a> = ($_SESSION[&quot;admin_db_auth&quot;] == 'admin') ? true : false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#a2092a303964f3dc45707818341df8cbd">$pnjs</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(!$is_admin)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#ace11cd2788632b6c0c2ecea1ae2a08ca">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'select nom,race from <a class="el" href="classperso.html">perso</a>'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#a8d377b93f6a3a196a78b6c6fa512d5a7">$textures</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#a7d6cea359770f2899f7abc8498f9dce0">if</a> (array_key_exists('controle', $_GET))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="controle__joueur_8php.html#af77eef18e71d9f8e092b44e224e1e421">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_object($req)) = substr_replace( $sOutput, $endl, -1 -strlen($endl))</td></tr>
+</table>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="ad3b3c64b25fbbb6aec24407e4333aa71"></a><!-- doxytag: member="controle_joueur.php::$admin" ref="ad3b3c64b25fbbb6aec24407e4333aa71" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$admin = true</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5766e80b096314e3e65b09ce3f84e6e4"></a><!-- doxytag: member="controle_joueur.php::$is_admin" ref="a5766e80b096314e3e65b09ce3f84e6e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$is_admin = ($_SESSION[&quot;admin_db_auth&quot;] == 'admin') ? true : false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2092a303964f3dc45707818341df8cbd"></a><!-- doxytag: member="controle_joueur.php::$pnjs" ref="a2092a303964f3dc45707818341df8cbd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pnjs</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><pre class="fragment"> array(<span class="stringliteral">&apos;Minotaure&apos;</span>, <span class="stringliteral">&apos;Bastounet_test&apos;</span>,
+              <span class="stringliteral">&apos;test_baba&apos;</span>, <span class="stringliteral">&apos;test_humain&apos;</span>, <span class="stringliteral">&apos;test_nain&apos;</span>, <span class="stringliteral">&apos;test_troll&apos;</span>,
+              <span class="stringliteral">&apos;test_edb&apos;</span>, <span class="stringliteral">&apos;test_corrompu&apos;</span>, <span class="stringliteral">&apos;test_orc&apos;</span>, <span class="stringliteral">&apos;test_vamp&apos;</span>,
+              <span class="stringliteral">&apos;test_he&apos;</span>, <span class="stringliteral">&apos;test_mv&apos;</span>)
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ace11cd2788632b6c0c2ecea1ae2a08ca"></a><!-- doxytag: member="controle_joueur.php::$req" ref="ace11cd2788632b6c0c2ecea1ae2a08ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (!$is_admin) $req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="controle_joueur.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$requete = 'select nom,race from <a class="el" href="classperso.html">perso</a>'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d377b93f6a3a196a78b6c6fa512d5a7"></a><!-- doxytag: member="controle_joueur.php::$textures" ref="a8d377b93f6a3a196a78b6c6fa512d5a7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$textures = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d6cea359770f2899f7abc8498f9dce0"></a><!-- doxytag: member="controle_joueur.php::if" ref="a7d6cea359770f2899f7abc8498f9dce0" args="(array_key_exists('controle', $_GET))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('controle', $_GET))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af77eef18e71d9f8e092b44e224e1e421"></a><!-- doxytag: member="controle_joueur.php::while" ref="af77eef18e71d9f8e092b44e224e1e421" args="($row=$db&#45;&gt;read_object($req))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> = substr_replace( $sOutput, $endl, -1 -strlen($endl))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:17 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

@@ -29,24 +29,20 @@
 <div class="contents">
 <h1>Référence du fichier infojoueur.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a20f940ecc4a1340781f167fb69a76622">$W_ID</a> = $_GET['ID']</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a648bcc9981df7cceb4b931a80064a6c5">$perso</a> = new <a class="el" href="classperso.html">perso</a>($W_ID)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a71f2aa6a4b2bf64caee0b33cd32056dd">$groupe</a> = new <a class="el" href="classgroupe.html">groupe</a>($joueur-&gt;get_groupe())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = convert_in_pos($<a class="el" href="classperso.html">perso</a>-&gt;get_x(), $<a class="el" href="classperso.html">perso</a>-&gt;get_y())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a8c7afa26d3c92b991027d5682b1d85b4">$bonus</a> = recup_bonus($W_ID)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#abc37e4cd47bc662f48f27979278c49cd">$bonus_total</a> = recup_bonus_total($<a class="el" href="classperso.html">perso</a>-&gt;get_id())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#ac58b42b417012503ea186ea312c6aa46">$chaine_nom</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_grade()-&gt;get_nom().' '.$<a class="el" href="classperso.html">perso</a>-&gt;get_nom()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#af5826029e31e937d174a49362058483c">$classe</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_classe()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a71f2aa6a4b2bf64caee0b33cd32056dd">$groupe</a> = new <a class="el" href="classgroupe.html">groupe</a>($joueur-&gt;get_groupe())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a558bfdffbfe8110be3980862489856ec">$niveau</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_level()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a648bcc9981df7cceb4b931a80064a6c5">$perso</a> = new <a class="el" href="classperso.html">perso</a>($W_ID)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#acd403f21721a7b74fca1454b14fa1bd3">$vue</a> = 4</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#ac58b42b417012503ea186ea312c6aa46">$chaine_nom</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_grade()-&gt;get_nom().' '.$<a class="el" href="classperso.html">perso</a>-&gt;get_nom()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#af5826029e31e937d174a49362058483c">$classe</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_classe()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a558bfdffbfe8110be3980862489856ec">$niveau</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_level()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a323f865ad61a9a46b800490cb1e297a7">if</a> (array_key_exists(19, $bonus) AND check_affiche_bonus($bonus[19], $joueur, $<a class="el" href="classperso.html">perso</a>))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a1a99de28ec8c55302f869467cb07a91f">if</a> (array_key_exists(12, $bonus) AND check_affiche_bonus($bonus[12], $joueur, $<a class="el" href="classperso.html">perso</a>))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = convert_in_pos($<a class="el" href="classperso.html">perso</a>-&gt;get_x(), $<a class="el" href="classperso.html">perso</a>-&gt;get_y())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a3bdc395fa40de5f822d4230cf6e5b387">$W_distance</a> = detection_distance($W_case, $joueur-&gt;get_pos())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_groupe()==$<a class="el" href="classperso.html">perso</a>-&gt;<br class="typebreak"/>
-get_groupe()&amp;&amp;$joueur-&gt;<br class="typebreak"/>
-get_groupe()!=0 &amp;&amp;$joueur-&gt;<br class="typebreak"/>
-get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a39dd8823c7adb97d93cff6c5d449f834">$titres</a> = recup_titre_honorifique($<a class="el" href="classperso.html">perso</a>-&gt;get_id())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a20f940ecc4a1340781f167fb69a76622">$W_ID</a> = $_GET['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a1a99de28ec8c55302f869467cb07a91f">if</a> (array_key_exists(12, $bonus) AND check_affiche_bonus($bonus[12], $joueur, $<a class="el" href="classperso.html">perso</a>))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a323f865ad61a9a46b800490cb1e297a7">if</a> (array_key_exists(19, $bonus) AND check_affiche_bonus($bonus[19], $joueur, $<a class="el" href="classperso.html">perso</a>))</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a8c7afa26d3c92b991027d5682b1d85b4"></a><!-- doxytag: member="infojoueur.php::$bonus" ref="a8c7afa26d3c92b991027d5682b1d85b4" args="" -->
@@ -80,7 +76,7 @@ get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $chaine_nom = $<a class="el" href="classperso.html">perso</a>-&gt;get_grade()-&gt;get_nom().' '.$<a class="el" href="classperso.html">perso</a>-&gt;get_nom()</td>
+          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $chaine_nom = $<a class="el" href="classperso.html">perso</a>-&gt;get_grade()-&gt;get_nom().' '.$<a class="el" href="classperso.html">perso</a>-&gt;get_nom()</td>
         </tr>
       </table>
 </div>
@@ -93,7 +89,7 @@ get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $classe = $<a class="el" href="classperso.html">perso</a>-&gt;get_classe()</td>
+          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $<a class="el" href="classclasse.html">classe</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_classe()</td>
         </tr>
       </table>
 </div>
@@ -119,7 +115,7 @@ get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -132,7 +128,7 @@ get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $niveau = $<a class="el" href="classperso.html">perso</a>-&gt;get_level()</td>
+          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $niveau = $<a class="el" href="classperso.html">perso</a>-&gt;get_level()</td>
         </tr>
       </table>
 </div>
@@ -146,19 +142,6 @@ get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="
       <table class="memname">
         <tr>
           <td class="memname">$<a class="el" href="classperso.html">perso</a> = new <a class="el" href="classperso.html">perso</a>($W_ID)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a39dd8823c7adb97d93cff6c5d449f834"></a><!-- doxytag: member="infojoueur.php::$titres" ref="a39dd8823c7adb97d93cff6c5d449f834" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($joueur-&gt;get_groupe()==$<a class="el" href="classperso.html">perso</a>-&gt;get_groupe()&amp;&amp;$joueur-&gt;get_groupe()!=0 &amp;&amp;$joueur-&gt;get_groupe()!= '') $titres = recup_titre_honorifique($<a class="el" href="classperso.html">perso</a>-&gt;get_id())</td>
         </tr>
       </table>
 </div>
@@ -210,7 +193,7 @@ get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_ID = $_GET['ID']</td>
+          <td class="memname">$W_ID = $_GET['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td>
         </tr>
       </table>
 </div>
@@ -245,7 +228,7 @@ get_groupe()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:55 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

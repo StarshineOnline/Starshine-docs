@@ -32,19 +32,22 @@
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#aa9cc21c7aa5e0c024d33e463fd731504">__construct</a> ($id_perso=-1, $id_groupe=-1)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur permettant la cr?ation d'un objet pour la gestion de <a class="el" href="classmessagerie.html">messagerie</a> d'un <a class="el" href="classperso.html">perso</a>.  <a href="#aa9cc21c7aa5e0c024d33e463fd731504"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a06c174db8dedebefedd55f28eefd13eb">get_non_lu</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nombre de message non lu par type pour un <a class="el" href="classperso.html">perso</a>.  <a href="#a06c174db8dedebefedd55f28eefd13eb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a8a6b9e9b12d4863cd241fcfd4fb3af98">get_threads</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '<a class="el" href="classgroupe.html">groupe</a>', $tri_date= 'ASC', $liste_message=false, $nombre_message= 'all')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a8a2b82eb2b0b527a8667c30f24400740">get_thread_non_lu</a> ($id_thread=0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#afcfd0874d1b88f01c38f17d57923d38d">set_thread_lu</a> ($id_thread=0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#adf7d0b2f14db2361d864b36b5f91bdd1">get_thread</a> ($id_thread=0, $nombre= 'all', $tri_date= 'ASC', $numero_page=false, $message_par_page=10)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#afdb2724dbe50cfef2d5acdae9e2bf44d">set_etat</a> ($id_message=0, $<a class="el" href="classetat.html">etat</a>= 'non_lu')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur permettant la cr?ation d'un objet pour la gestion de <a class="el" href="classmessagerie.html">messagerie</a> d'un <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.  <a href="#aa9cc21c7aa5e0c024d33e463fd731504"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a9358a16b152dcad7a53f97d52eea9735">envoi_message</a> ($id_thread=0, $id_dest=0, $titre= 'Titre vide', $message, $id_groupe=0, $roi=0, $<a class="el" href="gestion__royaume_8php.html#a6804695bc33a050f8d6f05f337d56d70">echange</a>=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a4d32b18a23bca0123a8e2804e5b736ac">get_message</a> ($id_message=0)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a320289138709a3bd111e218fcc8c6ce5">envoi_message</a> ($id_thread=0, $id_dest=0, $titre= 'Titre vide', $message, $id_groupe=0, $roi=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a06c174db8dedebefedd55f28eefd13eb">get_non_lu</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nombre de message non lu par type pour un <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.  <a href="#a06c174db8dedebefedd55f28eefd13eb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#adf7d0b2f14db2361d864b36b5f91bdd1">get_thread</a> ($id_thread=0, $nombre= 'all', $tri_date= 'ASC', $numero_page=false, $message_par_page=10)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#ad577452654f75dbcd49980ef327978b8">get_thread_masque</a> ($id_thread=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a8a2b82eb2b0b527a8667c30f24400740">get_thread_non_lu</a> ($id_thread=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a8a6b9e9b12d4863cd241fcfd4fb3af98">get_threads</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '<a class="el" href="classgroupe.html">groupe</a>', $tri_date= 'ASC', $liste_message=false, $nombre_message= 'all')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#afdb2724dbe50cfef2d5acdae9e2bf44d">set_etat</a> ($id_message=0, $<a class="el" href="classetat.html">etat</a>= 'non_lu')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#afcfd0874d1b88f01c38f17d57923d38d">set_thread_lu</a> ($id_thread=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a25f9514e24d2221ebc1cedd7885f3c88">set_thread_lu_all</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#acd537c23a814d41088d50089fae03437">set_thread_masque</a> ($id_thread=0)</td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a7bf9349f43f689ceddde0dbbe7e5878e">$id_perso</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#affec6f0927b32fa66c0ded192e4aa68b">$id_groupe_perso</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessagerie.html#a7bf9349f43f689ceddde0dbbe7e5878e">$id_perso</a></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="aa9cc21c7aa5e0c024d33e463fd731504"></a><!-- doxytag: member="messagerie::__construct" ref="aa9cc21c7aa5e0c024d33e463fd731504" args="($id_perso=&#45;1, $id_groupe=&#45;1)" -->
@@ -72,12 +75,12 @@
 </div>
 <div class="memdoc">
 
-<p>Constructeur permettant la cr?ation d'un objet pour la gestion de <a class="el" href="classmessagerie.html">messagerie</a> d'un <a class="el" href="classperso.html">perso</a>. </p>
+<p>Constructeur permettant la cr?ation d'un objet pour la gestion de <a class="el" href="classmessagerie.html">messagerie</a> d'un <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>. </p>
 
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a320289138709a3bd111e218fcc8c6ce5"></a><!-- doxytag: member="messagerie::envoi_message" ref="a320289138709a3bd111e218fcc8c6ce5" args="($id_thread=0, $id_dest=0, $titre= 'Titre vide', $message, $id_groupe=0, $roi=0)" -->
+<a class="anchor" id="a9358a16b152dcad7a53f97d52eea9735"></a><!-- doxytag: member="messagerie::envoi_message" ref="a9358a16b152dcad7a53f97d52eea9735" args="($id_thread=0, $id_dest=0, $titre= 'Titre vide', $message, $id_groupe=0, $roi=0, $echange=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -115,7 +118,13 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>roi</em> = <code>0</code></td><td>&nbsp;</td>
+          <td class="paramname"> <em>roi</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>echange</em> = <code>false</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -129,9 +138,7 @@
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmessagerie_a320289138709a3bd111e218fcc8c6ce5_cgraph.png" border="0" usemap="#classmessagerie_a320289138709a3bd111e218fcc8c6ce5_cgraph_map" alt=""></div>
-<map name="classmessagerie_a320289138709a3bd111e218fcc8c6ce5_cgraph_map" id="classmessagerie_a320289138709a3bd111e218fcc8c6ce5_cgraph">
-<area shape="rect" href="base_8inc_8php.html#a4cf4c1f0c7de36fe6e92f54f6ed153b8" title="Fonction permettant de récupérer les infos essentielles du perso (nom, race, classe..." alt="" coords="252,5,404,35"/></map>
+<div class="center"><img src="classmessagerie_a9358a16b152dcad7a53f97d52eea9735_cgraph.png" border="0" usemap="#classmessagerie_a9358a16b152dcad7a53f97d52eea9735_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -170,10 +177,10 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Renvoie le nombre de message non lu par type pour un <a class="el" href="classperso.html">perso</a>. </p>
+<p>Renvoie le nombre de message non lu par type pour un <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$ud_perso</em>&nbsp;</td><td>identifiant du <a class="el" href="classperso.html">perso</a>.</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$ud_perso</em>&nbsp;</td><td>identifiant du <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -181,7 +188,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 <dd>
 ['groupe'] Nombre de message de <a class="el" href="classgroupe.html">groupe</a> non lu. </dd>
 <dd>
-['perso'] Nombre de message <a class="el" href="classperso.html">perso</a> non lu. </dd></dl>
+['perso'] Nombre de message <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> non lu. </dd>
+<dd>
+['echange'] Nombre de message <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> non lu. </dd></dl>
 
 </div>
 </div>
@@ -232,10 +241,26 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classmessagerie_adf7d0b2f14db2361d864b36b5f91bdd1_cgraph.png" border="0" usemap="#classmessagerie_adf7d0b2f14db2361d864b36b5f91bdd1_cgraph_map" alt=""></div>
-<map name="classmessagerie_adf7d0b2f14db2361d864b36b5f91bdd1_cgraph_map" id="classmessagerie_adf7d0b2f14db2361d864b36b5f91bdd1_cgraph">
-<area shape="rect" href="reponses_8inc_8php.html#a37dc45dc8166f04edb0ddeb8ad0d318d" title="security_block" alt="" coords="219,5,331,35"/><area shape="rect" href="reponses_8inc_8php.html#af1965b06a0824d0726fd81508cf910d7" title="send_forbidden" alt="" coords="380,5,497,35"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad577452654f75dbcd49980ef327978b8"></a><!-- doxytag: member="messagerie::get_thread_masque" ref="ad577452654f75dbcd49980ef327978b8" args="($id_thread=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">messagerie::get_thread_masque </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>id_thread</em> = <code>0</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -298,8 +323,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classmessagerie_a8a6b9e9b12d4863cd241fcfd4fb3af98_cgraph.png" border="0" usemap="#classmessagerie_a8a6b9e9b12d4863cd241fcfd4fb3af98_cgraph_map" alt=""></div>
-<map name="classmessagerie_a8a6b9e9b12d4863cd241fcfd4fb3af98_cgraph_map" id="classmessagerie_a8a6b9e9b12d4863cd241fcfd4fb3af98_cgraph">
-<area shape="rect" href="base_8inc_8php.html#a4cf4c1f0c7de36fe6e92f54f6ed153b8" title="Fonction permettant de récupérer les infos essentielles du perso (nom, race, classe..." alt="" coords="228,5,380,35"/></map>
 </div>
 </p>
 
@@ -350,6 +373,41 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a25f9514e24d2221ebc1cedd7885f3c88"></a><!-- doxytag: member="messagerie::set_thread_lu_all" ref="a25f9514e24d2221ebc1cedd7885f3c88" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">messagerie::set_thread_lu_all </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd537c23a814d41088d50089fae03437"></a><!-- doxytag: member="messagerie::set_thread_masque" ref="acd537c23a814d41088d50089fae03437" args="($id_thread=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">messagerie::set_thread_masque </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>id_thread</em> = <code>0</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <hr/><h2>Documentation des données membres</h2>
 <a class="anchor" id="affec6f0927b32fa66c0ded192e4aa68b"></a><!-- doxytag: member="messagerie::$id_groupe_perso" ref="affec6f0927b32fa66c0ded192e4aa68b" args="" -->
 <div class="memitem">
@@ -378,7 +436,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:42:21 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:23 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

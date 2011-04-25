@@ -29,22 +29,22 @@
 <div class="contents">
 <h1>Référence du fichier journal.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a011800c63ece4cbbfa77136a20607023">$options</a> = recup_option($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#ab4127afb6d15fbeaf9e940c516c16465">$nombre_action_journal</a> = 15</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('page', <br class="typebreak"/>
-$_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a9815b05323cc33f971a7339e6e2f1524">$page</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a294ad068cc5363325dcf3645478cf0ba">$and</a> = ''</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#af789423037bbc89dc7c850e761177570">$count</a> = count($options)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a1aecb2ef7f91b535b98d3e708595d479">$db_use</a> = $db_log</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">$keys</a> = array_keys($options)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($i&lt; $count)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a1ed4d3da60824e43d8bd7d101458f6a6">$limit1</a> = ($page - 1) * $nombre_action_journal</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($i&lt; $count)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a1ed4d3da60824e43d8bd7d101458f6a6">$limit1</a> = ($page - 1) * $nombre_action_journal</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a9d6336aa9d6bdaadcd7c98b9153f1878">$limit2</a> = $nombre_action_journal</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT COUNT(*) FROM `&quot;.$table.&quot;` WHERE id_perso = &quot;.$joueur-&gt;get_id()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a1aecb2ef7f91b535b98d3e708595d479">$db_use</a> = $db_log</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $db_use-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $db_use-&gt;read_row($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#ab4127afb6d15fbeaf9e940c516c16465">$nombre_action_journal</a> = 15</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a011800c63ece4cbbfa77136a20607023">$options</a> = recup_option($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('page', <br class="typebreak"/>
+$_GET)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a9815b05323cc33f971a7339e6e2f1524">$page</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a341e2f7dd68725439260b52c56025eb3">$page_max</a> = ceil($row[0] / $nombre_action_journal)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $db_use-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT COUNT(*) FROM `&quot;.$table.&quot;` WHERE id_perso = &quot;.$joueur-&gt;get_id()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journal_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $db_use-&gt;read_row($req)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a294ad068cc5363325dcf3645478cf0ba"></a><!-- doxytag: member="journal.php::$and" ref="a294ad068cc5363325dcf3645478cf0ba" args="" -->
@@ -78,7 +78,7 @@ $_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $db_use = $db_log</td>
+          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $db_use = $db_log</td>
         </tr>
       </table>
 </div>
@@ -104,7 +104,7 @@ $_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -130,7 +130,7 @@ $_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($i&lt; $count) $limit1 = ($page - 1) * $nombre_action_journal</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($i&lt; $count) $limit1 = ($page - 1) * $nombre_action_journal</td>
         </tr>
       </table>
 </div>
@@ -169,7 +169,7 @@ $_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$options = recup_option($_SESSION['ID'])</td>
+          <td class="memname">$options = recup_option($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -182,7 +182,7 @@ $_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513"
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('page', $_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $page = 1</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('page', $_GET)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $page = 1</td>
         </tr>
       </table>
 </div>
@@ -243,7 +243,7 @@ $_GET)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513"
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:55 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

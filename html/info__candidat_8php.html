@@ -30,11 +30,11 @@
 <h1>Référence du fichier info_candidat.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#aa720998827fe9e92a5fe573a62edc0b8">$connexion</a> = true</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> =\''.sSQL($joueur-&gt;get_pos()).'\''</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#a59eabebcf9db04fe004af49fb94e6e79">$W_row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($W_req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#abe2d79bb4aa8b8243d81c67fdd50511f">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($W_row['<a class="el" href="classroyaume.html">royaume</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> =\''.sSQL($joueur-&gt;get_pos()).'\''</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="info__candidat_8php.html#a59eabebcf9db04fe004af49fb94e6e79">$W_row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($W_req)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="aa720998827fe9e92a5fe573a62edc0b8"></a><!-- doxytag: member="info_candidat.php::$connexion" ref="aa720998827fe9e92a5fe573a62edc0b8" args="" -->
@@ -55,7 +55,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -116,7 +116,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:55 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

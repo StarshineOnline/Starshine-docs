@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/roi/drapeaux.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_7f4fe0632d45c90f93345ace9e6e77d1.html">roi</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier drapeaux.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('posex', <br class="typebreak"/>
+$_REQUEST)&amp;&amp;array_key_exists('posey', <br class="typebreak"/>
+$_REQUEST)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('poseall', <br class="typebreak"/>
+$_REQUEST))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#aebbbd3f023ccb9f109004d19f8b256c9">print_map</a> ($mag_factor, $r_c)</td></tr>
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a4f0b5afc01fa783e42d37abd11c58a16">$_SESSION</a> ['map_drap_key'] = $rand</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_rang_royaume()!=6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a8d6f2085ec5c142594c10fdce51157fa">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ae36afd194eefa9e66c1890a817cbce7f">$mag_factor</a> = 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad4033ca6fe2f6ddae4e513d3691c2fec">$map_size</a> = 760 * $mag_factor</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#af254d81e86fea811121de8ec9e01dee4">$mleft</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a3673f35adf7df1b2567032712de4c8a1">$mtop</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a4e5d3ca0b43cd7c92e10f11c0e64e850">$nb_cases_ok</a> = $<a class="el" href="classdb.html">db</a>-&gt;num_rows($r_c)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a0605f40c0f39be7fca68407bba779a68">$nb_drapeaux_dispo</a> = $nbd[0]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#aa21a84c54b5380bc7d5427a92905a8aa">$nb_drapeaux_poses</a> = $nbp[0]</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a695bb676790729cb9ad45df1087f133f">$nbd</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($r_nbd)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a8a8ed8dd5ce56c62bf1520204f9cc3e1">$nbp</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($r_nbp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ac702c7e74c287520f531b3cbcfdc72c4">$r_c</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#af4a34353fe4d4cc740281919adbff7de">$r_nbd</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a1f3cb61ec27aa3bdca83dade653ad85b">$r_nbp</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('mag_factor', <br class="typebreak"/>
+$_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('mtop', <br class="typebreak"/>
+$_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('mleft', <br class="typebreak"/>
+$_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad02b519043810d66d48636ab2e0b4890">$rand</a> = rand()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = &quot;SELECT count(1) from depot_royaume d, objet_royaume o, <a class="el" href="classbatiment.html">batiment</a> b where <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">o.id</a> = d.id_objet and o.id_batiment = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">b.id</a> and <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">o.type</a> = 'drapeau' and b.hp = 1 and d.id_royaume = $roy_id&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a5fd69d87b09c6753250ed4eaba10b194">$roy_id</a> = $<a class="el" href="classroyaume.html">royaume</a>-&gt;get_id()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a090e343a2a420a787e8ddf84ae964a26">$ts</a> ['end'] = microtime()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a8b4ebf7adbd0943c96371ac02b89a3f1">$ts</a> ['fini'] = microtime()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a1589e4fe6a685f13f6b690f025fbd0e8">$ts</a> ['select'] = microtime()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad42f7ad462b4e86c2ed7dc41adc08e8a">$ts</a> ['make_tmp_adj_tables'] = microtime()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a2fa404162d7d33927b6c6ecea7fb8a55">$ts</a> ['start'] = microtime()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a3984cdc176ac1917376aaa9e16827e5c">$ts</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad8f0964af7d5a62169b1ae2863a2d8df">if</a> (file_exists('../root.php'))</td></tr>
+</table>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="aebbbd3f023ccb9f109004d19f8b256c9"></a><!-- doxytag: member="drapeaux.php::print_map" ref="aebbbd3f023ccb9f109004d19f8b256c9" args="($mag_factor, $r_c)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('posex', $_REQUEST)&amp;&amp;array_key_exists('posey', $_REQUEST)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('poseall', $_REQUEST)) print_map </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mag_factor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>r_c</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a4f0b5afc01fa783e42d37abd11c58a16"></a><!-- doxytag: member="drapeaux.php::$_SESSION" ref="a4f0b5afc01fa783e42d37abd11c58a16" args="['map_drap_key']" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$_SESSION['map_drap_key'] = $rand</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d6f2085ec5c142594c10fdce51157fa"></a><!-- doxytag: member="drapeaux.php::$case" ref="a8d6f2085ec5c142594c10fdce51157fa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($joueur-&gt;get_rang_royaume()!=6) $case = new <a class="el" href="classmap__case.html">map_case</a>()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae36afd194eefa9e66c1890a817cbce7f"></a><!-- doxytag: member="drapeaux.php::$mag_factor" ref="ae36afd194eefa9e66c1890a817cbce7f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$mag_factor = 1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad4033ca6fe2f6ddae4e513d3691c2fec"></a><!-- doxytag: member="drapeaux.php::$map_size" ref="ad4033ca6fe2f6ddae4e513d3691c2fec" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$map_size = 760 * $mag_factor</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af254d81e86fea811121de8ec9e01dee4"></a><!-- doxytag: member="drapeaux.php::$mleft" ref="af254d81e86fea811121de8ec9e01dee4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$mleft = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3673f35adf7df1b2567032712de4c8a1"></a><!-- doxytag: member="drapeaux.php::$mtop" ref="a3673f35adf7df1b2567032712de4c8a1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$mtop = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4e5d3ca0b43cd7c92e10f11c0e64e850"></a><!-- doxytag: member="drapeaux.php::$nb_cases_ok" ref="a4e5d3ca0b43cd7c92e10f11c0e64e850" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nb_cases_ok = $<a class="el" href="classdb.html">db</a>-&gt;num_rows($r_c)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0605f40c0f39be7fca68407bba779a68"></a><!-- doxytag: member="drapeaux.php::$nb_drapeaux_dispo" ref="a0605f40c0f39be7fca68407bba779a68" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nb_drapeaux_dispo = $nbd[0]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa21a84c54b5380bc7d5427a92905a8aa"></a><!-- doxytag: member="drapeaux.php::$nb_drapeaux_poses" ref="aa21a84c54b5380bc7d5427a92905a8aa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nb_drapeaux_poses = $nbp[0]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a695bb676790729cb9ad45df1087f133f"></a><!-- doxytag: member="drapeaux.php::$nbd" ref="a695bb676790729cb9ad45df1087f133f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nbd = $<a class="el" href="classdb.html">db</a>-&gt;read_array($r_nbd)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a8ed8dd5ce56c62bf1520204f9cc3e1"></a><!-- doxytag: member="drapeaux.php::$nbp" ref="a8a8ed8dd5ce56c62bf1520204f9cc3e1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nbp = $<a class="el" href="classdb.html">db</a>-&gt;read_array($r_nbp)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac702c7e74c287520f531b3cbcfdc72c4"></a><!-- doxytag: member="drapeaux.php::$r_c" ref="ac702c7e74c287520f531b3cbcfdc72c4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$r_c = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4a34353fe4d4cc740281919adbff7de"></a><!-- doxytag: member="drapeaux.php::$r_nbd" ref="af4a34353fe4d4cc740281919adbff7de" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$r_nbd = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f3cb61ec27aa3bdca83dade653ad85b"></a><!-- doxytag: member="drapeaux.php::$r_nbp" ref="a1f3cb61ec27aa3bdca83dade653ad85b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$r_nbp = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad02b519043810d66d48636ab2e0b4890"></a><!-- doxytag: member="drapeaux.php::$rand" ref="ad02b519043810d66d48636ab2e0b4890" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('mag_factor', $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('mtop', $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('mleft', $_GET)) $rand = rand()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="drapeaux.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req = &quot;SELECT count(1) from depot_royaume d, objet_royaume o, <a class="el" href="classbatiment.html">batiment</a> b where <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">o.id</a> = d.id_objet and o.id_batiment = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">b.id</a> and <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">o.type</a> = 'drapeau' and b.hp = 1 and d.id_royaume = $roy_id&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5fd69d87b09c6753250ed4eaba10b194"></a><!-- doxytag: member="drapeaux.php::$roy_id" ref="a5fd69d87b09c6753250ed4eaba10b194" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$roy_id = $<a class="el" href="classroyaume.html">royaume</a>-&gt;get_id()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a090e343a2a420a787e8ddf84ae964a26"></a><!-- doxytag: member="drapeaux.php::$ts" ref="a090e343a2a420a787e8ddf84ae964a26" args="['end']" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ts['end'] = microtime()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b4ebf7adbd0943c96371ac02b89a3f1"></a><!-- doxytag: member="drapeaux.php::$ts" ref="a8b4ebf7adbd0943c96371ac02b89a3f1" args="['fini']" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ts['fini'] = microtime()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1589e4fe6a685f13f6b690f025fbd0e8"></a><!-- doxytag: member="drapeaux.php::$ts" ref="a1589e4fe6a685f13f6b690f025fbd0e8" args="['select']" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ts['select'] = microtime()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad42f7ad462b4e86c2ed7dc41adc08e8a"></a><!-- doxytag: member="drapeaux.php::$ts" ref="ad42f7ad462b4e86c2ed7dc41adc08e8a" args="['make_tmp_adj_tables']" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ts['make_tmp_adj_tables'] = microtime()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2fa404162d7d33927b6c6ecea7fb8a55"></a><!-- doxytag: member="drapeaux.php::$ts" ref="a2fa404162d7d33927b6c6ecea7fb8a55" args="['start']" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ts['start'] = microtime()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3984cdc176ac1917376aaa9e16827e5c"></a><!-- doxytag: member="drapeaux.php::$ts" ref="a3984cdc176ac1917376aaa9e16827e5c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ts = array()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8f0964af7d5a62169b1ae2863a2d8df"></a><!-- doxytag: member="drapeaux.php::if" ref="ad8f0964af7d5a62169b1ae2863a2d8df" args="(file_exists('../root.php'))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(file_exists('../root.php'))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

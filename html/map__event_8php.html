@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/map_event.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier map_event.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a489c44e2d9ea8e20c47b6b6d520b75a9">checkOpenJailGate</a> (&amp;$joueur)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a7801c28e9a029b2cb077610811ce7da6">checkTpAbo</a> (&amp;$joueur)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#abce125332ff0cba4992510773d278b73">showImage</a> ($url, $titre=null)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($W_case!=$joueur-&gt;get_poscase())&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#ad6413ee4f82423d80a58b8bd19dda821">showMessage</a> ($msg, $titre=null)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a07c9eeefefad3dd8cb27620565b9b873">showParchemin</a> ($texte, $titre= 'Une page de parchemin', $image= 'pagenoir.png', $x=416, $y=575)</td></tr>
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">global&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#ab811be6f8e1ee0dc0fe258c13360fd20">$dontrefresh</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">global&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#aa27b630d00c6b0d6dc812835da670c58">$dontrefreshmap</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effectue les actions spéciales des cases.  <a href="#abeea5db7af13b1bdd70c46e49f512b26"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a6f8c7d7c68bb6c072dfef6183d268833">$S_query</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($S_requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#aa6c58c9a9966a430fc77f9d579793fa0">$S_requete</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = $_GET['poscase']</td></tr>
+</table>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a489c44e2d9ea8e20c47b6b6d520b75a9"></a><!-- doxytag: member="map_event.php::checkOpenJailGate" ref="a489c44e2d9ea8e20c47b6b6d520b75a9" args="(&amp;$joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">checkOpenJailGate </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="map__event_8php_a489c44e2d9ea8e20c47b6b6d520b75a9_cgraph.png" border="0" usemap="#map__event_8php_a489c44e2d9ea8e20c47b6b6d520b75a9_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7801c28e9a029b2cb077610811ce7da6"></a><!-- doxytag: member="map_event.php::checkTpAbo" ref="a7801c28e9a029b2cb077610811ce7da6" args="(&amp;$joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">checkTpAbo </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abce125332ff0cba4992510773d278b73"></a><!-- doxytag: member="map_event.php::showImage" ref="abce125332ff0cba4992510773d278b73" args="($url, $titre=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">showImage </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>titre</em> = <code>null</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad6413ee4f82423d80a58b8bd19dda821"></a><!-- doxytag: member="map_event.php::showMessage" ref="ad6413ee4f82423d80a58b8bd19dda821" args="($msg, $titre=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($W_case!=$joueur-&gt;get_poscase()) showMessage </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>titre</em> = <code>null</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="map__event_8php_ad6413ee4f82423d80a58b8bd19dda821_icgraph.png" border="0" usemap="#map__event_8php_ad6413ee4f82423d80a58b8bd19dda821_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a07c9eeefefad3dd8cb27620565b9b873"></a><!-- doxytag: member="map_event.php::showParchemin" ref="a07c9eeefefad3dd8cb27620565b9b873" args="($texte, $titre= 'Une page de parchemin', $image= 'pagenoir.png', $x=416, $y=575)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">showParchemin </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>texte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>titre</em> = <code>'Une&nbsp;page&nbsp;de&nbsp;parchemin'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>image</em> = <code>'pagenoir.png'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em> = <code>416</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em> = <code>575</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="ab811be6f8e1ee0dc0fe258c13360fd20"></a><!-- doxytag: member="map_event.php::$dontrefresh" ref="ab811be6f8e1ee0dc0fe258c13360fd20" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">global $dontrefresh</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa27b630d00c6b0d6dc812835da670c58"></a><!-- doxytag: member="map_event.php::$dontrefreshmap" ref="aa27b630d00c6b0d6dc812835da670c58" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">global $dontrefreshmap</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="map_event.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Effectue les actions spéciales des cases. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6f8c7d7c68bb6c072dfef6183d268833"></a><!-- doxytag: member="map_event.php::$S_query" ref="a6f8c7d7c68bb6c072dfef6183d268833" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$S_query = $<a class="el" href="classdb.html">db</a>-&gt;query($S_requete)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6c58c9a9966a430fc77f9d579793fa0"></a><!-- doxytag: member="map_event.php::$S_requete" ref="aa6c58c9a9966a430fc77f9d579793fa0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$S_requete</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><pre class="fragment"> <span class="stringliteral">&apos;SELECT * from map_event WHERE x = &apos;</span>.$joueur-&gt;get_x().
+<span class="stringliteral">&apos; AND y = &apos;</span>.<a class="code" href="action_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a>-&gt;get_y()
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a348857e01ece8eec9741a8aac278b4b7"></a><!-- doxytag: member="map_event.php::$W_case" ref="a348857e01ece8eec9741a8aac278b4b7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$W_case = $_GET['poscase']</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

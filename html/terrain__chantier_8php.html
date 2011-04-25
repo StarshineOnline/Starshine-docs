@@ -29,14 +29,14 @@
 <div class="contents">
 <h1>Référence du fichier terrain_chantier.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a6e88dcb746884d18f6c89eb9b9c14a42">$position</a> = convert_in_pos($joueur-&gt;get_x(), $joueur-&gt;get_y())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a3cd2ddf362a14a21c6d4166c35dfbd48">$verif_ville</a> = verif_ville($joueur-&gt;get_x(), $joueur-&gt;get_y())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT * FROM <a class="el" href="classmap.html">map</a> WHERE ID =\''.sSQL($position).'\''</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a59eabebcf9db04fe004af49fb94e6e79">$W_row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($W_req)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#abe2d79bb4aa8b8243d81c67fdd50511f">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($W_row['<a class="el" href="classroyaume.html">royaume</a>'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#adc5bfc941d40883a35083b4167529fec">$_SESSION</a> ['position'] = $position</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a6e88dcb746884d18f6c89eb9b9c14a42">$position</a> = convert_in_pos($joueur-&gt;get_x(), $joueur-&gt;get_y())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#abe2d79bb4aa8b8243d81c67fdd50511f">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($W_row['<a class="el" href="classroyaume.html">royaume</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a3cd2ddf362a14a21c6d4166c35dfbd48">$verif_ville</a> = verif_ville($joueur-&gt;get_x(), $joueur-&gt;get_y())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT * FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$joueur-&gt;get_x().' and y = '.$joueur-&gt;get_y()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="terrain__chantier_8php.html#a59eabebcf9db04fe004af49fb94e6e79">$W_row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($W_req)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="adc5bfc941d40883a35083b4167529fec"></a><!-- doxytag: member="terrain_chantier.php::$_SESSION" ref="adc5bfc941d40883a35083b4167529fec" args="['position']" -->
@@ -57,7 +57,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -122,7 +122,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_requete = 'SELECT * FROM <a class="el" href="classmap.html">map</a> WHERE ID =\''.sSQL($position).'\''</td>
+          <td class="memname">$W_requete = 'SELECT * FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$joueur-&gt;get_x().' and y = '.$joueur-&gt;get_y()</td>
         </tr>
       </table>
 </div>
@@ -144,7 +144,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:56 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence de la classe event_rte</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Liste&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&nbsp;de&nbsp;classe</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence de la classe event_rte</h1><!-- doxytag: class="event_rte" --><!-- doxytag: inherits="event_dte_rte" -->
+<p>Classe gérant un RTE Similaire au DTE mais les équipes sont composés aléatoirement entre les différents participants.  
+<a href="#_details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe d'héritage de event_rte:</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__rte__inherit__graph.png" border="0" usemap="#event__rte_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de event_rte:</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__rte__coll__graph.png" border="0" usemap="#event__rte_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+
+<p><a href="classevent__rte-members.html">Liste de tous les membres</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a8aab66eec6306fd7a3c04f5e401dc569">admin_options_spec</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gère l'interface d'administration spécifique au DTE.  <a href="#a8aab66eec6306fd7a3c04f5e401dc569"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a86f4a397e96a12e619b6e86e6b3fb48f">infos_equipe</a> ($equipe)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche le nom d'une équipe avec éventuellement une info-bulle dans l'interface de ville.  <a href="#a86f4a397e96a12e619b6e86e6b3fb48f"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Informations</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrpc4c95c36570d5a8834be5e88e2f0f6b2"></a>Informations sur l'event et son fonctionnement </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a71cb1bb23a0024045f2effdec2d4be9b">get_nom</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nom de l'event (dépend du type).  <a href="#a71cb1bb23a0024045f2effdec2d4be9b"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Gestion interne des données</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp48baf852202b75b6e473e3558daf6eaf"></a>Méthodes, surchargées ou à surcharger, necessaire à l'initialisation de l'objet et à sa sauvegarde dans la base de données. </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#aad98dae4ff62da030292f9e9caa8b857">serializeDonnees</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">serialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger)  <a href="#aad98dae4ff62da030292f9e9caa8b857"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#ab246a2e74c85409612b686144f113d2e">unserializeDonnees</a> ($donnees)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">déserialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger)  <a href="#ab246a2e74c85409612b686144f113d2e"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Paramètres</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpe7785de91330713fc2d12404bb6bd556"></a>Paramètres de l'event et accesseurs. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a0bd52d145f61c2c7c849ad114debae92">$creat_equipes</a> = array(1, 1, 1, 0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indique comment sont créées les équipes.  <a href="#a0bd52d145f61c2c7c849ad114debae92"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a86d9626ef3f6bdb1db45ee237c312d67">equipe_auto</a> = 0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indice pour l'automatisation de la création des équipes.  <a href="#a86d9626ef3f6bdb1db45ee237c312d67"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#ac644b56f752aa2725d8106371e9d3c19">equipe_pretres</a> = 2</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indice pour la dispersion des prêtres / clercs.  <a href="#ac644b56f752aa2725d8106371e9d3c19"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a0184851efbc216c2928dbdd9dac2be35">equipe_pretres_2vie</a> = 3</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indice pour l'équivalence 1 prêtre = 2 paladins/druides  <a href="#a0184851efbc216c2928dbdd9dac2be35"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a07ebf3b76ae1e91a5200a2418d8fd682">equipe_refait_deux</a> = 1</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">indice pour la regénération des équipe ayant terminé deuxième en poules  <a href="#a07ebf3b76ae1e91a5200a2418d8fd682"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#aafc01f9c54b37cfed45c10747704d3c9">pretres_aleat</a> = 0</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">répartition des prêtre complétement aléatoire.  <a href="#aafc01f9c54b37cfed45c10747704d3c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#ae32337a186f3359abcf74c180e93f9b1">pretres_aumoins1</a> = 1</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">au moins 1 prêtre dans chaque équipe.  <a href="#ae32337a186f3359abcf74c180e93f9b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a58c18e424a50a35255b1a2a991020af8">pretres_reparti</a> = 2</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">répartie tous les prêtre dans les équipes.  <a href="#a58c18e424a50a35255b1a2a991020af8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#a9d697cd531b6403a4581427e6ba5b3a2">pretres_reparti_vie</a> = 3</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">répartie tous les prêtre, druides et paladins dans les équipes.  <a href="#a9d697cd531b6403a4581427e6ba5b3a2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#abe6ba97ee54c6184f0743ec2acfb5532">get_creat_equipes</a> ($ind)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique les options des matchs.  <a href="#abe6ba97ee54c6184f0743ec2acfb5532"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__rte.html#aef422b69e7fae253cb99a0d521d8d864">set_creat_equipes</a> ($ind, $val)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Définit les options des matchs.  <a href="#aef422b69e7fae253cb99a0d521d8d864"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Classe gérant un RTE Similaire au DTE mais les équipes sont composés aléatoirement entre les différents participants. </p>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a8aab66eec6306fd7a3c04f5e401dc569"></a><!-- doxytag: member="event_rte::admin_options_spec" ref="a8aab66eec6306fd7a3c04f5e401dc569" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::admin_options_spec </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Gère l'interface d'administration spécifique au DTE. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classevent__dte__rte.html#a580b8b4cbc7f42aef68c3dcb12abadbd">event_dte_rte</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__rte_a8aab66eec6306fd7a3c04f5e401dc569_cgraph.png" border="0" usemap="#classevent__rte_a8aab66eec6306fd7a3c04f5e401dc569_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abe6ba97ee54c6184f0743ec2acfb5532"></a><!-- doxytag: member="event_rte::get_creat_equipes" ref="abe6ba97ee54c6184f0743ec2acfb5532" args="($ind)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::get_creat_equipes </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>ind</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indique les options des matchs. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__rte_abe6ba97ee54c6184f0743ec2acfb5532_icgraph.png" border="0" usemap="#classevent__rte_abe6ba97ee54c6184f0743ec2acfb5532_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a71cb1bb23a0024045f2effdec2d4be9b"></a><!-- doxytag: member="event_rte::get_nom" ref="a71cb1bb23a0024045f2effdec2d4be9b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::get_nom </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le nom de l'event (dépend du type). </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classevent.html#a9c0d7cfb86a84b36d2ef201f0c3ca7c7">event</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86f4a397e96a12e619b6e86e6b3fb48f"></a><!-- doxytag: member="event_rte::infos_equipe" ref="a86f4a397e96a12e619b6e86e6b3fb48f" args="($equipe)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::infos_equipe </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>equipe</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Affiche le nom d'une équipe avec éventuellement une info-bulle dans l'interface de ville. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$equipe</em>&nbsp;</td><td>objet représentant l'équipe </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classevent__dte__rte.html#a402aa09145de116dbbffe8a0c938afab">event_dte_rte</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad98dae4ff62da030292f9e9caa8b857"></a><!-- doxytag: member="event_rte::serializeDonnees" ref="aad98dae4ff62da030292f9e9caa8b857" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::serializeDonnees </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>serialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger) </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classevent__dte__rte.html#aa1c2935302df97ae0f1eb6c9d0ac964e">event_dte_rte</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__rte_aad98dae4ff62da030292f9e9caa8b857_cgraph.png" border="0" usemap="#classevent__rte_aad98dae4ff62da030292f9e9caa8b857_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aef422b69e7fae253cb99a0d521d8d864"></a><!-- doxytag: member="event_rte::set_creat_equipes" ref="aef422b69e7fae253cb99a0d521d8d864" args="($ind, $val)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::set_creat_equipes </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>ind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>val</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Définit les options des matchs. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__rte_aef422b69e7fae253cb99a0d521d8d864_icgraph.png" border="0" usemap="#classevent__rte_aef422b69e7fae253cb99a0d521d8d864_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab246a2e74c85409612b686144f113d2e"></a><!-- doxytag: member="event_rte::unserializeDonnees" ref="ab246a2e74c85409612b686144f113d2e" args="($donnees)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::unserializeDonnees </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>donnees</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>déserialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger) </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classevent__dte__rte.html#a6739e0b83f772c3d929d6fd37d8c8857">event_dte_rte</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a0bd52d145f61c2c7c849ad114debae92"></a><!-- doxytag: member="event_rte::$creat_equipes" ref="a0bd52d145f61c2c7c849ad114debae92" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_rte::$creat_equipes = array(1, 1, 1, 0)<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indique comment sont créées les équipes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a86d9626ef3f6bdb1db45ee237c312d67"></a><!-- doxytag: member="event_rte::equipe_auto" ref="a86d9626ef3f6bdb1db45ee237c312d67" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#a86d9626ef3f6bdb1db45ee237c312d67">event_rte::equipe_auto</a> = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice pour l'automatisation de la création des équipes. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac644b56f752aa2725d8106371e9d3c19"></a><!-- doxytag: member="event_rte::equipe_pretres" ref="ac644b56f752aa2725d8106371e9d3c19" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#ac644b56f752aa2725d8106371e9d3c19">event_rte::equipe_pretres</a> = 2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice pour la dispersion des prêtres / clercs. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0184851efbc216c2928dbdd9dac2be35"></a><!-- doxytag: member="event_rte::equipe_pretres_2vie" ref="a0184851efbc216c2928dbdd9dac2be35" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#a0184851efbc216c2928dbdd9dac2be35">event_rte::equipe_pretres_2vie</a> = 3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice pour l'équivalence 1 prêtre = 2 paladins/druides </p>
+
+</div>
+</div>
+<a class="anchor" id="a07ebf3b76ae1e91a5200a2418d8fd682"></a><!-- doxytag: member="event_rte::equipe_refait_deux" ref="a07ebf3b76ae1e91a5200a2418d8fd682" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#a07ebf3b76ae1e91a5200a2418d8fd682">event_rte::equipe_refait_deux</a> = 1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>indice pour la regénération des équipe ayant terminé deuxième en poules </p>
+
+</div>
+</div>
+<a class="anchor" id="aafc01f9c54b37cfed45c10747704d3c9"></a><!-- doxytag: member="event_rte::pretres_aleat" ref="aafc01f9c54b37cfed45c10747704d3c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#aafc01f9c54b37cfed45c10747704d3c9">event_rte::pretres_aleat</a> = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>répartition des prêtre complétement aléatoire. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae32337a186f3359abcf74c180e93f9b1"></a><!-- doxytag: member="event_rte::pretres_aumoins1" ref="ae32337a186f3359abcf74c180e93f9b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#ae32337a186f3359abcf74c180e93f9b1">event_rte::pretres_aumoins1</a> = 1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>au moins 1 prêtre dans chaque équipe. </p>
+
+</div>
+</div>
+<a class="anchor" id="a58c18e424a50a35255b1a2a991020af8"></a><!-- doxytag: member="event_rte::pretres_reparti" ref="a58c18e424a50a35255b1a2a991020af8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#a58c18e424a50a35255b1a2a991020af8">event_rte::pretres_reparti</a> = 2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>répartie tous les prêtre dans les équipes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d697cd531b6403a4581427e6ba5b3a2"></a><!-- doxytag: member="event_rte::pretres_reparti_vie" ref="a9d697cd531b6403a4581427e6ba5b3a2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classevent__rte.html#a9d697cd531b6403a4581427e6ba5b3a2">event_rte::pretres_reparti_vie</a> = 3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>répartie tous les prêtre, druides et paladins dans les équipes. </p>
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:23 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

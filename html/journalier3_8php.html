@@ -29,11 +29,11 @@
 <div class="contents">
 <h1>Référence du fichier journalier3.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#a78db1a0602e3b6ac1d9a1b5ec103c160">$time</a> = time() - (31 * 24 * 60 * 60)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM log_connexion WHERE time &lt;= &quot;.$time.&quot; ORDER BY time ASC&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#ac1acfb5c978f1f0056be6e8624869213">$annee</a> = date(&quot;Y&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#ac1acfb5c978f1f0056be6e8624869213">$annee</a> = date(&quot;Y&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#ac3dd350c90be7c45f992a6efde984c66">$mois</a> = date(&quot;n&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM log_connexion WHERE time &lt;= &quot;.$time.&quot; ORDER BY time ASC&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier3_8php.html#a78db1a0602e3b6ac1d9a1b5ec103c160">$time</a> = time() - (31 * 24 * 60 * 60)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="ac1acfb5c978f1f0056be6e8624869213"></a><!-- doxytag: member="journalier3.php::$annee" ref="ac1acfb5c978f1f0056be6e8624869213" args="" -->
@@ -41,7 +41,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) $annee = date(&quot;Y&quot;)</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) $annee = date(&quot;Y&quot;)</td>
         </tr>
       </table>
 </div>
@@ -102,7 +102,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:55 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

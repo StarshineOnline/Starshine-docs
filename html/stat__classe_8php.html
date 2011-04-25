@@ -30,11 +30,11 @@
 <h1>Référence du fichier stat_classe.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#a6efc15b5a2314dd4b5aaa556a375c6d6">$data</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#aa5122ec2579420d7ced620e94b516998">$legend</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#a177af2bf70bede02de3d05a425fb8e43">$label</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT LOWER(nom) as name, rang FROM classe WHERE rang &gt; 0 ORDER BY rang&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#aa5122ec2579420d7ced620e94b516998">$legend</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#aee55efb7feda52795878feff4324cf62">$rang</a> = array(false, false, false, false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#aee55efb7feda52795878feff4324cf62">$rang</a> = array(false, false, false, false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="stat__classe_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT LOWER(nom) as name, rang FROM <a class="el" href="classclasse.html">classe</a> WHERE rang &gt; 0 ORDER BY rang&quot;</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a6efc15b5a2314dd4b5aaa556a375c6d6"></a><!-- doxytag: member="stat_classe.php::$data" ref="a6efc15b5a2314dd4b5aaa556a375c6d6" args="" -->
@@ -81,7 +81,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) $rang = array(false, false, false, false)</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) $rang = array(false, false, false, false)</td>
         </tr>
       </table>
 </div>
@@ -107,7 +107,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT LOWER(nom) as name, rang FROM classe WHERE rang &gt; 0 ORDER BY rang&quot;</td>
+          <td class="memname">$requete = &quot;SELECT LOWER(nom) as name, rang FROM <a class="el" href="classclasse.html">classe</a> WHERE rang &gt; 0 ORDER BY rang&quot;</td>
         </tr>
       </table>
 </div>
@@ -116,7 +116,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:56 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

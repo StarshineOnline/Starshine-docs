@@ -29,23 +29,23 @@
 <div class="contents">
 <h1>Référence du fichier carte_diplo.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a687c45980461409d6c50a5d8b218b841">$debut</a> = getmicrotime()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a481c918f8d853749e00b5942cabf599a">$date</a> = date(&quot;Y-m-d&quot;, mktime(0, 0, 0, date(&quot;m&quot;) , date(&quot;d&quot;) - 1, date(&quot;Y&quot;)))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a0614bfd5e9f35aae3832af0d52b1f611">$show_info</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a76ab3ebd57a683f3311610e54344306f">$im</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#ab99599d1702f329ce472bcbf96846531">$background_color</a> = imagecolorallocate ($im, 0, 0, 0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a242dab441bef25d689102d4f82367ab6">$carte</a> = 'image/carte/carte_diplo_'.$_GET['race'].'.png'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($i&lt; $count)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a33abd8e03ca4dd74a8bdf8ff7bfcdaa0">$col</a> = '<a class="el" href="classroyaume.html">royaume</a>'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#aa8c968f8ff06e72439dd8d847cd2c932">$color1</a> = imagecolorallocate($im, 0xc0, 0x07, 0x14)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#adc07f4cda84ff3a3ce2e637778807e51">$color2</a> = imagecolorallocate($im, 0x33, 0xcc, 0x00)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a3dbbf8ab29074f3e29878a572583a7ff">$color3</a> = imagecolorallocate($im, 0xff, 0xff, 0xff)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a04694553853b195d581304a3ee96aaaa">$color4</a> = imagecolorallocate($im, 0xfc, 0xff, 0x00)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM <a class="el" href="classdiplomatie.html">diplomatie</a> WHERE race = '&quot;.$_GET['race'].&quot;'&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">$keys</a> = array_keys($row)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#af789423037bbc89dc7c850e761177570">$count</a> = count($keys)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($i&lt; $count)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a33abd8e03ca4dd74a8bdf8ff7bfcdaa0">$col</a> = '<a class="el" href="classroyaume.html">royaume</a>'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a242dab441bef25d689102d4f82367ab6">$carte</a> = 'image/carte/carte_diplo_'.$_GET['race'].'.png'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a481c918f8d853749e00b5942cabf599a">$date</a> = date(&quot;Y-m-d&quot;, mktime(0, 0, 0, date(&quot;m&quot;) , date(&quot;d&quot;) - 1, date(&quot;Y&quot;)))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a687c45980461409d6c50a5d8b218b841">$debut</a> = getmicrotime()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a76ab3ebd57a683f3311610e54344306f">$im</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#af20635b6c08e03bfee9e3fc036fa80f3">$keys</a> = array_keys($row)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM <a class="el" href="classdiplomatie.html">diplomatie</a> WHERE race = '&quot;.$_GET['race'].&quot;'&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="carte__diplo_8php.html#a0614bfd5e9f35aae3832af0d52b1f611">$show_info</a> = array()</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="ab99599d1702f329ce472bcbf96846531"></a><!-- doxytag: member="carte_diplo.php::$background_color" ref="ab99599d1702f329ce472bcbf96846531" args="" -->
@@ -79,7 +79,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($i&lt; $count) $col = '<a class="el" href="classroyaume.html">royaume</a>'</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($i&lt; $count) $col = '<a class="el" href="classroyaume.html">royaume</a>'</td>
         </tr>
       </table>
 </div>
@@ -272,7 +272,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:22 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:17 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

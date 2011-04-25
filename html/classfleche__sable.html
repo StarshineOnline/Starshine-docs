@@ -31,23 +31,19 @@
 Graphe d'héritage de fleche_sable:</div>
 <div class="dynsection">
 <div class="center"><img src="classfleche__sable__inherit__graph.png" border="0" usemap="#fleche__sable_inherit__map" alt="Inheritance graph"/></div>
-<map name="fleche__sable_inherit__map" id="fleche__sable_inherit__map">
-<area shape="rect" href="classcomp__combat.html" title="Competence de combat." alt="" coords="53,1229,165,1317"/><area shape="rect" href="classactive__effect.html" title="Effect actif : buff ou compétence de combat." alt="" coords="53,981,165,1181"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de fleche_sable:</div>
 <div class="dynsection">
 <div class="center"><img src="classfleche__sable__coll__graph.png" border="0" usemap="#fleche__sable_coll__map" alt="Collaboration graph"/></div>
-<map name="fleche__sable_coll__map" id="fleche__sable_coll__map">
-<area shape="rect" href="classcomp__combat.html" title="Competence de combat." alt="" coords="53,1229,165,1317"/><area shape="rect" href="classactive__effect.html" title="Effect actif : buff ou compétence de combat." alt="" coords="53,981,165,1181"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classfleche__sable-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__sable.html#a194bd1e5658e7768021420117cd51afa">__construct</a> ($aEffet, $aEffet2, $aDuree)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__sable.html#a1c6ddcaacd4a484d1b43969aa923cf88">calcul_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts.  <a href="#a1c6ddcaacd4a484d1b43969aa923cf88"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__sable.html#a32b82aad67a51b6a285ed424405acf32">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#a32b82aad67a51b6a285ed424405acf32"></a><br/></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a194bd1e5658e7768021420117cd51afa"></a><!-- doxytag: member="fleche_sable::__construct" ref="a194bd1e5658e7768021420117cd51afa" args="($aEffet, $aEffet2, $aDuree)" -->
@@ -86,12 +82,12 @@ Graphe de collaboration de fleche_sable:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a1c6ddcaacd4a484d1b43969aa923cf88"></a><!-- doxytag: member="fleche_sable::calcul_degats" ref="a1c6ddcaacd4a484d1b43969aa923cf88" args="(&amp;$actif, &amp;$passif, $degats)" -->
+<a class="anchor" id="a32b82aad67a51b6a285ed424405acf32"></a><!-- doxytag: member="fleche_sable::inflige_degats" ref="a32b82aad67a51b6a285ed424405acf32" args="(&amp;$actif, &amp;$passif, $degats)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fleche_sable::calcul_degats </td>
+          <td class="memname">fleche_sable::inflige_degats </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
           <td class="paramname"> <em>actif</em>, </td>
@@ -117,32 +113,29 @@ Graphe de collaboration de fleche_sable:</div>
 </div>
 <div class="memdoc">
 
-<p>Modifie les dégâts. </p>
+<p>Applique les effets ayant lieu lorsque les dégâts ont lieu. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts avant modification.</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>Dégâts après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a4301f062fc2f675e82c5f625e90e9b36">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classfleche__sable_a1c6ddcaacd4a484d1b43969aa923cf88_cgraph.png" border="0" usemap="#classfleche__sable_a1c6ddcaacd4a484d1b43969aa923cf88_cgraph_map" alt=""></div>
-<map name="classfleche__sable_a1c6ddcaacd4a484d1b43969aa923cf88_cgraph_map" id="classfleche__sable_a1c6ddcaacd4a484d1b43969aa923cf88_cgraph">
-<area shape="rect" href="classeffect.html#ab8be2d8e576cbabc5238edd3782fb3e4" title="Affiche le message d&#39;informations correspondant à l&#39;effet." alt="" coords="247,5,345,35"/></map>
+<div class="center"><img src="classfleche__sable_a32b82aad67a51b6a285ed424405acf32_cgraph.png" border="0" usemap="#classfleche__sable_a32b82aad67a51b6a285ed424405acf32_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:42:03 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:23 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

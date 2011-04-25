@@ -34,15 +34,11 @@
 Graphe d'héritage de ensable:</div>
 <div class="dynsection">
 <div class="center"><img src="classensable__inherit__graph.png" border="0" usemap="#ensable_inherit__map" alt="Inheritance graph"/></div>
-<map name="ensable_inherit__map" id="ensable_inherit__map">
-<area shape="rect" href="classetat.html" title="{etat\n|+ $effet\l|+ __construct()\l+ fin_round()\l}" alt="" coords="53,981,165,1088"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de ensable:</div>
 <div class="dynsection">
 <div class="center"><img src="classensable__coll__graph.png" border="0" usemap="#ensable_coll__map" alt="Collaboration graph"/></div>
-<map name="ensable_coll__map" id="ensable_coll__map">
-<area shape="rect" href="classetat.html" title="{etat\n|+ $effet\l|+ __construct()\l+ fin_round()\l}" alt="" coords="53,981,165,1088"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classensable-members.html">Liste de tous les membres</a></p>
@@ -50,10 +46,10 @@ Graphe de collaboration de ensable:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#a46ac442d53ca05447d0340da2021627e">__construct</a> ($aEffet)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a46ac442d53ca05447d0340da2021627e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#a50a7d281df66b6d44a7d7ecbab122cd5">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a50a7d281df66b6d44a7d7ecbab122cd5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#ac7f544a6b20ea7ac8a1c3141731fc8e6">calcul_attaque_magique</a> (&amp;$actif, &amp;$passif, $att)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#ac7f544a6b20ea7ac8a1c3141731fc8e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#a50a7d281df66b6d44a7d7ecbab122cd5">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a50a7d281df66b6d44a7d7ecbab122cd5"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#ae26f88715c4251b14f1d350af4556adb">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#ae26f88715c4251b14f1d350af4556adb"></a><br/></td></tr>
@@ -124,8 +120,8 @@ Graphe de collaboration de ensable:</div>
 <p>Modifie le potentiel toucher magique. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$att</em>&nbsp;</td><td>Potentiel toucher avant modification.</td></tr>
   </table>
   </dd>
@@ -138,8 +134,6 @@ Graphe de collaboration de ensable:</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classensable_ac7f544a6b20ea7ac8a1c3141731fc8e6_cgraph.png" border="0" usemap="#classensable_ac7f544a6b20ea7ac8a1c3141731fc8e6_cgraph_map" alt=""></div>
-<map name="classensable_ac7f544a6b20ea7ac8a1c3141731fc8e6_cgraph_map" id="classensable_ac7f544a6b20ea7ac8a1c3141731fc8e6_cgraph">
-<area shape="rect" href="classeffect.html#aabfbf94cf2f3e3ace4586fadef556cae" title="Affiche le message de debug correspondant à l&#39;effet." alt="" coords="283,5,384,35"/></map>
 </div>
 </p>
 
@@ -173,8 +167,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Action a effectuer en début de round. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -185,8 +179,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classensable_a50a7d281df66b6d44a7d7ecbab122cd5_cgraph.png" border="0" usemap="#classensable_a50a7d281df66b6d44a7d7ecbab122cd5_cgraph_map" alt=""></div>
-<map name="classensable_a50a7d281df66b6d44a7d7ecbab122cd5_cgraph_map" id="classensable_a50a7d281df66b6d44a7d7ecbab122cd5_cgraph">
-<area shape="rect" href="classeffect.html#aabfbf94cf2f3e3ace4586fadef556cae" title="Affiche le message de debug correspondant à l&#39;effet." alt="" coords="211,5,312,35"/></map>
 </div>
 </p>
 
@@ -233,8 +225,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>Tableau des effets. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$acteur</em>&nbsp;</td><td>Indique si le personnage à l'origine de l'effet est l'attaquant ("attaquant") ou le défenseur. </td></tr>
   </table>
   </dd>
@@ -245,7 +237,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:41:53 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:22 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

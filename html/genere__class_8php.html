@@ -29,17 +29,17 @@
 <div class="contents">
 <h1>Référence du fichier genere_class.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#ae8876a14058f368335baccf35af4a22b">$table</a> = $_GET['table']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a5ac715bca198fb66b7a4130ec7692c56">$champs</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SHOW COLUMNS FROM &quot;.$table</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a339606ab667999092b0971356986c119">$liste_champs</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#ad5df7cb8c675a1b3c0f65aa77c984df5">$liste_attributs</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a>($champs as $champ)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a280ee5178ea3f563b26d87b92b654bd7">$liste_arguments</a> = implode(', ', $liste_arguments)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a8edd114c8faa4ed21a107e8408961685">$liste_update</a> = implode(&quot;.', &quot;, $liste_update)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#aa4c733c8655947d09b617f3842a9db76">$liste_array</a> = implode('', $liste_array)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a48b4f2d78dcb5b0f982a7fedce745e5b">$liste</a> = implode('', $liste)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($champs as $champ)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a280ee5178ea3f563b26d87b92b654bd7">$liste_arguments</a> = implode(', ', $liste_arguments)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#aa4c733c8655947d09b617f3842a9db76">$liste_array</a> = implode('', $liste_array)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#ad5df7cb8c675a1b3c0f65aa77c984df5">$liste_attributs</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#ac95635425aef2d376b7abbcc30f7a948">$liste_attributs_insert</a> = implode(&quot;.', '.&quot;, $liste_attributs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a339606ab667999092b0971356986c119">$liste_champs</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a8edd114c8faa4ed21a107e8408961685">$liste_update</a> = implode(&quot;.', &quot;, $liste_update)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SHOW COLUMNS FROM &quot;.$table</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#ae8876a14058f368335baccf35af4a22b">$table</a> = $_GET['<a class="el" href="classtable.html">table</a>']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="genere__class_8php.html#a0513848521140122c2467fff27884e7d">foreach</a> ($champs as $champ)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
@@ -74,7 +74,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a> ($champs as $champ) $liste_arguments = implode(', ', $liste_arguments)</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($champs as $champ) $liste_arguments = implode(', ', $liste_arguments)</td>
         </tr>
       </table>
 </div>
@@ -178,7 +178,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$table = $_GET['table']</td>
+          <td class="memname">$<a class="el" href="classtable.html">table</a> = $_GET['<a class="el" href="classtable.html">table</a>']</td>
         </tr>
       </table>
 </div>
@@ -191,7 +191,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a>($champs as $champ)</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($champs as $champ)</td>
         </tr>
       </table>
 </div>
@@ -200,7 +200,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:54 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:18 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -29,11 +29,11 @@
 <div class="contents">
 <h1>Référence du fichier liste_monstre.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#aab50d97eed7abd779caf1f2de48c1c5f">$tab</a> = array('', 'Plaine', 'Forêt', 'Désert', 'Glace', 'Eau', 'Montagne', 'Marais', 'Route', '', '', 'Terre maudite')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a65007153a2861a4a1f1852090cff35a5">$terrain</a> = 1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a>($tab as $key=&gt; $t)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a670ebdc753c9b7251200aa5920449517">$i</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT lib, <a class="el" href="classterrain.html">terrain</a>, nom, level FROM <a class="el" href="classmonstre.html">monstre</a> WHERE affiche = 'y' AND (<a class="el" href="classterrain.html">terrain</a> = '&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '&quot;.$terrain.&quot;;%' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;;%') ORDER BY level ASC, xp ASC&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($tab as $key=&gt; $t)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a670ebdc753c9b7251200aa5920449517">$i</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT lib, <a class="el" href="classterrain.html">terrain</a>, nom, level FROM <a class="el" href="classmonstre.html">monstre</a> WHERE affiche = 'y' AND (<a class="el" href="classterrain.html">terrain</a> = '&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '&quot;.$terrain.&quot;;%' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;;%') ORDER BY level ASC, xp ASC&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#aab50d97eed7abd779caf1f2de48c1c5f">$tab</a> = array('', 'Plaine', 'Forêt', 'Désert', 'Glace', 'Eau', 'Montagne', 'Marais', 'Route', '', '', 'Terre maudite')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a65007153a2861a4a1f1852090cff35a5">$terrain</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a9430426c726664eef5ce44a701b64238">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
@@ -42,7 +42,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a> ($tab as $key=&gt; $t) $i = 0</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($tab as $key=&gt; $t) $i = 0</td>
         </tr>
       </table>
 </div>
@@ -94,7 +94,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $<a class="el" href="classterrain.html">terrain</a> = 1</td>
+          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $<a class="el" href="classterrain.html">terrain</a> = 1</td>
         </tr>
       </table>
 </div>
@@ -107,7 +107,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
         </tr>
       </table>
 </div>
@@ -116,7 +116,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:55 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

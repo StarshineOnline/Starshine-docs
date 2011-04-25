@@ -30,16 +30,17 @@
 <h1>Référence du fichier edit_map3.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#ad3b3c64b25fbbb6aec24407e4333aa71">$admin</a> = true</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#ac024139f4a035d140808dd8f04f0643c">$xmin</a> = 1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#ac9325477220ecd8bd454e3e9a0d14bc0">$ymin</a> = 1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a6ada433d5a1d814c4c4ad7c29aaf88a7">$xmax</a> = $xmin + 15</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a1443f20f1ed7a3b93e67f797e4916e4d">$ymax</a> = $ymin + 15</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM <a class="el" href="classmap.html">map</a> WHERE (((FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_ligne.') &gt;= '.$ymin.') AND (FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_ligne.') &lt;= '.$ymax.')) AND (((<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> - (FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_colonne.') * 1000)) &gt;= '.$xmin.') AND ((<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> - (FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_colonne.') * 1000)) &lt;= '.$xmax.'))) ORDER BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a9cbfe95d61703a84674cecf0f4ff8370">for</a>($i=$xmin;$i&lt;=$xmax;$i++)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a12eae118bc9476e8e14753d89bd400b1">$x</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a6f16db779ef3ccea921b277b5dc245d1">$j</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a23e53dfd2b001b81c9946fa05ec90e6f">$index</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a6f16db779ef3ccea921b277b5dc245d1">$j</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#ad4491249df396f400994d8bc62b10e98">$old_admin</a> = true</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM <a class="el" href="classmap.html">map</a> WHERE (((FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_ligne.') &gt;= '.$ymin.') AND (FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_ligne.') &lt;= '.$ymax.')) AND (((<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> - (FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_colonne.') * 1000)) &gt;= '.$xmin.') AND ((<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> - (FLOOR(<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> / '.$G_colonne.') * 1000)) &lt;= '.$xmax.'))) ORDER BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a6c5147bc079b14b2f1de8960571bb86d">for</a>($i=$xmin;$i&lt;=$xmax;$i++)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a12eae118bc9476e8e14753d89bd400b1">$x</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a6ada433d5a1d814c4c4ad7c29aaf88a7">$xmax</a> = $xmin + 15</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#ac024139f4a035d140808dd8f04f0643c">$xmin</a> = 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a1443f20f1ed7a3b93e67f797e4916e4d">$ymax</a> = $ymin + 15</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#ac9325477220ecd8bd454e3e9a0d14bc0">$ymin</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map3_8php.html#a9430426c726664eef5ce44a701b64238">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
@@ -82,6 +83,19 @@
 
 </div>
 </div>
+<a class="anchor" id="ad4491249df396f400994d8bc62b10e98"></a><!-- doxytag: member="edit_map3.php::$old_admin" ref="ad4491249df396f400994d8bc62b10e98" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$old_admin = true</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="edit_map3.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -113,7 +127,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a9cbfe95d61703a84674cecf0f4ff8370">for</a> ($i=$xmin;$i&lt;=$xmax;$i++) $x = 0</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a6c5147bc079b14b2f1de8960571bb86d">for</a> ($i=$xmin;$i&lt;=$xmax;$i++) $x = 0</td>
         </tr>
       </table>
 </div>
@@ -139,7 +153,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $xmin = 1</td>
+          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $xmin = 1</td>
         </tr>
       </table>
 </div>
@@ -178,7 +192,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $ymin = 1</td>
+          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $ymin = 1</td>
         </tr>
       </table>
 </div>
@@ -191,7 +205,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
         </tr>
       </table>
 </div>
@@ -200,7 +214,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:17 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:17 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

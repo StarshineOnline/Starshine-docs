@@ -31,15 +31,11 @@
 Graphe d'héritage de gemme_enchassee:</div>
 <div class="dynsection">
 <div class="center"><img src="classgemme__enchassee__inherit__graph.png" border="0" usemap="#gemme__enchassee_inherit__map" alt="Inheritance graph"/></div>
-<map name="gemme__enchassee_inherit__map" id="gemme__enchassee_inherit__map">
-<area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de gemme_enchassee:</div>
 <div class="dynsection">
 <div class="center"><img src="classgemme__enchassee__coll__graph.png" border="0" usemap="#gemme__enchassee_coll__map" alt="Collaboration graph"/></div>
-<map name="gemme__enchassee_coll__map" id="gemme__enchassee_coll__map">
-<area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classgemme__enchassee-members.html">Liste de tous les membres</a></p>
@@ -47,23 +43,23 @@ Graphe de collaboration de gemme_enchassee:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a24394ccc62b8642e1dc97610097c2100">__construct</a> ($aNom)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a24394ccc62b8642e1dc97610097c2100"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#aff51a43589766dc43b8cce330f7081e1">init</a> ($aReq)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#a406b1cbd878545179cf69caf23474550"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a3075289d64883083e79fcb577bb10005">applique_bloquage</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués) Ceci se fait apres l'affichage du blocage, donc si les degats sont modifies, la modification ne sera pas imputee au bouclier lui-meme.  <a href="#a3075289d64883083e79fcb577bb10005"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#ae28469065f103669deef5cb6d2599cbd">calcul_bloquage</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effectue les modifications concernant le blocage (potentiel blocage, maitrise du bouclier).  <a href="#ae28469065f103669deef5cb6d2599cbd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a337d253e84ac75fa9a533832feb63151">calcul_mp</a> (&amp;$actif, $mp)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul du mana requis.  <a href="#a337d253e84ac75fa9a533832feb63151"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#a406b1cbd878545179cf69caf23474550"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#aff51a43589766dc43b8cce330f7081e1">init</a> ($aReq)</td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#ab3ef89d2a8aade379226eca3644328ef">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Les gemmes d'arme (degat/reduction) de pp, pp_pourcent, pm, pm_pourcent, et <a class="el" href="classcompetence.html" title="Compétence : c&#39;est un effet qui peut s&#39;améliorer.">competence</a> sont gerees directement ailleurs les autres (default:) posent une valeur [type]=id dans le tableau des enchantement.  <a href="#ab3ef89d2a8aade379226eca3644328ef"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a96b1a66832019db97d27056f0081b8bf">$id</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a3a613c2ae0cf6e9b4193e086b9831661">$enchantement_type</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#acb9bbcbc541a83a070af1e1c57cd380f">$enchantement_effet</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a59c5fdb019469dcd9d62e1478d64af9f">$enchantement_effet2</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a3a613c2ae0cf6e9b4193e086b9831661">$enchantement_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a96b1a66832019db97d27056f0081b8bf">$id</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a136406bf90edad7fb2183f84ab0772b9">$poison</a></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
@@ -97,8 +93,6 @@ Graphe de collaboration de gemme_enchassee:</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classgemme__enchassee_a24394ccc62b8642e1dc97610097c2100_cgraph.png" border="0" usemap="#classgemme__enchassee_a24394ccc62b8642e1dc97610097c2100_cgraph_map" alt=""></div>
-<map name="classgemme__enchassee_a24394ccc62b8642e1dc97610097c2100_cgraph_map" id="classgemme__enchassee_a24394ccc62b8642e1dc97610097c2100_cgraph">
-<area shape="rect" href="classgemme__enchassee.html#aff51a43589766dc43b8cce330f7081e1" title="gemme_enchassee::init" alt="" coords="275,5,443,35"/></map>
 </div>
 </p>
 
@@ -140,8 +134,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Il y a peu de raisons de modifier les degats a ce niveau.</p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés avant modification.</td></tr>
   </table>
   </dd>
@@ -154,8 +148,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classgemme__enchassee_a3075289d64883083e79fcb577bb10005_cgraph.png" border="0" usemap="#classgemme__enchassee_a3075289d64883083e79fcb577bb10005_cgraph_map" alt=""></div>
-<map name="classgemme__enchassee_a3075289d64883083e79fcb577bb10005_cgraph_map" id="classgemme__enchassee_a3075289d64883083e79fcb577bb10005_cgraph">
-<area shape="rect" href="classeffect.html#aabfbf94cf2f3e3ace4586fadef556cae" title="Affiche le message de debug correspondant à l&#39;effet." alt="" coords="328,5,429,35"/><area shape="rect" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c" title="Affiche le message de dégâts correspondant à l&#39;effet." alt="" coords="340,59,417,88"/><area shape="rect" href="classeffect.html#a8a36b50e355bbadc959c3d23ae5a4d15" title="Affiche un message correspondant à l&#39;effet." alt="" coords="320,112,437,141"/></map>
 </div>
 </p>
 
@@ -189,8 +181,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Effectue les modifications concernant le blocage (potentiel blocage, maitrise du bouclier). </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -227,7 +219,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Calcul du mana requis. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$mp</em>&nbsp;</td><td>MP requis</td></tr>
   </table>
   </dd>
@@ -316,8 +308,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Applique les effets ayant lieu lorsque les dégâts ont lieu. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés. </td></tr>
   </table>
   </dd>
@@ -329,8 +321,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classgemme__enchassee_a406b1cbd878545179cf69caf23474550_cgraph.png" border="0" usemap="#classgemme__enchassee_a406b1cbd878545179cf69caf23474550_cgraph_map" alt=""></div>
-<map name="classgemme__enchassee_a406b1cbd878545179cf69caf23474550_cgraph_map" id="classgemme__enchassee_a406b1cbd878545179cf69caf23474550_cgraph">
-<area shape="rect" href="classeffect.html#aabfbf94cf2f3e3ace4586fadef556cae" title="Affiche le message de debug correspondant à l&#39;effet." alt="" coords="288,5,389,35"/><area shape="rect" href="classeffect.html#a5027fa036a347d56b15a9204028593c2" title="Affiche le message de dégâts correspondant à l&#39;effet." alt="" coords="295,59,383,88"/><area shape="rect" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c" title="Affiche le message de dégâts correspondant à l&#39;effet." alt="" coords="300,112,377,141"/></map>
 </div>
 </p>
 
@@ -356,8 +346,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classgemme__enchassee_aff51a43589766dc43b8cce330f7081e1_icgraph.png" border="0" usemap="#classgemme__enchassee_aff51a43589766dc43b8cce330f7081e1_icgraph_map" alt=""></div>
-<map name="classgemme__enchassee_aff51a43589766dc43b8cce330f7081e1_icgraph_map" id="classgemme__enchassee_aff51a43589766dc43b8cce330f7081e1_icgraph">
-<area shape="rect" href="classgemme__enchassee.html#a24394ccc62b8642e1dc97610097c2100" title="Constructeur." alt="" coords="223,5,441,35"/></map>
 </div>
 </p>
 
@@ -430,7 +418,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:42:05 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:23 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

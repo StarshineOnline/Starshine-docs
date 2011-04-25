@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/journalier2-map-mobs.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier journalier2-map-mobs.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#ab99599d1702f329ce472bcbf96846531">$background_color</a> = imagecolorallocate ($im, 255, 255, 255)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a242dab441bef25d689102d4f82367ab6">$carte</a> = 'image/carte_densite_mob.png'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a830cf70d25fefacddcf4c6bc3fd7a0e0">$check</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#aa74375ab54a51cb1f315e7aa7e6959d3">$color0</a> = imagecolorallocate($im, 0xff, 0xff, 0xff)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#aa8c968f8ff06e72439dd8d847cd2c932">$color1</a> = imagecolorallocate($im, 0x66, 0xff, 0x33)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#adc07f4cda84ff3a3ce2e637778807e51">$color2</a> = imagecolorallocate($im, 0xe6, 0xfa, 0x37)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a3dbbf8ab29074f3e29878a572583a7ff">$color3</a> = imagecolorallocate($im, 0xe6, 0xba, 0x04)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a04694553853b195d581304a3ee96aaaa">$color4</a> = imagecolorallocate($im, 0xe6, 0x76, 0x04)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a1a3bdb2c7d0ae1293f30fbe7dfb88e38">$color5</a> = imagecolorallocate($im, 0xe6, 0x3b, 0x07)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a8bd5cd997f9a0e89dbf99f5ed11d2d8d">$color6</a> = imagecolorallocate($im, 0xff, 0x00, 0x00)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#affdf43fe66ab4571bcfb5633ff4d5d6b">$im</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a9926d99c406076259bb8aded88ac85ce">$part</a> = round($max / 6)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT x, y, COUNT( * ) AS tot FROM `<a class="el" href="classmap__monstre.html">map_monstre</a>` GROUP BY x, y ORDER BY tot DESC&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a8c57c1b813580291e840527a8745d3de">$show_info</a> [6] = $color6</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a1425998a52dee098ec655f6d3bb79f39">$show_info</a> [5] = $color5</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a69ac528b5dbc26a53c3e7ad2461445b4">$show_info</a> [4] = $color4</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a88d8b88cced8960babfbd9c463ebe0ee">$show_info</a> [3] = $color3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a4df190341a5f1192b361acea05f78cb8">$show_info</a> [2] = $color2</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a1705f1edef8085e4113bd1acc833c0d5">$show_info</a> [1] = $color1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-mobs_8php.html#a42c2cde965467928a9d8c17b03d4984d">$show_info</a> [0] = $color0</td></tr>
+</table>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="ab99599d1702f329ce472bcbf96846531"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$background_color" ref="ab99599d1702f329ce472bcbf96846531" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$background_color = imagecolorallocate ($im, 255, 255, 255)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a242dab441bef25d689102d4f82367ab6"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$carte" ref="a242dab441bef25d689102d4f82367ab6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$carte = 'image/carte_densite_mob.png'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a830cf70d25fefacddcf4c6bc3fd7a0e0"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$check" ref="a830cf70d25fefacddcf4c6bc3fd7a0e0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$check = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa74375ab54a51cb1f315e7aa7e6959d3"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$color0" ref="aa74375ab54a51cb1f315e7aa7e6959d3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$color0 = imagecolorallocate($im, 0xff, 0xff, 0xff)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8c968f8ff06e72439dd8d847cd2c932"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$color1" ref="aa8c968f8ff06e72439dd8d847cd2c932" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$color1 = imagecolorallocate($im, 0x66, 0xff, 0x33)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc07f4cda84ff3a3ce2e637778807e51"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$color2" ref="adc07f4cda84ff3a3ce2e637778807e51" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$color2 = imagecolorallocate($im, 0xe6, 0xfa, 0x37)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3dbbf8ab29074f3e29878a572583a7ff"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$color3" ref="a3dbbf8ab29074f3e29878a572583a7ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$color3 = imagecolorallocate($im, 0xe6, 0xba, 0x04)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04694553853b195d581304a3ee96aaaa"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$color4" ref="a04694553853b195d581304a3ee96aaaa" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$color4 = imagecolorallocate($im, 0xe6, 0x76, 0x04)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a3bdb2c7d0ae1293f30fbe7dfb88e38"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$color5" ref="a1a3bdb2c7d0ae1293f30fbe7dfb88e38" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$color5 = imagecolorallocate($im, 0xe6, 0x3b, 0x07)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8bd5cd997f9a0e89dbf99f5ed11d2d8d"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$color6" ref="a8bd5cd997f9a0e89dbf99f5ed11d2d8d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$color6 = imagecolorallocate($im, 0xff, 0x00, 0x00)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affdf43fe66ab4571bcfb5633ff4d5d6b"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$im" ref="affdf43fe66ab4571bcfb5633ff4d5d6b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) $im</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><pre class="fragment"> imagecreate (<a class="code" href="journalier2-head_8php.html#a5a7cce4ba382cd3531a40a97cdb56f2d">CARTE_WIDTH</a>, <a class="code" href="journalier2-head_8php.html#aa0ca9904083c894eca54a7dab4592e1e">CARTE_HEIGHT</a>)
+   or die (&quot;Impossible d&apos;initialiser la bibliothèque GD&quot;)
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a9926d99c406076259bb8aded88ac85ce"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$part" ref="a9926d99c406076259bb8aded88ac85ce" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$part = round($max / 6)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$requete = &quot;SELECT x, y, COUNT( * ) AS tot FROM `<a class="el" href="classmap__monstre.html">map_monstre</a>` GROUP BY x, y ORDER BY tot DESC&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c57c1b813580291e840527a8745d3de"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$show_info" ref="a8c57c1b813580291e840527a8745d3de" args="[6]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info[6] = $color6</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1425998a52dee098ec655f6d3bb79f39"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$show_info" ref="a1425998a52dee098ec655f6d3bb79f39" args="[5]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info[5] = $color5</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69ac528b5dbc26a53c3e7ad2461445b4"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$show_info" ref="a69ac528b5dbc26a53c3e7ad2461445b4" args="[4]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info[4] = $color4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88d8b88cced8960babfbd9c463ebe0ee"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$show_info" ref="a88d8b88cced8960babfbd9c463ebe0ee" args="[3]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info[3] = $color3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4df190341a5f1192b361acea05f78cb8"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$show_info" ref="a4df190341a5f1192b361acea05f78cb8" args="[2]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info[2] = $color2</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1705f1edef8085e4113bd1acc833c0d5"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$show_info" ref="a1705f1edef8085e4113bd1acc833c0d5" args="[1]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info[1] = $color1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42c2cde965467928a9d8c17b03d4984d"></a><!-- doxytag: member="journalier2&#45;map&#45;mobs.php::$show_info" ref="a42c2cde965467928a9d8c17b03d4984d" args="[0]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info[0] = $color0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

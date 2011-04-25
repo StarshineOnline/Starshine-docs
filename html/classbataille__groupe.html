@@ -31,20 +31,22 @@
 <p><a href="classbataille__groupe-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a9ba2a5995cecf9e81c6ac32d75c0d7fd">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $id_bataille=0, $id_groupe=0)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur permettant la création d'un repère de <a class="el" href="classbataille.html">bataille</a>.  <a href="#a9ba2a5995cecf9e81c6ac32d75c0d7fd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a51c798580627dfb78b63d154503d70f7">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $id_bataille=0, $id_groupe=0, $id_thread=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur permettant la création d'un repère de <a class="el" href="classbataille.html">bataille</a>.  <a href="#a51c798580627dfb78b63d154503d70f7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a3910d37c279fb91ab50a5949fe612a45">__toString</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#aa87de0026d2eb54e0fdfe0d4eee17085">get_nom</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#ae0671106cf076ae4be9356064f7a4a6b">get_reperes</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a3a12b90fe8e529ee786a2bebb72b3477">is_bataille</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#ad2d70235c3999a5f1422b0368e3c58ee">sauver</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a5a187432f4701d69ee140784ced7ff90">supprimer</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a3910d37c279fb91ab50a5949fe612a45">__toString</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#ae0671106cf076ae4be9356064f7a4a6b">get_reperes</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#aa87de0026d2eb54e0fdfe0d4eee17085">get_nom</a> ()</td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#aae41ea4af9614f35b8280978e0283cad">$id</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a6b928dd8e12ce6bfc44a29717132c72d">$id_bataille</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a023d119bbf65a5d029aa417867917aaa">$id_groupe</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbataille__groupe.html#a18deec973ac563de2df2f21538d76209">$id_thread</a></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a9ba2a5995cecf9e81c6ac32d75c0d7fd"></a><!-- doxytag: member="bataille_groupe::__construct" ref="a9ba2a5995cecf9e81c6ac32d75c0d7fd" args="($id=0, $id_bataille=0, $id_groupe=0)" -->
+<a class="anchor" id="a51c798580627dfb78b63d154503d70f7"></a><!-- doxytag: member="bataille_groupe::__construct" ref="a51c798580627dfb78b63d154503d70f7" args="($id=0, $id_bataille=0, $id_groupe=0, $id_thread=0)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -64,7 +66,13 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>id_groupe</em> = <code>0</code></td><td>&nbsp;</td>
+          <td class="paramname"> <em>id_groupe</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>id_thread</em> = <code>0</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -121,6 +129,23 @@
       <table class="memname">
         <tr>
           <td class="memname">bataille_groupe::get_reperes </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a12b90fe8e529ee786a2bebb72b3477"></a><!-- doxytag: member="bataille_groupe::is_bataille" ref="a3a12b90fe8e529ee786a2bebb72b3477" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bataille_groupe::is_bataille </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -206,8 +231,21 @@
 
 </div>
 </div>
+<a class="anchor" id="a18deec973ac563de2df2f21538d76209"></a><!-- doxytag: member="bataille_groupe::$id_thread" ref="a18deec973ac563de2df2f21538d76209" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bataille_groupe::$id_thread</td>
+        </tr>
+      </table>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:41:08 2009 pour Starshine Online par&nbsp;
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:20 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

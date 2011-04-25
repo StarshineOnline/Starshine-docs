@@ -29,30 +29,30 @@
 <div class="contents">
 <h1>Référence du fichier viewarene2.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1c73de215370276e3a85c875f4be2a6c">$viewer</a> = recupperso($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a676d5318e23377117551e5ead156fdf7">$arene_masters</a> = array('irulan', 'azeroth', 'mylok','minus')</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(in_array(strtolower($viewer['nom']), <br class="typebreak"/>
-$arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a02da621901b8a695f9979c4b6878435e">$admin</a> = false</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['ID']</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#af7a10ff175c7ccf01aecc329634865b0">$fichier_arene</a> = new DomDocument()</td></tr>
+$arene_masters)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a02da621901b8a695f9979c4b6878435e">$admin</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a676d5318e23377117551e5ead156fdf7">$arene_masters</a> = array('irulan', 'azeroth', 'mylok','minus')</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a9a9c214973f0d48acd7128c73f333a98">$arene_xml</a> = $fichier_arene-&gt;getElementsByTagName('viewarene')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a>($arene_xml as $type_arene)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a7176f7720263ce2faeeb36cc8c09c747">$coord</a> ['x'] = $xmin + round(($xmax - $xmin) / 2)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#afc13a2edebe36034d9fc149f1b9ee90c">$coord</a> ['y'] = $ymin + round(($ymax - $ymin) / 2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a9cbfe95d61703a84674cecf0f4ff8370">for</a> ($i=$xmin;$i&lt;=$xmax;$i++) = &quot;SELECT COUNT(*) AS tot, ceil(x/10) as cx, ceil(y/10) as cy FROM journal WHERE DAY(time )=DAY(CURDATE())AND MONTH(time )=MONTH(CURDATE())AND YEAR(time )=YEAR(CURDATE())AND action ='attaque' AND x &lt;&gt; 0 AND y &lt;&gt; 0 GROUP BY cx, cy ORDER BY tot DESC&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a3a1a1e3d9ca1b01420a05f83f96b3588">$row_map</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($arene_xml as $type_arene)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a7176f7720263ce2faeeb36cc8c09c747">$coord</a> ['x'] = $xmin + round(($xmax - $xmin) / 2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#af7a10ff175c7ccf01aecc329634865b0">$fichier_arene</a> = new DomDocument()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a3080fd46a4909b3b73deb2430477d113">$index</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a>($liste_cases as $cases)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a304a5f3ee821ee7f0d715511a3a7c394">$row_j</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a87e0802a923e3726cf7ca949e4a8aa65">$index_m</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a6e745d40e9df8b5cc8a1761b88713dc5">$x_joueurs</a> = $row_j[$index]['x']</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a4e9f7fae219ddc10f7fdb429bcb33e40">$y_joueurs</a> = $row_j[$index]['y']</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a4820d696737bb1b850dbb7bd14c59a90">$roy</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a59ef57bf7aa1bcf69b885a89fe5f482d">$race</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> (($row=current($row_map))!==false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($liste_cases as $cases)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a304a5f3ee821ee7f0d715511a3a7c394">$row_j</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a3a1a1e3d9ca1b01420a05f83f96b3588">$row_map</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a4820d696737bb1b850dbb7bd14c59a90">$roy</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1c73de215370276e3a85c875f4be2a6c">$viewer</a> = recupperso($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a6e745d40e9df8b5cc8a1761b88713dc5">$x_joueurs</a> = $row_j[$index]['x']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a4e9f7fae219ddc10f7fdb429bcb33e40">$y_joueurs</a> = $row_j[$index]['y']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a6c5147bc079b14b2f1de8960571bb86d">for</a> ($i=$xmin;$i&lt;=$xmax;$i++)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a> ($race as $nom=&gt; $r)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($<a class="el" href="classdb.html">db</a>-&gt;num_rows &gt; 0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> (($row=current($row_map))!==false)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a02da621901b8a695f9979c4b6878435e"></a><!-- doxytag: member="viewarene2.php::$admin" ref="a02da621901b8a695f9979c4b6878435e" args="" -->
@@ -60,7 +60,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (in_array(strtolower($viewer['nom']), $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7b9edb513">else</a> $admin = false</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (in_array(strtolower($viewer['nom']), $arene_masters)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $admin = false</td>
         </tr>
       </table>
 </div>
@@ -112,7 +112,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a> ($arene_xml as $type_arene) $coord['x'] = $xmin + round(($xmax - $xmin) / 2)</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($arene_xml as $type_arene) $coord['x'] = $xmin + round(($xmax - $xmin) / 2)</td>
         </tr>
       </table>
 </div>
@@ -138,7 +138,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a> ($liste_joueurs as $joueur) $index = 0</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($liste_joueurs as $joueur) $index = 0</td>
         </tr>
       </table>
 </div>
@@ -190,7 +190,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['ID']</td>
+          <td class="memname">$requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td>
         </tr>
       </table>
 </div>
@@ -203,7 +203,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a> ($liste_cases as $cases) $row_j = array()</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($liste_cases as $cases) $row_j = array()</td>
         </tr>
       </table>
 </div>
@@ -242,7 +242,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$viewer = recupperso($_SESSION['ID'])</td>
+          <td class="memname">$viewer = recupperso($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -302,12 +302,12 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 
 </div>
 </div>
-<a class="anchor" id="a9cbfe95d61703a84674cecf0f4ff8370"></a><!-- doxytag: member="viewarene2.php::for" ref="a9cbfe95d61703a84674cecf0f4ff8370" args="($i=$xmin;$i&lt;=$xmax;$i++)" -->
+<a class="anchor" id="a6c5147bc079b14b2f1de8960571bb86d"></a><!-- doxytag: member="viewarene2.php::for" ref="a6c5147bc079b14b2f1de8960571bb86d" args="($i=$xmin;$i&lt;=$xmax;$i++)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a9cbfe95d61703a84674cecf0f4ff8370">for</a> = &quot;SELECT COUNT(*) AS tot, ceil(x/10) as cx, ceil(y/10) as cy FROM journal WHERE DAY(time )=DAY(CURDATE())AND MONTH(time )=MONTH(CURDATE())AND YEAR(time )=YEAR(CURDATE())AND action ='attaque' AND x &lt;&gt; 0 AND y &lt;&gt; 0 GROUP BY cx, cy ORDER BY tot DESC&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a6c5147bc079b14b2f1de8960571bb86d">for</a>($i=$xmin;$i&lt;=$xmax;$i++)</td>
         </tr>
       </table>
 </div>
@@ -320,7 +320,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a5b12908e955b1d62c5d4a94b8595d5c6">foreach</a>($race as $nom=&gt; $r)</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($race as $nom=&gt; $r)</td>
         </tr>
       </table>
 </div>
@@ -346,7 +346,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>(($row=current($row_map))!==false)</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>(($row=current($row_map))!==false)</td>
         </tr>
       </table>
 </div>
@@ -355,7 +355,7 @@ $arene_masters)) <a class="el" href="terrain_8php.html#a79659ef2365ea328535db1b7
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:56 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

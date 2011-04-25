@@ -31,33 +31,36 @@
 <tr><td colspan="2"><h2>Fonctions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a2ea85ee0a2237525fc91da4950c677ea">cpyToAttr</a> ($node, $row, $attr)</td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#afc5e9ce512cd97cf2e0e25bb20dcd39b">$doc</a> = new DomDocument('1.0', 'utf-8')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['xsl']))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab37f7c32f41c3c61ed940887453767f4">$root</a> = $doc-&gt;createElement('infos')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE ID = \''.$_SESSION['ID'].'\''</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($req)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a8c6df57bd38c86e700ec4ab36ad8a30a">$coord</a> ['x'] = $row['x']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a9c04c47a2fb1f919b3888be3dac543d9">$api_login</a> = true</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a830cf70d25fefacddcf4c6bc3fd7a0e0">$check</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#afc13a2edebe36034d9fc149f1b9ee90c">$coord</a> ['y'] = $row['y']</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aab44fe5ef659458634f0527cf45c59d2">$coord_joueur</a> ['y'] = $row['y']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a8c6df57bd38c86e700ec4ab36ad8a30a">$coord</a> ['x'] = $row['x']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a14fc638b9ca3dfd7f353acb3251f1e4e">$coord_joueur</a> ['x'] = $row['x']</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a4b2a4547bbd9a45f163adccfe8b45980">$xmin</a> = $coord['x'] - 3</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a6ada433d5a1d814c4c4ad7c29aaf88a7">$xmax</a> = $coord['x'] + 3</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a7e30a161a1e1199d07c180857926eaa3">$ymin</a> = $coord['y'] - 3</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a1443f20f1ed7a3b93e67f797e4916e4d">$ymax</a> = $coord['y'] + 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aab44fe5ef659458634f0527cf45c59d2">$coord_joueur</a> ['y'] = $row['y']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#afc5e9ce512cd97cf2e0e25bb20dcd39b">$doc</a> = new DomDocument('1.0', 'utf-8')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#af1d5ccdee975b8f4d20aaffc5b28557c">$now</a> = time()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a3928ba395d001b7565e9d259682c26b3">$rh</a> = $time + (4 * 60)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#af59a5f7cd609e592c41dc3643efd3c98">$query</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a85b4e72383deba9cf0f66a204bc99eaa">$requete_joueurs</a> = 'SELECT ID, nom, level, race, x, y, classe, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aa3839e976cc3dfcf97eb2d8bd3df4e13">$req_joueurs</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_joueurs)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a856749898f829d34c50bae65524486b8">$requete_pnj</a> = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, image, x, y FROM <a class="el" href="classpnj.html">pnj</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) ORDER BY y ASC, x ASC'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab2b4d85eee8362d5d209c9c5d23b83ce">$req_pnj</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_pnj)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#acab48536c4438e2ca71dacc4fd4017cc">$requete_monstres</a> = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, x, y, nom, lib, COUNT(*) as tot FROM <a class="el" href="classmap__monstre.html">map_monstre</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) GROUP BY x, y, lib ORDER BY y ASC, x ASC, ABS(level - '.$row['level'].') ASC, level ASC, nom ASC, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a9208fa396dd9702b04f713619fccf428">$req_monstres</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_monstres)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab43036f32f48ca3bf16dee751a027a46">$requete_drapeaux</a> = 'SELECT placement.x, placement.y, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">placement.type</a>, placement.nom, placement.royaume, placement.debut_placement, placement.fin_placement, batiment.image FROM <a class="el" href="classplacement.html">placement</a>, <a class="el" href="classbatiment.html">batiment</a> WHERE (((placement.x &gt;= '.$xmin.') AND (placement.x &lt;= '.$xmax.')) AND ((placement.y &gt;= '.$ymin.') AND (placement.y &lt;= '.$ymax.'))) AND <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">batiment.id</a> = placement.id_batiment ORDER BY placement.y ASC, placement.x ASC'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a962800dbb02051a261027cae77d70d84">$req_drapeaux</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_drapeaux)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a253ece263f13471e6888f9e6e1425e0b">$requete_batiment</a> = 'SELECT construction.x, construction.y, construction.hp, construction.royaume, construction.nom, construction.id_batiment, batiment.image FROM <a class="el" href="classconstruction.html">construction</a>, <a class="el" href="classbatiment.html">batiment</a> WHERE (((construction.x &gt;= '.$xmin.') AND (construction.x &lt;= '.$xmax.')) AND ((construction.y &gt;= '.$ymin.') AND (construction.y &lt;= '.$ymax.'))) AND <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">batiment.id</a> = construction.id_batiment ORDER BY construction.y ASC, construction.x ASC'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a9b89e7fb0f356c509a37403acc5f7db1">$req_batiment</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_batiment)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a962800dbb02051a261027cae77d70d84">$req_drapeaux</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_drapeaux)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aa3839e976cc3dfcf97eb2d8bd3df4e13">$req_joueurs</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_joueurs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a9208fa396dd9702b04f713619fccf428">$req_monstres</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_monstres)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab2b4d85eee8362d5d209c9c5d23b83ce">$req_pnj</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_pnj)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a> = \''.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'].'\''</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a253ece263f13471e6888f9e6e1425e0b">$requete_batiment</a> = 'SELECT construction.x, construction.y, construction.hp, construction.royaume, construction.nom, construction.id_batiment, batiment.image FROM <a class="el" href="classconstruction.html">construction</a>, <a class="el" href="classbatiment.html">batiment</a> WHERE (((construction.x &gt;= '.$xmin.') AND (construction.x &lt;= '.$xmax.')) AND ((construction.y &gt;= '.$ymin.') AND (construction.y &lt;= '.$ymax.'))) AND <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">batiment.id</a> = construction.id_batiment ORDER BY construction.y ASC, construction.x ASC'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab43036f32f48ca3bf16dee751a027a46">$requete_drapeaux</a> = 'SELECT placement.x, placement.y, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">placement.type</a>, placement.nom, placement.royaume, placement.debut_placement, placement.fin_placement, batiment.image FROM <a class="el" href="classplacement.html">placement</a>, <a class="el" href="classbatiment.html">batiment</a> WHERE (((placement.x &gt;= '.$xmin.') AND (placement.x &lt;= '.$xmax.')) AND ((placement.y &gt;= '.$ymin.') AND (placement.y &lt;= '.$ymax.'))) AND <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">batiment.id</a> = placement.id_batiment ORDER BY placement.y ASC, placement.x ASC'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a85b4e72383deba9cf0f66a204bc99eaa">$requete_joueurs</a> = 'SELECT <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>, nom, level, race, x, y, <a class="el" href="classclasse.html">classe</a>, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#acab48536c4438e2ca71dacc4fd4017cc">$requete_monstres</a> = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">mm.id</a>, mm.x, mm.y, m.nom, m.lib, COUNT(*) as tot FROM <a class="el" href="classmap__monstre.html">map_monstre</a> mm, <a class="el" href="classmonstre.html">monstre</a> m WHERE <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">mm.type</a> = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">m.id</a> AND (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) GROUP BY x, y, lib ORDER BY y ASC, x ASC, ABS(level - '.$row['level'].') ASC, level ASC, nom ASC, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a856749898f829d34c50bae65524486b8">$requete_pnj</a> = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, image, x, y FROM <a class="el" href="classpnj.html">pnj</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) ORDER BY y ASC, x ASC'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a3928ba395d001b7565e9d259682c26b3">$rh</a> = $time + (4 * 60)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(isset($_REQUEST['xsl']))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab37f7c32f41c3c61ed940887453767f4">$root</a> = $doc-&gt;createElement('infos')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a853453baa6f84546500961f68a4435c4">$size_view</a> = 3</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a6ada433d5a1d814c4c4ad7c29aaf88a7">$xmax</a> = $coord['x'] + $size_view</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a4b2a4547bbd9a45f163adccfe8b45980">$xmin</a> = $coord['x'] - $size_view</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a1443f20f1ed7a3b93e67f797e4916e4d">$ymax</a> = $coord['y'] + $size_view</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a7e30a161a1e1199d07c180857926eaa3">$ymin</a> = $coord['y'] - $size_view</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a9430426c726664eef5ce44a701b64238">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td></tr>
 </table>
 <hr/><h2>Documentation des fonctions</h2>
@@ -95,6 +98,32 @@
 </div>
 </div>
 <hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a9c04c47a2fb1f919b3888be3dac543d9"></a><!-- doxytag: member="getinfos.php::$api_login" ref="a9c04c47a2fb1f919b3888be3dac543d9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$api_login = true</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a830cf70d25fefacddcf4c6bc3fd7a0e0"></a><!-- doxytag: member="getinfos.php::$check" ref="a830cf70d25fefacddcf4c6bc3fd7a0e0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$check = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="afc13a2edebe36034d9fc149f1b9ee90c"></a><!-- doxytag: member="getinfos.php::$coord" ref="afc13a2edebe36034d9fc149f1b9ee90c" args="['y']" -->
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +194,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -287,7 +316,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE ID = \''.$_SESSION['ID'].'\''</td>
+          <td class="memname">$requete = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a> = \''.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'].'\''</td>
         </tr>
       </table>
 </div>
@@ -326,7 +355,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete_joueurs = 'SELECT ID, nom, level, race, x, y, classe, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td>
+          <td class="memname">$requete_joueurs = 'SELECT <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>, nom, level, race, x, y, <a class="el" href="classclasse.html">classe</a>, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td>
         </tr>
       </table>
 </div>
@@ -339,7 +368,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete_monstres = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, x, y, nom, lib, COUNT(*) as tot FROM <a class="el" href="classmap__monstre.html">map_monstre</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) GROUP BY x, y, lib ORDER BY y ASC, x ASC, ABS(level - '.$row['level'].') ASC, level ASC, nom ASC, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC'</td>
+          <td class="memname">$requete_monstres = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">mm.id</a>, mm.x, mm.y, m.nom, m.lib, COUNT(*) as tot FROM <a class="el" href="classmap__monstre.html">map_monstre</a> mm, <a class="el" href="classmonstre.html">monstre</a> m WHERE <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">mm.type</a> = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">m.id</a> AND (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) GROUP BY x, y, lib ORDER BY y ASC, x ASC, ABS(level - '.$row['level'].') ASC, level ASC, nom ASC, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC'</td>
         </tr>
       </table>
 </div>
@@ -399,12 +428,25 @@
 
 </div>
 </div>
+<a class="anchor" id="a853453baa6f84546500961f68a4435c4"></a><!-- doxytag: member="getinfos.php::$size_view" ref="a853453baa6f84546500961f68a4435c4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$size_view = 3</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6ada433d5a1d814c4c4ad7c29aaf88a7"></a><!-- doxytag: member="getinfos.php::$xmax" ref="a6ada433d5a1d814c4c4ad7c29aaf88a7" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$xmax = $coord['x'] + 3</td>
+          <td class="memname">$xmax = $coord['x'] + $size_view</td>
         </tr>
       </table>
 </div>
@@ -417,7 +459,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$xmin = $coord['x'] - 3</td>
+          <td class="memname">$xmin = $coord['x'] - $size_view</td>
         </tr>
       </table>
 </div>
@@ -430,7 +472,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$ymax = $coord['y'] + 3</td>
+          <td class="memname">$ymax = $coord['y'] + $size_view</td>
         </tr>
       </table>
 </div>
@@ -443,7 +485,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$ymin = $coord['y'] - 3</td>
+          <td class="memname">$ymin = $coord['y'] - $size_view</td>
         </tr>
       </table>
 </div>
@@ -456,7 +498,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
         </tr>
       </table>
 </div>
@@ -465,7 +507,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:54 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:18 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -1,0 +1,736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence de la classe event_equipe</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Liste&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="classes.html"><span>Index&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="hierarchy.html"><span>Hiérarchie&nbsp;des&nbsp;classes</span></a></li>
+      <li><a href="functions.html"><span>Membres&nbsp;de&nbsp;classe</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence de la classe event_equipe</h1><!-- doxytag: class="event_equipe" --><!-- doxytag: inherits="table" -->
+<p>Classe de base pour les équipes des events, liée à la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> <a class="el" href="classevent__equipe.html" title="Classe de base pour les équipes des events, liée à la table event_equipe de la...">event_equipe</a> de la base de données.  
+<a href="#_details">Plus de détails...</a></p>
+<div class="dynheader">
+Graphe d'héritage de event_equipe:</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe__inherit__graph.png" border="0" usemap="#event__equipe_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de event_equipe:</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe__coll__graph.png" border="0" usemap="#event__equipe_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+
+<p><a href="classevent__equipe-members.html">Liste de tous les membres</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#af52946da65462e2cacac2c6477275aef">__construct</a> ($<a class="el" href="classevent.html">event</a>, $nom, $<a class="el" href="classroyaume.html">royaume</a>=null)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#af52946da65462e2cacac2c6477275aef"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a17a99461b30831972a89793943ec1607">get_membres</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les membres d'une équipe.  <a href="#a17a99461b30831972a89793943ec1607"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#ad7cef364f303f217b7ce9ddd042caec4">interface_admin</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Infos ajouter à la fin de la liste de membres dans l'interface admin.  <a href="#ad7cef364f303f217b7ce9ddd042caec4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#aaa6e3fd59d4aa06e752151bb3b66b90a">supprimer</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime l'objet de la base de donnée.  <a href="#aaa6e3fd59d4aa06e752151bb3b66b90a"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a56b8ded0ca5e64cb14037eee2584839d">creer</a> ($<a class="el" href="classevent.html">event</a>, $<a class="el" href="classclasse.html">classe</a>, $champ=null, $valeur=null, $ordre='<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée les équipes ou une équipe en particulier Peut être utilisé de plusieurs façons :</p>
+<ul>
+<li>creer($event, $classe) renvoie un tableau contenant tous les équipes</li>
+<li>creer($event, $classe, $champ, $valeur) renvoie une ou plusieurs équipes suivant la valeur d'un champ précis. </li>
+</ul>
+ <a href="#a56b8ded0ca5e64cb14037eee2584839d"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Gestion interne des données</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp48baf852202b75b6e473e3558daf6eaf"></a>Méthodes, surchargées ou à surcharger, necessaire à l'initialisation de l'objet et à sa sauvegarde dans la base de données. </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#aa2c3a445b588061cbeb0066bc2915004">get_champ</a> ($champ)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la valeur d'un champ de la base de donnée.  <a href="#aa2c3a445b588061cbeb0066bc2915004"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a6e91b99d24519d1a72950b9e4e395f64">get_liste_champs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a6e91b99d24519d1a72950b9e4e395f64"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a5e98b5f629e81765ec759a2b1d487cb4">get_liste_update</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base.  <a href="#a5e98b5f629e81765ec759a2b1d487cb4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a5a77eae4b03fff42eb95007fd4836ab6">get_table</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nom de la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a>.  <a href="#a5a77eae4b03fff42eb95007fd4836ab6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#acd509f1bd4b12d86fce2a6300c7fed5b">get_valeurs_insert</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des valeurs des champspour une insertion dans la base.  <a href="#acd509f1bd4b12d86fce2a6300c7fed5b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#abd39e358cee470072cafe12f967a345f">init_tab</a> ($vals)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise les données membres à l'aide d'un tableau.  <a href="#abd39e358cee470072cafe12f967a345f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a846cc1e97939446ba1f33cddc456dcf9">serializeDonnees</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">serialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger)  <a href="#a846cc1e97939446ba1f33cddc456dcf9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a9784733304f6fed2dd2b375582bda20f">unserializeDonnees</a> ($donnees)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">déserialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger)  <a href="#a9784733304f6fed2dd2b375582bda20f"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Paramètres</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpe7785de91330713fc2d12404bb6bd556"></a>Paramètres de l'event et accesseurs. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#af44295857aa5288010b46dd7d3f2571d">$event</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> en question  <a href="#af44295857aa5288010b46dd7d3f2571d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#afb9383cf1f15bc8e3bfb948de7359403">$nom</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nom de l'équipe  <a href="#afb9383cf1f15bc8e3bfb948de7359403"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a28a321ab100d15ef5a93f37e6d85601f">$royaume</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classroyaume.html">royaume</a>, si l'équipe défend les couleurs d'un <a class="el" href="classroyaume.html">royaume</a>  <a href="#a28a321ab100d15ef5a93f37e6d85601f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#af17d017959185b80b0b1b64a442759c9">get_event</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'event.  <a href="#af17d017959185b80b0b1b64a442759c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a17b3db996f0a4fec7bb1fd7a7f621f92">get_id_event</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'event.  <a href="#a17b3db996f0a4fec7bb1fd7a7f621f92"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#ae3a5e47a7ea752cd47b1f0118a799d70">get_id_royaume</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du <a class="el" href="classroyaume.html">royaume</a>.  <a href="#ae3a5e47a7ea752cd47b1f0118a799d70"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a70cb17303c66b430a8bc4a2807ff540e">get_nom</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nom.  <a href="#a70cb17303c66b430a8bc4a2807ff540e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a346b1bbbed16b0877f8dddd9968f34da">get_royaume</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le <a class="el" href="classroyaume.html">royaume</a>.  <a href="#a346b1bbbed16b0877f8dddd9968f34da"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a33745eefea5e7c83a53e8fcea016d851">set_nom</a> ($nom)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le nom.  <a href="#a33745eefea5e7c83a53e8fcea016d851"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent__equipe.html#a8a1f3ce6e6287ae6c46426f75aadfc7d">set_royaume</a> ($<a class="el" href="classroyaume.html">royaume</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le <a class="el" href="classroyaume.html">royaume</a>.  <a href="#a8a1f3ce6e6287ae6c46426f75aadfc7d"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Classe de base pour les équipes des events, liée à la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> <a class="el" href="classevent__equipe.html" title="Classe de base pour les équipes des events, liée à la table event_equipe de la...">event_equipe</a> de la base de données. </p>
+<p>Cette <a class="el" href="classclasse.html">classe</a> doit être spécialisée s'il faut enregistrer des données nécessaires, sinon ce n'est pas obligatoire. Elle ne doit pas être crée directement mais par l'intermédiare de l'objet gérant l'event (<a class="el" href="classclasse.html">classe</a> <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> et dérivées), de manière à créer la bonne <a class="el" href="classclasse.html">classe</a> en cas de spécialisation. </p>
+<hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="af52946da65462e2cacac2c6477275aef"></a><!-- doxytag: member="event_equipe::__construct" ref="af52946da65462e2cacac2c6477275aef" args="($event, $nom, $royaume=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::__construct </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>royaume</em> = <code>null</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructeur. </p>
+<p>Le constructeur peut être utilisé de plusieurs façons: -event_equipe($event, $id) qui récupère les informations de l'objet dans la base. -event_equipe($event, $vals) qui crée l'objet à partir d'information déjà récupèrées sans la base. -event_equipe($event, $nom, $royaume) qui crée une nouvelle équipe.</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$event</em>&nbsp;</td><td>object <a class="el" href="class_objet.html" title="Classe abstraite représentant un objet.">Objet</a> représentant l'event dont le participant fait parti </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>int Id de l'entrée dans la base. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$vals</em>&nbsp;</td><td>array Tableau associatif contenant les entrées de la base de données. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>string nom de l'équipe. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$equipe</em>&nbsp;</td><td>int id du <a class="el" href="classroyaume.html">royaume</a>, si l'équipe défend les couleurs d'un <a class="el" href="classroyaume.html">royaume</a>, peut-être null. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_af52946da65462e2cacac2c6477275aef_cgraph.png" border="0" usemap="#classevent__equipe_af52946da65462e2cacac2c6477275aef_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a56b8ded0ca5e64cb14037eee2584839d"></a><!-- doxytag: member="event_equipe::creer" ref="a56b8ded0ca5e64cb14037eee2584839d" args="($event, $classe, $champ=null, $valeur=null, $ordre='id ASC')" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static event_equipe::creer </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>classe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>champ</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>valeur</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Crée les équipes ou une équipe en particulier Peut être utilisé de plusieurs façons :</p>
+<ul>
+<li>creer($event, $classe) renvoie un tableau contenant tous les équipes</li>
+<li>creer($event, $classe, $champ, $valeur) renvoie une ou plusieurs équipes suivant la valeur d'un champ précis. </li>
+</ul>
+</p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$event</em>&nbsp;</td><td>string objet <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$classe</em>&nbsp;</td><td>string <a class="el" href="classclasse.html">classe</a> à créer </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$champ</em>&nbsp;</td><td>string champ sur lequel porte la condition </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$valeur</em>&nbsp;</td><td>string valeur du champ demandée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$ordre</em>&nbsp;</td><td>string instructions pour le tri </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_a56b8ded0ca5e64cb14037eee2584839d_icgraph.png" border="0" usemap="#classevent__equipe_a56b8ded0ca5e64cb14037eee2584839d_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2c3a445b588061cbeb0066bc2915004"></a><!-- doxytag: member="event_equipe::get_champ" ref="aa2c3a445b588061cbeb0066bc2915004" args="($champ)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_champ </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>champ</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la valeur d'un champ de la base de donnée. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a9cc0113a3d97b3971c1fcdff587c67c1">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_aa2c3a445b588061cbeb0066bc2915004_cgraph.png" border="0" usemap="#classevent__equipe_aa2c3a445b588061cbeb0066bc2915004_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af17d017959185b80b0b1b64a442759c9"></a><!-- doxytag: member="event_equipe::get_event" ref="af17d017959185b80b0b1b64a442759c9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_event </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'event. </p>
+
+</div>
+</div>
+<a class="anchor" id="a17b3db996f0a4fec7bb1fd7a7f621f92"></a><!-- doxytag: member="event_equipe::get_id_event" ref="a17b3db996f0a4fec7bb1fd7a7f621f92" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_id_event </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'event. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_a17b3db996f0a4fec7bb1fd7a7f621f92_icgraph.png" border="0" usemap="#classevent__equipe_a17b3db996f0a4fec7bb1fd7a7f621f92_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3a5e47a7ea752cd47b1f0118a799d70"></a><!-- doxytag: member="event_equipe::get_id_royaume" ref="ae3a5e47a7ea752cd47b1f0118a799d70" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_id_royaume </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'id du <a class="el" href="classroyaume.html">royaume</a>. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_ae3a5e47a7ea752cd47b1f0118a799d70_icgraph.png" border="0" usemap="#classevent__equipe_ae3a5e47a7ea752cd47b1f0118a799d70_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e91b99d24519d1a72950b9e4e395f64"></a><!-- doxytag: member="event_equipe::get_liste_champs" ref="a6e91b99d24519d1a72950b9e4e395f64" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_liste_champs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs pour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a454c5e935a7faaa2ac25a32dab48ca19">table</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e98b5f629e81765ec759a2b1d487cb4"></a><!-- doxytag: member="event_equipe::get_liste_update" ref="a5e98b5f629e81765ec759a2b1d487cb4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_liste_update </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a2ddeda6d602c10e1951e1fe31a1559ee">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_a5e98b5f629e81765ec759a2b1d487cb4_cgraph.png" border="0" usemap="#classevent__equipe_a5e98b5f629e81765ec759a2b1d487cb4_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a17a99461b30831972a89793943ec1607"></a><!-- doxytag: member="event_equipe::get_membres" ref="a17a99461b30831972a89793943ec1607" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_membres </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie les membres d'une équipe. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_a17a99461b30831972a89793943ec1607_cgraph.png" border="0" usemap="#classevent__equipe_a17a99461b30831972a89793943ec1607_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a70cb17303c66b430a8bc4a2807ff540e"></a><!-- doxytag: member="event_equipe::get_nom" ref="a70cb17303c66b430a8bc4a2807ff540e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_nom </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le nom. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_a70cb17303c66b430a8bc4a2807ff540e_icgraph.png" border="0" usemap="#classevent__equipe_a70cb17303c66b430a8bc4a2807ff540e_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a346b1bbbed16b0877f8dddd9968f34da"></a><!-- doxytag: member="event_equipe::get_royaume" ref="a346b1bbbed16b0877f8dddd9968f34da" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_royaume </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le <a class="el" href="classroyaume.html">royaume</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a77eae4b03fff42eb95007fd4836ab6"></a><!-- doxytag: member="event_equipe::get_table" ref="a5a77eae4b03fff42eb95007fd4836ab6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_table </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le nom de la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a>. </p>
+<p>Doit être redéfinie à cause des classes filles </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a0a79cb918213b79d91a431286f26f9ae">table</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd509f1bd4b12d86fce2a6300c7fed5b"></a><!-- doxytag: member="event_equipe::get_valeurs_insert" ref="acd509f1bd4b12d86fce2a6300c7fed5b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::get_valeurs_insert </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des valeurs des champspour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a66689a9c1b06476f027e6396885411a6">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_acd509f1bd4b12d86fce2a6300c7fed5b_cgraph.png" border="0" usemap="#classevent__equipe_acd509f1bd4b12d86fce2a6300c7fed5b_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abd39e358cee470072cafe12f967a345f"></a><!-- doxytag: member="event_equipe::init_tab" ref="abd39e358cee470072cafe12f967a345f" args="($vals)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::init_tab </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>vals</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialise les données membres à l'aide d'un tableau. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>array</em>&nbsp;</td><td>$vals Tableau contenant les valeurs des données. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a647da6a65b9d9e4937778f81df19cbfb">table</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_abd39e358cee470072cafe12f967a345f_cgraph.png" border="0" usemap="#classevent__equipe_abd39e358cee470072cafe12f967a345f_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_abd39e358cee470072cafe12f967a345f_icgraph.png" border="0" usemap="#classevent__equipe_abd39e358cee470072cafe12f967a345f_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7cef364f303f217b7ce9ddd042caec4"></a><!-- doxytag: member="event_equipe::interface_admin" ref="ad7cef364f303f217b7ce9ddd042caec4" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::interface_admin </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Infos ajouter à la fin de la liste de membres dans l'interface admin. </p>
+
+<p>Réimplémentée dans <a class="el" href="classevent__equipe__dte__rte.html#a68bba1159b547d6d4a2d19ed3c7f65a6">event_equipe_dte_rte</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a846cc1e97939446ba1f33cddc456dcf9"></a><!-- doxytag: member="event_equipe::serializeDonnees" ref="a846cc1e97939446ba1f33cddc456dcf9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::serializeDonnees </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>serialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger) </p>
+
+<p>Réimplémentée dans <a class="el" href="classevent__equipe__dte__rte.html#a45325dab16f4ec282d45f0f3c252416a">event_equipe_dte_rte</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_a846cc1e97939446ba1f33cddc456dcf9_icgraph.png" border="0" usemap="#classevent__equipe_a846cc1e97939446ba1f33cddc456dcf9_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a33745eefea5e7c83a53e8fcea016d851"></a><!-- doxytag: member="event_equipe::set_nom" ref="a33745eefea5e7c83a53e8fcea016d851" args="($nom)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::set_nom </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>nom</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le nom. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a1f3ce6e6287ae6c46426f75aadfc7d"></a><!-- doxytag: member="event_equipe::set_royaume" ref="a8a1f3ce6e6287ae6c46426f75aadfc7d" args="($royaume)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::set_royaume </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>royaume</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le <a class="el" href="classroyaume.html">royaume</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa6e3fd59d4aa06e752151bb3b66b90a"></a><!-- doxytag: member="event_equipe::supprimer" ref="aaa6e3fd59d4aa06e752151bb3b66b90a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::supprimer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Supprime l'objet de la base de donnée. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#abcbadd7a797d5f97ad937506e7884b1a">table</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9784733304f6fed2dd2b375582bda20f"></a><!-- doxytag: member="event_equipe::unserializeDonnees" ref="a9784733304f6fed2dd2b375582bda20f" args="($donnees)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::unserializeDonnees </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>donnees</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>déserialisation des données spécifiques à chaque <a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> (à surcharger) </p>
+
+<p>Réimplémentée dans <a class="el" href="classevent__equipe__dte__rte.html#af11bf719a3d2d8199b1a7eab0a27a5f0">event_equipe_dte_rte</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classevent__equipe_a9784733304f6fed2dd2b375582bda20f_icgraph.png" border="0" usemap="#classevent__equipe_a9784733304f6fed2dd2b375582bda20f_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="af44295857aa5288010b46dd7d3f2571d"></a><!-- doxytag: member="event_equipe::$event" ref="af44295857aa5288010b46dd7d3f2571d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::$<a class="el" href="classevent.html">event</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="classevent.html" title="Classe de base pour les events, liée à la table event de la base de données.">event</a> en question </p>
+
+</div>
+</div>
+<a class="anchor" id="afb9383cf1f15bc8e3bfb948de7359403"></a><!-- doxytag: member="event_equipe::$nom" ref="afb9383cf1f15bc8e3bfb948de7359403" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::$nom<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>nom de l'équipe </p>
+
+</div>
+</div>
+<a class="anchor" id="a28a321ab100d15ef5a93f37e6d85601f"></a><!-- doxytag: member="event_equipe::$royaume" ref="a28a321ab100d15ef5a93f37e6d85601f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">event_equipe::$<a class="el" href="classroyaume.html">royaume</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="classroyaume.html">royaume</a>, si l'équipe défend les couleurs d'un <a class="el" href="classroyaume.html">royaume</a> </p>
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:23 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

@@ -29,21 +29,21 @@
 <div class="contents">
 <h1>Référence du fichier horaire.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a687c45980461409d6c50a5d8b218b841">$debut</a> = getmicrotime()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a5736bfed1643046cc9a17347b073062a">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM <a class="el" href="classmap__monstre.html">map_monstre</a> WHERE lib = 'sworling'&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a> = ceil(rand(0, 150))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = ceil(rand(0, 150))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a3815c84bd0dbf0243f908b1b3d5c09a2">$conflits</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a76ab3ebd57a683f3311610e54344306f">$im</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#ab99599d1702f329ce472bcbf96846531">$background_color</a> = imagecolorallocate ($im, 255, 255, 255)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#aa8c968f8ff06e72439dd8d847cd2c932">$color1</a> = imagecolorallocate($im, 0xff, 0xff, 0xff)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#adc07f4cda84ff3a3ce2e637778807e51">$color2</a> = imagecolorallocate($im, 0xff, 0x00, 0x00)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a8d5c4c3c8fca62bcad71c449772fa0c7">$black</a> = imagecolorallocate($im, 0x00, 0x00, 0x00)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a242dab441bef25d689102d4f82367ab6">$carte</a> = 'image/carte_conflit.png'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#aa8c968f8ff06e72439dd8d847cd2c932">$color1</a> = imagecolorallocate($im, 0xff, 0xff, 0xff)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#adc07f4cda84ff3a3ce2e637778807e51">$color2</a> = imagecolorallocate($im, 0xff, 0x00, 0x00)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a3815c84bd0dbf0243f908b1b3d5c09a2">$conflits</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a687c45980461409d6c50a5d8b218b841">$debut</a> = getmicrotime()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($i&lt;=20)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#ac4ee00ad68fe5548dfadc9d07d8902b7">$im2</a> = imagecreatefrompng('image/carte.png')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a76ab3ebd57a683f3311610e54344306f">$im</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($i&lt;=20)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#ac4ee00ad68fe5548dfadc9d07d8902b7">$im2</a> = imagecreatefrompng('image/carte.png')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a5736bfed1643046cc9a17347b073062a">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM <a class="el" href="classmap__monstre.html">map_monstre</a> WHERE <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = 56&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a> = ceil(rand(0, 190))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = ceil(rand(0, 190))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="horaire_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="ab99599d1702f329ce472bcbf96846531"></a><!-- doxytag: member="horaire.php::$background_color" ref="ab99599d1702f329ce472bcbf96846531" args="" -->
@@ -170,7 +170,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a> ($i&lt;=20) $im2 = imagecreatefrompng('image/carte.png')</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($i&lt;=20) $im2 = imagecreatefrompng('image/carte.png')</td>
         </tr>
       </table>
 </div>
@@ -196,7 +196,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a9cbfe95d61703a84674cecf0f4ff8370">for</a> ($i=1;$i&lt;=150;$i++) $requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM <a class="el" href="classmap__monstre.html">map_monstre</a> WHERE lib = 'sworling'&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a6c5147bc079b14b2f1de8960571bb86d">for</a> ($i=1;$i&lt;=150;$i++) $requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM <a class="el" href="classmap__monstre.html">map_monstre</a> WHERE <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = 56&quot;</td>
         </tr>
       </table>
 </div>
@@ -209,7 +209,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$x = ceil(rand(0, 150))</td>
+          <td class="memname">$x = ceil(rand(0, 190))</td>
         </tr>
       </table>
 </div>
@@ -222,7 +222,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$y = ceil(rand(0, 150))</td>
+          <td class="memname">$y = ceil(rand(0, 190))</td>
         </tr>
       </table>
 </div>
@@ -235,7 +235,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a9a68e908775966a9b3e9a90097cdacc7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))</td>
         </tr>
       </table>
 </div>
@@ -244,7 +244,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:54 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:18 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

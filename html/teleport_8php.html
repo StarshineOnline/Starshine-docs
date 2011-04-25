@@ -29,24 +29,38 @@
 <div class="contents">
 <h1>Référence du fichier teleport.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE ID =\''.sSQL($joueur-&gt;get_pos()).'\''</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#a59eabebcf9db04fe004af49fb94e6e79">$W_row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($W_req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#a779fd0fc84b3a4dd678444a2a4dc2b57">$batiment_ok</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#abe2d79bb4aa8b8243d81c67fdd50511f">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($W_row['<a class="el" href="classroyaume.html">royaume</a>'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_race()!=$R-&gt;<br class="typebreak"/>
-get_race()&amp;&amp;$R-&gt;get_diplo($joueur-&gt;<br class="typebreak"/>
-get_race()) &gt; 6) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>', <br class="typebreak"/>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#a1aaba639cc870dc364ef8e2a4e3bb321">$tp</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($W_row['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']!=1) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>', <br class="typebreak"/>
 $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('id_bourg', <br class="typebreak"/>
-$_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#add26890acfe5479ad6535298d4c5958c">$W_coord</a> = convert_in_coord($W_case)</td></tr>
+$_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($tp)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#aaf4a0150f21b7e6f528f18b59bd49c6f">$W_coord</a> = convert_in_coord($W_case)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$joueur-&gt;get_x().' and y = '.$joueur-&gt;get_y()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#a59eabebcf9db04fe004af49fb94e6e79">$W_row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($W_req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="teleport_8php.html#a30920b7409d250419814dec985cf2ad7">if</a> ($joueur-&gt;get_race()!=$R-&gt;get_race()&amp;&amp;$R-&gt;get_diplo($joueur-&gt;get_race()) &gt; 6)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a779fd0fc84b3a4dd678444a2a4dc2b57"></a><!-- doxytag: member="teleport.php::$batiment_ok" ref="a779fd0fc84b3a4dd678444a2a4dc2b57" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$batiment_ok = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="teleport.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
         </tr>
       </table>
 </div>
@@ -67,12 +81,25 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="t
 
 </div>
 </div>
-<a class="anchor" id="add26890acfe5479ad6535298d4c5958c"></a><!-- doxytag: member="teleport.php::$W_coord" ref="add26890acfe5479ad6535298d4c5958c" args="" -->
+<a class="anchor" id="a1aaba639cc870dc364ef8e2a4e3bb321"></a><!-- doxytag: member="teleport.php::$tp" ref="a1aaba639cc870dc364ef8e2a4e3bb321" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($joueur-&gt;get_race()!=$R-&gt;get_race()&amp;&amp;$R-&gt;get_diplo($joueur-&gt;get_race()) &gt; 6) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>', $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('id_bourg', $_GET)) $W_coord = convert_in_coord($W_case)</td>
+          <td class="memname">$tp = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf4a0150f21b7e6f528f18b59bd49c6f"></a><!-- doxytag: member="teleport.php::$W_coord" ref="aaf4a0150f21b7e6f528f18b59bd49c6f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($W_row['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']!=1) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>', $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('id_bourg', $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($tp) $W_coord = convert_in_coord($W_case)</td>
         </tr>
       </table>
 </div>
@@ -98,7 +125,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="t
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_requete = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE ID =\''.sSQL($joueur-&gt;get_pos()).'\''</td>
+          <td class="memname">$W_requete = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$joueur-&gt;get_x().' and y = '.$joueur-&gt;get_y()</td>
         </tr>
       </table>
 </div>
@@ -119,8 +146,21 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="t
 
 </div>
 </div>
+<a class="anchor" id="a30920b7409d250419814dec985cf2ad7"></a><!-- doxytag: member="teleport.php::if" ref="a30920b7409d250419814dec985cf2ad7" args="($joueur&#45;&gt;get_race()!=$R&#45;&gt;get_race()&amp;&amp;$R&#45;&gt;get_diplo($joueur&#45;&gt;get_race()) &gt; 6)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_race()!=$R-&gt;get_race()&amp;&amp;$R-&gt;get_diplo($joueur-&gt;get_race()) &gt; 6)</td>
+        </tr>
+      </table>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:40:56 2009 pour Starshine Online par&nbsp;
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

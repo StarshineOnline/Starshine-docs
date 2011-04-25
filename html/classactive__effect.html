@@ -28,21 +28,17 @@
 </div>
 <div class="contents">
 <h1>Référence de la classe active_effect</h1><!-- doxytag: class="active_effect" --><!-- doxytag: inherits="effect" -->
-<p>Effect actif : <a class="el" href="classbuff.html">buff</a> ou compétence de combat.  
+<p>Effect actif : <a class="el" href="classbuff.html">buff</a> ou compétence de <a class="el" href="classcombat.html">combat</a>.  
 <a href="#_details">Plus de détails...</a></p>
 <div class="dynheader">
 Graphe d'héritage de active_effect:</div>
 <div class="dynsection">
 <div class="center"><img src="classactive__effect__inherit__graph.png" border="0" usemap="#active__effect_inherit__map" alt="Inheritance graph"/></div>
-<map name="active__effect_inherit__map" id="active__effect_inherit__map">
-<area shape="rect" href="classcomp__combat.html" title="Competence de combat." alt="" coords="672,1229,784,1317"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="624,5,832,933"/><area shape="rect" href="classbotte.html" title="botte : competence de combat avec une condition" alt="" coords="377,1384,489,1491"/><area shape="rect" href="classfleche__poison.html" title="{fleche_poison\n|+ $poison\l|+ __construct()\l+ calcul_arme()\l+ inflige_degats()\l+ fin_round()\l}" alt="" coords="513,1365,641,1509"/><area shape="rect" href="classfleche__sable.html" title="{fleche_sable\n||+ __construct()\l+ calcul_degats()\l}" alt="" coords="665,1384,791,1491"/><area shape="rect" href="classprecision__chirurgicale.html" title="{precision_chirurgicale\n||+ __construct()\l+ calcul_critique()\l}" alt="" coords="815,1384,975,1491"/><area shape="rect" href="classpreparation.html" title="{preparation\n||+ __construct()\l+ debut_round()\l}" alt="" coords="999,1384,1119,1491"/><area shape="rect" href="classbotte__aigle.html" title="{botte_aigle\n||+ __construct()\l+ debut_round()\l}" alt="" coords="5,1567,125,1673"/><area shape="rect" href="classbotte__chat.html" title="{botte_chat\n||+ __construct()\l+ debut_round()\l}" alt="" coords="149,1567,269,1673"/><area shape="rect" href="classbotte__crabe.html" title="{botte_crabe\n||+ __construct()\l+ inflige_degats()\l}" alt="" coords="293,1567,421,1673"/><area shape="rect" href="classbotte__ours.html" title="{botte_ours\n||+ __construct()\l+ etourdit()\l+ inflige_degats()\l}" alt="" coords="445,1557,573,1683"/><area shape="rect" href="classbotte__scorpion.html" title="{botte_scorpion\n||+ __construct()\l+ calcul_critique()\l}" alt="" coords="597,1567,728,1673"/><area shape="rect" href="classbotte__tigre.html" title="{botte_tigre\n||+ __construct()\l+ calcul_degats()\l}" alt="" coords="752,1567,877,1673"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de active_effect:</div>
 <div class="dynsection">
 <div class="center"><img src="classactive__effect__coll__graph.png" border="0" usemap="#active__effect_coll__map" alt="Collaboration graph"/></div>
-<map name="active__effect_coll__map" id="active__effect_coll__map">
-<area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classactive__effect-members.html">Liste de tous les membres</a></p>
@@ -50,16 +46,16 @@ Graphe de collaboration de active_effect:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a2849a4bb78de277e477ab28ba2d45bb0">__construct</a> ($aNom, $aTable, $aLevel=null)</td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a0488a47d5d1f0cfcd07f750cedf91d44">$table</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a124a34543107145692c6347bf154690c">$level</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#ad846455e017b335c9e61219f403e40b6">$duree</a> = null</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#ae4d1758f0a75c5579de0334469aa2aad">$effet</a> = null</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a8e5c3802c3db5787859886b1940f3698">$effet2</a> = null</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a0ed6f6e9e49956492de4df0ebe4112c8">$effet3</a> = null</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#ad846455e017b335c9e61219f403e40b6">$duree</a> = null</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a124a34543107145692c6347bf154690c">$level</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a1898835cf2f08770ebf4c5a4633aae1a">$requis</a> = null</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classactive__effect.html#a0488a47d5d1f0cfcd07f750cedf91d44">$table</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
-<p>Effect actif : <a class="el" href="classbuff.html">buff</a> ou compétence de combat. </p>
+<p>Effect actif : <a class="el" href="classbuff.html">buff</a> ou compétence de <a class="el" href="classcombat.html">combat</a>. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a2849a4bb78de277e477ab28ba2d45bb0"></a><!-- doxytag: member="active_effect::__construct" ref="a2849a4bb78de277e477ab28ba2d45bb0" args="($aNom, $aTable, $aLevel=null)" -->
 <div class="memitem">
@@ -180,7 +176,7 @@ Graphe de collaboration de active_effect:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">active_effect::$table</td>
+          <td class="memname">active_effect::$<a class="el" href="classtable.html">table</a></td>
         </tr>
       </table>
 </div>
@@ -189,7 +185,7 @@ Graphe de collaboration de active_effect:</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:41:02 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:20 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

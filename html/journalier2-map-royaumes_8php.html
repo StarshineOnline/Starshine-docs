@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/trunk/journalier2-map-royaumes.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier journalier2-map-royaumes.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a6d7d7b8d92d2782c72ec7f1ca48c2f8e">create_roy_colors</a> (&amp;$im, &amp;$show_info)</td></tr>
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#ab99599d1702f329ce472bcbf96846531">$background_color</a> = imagecolorallocate ($im, 255, 255, 255)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a242dab441bef25d689102d4f82367ab6">$carte</a> = 'image/carte_royaume.png'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#afca5b7d4c9144178253e99d0ada7d519">$col</a> = '<a class="el" href="classroyaume.html">royaume</a>'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a76ab3ebd57a683f3311610e54344306f">$im</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a2131a20beb78d4358a0dbc99c15dbe14">$im3d</a> = imagecreatefrompng('image/carte3d-4.png')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a6b23c4a50a03766ed85281f803e05297">$imalpha</a> = imagecreatetruecolor(<a class="el" href="journalier2-head_8php.html#a1319288a67b7326efc38585bebc8afec">CARTE3D_WIDTH</a>, <a class="el" href="journalier2-head_8php.html#a38c2457808cf626e5ca8541e48a5d526">CARTE3D_HEIGHT</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a61fa6b8cde6f307cc0be265e06f059d8">$noir</a> = imagecolorallocate($imalpha, 170, 170, 170)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM <a class="el" href="classmap.html">map</a> ORDER BY x,y'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a0614bfd5e9f35aae3832af0d52b1f611">$show_info</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(!$im3d)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-map-royaumes_8php.html#a5ece0698f4414fa7a254756e806207ad">$show_info3d</a> = array()</td></tr>
+</table>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a6d7d7b8d92d2782c72ec7f1ca48c2f8e"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::create_roy_colors" ref="a6d7d7b8d92d2782c72ec7f1ca48c2f8e" args="(&amp;$im, &amp;$show_info)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">create_roy_colors </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>im</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>show_info</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="ab99599d1702f329ce472bcbf96846531"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$background_color" ref="ab99599d1702f329ce472bcbf96846531" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$background_color = imagecolorallocate ($im, 255, 255, 255)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a242dab441bef25d689102d4f82367ab6"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$carte" ref="a242dab441bef25d689102d4f82367ab6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$carte = 'image/carte_royaume.png'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afca5b7d4c9144178253e99d0ada7d519"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$col" ref="afca5b7d4c9144178253e99d0ada7d519" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$col = '<a class="el" href="classroyaume.html">royaume</a>'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83018d9153d17d91fbcf3bc10158d34f"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$i" ref="a83018d9153d17d91fbcf3bc10158d34f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$i = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a76ab3ebd57a683f3311610e54344306f"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$im" ref="a76ab3ebd57a683f3311610e54344306f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$im</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><pre class="fragment"> imagecreate (<a class="code" href="journalier2-head_8php.html#a5a7cce4ba382cd3531a40a97cdb56f2d">CARTE_WIDTH</a>, <a class="code" href="journalier2-head_8php.html#aa0ca9904083c894eca54a7dab4592e1e">CARTE_HEIGHT</a>)
+   or die (&quot;Impossible d&apos;initialiser la bibliothèque GD&quot;)
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="a2131a20beb78d4358a0dbc99c15dbe14"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$im3d" ref="a2131a20beb78d4358a0dbc99c15dbe14" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$im3d = imagecreatefrompng('image/carte3d-4.png')</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6b23c4a50a03766ed85281f803e05297"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$imalpha" ref="a6b23c4a50a03766ed85281f803e05297" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$imalpha = imagecreatetruecolor(<a class="el" href="journalier2-head_8php.html#a1319288a67b7326efc38585bebc8afec">CARTE3D_WIDTH</a>, <a class="el" href="journalier2-head_8php.html#a38c2457808cf626e5ca8541e48a5d526">CARTE3D_HEIGHT</a>)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a61fa6b8cde6f307cc0be265e06f059d8"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$noir" ref="a61fa6b8cde6f307cc0be265e06f059d8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$noir = imagecolorallocate($imalpha, 170, 170, 170)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$requete = 'SELECT * FROM <a class="el" href="classmap.html">map</a> ORDER BY x,y'</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0614bfd5e9f35aae3832af0d52b1f611"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$show_info" ref="a0614bfd5e9f35aae3832af0d52b1f611" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$show_info = array()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ece0698f4414fa7a254756e806207ad"></a><!-- doxytag: member="journalier2&#45;map&#45;royaumes.php::$show_info3d" ref="a5ece0698f4414fa7a254756e806207ad" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (!$im3d) $show_info3d = array()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

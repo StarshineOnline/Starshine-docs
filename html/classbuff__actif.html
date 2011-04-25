@@ -31,15 +31,11 @@
 Graphe d'héritage de buff_actif:</div>
 <div class="dynsection">
 <div class="center"><img src="classbuff__actif__inherit__graph.png" border="0" usemap="#buff__actif_inherit__map" alt="Inheritance graph"/></div>
-<map name="buff__actif_inherit__map" id="buff__actif_inherit__map">
-<area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de buff_actif:</div>
 <div class="dynsection">
 <div class="center"><img src="classbuff__actif__coll__graph.png" border="0" usemap="#buff__actif_coll__map" alt="Collaboration graph"/></div>
-<map name="buff__actif_coll__map" id="buff__actif_coll__map">
-<area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classbuff__actif-members.html">Liste de tous les membres</a></p>
@@ -52,9 +48,9 @@ Graphe de collaboration de buff_actif:</div>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a6c49e85031c186b1daa5d41d828dc34c">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a6c49e85031c186b1daa5d41d828dc34c"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#ab072cd04974d791b53463e0a917b60bc">$type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#ac2469540448f4b7a6cfc514542af198f">$buff</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#afa7d272226f720305169faa858c88b7b">$acteur</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#ac2469540448f4b7a6cfc514542af198f">$buff</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#ab072cd04974d791b53463e0a917b60bc">$type</a></td></tr>
 <tr><td colspan="2"><h2>Attributs privés statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a665f4fac0ec1eaf1b3312c2612caa9e1">$esquive_buff</a> = array('buff_evasion', 'buff_cri_detresse', 'batiment_esquive')</td></tr>
 </table>
@@ -121,8 +117,8 @@ Graphe de collaboration de buff_actif:</div>
 <p>Action a effectuer en début de round. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -172,8 +168,8 @@ Graphe de collaboration de buff_actif:</div>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>Tableau des effets. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$acteur</em>&nbsp;</td><td>Indique si le personnage à l'origine de l'effet est l'attaquant ("attaquant") ou le défenseur. </td></tr>
   </table>
   </dd>
@@ -237,7 +233,7 @@ Graphe de collaboration de buff_actif:</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:41:24 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:21 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

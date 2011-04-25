@@ -31,31 +31,27 @@
 Graphe d'héritage de magnetique:</div>
 <div class="dynsection">
 <div class="center"><img src="classmagnetique__inherit__graph.png" border="0" usemap="#magnetique_inherit__map" alt="Inheritance graph"/></div>
-<map name="magnetique_inherit__map" id="magnetique_inherit__map">
-<area shape="rect" href="classfleche__magnetique.html" title="{fleche_magnetique\n||+ __construct()\l}" alt="" coords="5,1229,144,1317"/><area shape="rect" href="classglobe__foudre.html" title="{globe_foudre\n||+ __construct()\l}" alt="" coords="168,1229,280,1317"/><area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="45,5,253,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de magnetique:</div>
 <div class="dynsection">
 <div class="center"><img src="classmagnetique__coll__graph.png" border="0" usemap="#magnetique_coll__map" alt="Collaboration graph"/></div>
-<map name="magnetique_coll__map" id="magnetique_coll__map">
-<area shape="rect" href="classeffect.html" title="Classe de base pour la gestion des effets en combat." alt="" coords="5,5,213,933"/></map>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classmagnetique-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a2b239ad153a758decd8c75174c80e477">__construct</a> ($aName, $aNb)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a7e212fbedf6704c0d7f6ac9fbdd3d030">calcul_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts.  <a href="#a7e212fbedf6704c0d7f6ac9fbdd3d030"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a80fb56483bbd15fa02ab492bb718d522">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a80fb56483bbd15fa02ab492bb718d522"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#ae7e839eaaab7ccdb1e6664279a89dce3">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#ae7e839eaaab7ccdb1e6664279a89dce3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a763a8710c892c062dc8adb7fe795267a">magnetise</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#aec7165c7f9842db27ccb5d1c97172082">$nb</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a536365fcaa788022ea24db0a38d4a857">$chance</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a9db2533f33935e227031f30a0f488c02">$titre</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#ac78292790cbb5f538742c91eb21ae884">$hit</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#aec7165c7f9842db27ccb5d1c97172082">$nb</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a9db2533f33935e227031f30a0f488c02">$titre</a></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a2b239ad153a758decd8c75174c80e477"></a><!-- doxytag: member="magnetique::__construct" ref="a2b239ad153a758decd8c75174c80e477" args="($aName, $aNb)" -->
@@ -89,69 +85,12 @@ Graphe de collaboration de magnetique:</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classmagnetique_a2b239ad153a758decd8c75174c80e477_cgraph.png" border="0" usemap="#classmagnetique_a2b239ad153a758decd8c75174c80e477_cgraph_map" alt=""></div>
-<map name="classmagnetique_a2b239ad153a758decd8c75174c80e477_cgraph_map" id="classmagnetique_a2b239ad153a758decd8c75174c80e477_cgraph">
-<area shape="rect" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c" title="Affiche le message de dégâts correspondant à l&#39;effet." alt="" coords="231,5,308,35"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a7e212fbedf6704c0d7f6ac9fbdd3d030"></a><!-- doxytag: member="magnetique::calcul_degats" ref="a7e212fbedf6704c0d7f6ac9fbdd3d030" args="(&amp;$actif, &amp;$passif, $degats)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">magnetique::calcul_degats </td>
-          <td>(</td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>degats</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie les dégâts. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts avant modification.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>Dégâts après modification. </dd></dl>
-
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a4301f062fc2f675e82c5f625e90e9b36">effect</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dynsection">
-<div class="center"><img src="classmagnetique_a7e212fbedf6704c0d7f6ac9fbdd3d030_cgraph.png" border="0" usemap="#classmagnetique_a7e212fbedf6704c0d7f6ac9fbdd3d030_cgraph_map" alt=""></div>
-<map name="classmagnetique_a7e212fbedf6704c0d7f6ac9fbdd3d030_cgraph_map" id="classmagnetique_a7e212fbedf6704c0d7f6ac9fbdd3d030_cgraph">
-<area shape="rect" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c" title="Affiche le message de dégâts correspondant à l&#39;effet." alt="" coords="244,5,321,35"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a80fb56483bbd15fa02ab492bb718d522"></a><!-- doxytag: member="magnetique::fin_round" ref="a80fb56483bbd15fa02ab492bb718d522" args="(&amp;$actif, &amp;$passif)" -->
 <div class="memitem">
 <div class="memproto">
@@ -180,8 +119,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Action a effectuer en fin de round. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td><a class="el" href="class_personnage.html" title="Class Personnage.">Personnage</a> passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
   </table>
   </dd>
 </dl>
@@ -192,8 +131,58 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classmagnetique_a80fb56483bbd15fa02ab492bb718d522_cgraph.png" border="0" usemap="#classmagnetique_a80fb56483bbd15fa02ab492bb718d522_cgraph_map" alt=""></div>
-<map name="classmagnetique_a80fb56483bbd15fa02ab492bb718d522_cgraph_map" id="classmagnetique_a80fb56483bbd15fa02ab492bb718d522_cgraph">
-<area shape="rect" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c" title="Affiche le message de dégâts correspondant à l&#39;effet." alt="" coords="261,5,339,35"/><area shape="rect" href="classmagnetique.html#a763a8710c892c062dc8adb7fe795267a" title="magnetique::magnetise" alt="" coords="217,59,383,88"/><area shape="rect" href="classeffect.html#a8a36b50e355bbadc959c3d23ae5a4d15" title="Affiche un message correspondant à l&#39;effet." alt="" coords="432,32,549,61"/><area shape="rect" href="classeffect.html#ab8be2d8e576cbabc5238edd3782fb3e4" title="Affiche le message d&#39;informations correspondant à l&#39;effet." alt="" coords="441,85,540,115"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7e839eaaab7ccdb1e6664279a89dce3"></a><!-- doxytag: member="magnetique::inflige_degats" ref="ae7e839eaaab7ccdb1e6664279a89dce3" args="(&amp;$actif, &amp;$passif, $degats)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">magnetique::inflige_degats </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>degats</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Applique les effets ayant lieu lorsque les dégâts ont lieu. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">effect</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmagnetique_ae7e839eaaab7ccdb1e6664279a89dce3_cgraph.png" border="0" usemap="#classmagnetique_ae7e839eaaab7ccdb1e6664279a89dce3_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -228,8 +217,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classmagnetique_a763a8710c892c062dc8adb7fe795267a_cgraph.png" border="0" usemap="#classmagnetique_a763a8710c892c062dc8adb7fe795267a_cgraph_map" alt=""></div>
-<map name="classmagnetique_a763a8710c892c062dc8adb7fe795267a_cgraph_map" id="classmagnetique_a763a8710c892c062dc8adb7fe795267a_cgraph">
-<area shape="rect" href="classeffect.html#a8a36b50e355bbadc959c3d23ae5a4d15" title="Affiche un message correspondant à l&#39;effet." alt="" coords="221,5,339,35"/><area shape="rect" href="classeffect.html#ab8be2d8e576cbabc5238edd3782fb3e4" title="Affiche le message d&#39;informations correspondant à l&#39;effet." alt="" coords="231,59,329,88"/></map>
 </div>
 </p>
 
@@ -237,8 +224,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classmagnetique_a763a8710c892c062dc8adb7fe795267a_icgraph.png" border="0" usemap="#classmagnetique_a763a8710c892c062dc8adb7fe795267a_icgraph_map" alt=""></div>
-<map name="classmagnetique_a763a8710c892c062dc8adb7fe795267a_icgraph_map" id="classmagnetique_a763a8710c892c062dc8adb7fe795267a_icgraph">
-<area shape="rect" href="classmagnetique.html#a80fb56483bbd15fa02ab492bb718d522" title="Action a effectuer en fin de round." alt="" coords="221,5,384,35"/></map>
 </div>
 </p>
 
@@ -298,7 +283,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sat Dec 19 19:42:11 2009 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:23 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
