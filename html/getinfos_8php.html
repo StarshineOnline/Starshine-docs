@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Starshine Online: Référence du fichier SSO/trunk/getinfos.php</title>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/getinfos.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -23,7 +24,7 @@
       <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
   </div>
 </div>
 <div class="contents">
@@ -38,7 +39,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a14fc638b9ca3dfd7f353acb3251f1e4e">$coord_joueur</a> ['x'] = $row['x']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aab44fe5ef659458634f0527cf45c59d2">$coord_joueur</a> ['y'] = $row['y']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#afc5e9ce512cd97cf2e0e25bb20dcd39b">$doc</a> = new DomDocument('1.0', 'utf-8')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#af1d5ccdee975b8f4d20aaffc5b28557c">$now</a> = time()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#af59a5f7cd609e592c41dc3643efd3c98">$query</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
@@ -47,10 +48,10 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#aa3839e976cc3dfcf97eb2d8bd3df4e13">$req_joueurs</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_joueurs)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a9208fa396dd9702b04f713619fccf428">$req_monstres</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_monstres)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab2b4d85eee8362d5d209c9c5d23b83ce">$req_pnj</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete_pnj)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a> = \''.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'].'\''</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE ID = \''.$_SESSION['ID'].'\''</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a253ece263f13471e6888f9e6e1425e0b">$requete_batiment</a> = 'SELECT construction.x, construction.y, construction.hp, construction.royaume, construction.nom, construction.id_batiment, batiment.image FROM <a class="el" href="classconstruction.html">construction</a>, <a class="el" href="classbatiment.html">batiment</a> WHERE (((construction.x &gt;= '.$xmin.') AND (construction.x &lt;= '.$xmax.')) AND ((construction.y &gt;= '.$ymin.') AND (construction.y &lt;= '.$ymax.'))) AND <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">batiment.id</a> = construction.id_batiment ORDER BY construction.y ASC, construction.x ASC'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#ab43036f32f48ca3bf16dee751a027a46">$requete_drapeaux</a> = 'SELECT placement.x, placement.y, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">placement.type</a>, placement.nom, placement.royaume, placement.debut_placement, placement.fin_placement, batiment.image FROM <a class="el" href="classplacement.html">placement</a>, <a class="el" href="classbatiment.html">batiment</a> WHERE (((placement.x &gt;= '.$xmin.') AND (placement.x &lt;= '.$xmax.')) AND ((placement.y &gt;= '.$ymin.') AND (placement.y &lt;= '.$ymax.'))) AND <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">batiment.id</a> = placement.id_batiment ORDER BY placement.y ASC, placement.x ASC'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a85b4e72383deba9cf0f66a204bc99eaa">$requete_joueurs</a> = 'SELECT <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>, nom, level, race, x, y, <a class="el" href="classclasse.html">classe</a>, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a85b4e72383deba9cf0f66a204bc99eaa">$requete_joueurs</a> = 'SELECT ID, nom, level, race, x, y, <a class="el" href="classclasse.html">classe</a>, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#acab48536c4438e2ca71dacc4fd4017cc">$requete_monstres</a> = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">mm.id</a>, mm.x, mm.y, m.nom, m.lib, COUNT(*) as tot FROM <a class="el" href="classmap__monstre.html">map_monstre</a> mm, <a class="el" href="classmonstre.html">monstre</a> m WHERE <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">mm.type</a> = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">m.id</a> AND (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) GROUP BY x, y, lib ORDER BY y ASC, x ASC, ABS(level - '.$row['level'].') ASC, level ASC, nom ASC, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a856749898f829d34c50bae65524486b8">$requete_pnj</a> = 'SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, image, x, y FROM <a class="el" href="classpnj.html">pnj</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) ORDER BY y ASC, x ASC'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="getinfos_8php.html#a3928ba395d001b7565e9d259682c26b3">$rh</a> = $time + (4 * 60)</td></tr>
@@ -194,7 +195,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -316,7 +317,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a> = \''.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'].'\''</td>
+          <td class="memname">$requete = 'SELECT x, y, level FROM <a class="el" href="classperso.html">perso</a> WHERE ID = \''.$_SESSION['ID'].'\''</td>
         </tr>
       </table>
 </div>
@@ -355,7 +356,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete_joueurs = 'SELECT <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>, nom, level, race, x, y, <a class="el" href="classclasse.html">classe</a>, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td>
+          <td class="memname">$requete_joueurs = 'SELECT ID, nom, level, race, x, y, <a class="el" href="classclasse.html">classe</a>, cache_classe, cache_niveau, hp, cache_stat, melee, distance, esquive, blocage, incantation, sort_vie, sort_element, sort_mort, craft, honneur, exp FROM <a class="el" href="classperso.html">perso</a> WHERE (((x &gt;= '.$xmin.') AND (x &lt;= '.$xmax.')) AND ((y &gt;= '.$ymin.') AND (y &lt;= '.$ymax.'))) AND statut = \'actif\' ORDER BY y ASC, x ASC, dernier_connexion DESC'</td>
         </tr>
       </table>
 </div>
@@ -507,7 +508,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:18 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:44 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

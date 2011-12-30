@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -45,6 +46,9 @@ Graphe de collaboration de comp_combat:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a00240fef0be7846ac89da5e533d52102">__construct</a> ($aNom, $aLevel)</td></tr>
+<tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a230f6419d9270175518f94d4ee1f829a">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a230f6419d9270175518f94d4ee1f829a"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Competence de <a class="el" href="classcombat.html">combat</a>. </p>
@@ -76,8 +80,61 @@ Graphe de collaboration de comp_combat:</div>
 
 </div>
 </div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a230f6419d9270175518f94d4ee1f829a"></a><!-- doxytag: member="comp_combat::factory" ref="a230f6419d9270175518f94d4ee1f829a" args="(&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static comp_combat::factory </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>acteur</em> = <code>''</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:21 2011 pour Starshine Online par&nbsp;
+<div class="memdoc">
+
+<p>Crée l'effet. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>Tableau des effets. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$acteur</em>&nbsp;</td><td>Indique si le personnage à l'origine de l'effet est l'attaquant ("attaquant") ou le défenseur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a05ca7643c1f1e3147b23067edcd525c4">effect</a>.</p>
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:51 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

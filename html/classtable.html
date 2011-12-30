@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -49,11 +50,13 @@ Graphe d'héritage de table:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtable.html#abcbadd7a797d5f97ad937506e7884b1a">supprimer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime l'élément de la base de donnée.  <a href="#abcbadd7a797d5f97ad937506e7884b1a"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtable.html#aaa82f5010fe9fa36793b6a6937c2a676">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un tableau d'objets respectant certains critères.  <a href="#aaa82f5010fe9fa36793b6a6937c2a676"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtable.html#a62a383a174d4c523bf9445dea4549e82">gen_create</a> ($<a class="el" href="classclasse.html">classe</a>, $<a class="el" href="classtable.html">table</a>, $cond, $keys=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un tableau d'objets respectant certains critères.  <a href="#a62a383a174d4c523bf9445dea4549e82"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un tableau d'objets respectant certains critères pour n'importe qu'elle <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a>.  <a href="#a62a383a174d4c523bf9445dea4549e82"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtable.html#a7d6d73070a80d26ca62b6314636b8423">charger</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Charge un élément de la base de donnée.  <a href="#a7d6d73070a80d26ca62b6314636b8423"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Charge un élément de la base de donnée ou directement à partid d'un tableau.  <a href="#a7d6d73070a80d26ca62b6314636b8423"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtable.html#a9cc0113a3d97b3971c1fcdff587c67c1">get_champ</a> ($champ)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la valeur d'un champ de la base de donnée.  <a href="#a9cc0113a3d97b3971c1fcdff587c67c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtable.html#aa50c0dadb81888ec73272f13b75142fc">get_champ_id</a> ()</td></tr>
@@ -121,10 +124,10 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Charge un élément de la base de donnée. </p>
+<p>Charge un élément de la base de donnée ou directement à partid d'un tableau. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>Id (clé primaire) de l'élément dans la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>Id (clé primaire) de l'élément dans la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> ou tableau contenant les valeurs des données. </td></tr>
   </table>
   </dd>
 </dl>
@@ -139,7 +142,78 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classtable_a7d6d73070a80d26ca62b6314636b8423_icgraph.png" border="0" usemap="#classtable_a7d6d73070a80d26ca62b6314636b8423_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa82f5010fe9fa36793b6a6937c2a676"></a><!-- doxytag: member="table::create" ref="aaa82f5010fe9fa36793b6a6937c2a676" args="($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static table::create </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>champs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>valeurs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>keys</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>where</em> = <code>false</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Crée un tableau d'objets respectant certains critères. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>array|string</em>&nbsp;</td><td>$champs Champs servant a trouver les résultats </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>array|string</em>&nbsp;</td><td>$valeurs Valeurs servant a trouver les résultats </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$ordre Ordre de tri </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>bool|string</em>&nbsp;</td><td>$keys Si false, stockage en tableau classique, si string stockage avec sous tableau en fonction du champ $keys </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>array Liste d'objets </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="classarene.html#a3b95d2e5e9aa619ee39f590c79882426">arene</a>, <a class="el" href="classevent.html#ac4da798ebe78cdb346ef6bccfb388e4f">event</a>, et <a class="el" href="classperso.html#a2f5f79c381b6216dd206f72678d61155">perso</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classtable_aaa82f5010fe9fa36793b6a6937c2a676_cgraph.png" border="0" usemap="#classtable_aaa82f5010fe9fa36793b6a6937c2a676_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
 </div>
 </p>
 
@@ -182,17 +256,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Crée un tableau d'objets respectant certains critères. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>array|string</em>&nbsp;</td><td>$champs Champs servant a trouver les résultats </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>array|string</em>&nbsp;</td><td>$valeurs Valeurs servant a trouver les résultats </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$ordre Ordre de tri </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>bool|string</em>&nbsp;</td><td>$keys Si false, stockage en tableau classique, si string stockage avec sous tableau en fonction du champ $keys </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>array Liste d'objets Crée un tableau d'objets respectant certains critères pour n'importe qu'elle <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> </dd></dl>
+<p>Crée un tableau d'objets respectant certains critères pour n'importe qu'elle <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a>. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$classe Classe des objets à créer </td></tr>
@@ -224,7 +288,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Renvoie la valeur d'un champ de la base de donnée. </p>
 
-<p>Réimplémentée dans <a class="el" href="classarene.html#a0beb28fe6d62bc727a462768de180eae">arene</a>, <a class="el" href="classarenes__joueur.html#a0a858c1822ff588414e20789c966a888">arenes_joueur</a>, <a class="el" href="classevent.html#afbc3a4e45422a62d1531bf2de11650bc">event</a>, <a class="el" href="classevent__equipe.html#aa2c3a445b588061cbeb0066bc2915004">event_equipe</a>, <a class="el" href="classevent__participant.html#a9bc127d4d68aff1fbb00ca593de25455">event_participant</a>, et <a class="el" href="classevent__partie.html#a721b9e294f0aad387f95d65115a0f002">event_partie</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classarene.html#a0beb28fe6d62bc727a462768de180eae">arene</a>, <a class="el" href="classarenes__joueur.html#a0a858c1822ff588414e20789c966a888">arenes_joueur</a>, <a class="el" href="classevent.html#afbc3a4e45422a62d1531bf2de11650bc">event</a>, <a class="el" href="classevent__equipe.html#aa2c3a445b588061cbeb0066bc2915004">event_equipe</a>, <a class="el" href="classevent__participant.html#a9bc127d4d68aff1fbb00ca593de25455">event_participant</a>, <a class="el" href="classevent__partie.html#a721b9e294f0aad387f95d65115a0f002">event_partie</a>, et <a class="el" href="classmap__monstre.html#ad5f5e9fac4a2e9dca6c16030f868b652">map_monstre</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -255,7 +319,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classtable_aa50c0dadb81888ec73272f13b75142fc_icgraph.png" border="0" usemap="#classtable_aa50c0dadb81888ec73272f13b75142fc_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -281,7 +344,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classtable_a5b66131c2e009ddec8548e82cbb0ae9c_icgraph.png" border="0" usemap="#classtable_a5b66131c2e009ddec8548e82cbb0ae9c_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -304,12 +366,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Renvoie la liste des champs pour une insertion dans la base. </p>
 
-<p>Réimplémentée dans <a class="el" href="classarene.html#a47318861ea215b24fa246f8f1a6237ff">arene</a>, <a class="el" href="classarenes__joueur.html#a9f7ef09a1c4b30d2337ed86c1113c9c3">arenes_joueur</a>, <a class="el" href="classentite.html#aefb65c56a77220a5527271e2b77d0084">entite</a>, <a class="el" href="classevent.html#a4c4ed1fddc96f54c7f8d09a1f5f92d12">event</a>, <a class="el" href="classevent__equipe.html#a6e91b99d24519d1a72950b9e4e395f64">event_equipe</a>, <a class="el" href="classevent__participant.html#a0dbaea20f6dd3d62e1d9379698b2896e">event_participant</a>, <a class="el" href="classevent__partie.html#a4cb83c3eba1bfd39f2966a5a27f3884a">event_partie</a>, <a class="el" href="classplacable.html#a0623e7cf997319baf38e21c0eeb65a99">placable</a>, et <a class="el" href="classpnj.html#a5cd426a4ce56511ebdfebf60bb0bea94">pnj</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classarene.html#a47318861ea215b24fa246f8f1a6237ff">arene</a>, <a class="el" href="classarenes__joueur.html#a9f7ef09a1c4b30d2337ed86c1113c9c3">arenes_joueur</a>, <a class="el" href="classconstruction.html#a8096f6141c31c336c4a0eabf251f9283">construction</a>, <a class="el" href="classentite.html#aefb65c56a77220a5527271e2b77d0084">entite</a>, <a class="el" href="classentitenj__constr.html#ad531a703f40c66f57197485ed13d8bde">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#ad20585e1b8109490ef3eaeb46f8e9437">entnj_incarn</a>, <a class="el" href="classevent.html#a4c4ed1fddc96f54c7f8d09a1f5f92d12">event</a>, <a class="el" href="classevent__equipe.html#a6e91b99d24519d1a72950b9e4e395f64">event_equipe</a>, <a class="el" href="classevent__participant.html#a0dbaea20f6dd3d62e1d9379698b2896e">event_participant</a>, <a class="el" href="classevent__partie.html#a4cb83c3eba1bfd39f2966a5a27f3884a">event_partie</a>, <a class="el" href="classmap__monstre.html#a53545b8c0f1b0e5cebc34f3b30de9033">map_monstre</a>, <a class="el" href="classpet.html#a320bf85797c7bb35d79bf264b65c3a7d">pet</a>, <a class="el" href="classplacable.html#a0623e7cf997319baf38e21c0eeb65a99">placable</a>, <a class="el" href="classplacement.html#a0967159e460eda3b55b78e997b60828b">placement</a>, et <a class="el" href="classpnj.html#a5cd426a4ce56511ebdfebf60bb0bea94">pnj</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classtable_a454c5e935a7faaa2ac25a32dab48ca19_icgraph.png" border="0" usemap="#classtable_a454c5e935a7faaa2ac25a32dab48ca19_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -332,7 +393,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base. </p>
 
-<p>Réimplémentée dans <a class="el" href="classarene.html#a310c8a6053b3ea8edfbcf142ee1bafcb">arene</a>, <a class="el" href="classarenes__joueur.html#af88e0593e5dab4ee686287be5db0fba0">arenes_joueur</a>, <a class="el" href="classentite.html#a1ccbb0faeccd89a0f63433fc42cf718b">entite</a>, <a class="el" href="classevent.html#a7a66c363fcae923370337cb71fd74796">event</a>, <a class="el" href="classevent__equipe.html#a5e98b5f629e81765ec759a2b1d487cb4">event_equipe</a>, <a class="el" href="classevent__participant.html#ac9eba01831600a20677ef14e7ad6d820">event_participant</a>, <a class="el" href="classevent__partie.html#a20697909d82feff56479b0c71693e61b">event_partie</a>, <a class="el" href="classplacable.html#a6045da079ba4101558bb5c388d8b7ac3">placable</a>, et <a class="el" href="classpnj.html#a187a57a356de6006149d944b1db83901">pnj</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classarene.html#a310c8a6053b3ea8edfbcf142ee1bafcb">arene</a>, <a class="el" href="classarenes__joueur.html#af88e0593e5dab4ee686287be5db0fba0">arenes_joueur</a>, <a class="el" href="classconstruction.html#ac063b3644dfd2f390877cc2a4c344748">construction</a>, <a class="el" href="classentite.html#a1ccbb0faeccd89a0f63433fc42cf718b">entite</a>, <a class="el" href="classentitenj__constr.html#af8c890c77b4cd7f7b1c09c3ee755c075">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#ace2bdba6efff245e118aa470c9f5b15e">entnj_incarn</a>, <a class="el" href="classevent.html#a7a66c363fcae923370337cb71fd74796">event</a>, <a class="el" href="classevent__equipe.html#a5e98b5f629e81765ec759a2b1d487cb4">event_equipe</a>, <a class="el" href="classevent__participant.html#ac9eba01831600a20677ef14e7ad6d820">event_participant</a>, <a class="el" href="classevent__partie.html#a20697909d82feff56479b0c71693e61b">event_partie</a>, <a class="el" href="classmap__monstre.html#a3dd71eacfcaaea4b8fee1dd1d9e844de">map_monstre</a>, <a class="el" href="classpet.html#acc0775df91d7e776b41c3e1aaf185359">pet</a>, <a class="el" href="classplacable.html#a6045da079ba4101558bb5c388d8b7ac3">placable</a>, <a class="el" href="classplacement.html#a2a260a36b0f92eb6e9648a21644f9e68">placement</a>, et <a class="el" href="classpnj.html#a187a57a356de6006149d944b1db83901">pnj</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -362,6 +423,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Réimplémentée dans <a class="el" href="classarene.html#ad4768394fbc627fd1af38a16072d97df">arene</a>, <a class="el" href="classarenes__joueur.html#a4a29706b55ee90dae53c11c5f805f836">arenes_joueur</a>, <a class="el" href="classentite.html#ae17b44316307a4442799a83a15926d89">entite</a>, <a class="el" href="classevent.html#a5ce63a4101afec52b581fe9e6384c637">event</a>, <a class="el" href="classevent__equipe.html#a5a77eae4b03fff42eb95007fd4836ab6">event_equipe</a>, <a class="el" href="classevent__participant.html#a4d8947d9f88146c4d15eb1a21356fbb7">event_participant</a>, et <a class="el" href="classevent__partie.html#a546ac58016d77c011ae3a614838c3b71">event_partie</a>.</p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a66689a9c1b06476f027e6396885411a6"></a><!-- doxytag: member="table::get_valeurs_insert" ref="a66689a9c1b06476f027e6396885411a6" args="()" -->
@@ -381,7 +448,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Renvoie la liste des valeurs des champspour une insertion dans la base. </p>
 
-<p>Réimplémentée dans <a class="el" href="classarene.html#ae95c08412d6cd946ff08bcb2522b1deb">arene</a>, <a class="el" href="classarenes__joueur.html#a5fa8541a9e64fb596ccced6cf992c09e">arenes_joueur</a>, <a class="el" href="classentite.html#a56a5f582958ac79c18cfd26d9ba1c4c7">entite</a>, <a class="el" href="classevent.html#ab6a26e54b1a55c8fedd31a1f5f0d4472">event</a>, <a class="el" href="classevent__equipe.html#acd509f1bd4b12d86fce2a6300c7fed5b">event_equipe</a>, <a class="el" href="classevent__participant.html#a96dc807f5f4403a8034a16d34080fc76">event_participant</a>, <a class="el" href="classevent__partie.html#a95c612f2585e4999c97a396ca98a57b9">event_partie</a>, <a class="el" href="classplacable.html#a997ab5b5d1ca44b29693e4b14ff9f657">placable</a>, et <a class="el" href="classpnj.html#a50996dad8cfaf4d4d4f43c45df976469">pnj</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classarene.html#ae95c08412d6cd946ff08bcb2522b1deb">arene</a>, <a class="el" href="classarenes__joueur.html#a5fa8541a9e64fb596ccced6cf992c09e">arenes_joueur</a>, <a class="el" href="classconstruction.html#a88cb6112a41223f28dadefd2e462b7dd">construction</a>, <a class="el" href="classentite.html#a56a5f582958ac79c18cfd26d9ba1c4c7">entite</a>, <a class="el" href="classentitenj__constr.html#a60c2255b679588519ca50876f6ab31f1">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#ad86f7d0fc99071bef187bedef07be74b">entnj_incarn</a>, <a class="el" href="classevent.html#ab6a26e54b1a55c8fedd31a1f5f0d4472">event</a>, <a class="el" href="classevent__equipe.html#acd509f1bd4b12d86fce2a6300c7fed5b">event_equipe</a>, <a class="el" href="classevent__participant.html#a96dc807f5f4403a8034a16d34080fc76">event_participant</a>, <a class="el" href="classevent__partie.html#a95c612f2585e4999c97a396ca98a57b9">event_partie</a>, <a class="el" href="classmap__monstre.html#a567a3461b30f26a41952eb1a003cfc14">map_monstre</a>, <a class="el" href="classpet.html#a0124e261f070a1238f122924c3c9c75a">pet</a>, <a class="el" href="classplacable.html#a997ab5b5d1ca44b29693e4b14ff9f657">placable</a>, <a class="el" href="classplacement.html#a6d6ba766d11842e98b8370ed36439024">placement</a>, et <a class="el" href="classpnj.html#a50996dad8cfaf4d4d4f43c45df976469">pnj</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -416,12 +483,11 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classarene.html#a3e947f18ef09218ad3312f4b4dc2eadb">arene</a>, <a class="el" href="classarenes__joueur.html#a325d15c4a948392b7fcef82d07b999cd">arenes_joueur</a>, <a class="el" href="classevent.html#a2bf4451513f178d5f173543b2789936e">event</a>, <a class="el" href="classevent__equipe.html#abd39e358cee470072cafe12f967a345f">event_equipe</a>, <a class="el" href="classevent__participant.html#ac1d04ed693f5b6a83287d222fa3381af">event_participant</a>, <a class="el" href="classevent__partie.html#af981b7a3786a33edd574356708d7319c">event_partie</a>, et <a class="el" href="classplacable.html#a52572e9d7d63b482efd1f1d2c0a1e471">placable</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classarene.html#a3e947f18ef09218ad3312f4b4dc2eadb">arene</a>, <a class="el" href="classarenes__joueur.html#a325d15c4a948392b7fcef82d07b999cd">arenes_joueur</a>, <a class="el" href="classconstruction.html#a9397cb012e770a942b8a381608efbbc6">construction</a>, <a class="el" href="classentitenj__constr.html#a03218ad8bfc306458046efe8de0e7ee1">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#a859a3a8edaf742ed352106bce4c9181b">entnj_incarn</a>, <a class="el" href="classevent.html#a2bf4451513f178d5f173543b2789936e">event</a>, <a class="el" href="classevent__equipe.html#abd39e358cee470072cafe12f967a345f">event_equipe</a>, <a class="el" href="classevent__participant.html#ac1d04ed693f5b6a83287d222fa3381af">event_participant</a>, <a class="el" href="classevent__partie.html#af981b7a3786a33edd574356708d7319c">event_partie</a>, <a class="el" href="classmap__monstre.html#a3812be5499d659d82367b7d5a3f74100">map_monstre</a>, <a class="el" href="classpet.html#ad8509b7f3b24f090fa147020689996d2">pet</a>, <a class="el" href="classplacable.html#a52572e9d7d63b482efd1f1d2c0a1e471">placable</a>, et <a class="el" href="classplacement.html#a5cdbff7167c0253a38ccdf0282cb0388">placement</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classtable_a647da6a65b9d9e4937778f81df19cbfb_icgraph.png" border="0" usemap="#classtable_a647da6a65b9d9e4937778f81df19cbfb_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -550,7 +616,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:25 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:12:00 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

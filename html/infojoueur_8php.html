@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Starshine Online: Référence du fichier SSO/trunk/infojoueur.php</title>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/infojoueur.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -23,7 +24,7 @@
       <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
   </div>
 </div>
 <div class="contents">
@@ -34,13 +35,15 @@
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#ac58b42b417012503ea186ea312c6aa46">$chaine_nom</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_grade()-&gt;get_nom().' '.$<a class="el" href="classperso.html">perso</a>-&gt;get_nom()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#af5826029e31e937d174a49362058483c">$classe</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_classe()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a71f2aa6a4b2bf64caee0b33cd32056dd">$groupe</a> = new <a class="el" href="classgroupe.html">groupe</a>($joueur-&gt;get_groupe())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a558bfdffbfe8110be3980862489856ec">$niveau</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_level()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a648bcc9981df7cceb4b931a80064a6c5">$perso</a> = new <a class="el" href="classperso.html">perso</a>($W_ID)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a43e5b5a819fedbd12b8cf5421ba6985e">$titre</a> = $titre_perso-&gt;get_titre_perso($bonus)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#acabff7b749c2b560047d607ad66a9271">$titre_perso</a> = new <a class="el" href="classtitre.html">titre</a>($W_ID)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#acd403f21721a7b74fca1454b14fa1bd3">$vue</a> = 4</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = convert_in_pos($<a class="el" href="classperso.html">perso</a>-&gt;get_x(), $<a class="el" href="classperso.html">perso</a>-&gt;get_y())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a3bdc395fa40de5f822d4230cf6e5b387">$W_distance</a> = detection_distance($W_case, $joueur-&gt;get_pos())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a20f940ecc4a1340781f167fb69a76622">$W_ID</a> = $_GET['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a20f940ecc4a1340781f167fb69a76622">$W_ID</a> = $_GET['ID']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a1a99de28ec8c55302f869467cb07a91f">if</a> (array_key_exists(12, $bonus) AND check_affiche_bonus($bonus[12], $joueur, $<a class="el" href="classperso.html">perso</a>))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="infojoueur_8php.html#a323f865ad61a9a46b800490cb1e297a7">if</a> (array_key_exists(19, $bonus) AND check_affiche_bonus($bonus[19], $joueur, $<a class="el" href="classperso.html">perso</a>))</td></tr>
 </table>
@@ -115,7 +118,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -142,6 +145,32 @@
       <table class="memname">
         <tr>
           <td class="memname">$<a class="el" href="classperso.html">perso</a> = new <a class="el" href="classperso.html">perso</a>($W_ID)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a43e5b5a819fedbd12b8cf5421ba6985e"></a><!-- doxytag: member="infojoueur.php::$titre" ref="a43e5b5a819fedbd12b8cf5421ba6985e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="classtitre.html">titre</a> = $titre_perso-&gt;get_titre_perso($bonus)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acabff7b749c2b560047d607ad66a9271"></a><!-- doxytag: member="infojoueur.php::$titre_perso" ref="acabff7b749c2b560047d607ad66a9271" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$titre_perso = new <a class="el" href="classtitre.html">titre</a>($W_ID)</td>
         </tr>
       </table>
 </div>
@@ -193,7 +222,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_ID = $_GET['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td>
+          <td class="memname">$W_ID = $_GET['ID']</td>
         </tr>
       </table>
 </div>
@@ -228,7 +257,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:44 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

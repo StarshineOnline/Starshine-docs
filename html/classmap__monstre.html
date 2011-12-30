@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -27,85 +28,95 @@
   </div>
 </div>
 <div class="contents">
-<h1>Référence de la classe map_monstre</h1><!-- doxytag: class="map_monstre" --><div class="dynheader">
+<h1>Référence de la classe map_monstre</h1><!-- doxytag: class="map_monstre" --><!-- doxytag: inherits="entnj_incarn" -->
+<p>Classe <a class="el" href="classmap__monstre.html" title="Classe map_monstre Classe représentant un monstre sur la carte.">map_monstre</a> Classe représentant un <a class="el" href="classmonstre.html">monstre</a> sur la carte.  
+<a href="#_details">Plus de détails...</a></p>
+<div class="dynheader">
 Graphe d'héritage de map_monstre:</div>
 <div class="dynsection">
 <div class="center"><img src="classmap__monstre__inherit__graph.png" border="0" usemap="#map__monstre_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
+<div class="dynheader">
+Graphe de collaboration de map_monstre:</div>
+<div class="dynsection">
+<div class="center"><img src="classmap__monstre__coll__graph.png" border="0" usemap="#map__monstre_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classmap__monstre-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ab03fd917dd97f64cbe19a0b867d52ab2">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=0, $x=0, $y=0, $hp=0, $level=0, $nom= '', $lib= '', $mort_naturelle= '')</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#ab03fd917dd97f64cbe19a0b867d52ab2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#affa102d0225ef5b4c7087cb9df084226">__toString</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#affa102d0225ef5b4c7087cb9df084226"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a7b28e52fd9d9f2bb38a93d2af665fe13">check_monstre</a> ()</td></tr>
+<tr><td colspan="2"><h2>Buffs</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrp03c8093b6585604239705546c3d3ae76"></a>Données et méthodes ayant trait aux buffs et débuffs actifs sur le <a class="el" href="classmonstre.html">monstre</a>. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a62fb83d505f43621b28aca8c08ceaa89">$buff</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Liste des buffs actifs sur le <a class="el" href="classmonstre.html">monstre</a>.  <a href="#a62fb83d505f43621b28aca8c08ceaa89"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#afd6f3717e03bde046867862b83317d77">get_buff</a> ($nom=false, $champ=false, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a6ec11635331795ae3ee41780ab731f90">get_hp</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#a6ec11635331795ae3ee41780ab731f90"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a8844ede2f6c2ce9644a07c3bb70614ed">get_id</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#a8844ede2f6c2ce9644a07c3bb70614ed"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a2c4b0f1e485fe8031e55992201c9fde8">get_level</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#a2c4b0f1e485fe8031e55992201c9fde8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ab533d74db7f09c1733bc44c9390a27b5">get_lib</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#ab533d74db7f09c1733bc44c9390a27b5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#acbe691380ed1d3a8f9b70a89dd6c7385">get_mort_naturelle</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#acbe691380ed1d3a8f9b70a89dd6c7385"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a4e0c9f337bed378c0219a573b620057b">get_nom</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#a4e0c9f337bed378c0219a573b620057b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a19b8528d0a2e8fa8fc0e0589adec327e">get_pos</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a77b01584af3c763f0acc6f0197858dab">get_race</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a85cd9c084356f801e65ebef3f3721162">get_type</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#a85cd9c084356f801e65ebef3f3721162"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#aa272cbcaf32673e41bee25efca2d90d1">get_x</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#aa272cbcaf32673e41bee25efca2d90d1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#adc462f0568e0cccafbb72b8ff4452768">get_y</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut  public.  <a href="#adc462f0568e0cccafbb72b8ff4452768"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci.  <a href="#afd6f3717e03bde046867862b83317d77"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ad656908a4bd92248056dca0dc8b16b6a">is_buff</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html">buff</a> nom.  <a href="#ad656908a4bd92248056dca0dc8b16b6a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a8b2a567c1558c26e3efac86fa72a2652">kill_monstre_de_donjon</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ac7397af653b04b7e62a912805fded4cb">kill_monstre_de_donjon2</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a4e84ceb65d317421b4bcef0129a1ea90">sauver</a> ($force=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sauvegarde automatiquement en base de donnée.  <a href="#a4e84ceb65d317421b4bcef0129a1ea90"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ad66532dc2a000b860dac1e988fd1ba4f">set_hp</a> ($hp)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#ad66532dc2a000b860dac1e988fd1ba4f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a31c1b726ba2cdb2b51cf22c58c0c20c3">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a31c1b726ba2cdb2b51cf22c58c0c20c3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#af9d3983e39384912f3a4ae4248568ac7">set_level</a> ($level)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#af9d3983e39384912f3a4ae4248568ac7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ae90b501e240f0fe3124f5a0dc393503a">set_lib</a> ($lib)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#ae90b501e240f0fe3124f5a0dc393503a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a2b109f803605104972a118306f21be23">set_mort_naturelle</a> ($mort_naturelle)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a2b109f803605104972a118306f21be23"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a825a0dc335c16d2bfd480ed323d7e092">set_nom</a> ($nom)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a825a0dc335c16d2bfd480ed323d7e092"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#afeeb53cbfa04cb1535518060dbd778b2">set_type</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#afeeb53cbfa04cb1535518060dbd778b2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a70c8a1fa7293e69c22d9488a02bd45fb">set_x</a> ($x)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a70c8a1fa7293e69c22d9488a02bd45fb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#af3fb434b2cad511fc6389b1aaa767a76">set_y</a> ($y)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#af3fb434b2cad511fc6389b1aaa767a76"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a2b07ec3ac4171978bc0f57a9d80ee7c7">supprimer</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  public.  <a href="#a2b07ec3ac4171978bc0f57a9d80ee7c7"></a><br/></td></tr>
-<tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a3faaa479899d4c4ac521631831397418">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  static.  <a href="#a3faaa479899d4c4ac521631831397418"></a><br/></td></tr>
-<tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ae5812f1bf1a8f30b7d67b5c442510a40">$nonexistant</a> = false</td></tr>
-<tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a1b9474f6983c5d4b3e6f81a23fdb6d24">$hp</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a8bbec5c1291fe26a2b09dd607dd94afb">$id</a></td></tr>
+<tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrp9c2ff6d0683497ad43281c742be15d58"></a>Donnée et méthode sur les inforamations "générales" : type, niveau, … </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#accbf1b87e954ea51b32e2a4de4f018f3">$id_monstre</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">id de la définition dans la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> "monstre"  <a href="#accbf1b87e954ea51b32e2a4de4f018f3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a689045b9e467f47d3b7bb2f7892cd0ae">$level</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">niveau du <a class="el" href="classmonstre.html">monstre</a>  <a href="#a689045b9e467f47d3b7bb2f7892cd0ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a0026e625178ed107a99d7300bd35a3b3">$lib</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a5b8bb1d3aa91d9ffdba48ab54703d878">$mort_naturelle</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#afb109fdd2af40cfc4e04fafd8d01ab5f">$nom</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a09d9a008a290333159bf545a417e5f78">$type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#abb35c3fb0204a0f0128a83c3ded173c1">$x</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a3527860b155da70bccf7f36346d4693d">$y</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Date de la mort naturelle du <a class="el" href="classmonstre.html">monstre</a>.  <a href="#a5b8bb1d3aa91d9ffdba48ab54703d878"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ae5812f1bf1a8f30b7d67b5c442510a40">$nonexistant</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a3818ef874672fbb290b649e3e1e7d475">get_def</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'objet représentant la définition.  <a href="#a3818ef874672fbb290b649e3e1e7d475"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ade475c30292eba94f0e23712de457ad6">get_id_monstre</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id de la définition du <a class="el" href="classmonstre.html">monstre</a>.  <a href="#ade475c30292eba94f0e23712de457ad6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a2c4b0f1e485fe8031e55992201c9fde8">get_level</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne le niveau du <a class="el" href="classmonstre.html">monstre</a>.  <a href="#a2c4b0f1e485fe8031e55992201c9fde8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ab533d74db7f09c1733bc44c9390a27b5">get_lib</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la valeur de l'attribut "lib".  <a href="#ab533d74db7f09c1733bc44c9390a27b5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#acbe691380ed1d3a8f9b70a89dd6c7385">get_mort_naturelle</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la date de la mort naturelle du <a class="el" href="classmonstre.html">monstre</a>.  <a href="#acbe691380ed1d3a8f9b70a89dd6c7385"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a77b01584af3c763f0acc6f0197858dab">get_race</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a85cd9c084356f801e65ebef3f3721162">get_type</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne l'id de la définition dans la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> "monstre".  <a href="#a85cd9c084356f801e65ebef3f3721162"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#afdfe822468eb310be0940afe332942ae">set_id_monstre</a> ($id_monstre)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id de la définition du <a class="el" href="classmonstre.html">monstre</a>.  <a href="#afdfe822468eb310be0940afe332942ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#af9d3983e39384912f3a4ae4248568ac7">set_level</a> ($level)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le niveau du <a class="el" href="classmonstre.html">monstre</a>.  <a href="#af9d3983e39384912f3a4ae4248568ac7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ae90b501e240f0fe3124f5a0dc393503a">set_lib</a> ($lib)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut "lib".  <a href="#ae90b501e240f0fe3124f5a0dc393503a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a2b109f803605104972a118306f21be23">set_mort_naturelle</a> ($mort_naturelle)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la date de la mort naturelle du <a class="el" href="classmonstre.html">monstre</a>.  <a href="#a2b109f803605104972a118306f21be23"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Spécifiques aux montres</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpd3aaab327367435f0b59a18e598777fc"></a>Données et méthodes spécifiques aux monstres. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a9682ac0df425fd8371aa665f732ffe86">$affiche</a> = null</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#abee8ddd6bdaa96f255f8988d9b7e6f5c">check_boss_loot</a> (&amp;$joueur, $<a class="el" href="classgroupe.html">groupe</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a7b28e52fd9d9f2bb38a93d2af665fe13">check_monstre</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime les buffs périmés actifs sur le <a class="el" href="classmonstre.html">monstre</a>.  <a href="#a7b28e52fd9d9f2bb38a93d2af665fe13"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a696f74d180e09094d7f89d6474cbb6e8">get_affiche</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a8b2a567c1558c26e3efac86fa72a2652">kill_monstre_de_donjon</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gère les actions spéciales à effectuer lorsqu'un mosntre dedonjon a été tué.  <a href="#a8b2a567c1558c26e3efac86fa72a2652"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ac7397af653b04b7e62a912805fded4cb">kill_monstre_de_donjon2</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cherche dans la bdd s'il y a une action spéciale à effectuer lors de la mort d'un mosntre de donjon et l'effectue si besoin.  <a href="#ac7397af653b04b7e62a912805fded4cb"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#abfb5092aa0a3552700fe2667ab35e08c">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $id_monstre=0, $x=0, $y=0, $hp=0, $level=0, $nom= '', $lib= '', $mort_naturelle= '')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#abfb5092aa0a3552700fe2667ab35e08c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ad5f5e9fac4a2e9dca6c16030f868b652">get_champ</a> ($champ)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la valeur d'un champ de la base de donnée.  <a href="#ad5f5e9fac4a2e9dca6c16030f868b652"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a53545b8c0f1b0e5cebc34f3b30de9033">get_liste_champs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a53545b8c0f1b0e5cebc34f3b30de9033"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a3dd71eacfcaaea4b8fee1dd1d9e844de">get_liste_update</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base.  <a href="#a3dd71eacfcaaea4b8fee1dd1d9e844de"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a567a3461b30f26a41952eb1a003cfc14">get_valeurs_insert</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des valeurs des champspour une insertion dans la base.  <a href="#a567a3461b30f26a41952eb1a003cfc14"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a3812be5499d659d82367b7d5a3f74100">init_tab</a> ($vals)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise les données membres à l'aide d'un tableau.  <a href="#a3812be5499d659d82367b7d5a3f74100"></a><br/></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Classe <a class="el" href="classmap__monstre.html" title="Classe map_monstre Classe représentant un monstre sur la carte.">map_monstre</a> Classe représentant un <a class="el" href="classmonstre.html">monstre</a> sur la carte. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="ab03fd917dd97f64cbe19a0b867d52ab2"></a><!-- doxytag: member="map_monstre::__construct" ref="ab03fd917dd97f64cbe19a0b867d52ab2" args="($id=0, $type=0, $x=0, $y=0, $hp=0, $level=0, $nom= '', $lib= '', $mort_naturelle= '')" -->
+<a class="anchor" id="abfb5092aa0a3552700fe2667ab35e08c"></a><!-- doxytag: member="map_monstre::__construct" ref="abfb5092aa0a3552700fe2667ab35e08c" args="($id=0, $id_monstre=0, $x=0, $y=0, $hp=0, $level=0, $nom= '', $lib= '', $mort_naturelle= '')" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -119,7 +130,7 @@ Graphe d'héritage de map_monstre:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>type</em> = <code>0</code>, </td>
+          <td class="paramname"> <em>id_monstre</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -172,51 +183,63 @@ Graphe d'héritage de map_monstre:</div>
 </div>
 <div class="memdoc">
 
-<p>public </p>
+<p>Constructeur. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>int(10)</em>&nbsp;</td><td>id attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>type attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>x attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>y attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>hp attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>tinyint(3)</em>&nbsp;</td><td>level attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>nom attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(40)</em>&nbsp;</td><td>lib attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>int(10)</em>&nbsp;</td><td>mort_naturelle attribut </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>Id dans la base de donnée ou tableau associatif contenant les informations permettant la création de l'objet </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$id_monstre</em>&nbsp;</td><td>Id de la définition du <a class="el" href="classmonstre.html">monstre</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>Position x du <a class="el" href="classmonstre.html">monstre</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>Position y du <a class="el" href="classmonstre.html">monstre</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>hp</em>&nbsp;</td><td>HP¨actuels du <a class="el" href="classmonstre.html">monstre</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>level</em>&nbsp;</td><td>Niveau du <a class="el" href="classmonstre.html">monstre</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>nom</em>&nbsp;</td><td>Nom d <a class="el" href="classmonstre.html">monstre</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lib</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mort_naturelle</em>&nbsp;</td><td>Date de la mort naturelle du <a class="el" href="classmonstre.html">monstre</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmap__monstre_abfb5092aa0a3552700fe2667ab35e08c_cgraph.png" border="0" usemap="#classmap__monstre_abfb5092aa0a3552700fe2667ab35e08c_cgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="affa102d0225ef5b4c7087cb9df084226"></a><!-- doxytag: member="map_monstre::__toString" ref="affa102d0225ef5b4c7087cb9df084226" args="()" -->
+<a class="anchor" id="abee8ddd6bdaa96f255f8988d9b7e6f5c"></a><!-- doxytag: member="map_monstre::check_boss_loot" ref="abee8ddd6bdaa96f255f8988d9b7e6f5c" args="(&amp;$joueur, $groupe)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::__toString </td>
+          <td class="memname">map_monstre::check_boss_loot </td>
           <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>groupe</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Affiche l'objet sous forme de string  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>string objet en string </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#af39537300875c53302ccc21f29c716b9">pet</a>.</p>
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmap__monstre_abee8ddd6bdaa96f255f8988d9b7e6f5c_cgraph.png" border="0" usemap="#classmap__monstre_abee8ddd6bdaa96f255f8988d9b7e6f5c_cgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -235,71 +258,24 @@ Graphe d'héritage de map_monstre:</div>
 </div>
 <div class="memdoc">
 
+<p>Supprime les buffs périmés actifs sur le <a class="el" href="classmonstre.html">monstre</a>. </p>
+
 </div>
 </div>
-<a class="anchor" id="a3faaa479899d4c4ac521631831397418"></a><!-- doxytag: member="map_monstre::create" ref="a3faaa479899d4c4ac521631831397418" args="($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)" -->
+<a class="anchor" id="a696f74d180e09094d7f89d6474cbb6e8"></a><!-- doxytag: member="map_monstre::get_affiche" ref="a696f74d180e09094d7f89d6474cbb6e8" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static map_monstre::create </td>
+          <td class="memname">map_monstre::get_affiche </td>
           <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>champs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>valeurs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>keys</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>where</em> = <code>false</code></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td><code> [static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Supprime de la base de donnée  static. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>array|string</em>&nbsp;</td><td>$champs champs servant a trouver les résultats </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>array|string</em>&nbsp;</td><td>$valeurs valeurs servant a trouver les résultats </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>string</em>&nbsp;</td><td>$ordre ordre de tri </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>bool|string</em>&nbsp;</td><td>$keys Si false, stockage en tableau classique, si string stockage avec sous tableau en fonction du champ $keys </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>array $return liste d'objets </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a1fc95d8009847b8cdc5f77908bfc2587">pet</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dynsection">
-<div class="center"><img src="classmap__monstre_a3faaa479899d4c4ac521631831397418_icgraph.png" border="0" usemap="#classmap__monstre_a3faaa479899d4c4ac521631831397418_icgraph_map" alt=""></div>
-</div>
-</p>
 
 </div>
 </div>
@@ -334,6 +310,17 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom (type) du (dé)<a class="el" href="classbuff.html">buff</a> recherché, renvoie tous les buffs actifs si vaut false. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$champ</em>&nbsp;</td><td>Propriété recherchée (correspond à un champ dans la bdd). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Si false on prend le premier <a class="el" href="classbuff.html">buff</a>, si true celui dont le type correspond à $nom. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Tableau des buffs ou valeur demandée. </dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
@@ -350,12 +337,34 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a6ec11635331795ae3ee41780ab731f90"></a><!-- doxytag: member="map_monstre::get_hp" ref="a6ec11635331795ae3ee41780ab731f90" args="()" -->
+<a class="anchor" id="ad5f5e9fac4a2e9dca6c16030f868b652"></a><!-- doxytag: member="map_monstre::get_champ" ref="ad5f5e9fac4a2e9dca6c16030f868b652" args="($champ)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::get_hp </td>
+          <td class="memname">map_monstre::get_champ </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>champ</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la valeur d'un champ de la base de donnée. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classtable.html#a9cc0113a3d97b3971c1fcdff587c67c1">table</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3818ef874672fbb290b649e3e1e7d475"></a><!-- doxytag: member="map_monstre::get_def" ref="a3818ef874672fbb290b649e3e1e7d475" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map_monstre::get_def </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -365,25 +374,18 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>mediumint(8) $hp valeur de l'attribut hp </dd></dl>
+<p>Renvoie l'objet représentant la définition. </p>
 
-<p>Réimplémentée dans <a class="el" href="classpet.html#ae59e99788d5bf87edc39d042442c0258">pet</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#aa7774c4820822c4056b5f65ce3acfeaa">entnj_incarn</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8844ede2f6c2ce9644a07c3bb70614ed"></a><!-- doxytag: member="map_monstre::get_id" ref="a8844ede2f6c2ce9644a07c3bb70614ed" args="()" -->
+<a class="anchor" id="ade475c30292eba94f0e23712de457ad6"></a><!-- doxytag: member="map_monstre::get_id_monstre" ref="ade475c30292eba94f0e23712de457ad6" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::get_id </td>
+          <td class="memname">map_monstre::get_id_monstre </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
@@ -393,16 +395,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>int(10) $id valeur de l'attribut id </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a86d22e31946242a3eca518de3d48d37a">pet</a>.</p>
+<p>Renvoie l'id de la définition du <a class="el" href="classmonstre.html">monstre</a>. </p>
 
 </div>
 </div>
@@ -421,14 +414,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>tinyint(3) $level valeur de l'attribut level </dd></dl>
+<p>Retourne le niveau du <a class="el" href="classmonstre.html">monstre</a>. </p>
+
+<p>Réimplémentée dans <a class="el" href="classpet.html#a119fedd59d5d20707e95680d289d9d8e">pet</a>.</p>
 
 </div>
 </div>
@@ -447,14 +435,53 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>varchar(40) $lib valeur de l'attribut lib </dd></dl>
+<p>Retourne la valeur de l'attribut "lib". </p>
+
+</div>
+</div>
+<a class="anchor" id="a53545b8c0f1b0e5cebc34f3b30de9033"></a><!-- doxytag: member="map_monstre::get_liste_champs" ref="a53545b8c0f1b0e5cebc34f3b30de9033" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map_monstre::get_liste_champs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs pour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#ad20585e1b8109490ef3eaeb46f8e9437">entnj_incarn</a>.</p>
+
+<p>Réimplémentée dans <a class="el" href="classpet.html#a320bf85797c7bb35d79bf264b65c3a7d">pet</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3dd71eacfcaaea4b8fee1dd1d9e844de"></a><!-- doxytag: member="map_monstre::get_liste_update" ref="a3dd71eacfcaaea4b8fee1dd1d9e844de" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map_monstre::get_liste_update </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#ace2bdba6efff245e118aa470c9f5b15e">entnj_incarn</a>.</p>
+
+<p>Réimplémentée dans <a class="el" href="classpet.html#acc0775df91d7e776b41c3e1aaf185359">pet</a>.</p>
 
 </div>
 </div>
@@ -473,66 +500,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>int(10) $mort_naturelle valeur de l'attribut mort_naturelle </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4e0c9f337bed378c0219a573b620057b"></a><!-- doxytag: member="map_monstre::get_nom" ref="a4e0c9f337bed378c0219a573b620057b" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::get_nom </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>varchar(50) $nom valeur de l'attribut nom </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a4320cb9b9dc9f19c46f82474bb38353e">pet</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a19b8528d0a2e8fa8fc0e0589adec327e"></a><!-- doxytag: member="map_monstre::get_pos" ref="a19b8528d0a2e8fa8fc0e0589adec327e" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::get_pos </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dynsection">
-<div class="center"><img src="classmap__monstre_a19b8528d0a2e8fa8fc0e0589adec327e_cgraph.png" border="0" usemap="#classmap__monstre_a19b8528d0a2e8fa8fc0e0589adec327e_cgraph_map" alt=""></div>
-</div>
-</p>
+<p>Retourne la date de la mort naturelle du <a class="el" href="classmonstre.html">monstre</a>. </p>
 
 </div>
 </div>
@@ -568,66 +536,67 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>mediumint(8) $type valeur de l'attribut type </dd></dl>
+<p>Retourne l'id de la définition dans la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> "monstre". </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Obsolète:</a></b></dt><dd>Ne plus utiliser, méthode à remplacer par <a class="el" href="classmap__monstre.html#ade475c30292eba94f0e23712de457ad6" title="Renvoie l&#39;id de la définition du monstre.">get_id_monstre()</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa272cbcaf32673e41bee25efca2d90d1"></a><!-- doxytag: member="map_monstre::get_x" ref="aa272cbcaf32673e41bee25efca2d90d1" args="()" -->
+<a class="anchor" id="a567a3461b30f26a41952eb1a003cfc14"></a><!-- doxytag: member="map_monstre::get_valeurs_insert" ref="a567a3461b30f26a41952eb1a003cfc14" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::get_x </td>
+          <td class="memname">map_monstre::get_valeurs_insert </td>
           <td>(</td>
           <td class="paramname"></td>
           <td>&nbsp;)&nbsp;</td>
-          <td></td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>mediumint(8) $x valeur de l'attribut x </dd></dl>
+<p>Renvoie la liste des valeurs des champspour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#ad86f7d0fc99071bef187bedef07be74b">entnj_incarn</a>.</p>
+
+<p>Réimplémentée dans <a class="el" href="classpet.html#a0124e261f070a1238f122924c3c9c75a">pet</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adc462f0568e0cccafbb72b8ff4452768"></a><!-- doxytag: member="map_monstre::get_y" ref="adc462f0568e0cccafbb72b8ff4452768" args="()" -->
+<a class="anchor" id="a3812be5499d659d82367b7d5a3f74100"></a><!-- doxytag: member="map_monstre::init_tab" ref="a3812be5499d659d82367b7d5a3f74100" args="($vals)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::get_y </td>
+          <td class="memname">map_monstre::init_tab </td>
           <td>(</td>
-          <td class="paramname"></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>vals</em></td>
           <td>&nbsp;)&nbsp;</td>
-          <td></td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Retourne la valeur de l'attribut  public. </p>
+<p>Initialise les données membres à l'aide d'un tableau. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>array</em>&nbsp;</td><td>$vals Tableau contenant les valeurs des données. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>mediumint(8) $y valeur de l'attribut y </dd></dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#a859a3a8edaf742ed352106bce4c9181b">entnj_incarn</a>.</p>
+
+<p>Réimplémentée dans <a class="el" href="classpet.html#ad8509b7f3b24f090fa147020689996d2">pet</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -669,7 +638,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmap__monstre_ad656908a4bd92248056dca0dc8b16b6a_cgraph.png" border="0" usemap="#classmap__monstre_ad656908a4bd92248056dca0dc8b16b6a_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -690,6 +658,15 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Gère les actions spéciales à effectuer lorsqu'un mosntre dedonjon a été tué. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmap__monstre_a8b2a567c1558c26e3efac86fa72a2652_cgraph.png" border="0" usemap="#classmap__monstre_a8b2a567c1558c26e3efac86fa72a2652_cgraph_map" alt=""></div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ac7397af653b04b7e62a912805fded4cb"></a><!-- doxytag: member="map_monstre::kill_monstre_de_donjon2" ref="ac7397af653b04b7e62a912805fded4cb" args="()" -->
@@ -707,6 +684,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
+<p>Cherche dans la bdd s'il y a une action spéciale à effectuer lors de la mort d'un mosntre de donjon et l'effectue si besoin. </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
@@ -716,15 +695,15 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a4e84ceb65d317421b4bcef0129a1ea90"></a><!-- doxytag: member="map_monstre::sauver" ref="a4e84ceb65d317421b4bcef0129a1ea90" args="($force=false)" -->
+<a class="anchor" id="afdfe822468eb310be0940afe332942ae"></a><!-- doxytag: member="map_monstre::set_id_monstre" ref="afdfe822468eb310be0940afe332942ae" args="($id_monstre)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::sauver </td>
+          <td class="memname">map_monstre::set_id_monstre </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>force</em> = <code>false</code></td>
+          <td class="paramname"> <em>id_monstre</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -732,75 +711,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Sauvegarde automatiquement en base de donnée. </p>
-<p>Si c'est un nouvel objet, INSERT, sinon UPDATE  public </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>bool</em>&nbsp;</td><td>$force force la mis à jour de tous les attributs de l'objet si true, sinon uniquement ceux qui ont été modifiés </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a8ac2ab6d15b4f2d50b5ea05d762e3249">pet</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad66532dc2a000b860dac1e988fd1ba4f"></a><!-- doxytag: member="map_monstre::set_hp" ref="ad66532dc2a000b860dac1e988fd1ba4f" args="($hp)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::set_hp </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>hp</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>$hp valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a7c1c69953e9e85db2891414b2749b547">pet</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a31c1b726ba2cdb2b51cf22c58c0c20c3"></a><!-- doxytag: member="map_monstre::set_id" ref="a31c1b726ba2cdb2b51cf22c58c0c20c3" args="($id)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::set_id </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>id</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>int(10)</em>&nbsp;</td><td>$id valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a21b408209b1db3e24408953142a769d4">pet</a>.</p>
+<p>Modifie l'id de la définition du <a class="el" href="classmonstre.html">monstre</a>. </p>
 
 </div>
 </div>
@@ -820,14 +731,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>tinyint(3)</em>&nbsp;</td><td>$level valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
+<p>Modifie le niveau du <a class="el" href="classmonstre.html">monstre</a>. </p>
 
 </div>
 </div>
@@ -847,14 +751,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>varchar(40)</em>&nbsp;</td><td>$lib valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
+<p>Modifie la valeur de l'attribut "lib". </p>
 
 </div>
 </div>
@@ -874,183 +771,51 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>int(10)</em>&nbsp;</td><td>$mort_naturelle valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a825a0dc335c16d2bfd480ed323d7e092"></a><!-- doxytag: member="map_monstre::set_nom" ref="a825a0dc335c16d2bfd480ed323d7e092" args="($nom)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::set_nom </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>nom</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>$nom valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a0eae5199eac16ee3a554063e3aecf61f">pet</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afeeb53cbfa04cb1535518060dbd778b2"></a><!-- doxytag: member="map_monstre::set_type" ref="afeeb53cbfa04cb1535518060dbd778b2" args="($type)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::set_type </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>type</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>$type valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a70c8a1fa7293e69c22d9488a02bd45fb"></a><!-- doxytag: member="map_monstre::set_x" ref="a70c8a1fa7293e69c22d9488a02bd45fb" args="($x)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::set_x </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>x</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>$x valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af3fb434b2cad511fc6389b1aaa767a76"></a><!-- doxytag: member="map_monstre::set_y" ref="af3fb434b2cad511fc6389b1aaa767a76" args="($y)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::set_y </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>y</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie la valeur de l'attribut  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>$y valeur de l'attribut </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2b07ec3ac4171978bc0f57a9d80ee7c7"></a><!-- doxytag: member="map_monstre::supprimer" ref="a2b07ec3ac4171978bc0f57a9d80ee7c7" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::supprimer </td>
-          <td>(</td>
-          <td class="paramname"></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Supprime de la base de donnée  public. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>none</em>&nbsp;</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#a3c026125c85957aa5f8f118368eac969">pet</a>.</p>
+<p>Modifie la date de la mort naturelle du <a class="el" href="classmonstre.html">monstre</a>. </p>
 
 </div>
 </div>
 <hr/><h2>Documentation des données membres</h2>
-<a class="anchor" id="a1b9474f6983c5d4b3e6f81a23fdb6d24"></a><!-- doxytag: member="map_monstre::$hp" ref="a1b9474f6983c5d4b3e6f81a23fdb6d24" args="" -->
+<a class="anchor" id="a9682ac0df425fd8371aa665f732ffe86"></a><!-- doxytag: member="map_monstre::$affiche" ref="a9682ac0df425fd8371aa665f732ffe86" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::$hp<code> [private]</code></td>
+          <td class="memname">map_monstre::$affiche = null<code> [private]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classpet.html#aeea5ebf89e0b2c6b598bf0afe71a72c5">pet</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a8bbec5c1291fe26a2b09dd607dd94afb"></a><!-- doxytag: member="map_monstre::$id" ref="a8bbec5c1291fe26a2b09dd607dd94afb" args="" -->
+<a class="anchor" id="a62fb83d505f43621b28aca8c08ceaa89"></a><!-- doxytag: member="map_monstre::$buff" ref="a62fb83d505f43621b28aca8c08ceaa89" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
+          <td class="memname">map_monstre::$<a class="el" href="classbuff.html">buff</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classpet.html#a87d021047eb638624ab4be7ef085a75f">pet</a>.</p>
+<p>Liste des buffs actifs sur le <a class="el" href="classmonstre.html">monstre</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="accbf1b87e954ea51b32e2a4de4f018f3"></a><!-- doxytag: member="map_monstre::$id_monstre" ref="accbf1b87e954ea51b32e2a4de4f018f3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map_monstre::$id_monstre<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>id de la définition dans la <a class="el" href="classtable.html" title="Classe de base pour les objets représentant un élément d&#39;une table dans la...">table</a> "monstre" </p>
 
 </div>
 </div>
@@ -1059,11 +824,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::$level<code> [private]</code></td>
+          <td class="memname">map_monstre::$level<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>niveau du <a class="el" href="classmonstre.html">monstre</a> </p>
 
 </div>
 </div>
@@ -1072,7 +839,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::$lib<code> [private]</code></td>
+          <td class="memname">map_monstre::$lib<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1085,26 +852,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">map_monstre::$mort_naturelle<code> [private]</code></td>
+          <td class="memname">map_monstre::$mort_naturelle<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="afb109fdd2af40cfc4e04fafd8d01ab5f"></a><!-- doxytag: member="map_monstre::$nom" ref="afb109fdd2af40cfc4e04fafd8d01ab5f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::$nom<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Réimplémentée dans <a class="el" href="classpet.html#aaa32ce93765f61ae2d5925290364745b">pet</a>.</p>
+<p>Date de la mort naturelle du <a class="el" href="classmonstre.html">monstre</a>. </p>
 
 </div>
 </div>
@@ -1121,47 +875,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a09d9a008a290333159bf545a417e5f78"></a><!-- doxytag: member="map_monstre::$type" ref="a09d9a008a290333159bf545a417e5f78" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::$<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a><code> [private]</code></td>
-        </tr>
-      </table>
 </div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abb35c3fb0204a0f0128a83c3ded173c1"></a><!-- doxytag: member="map_monstre::$x" ref="abb35c3fb0204a0f0128a83c3ded173c1" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::$x<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3527860b155da70bccf7f36346d4693d"></a><!-- doxytag: member="map_monstre::$y" ref="a3527860b155da70bccf7f36346d4693d" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">map_monstre::$y<code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-</div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:23 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:56 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

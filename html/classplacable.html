@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -47,6 +48,8 @@ Graphe de collaboration de placable:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a304750356b70a7108f80b4e0764fe211"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacable.html#a0aaacf5f0c0df9c5c6e5f4eaf9adc06e">get_nom</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Accesseur $nom.  <a href="#a0aaacf5f0c0df9c5c6e5f4eaf9adc06e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacable.html#a05faf7eaaadfc40205a295adeecad73e">get_pos</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la position sous forme d'un seul entier.  <a href="#a05faf7eaaadfc40205a295adeecad73e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacable.html#a82069ef47cd1e53a61f355682f8589ad">get_x</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la coorodonnée x.  <a href="#a82069ef47cd1e53a61f355682f8589ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacable.html#ab9f84c5e6ce084decf2249efddc567ff">get_y</a> ()</td></tr>
@@ -149,7 +152,7 @@ Graphe de collaboration de placable:</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classtable.html#a454c5e935a7faaa2ac25a32dab48ca19">table</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classentite.html#aefb65c56a77220a5527271e2b77d0084">entite</a>, et <a class="el" href="classpnj.html#a5cd426a4ce56511ebdfebf60bb0bea94">pnj</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classconstruction.html#a8096f6141c31c336c4a0eabf251f9283">construction</a>, <a class="el" href="classentite.html#aefb65c56a77220a5527271e2b77d0084">entite</a>, <a class="el" href="classentitenj__constr.html#ad531a703f40c66f57197485ed13d8bde">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#ad20585e1b8109490ef3eaeb46f8e9437">entnj_incarn</a>, <a class="el" href="classmap__monstre.html#a53545b8c0f1b0e5cebc34f3b30de9033">map_monstre</a>, <a class="el" href="classpet.html#a320bf85797c7bb35d79bf264b65c3a7d">pet</a>, <a class="el" href="classplacement.html#a0967159e460eda3b55b78e997b60828b">placement</a>, et <a class="el" href="classpnj.html#a5cd426a4ce56511ebdfebf60bb0bea94">pnj</a>.</p>
 
 </div>
 </div>
@@ -172,7 +175,7 @@ Graphe de collaboration de placable:</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classtable.html#a2ddeda6d602c10e1951e1fe31a1559ee">table</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classentite.html#a1ccbb0faeccd89a0f63433fc42cf718b">entite</a>, et <a class="el" href="classpnj.html#a187a57a356de6006149d944b1db83901">pnj</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classconstruction.html#ac063b3644dfd2f390877cc2a4c344748">construction</a>, <a class="el" href="classentite.html#a1ccbb0faeccd89a0f63433fc42cf718b">entite</a>, <a class="el" href="classentitenj__constr.html#af8c890c77b4cd7f7b1c09c3ee755c075">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#ace2bdba6efff245e118aa470c9f5b15e">entnj_incarn</a>, <a class="el" href="classmap__monstre.html#a3dd71eacfcaaea4b8fee1dd1d9e844de">map_monstre</a>, <a class="el" href="classpet.html#acc0775df91d7e776b41c3e1aaf185359">pet</a>, <a class="el" href="classplacement.html#a2a260a36b0f92eb6e9648a21644f9e68">placement</a>, et <a class="el" href="classpnj.html#a187a57a356de6006149d944b1db83901">pnj</a>.</p>
 
 </div>
 </div>
@@ -196,7 +199,34 @@ Graphe de collaboration de placable:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classplacable_a0aaacf5f0c0df9c5c6e5f4eaf9adc06e_icgraph.png" border="0" usemap="#classplacable_a0aaacf5f0c0df9c5c6e5f4eaf9adc06e_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a05faf7eaaadfc40205a295adeecad73e"></a><!-- doxytag: member="placable::get_pos" ref="a05faf7eaaadfc40205a295adeecad73e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">placable::get_pos </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la position sous forme d'un seul entier. </p>
+
+<p>Réimplémentée dans <a class="el" href="classentite.html#a9b8852c45a6e451ea772759c6b1c3871">entite</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classplacable_a05faf7eaaadfc40205a295adeecad73e_cgraph.png" border="0" usemap="#classplacable_a05faf7eaaadfc40205a295adeecad73e_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -221,7 +251,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classtable.html#a66689a9c1b06476f027e6396885411a6">table</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classentite.html#a56a5f582958ac79c18cfd26d9ba1c4c7">entite</a>, et <a class="el" href="classpnj.html#a50996dad8cfaf4d4d4f43c45df976469">pnj</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classconstruction.html#a88cb6112a41223f28dadefd2e462b7dd">construction</a>, <a class="el" href="classentite.html#a56a5f582958ac79c18cfd26d9ba1c4c7">entite</a>, <a class="el" href="classentitenj__constr.html#a60c2255b679588519ca50876f6ab31f1">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#ad86f7d0fc99071bef187bedef07be74b">entnj_incarn</a>, <a class="el" href="classmap__monstre.html#a567a3461b30f26a41952eb1a003cfc14">map_monstre</a>, <a class="el" href="classpet.html#a0124e261f070a1238f122924c3c9c75a">pet</a>, <a class="el" href="classplacement.html#a6d6ba766d11842e98b8370ed36439024">placement</a>, et <a class="el" href="classpnj.html#a50996dad8cfaf4d4d4f43c45df976469">pnj</a>.</p>
 
 </div>
 </div>
@@ -242,6 +272,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Renvoie la coorodonnée x. </p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ab9f84c5e6ce084decf2249efddc567ff"></a><!-- doxytag: member="placable::get_y" ref="ab9f84c5e6ce084decf2249efddc567ff" args="()" -->
@@ -260,6 +296,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie la coorodonnée y. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -289,6 +331,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classtable.html#a647da6a65b9d9e4937778f81df19cbfb">table</a>.</p>
 
+<p>Réimplémentée dans <a class="el" href="classconstruction.html#a9397cb012e770a942b8a381608efbbc6">construction</a>, <a class="el" href="classentitenj__constr.html#a03218ad8bfc306458046efe8de0e7ee1">entitenj_constr</a>, <a class="el" href="classentnj__incarn.html#a859a3a8edaf742ed352106bce4c9181b">entnj_incarn</a>, <a class="el" href="classmap__monstre.html#a3812be5499d659d82367b7d5a3f74100">map_monstre</a>, <a class="el" href="classpet.html#ad8509b7f3b24f090fa147020689996d2">pet</a>, et <a class="el" href="classplacement.html#a5cdbff7167c0253a38ccdf0282cb0388">placement</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4b7ccefb85e51d276ee773f0ae47b775"></a><!-- doxytag: member="placable::set_nom" ref="a4b7ccefb85e51d276ee773f0ae47b775" args="($nom)" -->
@@ -309,7 +353,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Modifieur $nom. </p>
 
-<p>Réimplémentée dans <a class="el" href="classperso.html#a24f913678a1b837b564b454b84d0fd54">perso</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classperso.html#a24f913678a1b837b564b454b84d0fd54">perso</a>, et <a class="el" href="classpet.html#a0eae5199eac16ee3a554063e3aecf61f">pet</a>.</p>
 
 </div>
 </div>
@@ -400,7 +444,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:25 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:58 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

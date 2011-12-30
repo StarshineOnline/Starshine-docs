@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -34,6 +35,7 @@
   <tr class="memlist"><td><a class="el" href="classeffect.html#ac5433d2f92d827dffb4b3243b3bde3f3">$DEBUT_DEBUT</a></td><td><a class="el" href="classeffect.html">effect</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a651a18f1bd79649104d2c944848d5826">$DEBUT_MULT</a></td><td><a class="el" href="classeffect.html">effect</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classbuff__actif.html#a665f4fac0ec1eaf1b3312c2612caa9e1">$esquive_buff</a></td><td><a class="el" href="classbuff__actif.html">buff_actif</a></td><td><code> [private, static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classbuff__actif.html#aeb2e7ee79a403602f6fa8bb9e2babe12">$esquive_magique_buff</a></td><td><a class="el" href="classbuff__actif.html">buff_actif</a></td><td><code> [private, static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#af0ac55bfee5fbb83920dcea35adb949a">$FIN_ADD</a></td><td><a class="el" href="classeffect.html">effect</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#adb00cf3def9dd8f0cacb49b54b361cf8">$FIN_FIN</a></td><td><a class="el" href="classeffect.html">effect</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a4a1b3783a36ef820de9f15af06c4d84c">$FIN_MULT</a></td><td><a class="el" href="classeffect.html">effect</a></td><td><code> [static]</code></td></tr>
@@ -52,9 +54,11 @@
   <tr class="memlist"><td><a class="el" href="classeffect.html#a9efcd30034830b43d47209fcd0ba5625">calcul_attaque_physique</a>(&amp;$actif, &amp;$passif, $att)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#ab9bb1a0cc66823062995c0bce19a1aab">calcul_bloquage</a>(&amp;$actif, &amp;$passif)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a690f26b12f98d743ef1d243c772893d4">calcul_bloquage_reduction</a>(&amp;$actif, &amp;$passif, $reduction)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classeffect.html#add9d1e450bf7feb5cdd019f617e7e5d9">calcul_bonus_degats_magiques</a>(&amp;$actif, &amp;$passif, $bonus_degats, $type)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a7bf3a8ebd28a35e5ff506bec4a64f242">calcul_critique</a>(&amp;$actif, &amp;$passif, $chance)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classeffect.html#accb52f4577b3d4b317fa4f708ddf50da">calcul_defense_magique</a>(&amp;$actif, &amp;$passif, $def)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classeffect.html#a2ba0352d88049aaebb89b3ae8bc126a0">calcul_defense_physique</a>(&amp;$actif, &amp;$passif, $def)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classbuff__actif.html#a09fd6bda7310ab4494d2fa9bf85b18e3">calcul_defense_magique</a>(&amp;$actif, &amp;$passif, $def)</td><td><a class="el" href="classbuff__actif.html">buff_actif</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classbuff__actif.html#a64947f884d465e9eb241f0a78afac3a7">calcul_defense_physique</a>(&amp;$actif, &amp;$passif)</td><td><a class="el" href="classbuff__actif.html">buff_actif</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classeffect.html#a2ba0352d88049aaebb89b3ae8bc126a0">effect::calcul_defense_physique</a>(&amp;$actif, &amp;$passif, $def)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a4301f062fc2f675e82c5f625e90e9b36">calcul_degats</a>(&amp;$actif, &amp;$passif, $degats)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a39f406ab84f7024e663af944edb352af">calcul_degats_magiques</a>(&amp;$actif, &amp;$passif, $degats, $type)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#aa870f4930d597671c2b63bea973af99f">calcul_mp</a>(&amp;$actif, $mp)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
@@ -63,7 +67,7 @@
   <tr class="memlist"><td><a class="el" href="classeffect.html#a0b010ca0b7783cd25352b4c4b4417c56">calcul_pp</a>(&amp;$actif, &amp;$passif, $pp)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#af5b96a5b3202e5c05d1853b9e1bdfd3b">compare_effects</a>($a, $b)</td><td><a class="el" href="classeffect.html">effect</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#aabfbf94cf2f3e3ace4586fadef556cae">debug</a>($aMessage, $br=true)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classbuff__actif.html#a82feac91ada28fdb324092b714db6774">debut_round</a>(&amp;$actif, &amp;$passif)</td><td><a class="el" href="classbuff__actif.html">buff_actif</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classeffect.html#a4cabf23d0fccc8184be223b7faacc981">debut_round</a>(&amp;$actif, &amp;$passif)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classbuff__actif.html#a6c49e85031c186b1daa5d41d828dc34c">factory</a>(&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td><td><a class="el" href="classbuff__actif.html">buff_actif</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a99575298294cf4cc6bebd4be759c8460">fin_combat</a>(&amp;$actif, &amp;$passif)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a8907603b4e1152922cd9a1c8befd6bb5">fin_round</a>(&amp;$actif, &amp;$passif)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
@@ -72,10 +76,11 @@
   <tr class="memlist"><td><a class="el" href="classeffect.html#a5027fa036a347d56b15a9204028593c2">heal</a>($aMessage, $br=true)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a5b5b088988547cd1f62bb6ce96b12a8c">hit</a>($aMessage, $br=true)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">inflige_degats</a>(&amp;$actif, &amp;$passif, $degats)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classeffect.html#a70ca7d186a882110b17b897dd51c2a9e">inflige_degats_magiques</a>(&amp;$actif, &amp;$passif, $degats)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#a8a36b50e355bbadc959c3d23ae5a4d15">message</a>($aMessage)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classeffect.html#ab8be2d8e576cbabc5238edd3782fb3e4">notice</a>($aMessage, $br=true)</td><td><a class="el" href="classeffect.html">effect</a></td><td></td></tr>
 </table></div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:21 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:50 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Starshine Online: Référence du fichier SSO/trunk/viewarene2.php</title>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/viewarene2.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -23,7 +24,7 @@
       <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
   </div>
 </div>
 <div class="contents">
@@ -40,11 +41,11 @@ $arene_masters)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a87e0802a923e3726cf7ca949e4a8aa65">$index_m</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a59ef57bf7aa1bcf69b885a89fe5f482d">$race</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['ID']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($liste_cases as $cases)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a304a5f3ee821ee7f0d715511a3a7c394">$row_j</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a3a1a1e3d9ca1b01420a05f83f96b3588">$row_map</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a4820d696737bb1b850dbb7bd14c59a90">$roy</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1c73de215370276e3a85c875f4be2a6c">$viewer</a> = recupperso($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a1c73de215370276e3a85c875f4be2a6c">$viewer</a> = recupperso($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a6e745d40e9df8b5cc8a1761b88713dc5">$x_joueurs</a> = $row_j[$index]['x']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewarene2_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = 0</td></tr>
@@ -190,7 +191,7 @@ $arene_masters)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>']</td>
+          <td class="memname">$requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> FROM arenes_joueurs WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = &quot;.$_SESSION['ID']</td>
         </tr>
       </table>
 </div>
@@ -242,7 +243,7 @@ $arene_masters)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$viewer = recupperso($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
+          <td class="memname">$viewer = recupperso($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -355,7 +356,7 @@ $arene_masters)) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:46 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

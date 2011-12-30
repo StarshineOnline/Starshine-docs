@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Starshine Online: Référence du fichier SSO/trunk/classement_groupe_ajax.php</title>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/classement_groupe_ajax.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -23,7 +24,7 @@
       <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
   </div>
 </div>
 <div class="contents">
@@ -32,10 +33,10 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#ae2c1d0ffaf2c5f005f5b9a540e8a926f">$inf</a> = $i</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a6f16db779ef3ccea921b277b5dc245d1">$j</a> = 26</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#ad6726cfaa85d4b8299d2b0f034cbf178">$k</a> = $inf - 25</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> AS groupe_id, groupe.nom AS groupe_nom, SUM(&quot;.$tri.&quot;) as somme, COUNT(*) as tot FROM `<a class="el" href="classgroupe.html">groupe</a>` LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">perso.ID</a> WHERE perso.statut = 'actif' GROUP BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> ORDER BY somme DESC LIMIT $inf, $j&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> AS groupe_id, groupe.nom AS groupe_nom, SUM(&quot;.$tri.&quot;) as somme, COUNT(*) as tot FROM `<a class="el" href="classgroupe.html">groupe</a>` LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = perso.ID WHERE perso.statut = 'actif' GROUP BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> ORDER BY somme DESC LIMIT $inf, $j&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a28e8d1c56ba424e7ca54a35b8d40535a">$sup</a> = $inf + 26</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a1d9267881833a0331bec9cf70a511584">$tab_classement</a> ['mp_max']['affiche_niveau'] = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#af8354021f85c9105e4e558a9e9d169c1">$tab_classement</a> ['mp_max']['affiche'] = true</td></tr>
@@ -56,7 +57,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#ac96e65d72a398e78e5bb41019c0a2951">$tab_classement</a> ['mort']['affiche_niveau'] = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a8ff51cecb84938754957fda2c18ad4da">$tab_classement</a> ['mort']['affiche'] = true</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a7dbd425607356c8242111a6d75d6f30f">$tab_classement</a> ['mort']['champ'] = 'Mort'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a949fad8b024cb74e52c5c135d6045416">$tab_classement</a> ['mort']['nom'] = 'Ceux qui n\'ont pas peur de la mort'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a949fad8b024cb74e52c5c135d6045416">$tab_classement</a> ['mort']['nom'] = 'Ceux qui <a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>\'ont pas peur de la mort'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a845d82746dfcc8285c1a466aeddc3c87">$tab_classement</a> ['frag']['affiche_niveau'] = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a9df92c3fb0c2ea863208b17b36371fcb">$tab_classement</a> ['frag']['affiche'] = true</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__groupe__ajax_8php.html#a46548740dcf29f2297c9609ae919646c">$tab_classement</a> ['frag']['champ'] = 'Kill'</td></tr>
@@ -128,7 +129,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -167,7 +168,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> AS groupe_id, groupe.nom AS groupe_nom, SUM(&quot;.$tri.&quot;) as somme, COUNT(*) as tot FROM `<a class="el" href="classgroupe.html">groupe</a>` LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = <a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">perso.ID</a> WHERE perso.statut = 'actif' GROUP BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> ORDER BY somme DESC LIMIT $inf, $j&quot;</td>
+          <td class="memname">$requete = &quot;SELECT <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> AS groupe_id, groupe.nom AS groupe_nom, SUM(&quot;.$tri.&quot;) as somme, COUNT(*) as tot FROM `<a class="el" href="classgroupe.html">groupe</a>` LEFT JOIN <a class="el" href="classgroupe__joueur.html">groupe_joueur</a> ON <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> = groupe_joueur.id_groupe LEFT JOIN <a class="el" href="classperso.html">perso</a> ON groupe_joueur.id_joueur = perso.ID WHERE perso.statut = 'actif' GROUP BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">groupe.id</a> ORDER BY somme DESC LIMIT $inf, $j&quot;</td>
         </tr>
       </table>
 </div>
@@ -440,7 +441,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$tab_classement['mort']['nom'] = 'Ceux qui n\'ont pas peur de la mort'</td>
+          <td class="memname">$tab_classement['mort']['nom'] = 'Ceux qui <a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>\'ont pas peur de la mort'</td>
         </tr>
       </table>
 </div>
@@ -774,7 +775,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:17 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:42 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

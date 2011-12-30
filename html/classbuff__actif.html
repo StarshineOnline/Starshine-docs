@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -42,8 +43,9 @@ Graphe de collaboration de buff_actif:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a75acc95be7c5ad262296b89d738fae88">__construct</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, $<a class="el" href="classbuff.html">buff</a>, $acteur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a82feac91ada28fdb324092b714db6774">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a82feac91ada28fdb324092b714db6774"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a09fd6bda7310ab4494d2fa9bf85b18e3">calcul_defense_magique</a> (&amp;$actif, &amp;$passif, $def)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel parer magique.  <a href="#a09fd6bda7310ab4494d2fa9bf85b18e3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a64947f884d465e9eb241f0a78afac3a7">calcul_defense_physique</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a6c49e85031c186b1daa5d41d828dc34c">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a6c49e85031c186b1daa5d41d828dc34c"></a><br/></td></tr>
@@ -52,7 +54,8 @@ Graphe de collaboration de buff_actif:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#ac2469540448f4b7a6cfc514542af198f">$buff</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#ab072cd04974d791b53463e0a917b60bc">$type</a></td></tr>
 <tr><td colspan="2"><h2>Attributs privés statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a665f4fac0ec1eaf1b3312c2612caa9e1">$esquive_buff</a> = array('buff_evasion', 'buff_cri_detresse', 'batiment_esquive')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#a665f4fac0ec1eaf1b3312c2612caa9e1">$esquive_buff</a> = array('buff_evasion', 'buff_cri_detresse', 'batiment_esquive', 'virtuose_sexe')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff__actif.html#aeb2e7ee79a403602f6fa8bb9e2babe12">$esquive_magique_buff</a> = array('virtuose_sexe')</td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a75acc95be7c5ad262296b89d738fae88"></a><!-- doxytag: member="buff_actif::__construct" ref="a75acc95be7c5ad262296b89d738fae88" args="($type, $buff, $acteur)" -->
@@ -89,12 +92,65 @@ Graphe de collaboration de buff_actif:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a82feac91ada28fdb324092b714db6774"></a><!-- doxytag: member="buff_actif::debut_round" ref="a82feac91ada28fdb324092b714db6774" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a09fd6bda7310ab4494d2fa9bf85b18e3"></a><!-- doxytag: member="buff_actif::calcul_defense_magique" ref="a09fd6bda7310ab4494d2fa9bf85b18e3" args="(&amp;$actif, &amp;$passif, $def)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">buff_actif::debut_round </td>
+          <td class="memname">buff_actif::calcul_defense_magique </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>def</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le potentiel parer magique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$def</em>&nbsp;</td><td>Potentiel parer avant modification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel parer après modification. </dd></dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#accb52f4577b3d4b317fa4f708ddf50da">effect</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classbuff__actif_a09fd6bda7310ab4494d2fa9bf85b18e3_cgraph.png" border="0" usemap="#classbuff__actif_a09fd6bda7310ab4494d2fa9bf85b18e3_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a64947f884d465e9eb241f0a78afac3a7"></a><!-- doxytag: member="buff_actif::calcul_defense_physique" ref="a64947f884d465e9eb241f0a78afac3a7" args="(&amp;$actif, &amp;$passif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">buff_actif::calcul_defense_physique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
           <td class="paramname"> <em>actif</em>, </td>
@@ -114,16 +170,12 @@ Graphe de collaboration de buff_actif:</div>
 </div>
 <div class="memdoc">
 
-<p>Action a effectuer en début de round. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a4cabf23d0fccc8184be223b7faacc981">effect</a>.</p>
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classbuff__actif_a64947f884d465e9eb241f0a78afac3a7_cgraph.png" border="0" usemap="#classbuff__actif_a64947f884d465e9eb241f0a78afac3a7_cgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -211,7 +263,20 @@ Graphe de collaboration de buff_actif:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">buff_actif::$esquive_buff = array('buff_evasion', 'buff_cri_detresse', 'batiment_esquive')<code> [static, private]</code></td>
+          <td class="memname">buff_actif::$esquive_buff = array('buff_evasion', 'buff_cri_detresse', 'batiment_esquive', 'virtuose_sexe')<code> [static, private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeb2e7ee79a403602f6fa8bb9e2babe12"></a><!-- doxytag: member="buff_actif::$esquive_magique_buff" ref="aeb2e7ee79a403602f6fa8bb9e2babe12" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">buff_actif::$esquive_magique_buff = array('virtuose_sexe')<code> [static, private]</code></td>
         </tr>
       </table>
 </div>
@@ -233,7 +298,7 @@ Graphe de collaboration de buff_actif:</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:21 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:50 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

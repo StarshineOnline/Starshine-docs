@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Starshine Online: Référence du fichier SSO/trunk/fonction/base.inc.php</title>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/fonction/base.inc.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -23,7 +24,7 @@
       <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_5992c3ce1eca1153c6737efdfb55c8f0.html">fonction</a>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_cda801ad7c170a4fe31ec4cfa0d95513.html">fonction</a>
   </div>
 </div>
 <div class="contents">
@@ -112,8 +113,8 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#aac601631f308d82960712a544272fb74">is_nobuild_type</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a9aa467e4921c669caf6a317121d95ff9">is_ville</a> ($x, $y=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si une case fait partie d'une ville.  <a href="#a9aa467e4921c669caf6a317121d95ff9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#abdebed81a12acc10788ddb1133ae76e7">lance_buff</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, $<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $effet, $effet2, $duree, $nom, $description, $type_cible, $debuff, $nb_buff, $<a class="el" href="classgrade.html">grade</a>, $supprimable=1)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un <a class="el" href="classbuff.html">buff</a> sur un personnage ou un <a class="el" href="classmonstre.html">monstre</a>.  <a href="#abdebed81a12acc10788ddb1133ae76e7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a93ea6b3413fa5296240e923979acb52b">lance_buff</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, $<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $effet, $effet2, $duree, $nom, $description, $type_cible, $debuff, $nb_buff, $nb_buff_max, $supprimable=1)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un <a class="el" href="classbuff.html">buff</a> sur un personnage ou un <a class="el" href="classmonstre.html">monstre</a>.  <a href="#a93ea6b3413fa5296240e923979acb52b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#ad367e1a44d7c68d30fc65eaec919dcb7">level_courant</a> ($exp)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le niveau correspondant à une certaine valeur de l'expérience.  <a href="#ad367e1a44d7c68d30fc65eaec919dcb7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a2e5c99ff4944f082bdea55e9fd279336">list_construction_visu</a> ($joueur, $distance)</td></tr>
@@ -130,6 +131,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a2e4cb12bc2d2c11607345c637d4a56b6">nb_habitant</a> ($race)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Donne le nombre d'habitants que possède un <a class="el" href="classroyaume.html">royaume</a>.  <a href="#a2e4cb12bc2d2c11607345c637d4a56b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#ad82bbc46d6d7e454b45946685c7ab18a">normalize_entry_charset</a> ($fields)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#ac009999c1c6cde723f4e71e423407ef8">ouvrePorteMaraudeurGeolier</a> ($x, $duree)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#af2c45526dc33e689f8a8dc6d153ecd60">over_price</a> ($base, $joueur)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la class HTML indiquant si l'acaht est possible ou non.  <a href="#af2c45526dc33e689f8a8dc6d153ecd60"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a782e81567ad1a161aaaa7634360a0476">pose_drapeau_roi</a> ($x, $y)</td></tr>
@@ -144,6 +146,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'expérience necessaire pour atteindre le niveau suivant.  <a href="#a26afa0bb52ccd16abd39dc768ef9d61d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a36721c02156170ceca6b82d311eb91a9">progression_level</a> ($level)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le pourcentage d'expérience déjà acquise pour passer au prochain niveau.  <a href="#a36721c02156170ceca6b82d311eb91a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#acf997a53148d7cf426e419f875c66d93">pute_effets</a> (&amp;$joueur, $honneur_need, $specials=null, $specials_det=null)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a50eead0884d92b6e504eba9ac25e2420">recup_amende</a> ($id_perso)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère une amande.  <a href="#a50eead0884d92b6e504eba9ac25e2420"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a9d3a772d81721e72d26d632b3d2fb305">recup_bonus</a> ($id_perso)</td></tr>
@@ -162,13 +165,13 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère un script.  <a href="#a26c0c1713eb83b213758065bf690ff72"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#aa56d7bd9165fcaa45bde999ccb9eb509">recupaction_all</a> ($action, $<a class="el" href="classpet.html">pet</a>=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère toutes les informations à propos d'un script.  <a href="#aa56d7bd9165fcaa45bde999ccb9eb509"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a8f6dae8735bd5af08d403f5a2b78de71">recupbatiment</a> ($<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>, $<a class="el" href="classtable.html">table</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a8f6dae8735bd5af08d403f5a2b78de71">recupbatiment</a> ($ID, $<a class="el" href="classtable.html">table</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère les informations sur un bâtiment.  <a href="#a8f6dae8735bd5af08d403f5a2b78de71"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a25609db4340aed17b46ca5ac3f842f54">recupmonstre</a> ($<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>, $<a class="el" href="classmap__monstre.html">map_monstre</a>=true)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a25609db4340aed17b46ca5ac3f842f54">recupmonstre</a> ($ID, $<a class="el" href="classmap__monstre.html">map_monstre</a>=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère les informations sur un <a class="el" href="classmonstre.html">monstre</a>.  <a href="#a25609db4340aed17b46ca5ac3f842f54"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#ad9f6258286a1ebe09bc9b8c73bf10bef">recupobjet</a> ($objet)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère les information sur une gemme.  <a href="#ad9f6258286a1ebe09bc9b8c73bf10bef"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a0c244be4e4bf4a7a5ac3d33caec4fe48">recupperso</a> ($<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a0c244be4e4bf4a7a5ac3d33caec4fe48">recupperso</a> ($ID)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Fonction permettant de récupérer les infos des <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>, et de les renvoyer.  <a href="#a0c244be4e4bf4a7a5ac3d33caec4fe48"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8inc_8php.html#a4cf4c1f0c7de36fe6e92f54f6ed153b8">recupperso_essentiel</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $select= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, level, rang_royaume, race, <a class="el" href="classclasse.html">classe</a>')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Fonction permettant de récupérer les infos essentielles du <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> (nom, race, <a class="el" href="classclasse.html">classe</a>, level, ID, rang_royaume).  <a href="#a4cf4c1f0c7de36fe6e92f54f6ed153b8"></a><br/></td></tr>
@@ -1000,6 +1003,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Coût en PA. </dd></dl>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="base_8inc_8php_a154306414a808ee19be875525aeb96e2_icgraph.png" border="0" usemap="#base_8inc_8php_a154306414a808ee19be875525aeb96e2_icgraph_map" alt=""></div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ac28cbcd0bda84cb77614994a18067f38"></a><!-- doxytag: member="base.inc.php::cout_pa2" ref="ac28cbcd0bda84cb77614994a18067f38" args="($coutpa, $joueur, $case, $diagonale)" -->
@@ -1781,7 +1791,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="abdebed81a12acc10788ddb1133ae76e7"></a><!-- doxytag: member="base.inc.php::lance_buff" ref="abdebed81a12acc10788ddb1133ae76e7" args="($type, $id, $effet, $effet2, $duree, $nom, $description, $type_cible, $debuff, $nb_buff, $grade, $supprimable=1)" -->
+<a class="anchor" id="a93ea6b3413fa5296240e923979acb52b"></a><!-- doxytag: member="base.inc.php::lance_buff" ref="a93ea6b3413fa5296240e923979acb52b" args="($type, $id, $effet, $effet2, $duree, $nom, $description, $type_cible, $debuff, $nb_buff, $nb_buff_max, $supprimable=1)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1849,7 +1859,7 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>grade</em>, </td>
+          <td class="paramname"> <em>nb_buff_max</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1879,7 +1889,7 @@ Voici le graphe d'appel pour cette fonction :</div>
     <tr><td valign="top"></td><td valign="top"><em>$type_cible</em>&nbsp;</td><td>Type de cible ('perso' ou 'monstre') </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$debuff</em>&nbsp;</td><td>1 si c'est un débuff, 0 si c'est un <a class="el" href="classbuff.html">buff</a> </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$nb_buff</em>&nbsp;</td><td>Nombre de buffs déjà actifs sur la cible. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$grade</em>&nbsp;</td><td>Grade de la cible. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$nb_buff_max</em>&nbsp;</td><td>Nombre de buffs max de la cible de la cible (grade+). </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$supprimable</em>&nbsp;</td><td>1 si le <a class="el" href="classbuff.html">buff</a> est supprimable, 0 sinon.</td></tr>
   </table>
   </dd>
@@ -1889,7 +1899,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="base_8inc_8php_abdebed81a12acc10788ddb1133ae76e7_icgraph.png" border="0" usemap="#base_8inc_8php_abdebed81a12acc10788ddb1133ae76e7_icgraph_map" alt=""></div>
+<div class="center"><img src="base_8inc_8php_a93ea6b3413fa5296240e923979acb52b_icgraph.png" border="0" usemap="#base_8inc_8php_a93ea6b3413fa5296240e923979acb52b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1956,7 +1966,7 @@ Voici le graphe d'appel pour cette fonction :</div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>les <a class="el" href="classconstruction.html">construction</a> dans la visu sous forme d'un tableau de lignes </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>les <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> dans la visu sous forme d'un tableau de lignes </dd></dl>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -2179,6 +2189,40 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="ac009999c1c6cde723f4e71e423407ef8"></a><!-- doxytag: member="base.inc.php::ouvrePorteMaraudeurGeolier" ref="ac009999c1c6cde723f4e71e423407ef8" args="($x, $duree)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ouvrePorteMaraudeurGeolier </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>duree</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="base_8inc_8php_ac009999c1c6cde723f4e71e423407ef8_icgraph.png" border="0" usemap="#base_8inc_8php_ac009999c1c6cde723f4e71e423407ef8_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="af2c45526dc33e689f8a8dc6d153ecd60"></a><!-- doxytag: member="base.inc.php::over_price" ref="af2c45526dc33e689f8a8dc6d153ecd60" args="($base, $joueur)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2390,6 +2434,13 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="base_8inc_8php_a4eba8b14b6e14730074b4cbe8eaabe90_icgraph.png" border="0" usemap="#base_8inc_8php_a4eba8b14b6e14730074b4cbe8eaabe90_icgraph_map" alt=""></div>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a26afa0bb52ccd16abd39dc768ef9d61d"></a><!-- doxytag: member="base.inc.php::prochain_level" ref="a26afa0bb52ccd16abd39dc768ef9d61d" args="($level)" -->
@@ -2443,6 +2494,52 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Pourcentage d'expérience déjà acquise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf997a53148d7cf426e419f875c66d93"></a><!-- doxytag: member="base.inc.php::pute_effets" ref="acf997a53148d7cf426e419f875c66d93" args="(&amp;$joueur, $honneur_need, $specials=null, $specials_det=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pute_effets </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>honneur_need</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>specials</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>specials_det</em> = <code>null</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="base_8inc_8php_acf997a53148d7cf426e419f875c66d93_cgraph.png" border="0" usemap="#base_8inc_8php_acf997a53148d7cf426e419f875c66d93_cgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -3417,7 +3514,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:18 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:43 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

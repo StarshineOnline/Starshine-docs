@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>Starshine Online: Référence du fichier SSO/trunk/option_map.php</title>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/option_map.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -12,6 +12,7 @@
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -23,7 +24,7 @@
       <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_72030663e0f00126986f0653002ad98d.html">trunk</a>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
   </div>
 </div>
 <div class="contents">
@@ -33,7 +34,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#af6557d1f9defa943f74b1e327027d1a3">$atm_all_verb</a> = $atm_all_val ? 'Désactiver &lt;strong&gt;tous&lt;/strong&gt;' : 'Activer'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">switch($_GET['action'])&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#a9d46e2ae81cdd4f45fa9a3513b912440">$atm_val</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($q)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#abdf59e8b56ae9dd9b2ecfea17049f339">$atm_verb</a> = $atm_val ? 'Désactiver' : 'Activer'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#a001db1e02045a955535c9c49872605a1">$mons_val</a> = $joueur-&gt;get_option('cache_monstre') ? 0 : 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#abb0f8f809252372e25f48d52b63ef29d">$q</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#aa3488c45fd7ab35c37dee0a7f1e4a39c">$roy_val</a> = $joueur-&gt;get_option('affiche_royaume') ? 0 : 1</td></tr>
@@ -96,7 +97,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['<a class="el" href="gestion__royaume_8php.html#a462d5f881a44a1b96c189cb6dc58e63f">ID</a>'])</td>
+          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -127,7 +128,7 @@
       </table>
 </div>
 <div class="memdoc">
-<b>Valeur initiale :</b><div class="fragment"><pre class="fragment"> <a class="code" href="connect_8php.html#a1fa3127fc82f96b1436d871ef02be319" title="Objet gérant les accès à la base de données.">$db</a>-&gt;query(<span class="stringliteral">&quot;select nom, valeur from options where &quot;</span>.
+<b>Valeur initiale :</b><div class="fragment"><pre class="fragment"> $db-&gt;query(<span class="stringliteral">&quot;select nom, valeur from options where &quot;</span>.
                                 <span class="stringliteral">&quot;id_perso = &quot;</span>.<a class="code" href="action_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a>-&gt;get_id().<span class="stringliteral">&quot; and nom in &quot;</span>.
                                 <span class="stringliteral">&quot;(&apos;desactive_atm&apos;, &apos;desactive_atm_all&apos;)&quot;</span>)
 </pre></div>
@@ -147,7 +148,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Mon Apr 25 23:17:19 2011 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Fri Dec 30 10:11:45 2011 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
