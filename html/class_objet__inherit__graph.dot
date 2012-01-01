@@ -1,0 +1,17 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{Objet\n|+ $id\l# $nom\l# $prix\l# $type\l|+ __construct()\l+ __toString()\l+ getId()\l+ getNom()\l+ getPrix()\l+ getType()\l+ infobulle()\l+ sauver()\l+ setId()\l+ setNom()\l+ setPrix()\l+ setType()\l# bulleBase()\l# insertBase()\l# modifBase()\l# supprimer()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node2 [label="{Accessoire\n|# $achetable\l# $batimentReq\l# $description\l# $effet\l# $puissance\l|+ __construct()\l+ __toString()\l+ getBatiment()\l+ getDescription()\l+ getEffet()\l+ getPuissance()\l+ infobulle()\l+ isAchetable()\l+ sauver()\l+ setAchetable()\l+ setDescription()\l+ setEffet()\l+ setPuissance()\l+ supprimer()\l}",height=0.2,width=0.4,color="black",URL="$class_accessoire.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node3 [label="{Arme\n|# $batimentReq\l# $degat\l# $distance\l# $effet\l# $forceReq\l# $image\l# $mains\l# $melee\l# $portee\l# $var1\l|+ __construct()\l+ __toString()\l+ afficheImage()\l+ getBatiment()\l+ getDegat()\l+ getDistance()\l+ getEffet()\l+ getForce()\l+ getImage()\l+ getMain()\l+ getMelee()\l+ getPortee()\l+ getVar1()\l+ infobulle()\l+ sauver()\l+ setBatiment()\l+ setDegat()\l+ setDistance()\l+ setEffet()\l+ setForce()\l+ setImage()\l+ setMains()\l+ setMelee()\l+ setNumMains()\l+ setPortee()\l+ setVar1()\l+ supprimer()\l}",height=0.2,width=0.4,color="black",URL="$class_arme.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node4 [label="{Armure\n|# $batimentReq\l# $effet\l# $forceReq\l# $pm\l# $pp\l|+ __construct()\l+ __toString()\l+ getBatiment()\l+ getEffet()\l+ getForce()\l+ getPM()\l+ getPP()\l+ infobulle()\l+ sauver()\l+ setBatimentReq()\l+ setEffet()\l+ setForce()\l+ setPM()\l+ setPP()\l+ supprimer()\l}",height=0.2,width=0.4,color="black",URL="$class_armure.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node5 [label="{ObjetRoyaume\n|# $batiment\l# $grade\l|+ __construct()\l+ __toString()\l+ getBatiment()\l+ getGrade()\l+ sauver()\l+ setBatiment()\l+ setGrade()\l+ supprimer()\l}",height=0.2,width=0.4,color="black",URL="$class_objet_royaume.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node6 [label="{Objets\n|# $achetable\l# $description\l# $effet\l# $stack\l# $utilisable\l|+ __construct()\l+ __toString()\l+ getDescription()\l+ getEffet()\l+ getStack()\l+ infobulle()\l+ isAchetable()\l+ isUtilisable()\l+ sauver()\l+ setAchetable()\l+ setDescription()\l+ setEffet()\l+ setStack()\l+ setUtilisable()\l+ supprimer()\l}",height=0.2,width=0.4,color="black",URL="$class_objets.html"];
+}

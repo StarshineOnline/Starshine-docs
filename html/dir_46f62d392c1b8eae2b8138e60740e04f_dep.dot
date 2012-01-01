@@ -1,0 +1,14 @@
+digraph G {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_fc4783848e8180fcf200063c2730ed60 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Starshine-Online" fontname="FreeSans", fontsize="10", URL="dir_fc4783848e8180fcf200063c2730ed60.html"]
+  subgraph clusterdir_46f62d392c1b8eae2b8138e60740e04f {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_46f62d392c1b8eae2b8138e60740e04f.html"];
+    dir_46f62d392c1b8eae2b8138e60740e04f [shape=plaintext label="roi"];
+    dir_a549a978847269f5e285cc5156917345 [shape=box label="ajax" color="black" fillcolor="white" style="filled" URL="dir_a549a978847269f5e285cc5156917345.html"];
+  }
+  }
+}

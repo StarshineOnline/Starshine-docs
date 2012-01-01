@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/calendrier/illusioniste.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_37760e82919b2023a6f7de8e525769d8.html">calendrier</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier illusioniste.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#a5102c1c10142bea4e46a70c24a65053d">$id_boss</a> = 187</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#a407aa99b88f21ac35a06e222e0f32ccd">$id_illu</a> = 189</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#ad2396c6b5ec45b470e61af82a39eb09c">$nb_illu</a> = 10</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($pop_illu--)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#aa7be97320e0e95a9a2d7e1e7df543090">$p</a> = array_shift($pos)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#ae42733e9412501e398ebd1010b057d19">$pop_illu</a> = $nb_illu - ($req ? $<a class="el" href="classdb.html">db</a>-&gt;num_rows($req) : 0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#a5de51f0c80b3bb3b39a57b23f6b9ea9f">$pos</a> = array()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select mort_naturelle from <a class="el" href="classmap__monstre.html">map_monstre</a> where <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = $id_boss&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="illusioniste_8php.html#a047170d6020a882807665812a27e2525">$sql</a> = &quot;update <a class="el" href="classmap__monstre.html">map_monstre</a> set x = $p[x], y = $p[y] where <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = $id_boss&quot;</td></tr>
+</table>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="a5102c1c10142bea4e46a70c24a65053d"></a><!-- doxytag: member="illusioniste.php::$id_boss" ref="a5102c1c10142bea4e46a70c24a65053d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$id_boss = 187</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a407aa99b88f21ac35a06e222e0f32ccd"></a><!-- doxytag: member="illusioniste.php::$id_illu" ref="a407aa99b88f21ac35a06e222e0f32ccd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$id_illu = 189</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad2396c6b5ec45b470e61af82a39eb09c"></a><!-- doxytag: member="illusioniste.php::$nb_illu" ref="ad2396c6b5ec45b470e61af82a39eb09c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$nb_illu = 10</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7be97320e0e95a9a2d7e1e7df543090"></a><!-- doxytag: member="illusioniste.php::$p" ref="aa7be97320e0e95a9a2d7e1e7df543090" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($pop_illu--) $p = array_shift($pos)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae42733e9412501e398ebd1010b057d19"></a><!-- doxytag: member="illusioniste.php::$pop_illu" ref="ae42733e9412501e398ebd1010b057d19" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pop_illu = $nb_illu - ($req ? $<a class="el" href="classdb.html">db</a>-&gt;num_rows($req) : 0)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5de51f0c80b3bb3b39a57b23f6b9ea9f"></a><!-- doxytag: member="illusioniste.php::$pos" ref="a5de51f0c80b3bb3b39a57b23f6b9ea9f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pos = array()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="illusioniste.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select mort_naturelle from <a class="el" href="classmap__monstre.html">map_monstre</a> where <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = $id_boss&quot;)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a047170d6020a882807665812a27e2525"></a><!-- doxytag: member="illusioniste.php::$sql" ref="a047170d6020a882807665812a27e2525" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$sql = &quot;update <a class="el" href="classmap__monstre.html">map_monstre</a> set x = $p[x], y = $p[y] where <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = $id_boss&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 1 11:10:49 2012 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

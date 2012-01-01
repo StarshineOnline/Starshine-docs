@@ -1,0 +1,9 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{mirroir_eclatant\n|+ $effet\l|+ __construct()\l+ applique_bloquage()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node2 [label="{effect\n|+ $nom\l+ $order\l+ $used\l+ $DEBUT_ADD\l+ $DEBUT_DEBUT\l+ $DEBUT_MULT\l+ $FIN_ADD\l+ $FIN_FIN\l+ $FIN_MULT\l+ $STANDARD\l+ $STANDARD_ADD\l+ $STANDARD_MULT\l|+ __construct()\l+ debug()\l+ heal()\l+ hit()\l+ message()\l+ notice()\l+ applique_bloquage()\l+ calcul_arme()\l+ calcul_attaque_magique()\l+ calcul_attaque_physique()\l+ calcul_bloquage()\l+ calcul_bloquage_reduction()\l+ calcul_bonus_degats_magiques()\l+ calcul_critique()\l+ calcul_defense_magique()\l+ calcul_defense_physique()\l+ calcul_degats()\l+ calcul_degats_magiques()\l+ calcul_mp()\l+ calcul_mult_critique()\l+ calcul_pm()\l+ calcul_pp()\l+ debut_round()\l+ fin_combat()\l+ fin_round()\l+ inflige_degats()\l+ inflige_degats_magiques()\l+ compare_effects()\l+ factory()\l+ general_factory()\l+ general_simple_factory()\l* applique_bloquage()\l* calcul_arme()\l* calcul_attaque_magique()\l* calcul_attaque_physique()\l* calcul_bloquage()\l* calcul_bloquage_reduction()\l* calcul_bonus_degats_magiques()\l* calcul_critique()\l* calcul_defense_magique()\l* calcul_defense_physique()\l* calcul_degats()\l* calcul_degats_magiques()\l* calcul_mp()\l* calcul_mult_critique()\l* calcul_pm()\l* calcul_pp()\l* debut_round()\l* fin_combat()\l* fin_round()\l* inflige_degats()\l* inflige_degats_magiques()\l}",height=0.2,width=0.4,color="black",URL="$classeffect.html",tooltip="Classe de base pour la gestion des effets en combat."];
+}

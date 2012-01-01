@@ -1,0 +1,11 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{event_equipe_dte_rte\n||+ interface_admin()\l* $nbr_meurtres\l* $points_matchs\l* $points_victoire\l* $poule\l* add_nbr_meurtres()\l* add_points_matchs()\l* add_points_victoire()\l* get_nbr_meurtres()\l* get_points_matchs()\l* get_points_victoire()\l* get_poule()\l* set_nbr_meurtres()\l* set_points_matchs()\l* set_points_victoire()\l* set_poule()\l* serializeDonnees()\l* unserializeDonnees()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node2 [label="{event_equipe\n||+ __construct()\l+ get_membres()\l+ interface_admin()\l+ supprimer()\l+ creer()\l# get_champ()\l# get_liste_champs()\l# get_liste_update()\l# get_table()\l# get_valeurs_insert()\l# init_tab()\l# serializeDonnees()\l# unserializeDonnees()\l* $event\l* $nom\l* $royaume\l* get_event()\l* get_id_event()\l* get_id_royaume()\l* get_nom()\l* get_royaume()\l* set_nom()\l* set_royaume()\l* get_champ()\l* get_liste_champs()\l* get_liste_update()\l* get_table()\l* get_valeurs_insert()\l* init_tab()\l* serializeDonnees()\l* unserializeDonnees()\l}",height=0.2,width=0.4,color="black",URL="$classevent__equipe.html",tooltip="Classe de base pour les équipes des events, liée à la table event_equipe de la..."];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node3 [label="{table\n|# $champs_modif\l# $id\l|+ __toString()\l+ get_id()\l+ sauver()\l+ set_id()\l+ supprimer()\l+ create()\l+ gen_create()\l# charger()\l# get_champ()\l# get_champ_id()\l# get_liste_champs()\l# get_liste_update()\l# get_table()\l# get_valeurs_insert()\l# init_tab()\l}",height=0.2,width=0.4,color="black",URL="$classtable.html",tooltip="Classe de base pour les objets représentant un élément d&#39;une table dans la..."];
+}

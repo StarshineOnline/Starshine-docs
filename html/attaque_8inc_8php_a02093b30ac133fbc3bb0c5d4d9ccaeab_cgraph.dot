@@ -1,0 +1,18 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="degat_magique",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="calcul_pp",height=0.2,width=0.4,color="black",URL="$base_8inc_8php.html#a2c272fe9cfde5f7c8117d8571c49c40d",tooltip="Calcul le pourcentage de dégâts absorbé en fonction de la PP."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="critique_magique",height=0.2,width=0.4,color="black",URL="$action_8inc_8php.html#afa6728855931f0feb1a5ee09e5a97c08",tooltip="Regarde s&#39;il y a un critique magique."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node4 [label="de_degat",height=0.2,width=0.4,color="black",URL="$base_8inc_8php.html#a19ea8bf3556dd8b7bc94c142cc8c0542",tooltip="Fonction permettant de calculer les dés de dégat en fonction de la force et de..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node5 [label="degat_critique",height=0.2,width=0.4,color="black",URL="$action_8inc_8php.html#a2a9c1e5a32314f87eec36f89a72a9a2e",tooltip="Ajuste les dégâts en cas de critique."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node6 [label="print_debug",height=0.2,width=0.4,color="black",URL="$print_8inc_8php.html#af38cc69d69af7510de44fe525d2a2f08"];
+}

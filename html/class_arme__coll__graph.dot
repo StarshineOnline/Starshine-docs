@@ -1,0 +1,9 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{Arme\n|# $batimentReq\l# $degat\l# $distance\l# $effet\l# $forceReq\l# $image\l# $mains\l# $melee\l# $portee\l# $var1\l|+ __construct()\l+ __toString()\l+ afficheImage()\l+ getBatiment()\l+ getDegat()\l+ getDistance()\l+ getEffet()\l+ getForce()\l+ getImage()\l+ getMain()\l+ getMelee()\l+ getPortee()\l+ getVar1()\l+ infobulle()\l+ sauver()\l+ setBatiment()\l+ setDegat()\l+ setDistance()\l+ setEffet()\l+ setForce()\l+ setImage()\l+ setMains()\l+ setMelee()\l+ setNumMains()\l+ setPortee()\l+ setVar1()\l+ supprimer()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="FreeSans"];
+  Node2 [label="{Objet\n|+ $id\l# $nom\l# $prix\l# $type\l|+ __construct()\l+ __toString()\l+ getId()\l+ getNom()\l+ getPrix()\l+ getType()\l+ infobulle()\l+ sauver()\l+ setId()\l+ setNom()\l+ setPrix()\l+ setType()\l# bulleBase()\l# insertBase()\l# modifBase()\l# supprimer()\l}",height=0.2,width=0.4,color="black",URL="$class_objet.html",tooltip="Classe abstraite représentant un objet."];
+}
