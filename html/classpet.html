@@ -48,8 +48,6 @@ Graphe de collaboration de pet:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ad6f92258110fd14183e30e94ae0729ee">get_cout_soin</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#af33fa6529fb0347bf0dd9a1cea1f9857">get_monstre</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#abaa7fe21125889e1739cce8940f5b8db">get_mp_max</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a0eae5199eac16ee3a554063e3aecf61f">set_nom</a> ($nom)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie si c'est la créature principale du dresseur.  <a href="#a0eae5199eac16ee3a554063e3aecf61f"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Sorts, compétences</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp29fe4028920b736cbce8deabe2a1116f"></a>Données et méthodes ayant trait aux sorts et compétences de <a class="el" href="classcombat.html">combat</a>. </p>
 <br/><br/></div></td></tr>
@@ -63,6 +61,37 @@ Graphe de collaboration de pet:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne le niveau du <a class="el" href="classmonstre.html" title="Classe monstre Cette classe représentant la définition d&#39;un monstre.">monstre</a>.  <a href="#a119fedd59d5d20707e95680d289d9d8e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ab15572a32bc40141ca25f6b03e06d67c">get_sort_combat</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les sorts de <a class="el" href="classcombat.html">combat</a>.  <a href="#ab15572a32bc40141ca25f6b03e06d67c"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Buffs</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp03c8093b6585604239705546c3d3ae76"></a>Données et méthodes ayant trait aux buffs et débuffs actifs sur le <a class="el" href="classmonstre.html" title="Classe monstre Cette classe représentant la définition d&#39;un monstre.">monstre</a>. </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a21e540d1a8acef40274995688435e3e9">get_buff</a> ($nom=false, $champ=false, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci.  <a href="#a21e540d1a8acef40274995688435e3e9"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Combats</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpfe42498454c475c6382232b949c18daf"></a>Données et méthodes liées aux combats. </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ae58cd1f116d835b2ebea63db5ff4060d">$action_a</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Id du script d'attaque.  <a href="#ae58cd1f116d835b2ebea63db5ff4060d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a15dbd6b19681542adcc25fb04d08e8f0">$action_d</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Id du script de défense.  <a href="#a15dbd6b19681542adcc25fb04d08e8f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#afe2ab1130a9cc198f23366446512fdc2">$action_do</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ad131756eeb39d07fda0a16f2b7d35f64">$reserve_bonus</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">RM avec les bonus dus aux buffs.  <a href="#ad131756eeb39d07fda0a16f2b7d35f64"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a4f59bee3c88f85a95dcf04b705406e6c">get_action</a> ($attaquant)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le script d'action.  <a href="#a4f59bee3c88f85a95dcf04b705406e6c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a035c97b0d16de47d58f2bc3014906a57">get_action_a</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du script d'attaque.  <a href="#a035c97b0d16de47d58f2bc3014906a57"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ae6afea7e9624de152395ce2682ba2c91">get_action_d</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du script d'attaque.  <a href="#ae6afea7e9624de152395ce2682ba2c91"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ab94db7f3e8bfc68224bd3e1b124e9b9b">get_distance_tir</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la distance à laquelle le personnage peut attaquer.  <a href="#ab94db7f3e8bfc68224bd3e1b124e9b9b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#abc0c0702b841aa25c021d054d98e0d87">get_reserve_bonus</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la RM.  <a href="#abc0c0702b841aa25c021d054d98e0d87"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a338faad45f1e3bcef1e0ed01fe24cfd8">recupaction</a> ($type_action)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère le contenu du script pour une action donné.  <a href="#a338faad45f1e3bcef1e0ed01fe24cfd8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a48d4ad12f7fd9da90003a8f3fac2c853">set_action_a</a> ($action_a)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id du script d'attaque.  <a href="#a48d4ad12f7fd9da90003a8f3fac2c853"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ad72b07bf70331c956df5cfb34a34b4e3">set_action_d</a> ($action_d)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id du script de défense.  <a href="#ad72b07bf70331c956df5cfb34a34b4e3"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrp9c2ff6d0683497ad43281c742be15d58"></a>Donnée et méthode sur les inforamations "générales" : type, niveau, … </p>
 <br/><br/></td></tr>
@@ -82,6 +111,10 @@ Graphe de collaboration de pet:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les MP du <a class="el" href="classmonstre.html" title="Classe monstre Cette classe représentant la définition d&#39;un monstre.">monstre</a>.  <a href="#a942ef5fed5cb770663ed77c2fde72d63"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#abd7cf8e01118ecd98f59f674cdc7eded">get_principale</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie si c'est la créature principale du dresseur.  <a href="#abd7cf8e01118ecd98f59f674cdc7eded"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a94b6077b708265544d557afd6aa3103f">get_race</a> ($<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la race.  <a href="#a94b6077b708265544d557afd6aa3103f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ad78be9a8f856a4b79f032a0db94e716b">mort</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique que l'entité est morte.  <a href="#ad78be9a8f856a4b79f032a0db94e716b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a0f0c87d63733fa8cb9af3d65799cdc6a">set_ecurie</a> ($ecurie)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie si le <a class="el" href="classmonstre.html" title="Classe monstre Cette classe représentant la définition d&#39;un monstre.">monstre</a> est dans une écurie (et dans laquelle) ou non.  <a href="#a0f0c87d63733fa8cb9af3d65799cdc6a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a34536fa5a3d5929a3d4a741730706402">set_id_joueur</a> ($id_joueur)</td></tr>
@@ -90,30 +123,6 @@ Graphe de collaboration de pet:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les MP du <a class="el" href="classmonstre.html" title="Classe monstre Cette classe représentant la définition d&#39;un monstre.">monstre</a>.  <a href="#acde986612df47d82d5a77f492d08c5eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#add3e298dfc0f856ec01b3673356a87c8">set_principale</a> ($principale)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie si c'est la créature principale du dresseur.  <a href="#add3e298dfc0f856ec01b3673356a87c8"></a><br/></td></tr>
-<tr><td colspan="2"><h2>Combats</h2></td></tr>
-<tr><td colspan="2"><p><a class="anchor" id="amgrpfe42498454c475c6382232b949c18daf"></a>Données et méthodes liées aux combats. </p>
-<br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#afe2ab1130a9cc198f23366446512fdc2">$action_do</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ad131756eeb39d07fda0a16f2b7d35f64">$reserve_bonus</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">RM avec les bonus dus aux buffs.  <a href="#ad131756eeb39d07fda0a16f2b7d35f64"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ae58cd1f116d835b2ebea63db5ff4060d">$action_a</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Id du script d'attaque.  <a href="#ae58cd1f116d835b2ebea63db5ff4060d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a15dbd6b19681542adcc25fb04d08e8f0">$action_d</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Id du script de défense.  <a href="#a15dbd6b19681542adcc25fb04d08e8f0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a035c97b0d16de47d58f2bc3014906a57">get_action_a</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du script d'attaque.  <a href="#a035c97b0d16de47d58f2bc3014906a57"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ae6afea7e9624de152395ce2682ba2c91">get_action_d</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du script d'attaque.  <a href="#ae6afea7e9624de152395ce2682ba2c91"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ab94db7f3e8bfc68224bd3e1b124e9b9b">get_distance_tir</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la distance à laquelle le personnage peut attaquer.  <a href="#ab94db7f3e8bfc68224bd3e1b124e9b9b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#abc0c0702b841aa25c021d054d98e0d87">get_reserve_bonus</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la RM.  <a href="#abc0c0702b841aa25c021d054d98e0d87"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a338faad45f1e3bcef1e0ed01fe24cfd8">recupaction</a> ($type_action)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Récupère le contenu du script pour une action donnéd.  <a href="#a338faad45f1e3bcef1e0ed01fe24cfd8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a48d4ad12f7fd9da90003a8f3fac2c853">set_action_a</a> ($action_a)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id du script d'attaque.  <a href="#a48d4ad12f7fd9da90003a8f3fac2c853"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ad72b07bf70331c956df5cfb34a34b4e3">set_action_d</a> ($action_d)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id du script de défense.  <a href="#ad72b07bf70331c956df5cfb34a34b4e3"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Inventaires et objets</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpadcc357c37b3d18fbc57fa9b68fee740"></a>Données et méthodes liées à l'inventaire et aux objets portés ou utiliser par les perosnnages. </p>
 <br/><br/></td></tr>
@@ -130,6 +139,10 @@ Graphe de collaboration de pet:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le facteur de dégâts de ou des armes.  <a href="#aa59e74c5111af231d40b6dfaabe9bc4f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a5a805eeb63b4687fa06933ef2499e867">get_armure</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcule la PP et la PM en fonction des pièces d'armures portées ainsi que des buffs et autres modificateurs.  <a href="#a5a805eeb63b4687fa06933ef2499e867"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a6914bbcad3c207b4f499f842438b8874">get_bonus_pm</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le bonus de PM dû à l'armure.  <a href="#a6914bbcad3c207b4f499f842438b8874"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#ac0b17dcef21c057bbc63828001208516">get_bonus_pp</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le bonus de PP dû à l'armure.  <a href="#ac0b17dcef21c057bbc63828001208516"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a49b9a281b9e14f2d724033b08e166dfe">get_pm</a> ($base=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la PM.  <a href="#a49b9a281b9e14f2d724033b08e166dfe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpet.html#a77ce500a2c16e8134da91c292e04b8bf">get_pp</a> ($base=false)</td></tr>
@@ -304,6 +317,34 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a4f59bee3c88f85a95dcf04b705406e6c"></a><!-- doxytag: member="pet::get_action" ref="a4f59bee3c88f85a95dcf04b705406e6c" args="($attaquant)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pet::get_action </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>attaquant</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le script d'action. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#abb8d52c866e7ce2e256c8bf1a32b96d5">entnj_incarn</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a035c97b0d16de47d58f2bc3014906a57"></a><!-- doxytag: member="pet::get_action_a" ref="a035c97b0d16de47d58f2bc3014906a57" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -391,6 +432,8 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#a28f98d7a026f9b7a63b71a698800ee11">entnj_incarn</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5a805eeb63b4687fa06933ef2499e867"></a><!-- doxytag: member="pet::get_armure" ref="a5a805eeb63b4687fa06933ef2499e867" args="()" -->
@@ -409,6 +452,94 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Calcule la PP et la PM en fonction des pièces d'armures portées ainsi que des buffs et autres modificateurs. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6914bbcad3c207b4f499f842438b8874"></a><!-- doxytag: member="pet::get_bonus_pm" ref="a6914bbcad3c207b4f499f842438b8874" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pet::get_bonus_pm </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le bonus de PM dû à l'armure. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#a45becef3f04c7ba2274b2be045e51915">entnj_incarn</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0b17dcef21c057bbc63828001208516"></a><!-- doxytag: member="pet::get_bonus_pp" ref="ac0b17dcef21c057bbc63828001208516" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pet::get_bonus_pp </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le bonus de PP dû à l'armure. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#aba34bad64d989363caf47bac0366bb5e">entnj_incarn</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21e540d1a8acef40274995688435e3e9"></a><!-- doxytag: member="pet::get_buff" ref="a21e540d1a8acef40274995688435e3e9" args="($nom=false, $champ=false, $type=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pet::get_buff </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>nom</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>champ</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>type</em> = <code>true</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom (type) du (dé)<a class="el" href="classbuff.html">buff</a> recherché, renvoie tous les buffs actifs si vaut false. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$champ</em>&nbsp;</td><td>Propriété recherchée (correspond à un champ dans la bdd). </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Si false on prend le premier <a class="el" href="classbuff.html">buff</a>, si true celui dont le type correspond à $nom. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Tableau des buffs ou valeur demandée. </dd></dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classmap__monstre.html#afd6f3717e03bde046867862b83317d77">map_monstre</a>.</p>
 
 </div>
 </div>
@@ -498,6 +629,8 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie la distance à laquelle le personnage peut attaquer. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#a6fa5da80738de6bd7fabd5b9397b57bc">entnj_incarn</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -735,6 +868,28 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a94b6077b708265544d557afd6aa3103f"></a><!-- doxytag: member="pet::get_race" ref="a94b6077b708265544d557afd6aa3103f" args="($perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pet::get_race </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la race. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#a81e11a050329774d7c51d3a915e806bb">entnj_incarn</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abc0c0702b841aa25c021d054d98e0d87"></a><!-- doxytag: member="pet::get_reserve_bonus" ref="abc0c0702b841aa25c021d054d98e0d87" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -835,6 +990,28 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="ad78be9a8f856a4b79f032a0db94e716b"></a><!-- doxytag: member="pet::mort" ref="ad78be9a8f856a4b79f032a0db94e716b" args="(&amp;$perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pet::mort </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indique que l'entité est morte. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#ac60d4ab33e9ea1cadb7e0cc62bec763d">entnj_incarn</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a338faad45f1e3bcef1e0ed01fe24cfd8"></a><!-- doxytag: member="pet::recupaction" ref="a338faad45f1e3bcef1e0ed01fe24cfd8" args="($type_action)" -->
 <div class="memitem">
 <div class="memproto">
@@ -851,7 +1028,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Récupère le contenu du script pour une action donnéd. </p>
+<p>Récupère le contenu du script pour une action donné. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$type_action</em>&nbsp;</td><td>'attaque' ou 'defense'. </td></tr>
@@ -979,28 +1156,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a0eae5199eac16ee3a554063e3aecf61f"></a><!-- doxytag: member="pet::set_nom" ref="a0eae5199eac16ee3a554063e3aecf61f" args="($nom)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pet::set_nom </td>
-          <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>nom</em></td>
-          <td>&nbsp;)&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Modifie si c'est la créature principale du dresseur. </p>
-
-<p>Réimplémentée à partir de <a class="el" href="classplacable.html#a4b7ccefb85e51d276ee773f0ae47b775">placable</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="add3e298dfc0f856ec01b3673356a87c8"></a><!-- doxytag: member="pet::set_principale" ref="add3e298dfc0f856ec01b3673356a87c8" args="($principale)" -->
 <div class="memitem">
 <div class="memproto">
@@ -1027,7 +1182,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pet::$action_a<code> [private]</code></td>
+          <td class="memname">pet::$action_a<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1042,7 +1197,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pet::$action_d<code> [private]</code></td>
+          <td class="memname">pet::$action_d<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1201,7 +1356,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 1 11:11:12 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:55 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

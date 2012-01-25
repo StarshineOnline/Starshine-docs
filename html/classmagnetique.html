@@ -31,31 +31,32 @@
 <h1>Référence de la classe magnetique</h1><!-- doxytag: class="magnetique" --><!-- doxytag: inherits="effect" --><div class="dynheader">
 Graphe d'héritage de magnetique:</div>
 <div class="dynsection">
-<div class="center"><img src="classmagnetique__inherit__graph.png" border="0" usemap="#magnetique_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de magnetique:</div>
 <div class="dynsection">
-<div class="center"><img src="classmagnetique__coll__graph.png" border="0" usemap="#magnetique_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classmagnetique-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a2b239ad153a758decd8c75174c80e477">__construct</a> ($aName, $aNb)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a754a8c7b3ec6b9ccb97afb8773a96622">__construct</a> ($aName)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a754a8c7b3ec6b9ccb97afb8773a96622"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a80fb56483bbd15fa02ab492bb718d522">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a80fb56483bbd15fa02ab492bb718d522"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#ae7e839eaaab7ccdb1e6664279a89dce3">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#ae7e839eaaab7ccdb1e6664279a89dce3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a763a8710c892c062dc8adb7fe795267a">magnetise</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a371b614cc7d2cb991ab512149d2da438">suppr_buff</a> ($<a class="el" href="classbuff.html">buff</a>, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime un <a class="el" href="classbuff.html">buff</a> ou un niveau de <a class="el" href="classbuff.html">buff</a>.  <a href="#a371b614cc7d2cb991ab512149d2da438"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a960adabda55075fcccf6837c8f855a53">test_chance</a> (&amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Test si l'effet agit ou non.  <a href="#a960adabda55075fcccf6837c8f855a53"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a536365fcaa788022ea24db0a38d4a857">$chance</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#ac78292790cbb5f538742c91eb21ae884">$hit</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#aec7165c7f9842db27ccb5d1c97172082">$nb</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmagnetique.html#a9db2533f33935e227031f30a0f488c02">$titre</a></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a2b239ad153a758decd8c75174c80e477"></a><!-- doxytag: member="magnetique::__construct" ref="a2b239ad153a758decd8c75174c80e477" args="($aName, $aNb)" -->
+<a class="anchor" id="a754a8c7b3ec6b9ccb97afb8773a96622"></a><!-- doxytag: member="magnetique::__construct" ref="a754a8c7b3ec6b9ccb97afb8773a96622" args="($aName)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -63,29 +64,27 @@ Graphe de collaboration de magnetique:</div>
           <td class="memname">magnetique::__construct </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>aNom</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aNb</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée dans <a class="el" href="classfleche__magnetique.html#a429e749a4cc554cc2505ef498a332ca0">fleche_magnetique</a>.</p>
+<p>Constructeur. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$aNom</em>&nbsp;</td><td>Nom de l'effet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#ab0d55424478d6a027f340cb8599ae301">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmagnetique_a2b239ad153a758decd8c75174c80e477_cgraph.png" border="0" usemap="#classmagnetique_a2b239ad153a758decd8c75174c80e477_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -131,7 +130,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmagnetique_a80fb56483bbd15fa02ab492bb718d522_cgraph.png" border="0" usemap="#classmagnetique_a80fb56483bbd15fa02ab492bb718d522_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -217,7 +215,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmagnetique_a763a8710c892c062dc8adb7fe795267a_cgraph.png" border="0" usemap="#classmagnetique_a763a8710c892c062dc8adb7fe795267a_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -230,39 +227,78 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<hr/><h2>Documentation des données membres</h2>
-<a class="anchor" id="a536365fcaa788022ea24db0a38d4a857"></a><!-- doxytag: member="magnetique::$chance" ref="a536365fcaa788022ea24db0a38d4a857" args="" -->
+<a class="anchor" id="a371b614cc7d2cb991ab512149d2da438"></a><!-- doxytag: member="magnetique::suppr_buff" ref="a371b614cc7d2cb991ab512149d2da438" args="($buff, &amp;$passif)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">magnetique::$chance</td>
+          <td class="memname">magnetique::suppr_buff </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [abstract]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Supprime un <a class="el" href="classbuff.html">buff</a> ou un niveau de <a class="el" href="classbuff.html">buff</a>. </p>
+
+<p>Réimplémentée dans <a class="el" href="classglobe__foudre.html#a6a93e6fbdc7aaa5db5135292bc1d49a7">globe_foudre</a>, et <a class="el" href="classfleche__magnetique.html#ad838ec13a220f4e81acddc5af2a788db">fleche_magnetique</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
 </div>
 </div>
+<a class="anchor" id="a960adabda55075fcccf6837c8f855a53"></a><!-- doxytag: member="magnetique::test_chance" ref="a960adabda55075fcccf6837c8f855a53" args="(&amp;$passif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">magnetique::test_chance </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [abstract]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Test si l'effet agit ou non. </p>
+
+<p>Réimplémentée dans <a class="el" href="classglobe__foudre.html#aa0b70b4e0fd114037da56fb0bf0c6280">globe_foudre</a>, et <a class="el" href="classfleche__magnetique.html#a952e571136ebc476c83c0536df7a1689">fleche_magnetique</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
 <a class="anchor" id="ac78292790cbb5f538742c91eb21ae884"></a><!-- doxytag: member="magnetique::$hit" ref="ac78292790cbb5f538742c91eb21ae884" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">magnetique::$hit</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aec7165c7f9842db27ccb5d1c97172082"></a><!-- doxytag: member="magnetique::$nb" ref="aec7165c7f9842db27ccb5d1c97172082" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">magnetique::$nb</td>
         </tr>
       </table>
 </div>
@@ -284,7 +320,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 1 11:11:08 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:45 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

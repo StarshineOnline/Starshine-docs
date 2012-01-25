@@ -31,21 +31,28 @@
 <h1>Référence de la classe fleche_magnetique</h1><!-- doxytag: class="fleche_magnetique" --><!-- doxytag: inherits="magnetique" --><div class="dynheader">
 Graphe d'héritage de fleche_magnetique:</div>
 <div class="dynsection">
-<div class="center"><img src="classfleche__magnetique__inherit__graph.png" border="0" usemap="#fleche__magnetique_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de fleche_magnetique:</div>
 <div class="dynsection">
-<div class="center"><img src="classfleche__magnetique__coll__graph.png" border="0" usemap="#fleche__magnetique_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classfleche__magnetique-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__magnetique.html#a429e749a4cc554cc2505ef498a332ca0">__construct</a> ($aNb, $achance)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__magnetique.html#a2e617275dd72131914c8c0b25fe9ae6b">__construct</a> ($nbr_max, $potentiel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__magnetique.html#ad838ec13a220f4e81acddc5af2a788db">suppr_buff</a> ($<a class="el" href="classbuff.html">buff</a>, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime un niveau <a class="el" href="classbuff.html">buff</a>.  <a href="#ad838ec13a220f4e81acddc5af2a788db"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__magnetique.html#a952e571136ebc476c83c0536df7a1689">test_chance</a> (&amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Test si l'effet agit ou non.  <a href="#a952e571136ebc476c83c0536df7a1689"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__magnetique.html#a0e88e78251aeafc3affdd74d71fb965b">$nbr_max</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nombre maximum de niveaux retités  <a href="#a0e88e78251aeafc3affdd74d71fb965b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__magnetique.html#a0fc9d6926cfd0034db74b45ddc69a9d5">$potentiel</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">potentiel de réussite  <a href="#a0fc9d6926cfd0034db74b45ddc69a9d5"></a><br/></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a429e749a4cc554cc2505ef498a332ca0"></a><!-- doxytag: member="fleche_magnetique::__construct" ref="a429e749a4cc554cc2505ef498a332ca0" args="($aNb, $achance)" -->
+<a class="anchor" id="a2e617275dd72131914c8c0b25fe9ae6b"></a><!-- doxytag: member="fleche_magnetique::__construct" ref="a2e617275dd72131914c8c0b25fe9ae6b" args="($nbr_max, $potentiel)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -53,13 +60,13 @@ Graphe de collaboration de fleche_magnetique:</div>
           <td class="memname">fleche_magnetique::__construct </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aNb</em>, </td>
+          <td class="paramname"> <em>nbr_max</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>achance</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>potentiel</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -70,12 +77,101 @@ Graphe de collaboration de fleche_magnetique:</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée à partir de <a class="el" href="classmagnetique.html#a2b239ad153a758decd8c75174c80e477">magnetique</a>.</p>
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="ad838ec13a220f4e81acddc5af2a788db"></a><!-- doxytag: member="fleche_magnetique::suppr_buff" ref="ad838ec13a220f4e81acddc5af2a788db" args="($buff, &amp;$passif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fleche_magnetique::suppr_buff </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Supprime un niveau <a class="el" href="classbuff.html">buff</a>. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classmagnetique.html#a371b614cc7d2cb991ab512149d2da438">magnetique</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a952e571136ebc476c83c0536df7a1689"></a><!-- doxytag: member="fleche_magnetique::test_chance" ref="a952e571136ebc476c83c0536df7a1689" args="(&amp;$passif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fleche_magnetique::test_chance </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Test si l'effet agit ou non. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classmagnetique.html#a960adabda55075fcccf6837c8f855a53">magnetique</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a0e88e78251aeafc3affdd74d71fb965b"></a><!-- doxytag: member="fleche_magnetique::$nbr_max" ref="a0e88e78251aeafc3affdd74d71fb965b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fleche_magnetique::$nbr_max<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>nombre maximum de niveaux retités </p>
+
+</div>
+</div>
+<a class="anchor" id="a0fc9d6926cfd0034db74b45ddc69a9d5"></a><!-- doxytag: member="fleche_magnetique::$potentiel" ref="a0fc9d6926cfd0034db74b45ddc69a9d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fleche_magnetique::$potentiel<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>potentiel de réussite </p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 1 11:11:07 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:41 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
