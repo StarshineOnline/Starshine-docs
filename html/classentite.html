@@ -175,10 +175,12 @@ Graphe de collaboration de entite:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9a70bb5b75e0ae9eb055adf370f8dc71">$potentiel_toucher</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#abe497187858249e18d3c4139d2c30fec">$reserve</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Réserve de mana.  <a href="#abe497187858249e18d3c4139d2c30fec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a583443349c24d2d50cb1980b4f864eb0">$rm_restant</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Réserve de mana restante.  <a href="#a583443349c24d2d50cb1980b4f864eb0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6b2821722924ec3b4590d85a64d385fe">fin_combat</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $degats=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#a6b2821722924ec3b4590d85a64d385fe"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a175178ea39c1006266f438b897bae5c3">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour le défenseur.  <a href="#a175178ea39c1006266f438b897bae5c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0807212878a9d207076c80065fa1858d">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$<a class="el" href="classroyaume.html">royaume</a>, $<a class="el" href="classpet.html">pet</a>, $degats, $<a class="el" href="classbatiment.html">batiment</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour le défenseur.  <a href="#a0807212878a9d207076c80065fa1858d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a492da547fa064a452ffd6876468229b6">get_action</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé.  <a href="#a492da547fa064a452ffd6876468229b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af6acdf1c8abc2d7720e31d375cb8f836">get_comp_att</a> ()</td></tr>
@@ -191,6 +193,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel toucher physique.  <a href="#a3250a12c51b795318448670b16fff47d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a07d9473fe4dfd2a7943bc3d2cdf3fb79">get_reserve</a> ($base=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la réserve de mana.  <a href="#a07d9473fe4dfd2a7943bc3d2cdf3fb79"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#addfd5983cd179c29dfb120a0e0d76040">get_rm_restant</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la réserve de mana.  <a href="#addfd5983cd179c29dfb120a0e0d76040"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa18e1b1e4fa26beec8a9dd79187ce5b5">init_round</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise l'objet pour un nouveau round de <a class="el" href="classcombat.html">combat</a>.  <a href="#aa18e1b1e4fa26beec8a9dd79187ce5b5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0fa0f72426b9c48014c88690c92452fc">set_comp_att</a> ($valeur)</td></tr>
@@ -201,6 +205,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#aa2727a6b9a2fdefabdf06b2a57501332"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a91119512c63d3591957ea58cfcbf5c7d">set_reserve</a> ($valeur)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la réserve de mana.  <a href="#a91119512c63d3591957ea58cfcbf5c7d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae0f1704b8131773df59b8a520c9d2dc1">set_rm_restant</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la réserve de mana.  <a href="#ae0f1704b8131773df59b8a520c9d2dc1"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Sorts, compétences &amp; buffs</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpbb317c890da011222af6452938be354f"></a>Données et méthodes ayant trait aux sorts et compétences de <a class="el" href="classcombat.html">combat</a> et hors <a class="el" href="classcombat.html">combat</a>.</p>
 <p>Ainsi que les buffs et débuffs du actifs sur l'entité. </p>
@@ -210,15 +216,15 @@ Graphe de collaboration de entite:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3142078b1b447809a3aa63f5c7a06af7">$buff</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Buffs &amp; débuffs actifs sur le personnage.  <a href="#a3142078b1b447809a3aa63f5c7a06af7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aae8e8681d427c55fb8dfc5b451069348">add_buff</a> ($nom, $effet, $effet2=0)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute un <a class="el" href="classbuff.html">buff</a>.  <a href="#aae8e8681d427c55fb8dfc5b451069348"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>.  <a href="#aae8e8681d427c55fb8dfc5b451069348"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aed45d22bb625cd6260cbd735c62b8ae6">get_buff</a> ($nom=false, $champ=false, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci.  <a href="#aed45d22bb625cd6260cbd735c62b8ae6"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie une propriété d'un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci.  <a href="#aed45d22bb625cd6260cbd735c62b8ae6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a09ee5bc28a4a40a5bc2f697f96aa3a15">get_buff_only</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie un tableau contenant uniqument les buffs (c'est-à-dire sans les débuffs).  <a href="#a09ee5bc28a4a40a5bc2f697f96aa3a15"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a225099bd3284b916049d8b8588f95399">is_buff</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html">buff</a> nom.  <a href="#a225099bd3284b916049d8b8588f95399"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom.  <a href="#a225099bd3284b916049d8b8588f95399"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af43179a81b452402e86236617178622c">supprime_buff</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime un <a class="el" href="classbuff.html">buff</a>.  <a href="#af43179a81b452402e86236617178622c"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>.  <a href="#af43179a81b452402e86236617178622c"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Les achievements</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpd50c84fb738c633a4599af35845cc9a3"></a>Gestion des achievements </p>
 <br/><br/></td></tr>
@@ -417,10 +423,10 @@ Graphe de collaboration de entite:</div>
 </div>
 <div class="memdoc">
 
-<p>Ajoute un <a class="el" href="classbuff.html">buff</a>. </p>
+<p>Ajoute un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom du <a class="el" href="classbuff.html">buff</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$effet</em>&nbsp;</td><td>Effet principal </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$effet</em>&nbsp;</td><td>Effet secondaire </td></tr>
   </table>
@@ -432,7 +438,6 @@ Graphe de collaboration de entite:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_aae8e8681d427c55fb8dfc5b451069348_cgraph.png" border="0" usemap="#classentite_aae8e8681d427c55fb8dfc5b451069348_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -480,7 +485,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a10646a5407cc0a2696b665fb6cc76be5_icgraph.png" border="0" usemap="#classentite_a10646a5407cc0a2696b665fb6cc76be5_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -585,11 +589,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>. </p>
 
-<p>Réimplémentée dans <a class="el" href="classentite__cap.html#ab0f8bd68e121875e810cef1c1e479561">entite_cap</a>, <a class="el" href="classentitenj.html#aa0fc2e00155319dcaf67d78d9bbeb84b">entitenj</a>, et <a class="el" href="classperso.html#a23b7acc8f993b3df76f16ee44e98489b">perso</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classentitenj.html#aa0fc2e00155319dcaf67d78d9bbeb84b">entitenj</a>, et <a class="el" href="classperso.html#a23b7acc8f993b3df76f16ee44e98489b">perso</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a175178ea39c1006266f438b897bae5c3"></a><!-- doxytag: member="entite::fin_defense" ref="a175178ea39c1006266f438b897bae5c3" args="(&amp;$perso)" -->
+<a class="anchor" id="a0807212878a9d207076c80065fa1858d"></a><!-- doxytag: member="entite::fin_defense" ref="a0807212878a9d207076c80065fa1858d" args="(&amp;$perso, &amp;$royaume, $pet, $degats, $batiment)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -597,15 +601,44 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">entite::fin_defense </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>perso</em></td>
-          <td>&nbsp;)&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>royaume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>pet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>degats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>batiment</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour le défenseur. </p>
+
+<p>Réimplémentée dans <a class="el" href="classentitenj.html#afd54b0f24db06f6837c519df0ebed67b">entitenj</a>, et <a class="el" href="classperso.html#ad4e212c271eb8dc04bf15de37969e2a0">perso</a>.</p>
 
 </div>
 </div>
@@ -690,7 +723,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_aca75a951cd404b2e2109e73f4987542f_icgraph.png" border="0" usemap="#classentite_aca75a951cd404b2e2109e73f4987542f_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -776,7 +808,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_ab3daf9359c8f2583f644e1a741d542bd_cgraph.png" border="0" usemap="#classentite_ab3daf9359c8f2583f644e1a741d542bd_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -813,12 +844,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Renvoie une propriété d'un <a class="el" href="classbuff.html">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci. </p>
+<p>Renvoie une propriété d'un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom (type) du (dé)<a class="el" href="classbuff.html">buff</a> recherché, renvoie tous les buffs actifs si vaut false. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>Nom (type) du (dé)<a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> recherché, renvoie tous les buffs actifs si vaut false. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$champ</em>&nbsp;</td><td>Propriété recherchée (correspond à un champ dans la bdd). </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Si false on prend le premier <a class="el" href="classbuff.html">buff</a>, si true celui dont le type correspond à $nom. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Si false on prend le premier <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>, si true celui dont le type correspond à $nom. </td></tr>
   </table>
   </dd>
 </dl>
@@ -829,7 +860,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph.png" border="0" usemap="#classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -855,7 +885,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a09ee5bc28a4a40a5bc2f697f96aa3a15_cgraph.png" border="0" usemap="#classentite_a09ee5bc28a4a40a5bc2f697f96aa3a15_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -998,7 +1027,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_adf93b88455a50bda430b2e2d8d2b4a82_icgraph.png" border="0" usemap="#classentite_adf93b88455a50bda430b2e2d8d2b4a82_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1024,7 +1052,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a8356c39545eccfc52941cd16a5a347b2_icgraph.png" border="0" usemap="#classentite_a8356c39545eccfc52941cd16a5a347b2_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1109,7 +1136,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a1f33edc71552e2e40705f861faff0c73_icgraph.png" border="0" usemap="#classentite_a1f33edc71552e2e40705f861faff0c73_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1135,7 +1161,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a057737bbdf2ebe3a3bac727e63ce6c6b_icgraph.png" border="0" usemap="#classentite_a057737bbdf2ebe3a3bac727e63ce6c6b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1180,7 +1205,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph.png" border="0" usemap="#classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1269,7 +1293,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_aedf08b50782ac15602a33262c3acb391_cgraph.png" border="0" usemap="#classentite_aedf08b50782ac15602a33262c3acb391_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1362,7 +1385,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a5c77dd23213cbbdff96c1944792fa377_icgraph.png" border="0" usemap="#classentite_a5c77dd23213cbbdff96c1944792fa377_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1388,7 +1410,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a996e5143659e5f4add73d86183b0c48b_icgraph.png" border="0" usemap="#classentite_a996e5143659e5f4add73d86183b0c48b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1431,6 +1452,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie le niveau de l'entité. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -1517,7 +1544,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a1b9b7ab89988866c601da83f57ba795a_icgraph.png" border="0" usemap="#classentite_a1b9b7ab89988866c601da83f57ba795a_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1562,7 +1588,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a4f3e709130c00181e01ee424ecbc2c76_icgraph.png" border="0" usemap="#classentite_a4f3e709130c00181e01ee424ecbc2c76_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1647,14 +1672,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a9b8852c45a6e451ea772759c6b1c3871_cgraph.png" border="0" usemap="#classentite_a9b8852c45a6e451ea772759c6b1c3871_cgraph_map" alt=""></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a9b8852c45a6e451ea772759c6b1c3871_icgraph.png" border="0" usemap="#classentite_a9b8852c45a6e451ea772759c6b1c3871_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1687,7 +1710,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_adf515065d5ea697ddc5069963114a95c_cgraph.png" border="0" usemap="#classentite_adf515065d5ea697ddc5069963114a95c_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1713,7 +1735,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a3250a12c51b795318448670b16fff47d_cgraph.png" border="0" usemap="#classentite_a3250a12c51b795318448670b16fff47d_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1758,7 +1779,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_aa1ee64c6263935df75c8f8f04fe3feec_icgraph.png" border="0" usemap="#classentite_aa1ee64c6263935df75c8f8f04fe3feec_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1784,7 +1804,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a1a12fcd2dbb967f145f1a33f09fd9971_icgraph.png" border="0" usemap="#classentite_a1a12fcd2dbb967f145f1a33f09fd9971_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1868,6 +1887,25 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Renvoie la réserve de mana. </p>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#ac3d1a0c3d0059fefc85a5a53768df564">perso</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="addfd5983cd179c29dfb120a0e0d76040"></a><!-- doxytag: member="entite::get_rm_restant" ref="addfd5983cd179c29dfb120a0e0d76040" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_rm_restant </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la réserve de mana. </p>
 
 </div>
 </div>
@@ -2030,7 +2068,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_ac323c4d3d3781f94638c9be95be5e894_icgraph.png" border="0" usemap="#classentite_ac323c4d3d3781f94638c9be95be5e894_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2128,22 +2165,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html">buff</a> nom. </p>
+<p>Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>le nom du <a class="el" href="classbuff.html">buff</a> </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>si le nom est le type du <a class="el" href="classbuff.html">buff</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>le nom du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>si le nom est le type du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>true si le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> est sous le <a class="el" href="classbuff.html">buff</a> false sinon. </dd></dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>true si le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> false sinon. </dd></dl>
 
 <p>Réimplémentée dans <a class="el" href="classperso.html#a272f76c038a24e1e3026d1f47e5afd63">perso</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a225099bd3284b916049d8b8588f95399_icgraph.png" border="0" usemap="#classentite_a225099bd3284b916049d8b8588f95399_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2437,6 +2473,26 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="ae0f1704b8131773df59b8a520c9d2dc1"></a><!-- doxytag: member="entite::set_rm_restant" ref="ae0f1704b8131773df59b8a520c9d2dc1" args="($valeur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::set_rm_restant </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>valeur</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie la réserve de mana. </p>
+
+</div>
+</div>
 <a class="anchor" id="a9ab0e1dde991a4d9dcb4303625061321"></a><!-- doxytag: member="entite::set_volonte" ref="a9ab0e1dde991a4d9dcb4303625061321" args="($volonte)" -->
 <div class="memitem">
 <div class="memproto">
@@ -2475,10 +2531,10 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Supprime un <a class="el" href="classbuff.html">buff</a>. </p>
+<p>Supprime un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>id du <a class="el" href="classbuff.html">buff</a>. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>id du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2486,7 +2542,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_af43179a81b452402e86236617178622c_cgraph.png" border="0" usemap="#classentite_af43179a81b452402e86236617178622c_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -3075,6 +3130,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a583443349c24d2d50cb1980b4f864eb0"></a><!-- doxytag: member="entite::$rm_restant" ref="a583443349c24d2d50cb1980b4f864eb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::$rm_restant</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Réserve de mana restante. </p>
+
+</div>
+</div>
 <a class="anchor" id="a3ab36c0b2c1675fa24e6e58729ed5b58"></a><!-- doxytag: member="entite::$saved_inventaire" ref="a3ab36c0b2c1675fa24e6e58729ed5b58" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -3125,7 +3195,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">entite::$sort_vie<code> [protected]</code></td>
+          <td class="memname">entite::$<a class="el" href="classsort__vie.html">sort_vie</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -3181,7 +3251,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:35 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Thu Mar 8 14:10:46 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

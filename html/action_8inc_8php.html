@@ -43,7 +43,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a03d5a809119b3b4bacc24f59ae41a5f8">lance_comp</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $acteur, &amp;$effects)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Utilise une compétence.  <a href="#a03d5a809119b3b4bacc24f59ae41a5f8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#ade8488be9c61e8ae3aa296f8edac0d9f">lance_sort</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $acteur, &amp;$effects)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un sort lors d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#ade8488be9c61e8ae3aa296f8edac0d9f"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> lors d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#ade8488be9c61e8ae3aa296f8edac0d9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a027c7068b4766ffccc1b02d1a15d96d0">projection</a> (&amp;$actif, &amp;$passif, $effet)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#afab8ed8f21d2300e7050803fd135bc35">script_action</a> ($joueur, $ennemi, $mode, &amp;$effects)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'action a effectuer, si le personnage peut en faire une.  <a href="#afab8ed8f21d2300e7050803fd135bc35"></a><br/></td></tr>
@@ -93,7 +93,6 @@
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_afa6728855931f0feb1a5ee09e5a97c08_icgraph.png" border="0" usemap="#action_8inc_8php_afa6728855931f0feb1a5ee09e5a97c08_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -145,7 +144,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a2a9c1e5a32314f87eec36f89a72a9a2e_icgraph.png" border="0" usemap="#action_8inc_8php_a2a9c1e5a32314f87eec36f89a72a9a2e_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -170,7 +168,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a0e3e3226a83e9a4a2de6e8ada6a62fdb_icgraph.png" border="0" usemap="#action_8inc_8php_a0e3e3226a83e9a4a2de6e8ada6a62fdb_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -198,7 +195,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_aabbb250b0c79b0ef7ce8aefc83b026b6_icgraph.png" border="0" usemap="#action_8inc_8php_aabbb250b0c79b0ef7ce8aefc83b026b6_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -249,7 +245,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a03d5a809119b3b4bacc24f59ae41a5f8_cgraph.png" border="0" usemap="#action_8inc_8php_a03d5a809119b3b4bacc24f59ae41a5f8_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -286,22 +281,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Lance un sort lors d'un <a class="el" href="classcombat.html">combat</a>. </p>
-<p>Effectuer les jets de lancer et toucher, plus éventuellement le troisième jet pour les effets s'il y en a un. Si le sort est réussi, retire la RM et applique les dégâts et/ou enregistre les effets.</p>
+<p>Lance un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> lors d'un <a class="el" href="classcombat.html">combat</a>. </p>
+<p>Effectuer les jets de lancer et toucher, plus éventuellement le troisième jet pour les effets s'il y en a un. Si le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> est réussi, retire la RM et applique les dégâts et/ou enregistre les effets.</p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>ID du sort. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$id</em>&nbsp;</td><td>ID du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$acteur</em>&nbsp;</td><td>indique si l'acteur de l'action est l'attaquant ('attaquant') ou le défenseur. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>liste des effets.</td></tr>
   </table>
   </dd>
 </dl>
-<p>return Compétence de magie associée au sort. </p>
+<p>return Compétence de magie associée au <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>. </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_ade8488be9c61e8ae3aa296f8edac0d9f_cgraph.png" border="0" usemap="#action_8inc_8php_ade8488be9c61e8ae3aa296f8edac0d9f_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -341,14 +335,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a027c7068b4766ffccc1b02d1a15d96d0_cgraph.png" border="0" usemap="#action_8inc_8php_a027c7068b4766ffccc1b02d1a15d96d0_cgraph_map" alt=""></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a027c7068b4766ffccc1b02d1a15d96d0_icgraph.png" border="0" usemap="#action_8inc_8php_a027c7068b4766ffccc1b02d1a15d96d0_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -402,16 +394,15 @@ Voici le graphe d'appel pour cette fonction :</div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un sort, "lance_comp" pour une compétence, "attaque" pour une attaque simple, "" si le personnage ne peut pas effectuer d'action </dd>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, "lance_comp" pour une compétence, "attaque" pour une attaque simple, "" si le personnage ne peut pas effectuer d'action </dd>
 <dd>
-[1] ID d la compétence ou du sort. </dd>
+[1] ID d la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>. </dd>
 <dd>
 [2] Pesonnage (paramètre $joueur auquel on a incrémenté le compteur d'utilisation de l'action à effectuer). </dd></dl>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_afab8ed8f21d2300e7050803fd135bc35_cgraph.png" border="0" usemap="#action_8inc_8php_afab8ed8f21d2300e7050803fd135bc35_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -465,23 +456,21 @@ Voici le graphe d'appel pour cette fonction :</div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un sort, "lance_comp" pour une compétence, "attaque" pour une attaque simple, "" si le personnage ne peut pas effectuer d'action </dd>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, "lance_comp" pour une compétence, "attaque" pour une attaque simple, "" si le personnage ne peut pas effectuer d'action </dd>
 <dd>
-[1] ID d la compétence ou du sort. </dd>
+[1] ID d la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>. </dd>
 <dd>
 [2] Pesonnage (paramètre $joueur auquel on a incrémenté le compteur d'utilisation de l'action à effectuer). </dd></dl>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_cgraph.png" border="0" usemap="#action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_cgraph_map" alt=""></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_icgraph.png" border="0" usemap="#action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -521,14 +510,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_ab84cf53d0ede5c02935eeb584d196233_icgraph.png" border="0" usemap="#action_8inc_8php_ab84cf53d0ede5c02935eeb584d196233_icgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:08 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Thu Mar 8 14:08:21 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

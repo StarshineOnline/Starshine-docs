@@ -144,6 +144,7 @@
   <tr class="memlist"><td><a class="el" href="classperso.html#a4354dfa51af1f6433035c6bd42d5bac1">$reputation</a></td><td><a class="el" href="classperso.html">perso</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#abe497187858249e18d3c4139d2c30fec">$reserve</a></td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a8af78dc03401240c569e8cbea9a1d486">$reserve_bonus</a></td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentite.html#a583443349c24d2d50cb1980b4f864eb0">$rm_restant</a></td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a3ab36c0b2c1675fa24e6e58729ed5b58">$saved_inventaire</a></td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a7675fac7c4391aa455eb7b6f21725ed2">$share_xp</a></td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#ac753813265b8b0bab07a286b74ece0ed">$sort_combat</a></td><td><a class="el" href="classperso.html">perso</a></td><td><code> [private]</code></td></tr>
@@ -186,12 +187,14 @@
   <tr class="memlist"><td><a class="el" href="classperso.html#ad960dd6b58cec4c04e357f0f198d3502">check_sort_combat_connu</a>($id)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a0e246f321815c32ee545dc3f11fdd42e">check_sort_jeu_connu</a>($id)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a2f5f79c381b6216dd206f72678d61155">create</a>($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td><td><a class="el" href="classperso.html">perso</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classtable.html#a3bb90a555a9ab00e0e03f54d3b0b6650">entite::create</a>($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false, $key_unique=false)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a65620372dca61d2d6ac635deb73ca2b2">desequip</a>($type, $pet=false)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a312855eddfab87719a49204d82cc5fd8">dump</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a8ed471d9c7a7015c737043fc96c6289e">equip_objet</a>($objet, $pet=false)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#aeb752128374fdae787392389a25ebf29">factory</a>($type, &amp;$src, $perso=null, $attaquant=true, $adversaire=null)</td><td><a class="el" href="classentite.html">entite</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a23b7acc8f993b3df76f16ee44e98489b">fin_combat</a>(&amp;$perso, $degats=null)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classentite.html#a175178ea39c1006266f438b897bae5c3">fin_defense</a>(&amp;$perso)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classperso.html#a3488916d1f8020a5b6aeb3e769a3f9e9">fin_combat_pvp</a>($ennemi, $defense, $batiment=false)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classperso.html#ad4e212c271eb8dc04bf15de37969e2a0">fin_defense</a>(&amp;$perso, &amp;$royaume, $pet, $degats, $batiment)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#a62a383a174d4c523bf9445dea4549e82">gen_create</a>($classe, $table, $cond, $keys=false)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a57a6391803b85ba8e1819696308814d1">get_accessoire</a>()</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#aab849f5b021cac21dd62b206f4eac98d">get_achievement</a>()</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
@@ -336,6 +339,7 @@
   <tr class="memlist"><td><a class="el" href="classperso.html#ad42be8ab5b30a6f53163e51ce3d0235d">get_reputation</a>()</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#ac3d1a0c3d0059fefc85a5a53768df564">get_reserve</a>($base=false)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#ae4d00ac829dbbce7483f2dcda55f0446">get_reserve_bonus</a>()</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentite.html#addfd5983cd179c29dfb120a0e0d76040">get_rm_restant</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a3e838d78e9ee42075487db760fb2d2b3">get_sort_combat</a>()</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a506b9852322640f459389c1d2e753494">get_sort_element</a>($base=false)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a9bc9d27875f23959c4f66e803a16e7bf">entite::get_sort_element</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
@@ -458,6 +462,7 @@
   <tr class="memlist"><td><a class="el" href="classperso.html#a026915476da8bd3144dd1ed4fdeeb834">set_regen_hp</a>($regen_hp)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#acb25aef8f2b77a20c7dcbe6c2741f4b9">set_reputation</a>($reputation)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a91119512c63d3591957ea58cfcbf5c7d">set_reserve</a>($valeur)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentite.html#ae0f1704b8131773df59b8a520c9d2dc1">set_rm_restant</a>($valeur)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a795bf3c2c2cf16f994a1a9b174e0ddbe">set_sort_combat</a>($sort_combat)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a746f6a7f880a6c3fc78a67580b527c5a">set_sort_element</a>($sort_element)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#a884d440baa3ede5d9912998d93fbc7a3">set_sort_jeu</a>($sort_jeu)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
@@ -479,7 +484,7 @@
   <tr class="memlist"><td><a class="el" href="classperso.html#a96e29f5c80dd91d3903ec0dc6621f8df">trigger_arene</a>()</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classperso.html#ac74f6de685b3cbca2bdd85a19c048755">unlock_achiev</a>($variable, $hide_message=false)</td><td><a class="el" href="classperso.html">perso</a></td><td></td></tr>
 </table></div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:54 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Thu Mar 8 14:12:26 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

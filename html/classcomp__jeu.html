@@ -28,25 +28,52 @@
   </div>
 </div>
 <div class="contents">
-<h1>Référence de la classe comp_jeu</h1><!-- doxytag: class="comp_jeu" --><!-- doxytag: inherits="comp_jeu_db" --><div class="dynheader">
+<h1>Référence de la classe comp_jeu</h1><!-- doxytag: class="comp_jeu" --><!-- doxytag: inherits="comp" -->
+<p>Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> servant de base aux compétences hors <a class="el" href="classcombat.html">combat</a>.  
+<a href="#_details">Plus de détails...</a></p>
+<div class="dynheader">
 Graphe d'héritage de comp_jeu:</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__jeu__inherit__graph.png" border="0" usemap="#comp__jeu_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de comp_jeu:</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__jeu__coll__graph.png" border="0" usemap="#comp__jeu_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classcomp__jeu-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#ab1177c093b4c233d6713c54c7d0d7987">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $nom= '', $description= '', $mp= '', $pa= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $comp_assoc= '', $carac_assoc= '', $carac_requis= '', $comp_requis= '', $arme_requis= '', $effet= '', $effet2= '', $duree= '', $cible= '', $requis= '', $prix= '', $lvl_batiment= '')</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#ab1177c093b4c233d6713c54c7d0d7987"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a8401afa81dd3a97e0abc8ce8aa201f66">lance</a> ($<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation de la compétence.  <a href="#a8401afa81dd3a97e0abc8ce8aa201f66"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrp9c2ff6d0683497ad43281c742be15d58"></a>Donnée et méthode sur les inforamations "générales" : type, niveau, … </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a646deaab039cdeaef20fd4f2e4cd41fc">$pa</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Coût en PA de la compétence.  <a href="#a646deaab039cdeaef20fd4f2e4cd41fc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a0a9b98a22e32ddff2b657c2c54f2ec51">get_pa</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût de la comptétence.  <a href="#a0a9b98a22e32ddff2b657c2c54f2ec51"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#ad86bca954d5715376b74ab55dfe76a0a">set_pa</a> ($pa)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le coût de la comptétence.  <a href="#ad86bca954d5715376b74ab55dfe76a0a"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a8571bb95d91be2f33bc4805fe5406232">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $nom='', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0, $arme_requis='', $pa=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a8571bb95d91be2f33bc4805fe5406232"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a06e52a548cff855105558616cf621841">get_liste_champs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a06e52a548cff855105558616cf621841"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a236e88cc9bf8bec02c2169c373aeec95">get_liste_update</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base.  <a href="#a236e88cc9bf8bec02c2169c373aeec95"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a991fa0266565e6767721b5c2fb202818">get_valeurs_insert</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des valeurs des champspour une insertion dans la base.  <a href="#a991fa0266565e6767721b5c2fb202818"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a71320327cb1f401164ce83417e7cd612">init_tab</a> ($vals)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise les données membres à l'aide d'un tableau.  <a href="#a71320327cb1f401164ce83417e7cd612"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__jeu.html#a39500764fe8cb62616e82077ddc99a25">factory</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode créant l'objet adéquat à partir d'un élément de la base de donnée.  <a href="#a39500764fe8cb62616e82077ddc99a25"></a><br/></td></tr>
 </table>
+<hr/><a name="_details"></a><h2>Description détaillée</h2>
+<p>Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> servant de base aux compétences hors <a class="el" href="classcombat.html">combat</a>. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="ab1177c093b4c233d6713c54c7d0d7987"></a><!-- doxytag: member="comp_jeu::__construct" ref="ab1177c093b4c233d6713c54c7d0d7987" args="($id=0, $nom= '', $description= '', $mp= '', $pa= '', $type= '', $comp_assoc= '', $carac_assoc= '', $carac_requis= '', $comp_requis= '', $arme_requis= '', $effet= '', $effet2= '', $duree= '', $cible= '', $requis= '', $prix= '', $lvl_batiment= '')" -->
+<a class="anchor" id="a8571bb95d91be2f33bc4805fe5406232"></a><!-- doxytag: member="comp_jeu::__construct" ref="a8571bb95d91be2f33bc4805fe5406232" args="($id=0, $nom='', $type='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0, $arme_requis='', $pa=0)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -66,25 +93,19 @@ Graphe de collaboration de comp_jeu:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>description</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>mp</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>pa</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
           <td class="paramname"> <em>type</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>duree</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -102,13 +123,55 @@ Graphe de collaboration de comp_jeu:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>carac_requis</em> = <code>''</code>, </td>
+          <td class="paramname"> <em>comp_requis</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>comp_requis</em> = <code>''</code>, </td>
+          <td class="paramname"> <em>carac_requis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet2</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>requis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cible</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>description</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>prix</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>lvl_batiment</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -120,43 +183,7 @@ Graphe de collaboration de comp_jeu:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>effet</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>effet2</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>duree</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>cible</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>requis</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>prix</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>lvl_batiment</em> = <code>''</code></td><td>&nbsp;</td>
+          <td class="paramname"> <em>pa</em> = <code>0</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -167,38 +194,246 @@ Graphe de collaboration de comp_jeu:</div>
 </div>
 <div class="memdoc">
 
-<p>public </p>
+<p>Constructeur. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>id attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>nom attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td>description attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(8)</em>&nbsp;</td><td>mp attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>tinyint(3)</em>&nbsp;</td><td>pa attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>type attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>comp_assoc attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>carac_assoc attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(9)</em>&nbsp;</td><td>carac_requis attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>mediumint(9)</em>&nbsp;</td><td>comp_requis attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>arme_requis attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>varchar(50)</em>&nbsp;</td><td>effet attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>tinyint(3)</em>&nbsp;</td><td>effet2 attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>int(10)</em>&nbsp;</td><td>duree attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>tinyint(4)</em>&nbsp;</td><td>cible attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td>requis attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>int(11)</em>&nbsp;</td><td>prix attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>tinyint(3)</em>&nbsp;</td><td>lvl_batiment attribut </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>Id dans la base de donnée ou tableau associatif contenant les informations permettant la création de l'objet </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>Type générique. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>effet</em>&nbsp;</td><td>Effet principal. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>duree</em>&nbsp;</td><td>Durée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>comp_assoc</em>&nbsp;</td><td>Compétence associée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>carac_assoc</em>&nbsp;</td><td>Caractéristique associée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>comp_requis</em>&nbsp;</td><td>Requis dans la compétence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>carac_requis</em>&nbsp;</td><td>Requis dans la caractéristique (inutilisé) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>effet2</em>&nbsp;</td><td>Deuxième effet </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>requis</em>&nbsp;</td><td>Compétence ou <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> requis pour apprendre celui-ci </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cible</em>&nbsp;</td><td>Cible de la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>description</em>&nbsp;</td><td>Description du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mp</em>&nbsp;</td><td>Coût en MP ou en RM </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>prix</em>&nbsp;</td><td>Prix de la compétence ou le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lvl_batiment</em>&nbsp;</td><td>Niveau de l'école qui vent la compétence ou le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>arme_requis</em>&nbsp;</td><td><a class="el" href="class_arme.html">Arme</a> requise pour utiliser la compétence </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>none </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classcomp__jeu__db.html#a7d5a7355e0306bf8abd6d44b711aa310">comp_jeu_db</a>.</p>
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a39500764fe8cb62616e82077ddc99a25"></a><!-- doxytag: member="comp_jeu::factory" ref="a39500764fe8cb62616e82077ddc99a25" args="($id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static comp_jeu::factory </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>id</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode créant l'objet adéquat à partir d'un élément de la base de donnée. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id de la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> dans la base de donnée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a06e52a548cff855105558616cf621841"></a><!-- doxytag: member="comp_jeu::get_liste_champs" ref="a06e52a548cff855105558616cf621841" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::get_liste_champs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs pour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#afc30b66ce12c4818e2747aacfca36f21">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a236e88cc9bf8bec02c2169c373aeec95"></a><!-- doxytag: member="comp_jeu::get_liste_update" ref="a236e88cc9bf8bec02c2169c373aeec95" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::get_liste_update </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#abc25aaf5bda6aec6793a1cc32de87dc2">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a9b98a22e32ddff2b657c2c54f2ec51"></a><!-- doxytag: member="comp_jeu::get_pa" ref="a0a9b98a22e32ddff2b657c2c54f2ec51" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::get_pa </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût de la comptétence. </p>
+
+</div>
+</div>
+<a class="anchor" id="a991fa0266565e6767721b5c2fb202818"></a><!-- doxytag: member="comp_jeu::get_valeurs_insert" ref="a991fa0266565e6767721b5c2fb202818" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::get_valeurs_insert </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des valeurs des champspour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#a273ad60900ead32b8c62f8459a59aa58">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71320327cb1f401164ce83417e7cd612"></a><!-- doxytag: member="comp_jeu::init_tab" ref="a71320327cb1f401164ce83417e7cd612" args="($vals)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::init_tab </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>vals</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialise les données membres à l'aide d'un tableau. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>array</em>&nbsp;</td><td>$vals Tableau contenant les valeurs des données. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#a91e8599eec335519ba1985133217324a">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8401afa81dd3a97e0abc8ce8aa201f66"></a><!-- doxytag: member="comp_jeu::lance" ref="a8401afa81dd3a97e0abc8ce8aa201f66" args="($perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::lance </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode gérant l'utilisation de la compétence. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$perso</em>&nbsp;</td><td>Personnage lançant la coméptence </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="classcomp__preparation__camp.html#aa6d78bab8b3106233f9660e1069973a0">comp_preparation_camp</a>, <a class="el" href="classcomp__repos__interieur.html#a971d5cc2afa0ef6bd76bd8504e4278f3">comp_repos_interieur</a>, <a class="el" href="classcomp__esprit__libre.html#a518ddf4a3d84394e93e592a7a37508ec">comp_esprit_libre</a>, <a class="el" href="classcomp__invocation__pet.html#adb1077dbfa8c2554de31b3c034469db7">comp_invocation_pet</a>, et <a class="el" href="classcomp__sabotage.html#afc77618c228ebe5c295903a776f7cf0a">comp_sabotage</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad86bca954d5715376b74ab55dfe76a0a"></a><!-- doxytag: member="comp_jeu::set_pa" ref="ad86bca954d5715376b74ab55dfe76a0a" args="($pa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::set_pa </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>pa</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le coût de la comptétence. </p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a646deaab039cdeaef20fd4f2e4cd41fc"></a><!-- doxytag: member="comp_jeu::$pa" ref="a646deaab039cdeaef20fd4f2e4cd41fc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_jeu::$pa<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Coût en PA de la compétence. </p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:30 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Thu Mar 8 14:10:17 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

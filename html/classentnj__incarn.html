@@ -43,6 +43,8 @@ Graphe de collaboration de entnj_incarn:</div>
 <p><a href="classentnj__incarn-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#adb680d473603542ac3852bbc83bf016a">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$<a class="el" href="classroyaume.html">royaume</a>, $<a class="el" href="classpet.html">pet</a>, $degats, &amp;$def)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour le défenseur.  <a href="#adb680d473603542ac3852bbc83bf016a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#abb8d52c866e7ce2e256c8bf1a32b96d5">get_action</a> ($attaquant)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le script d'action.  <a href="#abb8d52c866e7ce2e256c8bf1a32b96d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#a28f98d7a026f9b7a63b71a698800ee11">get_arme_degat</a> ($main=false)</td></tr>
@@ -150,6 +152,55 @@ Graphe de collaboration de entnj_incarn:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="adb680d473603542ac3852bbc83bf016a"></a><!-- doxytag: member="entnj_incarn::fin_defense" ref="adb680d473603542ac3852bbc83bf016a" args="(&amp;$perso, &amp;$royaume, $pet, $degats, &amp;$def)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entnj_incarn::fin_defense </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>royaume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>pet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>degats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>def</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour le défenseur. </p>
+
+<p>Réimplémentée dans <a class="el" href="classmap__monstre.html#ac872d34ad8f524edd64e4f68c37e47c2">map_monstre</a>, et <a class="el" href="classpet.html#ac1e52c8a9fa478c38b3c37a4920886ba">pet</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abb8d52c866e7ce2e256c8bf1a32b96d5"></a><!-- doxytag: member="entnj_incarn::get_action" ref="abb8d52c866e7ce2e256c8bf1a32b96d5" args="($attaquant)" -->
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +349,7 @@ Graphe de collaboration de entnj_incarn:</div>
 
 <p>Renvoie le coefficient pour modifier les caractéristique. </p>
 
-<p>Réimplémentée dans <a class="el" href="classplacement.html#ac0faca67ad8c09e97fab253c82409235">placement</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classarme__siege.html#a5cc30f5c500b902d38fbe4cf65949c63">arme_siege</a>, et <a class="el" href="classplacement.html#ac0faca67ad8c09e97fab253c82409235">placement</a>.</p>
 
 </div>
 </div>
@@ -320,7 +371,7 @@ Graphe de collaboration de entnj_incarn:</div>
 
 <p>Renvoie le coefficient pour modifier les compétences. </p>
 
-<p>Réimplémentée dans <a class="el" href="classarme__siege.html#a76fb917b59f914fb6ed9ae87cdee04f5">arme_siege</a>, et <a class="el" href="classplacement.html#af63fd5879b04fbe98adefcee89691d4b">placement</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classarme__siege.html#a76fb917b59f914fb6ed9ae87cdee04f5">arme_siege</a>, <a class="el" href="classpet.html#a1a392ac545e8a2b4ba31d52c2a5591c2">pet</a>, et <a class="el" href="classplacement.html#af63fd5879b04fbe98adefcee89691d4b">placement</a>.</p>
 
 </div>
 </div>
@@ -382,6 +433,12 @@ Graphe de collaboration de entnj_incarn:</div>
 <div class="memdoc">
 
 <p>Renvoie les HP actuels. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -552,6 +609,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Modifie les HP actuels. </p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
 </div>
 </div>
 <hr/><h2>Documentation des données membres</h2>
@@ -571,7 +634,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:38 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Thu Mar 8 14:10:54 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

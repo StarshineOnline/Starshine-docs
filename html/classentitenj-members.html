@@ -73,6 +73,7 @@
   <tr class="memlist"><td><a class="el" href="classentite.html#a7008430f1f0452768e243aa014b16fff">$race</a></td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a9369d9339ea1ef0f8f36a0e9e4edfbbb">$rang_royaume</a></td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#abe497187858249e18d3c4139d2c30fec">$reserve</a></td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentite.html#a583443349c24d2d50cb1980b4f864eb0">$rm_restant</a></td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a3ab36c0b2c1675fa24e6e58729ed5b58">$saved_inventaire</a></td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#ae3aa3789e3d5a283c00510d6c19ae6c1">$sort_element</a></td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a07e5cd6b4dd7e558802d8919083cdd12">$sort_mort</a></td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
@@ -89,11 +90,11 @@
   <tr class="memlist"><td><a class="el" href="classentite.html#a552a33898107d1f1d96708bda58447a5">add_hp</a>($add_hp)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a10646a5407cc0a2696b665fb6cc76be5">bouclier</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#a7d6d73070a80d26ca62b6314636b8423">charger</a>($id)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [protected]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classtable.html#aaa82f5010fe9fa36793b6a6937c2a676">create</a>($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classtable.html#a3bb90a555a9ab00e0e03f54d3b0b6650">create</a>($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false, $key_unique=false)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a312855eddfab87719a49204d82cc5fd8">dump</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#aeb752128374fdae787392389a25ebf29">factory</a>($type, &amp;$src, $perso=null, $attaquant=true, $adversaire=null)</td><td><a class="el" href="classentite.html">entite</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentitenj.html#aa0fc2e00155319dcaf67d78d9bbeb84b">fin_combat</a>(&amp;$perso, $degats=null)</td><td><a class="el" href="classentitenj.html">entitenj</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classentite.html#a175178ea39c1006266f438b897bae5c3">fin_defense</a>(&amp;$perso)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentitenj.html#afd54b0f24db06f6837c519df0ebed67b">fin_defense</a>(&amp;$perso, &amp;$royaume, $pet, $degats, $batiment)</td><td><a class="el" href="classentitenj.html">entitenj</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#a62a383a174d4c523bf9445dea4549e82">gen_create</a>($classe, $table, $cond, $keys=false)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a492da547fa064a452ffd6876468229b6">get_action</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#af90ef7f64b5dc739e3cf8de98607f795">get_arme</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
@@ -152,12 +153,14 @@
   <tr class="memlist"><td><a class="el" href="classentite.html#ab19a796a0679c7a80243280f1dd20bc8">get_rang_royaume</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a1999c0991d3f993ae913a44ba3643787">get_reputation</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a07d9473fe4dfd2a7943bc3d2cdf3fb79">get_reserve</a>($base=false)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentite.html#addfd5983cd179c29dfb120a0e0d76040">get_rm_restant</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a9bc9d27875f23959c4f66e803a16e7bf">get_sort_element</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a5e1b81b730fbcb728f1778889427747b">get_sort_mort</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a01a71ba38e30644455651e1e401cc4b2">get_sort_vie</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a3ea577f4439559fe40d34b4e60f12c6f">get_star</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#ae17b44316307a4442799a83a15926d89">get_table</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a7a7d1fb2228d05b60a201f0b9039f715">get_type</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentitenj.html#ac8d96fb17b45aa0e340b7443100a3116">get_type_def</a>()</td><td><a class="el" href="classentitenj.html">entitenj</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a56a5f582958ac79c18cfd26d9ba1c4c7">get_valeurs_insert</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#ac323c4d3d3781f94638c9be95be5e894">get_vie</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#ab4c56b24d587a328484e76ff4e7be089">get_volonte</a>()</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
@@ -183,13 +186,14 @@
   <tr class="memlist"><td><a class="el" href="classentite.html#aa2727a6b9a2fdefabdf06b2a57501332">set_potentiel_toucher</a>($valeur)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a45b15a048e4153923d2aa059bff103f4">set_pp</a>($valeur)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a91119512c63d3591957ea58cfcbf5c7d">set_reserve</a>($valeur)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentite.html#ae0f1704b8131773df59b8a520c9d2dc1">set_rm_restant</a>($valeur)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#a9ab0e1dde991a4d9dcb4303625061321">set_volonte</a>($volonte)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classplacable.html#ae8eae85bae9e3325c9aa985e4f997ebd">set_x</a>($x)</td><td><a class="el" href="classplacable.html">placable</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classplacable.html#ad90e2ca599a913dd7bc50a19cf7f7a88">set_y</a>($y)</td><td><a class="el" href="classplacable.html">placable</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentite.html#af43179a81b452402e86236617178622c">supprime_buff</a>($id)</td><td><a class="el" href="classentite.html">entite</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#abcbadd7a797d5f97ad937506e7884b1a">supprimer</a>()</td><td><a class="el" href="classtable.html">table</a></td><td></td></tr>
 </table></div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Jan 22 10:50:36 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Thu Mar 8 14:10:48 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
