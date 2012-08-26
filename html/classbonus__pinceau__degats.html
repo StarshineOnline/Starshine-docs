@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -46,7 +47,8 @@ Graphe de collaboration de bonus_pinceau_degats:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbonus__pinceau__degats.html#a6e5f4d99e372d03ef5068ebb2f7a907e">__construct</a> ($aEffet, $aNom)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbonus__pinceau__degats.html#aa9f3303c5ff01b3d6e5d5542ec155f09">calcul_bonus_degats_magiques</a> (&amp;$actif, &amp;$passif, $bonus_degats)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbonus__pinceau__degats.html#aa0c468fff97f734b5daf2a66ad2d436f">calcul_bonus_degats_magiques</a> (&amp;$actif, &amp;$passif, $bonus_degats, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le bonos aux dégâts des sorts.  <a href="#aa0c468fff97f734b5daf2a66ad2d436f"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbonus__pinceau__degats.html#a2d6b262d7a5e893d8e63271d7ad24d94">$effet</a></td></tr>
 </table>
@@ -81,7 +83,7 @@ Graphe de collaboration de bonus_pinceau_degats:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="aa9f3303c5ff01b3d6e5d5542ec155f09"></a><!-- doxytag: member="bonus_pinceau_degats::calcul_bonus_degats_magiques" ref="aa9f3303c5ff01b3d6e5d5542ec155f09" args="(&amp;$actif, &amp;$passif, $bonus_degats)" -->
+<a class="anchor" id="aa0c468fff97f734b5daf2a66ad2d436f"></a><!-- doxytag: member="bonus_pinceau_degats::calcul_bonus_degats_magiques" ref="aa0c468fff97f734b5daf2a66ad2d436f" args="(&amp;$actif, &amp;$passif, $bonus_degats, $type)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -101,7 +103,13 @@ Graphe de collaboration de bonus_pinceau_degats:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>bonus_degats</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>bonus_degats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -112,10 +120,24 @@ Graphe de collaboration de bonus_pinceau_degats:</div>
 </div>
 <div class="memdoc">
 
+<p>Modifie le bonos aux dégâts des sorts. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Bonus dégâts avant modification. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$type</em>&nbsp;</td><td>Type de <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Bonus dégâts après modification. </dd></dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#add9d1e450bf7feb5cdd019f617e7e5d9">effect</a>.</p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classbonus__pinceau__degats_aa9f3303c5ff01b3d6e5d5542ec155f09_cgraph.png" border="0" usemap="#classbonus__pinceau__degats_aa9f3303c5ff01b3d6e5d5542ec155f09_cgraph_map" alt=""></div>
+<div class="center"><img src="classbonus__pinceau__degats_aa0c468fff97f734b5daf2a66ad2d436f_cgraph.png" border="0" usemap="#classbonus__pinceau__degats_aa0c468fff97f734b5daf2a66ad2d436f_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -139,7 +161,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:41:30 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:00 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

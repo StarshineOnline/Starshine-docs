@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -36,6 +37,7 @@
   <tr class="memlist"><td><a class="el" href="classmap.html#a79d27e944700975d40fb76a7b23d946a">$atmosphere_type</a></td><td><a class="el" href="classmap.html">map</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#abc73c7ccfc3f812caa82849a04836dd8">$cache_monstre</a></td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a8f9c08a89ca96d05f6aa5a066f3816fe">$champ_vision</a></td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classmap.html#af2b60ab942a3000889d85d7397e126f0">$dont_use_relative_coords</a></td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#af071a2f9c8c0d190024fa0da8a21f0a4">$dungeon_layer</a></td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#aa4606e51c52b8c3dd6887d6775454acc">$map_calques</a></td><td><a class="el" href="classmap.html">map</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a5d8254bb7069ab5789d83fbe96061bb7">$onclick</a></td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
@@ -66,8 +68,10 @@
   <tr class="memlist"><td><a class="el" href="classmap.html#ad6a863add7ffa95b765e4691f55d4650">get_joueur</a>($race= 'neutre', $all=false, $race_only=false)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a8f65ffe20f2585f1d800261b748ada4c">get_monstre</a>($level=0, $groupe=true)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#ad195af0adfcb7e763571d3b2b05e0f45">get_pnj</a>()</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classmap.html#a44ff439204b91b28f909c370da4a04d4">is_masked_coordinates</a>($x, $y)</td><td><a class="el" href="classmap.html">map</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classmap.html#ab878331f874abc8960a513ec0ff32cfc">is_nysin</a>($x, $y)</td><td><a class="el" href="classmap.html">map</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a457f66ac0f22fa4fe04c7bd87f67ff08">load_map_calques</a>()</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classmap.html#a55ff2117697672dd9988b29e570b34cb">print_dungeon_layer</a>($x, $y, $margin_left=-2)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classmap.html#ad11abdf5aed54f9169e03a84b94faee9">print_dungeon_layer</a>($x, $y, $margin_left=-2, $donjon_layer= 'calque-atmosphere-noir')</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a30fc7177338bb473aea287b229719f3c">print_maptype_layer</a>($map_type_calque, $x, $y, $margin_left=-2)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a15907574f5bb7375f31e23905088ff1d">set_affiche_royaume</a>($val)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a1f30eb2e11ec8cad0197de78e6c26971">set_arene</a>($arene)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
@@ -81,7 +85,7 @@
   <tr class="memlist"><td><a class="el" href="classmap.html#a38c28b3ed473f2f296413076fb43a287">set_onclick</a>($onclick)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classmap.html#a20b6d0f65a3583b52921cf6ce987fddb">set_repere</a>($reperes)</td><td><a class="el" href="classmap.html">map</a></td><td></td></tr>
 </table></div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:42:22 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:18 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

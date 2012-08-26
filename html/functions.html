@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -365,6 +366,7 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 </li>
 <li>$debuff
 : <a class="el" href="classbuff__base.html#a3499004003e1893613b9239d0fec1fc9">buff_base</a>
+, <a class="el" href="classsort__combat__debuff.html#ac4a86e6981646c41914278b74ae036ea">sort_combat_debuff</a>
 </li>
 <li>$debut
 : <a class="el" href="classbataille.html#a983473693154eb0002cea02ec3a010b0">bataille</a>
@@ -451,6 +453,12 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 <li>$donj
 : <a class="el" href="classarene.html#a37ed5d14b395c3e44989124bee029c7d">arene</a>
 </li>
+<li>$dont_use_relative_coords
+: <a class="el" href="classmap.html#af2b60ab942a3000889d85d7397e126f0">map</a>
+</li>
+<li>$drain
+: <a class="el" href="classsort__combat__drain.html#a9987fadc143875a707d1bdb4e7ae75b3">sort_combat_drain</a>
+</li>
 <li>$dressage
 : <a class="el" href="classmonstre.html#a4f65005fc3c9dddda71e5d7ee2685111">monstre</a>
 , <a class="el" href="classperso.html#a910a279890f31b264a942e98070fa92f">perso</a>
@@ -466,6 +474,10 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 , <a class="el" href="classcomp__sort__buff.html#ab7b81408f4d6d31349746c0ac33a4aeb">comp_sort_buff</a>
 , <a class="el" href="classactive__effect.html#ad846455e017b335c9e61219f403e40b6">active_effect</a>
 , <a class="el" href="classpoint__victoire__action.html#a9d4fc4d9036ee045603de2d3bc67425a">point_victoire_action</a>
+</li>
+<li>$duree_etat
+: <a class="el" href="classcomp__combat__degat__etat.html#abe482de9800417983baddf86ada63aba">comp_combat_degat_etat</a>
+, <a class="el" href="classsort__combat__degat__etat.html#a6dc42e34327859d66eb2c4bada7ea0be">sort_combat_degat_etat</a>
 </li>
 <li>$eau
 : <a class="el" href="classroyaume.html#a9cc9ad4e29851f78a48766998f352413">royaume</a>
@@ -505,7 +517,12 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 , <a class="el" href="classactive__effect.html#a8e5c3802c3db5787859886b1940f3698">active_effect</a>
 </li>
 <li>$effet3
-: <a class="el" href="classactive__effect.html#a0ed6f6e9e49956492de4df0ebe4112c8">active_effect</a>
+: <a class="el" href="classcomp__combat.html#a00d2847cccfbb3c2e6605dddd6d0eef3">comp_combat</a>
+, <a class="el" href="classactive__effect.html#a0ed6f6e9e49956492de4df0ebe4112c8">active_effect</a>
+</li>
+<li>$effet_etat
+: <a class="el" href="classcomp__combat__degat__etat.html#a2932b3decf39d2f68f35910fcaa97e8f">comp_combat_degat_etat</a>
+, <a class="el" href="classsort__combat__degat__etat.html#a60902507c3937ffe895c39025b876e86">sort_combat_degat_etat</a>
 </li>
 <li>$effet_mag
 : <a class="el" href="classtoucher__humainnoir.html#a4ac7e49ffeba59e81fb2fc5607cadb0b">toucher_humainnoir</a>
@@ -578,8 +595,14 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 <li>$etat
 : <a class="el" href="classbataille.html#a234b0f0a2a1904834bff7f382b2d88d1">bataille</a>
 , <a class="el" href="classbonus__perso.html#a065794dde15721fd0c3a434fa0306d4b">bonus_perso</a>
+, <a class="el" href="classcomp__combat__degat__etat.html#ab6d0d005f1b5a0fb2a097b498d51ed80">comp_combat_degat_etat</a>
 , <a class="el" href="classentite.html#a680187e10b8bbb9aaa075170f585b15e">entite</a>
 , <a class="el" href="classmessagerie__etat__message.html#a41eba89c230f9c1367179a84399a145f">messagerie_etat_message</a>
+, <a class="el" href="classsort__combat__degat__etat.html#a3d5acee3c93e7956a43dddaa2abd9eb1">sort_combat_degat_etat</a>
+</li>
+<li>$etat_lie
+: <a class="el" href="classcomp__combat.html#afee1bf4f14a58c390925fe6fc5aa0b43">comp_combat</a>
+, <a class="el" href="classsort__combat.html#a3761ed36db95e1dd813d762287ac862a">sort_combat</a>
 </li>
 <li>$event
 : <a class="el" href="classarenes__joueur.html#a46bf310f606cf9d4047299079883f5b7">arenes_joueur</a>
@@ -647,9 +670,9 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 , <a class="el" href="class_armure.html#a610119a3d9893ecf3e00629486fecd1d">Armure</a>
 </li>
 <li>$forcex
-: <a class="el" href="classmonstre.html#a42f923f30febd2717427faebcb95dc14">monstre</a>
+: <a class="el" href="classarme.html#a2719ac12398cc7929e5c91ecefa68974">arme</a>
+, <a class="el" href="classmonstre.html#a42f923f30febd2717427faebcb95dc14">monstre</a>
 , <a class="el" href="classperso.html#ab41c0fd8bec03b1130e1d0800ca90975">perso</a>
-, <a class="el" href="classarme.html#a2719ac12398cc7929e5c91ecefa68974">arme</a>
 </li>
 <li>$forge
 : <a class="el" href="classperso.html#a982a7afbeea81775a1141ae889a09e4e">perso</a>
@@ -899,9 +922,9 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 , <a class="el" href="classterrain__construction.html#a2c99e0cdaeadf65026bef6c4e5fd6b12">terrain_construction</a>
 </li>
 <li>$id_thread
-: <a class="el" href="classmessagerie__thread.html#ad57b81be3b86ad69c7c50630456da24a">messagerie_thread</a>
-, <a class="el" href="classbataille__groupe.html#a18deec973ac563de2df2f21538d76209">bataille_groupe</a>
+: <a class="el" href="classbataille__groupe.html#a18deec973ac563de2df2f21538d76209">bataille_groupe</a>
 , <a class="el" href="classmessagerie__message.html#abcdd84958d321efb8baf08bdffc232f2">messagerie_message</a>
+, <a class="el" href="classmessagerie__thread.html#ad57b81be3b86ad69c7c50630456da24a">messagerie_thread</a>
 </li>
 <li>$id_titre
 : <a class="el" href="classtitre.html#a041731590cc76ca3d152dcbfce957293">titre</a>
@@ -961,11 +984,11 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classgroupe__joueur.html#a439b96cbdbea6d15e43f6c467dce7027">groupe_joueur</a>
 </li>
 <li>$level
-: <a class="el" href="classbatiment__ville.html#a456864adfa0bc6ce1d4eb47c6bde18d2">batiment_ville</a>
+: <a class="el" href="classmonstre.html#a27253c8656bd5cadf9112f2be8fc7a94">monstre</a>
+, <a class="el" href="classbatiment__ville.html#a456864adfa0bc6ce1d4eb47c6bde18d2">batiment_ville</a>
 , <a class="el" href="classactive__effect.html#a124a34543107145692c6347bf154690c">active_effect</a>
 , <a class="el" href="classentite.html#ab82eadbc6685606cf4ef3f2ca5632ac2">entite</a>
 , <a class="el" href="classmap__monstre.html#a689045b9e467f47d3b7bb2f7892cd0ae">map_monstre</a>
-, <a class="el" href="classmonstre.html#a27253c8656bd5cadf9112f2be8fc7a94">monstre</a>
 </li>
 <li>$level_mur
 : <a class="el" href="classroyaume.html#a9a7ca68e3b9ff04d73fd0eff271213ef">royaume</a>
@@ -1033,9 +1056,12 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 , <a class="el" href="classmonstre.html#a4e95891b22d113ad2fdb2a1d784cd044">monstre</a>
 </li>
 <li>$message
-: <a class="el" href="classmotk.html#a737a3f0b4c17b41292b91b6854ff4c37">motk</a>
-, <a class="el" href="classlog__admin__db.html#aa32782855ad94f44f2afa47dfd2606ab">log_admin_db</a>
+: <a class="el" href="classlog__admin__db.html#aa32782855ad94f44f2afa47dfd2606ab">log_admin_db</a>
+, <a class="el" href="classcomp__combat__etat.html#a0cd0d64ee70f6431c160f747883172fc">comp_combat_etat</a>
+, <a class="el" href="classcomp__combat__etourdi.html#af6e6d18dbbc9630f9a536b3f9c95cadd">comp_combat_etourdi</a>
 , <a class="el" href="classmessagerie__message.html#a7e229dd5831aef0bc7ca2c92b8fdee30">messagerie_message</a>
+, <a class="el" href="classmotk.html#a737a3f0b4c17b41292b91b6854ff4c37">motk</a>
+, <a class="el" href="classsort__combat__aura.html#a8e6832e5d3883ceaa9722bf31e44a7f1">sort_combat_aura</a>
 </li>
 <li>$mine_max
 : <a class="el" href="classbourg.html#a8f1e1d6269ca420d8d9566675c67ea79">bourg</a>
@@ -1062,11 +1088,11 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classdiplomatie.html#a1644aa145d85c0a10d3c526db632f819">diplomatie</a>
 </li>
 <li>$mp
-: <a class="el" href="classperso.html#a11b87b7aa252127708682d4380ed333b">perso</a>
+: <a class="el" href="classpet.html#a21fc505d419b3d37c80d44eccef7f0c1">pet</a>
 , <a class="el" href="classcomp__sort.html#ac1e967df4651c1fc8ce401ddaa85dc04">comp_sort</a>
 , <a class="el" href="classcraft__instrument.html#a5ee1604fd596729fc9c8698a0d1bdc16">craft_instrument</a>
 , <a class="el" href="classcraft__recette.html#ae7e052a6792bf73af16f07b70d40d038">craft_recette</a>
-, <a class="el" href="classpet.html#a21fc505d419b3d37c80d44eccef7f0c1">pet</a>
+, <a class="el" href="classperso.html#a11b87b7aa252127708682d4380ed333b">perso</a>
 </li>
 <li>$mp_max
 : <a class="el" href="classperso.html#a9a5d6ae74a16c479826167c52aaee7cc">perso</a>
@@ -1095,29 +1121,29 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classclasse__permet__db.html#ae3ed469fa92986c1c222fa0a84fea61e">classe_permet_db</a>
 </li>
 <li>$nom
-: <a class="el" href="classgrade.html#a1f28ac3b733eac18ac695c0787ff399a">grade</a>
-, <a class="el" href="classclasse__db.html#a01a1eb339db7805525841982b081afc1">classe_db</a>
-, <a class="el" href="classbataille.html#a430d8b0c89c9c71e45b26beaa3b07b5e">bataille</a>
-, <a class="el" href="classaccessoire.html#a4431e3991c1f89049f111dfc5ef0306a">accessoire</a>
-, <a class="el" href="classpoint__victoire__action.html#a58e356296cdbc846f2fe86713d243a72">point_victoire_action</a>
-, <a class="el" href="classachievement__type.html#abd2054ac47a46661e72aab57e767e501">achievement_type</a>
-, <a class="el" href="classarene.html#ab178fe1cf22fa8f633a783f49b089f60">arene</a>
-, <a class="el" href="classarme.html#a487cd02aa9439c326b92ee07b33830c4">arme</a>
-, <a class="el" href="classbataille__repere__type.html#a5b6e60d341aaf5b9a0ec3cb98dac474a">bataille_repere_type</a>
-, <a class="el" href="classbatiment__ville.html#ab956094d6e58a20e7ac01480d8b53d7c">batiment_ville</a>
-, <a class="el" href="classcandidat.html#a65d4f45651e724bfc7de251a83d662a7">candidat</a>
-, <a class="el" href="classcomp__sort__buff.html#a53d0d6768455f46934227a9e1d91f1de">comp_sort_buff</a>
-, <a class="el" href="classcraft__ingredient.html#af1298e009526a7ceba11504029ab0ff2">craft_ingredient</a>
+: <a class="el" href="classcraft__ingredient.html#af1298e009526a7ceba11504029ab0ff2">craft_ingredient</a>
 , <a class="el" href="classcraft__instrument.html#a3983af17993d9bd6ec130edc801d2d45">craft_instrument</a>
 , <a class="el" href="classcraft__recette.html#ab50f8987dc8e9288a643f4cf2d70f511">craft_recette</a>
 , <a class="el" href="classeffect.html#a7b22b68cddaa91a20ca073c8bf4b1d51">effect</a>
 , <a class="el" href="classentitenj__def.html#a0df9d0b5692d7e3c5627ada4cd35849b">entitenj_def</a>
 , <a class="el" href="classevent__equipe.html#afb9383cf1f15bc8e3bfb948de7359403">event_equipe</a>
-, <a class="el" href="classgroupe.html#a1b9c20dfa106b845f71fa45ea6bda23e">groupe</a>
+, <a class="el" href="classgrade.html#a1f28ac3b733eac18ac695c0787ff399a">grade</a>
 , <a class="el" href="class_objet.html#aec121e606de38981d9cd01333655d45e">Objet</a>
 , <a class="el" href="classplacable.html#ab76d9eb37e8511888f7059f85b88e550">placable</a>
-, <a class="el" href="classroyaume.html#a0916a04fa6aa3e8778ae4fccceb483ba">royaume</a>
+, <a class="el" href="classpoint__victoire__action.html#a58e356296cdbc846f2fe86713d243a72">point_victoire_action</a>
 , <a class="el" href="classterrain__batiment.html#a4821c15b6e25dc168bcb5720a29e975a">terrain_batiment</a>
+, <a class="el" href="classroyaume.html#a0916a04fa6aa3e8778ae4fccceb483ba">royaume</a>
+, <a class="el" href="classgroupe.html#a1b9c20dfa106b845f71fa45ea6bda23e">groupe</a>
+, <a class="el" href="classcomp__sort__buff.html#a53d0d6768455f46934227a9e1d91f1de">comp_sort_buff</a>
+, <a class="el" href="classbataille__repere__type.html#a5b6e60d341aaf5b9a0ec3cb98dac474a">bataille_repere_type</a>
+, <a class="el" href="classachievement__type.html#abd2054ac47a46661e72aab57e767e501">achievement_type</a>
+, <a class="el" href="classaccessoire.html#a4431e3991c1f89049f111dfc5ef0306a">accessoire</a>
+, <a class="el" href="classarene.html#ab178fe1cf22fa8f633a783f49b089f60">arene</a>
+, <a class="el" href="classarme.html#a487cd02aa9439c326b92ee07b33830c4">arme</a>
+, <a class="el" href="classbataille.html#a430d8b0c89c9c71e45b26beaa3b07b5e">bataille</a>
+, <a class="el" href="classbatiment__ville.html#ab956094d6e58a20e7ac01480d8b53d7c">batiment_ville</a>
+, <a class="el" href="classcandidat.html#a65d4f45651e724bfc7de251a83d662a7">candidat</a>
+, <a class="el" href="classclasse__db.html#a01a1eb339db7805525841982b081afc1">classe_db</a>
 </li>
 <li>$nom_auteur
 : <a class="el" href="classmessagerie__message.html#a5a506bf7b2951240437e8e8ec0f0518a">messagerie_message</a>
@@ -1139,6 +1165,9 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 </li>
 <li>$num_rows
 : <a class="el" href="classdb.html#a6d904b9251a1c0239529231423454d11">db</a>
+</li>
+<li>$obj_eff
+: <a class="el" href="classcomp__combat__effet.html#ac5c2524f495f8dd2f9fb038368b9c79a">comp_combat_effet</a>
 </li>
 <li>$objet
 : <a class="el" href="classterrain__coffre.html#ad9df87df2a363bff5e01b046c672d78a">terrain_coffre</a>
@@ -1173,9 +1202,9 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 <li>$pa
 : <a class="el" href="classcomp__jeu.html#a646deaab039cdeaef20fd4f2e4cd41fc">comp_jeu</a>
 , <a class="el" href="classentite.html#ab3f1a16d6dfa583b6e251852a9f3f421">entite</a>
+, <a class="el" href="classcraft__instrument.html#a00c6c32e126efe4c944d059cb4266c28">craft_instrument</a>
 , <a class="el" href="classcraft__recette.html#ad53aa9deb2857a56759719c9280638bd">craft_recette</a>
 , <a class="el" href="classsort__jeu.html#ae8d95110d16f29fcf53992a7f7166579">sort_jeu</a>
-, <a class="el" href="classcraft__instrument.html#a00c6c32e126efe4c944d059cb4266c28">craft_instrument</a>
 </li>
 <li>$pa_matchs
 : <a class="el" href="classevent__dte__rte.html#ae11b117c4b036286881fee64adc0dbe7">event_dte_rte</a>
@@ -1203,8 +1232,8 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classroyaume.html#a080a55e17cefb0ea4a198505099629a1">royaume</a>
 </li>
 <li>$pm
-: <a class="el" href="classentite.html#a381ee766e3bd31fddf23f6805e78a8b5">entite</a>
-, <a class="el" href="classentitenj__def.html#a909fd55a669c36480b820cf76cd58b96">entitenj_def</a>
+: <a class="el" href="classentitenj__def.html#a909fd55a669c36480b820cf76cd58b96">entitenj_def</a>
+, <a class="el" href="classentite.html#a381ee766e3bd31fddf23f6805e78a8b5">entite</a>
 , <a class="el" href="class_armure.html#a0992103bc2a6d46001b2233969fa8895">Armure</a>
 </li>
 <li>$pm_base
@@ -1231,10 +1260,10 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classterrain__batiment.html#ac638e9929fc8cdf18f442c8c8162d022">terrain_batiment</a>
 </li>
 <li>$point_victoire
-: <a class="el" href="classentite.html#ad836236d4db669efdcde81aa0dcc2ff3">entite</a>
-, <a class="el" href="classbatiment.html#a4ab3531fa845a3e19fbe120f78127c3a">batiment</a>
-, <a class="el" href="classroyaume.html#afee2efa59a8dbd4bc7f9871853130dc3">royaume</a>
+: <a class="el" href="classbatiment.html#a4ab3531fa845a3e19fbe120f78127c3a">batiment</a>
 , <a class="el" href="classentitenj__constr.html#aafef00b2bbd1c7c35e80269f7cc741a3">entitenj_constr</a>
+, <a class="el" href="classroyaume.html#afee2efa59a8dbd4bc7f9871853130dc3">royaume</a>
+, <a class="el" href="classentite.html#ad836236d4db669efdcde81aa0dcc2ff3">entite</a>
 </li>
 <li>$point_victoire_total
 : <a class="el" href="classroyaume.html#a5746669b6a368dcc8ae15ee545a35d77">royaume</a>
@@ -1250,8 +1279,8 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classevent__equipe__dte__rte.html#a5221ca698b06311ca2790950bc5e47dc">event_equipe_dte_rte</a>
 </li>
 <li>$poison
-: <a class="el" href="classfleche__poison.html#abda6e171a3fc5f88dbffc56234a0fea1">fleche_poison</a>
-, <a class="el" href="classgemme__enchassee.html#a136406bf90edad7fb2183f84ab0772b9">gemme_enchassee</a>
+: <a class="el" href="classgemme__enchassee.html#a136406bf90edad7fb2183f84ab0772b9">gemme_enchassee</a>
+, <a class="el" href="classfleche__poison.html#abda6e171a3fc5f88dbffc56234a0fea1">fleche_poison</a>
 </li>
 <li>$portee
 : <a class="el" href="classsort__jeu.html#a3f35ed12182c1b8cb57adadbcb611a9d">sort_jeu</a>
@@ -1269,11 +1298,20 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 <li>$pospita
 : <a class="el" href="classperso.html#a3a6394e3b04f0fdb1c6ff07bc51e0741">perso</a>
 </li>
+<li>$posture
+: <a class="el" href="classsort__combat__aura.html#a2660c9844c5a5cfe440fa29e47904608">sort_combat_aura</a>
+</li>
 <li>$potentiel
 : <a class="el" href="classfleche__magnetique.html#a0fc9d6926cfd0034db74b45ddc69a9d5">fleche_magnetique</a>
 </li>
 <li>$potentiel_bloquer
 : <a class="el" href="classentite.html#aeb2fc0fc4f88bf748681d2dd8faf18ca">entite</a>
+</li>
+<li>$potentiel_critique
+: <a class="el" href="classentite.html#a78e472c7d7bb82909bc2c314a8dfe657">entite</a>
+</li>
+<li>$potentiel_magique
+: <a class="el" href="classentite.html#a5d81e8c376522c71144880f2ad9ef167">entite</a>
 </li>
 <li>$potentiel_parer
 : <a class="el" href="classentite.html#a8031e913e8f0237ac62e5d1997686e8d">entite</a>
@@ -1289,8 +1327,8 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 </li>
 <li>$pp
 : <a class="el" href="class_armure.html#ad23a5f4e797aab98e3f6806b410075da">Armure</a>
-, <a class="el" href="classentitenj__def.html#a004e9e50baf7ac82af704bff6bcc75cd">entitenj_def</a>
 , <a class="el" href="classentite.html#afb5b99f24c61ec190d6d2e9db4c99386">entite</a>
+, <a class="el" href="classentitenj__def.html#a004e9e50baf7ac82af704bff6bcc75cd">entitenj_def</a>
 </li>
 <li>$pp_base
 : <a class="el" href="classperso.html#ac466f23e626c927ce9920b52aafa3d21">perso</a>
@@ -1299,6 +1337,9 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 <li>$prefixe
 : <a class="el" href="classcraft__recette__recipient.html#a441969f605c8f296fe07e401f3a6680e">craft_recette_recipient</a>
 </li>
+<li>$princ_droit
+: <a class="el" href="classinterf_s_s_o.html#ac7a0404547baa4eeeb3b54b66b5befa5">interfSSO</a>
+</li>
 <li>$principale
 : <a class="el" href="classpet.html#a41bce8ec4e9cf4dbbf8cc01c64211bf5">pet</a>
 </li>
@@ -1306,13 +1347,13 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classcompetence.html#a0d24082853541a9991fdca82b92b2fe0">competence</a>
 </li>
 <li>$prix
-: <a class="el" href="classaccessoire.html#a1fa64184777df549671b4fd486126fa5">accessoire</a>
-, <a class="el" href="classbourse__royaume.html#af580293bc4fe77f3b56e53f3b80d587e">bourse_royaume</a>
+: <a class="el" href="classbourse__royaume.html#af580293bc4fe77f3b56e53f3b80d587e">bourse_royaume</a>
+, <a class="el" href="classcomp__sort.html#a567b786d3b018adbfca9b29d111b56fe">comp_sort</a>
+, <a class="el" href="classcraft__instrument.html#aa3740226315628e66b566781a4819f74">craft_instrument</a>
 , <a class="el" href="class_objet.html#a7e70353688e974c1b24bdcee8fddc69d">Objet</a>
 , <a class="el" href="classterrain__batiment.html#a26a9d15369cac407d97e1384fe2e93ce">terrain_batiment</a>
 , <a class="el" href="classcraft__recette.html#adb577d8b5878383ae9c29a5b98dc3396">craft_recette</a>
-, <a class="el" href="classcomp__sort.html#a567b786d3b018adbfca9b29d111b56fe">comp_sort</a>
-, <a class="el" href="classcraft__instrument.html#aa3740226315628e66b566781a4819f74">craft_instrument</a>
+, <a class="el" href="classaccessoire.html#a1fa64184777df549671b4fd486126fa5">accessoire</a>
 , <a class="el" href="classarme.html#a4975612e1784338a6c8e90ed0932627a">arme</a>
 , <a class="el" href="classvente__terrain.html#a900a6295201e9f3f1617f3e47ce566f0">vente_terrain</a>
 </li>
@@ -1326,9 +1367,9 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classmotk.html#a16a1a3e3a4210745685baa03ead28521">motk</a>
 </li>
 <li>$puissance
-: <a class="el" href="classentite.html#ac21af561d72821fcb4a047557a7d402b">entite</a>
+: <a class="el" href="classaccessoire.html#ae807fc00fa270bb032e9df5aed121e00">accessoire</a>
+, <a class="el" href="classentite.html#ac21af561d72821fcb4a047557a7d402b">entite</a>
 , <a class="el" href="classmonstre.html#a63884be21e42f7d154a21a0c9050d20b">monstre</a>
-, <a class="el" href="classaccessoire.html#ae807fc00fa270bb032e9df5aed121e00">accessoire</a>
 , <a class="el" href="class_accessoire.html#a71aea6abb04f0e8430151fafedaba431">Accessoire</a>
 </li>
 <li>$quadrillage
@@ -1341,14 +1382,14 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classperso.html#a9317e97222d281fe3ec60832217f65e9">perso</a>
 </li>
 <li>$race
-: <a class="el" href="classentite.html#a7008430f1f0452768e243aa014b16fff">entite</a>
+: <a class="el" href="classmotk.html#a58758708aa66146b41fa054c202dcfac">motk</a>
 , <a class="el" href="classroyaume.html#a5efa9af5c98d08379adb59184572b9bb">royaume</a>
+, <a class="el" href="classentite.html#a7008430f1f0452768e243aa014b16fff">entite</a>
 , <a class="el" href="classdiplomatie.html#a898cd6580d518fbfddaa1185f67d9607">diplomatie</a>
-, <a class="el" href="classmotk.html#a58758708aa66146b41fa054c202dcfac">motk</a>
 </li>
 <li>$rang
-: <a class="el" href="classclasse__db.html#af7399de413879daeba5e59dbe0e78d38">classe_db</a>
-, <a class="el" href="classgrade.html#adff3e0fe78859635d41db1e2e9e813b7">grade</a>
+: <a class="el" href="classgrade.html#adff3e0fe78859635d41db1e2e9e813b7">grade</a>
+, <a class="el" href="classclasse__db.html#af7399de413879daeba5e59dbe0e78d38">classe_db</a>
 </li>
 <li>$rang_royaume
 : <a class="el" href="classentite.html#a9369d9339ea1ef0f8f36a0e9e4edfbbb">entite</a>
@@ -1366,18 +1407,18 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classperso.html#a4354dfa51af1f6433035c6bd42d5bac1">perso</a>
 </li>
 <li>$requis
-: <a class="el" href="classclasse__requis__db.html#a577bedbd7c3a89e82df5aee6c2866a24">classe_requis_db</a>
+: <a class="el" href="classterrain__batiment.html#ad94ec5a033aadfd07f233a4b3e3a6374">terrain_batiment</a>
+, <a class="el" href="classclasse__requis__db.html#a577bedbd7c3a89e82df5aee6c2866a24">classe_requis_db</a>
 , <a class="el" href="classcraft__instrument.html#a938693f93220202c28a5b7c09a0e14e2">craft_instrument</a>
-, <a class="el" href="classactive__effect.html#a1898835cf2f08770ebf4c5a4633aae1a">active_effect</a>
 , <a class="el" href="classcomp__sort.html#a9ba9bd2c7a2b244fc649730708dc848b">comp_sort</a>
-, <a class="el" href="classterrain__batiment.html#ad94ec5a033aadfd07f233a4b3e3a6374">terrain_batiment</a>
+, <a class="el" href="classactive__effect.html#a1898835cf2f08770ebf4c5a4633aae1a">active_effect</a>
 </li>
 <li>$reserve
 : <a class="el" href="classentite.html#abe497187858249e18d3c4139d2c30fec">entite</a>
 </li>
 <li>$reserve_bonus
-: <a class="el" href="classperso.html#a8af78dc03401240c569e8cbea9a1d486">perso</a>
-, <a class="el" href="classpet.html#ad131756eeb39d07fda0a16f2b7d35f64">pet</a>
+: <a class="el" href="classpet.html#ad131756eeb39d07fda0a16f2b7d35f64">pet</a>
+, <a class="el" href="classperso.html#a8af78dc03401240c569e8cbea9a1d486">perso</a>
 </li>
 <li>$resolution
 : <a class="el" href="classmap.html#ad21db79b0cd7aa446557ebc0fd0ba8c1">map</a>
@@ -1386,8 +1427,8 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classbourse__royaume.html#a8a2bf6fe3605d40c6dcc14842fc4d6b0">bourse_royaume</a>
 </li>
 <li>$resultat
-: <a class="el" href="classcraft__recette__recipient.html#a1b2939e697f5103080a42138c3f29deb">craft_recette_recipient</a>
-, <a class="el" href="classcraft__recette.html#a2eae22c54b8773ecae9c00292b2f6e13">craft_recette</a>
+: <a class="el" href="classcraft__recette.html#a2eae22c54b8773ecae9c00292b2f6e13">craft_recette</a>
+, <a class="el" href="classcraft__recette__recipient.html#a1b2939e697f5103080a42138c3f29deb">craft_recette_recipient</a>
 </li>
 <li>$rez
 : <a class="el" href="classentitenj__constr.html#ad1162a21b6ba65123031e00a315b9ce7">entitenj_constr</a>
@@ -1405,11 +1446,11 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classdb.html#a4205f6f620cf76162939bd9b47015e11">db</a>
 </li>
 <li>$royaume
-: <a class="el" href="classcandidat.html#a8c2f56c03b68ab68157d8195c9e97c88">candidat</a>
-, <a class="el" href="classmap__case.html#a5fa26d612b76fc702d10e7b84418667c">map_case</a>
-, <a class="el" href="classentite__cap.html#a3e76762e6e298a2ab4906c83bb83ba45">entite_cap</a>
-, <a class="el" href="classentitenj__constr.html#a6ac6d4ed3d6908b6e7c53017913a89cd">entitenj_constr</a>
+: <a class="el" href="classentite__cap.html#a3e76762e6e298a2ab4906c83bb83ba45">entite_cap</a>
 , <a class="el" href="classevent__equipe.html#a28a321ab100d15ef5a93f37e6d85601f">event_equipe</a>
+, <a class="el" href="classmap__case.html#a5fa26d612b76fc702d10e7b84418667c">map_case</a>
+, <a class="el" href="classentitenj__constr.html#a6ac6d4ed3d6908b6e7c53017913a89cd">entitenj_constr</a>
+, <a class="el" href="classcandidat.html#a8c2f56c03b68ab68157d8195c9e97c88">candidat</a>
 </li>
 <li>$royaume_alchimie
 : <a class="el" href="classcraft__recette.html#abf070c869f61712d9211aee49b61420f">craft_recette</a>
@@ -1427,12 +1468,12 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classevent__partie__dte__rte.html#a7c23c874446967c836a048ae04f8d6da">event_partie_dte_rte</a>
 </li>
 <li>$secret
-: <a class="el" href="classcraft__recette__ingredient.html#a2c27a88ef96633ca91ed3fbee96836e5">craft_recette_ingredient</a>
-, <a class="el" href="classachievement__type.html#a7adc654beca2b5bc7684d4216ae9cb9e">achievement_type</a>
+: <a class="el" href="classachievement__type.html#a7adc654beca2b5bc7684d4216ae9cb9e">achievement_type</a>
+, <a class="el" href="classcraft__recette__ingredient.html#a2c27a88ef96633ca91ed3fbee96836e5">craft_recette_ingredient</a>
 </li>
 <li>$share_xp
-: <a class="el" href="classperso.html#a7675fac7c4391aa455eb7b6f21725ed2">perso</a>
-, <a class="el" href="classgroupe.html#a7ea10878965e3a98a6142e12bd1aca71">groupe</a>
+: <a class="el" href="classgroupe.html#a7ea10878965e3a98a6142e12bd1aca71">groupe</a>
+, <a class="el" href="classperso.html#a7675fac7c4391aa455eb7b6f21725ed2">perso</a>
 </li>
 <li>$show_only
 : <a class="el" href="classmap.html#a49d4072612865bf886880830cbae4670">map</a>
@@ -1461,12 +1502,12 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classperso.html#ab595614407bb40c07622626b5416bb3c">perso</a>
 </li>
 <li>$sort_mort
-: <a class="el" href="classentite.html#a07e5cd6b4dd7e558802d8919083cdd12">entite</a>
-, <a class="el" href="classmonstre.html#aa1c1b7d639f97a566b689efdd658a31c">monstre</a>
+: <a class="el" href="classmonstre.html#aa1c1b7d639f97a566b689efdd658a31c">monstre</a>
+, <a class="el" href="classentite.html#a07e5cd6b4dd7e558802d8919083cdd12">entite</a>
 </li>
 <li>$sort_vie
-: <a class="el" href="classentite.html#afcaa189deede5bc5c8b0f6f7cfbfa200">entite</a>
-, <a class="el" href="classmonstre.html#aaf5f60fa7cf88d5f216dd951e4a61382">monstre</a>
+: <a class="el" href="classmonstre.html#aaf5f60fa7cf88d5f216dd951e4a61382">monstre</a>
+, <a class="el" href="classentite.html#afcaa189deede5bc5c8b0f6f7cfbfa200">entite</a>
 </li>
 <li>$spawn
 : <a class="el" href="classmonstre.html#a3a5266d9850b41feedb58c67dd639a5e">monstre</a>
@@ -1493,8 +1534,8 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classeffect.html#a16e16e20d0fb356a7cd17f7f1a18f0b8">effect</a>
 </li>
 <li>$star
-: <a class="el" href="classperso.html#acc2c950d9d274ec1ee18a24193eadb7e">perso</a>
-, <a class="el" href="classroyaume.html#a565361d139458fd0c5765151d6836096">royaume</a>
+: <a class="el" href="classroyaume.html#a565361d139458fd0c5765151d6836096">royaume</a>
+, <a class="el" href="classperso.html#acc2c950d9d274ec1ee18a24193eadb7e">perso</a>
 , <a class="el" href="classmonstre.html#a49ca0dc591b93995eb53a4059a45cdd9">monstre</a>
 </li>
 <li>$star_nouveau_joueur
@@ -1504,11 +1545,11 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classterrain__chantier.html#ac58d17560bbbe98617ebdb89b3de07e0">terrain_chantier</a>
 </li>
 <li>$statut
-: <a class="el" href="classevent.html#ad6511bae07546eab0f2e1d38b8e088de">event</a>
-, <a class="el" href="classevent__partie.html#addafbd91f881ff222a0cea2fdae1fa46">event_partie</a>
-, <a class="el" href="classperso.html#a330b310b1681dec7f544c943c7f21d96">perso</a>
+: <a class="el" href="classevent__partie.html#addafbd91f881ff222a0cea2fdae1fa46">event_partie</a>
 , <a class="el" href="classarenes__joueur.html#aa8f6bf22e488da0babe5d8f4885de752">arenes_joueur</a>
+, <a class="el" href="classperso.html#a330b310b1681dec7f544c943c7f21d96">perso</a>
 , <a class="el" href="classconstruction__ville.html#a3a1e35f9eb66c9883e84fe799b0ba9f7">construction_ville</a>
+, <a class="el" href="classevent.html#ad6511bae07546eab0f2e1d38b8e088de">event</a>
 </li>
 <li>$string_type
 : <a class="el" href="classdb.html#a1c2b292eaa4e00a5d26b31b80f6cb810">db</a>
@@ -1547,9 +1588,10 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classinvitation.html#a0fd436af36efa925cbc1e0f77fce98c8">invitation</a>
 </li>
 <li>$titre
-: <a class="el" href="classmagnetique.html#a9db2533f33935e227031f30a0f488c02">magnetique</a>
-, <a class="el" href="classmessagerie__thread.html#a1d8a4b106bf499c07fab4c0347af1f78">messagerie_thread</a>
+: <a class="el" href="classmessagerie__thread.html#a1d8a4b106bf499c07fab4c0347af1f78">messagerie_thread</a>
+, <a class="el" href="classih_princ_droit.html#a70a4de68d93a5f593a3953eaeb58656d">ihPrincDroit</a>
 , <a class="el" href="classmessagerie__message.html#a80a9d8e97e7aaaea73932ce698fb95df">messagerie_message</a>
+, <a class="el" href="classmagnetique.html#a9db2533f33935e227031f30a0f488c02">magnetique</a>
 </li>
 <li>$to
 : <a class="el" href="class_map_changes.html#a9bacca973485666dad865fc547301bfd">MapChanges</a>
@@ -1570,31 +1612,31 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classdiplomatie.html#af03ab46ade153b047a774b98311ce9de">diplomatie</a>
 </li>
 <li>$type
-: <a class="el" href="classentite.html#a59d316ce2d718a2b4a1f4cb83071d50c">entite</a>
+: <a class="el" href="classclasse__db.html#ae0bd608aedd6b7e71fd1630b4da6613f">classe_db</a>
 , <a class="el" href="classcandidat.html#ab2ac8784f3e93f9998868e672bdda036">candidat</a>
-, <a class="el" href="classarme.html#a873f5e65fef29daafc66f929c1688dc7">arme</a>
-, <a class="el" href="classentitenj__constr.html#a10bb4be28418c0f51a831a8d1b06d990">entitenj_constr</a>
-, <a class="el" href="classterrain__batiment.html#affa6d08038a089b7bdacbfb6a38104a2">terrain_batiment</a>
-, <a class="el" href="classaccessoire.html#ac8426c03fe0bd95a8bed2fd8ce79e32a">accessoire</a>
-, <a class="el" href="classcraft__recette.html#aca259215ecce6daf76d191e3d7fd5e3c">craft_recette</a>
-, <a class="el" href="classlog__admin__db.html#aaaf4dc42da995e70c8241e55cd78045f">log_admin_db</a>
-, <a class="el" href="classcraft__instrument.html#ae69652175105d6796d535009ae628757">craft_instrument</a>
-, <a class="el" href="classterrain__laboratoire.html#a333f3e077291f22daf1c6b8aaba1907a">terrain_laboratoire</a>
-, <a class="el" href="classdb.html#a6611d03d01b32f654e792b88cea8a594">db</a>
-, <a class="el" href="classevent__partie__dte__rte.html#a3a7cbde44c5f6ec0df10d8a53369a6e8">event_partie_dte_rte</a>
-, <a class="el" href="classbatiment__ville.html#aa715c490c5934ef3e144c0b2a4fc15de">batiment_ville</a>
-, <a class="el" href="class_objet.html#ae39043f267f65e7e9785987960210cda">Objet</a>
-, <a class="el" href="classmap__case.html#a0181cbf189003aa3426514e10fc41099">map_case</a>
-, <a class="el" href="classpoint__victoire__action.html#aef3670d2ff58e0f66811fc541bdf3036">point_victoire_action</a>
-, <a class="el" href="classelections.html#af658737795c61eacf2d29984f8a8c497">elections</a>
-, <a class="el" href="classcraft__recette__instrument.html#a75202476b64a6648a322f8a7c7387e98">craft_recette_instrument</a>
-, <a class="el" href="classclasse__db.html#ae0bd608aedd6b7e71fd1630b4da6613f">classe_db</a>
-, <a class="el" href="classcomp__sort__buff.html#aa34bea35c5a033a9a469693e40fcf4be">comp_sort_buff</a>
-, <a class="el" href="classbuff__actif.html#ab072cd04974d791b53463e0a917b60bc">buff_actif</a>
-, <a class="el" href="classbataille__repere.html#a8c4f08e414d4bf98ec1de050352f706a">bataille_repere</a>
-, <a class="el" href="classentitenj__def.html#afaf3403cf1e3ad23e3b218936b1a966c">entitenj_def</a>
 , <a class="el" href="classacase.html#a1b04757ce809144e0d0e0a4d5d95c909">acase</a>
+, <a class="el" href="classcraft__recette.html#aca259215ecce6daf76d191e3d7fd5e3c">craft_recette</a>
+, <a class="el" href="classentitenj__def.html#afaf3403cf1e3ad23e3b218936b1a966c">entitenj_def</a>
+, <a class="el" href="classbuff__actif.html#ab072cd04974d791b53463e0a917b60bc">buff_actif</a>
+, <a class="el" href="classevent__partie__dte__rte.html#a3a7cbde44c5f6ec0df10d8a53369a6e8">event_partie_dte_rte</a>
+, <a class="el" href="classcomp__sort__buff.html#aa34bea35c5a033a9a469693e40fcf4be">comp_sort_buff</a>
+, <a class="el" href="classbataille__repere.html#a8c4f08e414d4bf98ec1de050352f706a">bataille_repere</a>
+, <a class="el" href="classpoint__victoire__action.html#aef3670d2ff58e0f66811fc541bdf3036">point_victoire_action</a>
+, <a class="el" href="classcraft__instrument.html#ae69652175105d6796d535009ae628757">craft_instrument</a>
+, <a class="el" href="classelections.html#af658737795c61eacf2d29984f8a8c497">elections</a>
 , <a class="el" href="classclasse__comp__permet__db.html#a5da8f894a0377b486aadc543858c0f2f">classe_comp_permet_db</a>
+, <a class="el" href="classentitenj__constr.html#a10bb4be28418c0f51a831a8d1b06d990">entitenj_constr</a>
+, <a class="el" href="classterrain__laboratoire.html#a333f3e077291f22daf1c6b8aaba1907a">terrain_laboratoire</a>
+, <a class="el" href="classcraft__recette__instrument.html#a75202476b64a6648a322f8a7c7387e98">craft_recette_instrument</a>
+, <a class="el" href="classdb.html#a6611d03d01b32f654e792b88cea8a594">db</a>
+, <a class="el" href="classmap__case.html#a0181cbf189003aa3426514e10fc41099">map_case</a>
+, <a class="el" href="classbatiment__ville.html#aa715c490c5934ef3e144c0b2a4fc15de">batiment_ville</a>
+, <a class="el" href="classaccessoire.html#ac8426c03fe0bd95a8bed2fd8ce79e32a">accessoire</a>
+, <a class="el" href="class_objet.html#ae39043f267f65e7e9785987960210cda">Objet</a>
+, <a class="el" href="classarme.html#a873f5e65fef29daafc66f929c1688dc7">arme</a>
+, <a class="el" href="classterrain__batiment.html#affa6d08038a089b7bdacbfb6a38104a2">terrain_batiment</a>
+, <a class="el" href="classentite.html#a59d316ce2d718a2b4a1f4cb83071d50c">entite</a>
+, <a class="el" href="classlog__admin__db.html#aaaf4dc42da995e70c8241e55cd78045f">log_admin_db</a>
 </li>
 <li>$type_buff
 : <a class="el" href="classpoint__victoire__action.html#a0e0cfabea0dad870d5f69410fae8fcbf">point_victoire_action</a>
@@ -1640,21 +1682,21 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classentite.html#abae7999dd3dd7af49110a000c68745ad">entite</a>
 </li>
 <li>$vigueur
-: <a class="el" href="classpoison__lent.html#a9045853357f9f571bddec7d7eb072862">poison_lent</a>
-, <a class="el" href="classempoisonne.html#a6984d9a5123ac95f1c1da9b3adfbd787">empoisonne</a>
+: <a class="el" href="classempoisonne.html#a6984d9a5123ac95f1c1da9b3adfbd787">empoisonne</a>
+, <a class="el" href="classpoison__lent.html#a9045853357f9f571bddec7d7eb072862">poison_lent</a>
 </li>
 <li>$volonte
 : <a class="el" href="classentite.html#a5e31b27d48cf2b09c054ce301d11e553">entite</a>
 , <a class="el" href="classmonstre.html#a63af8e7784f290714a8cb9dca40ee3f3">monstre</a>
 </li>
 <li>$x
-: <a class="el" href="classplacable.html#a8348f67076e5973e9de93feb4e2d9c08">placable</a>
+: <a class="el" href="class_map_changes.html#a2247312cb238b096a7da9a852ac79c8a">MapChanges</a>
+, <a class="el" href="classarene.html#a3555e345e5cc7a6629d7e671da3c557a">arene</a>
+, <a class="el" href="classplacable.html#a8348f67076e5973e9de93feb4e2d9c08">placable</a>
+, <a class="el" href="classbataille__repere.html#a8677beed238d407783f57fab819e75b3">bataille_repere</a>
+, <a class="el" href="classarenes__joueur.html#a8bfcc03cd4aa8b771185794424c8ae59">arenes_joueur</a>
 , <a class="el" href="classmap.html#a1d0cb470915e015bbfe70e2b72328002">map</a>
 , <a class="el" href="classbataille.html#a91af35632ba81231a624ade301976b0f">bataille</a>
-, <a class="el" href="class_map_changes.html#a2247312cb238b096a7da9a852ac79c8a">MapChanges</a>
-, <a class="el" href="classarene.html#a3555e345e5cc7a6629d7e671da3c557a">arene</a>
-, <a class="el" href="classarenes__joueur.html#a8bfcc03cd4aa8b771185794424c8ae59">arenes_joueur</a>
-, <a class="el" href="classbataille__repere.html#a8677beed238d407783f57fab819e75b3">bataille_repere</a>
 </li>
 <li>$xmax
 : <a class="el" href="classmap.html#aef1acbb8679166b43c8c9ae453eecf92">map</a>
@@ -1666,13 +1708,13 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 : <a class="el" href="classmonstre.html#ad586510af107387e3d824add8ebd9139">monstre</a>
 </li>
 <li>$y
-: <a class="el" href="classarenes__joueur.html#a3b57d8615a8534486589c8d5ff8f4e05">arenes_joueur</a>
-, <a class="el" href="classplacable.html#ac0d7e1edd92b2320fc3ec77f96d66241">placable</a>
-, <a class="el" href="classarene.html#a3d69003b0fbbbbd29aebdb24e7101237">arene</a>
+: <a class="el" href="classbataille.html#a45d8c661b4a3afd49e07f5eefb7b077b">bataille</a>
 , <a class="el" href="classbataille__repere.html#a375758a8b1ec09f67b7c30a85c5f9de7">bataille_repere</a>
-, <a class="el" href="classbataille.html#a45d8c661b4a3afd49e07f5eefb7b077b">bataille</a>
-, <a class="el" href="classmap.html#a859981c30da1b3528b6ecc1bd3b34c60">map</a>
 , <a class="el" href="class_map_changes.html#aa2ae74a3a677ab0da3f7894c34ebc845">MapChanges</a>
+, <a class="el" href="classarene.html#a3d69003b0fbbbbd29aebdb24e7101237">arene</a>
+, <a class="el" href="classplacable.html#ac0d7e1edd92b2320fc3ec77f96d66241">placable</a>
+, <a class="el" href="classmap.html#a859981c30da1b3528b6ecc1bd3b34c60">map</a>
+, <a class="el" href="classarenes__joueur.html#a3b57d8615a8534486589c8d5ff8f4e05">arenes_joueur</a>
 </li>
 <li>$ymax
 : <a class="el" href="classmap.html#a69e020fc22f2eb9b451e0e0a88082195">map</a>
@@ -1682,7 +1724,7 @@ Liste de tous les membres de classe avec liens vers les classes auxquelles ils a
 </li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:40:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:58 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

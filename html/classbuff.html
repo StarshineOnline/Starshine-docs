@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -44,6 +45,9 @@ Graphe de collaboration de buff:</div>
 
 <p><a href="classbuff-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbuff.html#a4ca911f8f4c1c576cda35b28093908b3">lance_buff</a> ($nb_buff=0, $nb_buff_max=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> sur un personnage.  <a href="#a4ca911f8f4c1c576cda35b28093908b3"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrp9c2ff6d0683497ad43281c742be15d58"></a>Donnée et méthode sur les inforamations "générales" : type, niveau, … </p>
 <br/><br/></td></tr>
@@ -161,8 +165,8 @@ Graphe de collaboration de buff:</div>
     <tr><td valign="top"></td><td valign="top"><em>fin</em>&nbsp;</td><td>Date et heure de fin du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>nom</em>&nbsp;</td><td>Nom du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>description</em>&nbsp;</td><td>Description du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>debuff</em>&nbsp;</td><td>pour un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>, pour un debuff </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>supprimable</em>&nbsp;</td><td>si on peut supprimer le (de)<a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>, 0 sinon </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>debuff</em>&nbsp;</td><td>1 pour un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>, 0 pour un debuff </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>supprimable</em>&nbsp;</td><td>1 si on peut supprimer le (de)<a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>, 0 sinon </td></tr>
   </table>
   </dd>
 </dl>
@@ -193,6 +197,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie l'id du <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a> ayant le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classbuff_a73ffe0ae7d2f5f28dbb3d26244dbe183_icgraph.png" border="0" usemap="#classbuff_a73ffe0ae7d2f5f28dbb3d26244dbe183_icgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -287,6 +298,50 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a4ca911f8f4c1c576cda35b28093908b3"></a><!-- doxytag: member="buff::lance_buff" ref="a4ca911f8f4c1c576cda35b28093908b3" args="($nb_buff=0, $nb_buff_max=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">buff::lance_buff </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>nb_buff</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>nb_buff_max</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Lance le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> sur un personnage. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$nb_buff</em>&nbsp;</td><td>Nombre de buffs déjà actifs sur la cible. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$nb_buff_max</em>&nbsp;</td><td>Nombre de buffs max de la cible de la cible (grade+).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>true si le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> a été lancé et false sinon. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classbuff_a4ca911f8f4c1c576cda35b28093908b3_cgraph.png" border="0" usemap="#classbuff_a4ca911f8f4c1c576cda35b28093908b3_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a1f10ac18d0954c1399ca6860fcb92b90"></a><!-- doxytag: member="buff::set_id_perso" ref="a1f10ac18d0954c1399ca6860fcb92b90" args="($id_perso)" -->
 <div class="memitem">
 <div class="memproto">
@@ -327,7 +382,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="buff_8class_8php.html">buff.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:41:37 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:01 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

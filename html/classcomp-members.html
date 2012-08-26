@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -51,6 +52,7 @@
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#ad82dcb5e017dfd52863f3002f98aea10">comp_sort::__construct</a>($id=0, $nom='', $type='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort__buff.html#a442742c68987add8b1af3ffa477d6348">comp_sort_buff::__construct</a>($id=0, $nom='', $type='', $effet=0, $duree=0)</td><td><a class="el" href="classcomp__sort__buff.html">comp_sort_buff</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#ae35e1d35e73dc1d1569c111845657799">__toString</a>()</td><td><a class="el" href="classtable.html">table</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a0ca4c47d0d9adea979459245af3b9b6e">calcul_pp</a>($pp)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a8711fa5f1d3852d44a76efa01f950104">calcule_des</a>($force, $degat_arme)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#a7d6d73070a80d26ca62b6314636b8423">charger</a>($id)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#ae7fba0a8213558cec4e0352d7dc42f92">cible_9cases</a></td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
@@ -71,6 +73,7 @@
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a5c068c2b6e6e2de6c1077553d89fa392">get_cible</a>()</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#ae876ad84548d1256546b4813cbbac16b">get_comp_assoc</a>()</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a2471ff58d1d6b46ea499ed8a782b66f2">get_comp_requis</a>()</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classcomp__sort.html#ac8ee51aae1312f8d87165a10326499c1">get_cout_mp</a>(&amp;$actif)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a5a6e62114a83a2d8f1934cd552937c19">get_description</a>($format=false)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort__buff.html#a01c6e9155320b733876982956aaffbd8">get_duree</a>()</td><td><a class="el" href="classcomp__sort__buff.html">comp_sort_buff</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort__buff.html#ab5549858318d688d232ffc90f19afffd">get_effet</a>()</td><td><a class="el" href="classcomp__sort__buff.html">comp_sort_buff</a></td><td></td></tr>
@@ -108,9 +111,10 @@
   <tr class="memlist"><td><a class="el" href="classcomp__sort.html#ae81672409819f9ace2b75f1731ef00c9">set_requis</a>($requis)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classcomp__sort__buff.html#a1a3eeaff85ae043947b1e9051b23e0a9">set_type</a>($type)</td><td><a class="el" href="classcomp__sort__buff.html">comp_sort_buff</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#abcbadd7a797d5f97ad937506e7884b1a">supprimer</a>()</td><td><a class="el" href="classtable.html">table</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a430d583962f41bfd9fa5e62d01db0912">test_potentiel</a>($pot_action, $pot_oppos)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a810c1dd8abd34e48c023c0d457e38772">test_de</a>($de, $seuil)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td><code> [static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classcomp__sort.html#a558737a01807b84d65632b1c216e0a01">test_potentiel</a>($pot_action, $pot_oppos, &amp;$attaque=null)</td><td><a class="el" href="classcomp__sort.html">comp_sort</a></td><td><code> [static]</code></td></tr>
 </table></div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:41:45 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:02 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

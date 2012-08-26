@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -34,12 +35,10 @@
 <div class="dynheader">
 Graphe d'héritage de comp_sort:</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__sort__inherit__graph.png" border="0" usemap="#comp__sort_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de comp_sort:</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__sort__coll__graph.png" border="0" usemap="#comp__sort_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classcomp__sort-members.html">Liste de tous les membres</a></p>
@@ -145,14 +144,20 @@ Graphe de collaboration de comp_sort:</div>
 <tr><td colspan="2"><h2>Gestion du lancement</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrp3b112a63174a79726e38a7b14d3b85dd"></a>Méthodes utilisées lors de l'utilisation (lancement) de la compétence / du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </p>
 <br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#ac8ee51aae1312f8d87165a10326499c1">get_cout_mp</a> (&amp;$actif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en RM/MP de la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, en prennant en compte l'affinité.  <a href="#ac8ee51aae1312f8d87165a10326499c1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a184bcb7c714a571afa647d846c5ab6ac">get_liste_cibles</a> ($cible, $<a class="el" href="classgroupe.html">groupe</a>=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des cibles.  <a href="#a184bcb7c714a571afa647d846c5ab6ac"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a0ca4c47d0d9adea979459245af3b9b6e">calcul_pp</a> ($pp)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul le pourcentage de dégâts absorbé en fonction de la PP.  <a href="#a0ca4c47d0d9adea979459245af3b9b6e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a8711fa5f1d3852d44a76efa01f950104">calcule_des</a> ($force, $degat_arme)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Fonction permettant de calculer les dés de dégat en fonction de la force et de l'arme de la personne.  <a href="#a8711fa5f1d3852d44a76efa01f950104"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a0578c86e7b55bf42e950f5d7ec9954da">lance_des</a> ($des)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode effecute le lancer de dés.  <a href="#a0578c86e7b55bf42e950f5d7ec9954da"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a430d583962f41bfd9fa5e62d01db0912">test_potentiel</a> ($pot_action, $pot_oppos)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effectuer un test entre deux potentiel.  <a href="#a430d583962f41bfd9fa5e62d01db0912"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a810c1dd8abd34e48c023c0d457e38772">test_de</a> ($de, $seuil)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effectuer un test entre un dé et une valeur fixe.  <a href="#a810c1dd8abd34e48c023c0d457e38772"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a558737a01807b84d65632b1c216e0a01">test_potentiel</a> ($pot_action, $pot_oppos, &amp;$attaque=null)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effectuer un test entre deux potentiel.  <a href="#a558737a01807b84d65632b1c216e0a01"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Classe <a class="el" href="classcomp__sort__buff.html" title="Classe comp_sort_buff Classe comp_sort_buff servant de base aux compétences sorts...">comp_sort_buff</a> Classe <a class="el" href="classcomp__sort.html" title="Classe comp_sort_buff Classe comp_sort servant de base aux compétences et sorts...">comp_sort</a> servant de base aux compétences et sorts. </p>
@@ -298,6 +303,39 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a0ca4c47d0d9adea979459245af3b9b6e"></a><!-- doxytag: member="comp_sort::calcul_pp" ref="a0ca4c47d0d9adea979459245af3b9b6e" args="($pp)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static comp_sort::calcul_pp </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>pp</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcul le pourcentage de dégâts absorbé en fonction de la PP. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$pp</em>&nbsp;</td><td>PP. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>Pourcentage de dégâts absorbé. </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a8711fa5f1d3852d44a76efa01f950104"></a><!-- doxytag: member="comp_sort::calcule_des" ref="a8711fa5f1d3852d44a76efa01f950104" args="($force, $degat_arme)" -->
 <div class="memitem">
 <div class="memproto">
@@ -332,6 +370,12 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Tableau contenant les dés à lancer (chaque dès apparait autant de fois dans la tableu qu'il faut le lancer). </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -471,6 +515,40 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="ac8ee51aae1312f8d87165a10326499c1"></a><!-- doxytag: member="comp_sort::get_cout_mp" ref="ac8ee51aae1312f8d87165a10326499c1" args="(&amp;$actif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_sort::get_cout_mp </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût en RM/MP de la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, en prennant en compte l'affinité. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>entité lançant le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> ou la compétence </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="classsort__combat.html#a0295b16fbcbb197e1e42c3e6c08ee16b">sort_combat</a>, et <a class="el" href="classsort__jeu.html#a3fc5f18cd06866a7bba8422f3702750c">sort_jeu</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a5a6e62114a83a2d8f1934cd552937c19"></a><!-- doxytag: member="comp_sort::get_description" ref="a5a6e62114a83a2d8f1934cd552937c19" args="($format=false)" -->
 <div class="memitem">
 <div class="memproto">
@@ -525,7 +603,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__sort_a233df908af003c19c53dd8fba1f51709_icgraph.png" border="0" usemap="#classcomp__sort_a233df908af003c19c53dd8fba1f51709_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -550,7 +627,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classcomp__sort__buff.html#a25b8f5d5dd7f98d8277d3bef9016c0eb">comp_sort_buff</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classcomp.html#afc30b66ce12c4818e2747aacfca36f21">comp</a>, <a class="el" href="classcomp__jeu.html#a06e52a548cff855105558616cf621841">comp_jeu</a>, <a class="el" href="classsort.html#abe56f9fc82f7f2ae46047e6095ab6bf0">sort</a>, et <a class="el" href="classsort__jeu.html#a33f59f6eaef29f9e4172f80aa6e13184">sort_jeu</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classcomp.html#afc30b66ce12c4818e2747aacfca36f21">comp</a>, <a class="el" href="classcomp__combat.html#a17cf788818501b36297fed0c7eef7682">comp_combat</a>, <a class="el" href="classcomp__jeu.html#a06e52a548cff855105558616cf621841">comp_jeu</a>, <a class="el" href="classsort.html#abe56f9fc82f7f2ae46047e6095ab6bf0">sort</a>, <a class="el" href="classsort__combat.html#a7d2325ca54c7116b95b70f557333468c">sort_combat</a>, et <a class="el" href="classsort__jeu.html#a33f59f6eaef29f9e4172f80aa6e13184">sort_jeu</a>.</p>
 
 </div>
 </div>
@@ -623,7 +700,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classcomp__sort__buff.html#abe387e122b71b7b827fd5a702ea610a4">comp_sort_buff</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classcomp.html#abc25aaf5bda6aec6793a1cc32de87dc2">comp</a>, <a class="el" href="classcomp__jeu.html#a236e88cc9bf8bec02c2169c373aeec95">comp_jeu</a>, <a class="el" href="classsort.html#a336f3ad2aa680f16ff468ee385f0ae95">sort</a>, et <a class="el" href="classsort__jeu.html#a83f35c837831a37894fc7bf97c299308">sort_jeu</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classcomp.html#abc25aaf5bda6aec6793a1cc32de87dc2">comp</a>, <a class="el" href="classcomp__combat.html#a0e9dea0f1491110b9a8fb84dc56ea060">comp_combat</a>, <a class="el" href="classcomp__jeu.html#a236e88cc9bf8bec02c2169c373aeec95">comp_jeu</a>, <a class="el" href="classsort.html#a336f3ad2aa680f16ff468ee385f0ae95">sort</a>, <a class="el" href="classsort__combat.html#a284557052df68bc5428ee2c97b184543">sort_combat</a>, et <a class="el" href="classsort__jeu.html#a83f35c837831a37894fc7bf97c299308">sort_jeu</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -669,6 +746,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie le coût en MP ou en RM. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -729,7 +812,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classcomp__sort__buff.html#a8fc4bbf83cce7f37eaedbd951daf8345">comp_sort_buff</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classcomp.html#a273ad60900ead32b8c62f8459a59aa58">comp</a>, <a class="el" href="classcomp__jeu.html#a991fa0266565e6767721b5c2fb202818">comp_jeu</a>, <a class="el" href="classsort.html#a10a7606b4300694c4681cfd287f1a456">sort</a>, et <a class="el" href="classsort__jeu.html#ad0e8d33c924eec99ba7a5a58fe5fda7c">sort_jeu</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classcomp.html#a273ad60900ead32b8c62f8459a59aa58">comp</a>, <a class="el" href="classcomp__combat.html#a937183360bca6e0eef412463faa8645c">comp_combat</a>, <a class="el" href="classcomp__jeu.html#a991fa0266565e6767721b5c2fb202818">comp_jeu</a>, <a class="el" href="classsort.html#a10a7606b4300694c4681cfd287f1a456">sort</a>, <a class="el" href="classsort__combat.html#ab6d367ac814fbdcf80edf0195ba7a5a6">sort_combat</a>, et <a class="el" href="classsort__jeu.html#ad0e8d33c924eec99ba7a5a58fe5fda7c">sort_jeu</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -766,7 +849,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Réimplémentée à partir de <a class="el" href="classcomp__sort__buff.html#a40be4487c807556f1ac4e0a3a429b57c">comp_sort_buff</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classcomp.html#a91e8599eec335519ba1985133217324a">comp</a>, <a class="el" href="classcomp__jeu.html#a71320327cb1f401164ce83417e7cd612">comp_jeu</a>, <a class="el" href="classsort.html#aa4f7f32228bd658e4066a801ceb249a2">sort</a>, et <a class="el" href="classsort__jeu.html#a7d13259c3f5a35cbdfb4a439ad1c2a18">sort_jeu</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classcomp.html#a91e8599eec335519ba1985133217324a">comp</a>, <a class="el" href="classcomp__combat.html#afe22b1db632d39825f7c564b27b18a3f">comp_combat</a>, <a class="el" href="classcomp__jeu.html#a71320327cb1f401164ce83417e7cd612">comp_jeu</a>, <a class="el" href="classsort.html#aa4f7f32228bd658e4066a801ceb249a2">sort</a>, <a class="el" href="classsort__combat.html#ae15ad6ac1aaaad6a81b415de7853c787">sort_combat</a>, et <a class="el" href="classsort__jeu.html#a7d13259c3f5a35cbdfb4a439ad1c2a18">sort_jeu</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -805,6 +888,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="classcomp__sort_a0578c86e7b55bf42e950f5d7ec9954da_cgraph.png" border="0" usemap="#classcomp__sort_a0578c86e7b55bf42e950f5d7ec9954da_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__sort_a0578c86e7b55bf42e950f5d7ec9954da_icgraph.png" border="0" usemap="#classcomp__sort_a0578c86e7b55bf42e950f5d7ec9954da_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1037,7 +1127,58 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a430d583962f41bfd9fa5e62d01db0912"></a><!-- doxytag: member="comp_sort::test_potentiel" ref="a430d583962f41bfd9fa5e62d01db0912" args="($pot_action, $pot_oppos)" -->
+<a class="anchor" id="a810c1dd8abd34e48c023c0d457e38772"></a><!-- doxytag: member="comp_sort::test_de" ref="a810c1dd8abd34e48c023c0d457e38772" args="($de, $seuil)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static comp_sort::test_de </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>de</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>seuil</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Effectuer un test entre un dé et une valeur fixe. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$de</em>&nbsp;</td><td>dé à lancer </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$seuil</em>&nbsp;</td><td>seuil à ne pas dépasser </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>true si le teste à réussi, false sinon </dd></dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__sort_a810c1dd8abd34e48c023c0d457e38772_cgraph.png" border="0" usemap="#classcomp__sort_a810c1dd8abd34e48c023c0d457e38772_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__sort_a810c1dd8abd34e48c023c0d457e38772_icgraph.png" border="0" usemap="#classcomp__sort_a810c1dd8abd34e48c023c0d457e38772_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a558737a01807b84d65632b1c216e0a01"></a><!-- doxytag: member="comp_sort::test_potentiel" ref="a558737a01807b84d65632b1c216e0a01" args="($pot_action, $pot_oppos, &amp;$attaque=null)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1051,7 +1192,13 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>pot_oppos</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>pot_oppos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>attaque</em> = <code>null</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -1075,7 +1222,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__sort_a430d583962f41bfd9fa5e62d01db0912_cgraph.png" border="0" usemap="#classcomp__sort_a430d583962f41bfd9fa5e62d01db0912_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
 </div>
 </p>
 
@@ -1356,7 +1508,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="comp__sort_8class_8php.html">comp_sort.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:41:49 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:11 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

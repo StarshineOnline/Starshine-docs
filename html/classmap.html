@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -45,7 +46,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a8f65ffe20f2585f1d800261b748ada4c">get_monstre</a> ($level=0, $<a class="el" href="classgroupe.html">groupe</a>=true)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ad195af0adfcb7e763571d3b2b05e0f45">get_pnj</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a457f66ac0f22fa4fe04c7bd87f67ff08">load_map_calques</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a55ff2117697672dd9988b29e570b34cb">print_dungeon_layer</a> ($x, $y, $margin_left=-2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ad11abdf5aed54f9169e03a84b94faee9">print_dungeon_layer</a> ($x, $y, $margin_left=-2, $donjon_layer= 'calque-atmosphere-noir')</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a30fc7177338bb473aea287b229719f3c">print_maptype_layer</a> ($map_type_calque, $x, $y, $margin_left=-2)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a15907574f5bb7375f31e23905088ff1d">set_affiche_royaume</a> ($val)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a1f30eb2e11ec8cad0197de78e6c26971">set_arene</a> ($<a class="el" href="classarene.html">arene</a>)</td></tr>
@@ -58,11 +59,15 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ad1a262f668acae041fd60139ef77c4d5">set_dungeon_layer</a> ($layer)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a38c28b3ed473f2f296413076fb43a287">set_onclick</a> ($onclick)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a20b6d0f65a3583b52921cf6ce987fddb">set_repere</a> ($reperes)</td></tr>
+<tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a44ff439204b91b28f909c370da4a04d4">is_masked_coordinates</a> ($x, $y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ab878331f874abc8960a513ec0ff32cfc">is_nysin</a> ($x, $y)</td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#aff14977c695f029637b245b2fd72c8c0">$affiche_terrain</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#acd94a667f55731ec82b5d6f230beffa5">$arene</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#abc73c7ccfc3f812caa82849a04836dd8">$cache_monstre</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a8f9c08a89ca96d05f6aa5a066f3816fe">$champ_vision</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#af2b60ab942a3000889d85d7397e126f0">$dont_use_relative_coords</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#af071a2f9c8c0d190024fa0da8a21f0a4">$dungeon_layer</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a5d8254bb7069ab5789d83fbe96061bb7">$onclick</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a3c04f6b4fa399f3dd95ea0a3af178e3d">$onclick_status</a></td></tr>
@@ -141,6 +146,13 @@
       </table>
 </div>
 <div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmap_aa4c9ef616b105f142c2db7406c0be20f_cgraph.png" border="0" usemap="#classmap_aa4c9ef616b105f142c2db7406c0be20f_cgraph_map" alt=""></div>
+</div>
+</p>
 
 </div>
 </div>
@@ -416,6 +428,81 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a44ff439204b91b28f909c370da4a04d4"></a><!-- doxytag: member="map::is_masked_coordinates" ref="a44ff439204b91b28f909c370da4a04d4" args="($x, $y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static map::is_masked_coordinates </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmap_a44ff439204b91b28f909c370da4a04d4_cgraph.png" border="0" usemap="#classmap_a44ff439204b91b28f909c370da4a04d4_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmap_a44ff439204b91b28f909c370da4a04d4_icgraph.png" border="0" usemap="#classmap_a44ff439204b91b28f909c370da4a04d4_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab878331f874abc8960a513ec0ff32cfc"></a><!-- doxytag: member="map::is_nysin" ref="ab878331f874abc8960a513ec0ff32cfc" args="($x, $y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static map::is_nysin </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classmap_ab878331f874abc8960a513ec0ff32cfc_icgraph.png" border="0" usemap="#classmap_ab878331f874abc8960a513ec0ff32cfc_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a457f66ac0f22fa4fe04c7bd87f67ff08"></a><!-- doxytag: member="map::load_map_calques" ref="a457f66ac0f22fa4fe04c7bd87f67ff08" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -440,7 +527,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a55ff2117697672dd9988b29e570b34cb"></a><!-- doxytag: member="map::print_dungeon_layer" ref="a55ff2117697672dd9988b29e570b34cb" args="($x, $y, $margin_left=&#45;2)" -->
+<a class="anchor" id="ad11abdf5aed54f9169e03a84b94faee9"></a><!-- doxytag: member="map::print_dungeon_layer" ref="ad11abdf5aed54f9169e03a84b94faee9" args="($x, $y, $margin_left=&#45;2, $donjon_layer= 'calque&#45;atmosphere&#45;noir')" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -460,7 +547,13 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>margin_left</em> = <code>-2</code></td><td>&nbsp;</td>
+          <td class="paramname"> <em>margin_left</em> = <code>-2</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>donjon_layer</em> = <code>'calque-atmosphere-noir'</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -474,7 +567,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmap_a55ff2117697672dd9988b29e570b34cb_icgraph.png" border="0" usemap="#classmap_a55ff2117697672dd9988b29e570b34cb_icgraph_map" alt=""></div>
+<div class="center"><img src="classmap_ad11abdf5aed54f9169e03a84b94faee9_icgraph.png" border="0" usemap="#classmap_ad11abdf5aed54f9169e03a84b94faee9_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -825,6 +918,19 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="af2b60ab942a3000889d85d7397e126f0"></a><!-- doxytag: member="map::$dont_use_relative_coords" ref="af2b60ab942a3000889d85d7397e126f0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">map::$dont_use_relative_coords = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af071a2f9c8c0d190024fa0da8a21f0a4"></a><!-- doxytag: member="map::$dungeon_layer" ref="af071a2f9c8c0d190024fa0da8a21f0a4" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -1063,7 +1169,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="map_8class_8php.html">map.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:42:22 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:18 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

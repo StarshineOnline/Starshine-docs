@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -96,10 +97,10 @@ Graphe de collaboration de map_monstre:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a7b28e52fd9d9f2bb38a93d2af665fe13">check_monstre</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime les buffs périmés actifs sur le <a class="el" href="classmonstre.html" title="Classe monstre Cette classe représentant la définition d&#39;un monstre.">monstre</a>.  <a href="#a7b28e52fd9d9f2bb38a93d2af665fe13"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a696f74d180e09094d7f89d6474cbb6e8">get_affiche</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a8b2a567c1558c26e3efac86fa72a2652">kill_monstre_de_donjon</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gère les actions spéciales à effectuer lorsqu'un mosntre dedonjon a été tué.  <a href="#a8b2a567c1558c26e3efac86fa72a2652"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#ac7397af653b04b7e62a912805fded4cb">kill_monstre_de_donjon2</a> ()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cherche dans la bdd s'il y a une action spéciale à effectuer lors de la mort d'un mosntre de donjon et l'effectue si besoin.  <a href="#ac7397af653b04b7e62a912805fded4cb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a1489ad1460a975cc7035279fe733e209">kill_monstre_de_donjon</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gère les actions spéciales à effectuer lorsqu'un mosntre dedonjon a été tué.  <a href="#a1489ad1460a975cc7035279fe733e209"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap__monstre.html#a5653c95e33dcde109eeb097da833c258">kill_monstre_de_donjon2</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cherche dans la bdd s'il y a une action spéciale à effectuer lors de la mort d'un mosntre de donjon et l'effectue si besoin.  <a href="#a5653c95e33dcde109eeb097da833c258"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
@@ -731,14 +732,15 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a8b2a567c1558c26e3efac86fa72a2652"></a><!-- doxytag: member="map_monstre::kill_monstre_de_donjon" ref="a8b2a567c1558c26e3efac86fa72a2652" args="()" -->
+<a class="anchor" id="a1489ad1460a975cc7035279fe733e209"></a><!-- doxytag: member="map_monstre::kill_monstre_de_donjon" ref="a1489ad1460a975cc7035279fe733e209" args="(&amp;$perso)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">map_monstre::kill_monstre_de_donjon </td>
           <td>(</td>
-          <td class="paramname"></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -751,27 +753,28 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmap__monstre_a8b2a567c1558c26e3efac86fa72a2652_cgraph.png" border="0" usemap="#classmap__monstre_a8b2a567c1558c26e3efac86fa72a2652_cgraph_map" alt=""></div>
+<div class="center"><img src="classmap__monstre_a1489ad1460a975cc7035279fe733e209_cgraph.png" border="0" usemap="#classmap__monstre_a1489ad1460a975cc7035279fe733e209_cgraph_map" alt=""></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmap__monstre_a8b2a567c1558c26e3efac86fa72a2652_icgraph.png" border="0" usemap="#classmap__monstre_a8b2a567c1558c26e3efac86fa72a2652_icgraph_map" alt=""></div>
+<div class="center"><img src="classmap__monstre_a1489ad1460a975cc7035279fe733e209_icgraph.png" border="0" usemap="#classmap__monstre_a1489ad1460a975cc7035279fe733e209_icgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ac7397af653b04b7e62a912805fded4cb"></a><!-- doxytag: member="map_monstre::kill_monstre_de_donjon2" ref="ac7397af653b04b7e62a912805fded4cb" args="()" -->
+<a class="anchor" id="a5653c95e33dcde109eeb097da833c258"></a><!-- doxytag: member="map_monstre::kill_monstre_de_donjon2" ref="a5653c95e33dcde109eeb097da833c258" args="(&amp;$perso)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">map_monstre::kill_monstre_de_donjon2 </td>
           <td>(</td>
-          <td class="paramname"></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
         </tr>
@@ -784,7 +787,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmap__monstre_ac7397af653b04b7e62a912805fded4cb_cgraph.png" border="0" usemap="#classmap__monstre_ac7397af653b04b7e62a912805fded4cb_cgraph_map" alt=""></div>
+<div class="center"><img src="classmap__monstre_a5653c95e33dcde109eeb097da833c258_cgraph.png" border="0" usemap="#classmap__monstre_a5653c95e33dcde109eeb097da833c258_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -974,7 +977,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="map__monstre_8class_8php.html">map_monstre.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:42:25 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:18 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

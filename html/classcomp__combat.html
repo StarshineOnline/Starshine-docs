@@ -13,6 +13,7 @@
     <ul>
       <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
       <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Fichiers</span></a></li>
       <li><a href="dirs.html"><span>Répertoires</span></a></li>
@@ -28,32 +29,77 @@
   </div>
 </div>
 <div class="contents">
-<h1>Référence de la classe comp_combat</h1><!-- doxytag: class="comp_combat" --><!-- doxytag: inherits="active_effect" -->
-<p>Competence de <a class="el" href="classcombat.html">combat</a>.  
+<h1>Référence de la classe comp_combat</h1><!-- doxytag: class="comp_combat" --><!-- doxytag: inherits="comp" -->
+<p>Classe <a class="el" href="classcomp__combat.html" title="Classe comp_combat Classe comp_combat servant de base aux compétences de combat...">comp_combat</a> Classe <a class="el" href="classcomp__combat.html" title="Classe comp_combat Classe comp_combat servant de base aux compétences de combat...">comp_combat</a> servant de base aux compétences de <a class="el" href="classcombat.html">combat</a>.  
 <a href="#_details">Plus de détails...</a></p>
 <div class="dynheader">
 Graphe d'héritage de comp_combat:</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__combat__inherit__graph.png" border="0" usemap="#comp__combat_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de comp_combat:</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__combat__coll__graph.png" border="0" usemap="#comp__combat_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classcomp__combat-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a00240fef0be7846ac89da5e533d52102">__construct</a> ($aNom, $aLevel)</td></tr>
-<tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a230f6419d9270175518f94d4ee1f829a">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a230f6419d9270175518f94d4ee1f829a"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Gestion du lancement</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p><a class="anchor" id="amgrp3b112a63174a79726e38a7b14d3b85dd"></a>Méthodes utilisées lors de l'utilisation (lancement) de la compétence / du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </p>
+<br/><br/></div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#ad2f49fd88193ceecb0538084bcb0ac18">armure</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'action de l'armure.  <a href="#ad2f49fd88193ceecb0538084bcb0ac18"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#abf40e982e8697fb3e1848d4cfa642ce7">bouclier</a> ($degat, $attaque, &amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'action du bouclier.  <a href="#abf40e982e8697fb3e1848d4cfa642ce7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a32db9a19bc2883cac3cb56a844d21e4e">calcul_degats</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode calculant les dégâts de base avant réduction.  <a href="#a32db9a19bc2883cac3cb56a844d21e4e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a735eb7e25dc5376b8bc916f002f41f49">critiques</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant les coups critiques.  <a href="#a735eb7e25dc5376b8bc916f002f41f49"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a62e77b82c2e95c52c139487adb53ba92">get_augmentations</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Donne la liste des compétences pouvant augmenter.  <a href="#a62e77b82c2e95c52c139487adb53ba92"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#ae5658ff13d1d89257efab6b33e70e572">lance</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation d'une compétence.  <a href="#ae5658ff13d1d89257efab6b33e70e572"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a6b4bdc98b4fbf7f4558ae93f977ca33f">message</a> (&amp;$actif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affichage du message.  <a href="#a6b4bdc98b4fbf7f4558ae93f977ca33f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a4977f26a1d48ac20d2ab603f9a455cd4">touche</a> ($attaque, &amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#a4977f26a1d48ac20d2ab603f9a455cd4"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrp9c2ff6d0683497ad43281c742be15d58"></a>Donnée et méthode sur les inforamations "générales" : type, niveau, … </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a00d2847cccfbb3c2e6605dddd6d0eef3">$effet3</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Troisième effet.  <a href="#a00d2847cccfbb3c2e6605dddd6d0eef3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#afee1bf4f14a58c390925fe6fc5aa0b43">$etat_lie</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">État du personnage lié à cette compétence.  <a href="#afee1bf4f14a58c390925fe6fc5aa0b43"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a622c25ec7ace0d5b5afd259099fb6ee7">get_effet3</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le troisième effet.  <a href="#a622c25ec7ace0d5b5afd259099fb6ee7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a0f6c7b7586671a7d29ef94d835210165">get_etat_lie</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'état du personnage lié à cette compétence.  <a href="#a0f6c7b7586671a7d29ef94d835210165"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a5f1754b7c38d09a285479e84a465f212">set_effet3</a> ($effet3)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le troisième effet.  <a href="#a5f1754b7c38d09a285479e84a465f212"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#add03ad735063db5c004ad183c134dd51">set_etat_lie</a> ($etat_lie)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'état du personnage lié à cette compétence.  <a href="#add03ad735063db5c004ad183c134dd51"></a><br/></td></tr>
+<tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
+<br/><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#aef193d7e5ace81e97affc0294e89b1f0">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $nom='', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $effet3=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0, $arme_requis='', $etat_lie='')</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#aef193d7e5ace81e97affc0294e89b1f0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a17cf788818501b36297fed0c7eef7682">get_liste_champs</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a17cf788818501b36297fed0c7eef7682"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a0e9dea0f1491110b9a8fb84dc56ea060">get_liste_update</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base.  <a href="#a0e9dea0f1491110b9a8fb84dc56ea060"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a937183360bca6e0eef412463faa8645c">get_valeurs_insert</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des valeurs des champspour une insertion dans la base.  <a href="#a937183360bca6e0eef412463faa8645c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#afe22b1db632d39825f7c564b27b18a3f">init_tab</a> ($vals)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise les données membres à l'aide d'un tableau.  <a href="#afe22b1db632d39825f7c564b27b18a3f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a4b2f4cee82d23c378ac952c4716bbf2c">creer_attaque</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode renvoyant une instance correspondant à une attaque simple.  <a href="#a4b2f4cee82d23c378ac952c4716bbf2c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat.html#a27e4f78b3c07956acfccc979695413ba">factory</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode créant l'objet adéquat à partir d'un élément de la base de donnée.  <a href="#a27e4f78b3c07956acfccc979695413ba"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
-<p>Competence de <a class="el" href="classcombat.html">combat</a>. </p>
+<p>Classe <a class="el" href="classcomp__combat.html" title="Classe comp_combat Classe comp_combat servant de base aux compétences de combat...">comp_combat</a> Classe <a class="el" href="classcomp__combat.html" title="Classe comp_combat Classe comp_combat servant de base aux compétences de combat...">comp_combat</a> servant de base aux compétences de <a class="el" href="classcombat.html">combat</a>. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a00240fef0be7846ac89da5e533d52102"></a><!-- doxytag: member="comp_combat::__construct" ref="a00240fef0be7846ac89da5e533d52102" args="($aNom, $aLevel)" -->
+<a class="anchor" id="aef193d7e5ace81e97affc0294e89b1f0"></a><!-- doxytag: member="comp_combat::__construct" ref="aef193d7e5ace81e97affc0294e89b1f0" args="($id=0, $nom='', $type='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $effet3=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0, $arme_requis='', $etat_lie='')" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -61,13 +107,115 @@ Graphe de collaboration de comp_combat:</div>
           <td class="memname">comp_combat::__construct </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aNom</em>, </td>
+          <td class="paramname"> <em>id</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aLevel</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>nom</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>type</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>duree</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>comp_assoc</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>carac_assoc</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>comp_requis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>carac_requis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet2</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet3</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>requis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cible</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>description</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mp</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>prix</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>lvl_batiment</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>arme_requis</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>etat_lie</em> = <code>''</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -78,18 +226,110 @@ Graphe de collaboration de comp_combat:</div>
 </div>
 <div class="memdoc">
 
+<p>Constructeur. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>Id dans la base de donnée ou tableau associatif contenant les informations permettant la création de l'objet </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type</em>&nbsp;</td><td>Type générique. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>effet</em>&nbsp;</td><td>Effet principal. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>duree</em>&nbsp;</td><td>Durée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>comp_assoc</em>&nbsp;</td><td>Compétence associée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>carac_assoc</em>&nbsp;</td><td>Caractéristique associée </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>comp_requis</em>&nbsp;</td><td>Requis dans la compétence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>carac_requis</em>&nbsp;</td><td>Requis dans la caractéristique (inutilisé) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>effet2</em>&nbsp;</td><td>Deuxième effet </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>requis</em>&nbsp;</td><td>Compétence ou <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> requis pour apprendre celui-ci </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cible</em>&nbsp;</td><td>Cible de la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>description</em>&nbsp;</td><td>Description du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>mp</em>&nbsp;</td><td>Coût en MP ou en RM </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>prix</em>&nbsp;</td><td>Prix de la compétence ou le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lvl_batiment</em>&nbsp;</td><td>Niveau de l'école qui vent la compétence ou le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>arme_requis</em>&nbsp;</td><td><a class="el" href="class_arme.html">Arme</a> requise pour utiliser la compétence </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_aef193d7e5ace81e97affc0294e89b1f0_cgraph.png" border="0" usemap="#classcomp__combat_aef193d7e5ace81e97affc0294e89b1f0_cgraph_map" alt=""></div>
+</div>
+</p>
+
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a230f6419d9270175518f94d4ee1f829a"></a><!-- doxytag: member="comp_combat::factory" ref="a230f6419d9270175518f94d4ee1f829a" args="(&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')" -->
+<a class="anchor" id="ad2f49fd88193ceecb0538084bcb0ac18"></a><!-- doxytag: member="comp_combat::armure" ref="ad2f49fd88193ceecb0538084bcb0ac18" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static comp_combat::factory </td>
+          <td class="memname">comp_combat::armure </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effects</em>, </td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode gérant l'action de l'armure. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage utuilisant la coméptence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage adverse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effets</em>&nbsp;</td><td>Effets </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_ad2f49fd88193ceecb0538084bcb0ac18_cgraph.png" border="0" usemap="#classcomp__combat_ad2f49fd88193ceecb0538084bcb0ac18_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abf40e982e8697fb3e1848d4cfa642ce7"></a><!-- doxytag: member="comp_combat::bouclier" ref="abf40e982e8697fb3e1848d4cfa642ce7" args="($degat, $attaque, &amp;$actif, &amp;$passif, &amp;$effets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::bouclier </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>degat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>attaque</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -106,38 +346,633 @@ Graphe de collaboration de comp_combat:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>acteur</em> = <code>''</code></td><td>&nbsp;</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td><td><code> [static]</code></td>
+          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Crée l'effet. </p>
+<p>Méthode gérant l'action du bouclier. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>Tableau des effets. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$acteur</em>&nbsp;</td><td>Indique si le personnage à l'origine de l'effet est l'attaquant ("attaquant") ou le défenseur. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$degat</em>&nbsp;</td><td>Dégâts avant action du bouclier </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage utuilisant la coméptence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage adverse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effets</em>&nbsp;</td><td>Effets </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a05ca7643c1f1e3147b23067edcd525c4">effect</a>.</p>
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a32db9a19bc2883cac3cb56a844d21e4e"></a><!-- doxytag: member="comp_combat::calcul_degats" ref="a32db9a19bc2883cac3cb56a844d21e4e" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::calcul_degats </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode calculant les dégâts de base avant réduction. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage utuilisant la compétence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage adverse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effets</em>&nbsp;</td><td>Effets </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="classcomp__combat__vicieuse.html#a4351a43eb0be21b17206c91f381392c1">comp_combat_vicieuse</a>, <a class="el" href="classcomp__combat__coup__bouclier.html#a0408102186df156aec7a9c8da560d4e5">comp_combat_coup_bouclier</a>, et <a class="el" href="classcomp__combat__sable.html#a41e0f5e8d85a814963f6f6e6c174d0e6">comp_combat_sable</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a32db9a19bc2883cac3cb56a844d21e4e_cgraph.png" border="0" usemap="#classcomp__combat_a32db9a19bc2883cac3cb56a844d21e4e_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b2f4cee82d23c378ac952c4716bbf2c"></a><!-- doxytag: member="comp_combat::creer_attaque" ref="a4b2f4cee82d23c378ac952c4716bbf2c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static comp_combat::creer_attaque </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode renvoyant une instance correspondant à une attaque simple. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a4b2f4cee82d23c378ac952c4716bbf2c_icgraph.png" border="0" usemap="#classcomp__combat_a4b2f4cee82d23c378ac952c4716bbf2c_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a735eb7e25dc5376b8bc916f002f41f49"></a><!-- doxytag: member="comp_combat::critiques" ref="a735eb7e25dc5376b8bc916f002f41f49" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::critiques </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode gérant les coups critiques. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage utuilisant la coméptence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage adverse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effets</em>&nbsp;</td><td>Effets </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a735eb7e25dc5376b8bc916f002f41f49_cgraph.png" border="0" usemap="#classcomp__combat_a735eb7e25dc5376b8bc916f002f41f49_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a27e4f78b3c07956acfccc979695413ba"></a><!-- doxytag: member="comp_combat::factory" ref="a27e4f78b3c07956acfccc979695413ba" args="($id)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static comp_combat::factory </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>id</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode créant l'objet adéquat à partir d'un élément de la base de donnée. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>id</em>&nbsp;</td><td>id de la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> dans la base de donnée </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a27e4f78b3c07956acfccc979695413ba_cgraph.png" border="0" usemap="#classcomp__combat_a27e4f78b3c07956acfccc979695413ba_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a62e77b82c2e95c52c139487adb53ba92"></a><!-- doxytag: member="comp_combat::get_augmentations" ref="a62e77b82c2e95c52c139487adb53ba92" args="(&amp;$actif, &amp;$passif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::get_augmentations </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Donne la liste des compétences pouvant augmenter. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage utuilisant la coméptence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage adverse </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a62e77b82c2e95c52c139487adb53ba92_cgraph.png" border="0" usemap="#classcomp__combat_a62e77b82c2e95c52c139487adb53ba92_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a62e77b82c2e95c52c139487adb53ba92_icgraph.png" border="0" usemap="#classcomp__combat_a62e77b82c2e95c52c139487adb53ba92_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a622c25ec7ace0d5b5afd259099fb6ee7"></a><!-- doxytag: member="comp_combat::get_effet3" ref="a622c25ec7ace0d5b5afd259099fb6ee7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::get_effet3 </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le troisième effet. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a622c25ec7ace0d5b5afd259099fb6ee7_icgraph.png" border="0" usemap="#classcomp__combat_a622c25ec7ace0d5b5afd259099fb6ee7_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f6c7b7586671a7d29ef94d835210165"></a><!-- doxytag: member="comp_combat::get_etat_lie" ref="a0f6c7b7586671a7d29ef94d835210165" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::get_etat_lie </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'état du personnage lié à cette compétence. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a17cf788818501b36297fed0c7eef7682"></a><!-- doxytag: member="comp_combat::get_liste_champs" ref="a17cf788818501b36297fed0c7eef7682" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::get_liste_champs </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs pour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#afc30b66ce12c4818e2747aacfca36f21">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e9dea0f1491110b9a8fb84dc56ea060"></a><!-- doxytag: member="comp_combat::get_liste_update" ref="a0e9dea0f1491110b9a8fb84dc56ea060" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::get_liste_update </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des champs et valeurs pour une mise-à-jour dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#abc25aaf5bda6aec6793a1cc32de87dc2">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a937183360bca6e0eef412463faa8645c"></a><!-- doxytag: member="comp_combat::get_valeurs_insert" ref="a937183360bca6e0eef412463faa8645c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::get_valeurs_insert </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la liste des valeurs des champspour une insertion dans la base. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#a273ad60900ead32b8c62f8459a59aa58">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe22b1db632d39825f7c564b27b18a3f"></a><!-- doxytag: member="comp_combat::init_tab" ref="afe22b1db632d39825f7c564b27b18a3f" args="($vals)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::init_tab </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>vals</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Initialise les données membres à l'aide d'un tableau. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>array</em>&nbsp;</td><td>$vals Tableau contenant les valeurs des données. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp.html#a91e8599eec335519ba1985133217324a">comp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5658ff13d1d89257efab6b33e70e572"></a><!-- doxytag: member="comp_combat::lance" ref="ae5658ff13d1d89257efab6b33e70e572" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::lance </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode gérant l'utilisation d'une compétence. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage utuilisant la coméptence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage adverse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effets</em>&nbsp;</td><td>Effets </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="classcomp__combat__toucher.html#a31d7c77813303e215aefb1b98d7a4967">comp_combat_toucher</a>, <a class="el" href="classcomp__combat__degats.html#a694ae35e2b931a288b0649854653720d">comp_combat_degats</a>, <a class="el" href="classcomp__combat__degat__etat.html#a25665c89dc7108a5f20900a3020ff9e9">comp_combat_degat_etat</a>, <a class="el" href="classcomp__combat__etat.html#a861d0dfbaa1915d4925565a32a409efb">comp_combat_etat</a>, <a class="el" href="classcomp__combat__etourdi.html#a53ccf0e27a050714e8774c5daf4d8ec9">comp_combat_etourdi</a>, <a class="el" href="classcomp__combat__effet.html#abeb4dd2d8198669ed2f60559e27a43d6">comp_combat_effet</a>, <a class="el" href="classcomp__combat__der__chance.html#a563b29875a1d34bd48300219a8696418">comp_combat_der_chance</a>, <a class="el" href="classcomp__combat__dissim.html#aceef5f266646ff2e56b9a7d0f4e47989">comp_combat_dissim</a>, <a class="el" href="classcomp__combat__pot.html#a7a446d82ea2c56aa89c554fa107b2383">comp_combat_pot</a>, <a class="el" href="classcomp__combat__deg__pot.html#a18a72c9c0f9706a3162ce3b92e20fb14">comp_combat_deg_pot</a>, et <a class="el" href="classcomp__combat__coup__bouclier.html#ac7cb5d5534497d5ad027f749ea084d3e">comp_combat_coup_bouclier</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b4bdc98b4fbf7f4558ae93f977ca33f"></a><!-- doxytag: member="comp_combat::message" ref="a6b4bdc98b4fbf7f4558ae93f977ca33f" args="(&amp;$actif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::message </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Affichage du message. </p>
+
+<p>Réimplémentée dans <a class="el" href="classcomp__combat__posture.html#af9d5cffaf6b364866dfbd97eb992e920">comp_combat_posture</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+<div class="center"><img src="classcomp__combat_a6b4bdc98b4fbf7f4558ae93f977ca33f_cgraph.png" border="0" usemap="#classcomp__combat_a6b4bdc98b4fbf7f4558ae93f977ca33f_cgraph_map" alt=""></div>
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f1754b7c38d09a285479e84a465f212"></a><!-- doxytag: member="comp_combat::set_effet3" ref="a5f1754b7c38d09a285479e84a465f212" args="($effet3)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::set_effet3 </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>effet3</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le troisième effet. </p>
+
+</div>
+</div>
+<a class="anchor" id="add03ad735063db5c004ad183c134dd51"></a><!-- doxytag: member="comp_combat::set_etat_lie" ref="add03ad735063db5c004ad183c134dd51" args="($etat_lie)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::set_etat_lie </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>etat_lie</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie l'état du personnage lié à cette compétence. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4977f26a1d48ac20d2ab603f9a455cd4"></a><!-- doxytag: member="comp_combat::touche" ref="a4977f26a1d48ac20d2ab603f9a455cd4" args="($attaque, &amp;$actif, &amp;$passif, &amp;$effets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::touche </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>attaque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage utuilisant la coméptence </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage adverse </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$effets</em>&nbsp;</td><td>Effets </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée dans <a class="el" href="classcomp__combat__etourdi.html#ad088c55cb43a49b4e508048549413ad7">comp_combat_etourdi</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a00d2847cccfbb3c2e6605dddd6d0eef3"></a><!-- doxytag: member="comp_combat::$effet3" ref="a00d2847cccfbb3c2e6605dddd6d0eef3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::$effet3<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Troisième effet. </p>
+
+</div>
+</div>
+<a class="anchor" id="afee1bf4f14a58c390925fe6fc5aa0b43"></a><!-- doxytag: member="comp_combat::$etat_lie" ref="afee1bf4f14a58c390925fe6fc5aa0b43" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat::$etat_lie<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>État du personnage lié à cette compétence. </p>
 
 </div>
 </div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
-<li>SSO/Starshine-Online/class/<a class="el" href="competence_8class_8php.html">competence.class.php</a></li>
+<li>SSO/Starshine-Online/class/<a class="el" href="comp__combat_8class_8php.html">comp_combat.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Wed May 9 14:41:45 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:04 2012 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
