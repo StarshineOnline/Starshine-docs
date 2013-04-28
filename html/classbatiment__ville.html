@@ -33,7 +33,7 @@
 <p><a href="classbatiment__ville-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a1542c5d104095fa5e918209a66c551e0">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $nom= '', $cout= '', $entretien= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $level= '', $hp= '')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a1542c5d104095fa5e918209a66c551e0">__construct</a> ($id=0, $nom= '', $cout= '', $entretien= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $level= '', $hp= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#a1542c5d104095fa5e918209a66c551e0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#aa49aca990cc33f97d74df68410b1830a">__toString</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#aa49aca990cc33f97d74df68410b1830a"></a><br/></td></tr>
@@ -59,7 +59,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a6c83be2828106c2a58b2115c900599ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a62a39dcd4d2e5db716f519c90c7d243d">set_hp</a> ($hp)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a62a39dcd4d2e5db716f519c90c7d243d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a7c0eb635f4db48170024d952e48f0d9a">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a7c0eb635f4db48170024d952e48f0d9a">set_id</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a7c0eb635f4db48170024d952e48f0d9a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a94edf9d72f1e63bae3f235863ec1a345">set_level</a> ($level)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a94edf9d72f1e63bae3f235863ec1a345"></a><br/></td></tr>
@@ -70,7 +70,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#ada7bdbd035e64a1a1d123f5b9b1e1861">supprimer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  public.  <a href="#ada7bdbd035e64a1a1d123f5b9b1e1861"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a3239993510661d78955338035fe014aa">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#a3239993510661d78955338035fe014aa">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  static.  <a href="#a3239993510661d78955338035fe014aa"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbatiment__ville.html#aaf657581c3af96e5c0955415acb80d3f">$cout</a></td></tr>
@@ -201,7 +201,7 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -708,7 +708,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">batiment_ville::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
+          <td class="memname">batiment_ville::$id<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -759,7 +759,7 @@
 <li>SSO/Starshine-Online/class/<a class="el" href="batiment__ville_8class_8php.html">batiment_ville.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:00 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:18 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

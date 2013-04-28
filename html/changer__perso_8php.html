@@ -32,8 +32,9 @@
 <h1>Référence du fichier changer_perso.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="changer__perso_8php.html#ad156bf9cb9d35bc00f4786aa6260a78e">$info</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="changer__perso_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classjoueur.html">joueur</a>( $_SESSION['id_joueur'] )</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="changer__perso_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="changer__perso_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT ID, nom, race, <a class="el" href="classclasse.html">classe</a> FROM <a class="el" href="classperso.html">perso</a> WHERE id_joueur = '.$_SESSION['id_joueur'].' ORDER BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>'</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="changer__perso_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT ID, nom, race, <a class="el" href="classclasse.html">classe</a> FROM <a class="el" href="classperso.html">perso</a> WHERE id_joueur = '.$_SESSION['id_joueur'].' ORDER BY id'</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="ad156bf9cb9d35bc00f4786aa6260a78e"></a><!-- doxytag: member="changer_perso.php::$info" ref="ad156bf9cb9d35bc00f4786aa6260a78e" args="" -->
@@ -42,6 +43,19 @@
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $info = false</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="changer_perso.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classjoueur.html">joueur</a>( $_SESSION['id_joueur'] )</td>
         </tr>
       </table>
 </div>
@@ -67,7 +81,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = 'SELECT ID, nom, race, <a class="el" href="classclasse.html">classe</a> FROM <a class="el" href="classperso.html">perso</a> WHERE id_joueur = '.$_SESSION['id_joueur'].' ORDER BY <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>'</td>
+          <td class="memname">$requete = 'SELECT ID, nom, race, <a class="el" href="classclasse.html">classe</a> FROM <a class="el" href="classperso.html">perso</a> WHERE id_joueur = '.$_SESSION['id_joueur'].' ORDER BY id'</td>
         </tr>
       </table>
 </div>
@@ -76,7 +90,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:49 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:20:59 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

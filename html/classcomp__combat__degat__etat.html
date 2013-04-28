@@ -45,12 +45,16 @@ Graphe de collaboration de comp_combat_degat_etat:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__degat__etat.html#a7f2bb9940aa2cff56626a02c3642321e">__construct</a> ($tbl, $<a class="el" href="classetat.html">etat</a>=null, $duree=null, $effet=null)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">true si la cible est soi-même, false si c'est l'ennemi  <a href="#a7f2bb9940aa2cff56626a02c3642321e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__degat__etat.html#a25665c89dc7108a5f20900a3020ff9e9">lance</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation d'une compétence.  <a href="#a25665c89dc7108a5f20900a3020ff9e9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__degat__etat.html#ad0b86b39b04c5c2cee63586f9e565478">touche</a> ($attaque, &amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#ad0b86b39b04c5c2cee63586f9e565478"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__degat__etat.html#a38f3b4c03ca1eedc766d98ea03be4a5c">ajout_etat</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute l'état.  <a href="#a38f3b4c03ca1eedc766d98ea03be4a5c"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs protégés</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__degat__etat.html#a072ad35bbfe467462324b925bde1ce04">$autocible</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__degat__etat.html#abe482de9800417983baddf86ada63aba">$duree_etat</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Durée de l'état (null s'il faut prendre le paramètre duree).  <a href="#abe482de9800417983baddf86ada63aba"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__degat__etat.html#a2932b3decf39d2f68f35910fcaa97e8f">$effet_etat</a></td></tr>
@@ -98,6 +102,8 @@ Graphe de collaboration de comp_combat_degat_etat:</div>
 </div>
 <div class="memdoc">
 
+<p>true si la cible est soi-même, false si c'est l'ennemi </p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
@@ -140,7 +146,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__combat__degat__etat_a38f3b4c03ca1eedc766d98ea03be4a5c_cgraph.png" border="0" usemap="#classcomp__combat__degat__etat_a38f3b4c03ca1eedc766d98ea03be4a5c_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -192,13 +197,76 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__combat__degat__etat_a25665c89dc7108a5f20900a3020ff9e9_cgraph.png" border="0" usemap="#classcomp__combat__degat__etat_a25665c89dc7108a5f20900a3020ff9e9_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0b86b39b04c5c2cee63586f9e565478"></a><!-- doxytag: member="comp_combat_degat_etat::touche" ref="ad0b86b39b04c5c2cee63586f9e565478" args="($attaque, &amp;$actif, &amp;$passif, &amp;$effets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat_degat_etat::touche </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>attaque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp__combat.html#a4977f26a1d48ac20d2ab603f9a455cd4">comp_combat</a>.</p>
+
+<p>Réimplémentée dans <a class="el" href="classcomp__combat__etourdi.html#ad088c55cb43a49b4e508048549413ad7">comp_combat_etourdi</a>, et <a class="el" href="classcomp__combat__coup__bouclier.html#a86406df8226f3132910c206298745adc">comp_combat_coup_bouclier</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
 </div>
 </p>
 
 </div>
 </div>
 <hr/><h2>Documentation des données membres</h2>
+<a class="anchor" id="a072ad35bbfe467462324b925bde1ce04"></a><!-- doxytag: member="comp_combat_degat_etat::$autocible" ref="a072ad35bbfe467462324b925bde1ce04" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat_degat_etat::$autocible<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="abe482de9800417983baddf86ada63aba"></a><!-- doxytag: member="comp_combat_degat_etat::$duree_etat" ref="abe482de9800417983baddf86ada63aba" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -248,7 +316,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="comp__combat_8class_8php.html">comp_combat.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:04 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:25 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

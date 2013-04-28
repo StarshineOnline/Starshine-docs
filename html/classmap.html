@@ -43,7 +43,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a282c3c404ff1b80040a9deee94b62697">get_batiment</a> ($<a class="el" href="classroyaume.html">royaume</a>='')</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#aa0ac0f400824d0385cec4609ff6d15c1">get_drapeau</a> ($<a class="el" href="classroyaume.html">royaume</a>='')</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ad6a863add7ffa95b765e4691f55d4650">get_joueur</a> ($race= 'neutre', $all=false, $race_only=false)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a8f65ffe20f2585f1d800261b748ada4c">get_monstre</a> ($level=0, $<a class="el" href="classgroupe.html">groupe</a>=true)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#adb7ab928b17eda29f584559b5686a5e1">get_monstre</a> ($level=0, $<a class="el" href="classgroupe.html">groupe</a>=true, &amp;$<a class="el" href="classperso.html">perso</a>=null)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ad195af0adfcb7e763571d3b2b05e0f45">get_pnj</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#a457f66ac0f22fa4fe04c7bd87f67ff08">load_map_calques</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmap.html#ad11abdf5aed54f9169e03a84b94faee9">print_dungeon_layer</a> ($x, $y, $margin_left=-2, $donjon_layer= 'calque-atmosphere-noir')</td></tr>
@@ -384,7 +384,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a8f65ffe20f2585f1d800261b748ada4c"></a><!-- doxytag: member="map::get_monstre" ref="a8f65ffe20f2585f1d800261b748ada4c" args="($level=0, $groupe=true)" -->
+<a class="anchor" id="adb7ab928b17eda29f584559b5686a5e1"></a><!-- doxytag: member="map::get_monstre" ref="adb7ab928b17eda29f584559b5686a5e1" args="($level=0, $groupe=true, &amp;$perso=null)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -398,7 +398,13 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>groupe</em> = <code>true</code></td><td>&nbsp;</td>
+          <td class="paramname"> <em>groupe</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em> = <code>null</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -1169,7 +1175,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="map_8class_8php.html">map.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:18 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:52 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

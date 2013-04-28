@@ -47,8 +47,8 @@ Graphe de collaboration de poison:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpoison.html#a4a1b82272134ab870cab16406bd4418e">__construct</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpoison.html#a8affaa90019a10f9cf9652820b0aa665">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a8affaa90019a10f9cf9652820b0aa665"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpoison.html#ab249c57d8b801ac36a6b3b1ca1b43bec">fin_round</a> (&amp;$actif, &amp;$passif, $mode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#ab249c57d8b801ac36a6b3b1ca1b43bec"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpoison.html#ac1d1d0f4508111fe56180aa8c0f7b58f">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#ac1d1d0f4508111fe56180aa8c0f7b58f"></a><br/></td></tr>
@@ -126,7 +126,7 @@ Graphe de collaboration de poison:</div>
 
 </div>
 </div>
-<a class="anchor" id="a8affaa90019a10f9cf9652820b0aa665"></a><!-- doxytag: member="poison::fin_round" ref="a8affaa90019a10f9cf9652820b0aa665" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="ab249c57d8b801ac36a6b3b1ca1b43bec"></a><!-- doxytag: member="poison::fin_round" ref="ab249c57d8b801ac36a6b3b1ca1b43bec" args="(&amp;$actif, &amp;$passif, $mode)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -140,7 +140,13 @@ Graphe de collaboration de poison:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mode</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -156,16 +162,16 @@ Graphe de collaboration de poison:</div>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a8907603b4e1152922cd9a1c8befd6bb5">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#af4dd65c83ad170e0222353bb9a5c2ea4">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classpoison_a8affaa90019a10f9cf9652820b0aa665_cgraph.png" border="0" usemap="#classpoison_a8affaa90019a10f9cf9652820b0aa665_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -175,7 +181,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:23 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:00 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

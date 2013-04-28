@@ -33,7 +33,7 @@
 <p><a href="classcomp__perso-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#afe842bc8d0c99ea7b27e73e3f83a7f00">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $id_comp=0, $<a class="el" href="classcompetence.html">competence</a>= '', $valeur= '', $id_perso= '')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#afe842bc8d0c99ea7b27e73e3f83a7f00">__construct</a> ($id=0, $id_comp=0, $<a class="el" href="classcompetence.html">competence</a>= '', $valeur= '', $id_perso= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#afe842bc8d0c99ea7b27e73e3f83a7f00"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a0687ac200d829782199cc268de74645c">__toString</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#a0687ac200d829782199cc268de74645c"></a><br/></td></tr>
@@ -51,7 +51,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sauvegarde automatiquement en base de donnée.  <a href="#aacc34b0d9cee000a23d2dcea5701027e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#afc9936bc4549abb678dc411a2467e53d">set_competence</a> ($<a class="el" href="classcompetence.html">competence</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#afc9936bc4549abb678dc411a2467e53d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a150433eb82f4068934d9d0b85320edd8">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a150433eb82f4068934d9d0b85320edd8">set_id</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a150433eb82f4068934d9d0b85320edd8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a11f6eb9ae8d07748acb855e4cf6954ac">set_id_comp</a> ($id_comp)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a11f6eb9ae8d07748acb855e4cf6954ac"></a><br/></td></tr>
@@ -62,7 +62,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a386147f1f3aa7d0ca0bcf643d7b9bf8c">supprimer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  public.  <a href="#a386147f1f3aa7d0ca0bcf643d7b9bf8c"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a13a0c680e765ec2180b9d0012f20ab9d">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a13a0c680e765ec2180b9d0012f20ab9d">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  static.  <a href="#a13a0c680e765ec2180b9d0012f20ab9d"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__perso.html#a06d8b281d640526ae8c5cc331cb2517e">$competence</a></td></tr>
@@ -177,7 +177,7 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -552,7 +552,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">comp_perso::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
+          <td class="memname">comp_perso::$id<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -603,7 +603,7 @@
 <li>SSO/Starshine-Online/class/<a class="el" href="comp__perso_8class_8php.html">comp_perso.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:09 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:29 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

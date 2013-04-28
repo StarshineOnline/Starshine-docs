@@ -31,8 +31,8 @@
 <div class="contents">
 <h1>Référence du fichier alchimiste.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a40eef049cfd23bf6f2f8c47e2ef5cc16">$augmentation</a> = augmentation_competence('alchimie', $joueur, 2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>($joueur-&gt;get_pos())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a40eef049cfd23bf6f2f8c47e2ef5cc16">$augmentation</a> = augmentation_competence('alchimie', $<a class="el" href="classjoueur.html">joueur</a>, 2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_pos())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#ad796fdd62c37e6c1fea9789f926881b6">$color</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a3a86f872a851a1006c4b3b0ead163cb6">$cout</a> = $recette-&gt;prix + $taxe</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a6eebb82e85eae5c7e535c768a64b6958">$fort</a> = ''</td></tr>
@@ -47,9 +47,9 @@
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($return[1] &gt;<br class="typebreak"/>
  0 AND!array_key_exists('fort', <br class="typebreak"/>
 $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT royaume_alchimie FROM <a class="el" href="classcraft__recette.html">craft_recette</a> WHERE royaume_alchimie &lt; &quot;.$R-&gt;get_alchimie().&quot; ORDER BY royaume_alchimie DESC LIMIT 0, 1&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a9e8633cf48f7c5fc8cc9f5fa31450b99">$return</a> = affiche_quetes('magasin', $joueur)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a9e8633cf48f7c5fc8cc9f5fa31450b99">$return</a> = affiche_quetes('magasin', $<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#ab462229bd1b47b10936a950ba99b920b">$taxe</a> = ceil($recette-&gt;prix * $R-&gt;get_taxe_diplo($joueur-&gt;get_race()) / 100)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#ab462229bd1b47b10936a950ba99b920b">$taxe</a> = ceil($recette-&gt;prix * $R-&gt;get_taxe_diplo($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()) / 100)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#a92d70a97331cc6fc0a79d9da50895be8">$types</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($i&lt; count($order))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#addd9350ad18610353014f818f64b628a">$url</a> = 'alchimiste.php?order='.$fort</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="alchimiste_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
@@ -67,7 +67,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$augmentation = augmentation_competence('alchimie', $joueur, 2)</td>
+          <td class="memname">$augmentation = augmentation_competence('alchimie', $<a class="el" href="classjoueur.html">joueur</a>, 2)</td>
         </tr>
       </table>
 </div>
@@ -80,7 +80,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$case = new <a class="el" href="classmap__case.html">map_case</a>($joueur-&gt;get_pos())</td>
+          <td class="memname">$case = new <a class="el" href="classmap__case.html">map_case</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_pos())</td>
         </tr>
       </table>
 </div>
@@ -145,7 +145,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -249,7 +249,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$return = affiche_quetes('magasin', $joueur)</td>
+          <td class="memname">$return = affiche_quetes('magasin', $<a class="el" href="classjoueur.html">joueur</a>)</td>
         </tr>
       </table>
 </div>
@@ -275,7 +275,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$taxe = ceil($recette-&gt;prix * $R-&gt;get_taxe_diplo($joueur-&gt;get_race()) / 100)</td>
+          <td class="memname">$taxe = ceil($recette-&gt;prix * $R-&gt;get_taxe_diplo($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()) / 100)</td>
         </tr>
       </table>
 </div>
@@ -414,7 +414,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:48 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:20:58 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

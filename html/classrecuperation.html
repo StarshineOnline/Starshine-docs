@@ -48,8 +48,8 @@ Graphe de collaboration de recuperation:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecuperation.html#aeac4ec2774fc0f7e60cfa54fd2254f79">__construct</a> ($aEffet)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#aeac4ec2774fc0f7e60cfa54fd2254f79"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecuperation.html#a22d9195a473d70463ddbf56023963175">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a22d9195a473d70463ddbf56023963175"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecuperation.html#a5ffe530a33417ee52d2bf61503856c13">fin_round</a> (&amp;$actif, &amp;$passif, $mode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a5ffe530a33417ee52d2bf61503856c13"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrecuperation.html#a1ed3790867a248bc159342ef35fcacbd">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a1ed3790867a248bc159342ef35fcacbd"></a><br/></td></tr>
@@ -138,7 +138,7 @@ Graphe de collaboration de recuperation:</div>
 
 </div>
 </div>
-<a class="anchor" id="a22d9195a473d70463ddbf56023963175"></a><!-- doxytag: member="recuperation::fin_round" ref="a22d9195a473d70463ddbf56023963175" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a5ffe530a33417ee52d2bf61503856c13"></a><!-- doxytag: member="recuperation::fin_round" ref="a5ffe530a33417ee52d2bf61503856c13" args="(&amp;$actif, &amp;$passif, $mode)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -152,7 +152,13 @@ Graphe de collaboration de recuperation:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mode</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -168,16 +174,16 @@ Graphe de collaboration de recuperation:</div>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classetat.html#aba8c098594443a9b51091058df44694b">etat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classetat.html#a73c4fdce22a711baee0d0cb9d99f1ee5">etat</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classrecuperation_a22d9195a473d70463ddbf56023963175_cgraph.png" border="0" usemap="#classrecuperation_a22d9195a473d70463ddbf56023963175_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -187,7 +193,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:23 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:00 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

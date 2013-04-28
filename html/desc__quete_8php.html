@@ -37,11 +37,11 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a564783307b025aaab648d406a0606930">$mode</a> = 'Groupe'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#abf06bbad98e08906121b41f4eb12e51f">$objectif</a> = unserialize($row['objectif'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#af1c1179dcd12de49dbb807b89a3d056f">$quetes</a> = unserialize($joueur-&gt;get_quete())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#af1c1179dcd12de49dbb807b89a3d056f">$quetes</a> = unserialize($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_quete())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a8abe176bc41afd728f32ba8c506cbd98">$r</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a69249587cbd86ec50073aea063bfc722">$repetable</a> = ''</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM quete WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = '.sSQL($_GET['id_quete'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM quete WHERE id = '.sSQL($_GET['id_quete'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a853177bf068acd3f572986321342a037">$rewards</a> = explode(';', $row['reward'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="desc__quete_8php.html#a7b2051783b0ecf9bfc96de6586a6e60d">$show_only</a> = array()</td></tr>
@@ -92,7 +92,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -131,7 +131,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$quetes = unserialize($joueur-&gt;get_quete())</td>
+          <td class="memname">$quetes = unserialize($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_quete())</td>
         </tr>
       </table>
 </div>
@@ -183,7 +183,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = 'SELECT * FROM quete WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = '.sSQL($_GET['id_quete'])</td>
+          <td class="memname">$requete = 'SELECT * FROM quete WHERE id = '.sSQL($_GET['id_quete'])</td>
         </tr>
       </table>
 </div>
@@ -244,7 +244,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:51 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:01 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

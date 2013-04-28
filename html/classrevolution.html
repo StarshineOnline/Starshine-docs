@@ -33,7 +33,7 @@
 <p><a href="classrevolution-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a22c8a97e9bab434483c4346027dfed50">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $id_royaume=0, $date=0, $id_perso=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a22c8a97e9bab434483c4346027dfed50">__construct</a> ($id=0, $id_royaume=0, $date=0, $id_perso=0)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#a22c8a97e9bab434483c4346027dfed50"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a1ee946ac1f6bb28647e983a8bd9420b8">__toString</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#a1ee946ac1f6bb28647e983a8bd9420b8"></a><br/></td></tr>
@@ -49,7 +49,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sauvegarde automatiquement en base de donnée.  <a href="#aa11c7c1b26a5c31ecba4a37690aa9808"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a7949d9e3189bad2aab1f9e5e22534c9e">set_date</a> ($date)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a7949d9e3189bad2aab1f9e5e22534c9e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a48138762a49fedb2de0113f325998653">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a48138762a49fedb2de0113f325998653">set_id</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a48138762a49fedb2de0113f325998653"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a31768bceb9731a13d95be7184c883ffe">set_id_perso</a> ($id_perso)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id du personnage ayant déclenché la révolution.  <a href="#a31768bceb9731a13d95be7184c883ffe"></a><br/></td></tr>
@@ -58,7 +58,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#aa11b98335224c2737aac71053791cd6f">supprimer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  public.  <a href="#aa11b98335224c2737aac71053791cd6f"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#af6798ea38925ef52dc9e38e91a002caf">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#af6798ea38925ef52dc9e38e91a002caf">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  static.  <a href="#af6798ea38925ef52dc9e38e91a002caf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#adf3b71b2b9329cc28d45de5ab7d01675">get_prochain_revolution</a> ($id_royaume)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrevolution.html#a25218e52ec3bb7ce08d9b7f44dcfbb72">is_mois_revolution</a> ($id_royaume)</td></tr>
@@ -167,7 +167,7 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -541,7 +541,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">revolution::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
+          <td class="memname">revolution::$id<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -581,7 +581,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="revolution_8class_8php.html">revolution.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:23 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:00 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

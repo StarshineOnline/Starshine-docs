@@ -38,7 +38,7 @@ Graphe d'héritage de classe_permet_db:</div>
 <p><a href="classclasse__permet__db-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#a8ef283780dca2fd52dbb9b600078b993">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $id_classe=0, $<a class="el" href="classcompetence.html">competence</a>= '', $permet= '', $new= '')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#a8ef283780dca2fd52dbb9b600078b993">__construct</a> ($id=0, $id_classe=0, $<a class="el" href="classcompetence.html">competence</a>= '', $permet= '', $new= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#a8ef283780dca2fd52dbb9b600078b993"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#ae44e97420aab6a29e2b58af0604aa4d2">__toString</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#ae44e97420aab6a29e2b58af0604aa4d2"></a><br/></td></tr>
@@ -56,7 +56,7 @@ Graphe d'héritage de classe_permet_db:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sauvegarde automatiquement en base de donnée.  <a href="#a6920ba69d129f9bb683d4d14faa94e7d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#a1fd8837ef411b8f55cfb88b10eb51ef6">set_competence</a> ($<a class="el" href="classcompetence.html">competence</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a1fd8837ef411b8f55cfb88b10eb51ef6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#ae78f8975fa75576ea8b36c6f84e54e77">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#ae78f8975fa75576ea8b36c6f84e54e77">set_id</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#ae78f8975fa75576ea8b36c6f84e54e77"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#a36635b1fba13d55ac300c4b369ca9329">set_id_classe</a> ($id_classe)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a36635b1fba13d55ac300c4b369ca9329"></a><br/></td></tr>
@@ -67,7 +67,7 @@ Graphe d'héritage de classe_permet_db:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#a55f1f125478662edc26d226e3e68c11e">supprimer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  public.  <a href="#a55f1f125478662edc26d226e3e68c11e"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#aac0b2e62d34448f8cccf5129ba284080">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#aac0b2e62d34448f8cccf5129ba284080">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un tableau d'objets respectant certains critères  static.  <a href="#aac0b2e62d34448f8cccf5129ba284080"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classclasse__permet__db.html#aa4da06f16909743d546e122a1127df76">$competence</a></td></tr>
@@ -184,7 +184,7 @@ Graphe d'héritage de classe_permet_db:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -568,7 +568,7 @@ Graphe d'héritage de classe_permet_db:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">classe_permet_db::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
+          <td class="memname">classe_permet_db::$id<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -619,7 +619,7 @@ Graphe d'héritage de classe_permet_db:</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="classe__permet_8class_8php.html">classe_permet.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:02 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:22 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

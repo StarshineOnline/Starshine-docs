@@ -41,14 +41,14 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a0e3e3226a83e9a4a2de6e8ada6a62fdb">get_array_condition</a> ($valeur)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#aabbb250b0c79b0ef7ce8aefc83b026b6">get_etats</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie un tableau des éEtats avec l'ID et le nom.  <a href="#aabbb250b0c79b0ef7ce8aefc83b026b6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a03d5a809119b3b4bacc24f59ae41a5f8">lance_comp</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $acteur, &amp;$effects)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a03d5a809119b3b4bacc24f59ae41a5f8">lance_comp</a> ($id, $acteur, &amp;$effects)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Utilise une compétence.  <a href="#a03d5a809119b3b4bacc24f59ae41a5f8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#ade8488be9c61e8ae3aa296f8edac0d9f">lance_sort</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $acteur, &amp;$effects)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#ade8488be9c61e8ae3aa296f8edac0d9f">lance_sort</a> ($id, $acteur, &amp;$effects)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> lors d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#ade8488be9c61e8ae3aa296f8edac0d9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a027c7068b4766ffccc1b02d1a15d96d0">projection</a> (&amp;$actif, &amp;$passif, $effet)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#afab8ed8f21d2300e7050803fd135bc35">script_action</a> ($joueur, $ennemi, $mode, &amp;$effects)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#afab8ed8f21d2300e7050803fd135bc35">script_action</a> ($<a class="el" href="classjoueur.html">joueur</a>, $ennemi, $mode, &amp;$effects)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'action a effectuer, si le personnage peut en faire une.  <a href="#afab8ed8f21d2300e7050803fd135bc35"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a6c1df0e9cad506668d18af71399721e6">sub_script_action</a> ($joueur, $ennemi, $mode, &amp;$effects)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a6c1df0e9cad506668d18af71399721e6">sub_script_action</a> ($<a class="el" href="classjoueur.html">joueur</a>, $ennemi, $mode, &amp;$effects)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Détermine l'action a effectuer, si on peut.  <a href="#a6c1df0e9cad506668d18af71399721e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#ab84cf53d0ede5c02935eeb584d196233">translation</a> ($x, $y, $direction)</td></tr>
 </table>
@@ -396,7 +396,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Récupère l'action à effectuer à l'aide à l'aide de la fonction <a class="el" href="action_8inc_8php.html#a6c1df0e9cad506668d18af71399721e6" title="Détermine l&#39;action a effectuer, si on peut.">sub_script_action()</a>, vérifie si une dissimulation ne l'empêche pas et si c'est le cas renvoie cette action.</p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$joueur</em>&nbsp;</td><td>Pesonnage du joueur. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$joueur</em>&nbsp;</td><td>Pesonnage du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$ennemi</em>&nbsp;</td><td>Adversaire. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Indique si le personnage attaque ("attaquant") ou défend. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>liste des effets.</td></tr>
@@ -412,7 +412,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_afab8ed8f21d2300e7050803fd135bc35_cgraph.png" border="0" usemap="#action_8inc_8php_afab8ed8f21d2300e7050803fd135bc35_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -459,7 +458,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Commence par vérifier si le personnage peut effectuer une action en fonction de son état. Ensuite détermine l'action à effectuer en foncion du script. Puis finallement détermine si l'action est anticipée.</p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$joueur</em>&nbsp;</td><td>Pesonnage du joueur. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$joueur</em>&nbsp;</td><td>Pesonnage du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$ennemi</em>&nbsp;</td><td>Adversaire. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Indique si le personnage attaque ("attaquant") ou défend. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>liste des effets.</td></tr>
@@ -475,7 +474,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_cgraph.png" border="0" usemap="#action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -529,7 +527,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:51 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:05 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

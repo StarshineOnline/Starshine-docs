@@ -30,6 +30,7 @@
 </div>
 <div class="contents">
 <h1>db Liste des membres</h1>Liste complète des membres de <a class="el" href="classdb.html">db</a>, y compris les membres hérités :<table>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a225e99c9c80b88fc4f4ca748be7eb43e">$_meta</a></td><td><a class="el" href="classdb.html">db</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a9497d7b4582ad221d0f7c57524fe99b0">$auto_increment</a></td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#adc0a612b92d6244e3ef1301d84361996">$can_be_null</a></td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#ada106f245c7065d7c8dc9fb4ecabea19">$default_table_type</a></td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
@@ -41,7 +42,9 @@
   <tr class="memlist"><td><a class="el" href="classdb.html#af61c0c8edea1c16e827e95f78b4b677b">$num_fields</a></td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a6d904b9251a1c0239529231423454d11">$num_rows</a></td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a4205f6f620cf76162939bd9b47015e11">$rows_affected</a></td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a2a7c1abc2a525f0ad31d539c2e1e8c3d">$s_lnk</a></td><td><a class="el" href="classdb.html">db</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a9e8bd0bd3c70a50cdc5d69403a3b4640">$sql</a></td><td><a class="el" href="classdb.html">db</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a3a3c4d0486a6e447895dcbd44542095b">$stmt</a></td><td><a class="el" href="classdb.html">db</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a1c2b292eaa4e00a5d26b31b80f6cb810">$string_type</a></td><td><a class="el" href="classdb.html">db</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a6611d03d01b32f654e792b88cea8a594">$type</a></td><td><a class="el" href="classdb.html">db</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a2f6c83e659790391dc6aacc661d45aa4">add</a>($obj)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
@@ -51,6 +54,10 @@
   <tr class="memlist"><td><a class="el" href="classdb.html#a7754d22c0c388f85832ed555a8dbfae6">data_seek</a>($row_number=0, $sql=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#ad722af34cba17c7294fe08359bd0563c">db</a>($cfg)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a1c38b77638998e50afb2d9dfdfa24115">delete</a>($obj, $lead_id=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a25d42ebac59c6d2f11384f4da8ca7f74">error</a>()</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a72887bb5f269432c5a8f1b42eddd716b">escape</a>($data)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#ac25d6e5cc74254f62a7721e5dbb26876">execute</a>($stmt=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a75b58a32a755140ffd7636e0f84e0041">fetch</a>($stmt=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#ad70e1a7b6f76eef8c694124a3d19cb84">field_len</a>($k)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#afb3a3eb43230dcbb00cb2b3693f3963f">field_name</a>($k)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a0f2df038aa4fb7f97b7e8eb18d5f5a3e">field_type</a>($k)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
@@ -66,21 +73,28 @@
   <tr class="memlist"><td><a class="el" href="classdb.html#aa3fb51b71380c547620e0c4d7bc8f5a3">lock</a>($name)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#abc2045ceaf9d92bc20fd388518535a9b">num_rows</a>($sql)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a7b718b2a88f68c0b352edf57151a301e">optimize_db</a>($db=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a7b4c603686fd7ac9ed1648482ba39891">param_query</a>($sql, $params, $types=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a420bfa2cdd1a16a9c70942e72f2a0436">prepare</a>($query)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#aaa415dd5b6a335d68c521e7e45330071">protect_query</a>(&amp;$query)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classdb.html#a39891365ebd656fc16458dcc98678d1e">query</a>($query)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#ad6772b10f1e6c8c17a290872a06c5edd">query</a>($query, $params=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a902ca1bf25d9c03e307b2a34594afee3">query_error</a>($query)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#af4b8d91335effddda5605b63114185cd">query_get_object</a>($query)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a09aec7226f1e8721d773058bc37c8380">query_get_value</a>($query)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classdb.html#a72ff0f699c332046066be4ae10fe0eda">read_array</a>($sql=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classdb.html#a8836c445031e3b5149b39fb814ea2490">read_assoc</a>($sql=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#aa6cc066aaa9107d3056fe615e9cb3647">read_array</a>($sql=null, $resulttype=MYSQLI_BOTH)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a364510913b2503bba810bd6bc3b355a8">read_assoc</a>($sql=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a91ae3835ea6d51b4d53d71fe2f3812af">read_field</a>($sql=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classdb.html#a62aff9da5e462480f97dbf515fe4c4d1">read_object</a>($sql=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a18749535a240c9abde625cb91b5deb43">read_object</a>($sql=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#ad3ec1733d31b547b63171ccd1c29ffcf">read_row</a>($sql=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a78ad7cf837964b52afa62e6b606329a2">set_enum</a>($table, $col, $new_enum=&quot;&quot;, $default=&quot;&quot;, $empty_value=true)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#af735e22d12df10596e4f193165c462b2">stmt_error</a>($stmt)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#aa5d2adecd3840e51c33d09e1f35ad831">stmt_read_array</a>($stmt=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#ace3663864feac13ef22591ba72fddc15">stmt_read_assoc</a>($stmt=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classdb.html#a5550888013f53e2f4ea1b0060c708fa0">stmt_read_object</a>($stmt=null)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a76676ff4b45acc2b0a384004a4c30272">table_exists</a>($table=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a243ee94521cf6de348caf1cfb35851d9">unlock</a>()</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classdb.html#a419ba2fcbdf6009b7de23c3e7a6091bb">update</a>($obj, $lead_id=&quot;&quot;)</td><td><a class="el" href="classdb.html">db</a></td><td></td></tr>
 </table></div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:13 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:35 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

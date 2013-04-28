@@ -31,15 +31,15 @@
 <div class="contents">
 <h1>Référence du fichier competence.inc.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="competence_8inc_8php.html#ad14d69c2b34792ca7c0a99428a6a646a">apprend_competence</a> ($ecole, $id_competence, &amp;$joueur, $R, $grimoire)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cette fonction permet d'apprendre une compétence, gérant les prérequis, les grimoires, les taxes.  <a href="#ad14d69c2b34792ca7c0a99428a6a646a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="competence_8inc_8php.html#a663dd209a90b495eca2cdbfebe345ecb">apprend_sort</a> ($ecole, $id_sort, &amp;$joueur, $R, $grimoire)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cette fonction permet d'apprendre un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> -- ce qui marche comme une compétence -- gérant les prérequis, les grimoires, les taxes.  <a href="#a663dd209a90b495eca2cdbfebe345ecb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="competence_8inc_8php.html#ae7a828fa765253ca957197e058aebb93">utilise_grimoire</a> ($id_objet, &amp;$joueur)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Utilise un grimoire.  <a href="#ae7a828fa765253ca957197e058aebb93"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="competence_8inc_8php.html#a2094e7e173522f8c17685c22f0b23089">apprend_competence</a> ($ecole, $id_competence, &amp;$<a class="el" href="classjoueur.html">joueur</a>, $R, $grimoire, &amp;$interface)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cette fonction permet d'apprendre une compétence, gérant les prérequis, les grimoires, les taxes.  <a href="#a2094e7e173522f8c17685c22f0b23089"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="competence_8inc_8php.html#a648fe8dd3ca71c814d25808db9092e6c">apprend_sort</a> ($ecole, $id_sort, &amp;$<a class="el" href="classjoueur.html">joueur</a>, $R, $grimoire, &amp;$interface)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cette fonction permet d'apprendre un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> -- ce qui marche comme une compétence -- gérant les prérequis, les grimoires, les taxes.  <a href="#a648fe8dd3ca71c814d25808db9092e6c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="competence_8inc_8php.html#aedeea31fc5e83582892496c313ff8346">utilise_grimoire</a> ($id_objet, &amp;$<a class="el" href="classjoueur.html">joueur</a>, &amp;$interface)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Utilise un grimoire.  <a href="#aedeea31fc5e83582892496c313ff8346"></a><br/></td></tr>
 </table>
 <hr/><h2>Documentation des fonctions</h2>
-<a class="anchor" id="ad14d69c2b34792ca7c0a99428a6a646a"></a><!-- doxytag: member="competence.inc.php::apprend_competence" ref="ad14d69c2b34792ca7c0a99428a6a646a" args="($ecole, $id_competence, &amp;$joueur, $R, $grimoire)" -->
+<a class="anchor" id="a2094e7e173522f8c17685c22f0b23089"></a><!-- doxytag: member="competence.inc.php::apprend_competence" ref="a2094e7e173522f8c17685c22f0b23089" args="($ecole, $id_competence, &amp;$joueur, $R, $grimoire, &amp;$interface)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -71,7 +71,13 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>grimoire</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>grimoire</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>interface</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -87,7 +93,7 @@
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>ecole</em>&nbsp;</td><td>l'école/type de compétence à apprendre </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>id_competence</em>&nbsp;</td><td>l'id de la compétence à apprendre </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>joueur</em>&nbsp;</td><td>le joueur qui apprend </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a></em>&nbsp;</td><td>le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> qui apprend </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>R</em>&nbsp;</td><td>le <a class="el" href="classroyaume.html">royaume</a> à qui on paye la taxe </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>grimoire</em>&nbsp;</td><td>true si on apprend depuis un grimoire(gratis), false sinon </td></tr>
   </table>
@@ -98,13 +104,12 @@
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="competence_8inc_8php_ad14d69c2b34792ca7c0a99428a6a646a_icgraph.png" border="0" usemap="#competence_8inc_8php_ad14d69c2b34792ca7c0a99428a6a646a_icgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a663dd209a90b495eca2cdbfebe345ecb"></a><!-- doxytag: member="competence.inc.php::apprend_sort" ref="a663dd209a90b495eca2cdbfebe345ecb" args="($ecole, $id_sort, &amp;$joueur, $R, $grimoire)" -->
+<a class="anchor" id="a648fe8dd3ca71c814d25808db9092e6c"></a><!-- doxytag: member="competence.inc.php::apprend_sort" ref="a648fe8dd3ca71c814d25808db9092e6c" args="($ecole, $id_sort, &amp;$joueur, $R, $grimoire, &amp;$interface)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -136,7 +141,13 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>grimoire</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>grimoire</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>interface</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -152,7 +163,7 @@ Voici le graphe d'appel pour cette fonction :</div>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>ecole</em>&nbsp;</td><td>l'école/type de compétence à apprendre </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>id_competence</em>&nbsp;</td><td>l'id de la compétence à apprendre </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>joueur</em>&nbsp;</td><td>le joueur qui apprend </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em><a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a></em>&nbsp;</td><td>le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> qui apprend </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>R</em>&nbsp;</td><td>le <a class="el" href="classroyaume.html">royaume</a> à qui on paye la taxe </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>grimoire</em>&nbsp;</td><td>true si on apprend depuis un grimoire(gratis), false sinon </td></tr>
   </table>
@@ -160,9 +171,15 @@ Voici le graphe d'appel pour cette fonction :</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>true si on a pu apprendre la compétence, false sinon </dd></dl>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="ae7a828fa765253ca957197e058aebb93"></a><!-- doxytag: member="competence.inc.php::utilise_grimoire" ref="ae7a828fa765253ca957197e058aebb93" args="($id_objet, &amp;$joueur)" -->
+<a class="anchor" id="aedeea31fc5e83582892496c313ff8346"></a><!-- doxytag: member="competence.inc.php::utilise_grimoire" ref="aedeea31fc5e83582892496c313ff8346" args="($id_objet, &amp;$joueur, &amp;$interface)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -176,7 +193,13 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>joueur</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>interface</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -192,14 +215,13 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="competence_8inc_8php_ae7a828fa765253ca957197e058aebb93_cgraph.png" border="0" usemap="#competence_8inc_8php_ae7a828fa765253ca957197e058aebb93_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:52 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:07 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

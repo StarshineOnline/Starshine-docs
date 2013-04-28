@@ -37,10 +37,9 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a481c918f8d853749e00b5942cabf599a">$date</a> = date(&quot;Y-m-d&quot;, mktime(0, 0, 0, date(&quot;m&quot;) , date(&quot;d&quot;) - 1, date(&quot;Y&quot;)))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#ace58a3499f336df4fd9db5a349f66f35">$date_hier</a> = date(&quot;Y-m-d&quot;, mktime(0, 0, 0, date(&quot;m&quot;) , date(&quot;d&quot;) - 2, date(&quot;Y&quot;)))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a687c45980461409d6c50a5d8b218b841">$debut</a> = getmicrotime()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a8c594029b72697a2f45805ee6f0f67e1">$food_necessaire</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) <br class="typebreak"/>
 <a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($ressource_final as <br class="typebreak"/>
-$key=&gt; $value)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#abb69349e0ae4e9b8eb5112d0782713bc">$food_total</a> = ceil($tot_nou * 1.01)</td></tr>
+$key=&gt; $value)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#abb69349e0ae4e9b8eb5112d0782713bc">$food_total</a> = $tot_nou</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#abd76663200e33b2edae23dd7f9f2fbf6">$lst_roy</a> = array_keys($Trace)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Liste des royaumes.  <a href="#abd76663200e33b2edae23dd7f9f2fbf6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a7380b15e33c65f5ef2adc3836b41d46d">$lst_rsrc</a> = array_keys($ress['Plaine'])</td></tr>
@@ -48,9 +47,9 @@ $key=&gt; $value)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#ac409786c163a1974d1e24a6767a95166">$mail</a> = ''</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a949b85e71d3a0130af034da07e46b9c4">$mail_send</a> = getenv('SSO_MAIL')</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($lst_roy as $<a class="el" href="classroyaume.html">royaume</a>)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT royaume.race as race, info, COUNT(*) as tot_terrain FROM `<a class="el" href="classmap.html">map</a>` LEFT JOIN <a class="el" href="classroyaume.html">royaume</a> ON map.royaume = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">royaume.id</a> WHERE <a class="el" href="classroyaume.html">royaume</a> &lt;&gt; 0 GROUP BY info, <a class="el" href="classroyaume.html">royaume</a>&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($lst_roy as $<a class="el" href="classroyaume.html">royaume</a>)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT royaume.race as race, info, COUNT(*) as tot_terrain FROM `<a class="el" href="classmap.html">map</a>` LEFT JOIN <a class="el" href="classroyaume.html">royaume</a> ON map.royaume = royaume.id WHERE <a class="el" href="classroyaume.html">royaume</a> &lt;&gt; 0 AND x &lt;= 190 AND y &lt;= 190 GROUP BY info, <a class="el" href="classroyaume.html">royaume</a>&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#a90495ba52b30420e55824e8e1881b74a">$ressources</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier4_8php.html#aecebc21b0c1e47b6647d86fdde2f3a2b">$roy</a> = royaume::create(null, null, 'id ASC', false, 'id &lt;&gt; 0')</td></tr>
 </table>
 <hr/><h2>Documentation des fonctions</h2>
 <a class="anchor" id="a80a3892ecad687b96b542109495df0f0"></a><!-- doxytag: member="journalier4.php::__autoload" ref="a80a3892ecad687b96b542109495df0f0" args="($class_name)" -->
@@ -124,25 +123,12 @@ $key=&gt; $value)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="e
 
 </div>
 </div>
-<a class="anchor" id="a8c594029b72697a2f45805ee6f0f67e1"></a><!-- doxytag: member="journalier4.php::$food_necessaire" ref="a8c594029b72697a2f45805ee6f0f67e1" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $food_necessaire = 0</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="abb69349e0ae4e9b8eb5112d0782713bc"></a><!-- doxytag: member="journalier4.php::$food_total" ref="abb69349e0ae4e9b8eb5112d0782713bc" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) <a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($ressource_final as $key=&gt; $value) $food_total = ceil($tot_nou * 1.01)</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) <a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($ressource_final as $key=&gt; $value) $food_total = $tot_nou</td>
         </tr>
       </table>
 </div>
@@ -224,7 +210,7 @@ $key=&gt; $value)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="e
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT royaume.race as race, info, COUNT(*) as tot_terrain FROM `<a class="el" href="classmap.html">map</a>` LEFT JOIN <a class="el" href="classroyaume.html">royaume</a> ON map.royaume = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">royaume.id</a> WHERE <a class="el" href="classroyaume.html">royaume</a> &lt;&gt; 0 GROUP BY info, <a class="el" href="classroyaume.html">royaume</a>&quot;</td>
+          <td class="memname">$requete = &quot;SELECT royaume.race as race, info, COUNT(*) as tot_terrain FROM `<a class="el" href="classmap.html">map</a>` LEFT JOIN <a class="el" href="classroyaume.html">royaume</a> ON map.royaume = royaume.id WHERE <a class="el" href="classroyaume.html">royaume</a> &lt;&gt; 0 AND x &lt;= 190 AND y &lt;= 190 GROUP BY info, <a class="el" href="classroyaume.html">royaume</a>&quot;</td>
         </tr>
       </table>
 </div>
@@ -245,12 +231,12 @@ $key=&gt; $value)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="e
 
 </div>
 </div>
-<a class="anchor" id="aa1d731aa570613e5bcff831bb10e9b87"></a><!-- doxytag: member="journalier4.php::$row" ref="aa1d731aa570613e5bcff831bb10e9b87" args="" -->
+<a class="anchor" id="aecebc21b0c1e47b6647d86fdde2f3a2b"></a><!-- doxytag: member="journalier4.php::$roy" ref="aecebc21b0c1e47b6647d86fdde2f3a2b" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$row = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)) $roy = royaume::create(null, null, 'id ASC', false, 'id &lt;&gt; 0')</td>
         </tr>
       </table>
 </div>
@@ -259,7 +245,7 @@ $key=&gt; $value)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="e
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:12 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

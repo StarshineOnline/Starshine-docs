@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/texte_tuto.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Généré par Doxygen 1.6.1 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="dirs.html"><span>Répertoires</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
+  </div>
+</div>
+<div class="contents">
+<h1>Référence du fichier texte_tuto.php</h1><table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte__tuto_8php.html#abc6f2cdd96a8d6e2cc2a9b7f7926e5c1">$classe</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_classe_id()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte__tuto_8php.html#a648bcc9981df7cceb4b931a80064a6c5">$perso</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte__tuto_8php.html#ade9a97080936b791b532e8d82889085b">$req_tuto</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="texte__tuto_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM texte_tutoriel WHERE etape = &quot;.$perso-&gt;get_tuto().&quot; AND race = '&quot;.$perso-&gt;get_race().&quot;' AND <a class="el" href="classclasse.html">classe</a> ='&quot;.$classe.&quot;'&quot;</td></tr>
+</table>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="abc6f2cdd96a8d6e2cc2a9b7f7926e5c1"></a><!-- doxytag: member="texte_tuto.php::$classe" ref="abc6f2cdd96a8d6e2cc2a9b7f7926e5c1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="classclasse.html">classe</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_classe_id()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a648bcc9981df7cceb4b931a80064a6c5"></a><!-- doxytag: member="texte_tuto.php::$perso" ref="a648bcc9981df7cceb4b931a80064a6c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="classperso.html">perso</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade9a97080936b791b532e8d82889085b"></a><!-- doxytag: member="texte_tuto.php::$req_tuto" ref="ade9a97080936b791b532e8d82889085b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req_tuto = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="texte_tuto.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$requete = &quot;SELECT * FROM texte_tutoriel WHERE etape = &quot;.$perso-&gt;get_tuto().&quot; AND race = '&quot;.$perso-&gt;get_race().&quot;' AND <a class="el" href="classclasse.html">classe</a> ='&quot;.$classe.&quot;'&quot;</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:14 2013 pour Starshine Online par&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

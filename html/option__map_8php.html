@@ -36,9 +36,9 @@
 <tr><td class="memItemLeft" align="right" valign="top">switch($_GET['action'])&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#a9d46e2ae81cdd4f45fa9a3513b912440">$atm_val</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($q)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#abdf59e8b56ae9dd9b2ecfea17049f339">$atm_verb</a> = $atm_val ? 'Désactiver' : 'Activer'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#a001db1e02045a955535c9c49872605a1">$mons_val</a> = $joueur-&gt;get_option('cache_monstre') ? 0 : 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#a001db1e02045a955535c9c49872605a1">$mons_val</a> = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_option('cache_monstre') ? 0 : 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#abb0f8f809252372e25f48d52b63ef29d">$q</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#aa3488c45fd7ab35c37dee0a7f1e4a39c">$roy_val</a> = $joueur-&gt;get_option('affiche_royaume') ? 0 : 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="option__map_8php.html#aa3488c45fd7ab35c37dee0a7f1e4a39c">$roy_val</a> = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_option('affiche_royaume') ? 0 : 1</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a21dd2da0b0998720822873d25e95aba2"></a><!-- doxytag: member="option_map.php::$atm_all_val" ref="a21dd2da0b0998720822873d25e95aba2" args="" -->
@@ -98,7 +98,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -111,7 +111,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$mons_val = $joueur-&gt;get_option('cache_monstre') ? 0 : 1</td>
+          <td class="memname">$mons_val = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_option('cache_monstre') ? 0 : 1</td>
         </tr>
       </table>
 </div>
@@ -140,7 +140,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$roy_val = $joueur-&gt;get_option('affiche_royaume') ? 0 : 1</td>
+          <td class="memname">$roy_val = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_option('affiche_royaume') ? 0 : 1</td>
         </tr>
       </table>
 </div>
@@ -149,7 +149,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:12 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

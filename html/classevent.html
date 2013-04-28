@@ -99,7 +99,7 @@ Graphe de collaboration de event:</div>
 <li>get_participant($champ, $valeur) renvoie un ou plusieurs participant suivant la valeur d'un champ précis. </li>
 </ul>
  <a href="#af844430bfffc5eacf3c628d10e4bb3f4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a3206634fe4859b0a473e3d70dc41c9f9">get_partie</a> ($champ=null, $valeur=null, $ordre='<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $limit=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a3206634fe4859b0a473e3d70dc41c9f9">get_partie</a> ($champ=null, $valeur=null, $ordre='id ASC', $limit=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les parties ou une partie en particulier (à surcharger) Peut être utilisé de plusieurs façons :</p>
 <ul>
 <li><a class="el" href="classevent.html#a3206634fe4859b0a473e3d70dc41c9f9" title="Renvoie les parties ou une partie en particulier (à surcharger) Peut être utilisé...">get_partie()</a> renvoie un tableau contenant tous les équipes</li>
@@ -119,7 +119,7 @@ Graphe de collaboration de event:</div>
 <br/><br/></div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a9c0d7cfb86a84b36d2ef201f0c3ca7c7">get_nom</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nom de l'event (dépend du type).  <a href="#a9c0d7cfb86a84b36d2ef201f0c3ca7c7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a2c52e28a567a21197ed7156195c3f05a">rez_possible</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a2c52e28a567a21197ed7156195c3f05a">rez_possible</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si une rez est possible.  <a href="#a2c52e28a567a21197ed7156195c3f05a"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Gestion interne des données</div></td></tr>
@@ -181,11 +181,11 @@ Graphe de collaboration de event:</div>
 <br/><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a4816684f631484a9f2fcfcbccb4fce52">types</a> = 'dte|rte'</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Liste des types d'events possibles.  <a href="#a4816684f631484a9f2fcfcbccb4fce52"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#ac4da798ebe78cdb346ef6bccfb388e4f">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#ac4da798ebe78cdb346ef6bccfb388e4f">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée un tableau d'objets respectant certains critères.  <a href="#ac4da798ebe78cdb346ef6bccfb388e4f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a6f6c259303acaa2db7099aac7828796c">create_from_arenes_joueur</a> ($<a class="el" href="classperso.html">perso</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée le bonb objet en fonction d'un participant précis.  <a href="#a6f6c259303acaa2db7099aac7828796c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a39c647cc3c8dc627d5618b000764143b">factory</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a39c647cc3c8dc627d5618b000764143b">factory</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée le bon objet en fonction du type.  <a href="#a39c647cc3c8dc627d5618b000764143b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classevent.html#a6dd5481c24864b81288c79a97528a341">get_types</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des types d'event possible sous forme de tableau.  <a href="#a6dd5481c24864b81288c79a97528a341"></a><br/></td></tr>
@@ -381,7 +381,7 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -900,7 +900,7 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1889,7 +1889,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="event_8class_8php.html">event.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:16 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:39 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

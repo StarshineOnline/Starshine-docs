@@ -33,7 +33,7 @@
 <p><a href="classgrade-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a8e23570fec2e5c7207822bc9a1cab8c5">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $nom= '', $facteur= '', $honneur= '', $rang= '')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a8e23570fec2e5c7207822bc9a1cab8c5">__construct</a> ($id=0, $nom= '', $facteur= '', $honneur= '', $rang= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#a8e23570fec2e5c7207822bc9a1cab8c5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a33bc4ad6be457402e838a8443137f4e3">__toString</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#a33bc4ad6be457402e838a8443137f4e3"></a><br/></td></tr>
@@ -55,7 +55,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#ac68315a77626933bb78440c987a18ff9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a0031cc64e75d431f10c432a8b55045e1">set_honneur</a> ($honneur)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a0031cc64e75d431f10c432a8b55045e1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a822f7fc9063bcf1710abe21570492271">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a822f7fc9063bcf1710abe21570492271">set_id</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a822f7fc9063bcf1710abe21570492271"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#aac18a1083c7a0a25307a5225b1aad757">set_nom</a> ($nom)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#aac18a1083c7a0a25307a5225b1aad757"></a><br/></td></tr>
@@ -64,7 +64,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a257526cef2fb7fd193500277783b8b3b">supprimer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  public.  <a href="#a257526cef2fb7fd193500277783b8b3b"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a0e74efea43d955111a3951e67bb52f9c">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a0e74efea43d955111a3951e67bb52f9c">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  static.  <a href="#a0e74efea43d955111a3951e67bb52f9c"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgrade.html#a5c87b05a0308be12dde4fb06e71c7c89">$bonus_buff</a> = 0</td></tr>
@@ -198,7 +198,7 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -617,7 +617,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">grade::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
+          <td class="memname">grade::$id<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -655,7 +655,7 @@
 <li>SSO/Starshine-Online/class/<a class="el" href="grade_8class_8php.html">grade.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:17 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:41 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

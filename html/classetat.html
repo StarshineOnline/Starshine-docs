@@ -32,6 +32,7 @@
 <h1>Référence de la classe etat</h1><!-- doxytag: class="etat" --><!-- doxytag: inherits="effect" --><div class="dynheader">
 Graphe d'héritage de etat:</div>
 <div class="dynsection">
+<div class="center"><img src="classetat__inherit__graph.png" border="0" usemap="#etat_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de etat:</div>
@@ -43,8 +44,8 @@ Graphe de collaboration de etat:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetat.html#a4f77f1cd8b062ad713c607c0d0cdaf3f">__construct</a> ($effet, $nom)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetat.html#aba8c098594443a9b51091058df44694b">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#aba8c098594443a9b51091058df44694b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetat.html#a73c4fdce22a711baee0d0cb9d99f1ee5">fin_round</a> (&amp;$actif, &amp;$passif, $mode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a73c4fdce22a711baee0d0cb9d99f1ee5"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetat.html#a5215427f09fdf7499b4437188942cdd3">$effet</a></td></tr>
 </table>
@@ -79,7 +80,7 @@ Graphe de collaboration de etat:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="aba8c098594443a9b51091058df44694b"></a><!-- doxytag: member="etat::fin_round" ref="aba8c098594443a9b51091058df44694b" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a73c4fdce22a711baee0d0cb9d99f1ee5"></a><!-- doxytag: member="etat::fin_round" ref="a73c4fdce22a711baee0d0cb9d99f1ee5" args="(&amp;$actif, &amp;$passif, $mode)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -93,7 +94,13 @@ Graphe de collaboration de etat:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mode</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -109,13 +116,14 @@ Graphe de collaboration de etat:</div>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a8907603b4e1152922cd9a1c8befd6bb5">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#af4dd65c83ad170e0222353bb9a5c2ea4">effect</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classperte__hp.html#af71b6ba869e0aca784af4d0e36a5c0d8">perte_hp</a>, <a class="el" href="classrecuperation.html#a22d9195a473d70463ddbf56023963175">recuperation</a>, et <a class="el" href="classdebilitant.html#a212c474d2190bb0ca1af297ec49a6bdd">debilitant</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classperte__hp.html#a1649cbbf3c430ffccca89cc8e3059caa">perte_hp</a>, <a class="el" href="classrecuperation.html#a5ffe530a33417ee52d2bf61503856c13">recuperation</a>, et <a class="el" href="classdebilitant.html#aa0b63de2c0aa7154ecaee96e82f466d9">debilitant</a>.</p>
 
 </div>
 </div>
@@ -137,7 +145,7 @@ Graphe de collaboration de etat:</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:15 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:39 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

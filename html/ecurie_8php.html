@@ -31,17 +31,19 @@
 <div class="contents">
 <h1>Référence du fichier ecurie.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>(sSQL($joueur-&gt;get_pos()))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>(sSQL($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_pos()))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($R-&gt;is_raz()&amp;&amp;$W_row['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']==1) <br class="typebreak"/>
-<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_race()!=$R-&gt;<br class="typebreak"/>
-get_race()&amp;&amp;$R-&gt;get_diplo($joueur-&gt;<br class="typebreak"/>
-get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a6e1aa60daaa64625d5bae71a8eb53fc0">$max_ecurie</a> = 10</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($R-&gt;is_raz()&amp;&amp;$W_row['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']==1 <br class="typebreak"/>
+&amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x()<br class="typebreak"/>
+&lt;=190 &amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()<br class="typebreak"/>
+&lt;=190) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()!=$R-&gt;<br class="typebreak"/>
+get_race()&amp;&amp;$R-&gt;get_diplo($<a class="el" href="classjoueur.html">joueur</a>-&gt;<br class="typebreak"/>
+get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a7dc4d2c673b205216ce58889669c866c">$max_ecurie</a> = 10</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#abe2d79bb4aa8b8243d81c67fdd50511f">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($W_row['<a class="el" href="classroyaume.html">royaume</a>'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#acb6559abdb149d5869a9dbeff98cf9bd">$W_req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($W_requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$joueur-&gt;get_x().' and y = '.$joueur-&gt;get_y()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a19afe5512c8585af83b8156bb7429e5f">$W_requete</a> = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x().' and y = '.$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a59eabebcf9db04fe004af49fb94e6e79">$W_row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($W_req)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a402c6ecddd2b5e4605f1ca60bfdb9310">foreach</a> ($joueur-&gt;ecurie as $<a class="el" href="classpet.html">pet</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="ecurie_8php.html#a402c6ecddd2b5e4605f1ca60bfdb9310">foreach</a> ($<a class="el" href="classjoueur.html">joueur</a>-&gt;ecurie as $<a class="el" href="classpet.html">pet</a>)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a67109aba0fb28246abc057ae20a7b723"></a><!-- doxytag: member="ecurie.php::$case" ref="a67109aba0fb28246abc057ae20a7b723" args="" -->
@@ -49,7 +51,7 @@ get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$case = new <a class="el" href="classmap__case.html">map_case</a>(sSQL($joueur-&gt;get_pos()))</td>
+          <td class="memname">$case = new <a class="el" href="classmap__case.html">map_case</a>(sSQL($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_pos()))</td>
         </tr>
       </table>
 </div>
@@ -62,7 +64,7 @@ get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -70,12 +72,12 @@ get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 
 </div>
 </div>
-<a class="anchor" id="a6e1aa60daaa64625d5bae71a8eb53fc0"></a><!-- doxytag: member="ecurie.php::$max_ecurie" ref="a6e1aa60daaa64625d5bae71a8eb53fc0" args="" -->
+<a class="anchor" id="a7dc4d2c673b205216ce58889669c866c"></a><!-- doxytag: member="ecurie.php::$max_ecurie" ref="a7dc4d2c673b205216ce58889669c866c" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($R-&gt;is_raz()&amp;&amp;$W_row['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']==1) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($joueur-&gt;get_race()!=$R-&gt;get_race()&amp;&amp;$R-&gt;get_diplo($joueur-&gt;get_race()) &gt; 6) $max_ecurie = 10</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($R-&gt;is_raz()&amp;&amp;$W_row['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']==1 &amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x()&lt;=190 &amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()&lt;=190) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()!=$R-&gt;get_race()&amp;&amp;$R-&gt;get_diplo($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()) &gt; 6) $max_ecurie = 10</td>
         </tr>
       </table>
 </div>
@@ -114,7 +116,7 @@ get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_requete = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$joueur-&gt;get_x().' and y = '.$joueur-&gt;get_y()</td>
+          <td class="memname">$W_requete = 'SELECT <a class="el" href="classroyaume.html">royaume</a>, <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> FROM <a class="el" href="classmap.html">map</a> WHERE x = '.$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x().' and y = '.$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()</td>
         </tr>
       </table>
 </div>
@@ -140,7 +142,7 @@ get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($joueur-&gt;ecurie as $<a class="el" href="classpet.html">pet</a>)</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;ecurie as $<a class="el" href="classpet.html">pet</a>)</td>
         </tr>
       </table>
 </div>
@@ -149,7 +151,7 @@ get_race()) &gt; 6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class=
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:51 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:02 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

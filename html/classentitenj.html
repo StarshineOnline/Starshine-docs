@@ -46,11 +46,21 @@ Graphe de collaboration de entitenj:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#af2f9ff091b6388918c846b32b43a6d44">__construct</a> ($incarn, $<a class="el" href="classperso.html">perso</a>=null, $attaquant=true, $adversaire=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#af2f9ff091b6388918c846b32b43a6d44"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#ae5550ef446496d3cd2aa71c98850e3f6">fin_attaque</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$cible, $cout_pa)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Actions effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour l'attaquant.  <a href="#ae5550ef446496d3cd2aa71c98850e3f6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#aa0fc2e00155319dcaf67d78d9bbeb84b">fin_combat</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $degats=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#aa0fc2e00155319dcaf67d78d9bbeb84b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#afd54b0f24db06f6837c519df0ebed67b">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$<a class="el" href="classroyaume.html">royaume</a>, $<a class="el" href="classpet.html">pet</a>, $degats, $<a class="el" href="classbatiment.html">batiment</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour le défenseur.  <a href="#afd54b0f24db06f6837c519df0ebed67b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#a2df5dc778835bfe98672e075b054afa0">get_cout_attaque</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $cible)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en PA de l'attaque.  <a href="#a2df5dc778835bfe98672e075b054afa0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#a848183d27295c88546551c0583564ae0">get_cout_attaque_base</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en PA pour attaquer l'entité.  <a href="#a848183d27295c88546551c0583564ae0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#ac5c0a4ff2ab739ac44b744418d513344">get_date_debut</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Date de pose ou <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> de l'entité.  <a href="#ac5c0a4ff2ab739ac44b744418d513344"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#ac8d96fb17b45aa0e340b7443100a3116">get_type_def</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#a04570a09c637e04ed479b3614ec844a9">peut_attaquer</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si l'entité peut attaquer.  <a href="#a04570a09c637e04ed479b3614ec844a9"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj.html#afffbd8e2abd17e3dc96516ec72f2188b">$def</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="class_objet.html" title="Classe abstraite représentant un objet.">Objet</a> contenant les informations sur la définition de l'entité (dérivé de <a class="el" href="classentitenj__def.html" title="Classe abstraite entitenj_def Classe de base pour les définitions des entités non...">entitenj_def</a>).  <a href="#afffbd8e2abd17e3dc96516ec72f2188b"></a><br/></td></tr>
@@ -114,6 +124,41 @@ Graphe de collaboration de entitenj:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="ae5550ef446496d3cd2aa71c98850e3f6"></a><!-- doxytag: member="entitenj::fin_attaque" ref="ae5550ef446496d3cd2aa71c98850e3f6" args="(&amp;$perso, &amp;$cible, $cout_pa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entitenj::fin_attaque </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>cible</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cout_pa</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Actions effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour l'attaquant. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa0fc2e00155319dcaf67d78d9bbeb84b"></a><!-- doxytag: member="entitenj::fin_combat" ref="aa0fc2e00155319dcaf67d78d9bbeb84b" args="(&amp;$perso, $degats=null)" -->
 <div class="memitem">
 <div class="memproto">
@@ -201,6 +246,78 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a2df5dc778835bfe98672e075b054afa0"></a><!-- doxytag: member="entitenj::get_cout_attaque" ref="a2df5dc778835bfe98672e075b054afa0" args="(&amp;$perso, $cible)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entitenj::get_cout_attaque </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cible</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût en PA de l'attaque. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentite.html#a56b90b5d98f2701cf3fb9fa34236b1af">entite</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a848183d27295c88546551c0583564ae0"></a><!-- doxytag: member="entitenj::get_cout_attaque_base" ref="a848183d27295c88546551c0583564ae0" args="(&amp;$perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entitenj::get_cout_attaque_base </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût en PA pour attaquer l'entité. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentite.html#ae0dcc0ea851b5f59a2bc90db951ae003">entite</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5c0a4ff2ab739ac44b744418d513344"></a><!-- doxytag: member="entitenj::get_date_debut" ref="ac5c0a4ff2ab739ac44b744418d513344" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entitenj::get_date_debut </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Date de pose ou <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> de l'entité. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac8d96fb17b45aa0e340b7443100a3116"></a><!-- doxytag: member="entitenj::get_type_def" ref="ac8d96fb17b45aa0e340b7443100a3116" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -215,6 +332,27 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a04570a09c637e04ed479b3614ec844a9"></a><!-- doxytag: member="entitenj::peut_attaquer" ref="a04570a09c637e04ed479b3614ec844a9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entitenj::peut_attaquer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indique si l'entité peut attaquer. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentite.html#a63a5305a4819f39fb4b47301fbfb8e86">entite</a>.</p>
 
 </div>
 </div>
@@ -253,7 +391,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="entitenj_8class_8php.html">entitenj.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:15 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:38 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

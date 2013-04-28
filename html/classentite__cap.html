@@ -45,8 +45,11 @@ Graphe de collaboration de entite_cap:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite__cap.html#a64c513dca73ca7a2e50849b760304e5f">__construct</a> ($<a class="el" href="classroyaume.html">royaume</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite__cap.html#afb847d6050183420b9d1c0bb38420837">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $degats=null)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#afb847d6050183420b9d1c0bb38420837"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite__cap.html#a187bee0120e911d32412f031b0f13761">fin_combat</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#a187bee0120e911d32412f031b0f13761"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite__cap.html#a5d0f111b8c156f25622cb1ad41c6f491">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $R, $<a class="el" href="classpet.html">pet</a>, $degats=null)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#a5d0f111b8c156f25622cb1ad41c6f491"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite__cap.html#a9f44918df0986998ac80f13d5d593f53">get_type_def</a> ()</td></tr>
 <tr><td colspan="2"><h2>Attributs protégés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite__cap.html#a3e76762e6e298a2ab4906c83bb83ba45">$royaume</a></td></tr>
 </table>
@@ -72,7 +75,36 @@ Graphe de collaboration de entite_cap:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="afb847d6050183420b9d1c0bb38420837"></a><!-- doxytag: member="entite_cap::fin_defense" ref="afb847d6050183420b9d1c0bb38420837" args="(&amp;$perso, $degats=null)" -->
+<a class="anchor" id="a187bee0120e911d32412f031b0f13761"></a><!-- doxytag: member="entite_cap::fin_combat" ref="a187bee0120e911d32412f031b0f13761" args="(&amp;$actif, &amp;$passif)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite_cap::fin_combat </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5d0f111b8c156f25622cb1ad41c6f491"></a><!-- doxytag: member="entite_cap::fin_defense" ref="a5d0f111b8c156f25622cb1ad41c6f491" args="(&amp;$perso, $R, $pet, $degats=null)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -81,6 +113,18 @@ Graphe de collaboration de entite_cap:</div>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
           <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>pet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -102,9 +146,25 @@ Graphe de collaboration de entite_cap:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite__cap_afb847d6050183420b9d1c0bb38420837_cgraph.png" border="0" usemap="#classentite__cap_afb847d6050183420b9d1c0bb38420837_cgraph_map" alt=""></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f44918df0986998ac80f13d5d593f53"></a><!-- doxytag: member="entite_cap::get_type_def" ref="a9f44918df0986998ac80f13d5d593f53" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite_cap::get_type_def </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -126,7 +186,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="entite__cap_8class_8php.html">entite_cap.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:14 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:38 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

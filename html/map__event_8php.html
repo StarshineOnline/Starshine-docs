@@ -31,21 +31,26 @@
 <div class="contents">
 <h1>Référence du fichier map_event.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#ae3b57cea93f96fe71e9b0a44250c1237">checkChacalGate</a> (&amp;$joueur, $changes)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a2890c532222fa3c0c6f3918a8fb8060a">checkChacalTP</a> (&amp;$joueur, $x, $y)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#abb66f1995f24db93beaa24b16aa13c4b">checkDaemonTP</a> (&amp;$joueur, $x, $y)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a489c44e2d9ea8e20c47b6b6d520b75a9">checkOpenJailGate</a> (&amp;$joueur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a88c8fb3b4a842006a19bdf712a0a9ea8">checkTeleportHydraulique</a> (&amp;$joueur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a7801c28e9a029b2cb077610811ce7da6">checkTpAbo</a> (&amp;$joueur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a3dbf778aa104d2ce78038f684655f007">checkTpCacheChache</a> (&amp;$joueur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a697c296774bff5ea6fac01a11253cd5f">checkTpValidQuest</a> (&amp;$joueur, $queteId, $x, $y, $allowNotQuest=false)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#acea63e07f68829dbd58c514deb77233a">giveRecette</a> (&amp;$joueur, $id_recette, $quiet=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#ae3b57cea93f96fe71e9b0a44250c1237">checkChacalGate</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $changes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a2890c532222fa3c0c6f3918a8fb8060a">checkChacalTP</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $x, $y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#abb66f1995f24db93beaa24b16aa13c4b">checkDaemonTP</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $x, $y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a489c44e2d9ea8e20c47b6b6d520b75a9">checkOpenJailGate</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a91f9f861f4c72d4b81775d4b6b67479a">checkPontTemporaireFixeTP</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $x, $y, $cout=10, $jours=2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pour gérer les ponts "temporaires", variante à coût fixe.  <a href="#a91f9f861f4c72d4b81775d4b6b67479a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a03906da4feb8629529455d988f1f34bd">checkPontTemporaireRandTP</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $x, $y, $cout_min=6, $cout_max=20, $jours=2)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Pour gérer les ponts "temporaires", variante à coût aléatoire Si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> n'a pas assez de PA, mais en aurait eu assez pour passer si le coût avait été minimal, il perd 2/3 des PA au delà du minimum.  <a href="#a03906da4feb8629529455d988f1f34bd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a88c8fb3b4a842006a19bdf712a0a9ea8">checkTeleportHydraulique</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a7801c28e9a029b2cb077610811ce7da6">checkTpAbo</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a3dbf778aa104d2ce78038f684655f007">checkTpCacheChache</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a697c296774bff5ea6fac01a11253cd5f">checkTpValidQuest</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $queteId, $x, $y, $allowNotQuest=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#acea63e07f68829dbd58c514deb77233a">giveRecette</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $id_recette, $quiet=false)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#abce125332ff0cba4992510773d278b73">showImage</a> ($url, $<a class="el" href="classtitre.html">titre</a>=null)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($W_case!=$joueur-&gt;get_poscase())&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#ad6413ee4f82423d80a58b8bd19dda821">showMessage</a> ($msg, $<a class="el" href="classtitre.html">titre</a>=null)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a07c9eeefefad3dd8cb27620565b9b873">showParchemin</a> ($texte, $<a class="el" href="classtitre.html">titre</a>= 'Une page de parchemin', $image= 'pagenoir.png', $x=416, $y=575)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a03d2e60174badd3a3cb3362d48ca520a">tpLyly</a> (&amp;$joueur)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a7aefed49589ebb793c99f3e120c2ae52">trafiquerCanalisation</a> (&amp;$joueur, $item, $x, $y, $decor, $changes)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a76690b414863765243752b4874065853">usePute</a> (&amp;$joueur, $stars, $honneur, $effet, $virtuose)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($W_case!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_poscase())&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#ad6413ee4f82423d80a58b8bd19dda821">showMessage</a> ($msg, $<a class="el" href="classtitre.html">titre</a>=null)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a07c9eeefefad3dd8cb27620565b9b873">showParchemin</a> ($<a class="el" href="classtexte.html">texte</a>, $<a class="el" href="classtitre.html">titre</a>= 'Une page de parchemin', $image= 'pagenoir.png', $x=416, $y=575)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a03d2e60174badd3a3cb3362d48ca520a">tpLyly</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a7aefed49589ebb793c99f3e120c2ae52">trafiquerCanalisation</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $item, $x, $y, $decor, $changes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a27e2ada7bae9ed15c835cecf0380561b">updatetuto</a> ($etape, &amp;$<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#a76690b414863765243752b4874065853">usePute</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>, $stars, $honneur, $effet, $virtuose)</td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">global&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#ab811be6f8e1ee0dc0fe258c13360fd20">$dontrefresh</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">global&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__event_8php.html#aa27b630d00c6b0d6dc812835da670c58">$dontrefreshmap</a></td></tr>
@@ -190,6 +195,140 @@ Voici le graphe d'appel pour cette fonction :</div>
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
 <div class="center"><img src="map__event_8php_a489c44e2d9ea8e20c47b6b6d520b75a9_cgraph.png" border="0" usemap="#map__event_8php_a489c44e2d9ea8e20c47b6b6d520b75a9_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a91f9f861f4c72d4b81775d4b6b67479a"></a><!-- doxytag: member="map_event.php::checkPontTemporaireFixeTP" ref="a91f9f861f4c72d4b81775d4b6b67479a" args="(&amp;$joueur, $x, $y, $cout=10, $jours=2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">checkPontTemporaireFixeTP </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cout</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>jours</em> = <code>2</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pour gérer les ponts "temporaires", variante à coût fixe. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@joueur</em>&nbsp;</td><td>le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> qui passe le pont </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>l'autre coté du pont (x) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>l'autre coté du pont (y) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cout</em>&nbsp;</td><td>le cout en PA pour passer </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>jours</em>&nbsp;</td><td>le pont est praticable tous les x jours </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a03906da4feb8629529455d988f1f34bd"></a><!-- doxytag: member="map_event.php::checkPontTemporaireRandTP" ref="a03906da4feb8629529455d988f1f34bd" args="(&amp;$joueur, $x, $y, $cout_min=6, $cout_max=20, $jours=2)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">checkPontTemporaireRandTP </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cout_min</em> = <code>6</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cout_max</em> = <code>20</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>jours</em> = <code>2</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Pour gérer les ponts "temporaires", variante à coût aléatoire Si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> n'a pas assez de PA, mais en aurait eu assez pour passer si le coût avait été minimal, il perd 2/3 des PA au delà du minimum. </p>
+<p>Ceci pour éviter qu'il ré-éssaye X fois jusqu'à tirer le cout minimum pour optimiser la traversée ;) </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@joueur</em>&nbsp;</td><td>le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> qui passe le pont </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>x</em>&nbsp;</td><td>l'autre coté du pont (x) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>y</em>&nbsp;</td><td>l'autre coté du pont (y) </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cout_min</em>&nbsp;</td><td>le cout minimum en PA pour passer </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>cout_max</em>&nbsp;</td><td>le cout maximum en PA pour passer </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>jours</em>&nbsp;</td><td>le pont est praticable tous les x jours </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
 </div>
 </p>
 
@@ -366,7 +505,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($W_case!=$joueur-&gt;get_poscase()) showMessage </td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($W_case!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_poscase()) showMessage </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
           <td class="paramname"> <em>msg</em>, </td>
@@ -389,7 +528,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="map__event_8php_ad6413ee4f82423d80a58b8bd19dda821_icgraph.png" border="0" usemap="#map__event_8php_ad6413ee4f82423d80a58b8bd19dda821_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -523,6 +661,33 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a27e2ada7bae9ed15c835cecf0380561b"></a><!-- doxytag: member="map_event.php::updatetuto" ref="a27e2ada7bae9ed15c835cecf0380561b" args="($etape, &amp;$joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">updatetuto </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>etape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a76690b414863765243752b4874065853"></a><!-- doxytag: member="map_event.php::usePute" ref="a76690b414863765243752b4874065853" args="(&amp;$joueur, $stars, $honneur, $effet, $virtuose)" -->
 <div class="memitem">
 <div class="memproto">
@@ -600,7 +765,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -652,7 +817,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:12 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -174,6 +174,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Potentiel critique physique.  <a href="#a78e472c7d7bb82909bc2c314a8dfe657"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a5d81e8c376522c71144880f2ad9ef167">$potentiel_magique</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Potentiel lancer magique.  <a href="#a5d81e8c376522c71144880f2ad9ef167"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a268e9013b566bbd86b8e02d28c0075bd">$potentiel_parer_magique</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Potentiel parer magique.  <a href="#a268e9013b566bbd86b8e02d28c0075bd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a42b2637d7951d34a80f26a7717767895">$action</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé.  <a href="#a42b2637d7951d34a80f26a7717767895"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8031e913e8f0237ac62e5d1997686e8d">$potentiel_parer</a></td></tr>
@@ -184,6 +186,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Réserve de mana.  <a href="#abe497187858249e18d3c4139d2c30fec"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a583443349c24d2d50cb1980b4f864eb0">$rm_restant</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Réserve de mana restante.  <a href="#a583443349c24d2d50cb1980b4f864eb0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a93cb7291b7bd505f88b698a35204d18c">fin_attaque</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $cout_pa)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Actions effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour l'attaquant.  <a href="#a93cb7291b7bd505f88b698a35204d18c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a6b2821722924ec3b4590d85a64d385fe">fin_combat</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $degats=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#a6b2821722924ec3b4590d85a64d385fe"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0807212878a9d207076c80065fa1858d">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$<a class="el" href="classroyaume.html">royaume</a>, $<a class="el" href="classpet.html">pet</a>, $degats, $<a class="el" href="classbatiment.html">batiment</a>)</td></tr>
@@ -192,6 +196,10 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé.  <a href="#a492da547fa064a452ffd6876468229b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af6acdf1c8abc2d7720e31d375cb8f836">get_comp_att</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la compétence utilisée pour attaquer.  <a href="#af6acdf1c8abc2d7720e31d375cb8f836"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a56b90b5d98f2701cf3fb9fa34236b1af">get_cout_attaque</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $cible)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en PA de l'attaque.  <a href="#a56b90b5d98f2701cf3fb9fa34236b1af"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ae0dcc0ea851b5f59a2bc90db951ae003">get_cout_attaque_base</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en PA pour attaquer l'entité.  <a href="#ae0dcc0ea851b5f59a2bc90db951ae003"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7c7358d37a498dae78e1349e9fcba293">get_distance_tir</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la distance de tir.  <a href="#a7c7358d37a498dae78e1349e9fcba293"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa94eac9586bcc9ec79815bce4251bd38">get_potentiel_bloquer</a> ()</td></tr>
@@ -202,6 +210,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel toucher physique.  <a href="#ab3aaecb81ee6585bb85df232d456413b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#adf515065d5ea697ddc5069963114a95c">get_potentiel_parer</a> ($esquive=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel parer physique.  <a href="#adf515065d5ea697ddc5069963114a95c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad9aaad3721b1ddc161f9b6cb9489ca2e">get_potentiel_parer_magique</a> ($pm=null)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel parer physique.  <a href="#ad9aaad3721b1ddc161f9b6cb9489ca2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3250a12c51b795318448670b16fff47d">get_potentiel_toucher</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel toucher physique.  <a href="#a3250a12c51b795318448670b16fff47d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a07d9473fe4dfd2a7943bc3d2cdf3fb79">get_reserve</a> ($base=false)</td></tr>
@@ -210,6 +220,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la réserve de mana.  <a href="#addfd5983cd179c29dfb120a0e0d76040"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa18e1b1e4fa26beec8a9dd79187ce5b5">init_round</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise l'objet pour un nouveau round de <a class="el" href="classcombat.html">combat</a>.  <a href="#aa18e1b1e4fa26beec8a9dd79187ce5b5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a63a5305a4819f39fb4b47301fbfb8e86">peut_attaquer</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si l'entité peut attaquer.  <a href="#a63a5305a4819f39fb4b47301fbfb8e86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0fa0f72426b9c48014c88690c92452fc">set_comp_att</a> ($valeur)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la compétence utilisée pour attaquer?  <a href="#a0fa0f72426b9c48014c88690c92452fc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ab27460eaff051afd99864bba8e37fd1e">set_potentiel_bloquer</a> ($valeur)</td></tr>
@@ -220,6 +232,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel toucher physique.  <a href="#aec81df96ac57f7bc5c81bcfc9f2fd96e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a675d1737625b6c7055f2d4c06c7cc464">set_potentiel_parer</a> ($valeur)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel parer physique.  <a href="#a675d1737625b6c7055f2d4c06c7cc464"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a97e5bcc008b776e892053bed7a730c2e">set_potentiel_parer_magique</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel parer physique.  <a href="#a97e5bcc008b776e892053bed7a730c2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa2727a6b9a2fdefabdf06b2a57501332">set_potentiel_toucher</a> ($valeur)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#aa2727a6b9a2fdefabdf06b2a57501332"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a91119512c63d3591957ea58cfcbf5c7d">set_reserve</a> ($valeur)</td></tr>
@@ -241,10 +255,10 @@ Graphe de collaboration de entite:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a09ee5bc28a4a40a5bc2f697f96aa3a15">get_buff_only</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie un tableau contenant uniqument les buffs (c'est-à-dire sans les débuffs).  <a href="#a09ee5bc28a4a40a5bc2f697f96aa3a15"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a225099bd3284b916049d8b8588f95399">is_buff</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom.  <a href="#a225099bd3284b916049d8b8588f95399"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom.  <a href="#a225099bd3284b916049d8b8588f95399"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3ab7058b0058646e82e13f67da519234">lance_debuff</a> ($debuff)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un débuff sur l'entité lors d'un <a class="el" href="classcombat.html">combat</a> (uniquement sur un personnage).  <a href="#a3ab7058b0058646e82e13f67da519234"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af43179a81b452402e86236617178622c">supprime_buff</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#af43179a81b452402e86236617178622c">supprime_buff</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>.  <a href="#af43179a81b452402e86236617178622c"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Les achievements</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpd50c84fb738c633a4599af35845cc9a3"></a>Gestion des achievements </p>
@@ -594,6 +608,35 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a93cb7291b7bd505f88b698a35204d18c"></a><!-- doxytag: member="entite::fin_attaque" ref="a93cb7291b7bd505f88b698a35204d18c" args="(&amp;$perso, $cout_pa)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::fin_attaque </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cout_pa</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Actions effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour l'attaquant. </p>
+
+</div>
+</div>
 <a class="anchor" id="a6b2821722924ec3b4590d85a64d385fe"></a><!-- doxytag: member="entite::fin_combat" ref="a6b2821722924ec3b4590d85a64d385fe" args="(&amp;$perso, $degats=null)" -->
 <div class="memitem">
 <div class="memproto">
@@ -790,7 +833,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_aca75a951cd404b2e2109e73f4987542f_icgraph.png" border="0" usemap="#classentite_aca75a951cd404b2e2109e73f4987542f_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -936,7 +978,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph.png" border="0" usemap="#classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1082,6 +1123,59 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie la valeur du compteur de critiques. </p>
+
+</div>
+</div>
+<a class="anchor" id="a56b90b5d98f2701cf3fb9fa34236b1af"></a><!-- doxytag: member="entite::get_cout_attaque" ref="a56b90b5d98f2701cf3fb9fa34236b1af" args="(&amp;$perso, $cible)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_cout_attaque </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cible</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût en PA de l'attaque. </p>
+
+<p>Réimplémentée dans <a class="el" href="classentitenj.html#a2df5dc778835bfe98672e075b054afa0">entitenj</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0dcc0ea851b5f59a2bc90db951ae003"></a><!-- doxytag: member="entite::get_cout_attaque_base" ref="ae0dcc0ea851b5f59a2bc90db951ae003" args="(&amp;$perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_cout_attaque_base </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût en PA pour attaquer l'entité. </p>
+
+<p>Réimplémentée dans <a class="el" href="classentitenj.html#a848183d27295c88546551c0583564ae0">entitenj</a>, et <a class="el" href="classperso.html#a1977bc4be69f6b3705818a4306e28649">perso</a>.</p>
 
 </div>
 </div>
@@ -1442,7 +1536,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a0b9f4554a0735f3f04f47bf8a25f6d1b_icgraph.png" border="0" usemap="#classentite_a0b9f4554a0735f3f04f47bf8a25f6d1b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1494,7 +1587,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a996e5143659e5f4add73d86183b0c48b_icgraph.png" border="0" usemap="#classentite_a996e5143659e5f4add73d86183b0c48b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1541,7 +1633,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a6825d31b3108c9bcd58aa76c043712f7_icgraph.png" border="0" usemap="#classentite_a6825d31b3108c9bcd58aa76c043712f7_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1697,6 +1788,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie la PM. </p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -1885,7 +1982,38 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_adf515065d5ea697ddc5069963114a95c_cgraph.png" border="0" usemap="#classentite_adf515065d5ea697ddc5069963114a95c_cgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9aaad3721b1ddc161f9b6cb9489ca2e"></a><!-- doxytag: member="entite::get_potentiel_parer_magique" ref="ad9aaad3721b1ddc161f9b6cb9489ca2e" args="($pm=null)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_potentiel_parer_magique </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>pm</em> = <code>null</code></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcul et renvoie le potentiel parer physique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$esquive</em>&nbsp;</td><td>Valeur de la compétence esquive à prendre en compte si elle est différente de celle de l'entité (sinon false). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
 </div>
 </p>
 
@@ -1911,7 +2039,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a3250a12c51b795318448670b16fff47d_cgraph.png" border="0" usemap="#classentite_a3250a12c51b795318448670b16fff47d_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2269,6 +2396,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Renvoie la volonté. </p>
 
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="aac49d716c87774de394425926f2cc76e"></a><!-- doxytag: member="entite::in_arene" ref="aac49d716c87774de394425926f2cc76e" args="($filter= '')" -->
@@ -2345,7 +2478,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom. </p>
+<p>Permet de savoir si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>le nom du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
@@ -2360,7 +2493,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a225099bd3284b916049d8b8588f95399_icgraph.png" border="0" usemap="#classentite_a225099bd3284b916049d8b8588f95399_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2462,6 +2594,27 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Mise-à-jour des compétences à partir de l'objet. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63a5305a4819f39fb4b47301fbfb8e86"></a><!-- doxytag: member="entite::peut_attaquer" ref="a63a5305a4819f39fb4b47301fbfb8e86" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::peut_attaquer </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indique si l'entité peut attaquer. </p>
+
+<p>Réimplémentée dans <a class="el" href="classentitenj.html#a04570a09c637e04ed479b3614ec844a9">entitenj</a>.</p>
 
 </div>
 </div>
@@ -2669,6 +2822,26 @@ Voici le graphe d'appel pour cette fonction :</div>
       <table class="memname">
         <tr>
           <td class="memname">entite::set_potentiel_parer </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>valeur</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le potentiel parer physique. </p>
+
+</div>
+</div>
+<a class="anchor" id="a97e5bcc008b776e892053bed7a730c2e"></a><!-- doxytag: member="entite::set_potentiel_parer_magique" ref="a97e5bcc008b776e892053bed7a730c2e" args="($valeur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::set_potentiel_parer_magique </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
           <td class="paramname"> <em>valeur</em></td>
@@ -3345,6 +3518,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a268e9013b566bbd86b8e02d28c0075bd"></a><!-- doxytag: member="entite::$potentiel_parer_magique" ref="a268e9013b566bbd86b8e02d28c0075bd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::$potentiel_parer_magique<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Potentiel parer magique. </p>
+
+</div>
+</div>
 <a class="anchor" id="a9a70bb5b75e0ae9eb055adf370f8dc71"></a><!-- doxytag: member="entite::$potentiel_toucher" ref="a9a70bb5b75e0ae9eb055adf370f8dc71" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -3559,7 +3747,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="entite_8class_8php.html">entite.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:14 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:37 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

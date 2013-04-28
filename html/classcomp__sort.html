@@ -82,7 +82,7 @@ Graphe de collaboration de comp_sort:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Valeur de l'attribut cible si celle-ci est le lanceur.  <a href="#acd356cf96bc35fb7ab92d23235b0dfea"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#ae137f09fd02cc8a3eb61383cf1256385">cible_unique</a> = 2</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Valeur de l'attribut cible si celle-ci est un unique personnage.  <a href="#ae137f09fd02cc8a3eb61383cf1256385"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#adfa2143cfb87c7e5c83ee8cefa668a9f">formate_description</a> ($texte)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#adfa2143cfb87c7e5c83ee8cefa668a9f">formate_description</a> ($<a class="el" href="classtexte.html">texte</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Formate la description.  <a href="#adfa2143cfb87c7e5c83ee8cefa668a9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#ab8980d6ea3d2e2052e590f2c9aba97ea">get_carac_assoc</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la caractéristique associée.  <a href="#ab8980d6ea3d2e2052e590f2c9aba97ea"></a><br/></td></tr>
@@ -102,6 +102,8 @@ Graphe de collaboration de comp_sort:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le niveau de l'école qui vent la compétence ou le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>.  <a href="#a3d5ba565c31774826aa76f1de0e175e7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a5a503d126ca730baa9ad9e995c54543e">get_mp</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en MP ou en RM.  <a href="#a5a503d126ca730baa9ad9e995c54543e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#adfe4f24eecfd2c3111356713dd047349">get_obj_requis</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'obet représentant la compétence ou <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> requis pour apprendre celui-ci.  <a href="#adfe4f24eecfd2c3111356713dd047349"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a2cab71b487e113d7d32b9a6df1c3f3f2">get_prix</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le prix de la compétence ou le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>.  <a href="#a2cab71b487e113d7d32b9a6df1c3f3f2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#a40c3cfc4ad66d29dc8f7f5e24b9417fc">get_requis</a> ()</td></tr>
@@ -131,7 +133,7 @@ Graphe de collaboration de comp_sort:</div>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#ad82dcb5e017dfd52863f3002f98aea10">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $nom='', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#ad82dcb5e017dfd52863f3002f98aea10">__construct</a> ($id=0, $nom='', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#ad82dcb5e017dfd52863f3002f98aea10"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__sort.html#ac9aa29a11c60daadc94da132811bbd96">get_liste_champs</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#ac9aa29a11c60daadc94da132811bbd96"></a><br/></td></tr>
@@ -331,6 +333,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__sort_a0ca4c47d0d9adea979459245af3b9b6e_icgraph.png" border="0" usemap="#classcomp__sort_a0ca4c47d0d9adea979459245af3b9b6e_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -374,6 +377,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__sort_a8711fa5f1d3852d44a76efa01f950104_icgraph.png" border="0" usemap="#classcomp__sort_a8711fa5f1d3852d44a76efa01f950104_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -544,6 +548,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__sort_ac8ee51aae1312f8d87165a10326499c1_cgraph.png" border="0" usemap="#classcomp__sort_ac8ee51aae1312f8d87165a10326499c1_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -750,8 +755,28 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__sort_a5a503d126ca730baa9ad9e995c54543e_icgraph.png" border="0" usemap="#classcomp__sort_a5a503d126ca730baa9ad9e995c54543e_icgraph_map" alt=""></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="adfe4f24eecfd2c3111356713dd047349"></a><!-- doxytag: member="comp_sort::get_obj_requis" ref="adfe4f24eecfd2c3111356713dd047349" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_sort::get_obj_requis </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'obet représentant la compétence ou <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> requis pour apprendre celui-ci. </p>
 
 </div>
 </div>
@@ -1172,7 +1197,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__sort_a810c1dd8abd34e48c023c0d457e38772_icgraph.png" border="0" usemap="#classcomp__sort_a810c1dd8abd34e48c023c0d457e38772_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1222,6 +1246,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__sort_a558737a01807b84d65632b1c216e0a01_cgraph.png" border="0" usemap="#classcomp__sort_a558737a01807b84d65632b1c216e0a01_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1508,7 +1533,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="comp__sort_8class_8php.html">comp_sort.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:11 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:30 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

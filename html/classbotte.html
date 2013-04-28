@@ -29,32 +29,31 @@
   </div>
 </div>
 <div class="contents">
-<h1>Référence de la classe botte</h1><!-- doxytag: class="botte" --><!-- doxytag: inherits="comp_comb" -->
+<h1>Référence de la classe botte</h1><!-- doxytag: class="botte" --><!-- doxytag: inherits="effect" -->
 <p><a class="el" href="classbotte.html" title="botte : competence de combat avec une condition">botte</a> : <a class="el" href="classcompetence.html" title="Compétence : c&#39;est un effet qui peut s&#39;améliorer.">competence</a> de <a class="el" href="classcombat.html">combat</a> avec une condition  
 <a href="#_details">Plus de détails...</a></p>
 <div class="dynheader">
 Graphe d'héritage de botte:</div>
 <div class="dynsection">
-<div class="center"><img src="classbotte__inherit__graph.png" border="0" usemap="#botte_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de botte:</div>
 <div class="dynsection">
-<div class="center"><img src="classbotte__coll__graph.png" border="0" usemap="#botte_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classbotte-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbotte.html#a7582f54a2a9e415c37b8e046aa2d6dc1">__construct</a> ($aCondition, $aNom, $aLevel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbotte.html#ae99f544c95d4ec7622daa3f6439c02e4">canUse</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbotte.html#a4a98597ca7c3ac183527eb60d09e2594">$condition</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbotte.html#a4584487ff5c87dd4dc77a34c5d2f70b1">__construct</a> ($effet, $effet2=0, $duree=1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbotte.html#ae609b6d3f764fa9a6f26cecaeae3970a">peut_agir</a> (&amp;$actif, $cond)</td></tr>
+<tr><td colspan="2"><h2>Attributs protégés</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbotte.html#a665a7b5467fed66a7eaf6e0dd8f9e292">$effet</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbotte.html#a319867953e16f1b9bd700c17a16680cb">$effet2</a></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p><a class="el" href="classbotte.html" title="botte : competence de combat avec une condition">botte</a> : <a class="el" href="classcompetence.html" title="Compétence : c&#39;est un effet qui peut s&#39;améliorer.">competence</a> de <a class="el" href="classcombat.html">combat</a> avec une condition </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a7582f54a2a9e415c37b8e046aa2d6dc1"></a><!-- doxytag: member="botte::__construct" ref="a7582f54a2a9e415c37b8e046aa2d6dc1" args="($aCondition, $aNom, $aLevel)" -->
+<a class="anchor" id="a4584487ff5c87dd4dc77a34c5d2f70b1"></a><!-- doxytag: member="botte::__construct" ref="a4584487ff5c87dd4dc77a34c5d2f70b1" args="($effet, $effet2=0, $duree=1)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -62,19 +61,19 @@ Graphe de collaboration de botte:</div>
           <td class="memname">botte::__construct </td>
           <td>(</td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aCondition</em>, </td>
+          <td class="paramname"> <em>effet</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aNom</em>, </td>
+          <td class="paramname"> <em>effet2</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>aLevel</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>duree</em> = <code>1</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -85,17 +84,15 @@ Graphe de collaboration de botte:</div>
 </div>
 <div class="memdoc">
 
-<p>Réimplémentée à partir de <a class="el" href="classactive__effect.html#a2849a4bb78de277e477ab28ba2d45bb0">active_effect</a>.</p>
-
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="ae99f544c95d4ec7622daa3f6439c02e4"></a><!-- doxytag: member="botte::canUse" ref="ae99f544c95d4ec7622daa3f6439c02e4" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="ae609b6d3f764fa9a6f26cecaeae3970a"></a><!-- doxytag: member="botte::peut_agir" ref="ae609b6d3f764fa9a6f26cecaeae3970a" args="(&amp;$actif, $cond)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">botte::canUse </td>
+          <td class="memname">botte::peut_agir </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
           <td class="paramname"> <em>actif</em>, </td>
@@ -103,8 +100,8 @@ Graphe de collaboration de botte:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>cond</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -118,26 +115,37 @@ Graphe de collaboration de botte:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classbotte_ae99f544c95d4ec7622daa3f6439c02e4_cgraph.png" border="0" usemap="#classbotte_ae99f544c95d4ec7622daa3f6439c02e4_cgraph_map" alt=""></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classbotte_ae99f544c95d4ec7622daa3f6439c02e4_icgraph.png" border="0" usemap="#classbotte_ae99f544c95d4ec7622daa3f6439c02e4_icgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
 <hr/><h2>Documentation des données membres</h2>
-<a class="anchor" id="a4a98597ca7c3ac183527eb60d09e2594"></a><!-- doxytag: member="botte::$condition" ref="a4a98597ca7c3ac183527eb60d09e2594" args="" -->
+<a class="anchor" id="a665a7b5467fed66a7eaf6e0dd8f9e292"></a><!-- doxytag: member="botte::$effet" ref="a665a7b5467fed66a7eaf6e0dd8f9e292" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">botte::$condition</td>
+          <td class="memname">botte::$effet<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a319867953e16f1b9bd700c17a16680cb"></a><!-- doxytag: member="botte::$effet2" ref="a319867953e16f1b9bd700c17a16680cb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">botte::$effet2<code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -149,7 +157,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="competence_8class_8php.html">competence.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:00 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:19 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

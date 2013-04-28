@@ -31,24 +31,15 @@
 <div class="contents">
 <h1>Référence du fichier pnj.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#ae97941710d863131c700f069b109991e">$id</a> = $_GET['<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>']</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#ae97941710d863131c700f069b109991e">$id</a> = $_GET['id']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_quete_fini()!= <br class="typebreak"/>
-'') <a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>(preg_match(&quot;`\&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#addb6db482b29c50b226338a09d74c25c">$message</a> [non_quete:([^[]*)\]([^[]*)\[/non_quete:([^[]*)\]`i&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> (preg_match(&quot;`\[ISQUETE:([^[]*)\]([^[]*)\[/ISQUETE:([^[]*)\]`i&quot;, $message, $regs)) = preg_replace(&quot;`\[QUETE([^[]*)\]([^[]*)\[/QUETE([^[]*)\]`i&quot;, &quot;&quot;, $message)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#abf17cb2dba2ed17cb28aa5f37deb5293">$message</a> = preg_replace(&quot;`\[ID:([^[]*)\]([^[]*)\[/ID:([^[]*)\]`i&quot;, &quot;&lt;li&gt;&lt;a href=\&quot;pnj.php?<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=&quot;.$id.&quot;&amp;amp;reponse=\\1&amp;amp;poscase=&quot;.$W_case.&quot;\&quot; onclick=\&quot;return envoiInfo(this.href, 'information')\&quot;&gt;\\2&lt;/a&gt;&lt;/li&gt;&quot;, $reponses[$reponse])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_quete()!= '')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a16c05daa58b90ea67f664da5edf31d53">$quete_fini</a> = explode(';', $joueur-&gt;get_quete_fini())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a86a35d647204c928e773d1803bb70663">$quetes_actives</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a46e85247f93878f0c82e3ddf43f9c9c1">$reponse</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a958975b1f7dc386298698b93938d7b37">$reponses</a> = explode('*****', nl2br($row['texte']))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM <a class="el" href="classpnj.html">pnj</a> WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = \''.sSQL($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>).'\''</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM <a class="el" href="classpnj.html">pnj</a> WHERE id = \''.sSQL($id).'\''</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#adc850b9058ce43d4e8fd8ab44434be7f">$supp</a> = true</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = $joueur-&gt;get_poscase()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(preg_match(&quot;`\[quete]`i&quot;, <br class="typebreak"/>
-$message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(preg_match(&quot;`\[quetegroupe]`i&quot;, <br class="typebreak"/>
-$message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(preg_match(&quot;`\&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a9115b942871cd1f8cc034da0552bc1cc">if</a> [prendquete:([^[]*)\]`i&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (preg_match(&quot;`\[donneitem:([^[]*)\]`&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (preg_match(&quot;`\[vendsitem:([^[\:]*):([^[]*)\]`i&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> (preg_match(&quot;`\[run:([a-z0-9_]+)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[if:([a-z0-9_]+)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[ifnot:([a-z0-9_]+)\]`i&quot;, $message, $regs))(preg_match(&quot;`\[verifinventaire:([^[]*)\]`i&quot;, $message, $regs))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a2793f6490f947fab7ea3988778141746">if</a> ($row['x']!=$joueur-&gt;get_x()||$row['y']!=$joueur-&gt;get_y())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a354cbaf1d3ac02e1d550c110d5f288c3">$texte</a> = new <a class="el" href="classtexte.html">texte</a>($row['<a class="el" href="classtexte.html">texte</a>'], <a class="el" href="classtexte.html#a1ab2b66be8c0648522caa6732207d98d">texte::pnj</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_poscase()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a2793f6490f947fab7ea3988778141746">if</a> ($row['x']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x()||$row['y']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="ae97941710d863131c700f069b109991e"></a><!-- doxytag: member="pnj.php::$id" ref="ae97941710d863131c700f069b109991e" args="" -->
@@ -56,7 +47,7 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = $_GET['<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>']</td>
+          <td class="memname">$id = $_GET['id']</td>
         </tr>
       </table>
 </div>
@@ -69,59 +60,7 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="addb6db482b29c50b226338a09d74c25c"></a><!-- doxytag: member="pnj.php::$message" ref="addb6db482b29c50b226338a09d74c25c" args="[non_quete:([^[]*)\]([^[]*)\[/non_quete:([^[]*)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[ISQUETE:([^[]*)\]([^[]*)\[/ISQUETE:([^[]*)\]`i&quot;, $message, $regs))" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($joueur-&gt;get_quete_fini()!= '') <a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> (preg_match(&quot;`\ $message[non_quete:([^[]*)\]([^[]*)\[/non_quete:([^[]*)\]`i&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> (preg_match(&quot;`\[ISQUETE:([^[]*)\]([^[]*)\[/ISQUETE:([^[]*)\]`i&quot;, $message, $regs)) = preg_replace(&quot;`\[QUETE([^[]*)\]([^[]*)\[/QUETE([^[]*)\]`i&quot;, &quot;&quot;, $message)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abf17cb2dba2ed17cb28aa5f37deb5293"></a><!-- doxytag: member="pnj.php::$message" ref="abf17cb2dba2ed17cb28aa5f37deb5293" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$message = preg_replace(&quot;`\[ID:([^[]*)\]([^[]*)\[/ID:([^[]*)\]`i&quot;, &quot;&lt;li&gt;&lt;a href=\&quot;pnj.php?<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=&quot;.$id.&quot;&amp;amp;reponse=\\1&amp;amp;poscase=&quot;.$W_case.&quot;\&quot; onclick=\&quot;return envoiInfo(this.href, 'information')\&quot;&gt;\\2&lt;/a&gt;&lt;/li&gt;&quot;, $reponses[$reponse])</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a16c05daa58b90ea67f664da5edf31d53"></a><!-- doxytag: member="pnj.php::$quete_fini" ref="a16c05daa58b90ea67f664da5edf31d53" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($joueur-&gt;get_quete()!= '') $quete_fini = explode(';', $joueur-&gt;get_quete_fini())</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a86a35d647204c928e773d1803bb70663"></a><!-- doxytag: member="pnj.php::$quetes_actives" ref="a86a35d647204c928e773d1803bb70663" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$quetes_actives = array()</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -135,19 +74,6 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $reponse = 0</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a958975b1f7dc386298698b93938d7b37"></a><!-- doxytag: member="pnj.php::$reponses" ref="a958975b1f7dc386298698b93938d7b37" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$reponses = explode('*****', nl2br($row['texte']))</td>
         </tr>
       </table>
 </div>
@@ -173,7 +99,7 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = 'SELECT * FROM <a class="el" href="classpnj.html">pnj</a> WHERE <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> = \''.sSQL($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>).'\''</td>
+          <td class="memname">$requete = 'SELECT * FROM <a class="el" href="classpnj.html">pnj</a> WHERE id = \''.sSQL($id).'\''</td>
         </tr>
       </table>
 </div>
@@ -194,12 +120,12 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
 
 </div>
 </div>
-<a class="anchor" id="adc850b9058ce43d4e8fd8ab44434be7f"></a><!-- doxytag: member="pnj.php::$supp" ref="adc850b9058ce43d4e8fd8ab44434be7f" args="" -->
+<a class="anchor" id="a354cbaf1d3ac02e1d550c110d5f288c3"></a><!-- doxytag: member="pnj.php::$texte" ref="a354cbaf1d3ac02e1d550c110d5f288c3" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$supp = true</td>
+          <td class="memname">$<a class="el" href="classtexte.html">texte</a> = new <a class="el" href="classtexte.html">texte</a>($row['<a class="el" href="classtexte.html">texte</a>'], <a class="el" href="classtexte.html#a1ab2b66be8c0648522caa6732207d98d">texte::pnj</a>)</td>
         </tr>
       </table>
 </div>
@@ -212,20 +138,7 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_case = $joueur-&gt;get_poscase()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9115b942871cd1f8cc034da0552bc1cc"></a><!-- doxytag: member="pnj.php::if" ref="a9115b942871cd1f8cc034da0552bc1cc" args="[prendquete:([^[]*)\]`i&quot;, $message, $regs)) if (preg_match(&quot;`\[donneitem:([^[]*)\]`&quot;, $message, $regs)) if (preg_match(&quot;`\[vendsitem:([^[\:]*):([^[]*)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[run:([a&#45;z0&#45;9_]+)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[if:([a&#45;z0&#45;9_]+)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[ifnot:([a&#45;z0&#45;9_]+)\]`i&quot;, $message, $regs))(preg_match(&quot;`\[verifinventaire:([^[]*)\]`i&quot;, $message, $regs))" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (preg_match(&quot;`\[quete]`i&quot;, $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (preg_match(&quot;`\[quetegroupe]`i&quot;, $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (preg_match(&quot;`\ if[prendquete:([^[]*)\]`i&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (preg_match(&quot;`\[donneitem:([^[]*)\]`&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (preg_match(&quot;`\[vendsitem:([^[\:]*):([^[]*)\]`i&quot;, $message, $regs)) <a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> (preg_match(&quot;`\[run:([a-z0-9_]+)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[if:([a-z0-9_]+)\]`i&quot;, $message, $regs)) while (preg_match(&quot;`\[ifnot:([a-z0-9_]+)\]`i&quot;, $message, $regs))(preg_match(&quot;`\[verifinventaire:([^[]*)\]`i&quot;, $message, $regs))</td>
+          <td class="memname">$W_case = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_poscase()</td>
         </tr>
       </table>
 </div>
@@ -238,7 +151,7 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($row['x']!=$joueur-&gt;get_x()||$row['y']!=$joueur-&gt;get_y())</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($row['x']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x()||$row['y']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())</td>
         </tr>
       </table>
 </div>
@@ -247,7 +160,7 @@ $message)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:13 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -35,12 +35,10 @@
 <div class="dynheader">
 Graphe d'héritage de placement:</div>
 <div class="dynsection">
-<div class="center"><img src="classplacement__inherit__graph.png" border="0" usemap="#placement_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de placement:</div>
 <div class="dynsection">
-<div class="center"><img src="classplacement__coll__graph.png" border="0" usemap="#placement_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classplacement-members.html">Liste de tous les membres</a></p>
@@ -51,7 +49,7 @@ Graphe de collaboration de placement:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#af63fd5879b04fbe98adefcee89691d4b">get_coeff_comp</a> ($<a class="el" href="classperso.html">perso</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coefficient pour modifier les compétences.  <a href="#af63fd5879b04fbe98adefcee89691d4b"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a118af8202511fce723d44f4ebba46cd2">get_placement_buff</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a118af8202511fce723d44f4ebba46cd2">get_placement_buff</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'ensemble des buffs / débuffs actif sur un bâtiment.  <a href="#a118af8202511fce723d44f4ebba46cd2"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrp9c2ff6d0683497ad43281c742be15d58"></a>Donnée et méthode sur les inforamations "générales" : type, niveau, … </p>
@@ -60,6 +58,8 @@ Graphe de collaboration de placement:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Date du début de la <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a>.  <a href="#a782e141d0659df55c2c247f8073bf5d0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a3f9da94b4d31962a76677d68989005c9">$fin_placement</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Date de la fin de la <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a>.  <a href="#a3f9da94b4d31962a76677d68989005c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a949281d7887c2bed949ecebfb0f3fcf5">get_date_debut</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Date de pose ou <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> de l'entité.  <a href="#a949281d7887c2bed949ecebfb0f3fcf5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#ac0e4b1440e70e41988a1e47d604072d0">get_debut_placement</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la date du début de la <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a>.  <a href="#ac0e4b1440e70e41988a1e47d604072d0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#ae397b99cba7970bb4ede608b426da279">get_fin_placement</a> ()</td></tr>
@@ -79,7 +79,7 @@ Graphe de collaboration de placement:</div>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a7e5ccd219776ec5262b078ae5e98b0b6">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $debut_placement=0, $fin_placement=0, $id_batiment=0, $hp= '', $nom= '', $rez=0, $point_victoire=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a7e5ccd219776ec5262b078ae5e98b0b6">__construct</a> ($id=0, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $debut_placement=0, $fin_placement=0, $id_batiment=0, $hp= '', $nom= '', $rez=0, $point_victoire=0)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a7e5ccd219776ec5262b078ae5e98b0b6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a0967159e460eda3b55b78e997b60828b">get_liste_champs</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a0967159e460eda3b55b78e997b60828b"></a><br/></td></tr>
@@ -261,6 +261,27 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="center"><img src="classplacement_af63fd5879b04fbe98adefcee89691d4b_cgraph.png" border="0" usemap="#classplacement_af63fd5879b04fbe98adefcee89691d4b_cgraph_map" alt=""></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a949281d7887c2bed949ecebfb0f3fcf5"></a><!-- doxytag: member="placement::get_date_debut" ref="a949281d7887c2bed949ecebfb0f3fcf5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">placement::get_date_debut </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Date de pose ou <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> de l'entité. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentitenj__constr.html#a87525a63640770ca4d1c31e4df6730eb">entitenj_constr</a>.</p>
 
 </div>
 </div>
@@ -593,7 +614,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="placement_8class_8php.html">placement.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:23 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:59 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

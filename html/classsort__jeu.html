@@ -30,7 +30,7 @@
 </div>
 <div class="contents">
 <h1>Référence de la classe sort_jeu</h1><!-- doxytag: class="sort_jeu" --><!-- doxytag: inherits="sort" -->
-<p>Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> servant de base aux sorts dhors <a class="el" href="classcombat.html">combat</a>.  
+<p>Classe <a class="el" href="classsort__jeu.html" title="Classe sort_jeu Classe sort_jeu servant de base aux sorts hors combat.">sort_jeu</a> Classe <a class="el" href="classsort__jeu.html" title="Classe sort_jeu Classe sort_jeu servant de base aux sorts hors combat.">sort_jeu</a> servant de base aux sorts hors <a class="el" href="classcombat.html">combat</a>.  
 <a href="#_details">Plus de détails...</a></p>
 <div class="dynheader">
 Graphe d'héritage de sort_jeu:</div>
@@ -72,7 +72,7 @@ Graphe de collaboration de sort_jeu:</div>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__jeu.html#a1fff55d1d137df751767059722d367fc">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $nom='', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0, $incantation=0, $difficulte=0, $pa=0, $portee=0, $special=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__jeu.html#a1fff55d1d137df751767059722d367fc">__construct</a> ($id=0, $nom='', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0, $incantation=0, $difficulte=0, $pa=0, $portee=0, $special=0)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a1fff55d1d137df751767059722d367fc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__jeu.html#a33f59f6eaef29f9e4172f80aa6e13184">get_liste_champs</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a33f59f6eaef29f9e4172f80aa6e13184"></a><br/></td></tr>
@@ -82,11 +82,11 @@ Graphe de collaboration de sort_jeu:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des valeurs des champspour une insertion dans la base.  <a href="#ad0e8d33c924eec99ba7a5a58fe5fda7c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__jeu.html#a7d13259c3f5a35cbdfb4a439ad1c2a18">init_tab</a> ($vals)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise les données membres à l'aide d'un tableau.  <a href="#a7d13259c3f5a35cbdfb4a439ad1c2a18"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__jeu.html#af8dfdace9dfe4a5d0a5ff610e4d7c67e">factory</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__jeu.html#af8dfdace9dfe4a5d0a5ff610e4d7c67e">factory</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode créant l'objet adéquat à partir d'un élément de la base de donnée.  <a href="#af8dfdace9dfe4a5d0a5ff610e4d7c67e"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
-<p>Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> Classe <a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> servant de base aux sorts dhors <a class="el" href="classcombat.html">combat</a>. </p>
+<p>Classe <a class="el" href="classsort__jeu.html" title="Classe sort_jeu Classe sort_jeu servant de base aux sorts hors combat.">sort_jeu</a> Classe <a class="el" href="classsort__jeu.html" title="Classe sort_jeu Classe sort_jeu servant de base aux sorts hors combat.">sort_jeu</a> servant de base aux sorts hors <a class="el" href="classcombat.html">combat</a>. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a1fff55d1d137df751767059722d367fc"></a><!-- doxytag: member="sort_jeu::__construct" ref="a1fff55d1d137df751767059722d367fc" args="($id=0, $nom='', $type='', $effet=0, $duree=0, $comp_assoc='', $carac_assoc='', $comp_requis=0, $carac_requis=0, $effet2=0, $requis=0, $cible=0, $description='', $mp=0, $prix=0, $lvl_batiment=0, $incantation=0, $difficulte=0, $pa=0, $portee=0, $special=0)" -->
 <div class="memitem">
@@ -316,6 +316,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classsort__jeu_a3fc5f18cd06866a7bba8422f3702750c_cgraph.png" border="0" usemap="#classsort__jeu_a3fc5f18cd06866a7bba8422f3702750c_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -660,7 +661,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="sort__jeu_8class_8php.html">sort_jeu.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:08 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -91,8 +91,8 @@ Graphe d'héritage de effect:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a4cabf23d0fccc8184be223b7faacc981"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a99575298294cf4cc6bebd4be759c8460">fin_combat</a> (&amp;$actif, &amp;$passif)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de <a class="el" href="classcombat.html">combat</a>.  <a href="#a99575298294cf4cc6bebd4be759c8460"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a8907603b4e1152922cd9a1c8befd6bb5">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a8907603b4e1152922cd9a1c8befd6bb5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#af4dd65c83ad170e0222353bb9a5c2ea4">fin_round</a> (&amp;$actif, &amp;$passif, $mode)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#af4dd65c83ad170e0222353bb9a5c2ea4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#a6066d3efba0d40d45b81e0f8239ecf4e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a70ca7d186a882110b17b897dd51c2a9e">inflige_degats_magiques</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
@@ -104,7 +104,7 @@ Graphe d'héritage de effect:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a05ca7643c1f1e3147b23067edcd525c4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#ae92caf54fb05775b45a62b1e782afd0d">general_factory</a> (&amp;$attaquant, &amp;$defenseur, $mode)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée le tableau des effets.  <a href="#ae92caf54fb05775b45a62b1e782afd0d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a3bc5324321cb8b58898790a20aebeb8b">general_simple_factory</a> (&amp;$joueur)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a3bc5324321cb8b58898790a20aebeb8b">general_simple_factory</a> (&amp;$<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée le tableau des effets.  <a href="#a3bc5324321cb8b58898790a20aebeb8b"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classeffect.html#a7b22b68cddaa91a20ca073c8bf4b1d51">$nom</a></td></tr>
@@ -151,7 +151,7 @@ Graphe d'héritage de effect:</div>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classmaitrise__bouclier.html#a90d2232f49a3af03426d86eb4bb3c991">maitrise_bouclier</a>, <a class="el" href="classmaitrise__dague.html#a8049aa783151930b2b338a8e09e37306">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#ad7e8a7a19f98059ee9b12b021c2e4799">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#aee90df670fd50f0198987b1147e6f5cd">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#aea48c4b1e7b2ec70a86a5c9cd9facb84">maitrise_arc</a>, <a class="el" href="classmaitrise__critique.html#ad4a812b2d2a3571d7b4ecbbbb9823929">maitrise_critique</a>, <a class="el" href="classart__critique.html#afc9e86b5cf30ac1ac1852b4328eb846a">art_critique</a>, <a class="el" href="classpreparation.html#adfa362d130f3212e7113a445843063ae">preparation</a>, <a class="el" href="classprecision__chirurgicale.html#adda7a8e73d78ab9028ded71a15319a0e">precision_chirurgicale</a>, <a class="el" href="classbotte__scorpion.html#ac129ea982b45168a2dafe66b5f69c176">botte_scorpion</a>, <a class="el" href="classbotte__crabe.html#a94c54892121ed971093cbff96dae67a3">botte_crabe</a>, <a class="el" href="classbotte__aigle.html#a7e8376e4aef0653045bd88c38d975db6">botte_aigle</a>, <a class="el" href="classbotte__chat.html#a5e5f2b3501dc0c37c68e182567d28e7b">botte_chat</a>, <a class="el" href="classbotte__tigre.html#a72ae70fe6c2f8b4cbcdc3fed7e49b50b">botte_tigre</a>, <a class="el" href="classbotte__ours.html#a6fe5a53226a379be711b9697bcac17cc">botte_ours</a>, <a class="el" href="classmagnetique.html#a754a8c7b3ec6b9ccb97afb8773a96622">magnetique</a>, <a class="el" href="classbouclier__protecteur.html#a3515e72ff240787425cf8fea2251ea91">bouclier_protecteur</a>, <a class="el" href="classperte__hp.html#a1ee44f95265411831fab6a27e51c59d8">perte_hp</a>, <a class="el" href="classempoisonne.html#add677ba0ae60f4db01c568012332d419">empoisonne</a>, <a class="el" href="classpoison__lent.html#aff0b05f55b8197b12774fafee675b346">poison_lent</a>, <a class="el" href="classrecuperation.html#aeac4ec2774fc0f7e60cfa54fd2254f79">recuperation</a>, <a class="el" href="classensable.html#a46ac442d53ca05447d0340da2021627e">ensable</a>, <a class="el" href="classdebilitant.html#ac40e2b62e5316cace77c2fc917731532">debilitant</a>, <a class="el" href="classtellurique.html#ad23005f3ef18b3df65d90504d9314491">tellurique</a>, et <a class="el" href="classgemme__enchassee.html#a24394ccc62b8642e1dc97610097c2100">gemme_enchassee</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classmaitrise__bouclier.html#a90d2232f49a3af03426d86eb4bb3c991">maitrise_bouclier</a>, <a class="el" href="classmaitrise__dague.html#a8049aa783151930b2b338a8e09e37306">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#ad7e8a7a19f98059ee9b12b021c2e4799">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#aee90df670fd50f0198987b1147e6f5cd">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#aea48c4b1e7b2ec70a86a5c9cd9facb84">maitrise_arc</a>, <a class="el" href="classmaitrise__critique.html#ad4a812b2d2a3571d7b4ecbbbb9823929">maitrise_critique</a>, <a class="el" href="classart__critique.html#afc9e86b5cf30ac1ac1852b4328eb846a">art_critique</a>, <a class="el" href="classpreparation.html#adfa362d130f3212e7113a445843063ae">preparation</a>, <a class="el" href="classprecision__chirurgicale.html#adda7a8e73d78ab9028ded71a15319a0e">precision_chirurgicale</a>, <a class="el" href="classmagnetique.html#a754a8c7b3ec6b9ccb97afb8773a96622">magnetique</a>, <a class="el" href="classbouclier__protecteur.html#a3515e72ff240787425cf8fea2251ea91">bouclier_protecteur</a>, <a class="el" href="classperte__hp.html#a1ee44f95265411831fab6a27e51c59d8">perte_hp</a>, <a class="el" href="classempoisonne.html#add677ba0ae60f4db01c568012332d419">empoisonne</a>, <a class="el" href="classpoison__lent.html#aff0b05f55b8197b12774fafee675b346">poison_lent</a>, <a class="el" href="classrecuperation.html#aeac4ec2774fc0f7e60cfa54fd2254f79">recuperation</a>, <a class="el" href="classensable.html#a46ac442d53ca05447d0340da2021627e">ensable</a>, <a class="el" href="classdebilitant.html#ac40e2b62e5316cace77c2fc917731532">debilitant</a>, <a class="el" href="classtellurique.html#ad23005f3ef18b3df65d90504d9314491">tellurique</a>, et <a class="el" href="classgemme__enchassee.html#a24394ccc62b8642e1dc97610097c2100">gemme_enchassee</a>.</p>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ Graphe d'héritage de effect:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel critique après modification. </dd></dl>
 
-<p>Réimplémentée dans <a class="el" href="classmaitrise__critique.html#ac1eb6e2ad033d7fe0c1105c14c79a745">maitrise_critique</a>, <a class="el" href="classprecision__chirurgicale.html#a7bc180d7e51c2551ae758e927001dec3">precision_chirurgicale</a>, et <a class="el" href="classbotte__scorpion.html#a4a1c40ec721ca3614d0b07b685f43a7f">botte_scorpion</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classmaitrise__critique.html#ac1eb6e2ad033d7fe0c1105c14c79a745">maitrise_critique</a>, <a class="el" href="classprecision__chirurgicale.html#a7bc180d7e51c2551ae758e927001dec3">precision_chirurgicale</a>, <a class="el" href="classbotte__scorpion.html#a4a1c40ec721ca3614d0b07b685f43a7f">botte_scorpion</a>, et <a class="el" href="classbotte__scolopendre.html#ac74a0fc5118cd322566f3a7068429a1c">botte_scolopendre</a>.</p>
 
 </div>
 </div>
@@ -656,7 +656,7 @@ Graphe d'héritage de effect:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Dégâts après modification. </dd></dl>
 
-<p>Réimplémentée dans <a class="el" href="classbotte__tigre.html#a1b5e1e03688fe2a3442dfb05dbeeecee">botte_tigre</a>, et <a class="el" href="classanneau__resistance.html#a6ee8e09e497772900874ec963089446f">anneau_resistance</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classbotte__ours.html#a5d8c57651f303295b61f0d5a3a0ae18b">botte_ours</a>, et <a class="el" href="classanneau__resistance.html#a6ee8e09e497772900874ec963089446f">anneau_resistance</a>.</p>
 
 </div>
 </div>
@@ -960,7 +960,6 @@ Graphe d'héritage de effect:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classeffect_aabfbf94cf2f3e3ace4586fadef556cae_icgraph.png" border="0" usemap="#classeffect_aabfbf94cf2f3e3ace4586fadef556cae_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1000,7 +999,7 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classmaitrise__dague.html#a65ddfe6588c5e924a367ac2ae8996d88">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#a5d3908e83c94de17fe2ecb3205d2104e">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#a7f50e1ffe033d8f21b7dac400a4135f6">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#a3ec71b39329eb69adb7b333776ad8fba">maitrise_arc</a>, <a class="el" href="classpreparation.html#a19506d1df9f64b9a458b79c0992a387f">preparation</a>, <a class="el" href="classbotte__aigle.html#a2e61e1f46def374d1b891334072d41a0">botte_aigle</a>, <a class="el" href="classbotte__chat.html#aeb2fc10d3b98187814f6a4559878ccc2">botte_chat</a>, <a class="el" href="classensable.html#a50a7d281df66b6d44a7d7ecbab122cd5">ensable</a>, et <a class="el" href="classdebilitant.html#a5f18e272460498cdc233b7917baaf8a1">debilitant</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classmaitrise__dague.html#a65ddfe6588c5e924a367ac2ae8996d88">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#a5d3908e83c94de17fe2ecb3205d2104e">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#a7f50e1ffe033d8f21b7dac400a4135f6">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#a3ec71b39329eb69adb7b333776ad8fba">maitrise_arc</a>, <a class="el" href="classpreparation.html#a19506d1df9f64b9a458b79c0992a387f">preparation</a>, <a class="el" href="classbotte__aigle.html#a2e61e1f46def374d1b891334072d41a0">botte_aigle</a>, <a class="el" href="classbotte__chat.html#aeb2fc10d3b98187814f6a4559878ccc2">botte_chat</a>, <a class="el" href="classbotte__chien.html#ac05e450cad012456a75afdcc1718c386">botte_chien</a>, <a class="el" href="classbotte__tortue.html#a515779de81b42694a456aa003e7d376f">botte_tortue</a>, <a class="el" href="classbotte__rhinoceros.html#ab7312937e978191bf24728e8871f93e4">botte_rhinoceros</a>, <a class="el" href="classbotte__tigre.html#a8db777af70341f5a8070693ff1486020">botte_tigre</a>, <a class="el" href="classensable.html#a50a7d281df66b6d44a7d7ecbab122cd5">ensable</a>, et <a class="el" href="classdebilitant.html#a5f18e272460498cdc233b7917baaf8a1">debilitant</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1098,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a8907603b4e1152922cd9a1c8befd6bb5"></a><!-- doxytag: member="effect::fin_round" ref="a8907603b4e1152922cd9a1c8befd6bb5" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="af4dd65c83ad170e0222353bb9a5c2ea4"></a><!-- doxytag: member="effect::fin_round" ref="af4dd65c83ad170e0222353bb9a5c2ea4" args="(&amp;$actif, &amp;$passif, $mode)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1113,7 +1112,13 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>mode</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -1129,11 +1134,12 @@ Voici le graphe d'appel pour cette fonction :</div>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classmaitrise__bouclier.html#aec72dd2a421f85caf36a892c6f95a9fa">maitrise_bouclier</a>, <a class="el" href="classmaitrise__dague.html#a7f0a0b02f95cda54f951b2b162dbc8a3">maitrise_dague</a>, <a class="el" href="classmaitrise__epee.html#a2601edf4f2edb4aec4efc00233e8cb51">maitrise_epee</a>, <a class="el" href="classmaitrise__hache.html#a4545264270e62508e3170714ea72491c">maitrise_hache</a>, <a class="el" href="classmaitrise__arc.html#a6e9bf1be37410534beb49c0fb1f6b525">maitrise_arc</a>, <a class="el" href="classmaitrise__critique.html#a071091973b2a0e75d1d0998626bc14b0">maitrise_critique</a>, <a class="el" href="classart__critique.html#a5c053fdffbe1e4a74ef6fc4a1f4c88f6">art_critique</a>, <a class="el" href="classfleche__poison.html#aa268d3331a123d871170899452a8ef90">fleche_poison</a>, <a class="el" href="classmagnetique.html#a80fb56483bbd15fa02ab492bb718d522">magnetique</a>, <a class="el" href="classvol__a__la__tire.html#adad92fae390f6f32cab353648eb41e68">vol_a_la_tire</a>, <a class="el" href="classetat.html#aba8c098594443a9b51091058df44694b">etat</a>, <a class="el" href="classperte__hp.html#af71b6ba869e0aca784af4d0e36a5c0d8">perte_hp</a>, <a class="el" href="classempoisonne.html#ad855640411136a518c1fc302838a3c7a">empoisonne</a>, <a class="el" href="classpoison.html#a8affaa90019a10f9cf9652820b0aa665">poison</a>, <a class="el" href="classpoison__lent.html#a55f4b0f9d7c542610c5ff46b35a6ec03">poison_lent</a>, <a class="el" href="classrecuperation.html#a22d9195a473d70463ddbf56023963175">recuperation</a>, et <a class="el" href="classdebilitant.html#a212c474d2190bb0ca1af297ec49a6bdd">debilitant</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classetat.html#a73c4fdce22a711baee0d0cb9d99f1ee5">etat</a>, <a class="el" href="classperte__hp.html#a1649cbbf3c430ffccca89cc8e3059caa">perte_hp</a>, <a class="el" href="classempoisonne.html#a01a999dc2a5831ab16f81f875e603f2e">empoisonne</a>, <a class="el" href="classpoison.html#ab249c57d8b801ac36a6b3b1ca1b43bec">poison</a>, <a class="el" href="classpoison__lent.html#aa140eae4d9a4b2389af5d13d6c7355a6">poison_lent</a>, <a class="el" href="classrecuperation.html#a5ffe530a33417ee52d2bf61503856c13">recuperation</a>, et <a class="el" href="classdebilitant.html#aa0b63de2c0aa7154ecaee96e82f466d9">debilitant</a>.</p>
 
 </div>
 </div>
@@ -1286,7 +1292,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classeffect_a5b5b088988547cd1f62bb6ce96b12a8c_icgraph.png" border="0" usemap="#classeffect_a5b5b088988547cd1f62bb6ce96b12a8c_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1333,7 +1338,7 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 
-<p>Réimplémentée dans <a class="el" href="classbotte__crabe.html#a27032b857366b9504c3ce54561a0e160">botte_crabe</a>, <a class="el" href="classbotte__ours.html#a82e7f504db3826813481b51eeb93dd0e">botte_ours</a>, <a class="el" href="classfleche__poison.html#ad0c01ef2b8d32af6595eadd8780a1274">fleche_poison</a>, <a class="el" href="classmagnetique.html#ae7e839eaaab7ccdb1e6664279a89dce3">magnetique</a>, <a class="el" href="classfleche__sable.html#a32b82aad67a51b6a285ed424405acf32">fleche_sable</a>, <a class="el" href="classeffet__vampirisme.html#a9b022cc89705a3950d99cc6b1d64f780">effet_vampirisme</a>, <a class="el" href="classriposte__furtive.html#afb3f86fce646ec8066b29122f90c469a">riposte_furtive</a>, <a class="el" href="classcarapace__incisive.html#a3b941c4622c1d7ffac66a0aca3c8ca72">carapace_incisive</a>, et <a class="el" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550">gemme_enchassee</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classbotte__crabe.html#a27032b857366b9504c3ce54561a0e160">botte_crabe</a>, <a class="el" href="classfleche__poison.html#ad0c01ef2b8d32af6595eadd8780a1274">fleche_poison</a>, <a class="el" href="classmagnetique.html#ae7e839eaaab7ccdb1e6664279a89dce3">magnetique</a>, <a class="el" href="classfleche__sable.html#a32b82aad67a51b6a285ed424405acf32">fleche_sable</a>, <a class="el" href="classeffet__vampirisme.html#a9b022cc89705a3950d99cc6b1d64f780">effet_vampirisme</a>, <a class="el" href="classriposte__furtive.html#afb3f86fce646ec8066b29122f90c469a">riposte_furtive</a>, <a class="el" href="classcarapace__incisive.html#a3b941c4622c1d7ffac66a0aca3c8ca72">carapace_incisive</a>, et <a class="el" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550">gemme_enchassee</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1414,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classeffect_a8a36b50e355bbadc959c3d23ae5a4d15_icgraph.png" border="0" usemap="#classeffect_a8a36b50e355bbadc959c3d23ae5a4d15_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1451,7 +1455,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classeffect_ab8be2d8e576cbabc5238edd3782fb3e4_icgraph.png" border="0" usemap="#classeffect_ab8be2d8e576cbabc5238edd3782fb3e4_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1624,7 +1627,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:13 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:35 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

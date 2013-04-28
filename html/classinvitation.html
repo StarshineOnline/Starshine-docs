@@ -33,7 +33,7 @@
 <p><a href="classinvitation-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a4e6ba8eb63a3b1a07a54d4ab5e848230">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $inviteur=0, $receveur=0, $time=0, $<a class="el" href="classgroupe.html">groupe</a>=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a4e6ba8eb63a3b1a07a54d4ab5e848230">__construct</a> ($id=0, $inviteur=0, $receveur=0, $time=0, $<a class="el" href="classgroupe.html">groupe</a>=0)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">public  <a href="#a4e6ba8eb63a3b1a07a54d4ab5e848230"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a79add7d98836a671b86bafdc5f31dad1">__toString</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#a79add7d98836a671b86bafdc5f31dad1"></a><br/></td></tr>
@@ -51,7 +51,7 @@
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sauvegarde automatiquement en base de donnée.  <a href="#afe563fe578f4c0368a48bdea5750f4b5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a06b1a6aba0d4b711010250f8b682c081">set_groupe</a> ($<a class="el" href="classgroupe.html">groupe</a>, $param= 'set')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a06b1a6aba0d4b711010250f8b682c081"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#ab4fedb7f0dd2942ffe1e335932b1e023">set_id</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $param= 'set')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#ab4fedb7f0dd2942ffe1e335932b1e023">set_id</a> ($id, $param= 'set')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#ab4fedb7f0dd2942ffe1e335932b1e023"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a37c49fa2be06fafd3d5b0f0c18ca0748">set_inviteur</a> ($inviteur, $param= 'set')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la valeur de l'attribut  public.  <a href="#a37c49fa2be06fafd3d5b0f0c18ca0748"></a><br/></td></tr>
@@ -62,7 +62,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a9429a0126037e9253e95f9f9529daba5">supprimer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  public.  <a href="#a9429a0126037e9253e95f9f9529daba5"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a3c9c64069d0a8f42c851e65c023ba97a">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a3c9c64069d0a8f42c851e65c023ba97a">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  static.  <a href="#a3c9c64069d0a8f42c851e65c023ba97a"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs privés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinvitation.html#a0d6ad8da25f77e2c3901508cb826faec">$groupe</a></td></tr>
@@ -177,7 +177,7 @@
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -597,7 +597,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">invitation::$<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a><code> [private]</code></td>
+          <td class="memname">invitation::$id<code> [private]</code></td>
         </tr>
       </table>
 </div>
@@ -648,7 +648,7 @@
 <li>SSO/Starshine-Online/class/<a class="el" href="invitation_8class_8php.html">invitation.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:17 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:51 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

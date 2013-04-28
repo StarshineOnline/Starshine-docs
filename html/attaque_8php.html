@@ -34,14 +34,21 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a2110aa3d7ba7d95dfaae31a4b4e8b935">$check_pet</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a4201c3c3bcc62093c33874413f159c1e">$check_pet_def</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#aa720998827fe9e92a5fe573a62edc0b8">$connexion</a> = true</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), <br class="typebreak"/>
+$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())&amp;&amp;($<a class="el" href="classjoueur.html">joueur</a>-&gt;<br class="typebreak"/>
+in_arene('and donj=0')==false)&amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;<br class="typebreak"/>
+get_y()&gt;190)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#aff3494941d7b0cdd0afa7c5659de037e">$dist_tir_att</a> = $attaquant-&gt;get_distance_tir()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a28c8e999b453b3b865f635042f490018">$log_combat</a> = &quot;&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a368781e9ab7727ba71d57aeea6a74544">$no_pa_attaque</a> = false</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT id_batiment FROM <a class="el" href="classconstruction.html">construction</a> WHERE x = &quot;.$joueur-&gt;get_x().&quot; AND y = &quot;.$joueur-&gt;get_y().&quot; AND <a class="el" href="classroyaume.html">royaume</a> = &quot;.$Trace[$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()]['numrace']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#aa5e0764498eecd1a13e357fa5df66047">$round_total</a> = $G_round_total</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('<a class="el" href="classpet.html">pet</a>', <br class="typebreak"/>
-$_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(is_donjon($joueur-&gt;<br class="typebreak"/>
-get_x(), $joueur-&gt;get_y())&amp;&amp;($joueur-&gt;<br class="typebreak"/>
-in_arene('and donj=0')==false))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#ac2dc0d755351bd37a8639a58cacfa465">$type</a> = $_GET['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']</td></tr>
+$_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;<br class="typebreak"/>
+get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())&amp;&amp;($<a class="el" href="classjoueur.html">joueur</a>-&gt;<br class="typebreak"/>
+in_arene('and donj=0')==false)&amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;<br class="typebreak"/>
+get_y()&gt;190)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a25d4c44115be7ee43930c0a805f5c6d3">$type</a> = $_GET['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = convert_in_pos($defenseur-&gt;get_x(), $defenseur-&gt;get_y())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="attaque_8php.html#a3bdc395fa40de5f822d4230cf6e5b387">$W_distance</a> = detection_distance($W_case, convert_in_pos($attaquant-&gt;get_x(), $attaquant-&gt;get_y()))</td></tr>
 </table>
@@ -85,12 +92,25 @@ in_arene('and donj=0')==false))&nbsp;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
+<a class="anchor" id="aff3494941d7b0cdd0afa7c5659de037e"></a><!-- doxytag: member="attaque.php::$dist_tir_att" ref="aff3494941d7b0cdd0afa7c5659de037e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())&amp;&amp;($<a class="el" href="classjoueur.html">joueur</a>-&gt;in_arene('and donj=0')==false)&amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()&gt;190) $dist_tir_att = $attaquant-&gt;get_distance_tir()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="attaque.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -124,6 +144,32 @@ in_arene('and donj=0')==false))&nbsp;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="attaque.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="attaque.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$requete = &quot;SELECT id_batiment FROM <a class="el" href="classconstruction.html">construction</a> WHERE x = &quot;.$joueur-&gt;get_x().&quot; AND y = &quot;.$joueur-&gt;get_y().&quot; AND <a class="el" href="classroyaume.html">royaume</a> = &quot;.$Trace[$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()]['numrace']</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa5e0764498eecd1a13e357fa5df66047"></a><!-- doxytag: member="attaque.php::$round_total" ref="aa5e0764498eecd1a13e357fa5df66047" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -137,12 +183,12 @@ in_arene('and donj=0')==false))&nbsp;</td><td class="memItemRight" valign="botto
 
 </div>
 </div>
-<a class="anchor" id="ac2dc0d755351bd37a8639a58cacfa465"></a><!-- doxytag: member="attaque.php::$type" ref="ac2dc0d755351bd37a8639a58cacfa465" args="" -->
+<a class="anchor" id="a25d4c44115be7ee43930c0a805f5c6d3"></a><!-- doxytag: member="attaque.php::$type" ref="a25d4c44115be7ee43930c0a805f5c6d3" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('<a class="el" href="classpet.html">pet</a>', $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (is_donjon($joueur-&gt;get_x(), $joueur-&gt;get_y())&amp;&amp;($joueur-&gt;in_arene('and donj=0')==false)) $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = $_GET['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('<a class="el" href="classpet.html">pet</a>', $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())&amp;&amp;($<a class="el" href="classjoueur.html">joueur</a>-&gt;in_arene('and donj=0')==false)&amp;&amp;$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()&gt;190) $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> = $_GET['<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>']</td>
         </tr>
       </table>
 </div>
@@ -177,7 +223,7 @@ in_arene('and donj=0')==false))&nbsp;</td><td class="memItemRight" valign="botto
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:48 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:20:58 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

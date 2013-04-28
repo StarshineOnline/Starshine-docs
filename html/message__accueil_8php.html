@@ -42,7 +42,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__accueil_8php.html#a143d0bbac3267c78f51dc73468572f3d">$req_news</a> = $db_forum-&gt;query($requete_news)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__accueil_8php.html#a23e2695e3f3c824bad78988075b297e7">$requete</a> = &quot;SELECT * FROM motd WHERE publie = 1&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($oldcookie&lt;=$row_m['date'] <br class="typebreak"/>
-OR $affiche== 'all')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__accueil_8php.html#abeadf7156359f0390f1d3638c79d8f3c">$requete_journal</a> = &quot;SELECT * FROM journal WHERE id_perso = &quot;.$joueur-&gt;get_id().&quot; AND time &gt; '&quot;.date(&quot;Y-m-d H:i:s&quot;, $oldcookie).&quot;' ORDER BY time ASC, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC&quot;</td></tr>
+OR $affiche== 'all')&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__accueil_8php.html#abeadf7156359f0390f1d3638c79d8f3c">$requete_journal</a> = &quot;SELECT * FROM journal WHERE id_perso = &quot;.$joueur-&gt;get_id().&quot; AND time &gt; '&quot;.date(&quot;Y-m-d H:i:s&quot;, $oldcookie).&quot;' ORDER BY time ASC, id ASC&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__accueil_8php.html#a306873ba53e795d3a131ed1408c60e68">$requete_news</a> = &quot;SELECT * FROM punbbtopics WHERE (forum_id = 5) ORDER BY posted DESC&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__accueil_8php.html#a13681d721a04d3a3d655b4dc6a2ccb82">$row_m</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req_m)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="message__accueil_8php.html#a971da5c93ffa28ec35ebe4461c7b2dc8">$row_news</a> = $db_forum-&gt;read_array($req_news)</td></tr>
@@ -81,7 +81,7 @@ read_assoc($req_journal))&nbsp;</td><td class="memItemRight" valign="bottom"><a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -185,7 +185,7 @@ read_assoc($req_journal))&nbsp;</td><td class="memItemRight" valign="bottom"><a 
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($oldcookie&lt;=$row_m['date'] OR $affiche== 'all') $requete_journal = &quot;SELECT * FROM journal WHERE id_perso = &quot;.$joueur-&gt;get_id().&quot; AND time &gt; '&quot;.date(&quot;Y-m-d H:i:s&quot;, $oldcookie).&quot;' ORDER BY time ASC, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($oldcookie&lt;=$row_m['date'] OR $affiche== 'all') $requete_journal = &quot;SELECT * FROM journal WHERE id_perso = &quot;.$joueur-&gt;get_id().&quot; AND time &gt; '&quot;.date(&quot;Y-m-d H:i:s&quot;, $oldcookie).&quot;' ORDER BY time ASC, id ASC&quot;</td>
         </tr>
       </table>
 </div>
@@ -246,7 +246,7 @@ read_assoc($req_journal))&nbsp;</td><td class="memItemRight" valign="bottom"><a 
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:12 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -33,8 +33,8 @@
 <tr><td colspan="2"><h2>Fonctions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#a6c936b43e81de396d639908adb354afa">affiche_bataille_groupe</a> ($<a class="el" href="classbataille.html">bataille</a>, $leader=false)</td></tr>
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#a71f2aa6a4b2bf64caee0b33cd32056dd">$groupe</a> = recupgroupe($joueur-&gt;get_groupe(), '')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#a24325c4593c15dbbe5deaa871808d44e">$groupe_joueur</a> = new <a class="el" href="classgroupe.html">groupe</a>($joueur-&gt;get_groupe())</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#a71f2aa6a4b2bf64caee0b33cd32056dd">$groupe</a> = recupgroupe($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe(), '')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#a24325c4593c15dbbe5deaa871808d44e">$groupe_joueur</a> = new <a class="el" href="classgroupe.html">groupe</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#a7afbeef6049b0fa5d6240f345591ccc0">$leader</a> = new <a class="el" href="classperso.html">perso</a>($<a class="el" href="classgroupe__joueur.html">groupe_joueur</a>-&gt;get_id_leader())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="groupe__bataille_8php.html#abe2d79bb4aa8b8243d81c67fdd50511f">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($Trace[$leader-&gt;get_race()]['numrace'])</td></tr>
@@ -80,7 +80,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classgroupe.html">groupe</a> = recupgroupe($joueur-&gt;get_groupe(), '')</td>
+          <td class="memname">$<a class="el" href="classgroupe.html">groupe</a> = recupgroupe($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe(), '')</td>
         </tr>
       </table>
 </div>
@@ -93,7 +93,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classgroupe__joueur.html">groupe_joueur</a> = new <a class="el" href="classgroupe.html">groupe</a>($joueur-&gt;get_groupe())</td>
+          <td class="memname">$<a class="el" href="classgroupe__joueur.html">groupe_joueur</a> = new <a class="el" href="classgroupe.html">groupe</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe())</td>
         </tr>
       </table>
 </div>
@@ -106,7 +106,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -141,7 +141,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:54 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:10 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

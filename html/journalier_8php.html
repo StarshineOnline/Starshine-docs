@@ -34,24 +34,31 @@
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a6fab6ce5d2dbb721e9ab927d75f677e9">$arenes</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#ac763b5394340482de7f1b4f723d66ea7">$check_virgule</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a481c918f8d853749e00b5942cabf599a">$date</a> = date(&quot;Y-m-d&quot;, mktime(0, 0, 0, date(&quot;m&quot;) , date(&quot;d&quot;) - 1, date(&quot;Y&quot;)))</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#ad86c3fbc5672e1deeafc5229012b0b5d">$handle</a> = fopen($insert_file, &quot;w&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a8262ebe7fc165dd3940f4c4b84f0b9e5">$down</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#aef781c6cdc887550b4a09dc47a38a6bd">$hp</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#ae97941710d863131c700f069b109991e">$id</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a612bab3b0d699042bf77edb12dd35da6">$id_plan</a> = 145</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a9c4c4233d97c151e877a89ad6802b71e">$insert_file</a> = tempnam(&quot;/tmp&quot;, &quot;journalier&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a627e084cfaaa650c19900ffd12025b7c">$insert_x</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a6bb51d13c197efbb8e4b344491867fd6">$insert_y</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#abd32cc82c6a3f79491987de36ad580ca">$level</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a9a2cf15a653aee8be437f7ae474cd494">$log</a> = new <a class="el" href="classlog__admin.html">log_admin</a>()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#ac409786c163a1974d1e24a6767a95166">$mail</a> = &quot;\nGénération des monstres\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a9204693b6699ca48e4cb50bedba46f9f">$mail</a> = &quot;\nGénération des monstres\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a949b85e71d3a0130af034da07e46b9c4">$mail_send</a> = getenv('SSO_MAIL')</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#acad6354f875a0b603c1567c02afa4b4b">$monstre</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#ac7a26f695766855d76d7fe98e02f813f">$mort</a> = time() + 22000000</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#af4a2f05bd1569f558961898bd74a7108">$mort_naturelle</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a2a8fce31ad86295c79f697d5c6ad6461">$ratio</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT level, COUNT(*) as total FROM <a class="el" href="classperso.html">perso</a> WHERE statut = 'actif' GROUP BY level&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#affd9e3eb0aad0a7ca42912cd925f148c">$ret</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;LOAD DATA LOCAL INFILE \&quot;$insert_file\&quot; INTO TABLE <a class="el" href="classmap__monstre.html">map_monstre</a> (<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, x, y, hp, mort_naturelle)&quot;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a3a3f16e69d49a1f1a1b3e6f8f4babc9d">$ret_info</a> = $<a class="el" href="classdb.html">db</a>-&gt;get_mysql_info()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#afa573008b7cf625f08bcd8af729a522b">$sql_cases</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#ab57b7a86232a926db6777e7a2acd21d3">$sql_cases_occupees</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a96d0806a73705dcbb4d10b453662ab2a">$sql_cases_vides</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#ad69d75a1a102cb4c89f2268ff479b551">$sql_insert</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a8244ee40a53d845131cdf29dcfb73649">$stmt_insert</a> = $<a class="el" href="classdb.html">db</a>-&gt;prepare('INSERT INTO <a class="el" href="classmap__monstre.html">map_monstre</a> (<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, x, y, hp, mort_naturelle) VALUES (?, ?, ?, ?, ?)')</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#aba96218fd66b214a98ea395a577b9ee0">$tot</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a967bd5be1048977bbc4a1b4ff217b52c">$total_monstre</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a6b5ad2ac55f9df46e8f34e78fbd6f176">$up</a> = 0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier_8php.html#a9430426c726664eef5ce44a701b64238">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a6fab6ce5d2dbb721e9ab927d75f677e9"></a><!-- doxytag: member="journalier.php::$arenes" ref="a6fab6ce5d2dbb721e9ab927d75f677e9" args="" -->
@@ -93,12 +100,38 @@
 
 </div>
 </div>
-<a class="anchor" id="ad86c3fbc5672e1deeafc5229012b0b5d"></a><!-- doxytag: member="journalier.php::$handle" ref="ad86c3fbc5672e1deeafc5229012b0b5d" args="" -->
+<a class="anchor" id="a8262ebe7fc165dd3940f4c4b84f0b9e5"></a><!-- doxytag: member="journalier.php::$down" ref="a8262ebe7fc165dd3940f4c4b84f0b9e5" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$handle = fopen($insert_file, &quot;w&quot;)</td>
+          <td class="memname">$down = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aef781c6cdc887550b4a09dc47a38a6bd"></a><!-- doxytag: member="journalier.php::$hp" ref="aef781c6cdc887550b4a09dc47a38a6bd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$hp = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae97941710d863131c700f069b109991e"></a><!-- doxytag: member="journalier.php::$id" ref="ae97941710d863131c700f069b109991e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$id = 0</td>
         </tr>
       </table>
 </div>
@@ -119,12 +152,25 @@
 
 </div>
 </div>
-<a class="anchor" id="a9c4c4233d97c151e877a89ad6802b71e"></a><!-- doxytag: member="journalier.php::$insert_file" ref="a9c4c4233d97c151e877a89ad6802b71e" args="" -->
+<a class="anchor" id="a627e084cfaaa650c19900ffd12025b7c"></a><!-- doxytag: member="journalier.php::$insert_x" ref="a627e084cfaaa650c19900ffd12025b7c" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$insert_file = tempnam(&quot;/tmp&quot;, &quot;journalier&quot;)</td>
+          <td class="memname">$insert_x = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6bb51d13c197efbb8e4b344491867fd6"></a><!-- doxytag: member="journalier.php::$insert_y" ref="a6bb51d13c197efbb8e4b344491867fd6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$insert_y = 0</td>
         </tr>
       </table>
 </div>
@@ -158,12 +204,12 @@
 
 </div>
 </div>
-<a class="anchor" id="ac409786c163a1974d1e24a6767a95166"></a><!-- doxytag: member="journalier.php::$mail" ref="ac409786c163a1974d1e24a6767a95166" args="" -->
+<a class="anchor" id="a9204693b6699ca48e4cb50bedba46f9f"></a><!-- doxytag: member="journalier.php::$mail" ref="a9204693b6699ca48e4cb50bedba46f9f" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$mail = &quot;\nGénération des monstres\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (date(&quot;j&quot;)==1) $mail = &quot;\nGénération des monstres\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>\<a class="el" href="don_8php.html#ae8c5066901c3743559dbec81a3e84c9f">n</a>&quot;</td>
         </tr>
       </table>
 </div>
@@ -184,12 +230,51 @@
 
 </div>
 </div>
+<a class="anchor" id="acad6354f875a0b603c1567c02afa4b4b"></a><!-- doxytag: member="journalier.php::$monstre" ref="acad6354f875a0b603c1567c02afa4b4b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="classmonstre.html">monstre</a> = array()</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac7a26f695766855d76d7fe98e02f813f"></a><!-- doxytag: member="journalier.php::$mort" ref="ac7a26f695766855d76d7fe98e02f813f" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req)) $mort = time() + 22000000</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af4a2f05bd1569f558961898bd74a7108"></a><!-- doxytag: member="journalier.php::$mort_naturelle" ref="af4a2f05bd1569f558961898bd74a7108" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$mort_naturelle = 0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2a8fce31ad86295c79f697d5c6ad6461"></a><!-- doxytag: member="journalier.php::$ratio" ref="a2a8fce31ad86295c79f697d5c6ad6461" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ratio = 0</td>
         </tr>
       </table>
 </div>
@@ -216,32 +301,6 @@
       <table class="memname">
         <tr>
           <td class="memname">$requete = &quot;SELECT level, COUNT(*) as total FROM <a class="el" href="classperso.html">perso</a> WHERE statut = 'actif' GROUP BY level&quot;</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="affd9e3eb0aad0a7ca42912cd925f148c"></a><!-- doxytag: member="journalier.php::$ret" ref="affd9e3eb0aad0a7ca42912cd925f148c" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$ret = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;LOAD DATA LOCAL INFILE \&quot;$insert_file\&quot; INTO TABLE <a class="el" href="classmap__monstre.html">map_monstre</a> (<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, x, y, hp, mort_naturelle)&quot;)</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3a3f16e69d49a1f1a1b3e6f8f4babc9d"></a><!-- doxytag: member="journalier.php::$ret_info" ref="a3a3f16e69d49a1f1a1b3e6f8f4babc9d" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$ret_info = $<a class="el" href="classdb.html">db</a>-&gt;get_mysql_info()</td>
         </tr>
       </table>
 </div>
@@ -310,6 +369,19 @@
 </pre></div>
 </div>
 </div>
+<a class="anchor" id="a8244ee40a53d845131cdf29dcfb73649"></a><!-- doxytag: member="journalier.php::$stmt_insert" ref="a8244ee40a53d845131cdf29dcfb73649" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stmt_insert = $<a class="el" href="classdb.html">db</a>-&gt;prepare('INSERT INTO <a class="el" href="classmap__monstre.html">map_monstre</a> (<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, x, y, hp, mort_naturelle) VALUES (?, ?, ?, ?, ?)')</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aba96218fd66b214a98ea395a577b9ee0"></a><!-- doxytag: member="journalier.php::$tot" ref="aba96218fd66b214a98ea395a577b9ee0" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -336,8 +408,34 @@
 
 </div>
 </div>
+<a class="anchor" id="a6b5ad2ac55f9df46e8f34e78fbd6f176"></a><!-- doxytag: member="journalier.php::$up" ref="a6b5ad2ac55f9df46e8f34e78fbd6f176" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$up = 0</td>
+        </tr>
+      </table>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:55 2012 pour Starshine Online par&nbsp;
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9430426c726664eef5ce44a701b64238"></a><!-- doxytag: member="journalier.php::while" ref="a9430426c726664eef5ce44a701b64238" args="($row=$db&#45;&gt;read_array($req))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:11 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -31,13 +31,13 @@
 <div class="contents">
 <h1>Référence du fichier livre_recette.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>(array('x' =&gt; $joueur-&gt;get_x(), 'y' =&gt; $joueur-&gt;get_y()))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>(array('x' =&gt; $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), 'y' =&gt; $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()))</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#abe2d79bb4aa8b8243d81c67fdd50511f">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($case-&gt;get_royaume())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('action', <br class="typebreak"/>
 $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#ac59f96c255d947452cfd5d2aeb330693">$recette</a> = new <a class="el" href="classcraft__recette.html">craft_recette</a>()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM <a class="el" href="classperso__recette.html">perso_recette</a> WHERE id_perso = &quot;.$joueur-&gt;get_id()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#a92d70a97331cc6fc0a79d9da50895be8">$types</a> = $recette-&gt;get_info_joueur($joueur, $R)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="livre__recette_8php.html#a92d70a97331cc6fc0a79d9da50895be8">$types</a> = $recette-&gt;get_info_joueur($<a class="el" href="classjoueur.html">joueur</a>, $R)</td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="a67109aba0fb28246abc057ae20a7b723"></a><!-- doxytag: member="livre_recette.php::$case" ref="a67109aba0fb28246abc057ae20a7b723" args="" -->
@@ -45,7 +45,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="l
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$case = new <a class="el" href="classmap__case.html">map_case</a>(array('x' =&gt; $joueur-&gt;get_x(), 'y' =&gt; $joueur-&gt;get_y()))</td>
+          <td class="memname">$case = new <a class="el" href="classmap__case.html">map_case</a>(array('x' =&gt; $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), 'y' =&gt; $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()))</td>
         </tr>
       </table>
 </div>
@@ -110,7 +110,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="l
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$types = $recette-&gt;get_info_joueur($joueur, $R)</td>
+          <td class="memname">$types = $recette-&gt;get_info_joueur($<a class="el" href="classjoueur.html">joueur</a>, $R)</td>
         </tr>
       </table>
 </div>
@@ -119,7 +119,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="l
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:56 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:12 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

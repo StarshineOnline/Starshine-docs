@@ -30,7 +30,7 @@
 </div>
 <div class="contents">
 <h1>Référence de la classe perso</h1><!-- doxytag: class="perso" --><!-- doxytag: inherits="entite" -->
-<p>Classe représentant un personnage joueur.  
+<p>Classe représentant un personnage <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>.  
 <a href="#_details">Plus de détails...</a></p>
 <div class="dynheader">
 Graphe d'héritage de perso:</div>
@@ -58,14 +58,16 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">RM avec les bonus dus aux buffs.  <a href="#a8af78dc03401240c569e8cbea9a1d486"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a23b7acc8f993b3df76f16ee44e98489b">fin_combat</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $degats=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#a23b7acc8f993b3df76f16ee44e98489b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a3488916d1f8020a5b6aeb3e769a3f9e9">fin_combat_pvp</a> ($ennemi, $defense, $<a class="el" href="classbatiment.html">batiment</a>=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> PvP.  <a href="#a3488916d1f8020a5b6aeb3e769a3f9e9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aa259b2d1bd89a1a361d99b0e0dc5fefc">fin_combat_pvp</a> (&amp;$ennemi, $defense, $<a class="el" href="classbatiment.html">batiment</a>=false)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> PvP.  <a href="#aa259b2d1bd89a1a361d99b0e0dc5fefc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ad4e212c271eb8dc04bf15de37969e2a0">fin_defense</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$<a class="el" href="classroyaume.html">royaume</a>, $<a class="el" href="classpet.html">pet</a>, $degats, $<a class="el" href="classbatiment.html">batiment</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action effectuées à la fin d'un <a class="el" href="classcombat.html">combat</a> pour le défenseur.  <a href="#ad4e212c271eb8dc04bf15de37969e2a0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a6107416b3ea909cb1436455233e9d54f">get_action_a</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du script d'attaque.  <a href="#a6107416b3ea909cb1436455233e9d54f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#adf8f1f336b1c67eb858d6f414a6761d9">get_action_d</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du script d'attaque.  <a href="#adf8f1f336b1c67eb858d6f414a6761d9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a1977bc4be69f6b3705818a4306e28649">get_cout_attaque_base</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en PA pour attaquer l'entité.  <a href="#a1977bc4be69f6b3705818a4306e28649"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a5d0866e538cacdcd4876f31ebe181ba0">get_distance_tir</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la distance à laquelle le personnage peut attaquer.  <a href="#a5d0866e538cacdcd4876f31ebe181ba0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ac3d1a0c3d0059fefc85a5a53768df564">get_reserve</a> ($base=false)</td></tr>
@@ -138,7 +140,7 @@ Graphe de collaboration de perso:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a5e30971904b7aa3848efca5248e86586">is_comp_perso</a> ($nom= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si le personnage à une certaine compétence.  <a href="#a5e30971904b7aa3848efca5248e86586"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a48e208fa7d8e2ee866f50006435e3a73">is_competence</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=false)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le joueur possède la compétence nom.  <a href="#a48e208fa7d8e2ee866f50006435e3a73"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possède la compétence nom.  <a href="#a48e208fa7d8e2ee866f50006435e3a73"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a0f27ce342fa7b05b37f746f8ea856a37">set_alchimie</a> ($alchimie)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'alchimie.  <a href="#a0f27ce342fa7b05b37f746f8ea856a37"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a816d456e677b5af9feed55260d754758">set_architecture</a> ($architecture)</td></tr>
@@ -192,6 +194,8 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Id de la <a class="el" href="classclasse.html">classe</a>.  <a href="#a067c7c27aeb3acd7a669926054cd931a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a7236e66da26185fbccbd372e21e9f12e">$crime</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Points crime.  <a href="#a7236e66da26185fbccbd372e21e9f12e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a100b9256cd9decf861620f0e434eb028">$date_creation</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">date de création du personnage  <a href="#a100b9256cd9decf861620f0e434eb028"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ae28fbdd4792b62a15d9782f1f129417e">$exp</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Points d'expérience.  <a href="#ae28fbdd4792b62a15d9782f1f129417e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a1f2e1a2df6ca3cebc5045fa3809792cb">$fin_ban</a></td></tr>
@@ -211,9 +215,11 @@ Graphe de collaboration de perso:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#acc2c950d9d274ec1ee18a24193eadb7e">$star</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Nombre de stars.  <a href="#acc2c950d9d274ec1ee18a24193eadb7e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a330b310b1681dec7f544c943c7f21d96">$statut</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Statut du joueur.  <a href="#a330b310b1681dec7f544c943c7f21d96"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Statut du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>.  <a href="#a330b310b1681dec7f544c943c7f21d96"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a6df2d30595b8d667f0fe186c35c89657">$grade</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Grade.  <a href="#a6df2d30595b8d667f0fe186c35c89657"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#addf8565b509312d245e1cf42167109db">$tuto</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">étape en cours du Tutoriel.  <a href="#addf8565b509312d245e1cf42167109db"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a2fca0e0d4794832ce268a6869be76770">add_star</a> ($add_star)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute des stars. S'assure que la valeur finale ne sois pas négative.  <a href="#a2fca0e0d4794832ce268a6869be76770"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aba8ab26cd4686fa46d76e2d71320cda2">get_amende</a> ()</td></tr>
@@ -234,6 +240,8 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id de la <a class="el" href="classclasse.html">classe</a>.  <a href="#acef4918b340699d705bcc61a19867f2d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aecb693e7c8fe66c4b49841f5bd6e2f32">get_crime</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le nombre de points crime.  <a href="#aecb693e7c8fe66c4b49841f5bd6e2f32"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#afc58521ea3cd30e6b1a0bc9457f46d8e">get_date_creation</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la date de création du personnage.  <a href="#afc58521ea3cd30e6b1a0bc9457f46d8e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ab86a17014ca3f1d4232f7f946ff92aac">get_exp</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les points d'expérience.  <a href="#ab86a17014ca3f1d4232f7f946ff92aac"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#acc3ab036e02fee6e30f205ce69d2709c">get_fin_ban</a> ()</td></tr>
@@ -258,6 +266,8 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les stars.  <a href="#aea524475d15209d7e2be54880d6fc487"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a933c06bb4e7008031b8465d754f9d764">get_statut</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le statut.  <a href="#a933c06bb4e7008031b8465d754f9d764"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ad6cf96072e0e80fc21a5aab10be1e777">get_tuto</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'étape à laquelle est arreté le tutoriel du <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.  <a href="#ad6cf96072e0e80fc21a5aab10be1e777"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ada9ce6dc8670e5abb74c4c0b9a2ceb58">set_amende</a> ($amende)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le montant de l'amende.  <a href="#ada9ce6dc8670e5abb74c4c0b9a2ceb58"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a3f2644528ceb50829a27b0437926b894">set_beta</a> ($beta)</td></tr>
@@ -274,6 +284,8 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id de la <a class="el" href="classclasse.html">classe</a>.  <a href="#af464d8dd18d379ba085ac98fc9884498"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a4159952dffb753b57e365d3b660ce1c6">set_crime</a> ($crime)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le nombre de points crime.  <a href="#a4159952dffb753b57e365d3b660ce1c6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aafeb4e165315eb9e53e947ad7d88c734">set_date_creation</a> ($date_creation)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la date de création du personnage.  <a href="#aafeb4e165315eb9e53e947ad7d88c734"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aa6f952d1fa2eb9d6c1242a9e7f59a7ff">set_exp</a> ($exp)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les points d'expérience.  <a href="#aa6f952d1fa2eb9d6c1242a9e7f59a7ff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aab0a4b1e7dd4ddcc71132cea7800ec94">set_fin_ban</a> ($fin_ban)</td></tr>
@@ -300,6 +312,7 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les stars.  <a href="#a50eec0d156a235679e90cf80cf7b6e48"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a9a79f0a747a35c2699abb22bc242bb8b">set_statut</a> ($statut)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le statut.  <a href="#a9a79f0a747a35c2699abb22bc242bb8b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a3a23feb7659786a64cf556e32fe270d2">set_tuto</a> ($tuto)</td></tr>
 <tr><td colspan="2"><h2>Effes parmanents</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrp295bcce4c4a282856f720f0ba409849b"></a>Effets modifiant les caractéristiques et les compétences.</p>
 <p>Ces effets peuvent être dus aux bonus raciaux, aux objets portés… </p>
@@ -327,7 +340,7 @@ Graphe de collaboration de perso:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a65daf4182f928ab315a5bf0d6166207b">already_unlocked_achiev</a> ($<a class="el" href="classachievement__type.html">achievement_type</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si un <a class="el" href="classachievement.html">achievement</a> a déjà été débloqué.  <a href="#a65daf4182f928ab315a5bf0d6166207b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a58140dfe943ded2d0a7960728b41ffc6">check_achiev_by_type</a> ($<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie vrai si le joueur a debloque un <a class="el" href="classachievement.html">achievement</a> de type (aka 'variable') donne.  <a href="#a58140dfe943ded2d0a7960728b41ffc6"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie vrai si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> a debloque un <a class="el" href="classachievement.html">achievement</a> de type (aka 'variable') donne.  <a href="#a58140dfe943ded2d0a7960728b41ffc6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aab849f5b021cac21dd62b206f4eac98d">get_achievement</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les achievements sous forme de tableau associatif.  <a href="#aab849f5b021cac21dd62b206f4eac98d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a5b5900bb6418bd29f7892c3805e1ab3a">get_camouflage</a> ()</td></tr>
@@ -348,13 +361,13 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sorts hors <a class="el" href="classcombat.html">combat</a>.  <a href="#ab595614407bb40c07622626b5416bb3c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a3d19333b26dbc24acf19d8c60280409d">add_buff</a> ($nom, $effet, $effet2=0)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a>.  <a href="#a3d19333b26dbc24acf19d8c60280409d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a9a4a99ef0999862c0819b944e0339c80">check_comp_combat_connu</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a9a4a99ef0999862c0819b944e0339c80">check_comp_combat_connu</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Vérifie si une compétence de <a class="el" href="classcombat.html">combat</a> est connu.  <a href="#a9a4a99ef0999862c0819b944e0339c80"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a9b7d28447bd622d680eafacaaa24f116">check_comp_jeu_connu</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a9b7d28447bd622d680eafacaaa24f116">check_comp_jeu_connu</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Vérifie si une compétence hors <a class="el" href="classcombat.html">combat</a> est connu.  <a href="#a9b7d28447bd622d680eafacaaa24f116"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ad960dd6b58cec4c04e357f0f198d3502">check_sort_combat_connu</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ad960dd6b58cec4c04e357f0f198d3502">check_sort_combat_connu</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Vérifie si un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> de <a class="el" href="classcombat.html">combat</a> est connu.  <a href="#ad960dd6b58cec4c04e357f0f198d3502"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a0e246f321815c32ee545dc3f11fdd42e">check_sort_jeu_connu</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a0e246f321815c32ee545dc3f11fdd42e">check_sort_jeu_connu</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Vérifie si un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> hors <a class="el" href="classcombat.html">combat</a> est connu.  <a href="#a0e246f321815c32ee545dc3f11fdd42e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a23e0eed728570cb56ab057208988b678">get_buff</a> ($nom=false, $champ=false, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie une propriété d'un <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> / débuff particulier actif sur le personnage ou l'ensemble de ceux-ci.  <a href="#a23e0eed728570cb56ab057208988b678"></a><br/></td></tr>
@@ -368,7 +381,7 @@ Graphe de collaboration de perso:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a6373b3453ae28815e2e105c3c3f81247">get_sort_jeu</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie les sorts hors <a class="el" href="classcombat.html">combat</a>.  <a href="#a6373b3453ae28815e2e105c3c3f81247"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a272f76c038a24e1e3026d1f47e5afd63">is_buff</a> ($nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=true)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom.  <a href="#a272f76c038a24e1e3026d1f47e5afd63"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet de savoir si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom.  <a href="#a272f76c038a24e1e3026d1f47e5afd63"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a8c19fad73b55175bc6a28aec34da2191">lance_debuff</a> ($debuff)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un débuff sur l'entité lors d'un <a class="el" href="classcombat.html">combat</a> (uniquement sur un personnage).  <a href="#a8c19fad73b55175bc6a28aec34da2191"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a3657884d6d576f32e6a8dba88d7d4473">set_comp_combat</a> ($<a class="el" href="classcomp__combat.html">comp_combat</a>)</td></tr>
@@ -380,24 +393,30 @@ Graphe de collaboration de perso:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a884d440baa3ede5d9912998d93fbc7a3">set_sort_jeu</a> ($<a class="el" href="classsort__jeu.html">sort_jeu</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les sorts hors <a class="el" href="classcombat.html">combat</a>.  <a href="#a884d440baa3ede5d9912998d93fbc7a3"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Informations joueur</h2></td></tr>
-<tr><td colspan="2"><p><a class="anchor" id="amgrpa4caad2cdc3fd799d9dd61638390ab15"></a>Informations sur le joueur : hash du mot-de-passe, e-mail, dernière connection. </p>
+<tr><td colspan="2"><p><a class="anchor" id="amgrpa4caad2cdc3fd799d9dd61638390ab15"></a>Informations sur le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> : hash du mot-de-passe, e-mail, dernière connection. </p>
 <br/><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a83d35bcb88518d012cbcc6612e04c85a">$dernier_connexion</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Date de la dernière connexion.  <a href="#a83d35bcb88518d012cbcc6612e04c85a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#af1cf7b89430d71a33ed83bf3a6cbf517">$email</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">e-mail.  <a href="#af1cf7b89430d71a33ed83bf3a6cbf517"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a799176eddfa2ff287d63c8077b6be46c">$id_joueur</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Id du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possedant le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.  <a href="#a799176eddfa2ff287d63c8077b6be46c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a0f90f641a3ac613931f203fc5c02b977">$password</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">hash du mot-de-passe.  <a href="#a0f90f641a3ac613931f203fc5c02b977"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a06a4fcb31cd0b9f88a9202470f3558c8">get_dernier_connexion</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la date de la dernière connexion.  <a href="#a06a4fcb31cd0b9f88a9202470f3558c8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#af784d514c3d22b882c0f291f48c53533">get_email</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'e-mail.  <a href="#af784d514c3d22b882c0f291f48c53533"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a2ad97c5fc942b9571ffff26d6e71daf9">get_id_joueur</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'id du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possedant le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.  <a href="#a2ad97c5fc942b9571ffff26d6e71daf9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ae988849ce0ad59bc46b44d597f8523cd">get_password</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le hash du mot-de-passe.  <a href="#ae988849ce0ad59bc46b44d597f8523cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a2826b59876903d828b8d2fcdad702f1d">set_dernier_connexion</a> ($dernier_connexion)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie la date de la dernière connexion.  <a href="#a2826b59876903d828b8d2fcdad702f1d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a3f36512773b021ba043913e564fdde9c">set_email</a> ($email)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'e-mail.  <a href="#a3f36512773b021ba043913e564fdde9c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aa09cf3dc11db1658015557188eca5d36">set_id_joueur</a> ($id_joueur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie l'id du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possedant le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>.  <a href="#aa09cf3dc11db1658015557188eca5d36"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#abd978c33151f6cc34f9da0ad64521488">set_password</a> ($password)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le hash du mot-de-passe.  <a href="#abd978c33151f6cc34f9da0ad64521488"></a><br/></td></tr>
 <tr><td colspan="2"><h2>PA, HP &amp; MP</h2></td></tr>
@@ -657,7 +676,7 @@ Graphe de collaboration de perso:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Recherche un objet dans l'inventaire.  <a href="#a9b0363f23403c25deffd3cec7ccf39a3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a2670057a223fe642715b33ebb8c9adef">register_gemme_enchantement</a> ($gemme)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enregistre un enchantement.  <a href="#a2670057a223fe642715b33ebb8c9adef"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a88f5577594e0039a3d43f9eb39c7ecb4">register_item_effet</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, $effet, $item=null)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a88f5577594e0039a3d43f9eb39c7ecb4">register_item_effet</a> ($id, $effet, $item=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Enregistre un effet (effets magiques des objets de donjons).  <a href="#a88f5577594e0039a3d43f9eb39c7ecb4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aa6b685bed45bb75f5bc6dcb99b544101">restack_objet</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Refait les piles des objets.  <a href="#aa6b685bed45bb75f5bc6dcb99b544101"></a><br/></td></tr>
@@ -717,10 +736,10 @@ Graphe de collaboration de perso:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a3a6394e3b04f0fdb1c6ff07bc51e0741">$pospita</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a4b740f982afff0bc164a0259068a1cbe">get_case</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la position  public.  <a href="#a4b740f982afff0bc164a0259068a1cbe"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a37ae33d8cbbd31f76cb5117e042dacaa">get_distance_joueur</a> ($joueur)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">renvoie la distance avec un autre joueur  <a href="#a37ae33d8cbbd31f76cb5117e042dacaa"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ade86cb8e0f09a1e768920ffdbf6c75be">get_distance_pytagore</a> ($joueur)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">renvoie la distance pytagorienne avec un autre joueur  <a href="#ade86cb8e0f09a1e768920ffdbf6c75be"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a37ae33d8cbbd31f76cb5117e042dacaa">get_distance_joueur</a> ($<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">renvoie la distance avec un autre <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>  <a href="#a37ae33d8cbbd31f76cb5117e042dacaa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ade86cb8e0f09a1e768920ffdbf6c75be">get_distance_pytagore</a> ($<a class="el" href="classjoueur.html">joueur</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">renvoie la distance pytagorienne avec un autre <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>  <a href="#ade86cb8e0f09a1e768920ffdbf6c75be"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a0c6c427d8e977d16860d9574d4ce9f42">get_poscase</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Retourne la position "old style".  <a href="#a0c6c427d8e977d16860d9574d4ce9f42"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#aa3b44759f6914800c739ff47132ba5c1">get_teleport_roi</a> ()</td></tr>
@@ -734,19 +753,19 @@ Graphe de collaboration de perso:</div>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#ac877444c5dfcc282ed903f1ee8112782">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $mort=0, $nom= '', $password= '', $email= '', $exp=0, $honneur=0, $reputation=0, $level= '', $rang_royaume= '', $vie= '', $forcex= '', $dexterite= '', $<a class="el" href="create_8php.html#aeb047387a45a9e11265609a224e11b31">puissance</a>= '', $volonte= '', $energie= '', $race= '', $<a class="el" href="classclasse.html">classe</a>= '', $classe_id= '', $<a class="el" href="classinventaire.html">inventaire</a>= '', $inventaire_pet= '', $inventaire_slot= '', $pa= '', $dernieraction= '', $action_a=0, $action_d=0, $<a class="el" href="classsort__jeu.html">sort_jeu</a>= '', $<a class="el" href="classsort__combat.html">sort_combat</a>= '', $<a class="el" href="classcomp__combat.html">comp_combat</a>= '', $<a class="el" href="classcomp__jeu.html">comp_jeu</a>= '', $star= '', $x= '', $y= '', $<a class="el" href="classgroupe.html">groupe</a>=0, $hp= '', $hp_max= '', $mp= '', $mp_max= '', $melee= '', $distance= '', $esquive= '', $blocage= '', $incantation= '', $<a class="el" href="classsort__vie.html">sort_vie</a>= '', $sort_element= '', $sort_mort= '', $<a class="el" href="classidentification.html">identification</a>= '', $craft= '', $alchimie= '', $architecture= '', $forge= '', $survie= '', $dressage=0, $facteur_magie= '', $facteur_sort_vie=0, $facteur_sort_mort=0, $facteur_sort_element=0, $regen_hp= '', $maj_hp= '', $maj_mp= '', $point_sso=0, $quete= '', $quete_fini= '', $dernier_connexion=0, $statut= '', $fin_ban=0, $frag=0, $crime=0, $amende=0, $teleport_roi= 'false', $cache_classe=0, $cache_stat=0, $cache_niveau=0, $max_pet=0, $beta=0)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur Crée l'objet à partir de l'id (en cherchant dans la base de données), d'un tableau ou des paramètres.  <a href="#ac877444c5dfcc282ed903f1ee8112782"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#adec275adcc57497c2091fac4bf7fd54b">__construct</a> ($id=0, $mort=0, $nom= '', $password= '', $email= '', $exp=0, $honneur=0, $reputation=0, $level= '', $rang_royaume= '', $vie= '', $forcex= '', $dexterite= '', $<a class="el" href="create_8php.html#aeb047387a45a9e11265609a224e11b31">puissance</a>= '', $volonte= '', $energie= '', $race= '', $<a class="el" href="classclasse.html">classe</a>= '', $classe_id= '', $<a class="el" href="classinventaire.html">inventaire</a>= '', $inventaire_pet= '', $inventaire_slot= '', $pa= '', $dernieraction= '', $action_a=0, $action_d=0, $<a class="el" href="classsort__jeu.html">sort_jeu</a>= '', $<a class="el" href="classsort__combat.html">sort_combat</a>= '', $<a class="el" href="classcomp__combat.html">comp_combat</a>= '', $<a class="el" href="classcomp__jeu.html">comp_jeu</a>= '', $star= '', $x= '', $y= '', $<a class="el" href="classgroupe.html">groupe</a>=0, $hp= '', $hp_max= '', $mp= '', $mp_max= '', $melee= '', $distance= '', $esquive= '', $blocage= '', $incantation= '', $<a class="el" href="classsort__vie.html">sort_vie</a>= '', $sort_element= '', $sort_mort= '', $<a class="el" href="classidentification.html">identification</a>= '', $craft= '', $alchimie= '', $architecture= '', $forge= '', $survie= '', $dressage=0, $facteur_magie= '', $facteur_sort_vie=0, $facteur_sort_mort=0, $facteur_sort_element=0, $regen_hp= '', $maj_hp= '', $maj_mp= '', $point_sso=0, $quete= '', $quete_fini= '', $dernier_connexion=0, $statut= '', $fin_ban=0, $frag=0, $crime=0, $amende=0, $teleport_roi= 'false', $cache_classe=0, $cache_stat=0, $cache_niveau=0, $max_pet=0, $beta=0, $<a class="el" href="classjoueur.html">joueur</a>=null, $tuto=1, $date_creation=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur Crée l'objet à partir de l'id (en cherchant dans la base de données), d'un tableau ou des paramètres.  <a href="#adec275adcc57497c2091fac4bf7fd54b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a1e2454a0be73e0ad21ec5390e368d6cd">__toString</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Affiche l'objet sous forme de string  public.  <a href="#a1e2454a0be73e0ad21ec5390e368d6cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#af27a7d04d0cfccc4b4adf84736178e73">sauver</a> ($force=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sauvegarde automatiquement en base de donnée.  <a href="#af27a7d04d0cfccc4b4adf84736178e73"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a391f7485a1e69e030e4b92d81721357b">create</a> ($champs, $valeurs, $ordre= '<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a> ASC', $keys=false, $where=false, $key_unique=false)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperso.html#a391f7485a1e69e030e4b92d81721357b">create</a> ($champs, $valeurs, $ordre= 'id ASC', $keys=false, $where=false, $key_unique=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime de la base de donnée  static.  <a href="#a391f7485a1e69e030e4b92d81721357b"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
-<p>Classe représentant un personnage joueur. </p>
+<p>Classe représentant un personnage <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="ac877444c5dfcc282ed903f1ee8112782"></a><!-- doxytag: member="perso::__construct" ref="ac877444c5dfcc282ed903f1ee8112782" args="($id=0, $mort=0, $nom= '', $password= '', $email= '', $exp=0, $honneur=0, $reputation=0, $level= '', $rang_royaume= '', $vie= '', $forcex= '', $dexterite= '', $puissance= '', $volonte= '', $energie= '', $race= '', $classe= '', $classe_id= '', $inventaire= '', $inventaire_pet= '', $inventaire_slot= '', $pa= '', $dernieraction= '', $action_a=0, $action_d=0, $sort_jeu= '', $sort_combat= '', $comp_combat= '', $comp_jeu= '', $star= '', $x= '', $y= '', $groupe=0, $hp= '', $hp_max= '', $mp= '', $mp_max= '', $melee= '', $distance= '', $esquive= '', $blocage= '', $incantation= '', $sort_vie= '', $sort_element= '', $sort_mort= '', $identification= '', $craft= '', $alchimie= '', $architecture= '', $forge= '', $survie= '', $dressage=0, $facteur_magie= '', $facteur_sort_vie=0, $facteur_sort_mort=0, $facteur_sort_element=0, $regen_hp= '', $maj_hp= '', $maj_mp= '', $point_sso=0, $quete= '', $quete_fini= '', $dernier_connexion=0, $statut= '', $fin_ban=0, $frag=0, $crime=0, $amende=0, $teleport_roi= 'false', $cache_classe=0, $cache_stat=0, $cache_niveau=0, $max_pet=0, $beta=0)" -->
+<a class="anchor" id="adec275adcc57497c2091fac4bf7fd54b"></a><!-- doxytag: member="perso::__construct" ref="adec275adcc57497c2091fac4bf7fd54b" args="($id=0, $mort=0, $nom= '', $password= '', $email= '', $exp=0, $honneur=0, $reputation=0, $level= '', $rang_royaume= '', $vie= '', $forcex= '', $dexterite= '', $puissance= '', $volonte= '', $energie= '', $race= '', $classe= '', $classe_id= '', $inventaire= '', $inventaire_pet= '', $inventaire_slot= '', $pa= '', $dernieraction= '', $action_a=0, $action_d=0, $sort_jeu= '', $sort_combat= '', $comp_combat= '', $comp_jeu= '', $star= '', $x= '', $y= '', $groupe=0, $hp= '', $hp_max= '', $mp= '', $mp_max= '', $melee= '', $distance= '', $esquive= '', $blocage= '', $incantation= '', $sort_vie= '', $sort_element= '', $sort_mort= '', $identification= '', $craft= '', $alchimie= '', $architecture= '', $forge= '', $survie= '', $dressage=0, $facteur_magie= '', $facteur_sort_vie=0, $facteur_sort_mort=0, $facteur_sort_element=0, $regen_hp= '', $maj_hp= '', $maj_mp= '', $point_sso=0, $quete= '', $quete_fini= '', $dernier_connexion=0, $statut= '', $fin_ban=0, $frag=0, $crime=0, $amende=0, $teleport_roi= 'false', $cache_classe=0, $cache_stat=0, $cache_niveau=0, $max_pet=0, $beta=0, $joueur=null, $tuto=1, $date_creation=0)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1198,7 +1217,25 @@ Graphe de collaboration de perso:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>beta</em> = <code>0</code></td><td>&nbsp;</td>
+          <td class="paramname"> <em>beta</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>joueur</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>tuto</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>date_creation</em> = <code>0</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -1237,7 +1274,7 @@ Graphe de collaboration de perso:</div>
     <tr><td valign="top"></td><td valign="top"><em>int(11)</em>&nbsp;</td><td>dernieraction attribut </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>int(10)</em>&nbsp;</td><td>action_a attribut </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>int(10)</em>&nbsp;</td><td>action_d attribut </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td><a class="el" href="classsort__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux sorts dhors combat.">sort_jeu</a> attribut </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td><a class="el" href="classsort__jeu.html" title="Classe sort_jeu Classe sort_jeu servant de base aux sorts hors combat.">sort_jeu</a> attribut </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td><a class="el" href="classsort__combat.html" title="Classe sort_combat Classe sort_combat servant de base aux sorts de combat.">sort_combat</a> attribut </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td><a class="el" href="classcomp__combat.html" title="Classe comp_combat Classe comp_combat servant de base aux compétences de combat...">comp_combat</a> attribut </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>text</em>&nbsp;</td><td><a class="el" href="classcomp__jeu.html" title="Classe comp_jeu Classe comp_jeu servant de base aux compétences hors combat.">comp_jeu</a> attribut </td></tr>
@@ -1293,7 +1330,6 @@ Graphe de collaboration de perso:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_ac877444c5dfcc282ed903f1ee8112782_cgraph.png" border="0" usemap="#classperso_ac877444c5dfcc282ed903f1ee8112782_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1365,7 +1401,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a13565639bbfd416abf97d2a384ccaa9e_icgraph.png" border="0" usemap="#classperso_a13565639bbfd416abf97d2a384ccaa9e_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1675,7 +1710,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a65daf4182f928ab315a5bf0d6166207b_icgraph.png" border="0" usemap="#classperso_a65daf4182f928ab315a5bf0d6166207b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1708,7 +1742,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a4f2f18f2d47e4ae68b474c902dd76882_icgraph.png" border="0" usemap="#classperso_a4f2f18f2d47e4ae68b474c902dd76882_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1757,7 +1790,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Renvoie vrai si le joueur a debloque un <a class="el" href="classachievement.html">achievement</a> de type (aka 'variable') donne. </p>
+<p>Renvoie vrai si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> a debloque un <a class="el" href="classachievement.html">achievement</a> de type (aka 'variable') donne. </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -1985,7 +2018,7 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>ordre</em> = <code>'<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>&nbsp;ASC'</code>, </td>
+          <td class="paramname"> <em>ordre</em> = <code>'id&nbsp;ASC'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2031,7 +2064,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a391f7485a1e69e030e4b92d81721357b_icgraph.png" border="0" usemap="#classperso_a391f7485a1e69e030e4b92d81721357b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2200,14 +2232,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a3488916d1f8020a5b6aeb3e769a3f9e9"></a><!-- doxytag: member="perso::fin_combat_pvp" ref="a3488916d1f8020a5b6aeb3e769a3f9e9" args="($ennemi, $defense, $batiment=false)" -->
+<a class="anchor" id="aa259b2d1bd89a1a361d99b0e0dc5fefc"></a><!-- doxytag: member="perso::fin_combat_pvp" ref="aa259b2d1bd89a1a361d99b0e0dc5fefc" args="(&amp;$ennemi, $defense, $batiment=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">perso::fin_combat_pvp </td>
           <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
           <td class="paramname"> <em>ennemi</em>, </td>
         </tr>
         <tr>
@@ -2236,14 +2268,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a3488916d1f8020a5b6aeb3e769a3f9e9_cgraph.png" border="0" usemap="#classperso_a3488916d1f8020a5b6aeb3e769a3f9e9_cgraph_map" alt=""></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a3488916d1f8020a5b6aeb3e769a3f9e9_icgraph.png" border="0" usemap="#classperso_a3488916d1f8020a5b6aeb3e769a3f9e9_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2299,7 +2329,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_ad4e212c271eb8dc04bf15de37969e2a0_cgraph.png" border="0" usemap="#classperso_ad4e212c271eb8dc04bf15de37969e2a0_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2424,6 +2453,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classperso_a927a97aab7f2f5730bb96cebb1644346_cgraph.png" border="0" usemap="#classperso_a927a97aab7f2f5730bb96cebb1644346_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2450,7 +2480,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_ab6c893c14dfadf6bb00979c76ba53b1d_cgraph.png" border="0" usemap="#classperso_ab6c893c14dfadf6bb00979c76ba53b1d_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2496,7 +2525,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a75f643a659bf67b831050710ed9eb342_cgraph.png" border="0" usemap="#classperso_a75f643a659bf67b831050710ed9eb342_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -3364,7 +3392,34 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_aca239b40ec860c3633e0c0cd5a869bee_icgraph.png" border="0" usemap="#classperso_aca239b40ec860c3633e0c0cd5a869bee_icgraph_map" alt=""></div>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1977bc4be69f6b3705818a4306e28649"></a><!-- doxytag: member="perso::get_cout_attaque_base" ref="a1977bc4be69f6b3705818a4306e28649" args="(&amp;$perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::get_cout_attaque_base </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût en PA pour attaquer l'entité. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentite.html#ae0dcc0ea851b5f59a2bc90db951ae003">entite</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
 </div>
 </p>
 
@@ -3417,9 +3472,27 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_aecb693e7c8fe66c4b49841f5bd6e2f32_icgraph.png" border="0" usemap="#classperso_aecb693e7c8fe66c4b49841f5bd6e2f32_icgraph_map" alt=""></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="afc58521ea3cd30e6b1a0bc9457f46d8e"></a><!-- doxytag: member="perso::get_date_creation" ref="afc58521ea3cd30e6b1a0bc9457f46d8e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::get_date_creation </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie la date de création du personnage. </p>
 
 </div>
 </div>
@@ -3538,7 +3611,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>renvoie la distance avec un autre joueur </p>
+<p>renvoie la distance avec un autre <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -3565,7 +3638,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>renvoie la distance pytagorienne avec un autre joueur </p>
+<p>renvoie la distance pytagorienne avec un autre <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -4041,7 +4114,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a8f2df037c33a7cfdf02209bddf34a530_cgraph.png" border="0" usemap="#classperso_a8f2df037c33a7cfdf02209bddf34a530_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -4116,7 +4188,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a433e043cfc66d12da56e16e7e1ffdc16_icgraph.png" border="0" usemap="#classperso_a433e043cfc66d12da56e16e7e1ffdc16_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -4200,6 +4271,25 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="center"><img src="classperso_a8f87ca51fdd445c8431607b793ff3420_icgraph.png" border="0" usemap="#classperso_a8f87ca51fdd445c8431607b793ff3420_icgraph_map" alt=""></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2ad97c5fc942b9571ffff26d6e71daf9"></a><!-- doxytag: member="perso::get_id_joueur" ref="a2ad97c5fc942b9571ffff26d6e71daf9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::get_id_joueur </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'id du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possedant le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>. </p>
 
 </div>
 </div>
@@ -4603,7 +4693,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_aeb36767ee126517c4679555159fb5a87_icgraph.png" border="0" usemap="#classperso_aeb36767ee126517c4679555159fb5a87_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -5412,6 +5501,25 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="ad6cf96072e0e80fc21a5aab10be1e777"></a><!-- doxytag: member="perso::get_tuto" ref="ad6cf96072e0e80fc21a5aab10be1e777" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::get_tuto </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie l'étape à laquelle est arreté le tutoriel du <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>. </p>
+
+</div>
+</div>
 <a class="anchor" id="aecbac45d5c409fecaba083f2d152e53a"></a><!-- doxytag: member="perso::get_vie" ref="aecbac45d5c409fecaba083f2d152e53a" args="($base=false)" -->
 <div class="memitem">
 <div class="memproto">
@@ -5490,7 +5598,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a7d75b645082382abed2ca84ac396adc0_icgraph.png" border="0" usemap="#classperso_a7d75b645082382abed2ca84ac396adc0_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -5542,7 +5649,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_aeabe3cfb9edc100839fad60d5cb42d20_icgraph.png" border="0" usemap="#classperso_aeabe3cfb9edc100839fad60d5cb42d20_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -5573,7 +5679,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Permet de savoir si le joueur est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom. </p>
+<p>Permet de savoir si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> est sous le <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> nom. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>le nom du <a class="el" href="classbuff.html" title="Classe buff Classe buff représentant les buffs sur les personnages.">buff</a> </td></tr>
@@ -5660,7 +5766,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Permet de savoir si le joueur possède la compétence nom. </p>
+<p>Permet de savoir si le <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possède la compétence nom. </p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$nom</em>&nbsp;</td><td>le nom de la compétence </td></tr>
@@ -6310,7 +6416,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_af27a7d04d0cfccc4b4adf84736178e73_icgraph.png" border="0" usemap="#classperso_af27a7d04d0cfccc4b4adf84736178e73_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -6719,6 +6824,26 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Modifie le nombre de points crime. </p>
+
+</div>
+</div>
+<a class="anchor" id="aafeb4e165315eb9e53e947ad7d88c734"></a><!-- doxytag: member="perso::set_date_creation" ref="aafeb4e165315eb9e53e947ad7d88c734" args="($date_creation)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::set_date_creation </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>date_creation</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie la date de création du personnage. </p>
 
 </div>
 </div>
@@ -7220,6 +7345,26 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="aa09cf3dc11db1658015557188eca5d36"></a><!-- doxytag: member="perso::set_id_joueur" ref="aa09cf3dc11db1658015557188eca5d36" args="($id_joueur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::set_id_joueur </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>id_joueur</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie l'id du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possedant le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa86c7c69040806e133b82d071b3fbb54"></a><!-- doxytag: member="perso::set_identification" ref="aa86c7c69040806e133b82d071b3fbb54" args="($identification)" -->
 <div class="memitem">
 <div class="memproto">
@@ -7526,7 +7671,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a16d5a5c5ffa921f81360d1d8ecd260b0_icgraph.png" border="0" usemap="#classperso_a16d5a5c5ffa921f81360d1d8ecd260b0_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -8051,6 +8195,24 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a3a23feb7659786a64cf556e32fe270d2"></a><!-- doxytag: member="perso::set_tuto" ref="a3a23feb7659786a64cf556e32fe270d2" args="($tuto)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::set_tuto </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>tuto</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a14f0eddcf722d724f8303de06c18f64a"></a><!-- doxytag: member="perso::set_vie" ref="a14f0eddcf722d724f8303de06c18f64a" args="($vie)" -->
 <div class="memitem">
 <div class="memproto">
@@ -8189,7 +8351,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a7a8fa74d7bdd2c34402807129ee1f352_icgraph.png" border="0" usemap="#classperso_a7a8fa74d7bdd2c34402807129ee1f352_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -8222,7 +8383,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_a96e29f5c80dd91d3903ec0dc6621f8df_icgraph.png" border="0" usemap="#classperso_a96e29f5c80dd91d3903ec0dc6621f8df_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -8265,7 +8425,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classperso_ac74f6de685b3cbca2bdd85a19c048755_icgraph.png" border="0" usemap="#classperso_ac74f6de685b3cbca2bdd85a19c048755_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -8673,6 +8832,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a100b9256cd9decf861620f0e434eb028"></a><!-- doxytag: member="perso::$date_creation" ref="a100b9256cd9decf861620f0e434eb028" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::$date_creation<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>date de création du personnage </p>
+
+</div>
+</div>
 <a class="anchor" id="a83d35bcb88518d012cbcc6612e04c85a"></a><!-- doxytag: member="perso::$dernier_connexion" ref="a83d35bcb88518d012cbcc6612e04c85a" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -8985,6 +9159,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>HP maximums après bonus et malus. </p>
+
+</div>
+</div>
+<a class="anchor" id="a799176eddfa2ff287d63c8077b6be46c"></a><!-- doxytag: member="perso::$id_joueur" ref="a799176eddfa2ff287d63c8077b6be46c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::$id_joueur<code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Id du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a> possedant le <a class="el" href="classperso.html" title="Classe représentant un personnage joueur.">perso</a>. </p>
 
 </div>
 </div>
@@ -9460,7 +9649,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Statut du joueur. </p>
+<p>Statut du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>. </p>
 
 </div>
 </div>
@@ -9494,11 +9683,26 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="addf8565b509312d245e1cf42167109db"></a><!-- doxytag: member="perso::$tuto" ref="addf8565b509312d245e1cf42167109db" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">perso::$tuto</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>étape en cours du Tutoriel. </p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
 <li>SSO/Starshine-Online/class/<a class="el" href="perso_8class_8php.html">perso.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:21 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:57 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

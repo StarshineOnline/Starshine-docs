@@ -48,6 +48,8 @@ Graphe de collaboration de comp_combat_coup_bouclier:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode calculant les dégâts de base avant réduction.  <a href="#a0408102186df156aec7a9c8da560d4e5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__coup__bouclier.html#ac7cb5d5534497d5ad027f749ea084d3e">lance</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation d'une compétence.  <a href="#ac7cb5d5534497d5ad027f749ea084d3e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__coup__bouclier.html#a86406df8226f3132910c206298745adc">touche</a> ($attaque, &amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#a86406df8226f3132910c206298745adc"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Classe gérant les compétences donnant des bonus/malus aux potentiels. </p>
@@ -132,11 +134,54 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="a86406df8226f3132910c206298745adc"></a><!-- doxytag: member="comp_combat_coup_bouclier::touche" ref="a86406df8226f3132910c206298745adc" args="($attaque, &amp;$actif, &amp;$passif, &amp;$effets)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">comp_combat_coup_bouclier::touche </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>attaque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>actif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>passif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classcomp__combat__degat__etat.html#ad0b86b39b04c5c2cee63586f9e565478">comp_combat_degat_etat</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
 <li>SSO/Starshine-Online/class/<a class="el" href="comp__combat_8class_8php.html">comp_combat.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:04 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:24 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

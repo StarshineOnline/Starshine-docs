@@ -33,9 +33,9 @@
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#ad3b3c64b25fbbb6aec24407e4333aa71">$admin</a> = true</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#acdcda1445477fc8431fbff5e122e47b1">$fields</a> = array('niveau', 'nom', 'description')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select lvl_joueur,<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>,nom,description from quete order by lvl_joueur&quot;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#a7ca1585a5f3ef438efdf8b51d390282b">$req2</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, image from <a class="el" href="classpnj.html">pnj</a>&quot;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#ac184ee3d1d4c93b8e59b778de9ee6036">$req3</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom from objet&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select lvl_joueur,id,nom,description from quete order by lvl_joueur&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#a7ca1585a5f3ef438efdf8b51d390282b">$req2</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select id, nom, image from <a class="el" href="classpnj.html">pnj</a>&quot;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#ac184ee3d1d4c93b8e59b778de9ee6036">$req3</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select id, nom from objet&quot;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#ace2ec39e7df3899fa8df9640ec274b03">$rows</a> = array()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#a8d377b93f6a3a196a78b6c6fa512d5a7">$textures</a> = false</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__quete_8php.html#afb2aaaa7635611dadd10f23ea6f27d9b">while</a> ($m=$<a class="el" href="classdb.html">db</a>-&gt;read_object($req))</td></tr>
@@ -72,7 +72,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select lvl_joueur,<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>,nom,description from quete order by lvl_joueur&quot;)</td>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select lvl_joueur,id,nom,description from quete order by lvl_joueur&quot;)</td>
         </tr>
       </table>
 </div>
@@ -85,7 +85,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$req2 = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, image from <a class="el" href="classpnj.html">pnj</a>&quot;)</td>
+          <td class="memname">$req2 = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select id, nom, image from <a class="el" href="classpnj.html">pnj</a>&quot;)</td>
         </tr>
       </table>
 </div>
@@ -98,7 +98,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$req3 = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom from objet&quot;)</td>
+          <td class="memname">$req3 = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select id, nom from objet&quot;)</td>
         </tr>
       </table>
 </div>
@@ -146,7 +146,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:48 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:20:57 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

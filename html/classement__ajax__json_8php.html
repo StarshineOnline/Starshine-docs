@@ -40,7 +40,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#a9dc43420569704ab7dc8ccd844da8127">$ord</a> = strcmp($tri, 'architecture, forge, alchimie') ? $tri : 'ROUND(SQRT((alchimie + forge + architecture) * 10))'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($reqcount))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#a806ce6ed992cd479640d8bd7a515475d">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#ad5f736b062d0c4117787c60b371cb56b">$reqcount</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requetecount)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT @rownum:=@rownum+1 rank, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, &quot;.sSQL($tri).&quot;, level, race, <a class="el" href="classclasse.html">classe</a>, cache_stat, cache_classe FROM <a class="el" href="classperso.html">perso</a>, (SELECT @rownum:=$inf) r WHERE statut = 'actif' AND level &gt; 0 AND &quot;.$where.&quot; ORDER BY &quot;.$ord.&quot; DESC, nom ASC&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT @rownum:=@rownum+1 rank, id, nom, &quot;.sSQL($tri).&quot;, level, race, <a class="el" href="classclasse.html">classe</a>, cache_stat, cache_classe FROM <a class="el" href="classperso.html">perso</a>, (SELECT @rownum:=$inf) r WHERE statut = 'actif' AND level &gt; 0 AND &quot;.$where.&quot; ORDER BY &quot;.$ord.&quot; DESC, nom ASC&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($reqcount))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#a5d0e9289dcc85a0b6427ac78893eb2d5">$requetecount</a> = &quot;SELECT COUNT(1) FROM <a class="el" href="classperso.html">perso</a> WHERE statut = 'actif' AND $where&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#adf56804a2d67484675d7c58124c24385">$sOutput</a> = '{'</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classement__ajax__json_8php.html#a2cb0c11e1311e9cac869cce6a7194474">$tri</a> = strcmp($tri, 'architecture, forge, alchimie') ? $tri : 'ROUND(SQRT((alchimie + forge + architecture) * 10)) as craft'</td></tr>
@@ -112,7 +112,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$joueur = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
         </tr>
       </table>
 </div>
@@ -164,7 +164,7 @@
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT @rownum:=@rownum+1 rank, <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>, nom, &quot;.sSQL($tri).&quot;, level, race, <a class="el" href="classclasse.html">classe</a>, cache_stat, cache_classe FROM <a class="el" href="classperso.html">perso</a>, (SELECT @rownum:=$inf) r WHERE statut = 'actif' AND level &gt; 0 AND &quot;.$where.&quot; ORDER BY &quot;.$ord.&quot; DESC, nom ASC&quot;</td>
+          <td class="memname">$requete = &quot;SELECT @rownum:=@rownum+1 rank, id, nom, &quot;.sSQL($tri).&quot;, level, race, <a class="el" href="classclasse.html">classe</a>, cache_stat, cache_classe FROM <a class="el" href="classperso.html">perso</a>, (SELECT @rownum:=$inf) r WHERE statut = 'actif' AND level &gt; 0 AND &quot;.$where.&quot; ORDER BY &quot;.$ord.&quot; DESC, nom ASC&quot;</td>
         </tr>
       </table>
 </div>
@@ -251,7 +251,7 @@
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:50 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:01 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

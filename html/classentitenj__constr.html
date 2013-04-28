@@ -35,17 +35,17 @@
 <div class="dynheader">
 Graphe d'héritage de entitenj_constr:</div>
 <div class="dynsection">
-<div class="center"><img src="classentitenj__constr__inherit__graph.png" border="0" usemap="#entitenj__constr_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de entitenj_constr:</div>
 <div class="dynsection">
-<div class="center"><img src="classentitenj__constr__coll__graph.png" border="0" usemap="#entitenj__constr_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classentitenj__constr-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#abf230a75dad454cbc556c12fde92ccd0">get_cout_attaque_base</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en PA pour attaquer l'entité.  <a href="#abf230a75dad454cbc556c12fde92ccd0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a4433d414676e4f518161fffda1f7ed7c">mort</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique que l'entité est morte.  <a href="#a4433d414676e4f518161fffda1f7ed7c"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Informations générales.</h2></td></tr>
@@ -61,6 +61,8 @@ Graphe de collaboration de entitenj_constr:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Royaume auquel appartient le bâtiment.  <a href="#a6ac6d4ed3d6908b6e7c53017913a89cd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a10bb4be28418c0f51a831a8d1b06d990">$type</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Type de bâtiment.  <a href="#a10bb4be28418c0f51a831a8d1b06d990"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a87525a63640770ca4d1c31e4df6730eb">get_date_debut</a> ()</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Date de pose ou <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> de l'entité.  <a href="#a87525a63640770ca4d1c31e4df6730eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a3f88bf3c525e7fefa319ae74c87e50f2">get_def</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'objet représentant la définition.  <a href="#a3f88bf3c525e7fefa319ae74c87e50f2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a133df40d62ae011ec014e640fc9909bf">get_id_batiment</a> ()</td></tr>
@@ -91,12 +93,12 @@ Graphe de collaboration de entitenj_constr:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'ensemble des buffs / débuffs actif sur le bâtiment.  <a href="#a75b8e3a1b9292ddfb003e1410576e020"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a74db34c140a0a0dd7310901e47a0fece">check_buff</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Supprime les buffs périmés actifs sur le <a class="el" href="classmonstre.html" title="Classe monstre Cette classe représentant la définition d&#39;un monstre.">monstre</a>.  <a href="#a74db34c140a0a0dd7310901e47a0fece"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a9a2981b6b58b00f73fd30d30e6ba1ddd">get_construction_buff</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a9a2981b6b58b00f73fd30d30e6ba1ddd">get_construction_buff</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'ensemble des buffs / débuffs actif sur un bâtiment.  <a href="#a9a2981b6b58b00f73fd30d30e6ba1ddd"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a9d1bd2c186b424ecce84ab2b5839c46b">__construct</a> ($<a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">id</a>=0, $id_batiment=0, $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $hp=0, $nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $rez=0, $point_victoire=0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#a9d1bd2c186b424ecce84ab2b5839c46b">__construct</a> ($id=0, $id_batiment=0, $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $hp=0, $nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $rez=0, $point_victoire=0)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a9d1bd2c186b424ecce84ab2b5839c46b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentitenj__constr.html#ad531a703f40c66f57197485ed13d8bde">get_liste_champs</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#ad531a703f40c66f57197485ed13d8bde"></a><br/></td></tr>
@@ -308,6 +310,49 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="abf230a75dad454cbc556c12fde92ccd0"></a><!-- doxytag: member="entitenj_constr::get_cout_attaque_base" ref="abf230a75dad454cbc556c12fde92ccd0" args="(&amp;$perso)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entitenj_constr::get_cout_attaque_base </td>
+          <td>(</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le coût en PA pour attaquer l'entité. </p>
+
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#abb192765d5f9a73ceb38a2503c018766">entnj_incarn</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87525a63640770ca4d1c31e4df6730eb"></a><!-- doxytag: member="entitenj_constr::get_date_debut" ref="a87525a63640770ca4d1c31e4df6730eb" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entitenj_constr::get_date_debut </td>
+          <td>(</td>
+          <td class="paramname"></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [abstract]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Date de pose ou <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> de l'entité. </p>
+
+<p>Réimplémentée dans <a class="el" href="classconstruction.html#a4591f0a7a5186e51aa8f58d4adf8c9ea">construction</a>, et <a class="el" href="classplacement.html#a949281d7887c2bed949ecebfb0f3fcf5">placement</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3f88bf3c525e7fefa319ae74c87e50f2"></a><!-- doxytag: member="entitenj_constr::get_def" ref="a3f88bf3c525e7fefa319ae74c87e50f2" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -326,6 +371,12 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p>Renvoie l'objet représentant la définition. </p>
 
 <p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#aa7774c4820822c4056b5f65ce3acfeaa">entnj_incarn</a>.</p>
+
+<p><div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dynsection">
+</div>
+</p>
 
 </div>
 </div>
@@ -773,7 +824,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="entitenj__constr_8class_8php.html">entitenj_constr.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:54:15 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:38 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

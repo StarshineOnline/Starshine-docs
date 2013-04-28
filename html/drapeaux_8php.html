@@ -38,8 +38,9 @@ $_REQUEST))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a4f0b5afc01fa783e42d37abd11c58a16">$_SESSION</a> ['map_drap_key'] = $rand</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($R-&gt;is_raz())&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad63044b4b1b0aa18ab8a77ae9bdd949e">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(file_exists('../root.php'))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a864e00a0fd2a3ae52a3eae109b8ad113">$echelle</a> = 4</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ae36afd194eefa9e66c1890a817cbce7f">$mag_factor</a> = 1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad4033ca6fe2f6ddae4e513d3691c2fec">$map_size</a> = 760 * $mag_factor</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad4033ca6fe2f6ddae4e513d3691c2fec">$map_size</a> = $G_max_x * 4 * $mag_factor</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#af254d81e86fea811121de8ec9e01dee4">$mleft</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a3673f35adf7df1b2567032712de4c8a1">$mtop</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a4e5d3ca0b43cd7c92e10f11c0e64e850">$nb_cases_ok</a> = $<a class="el" href="classdb.html">db</a>-&gt;num_rows($r_c)</td></tr>
@@ -47,7 +48,7 @@ $_REQUEST))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#aa21a84c54b5380bc7d5427a92905a8aa">$nb_drapeaux_poses</a> = $nbp[0]</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a695bb676790729cb9ad45df1087f133f">$nbd</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($r_nbd)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a8a8ed8dd5ce56c62bf1520204f9cc3e1">$nbp</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_array($r_nbp)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($joueur-&gt;get_rang_royaume()!=6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a3e89dbad82579b89f118f23230337650">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($Trace[$joueur-&gt;get_race()]['numrace'])</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_rang_royaume()!=6)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a3e89dbad82579b89f118f23230337650">$R</a> = new <a class="el" href="classroyaume.html">royaume</a>($Trace[$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()]['numrace'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ac702c7e74c287520f531b3cbcfdc72c4">$r_c</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#af4a34353fe4d4cc740281919adbff7de">$r_nbd</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a1f3cb61ec27aa3bdca83dade653ad85b">$r_nbp</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($req)</td></tr>
@@ -55,7 +56,7 @@ $_REQUEST))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('mtop', <br class="typebreak"/>
 $_GET)) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('mleft', <br class="typebreak"/>
 $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad02b519043810d66d48636ab2e0b4890">$rand</a> = rand()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = &quot;SELECT count(1) from depot_royaume d, objet_royaume o, <a class="el" href="classbatiment.html">batiment</a> b where <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">o.id</a> = d.id_objet and o.id_batiment = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">b.id</a> and <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">o.type</a> = 'drapeau' and b.hp = 1 and d.id_royaume = $roy_id&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = &quot;SELECT count(1) from depot_royaume d, objet_royaume o, <a class="el" href="classbatiment.html">batiment</a> b where o.id = d.id_objet and o.id_batiment = b.id and <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">o.type</a> = 'drapeau' and b.hp = 1 and d.id_royaume = $roy_id&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a5fd69d87b09c6753250ed4eaba10b194">$roy_id</a> = $<a class="el" href="classroyaume.html">royaume</a>-&gt;get_id()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a090e343a2a420a787e8ddf84ae964a26">$ts</a> ['end'] = microtime()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a8b4ebf7adbd0943c96371ac02b89a3f1">$ts</a> ['fini'] = microtime()</td></tr>
@@ -63,7 +64,6 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="d
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad42f7ad462b4e86c2ed7dc41adc08e8a">$ts</a> ['make_tmp_adj_tables'] = microtime()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a2fa404162d7d33927b6c6ecea7fb8a55">$ts</a> ['start'] = microtime()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#a3984cdc176ac1917376aaa9e16827e5c">$ts</a> = array()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="drapeaux_8php.html#ad8f0964af7d5a62169b1ae2863a2d8df">if</a> (file_exists('../root.php'))</td></tr>
 </table>
 <hr/><h2>Documentation des fonctions</h2>
 <a class="anchor" id="aebbbd3f023ccb9f109004d19f8b256c9"></a><!-- doxytag: member="drapeaux.php::print_map" ref="aebbbd3f023ccb9f109004d19f8b256c9" args="($mag_factor, $r_c)" -->
@@ -120,6 +120,19 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="d
 
 </div>
 </div>
+<a class="anchor" id="a864e00a0fd2a3ae52a3eae109b8ad113"></a><!-- doxytag: member="drapeaux.php::$echelle" ref="a864e00a0fd2a3ae52a3eae109b8ad113" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (file_exists('../root.php')) $echelle = 4</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae36afd194eefa9e66c1890a817cbce7f"></a><!-- doxytag: member="drapeaux.php::$mag_factor" ref="ae36afd194eefa9e66c1890a817cbce7f" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +151,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="d
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$map_size = 760 * $mag_factor</td>
+          <td class="memname">$map_size = $G_max_x * 4 * $mag_factor</td>
         </tr>
       </table>
 </div>
@@ -242,7 +255,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="d
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($joueur-&gt;get_rang_royaume()!=6) $R = new <a class="el" href="classroyaume.html">royaume</a>($Trace[$joueur-&gt;get_race()]['numrace'])</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_rang_royaume()!=6) $R = new <a class="el" href="classroyaume.html">royaume</a>($Trace[$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_race()]['numrace'])</td>
         </tr>
       </table>
 </div>
@@ -307,7 +320,7 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="d
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$req = &quot;SELECT count(1) from depot_royaume d, objet_royaume o, <a class="el" href="classbatiment.html">batiment</a> b where <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">o.id</a> = d.id_objet and o.id_batiment = <a class="el" href="index_8php.html#acf2488b95c97e0378c9bf49de3b50f28">b.id</a> and <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">o.type</a> = 'drapeau' and b.hp = 1 and d.id_royaume = $roy_id&quot;</td>
+          <td class="memname">$req = &quot;SELECT count(1) from depot_royaume d, objet_royaume o, <a class="el" href="classbatiment.html">batiment</a> b where o.id = d.id_objet and o.id_batiment = b.id and <a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">o.type</a> = 'drapeau' and b.hp = 1 and d.id_royaume = $roy_id&quot;</td>
         </tr>
       </table>
 </div>
@@ -406,21 +419,8 @@ $_GET))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="d
 
 </div>
 </div>
-<a class="anchor" id="ad8f0964af7d5a62169b1ae2863a2d8df"></a><!-- doxytag: member="drapeaux.php::if" ref="ad8f0964af7d5a62169b1ae2863a2d8df" args="(file_exists('../root.php'))" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(file_exists('../root.php'))</td>
-        </tr>
-      </table>
 </div>
-<div class="memdoc">
-
-</div>
-</div>
-</div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Aug 26 17:53:57 2012 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:13 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
