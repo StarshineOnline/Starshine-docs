@@ -35,10 +35,12 @@
 <div class="dynheader">
 Graphe d'héritage de construction:</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction__inherit__graph.png" border="0" usemap="#construction_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de construction:</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction__coll__graph.png" border="0" usemap="#construction_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classconstruction-members.html">Liste de tous les membres</a></p>
@@ -82,8 +84,8 @@ Graphe de collaboration de construction:</div>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconstruction.html#a873cf45957d98d210a8c4d90c87c2a91">__construct</a> ($id=0, $id_batiment=0, $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $hp=0, $nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $rez= '', $rechargement= '', $image= '', $date_construction= '', $point_victoire= '')</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a873cf45957d98d210a8c4d90c87c2a91"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconstruction.html#a6a65d28d9c81154dfc4113b62dc23ff7">__construct</a> ($id=0, $id_batiment=0, $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $hp=0, $nom= '', $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $rez=0, $rechargement=0, $image= '', $date_construction=0, $point_victoire=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a6a65d28d9c81154dfc4113b62dc23ff7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconstruction.html#a8096f6141c31c336c4a0eabf251f9283">get_liste_champs</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a8096f6141c31c336c4a0eabf251f9283"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconstruction.html#ac063b3644dfd2f390877cc2a4c344748">get_liste_update</a> ()</td></tr>
@@ -98,7 +100,7 @@ Graphe de collaboration de construction:</div>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Classe <a class="el" href="classconstruction.html" title="Classe construction Classe représentant un bâtiment sur la carte.">construction</a> Classe représentant un bâtiment sur la carte. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a873cf45957d98d210a8c4d90c87c2a91"></a><!-- doxytag: member="construction::__construct" ref="a873cf45957d98d210a8c4d90c87c2a91" args="($id=0, $id_batiment=0, $x=0, $y=0, $royaume=0, $hp=0, $nom= '', $type= '', $rez= '', $rechargement= '', $image= '', $date_construction= '', $point_victoire= '')" -->
+<a class="anchor" id="a6a65d28d9c81154dfc4113b62dc23ff7"></a><!-- doxytag: member="construction::__construct" ref="a6a65d28d9c81154dfc4113b62dc23ff7" args="($id=0, $id_batiment=0, $x=0, $y=0, $royaume=0, $hp=0, $nom= '', $type= '', $rez=0, $rechargement=0, $image= '', $date_construction=0, $point_victoire=0)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -154,13 +156,13 @@ Graphe de collaboration de construction:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>rez</em> = <code>''</code>, </td>
+          <td class="paramname"> <em>rez</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>rechargement</em> = <code>''</code>, </td>
+          <td class="paramname"> <em>rechargement</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -172,13 +174,13 @@ Graphe de collaboration de construction:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>date_construction</em> = <code>''</code>, </td>
+          <td class="paramname"> <em>date_construction</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>point_victoire</em> = <code>''</code></td><td>&nbsp;</td>
+          <td class="paramname"> <em>point_victoire</em> = <code>0</code></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -212,7 +214,6 @@ Graphe de collaboration de construction:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classconstruction_a873cf45957d98d210a8c4d90c87c2a91_cgraph.png" border="0" usemap="#classconstruction_a873cf45957d98d210a8c4d90c87c2a91_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -242,6 +243,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction_a6e95d751c5e6cb23b05b9cad14d6ef3e_cgraph.png" border="0" usemap="#classconstruction_a6e95d751c5e6cb23b05b9cad14d6ef3e_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -319,6 +321,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction_a4591f0a7a5186e51aa8f58d4adf8c9ea_icgraph.png" border="0" usemap="#classconstruction_a4591f0a7a5186e51aa8f58d4adf8c9ea_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -405,6 +408,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction_ac745053b2cb0bac2f2088cf8dad04862_icgraph.png" border="0" usemap="#classconstruction_ac745053b2cb0bac2f2088cf8dad04862_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -430,6 +434,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction_a1eb962c9c7cbb9b6092aecc3fb7c1916_icgraph.png" border="0" usemap="#classconstruction_a1eb962c9c7cbb9b6092aecc3fb7c1916_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -527,6 +532,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction_a9ff0b53c692157be8b5b07c27a5ca919_cgraph.png" border="0" usemap="#classconstruction_a9ff0b53c692157be8b5b07c27a5ca919_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -593,6 +599,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction_a81e0948a9af6c75d4365580841f43d3d_icgraph.png" border="0" usemap="#classconstruction_a81e0948a9af6c75d4365580841f43d3d_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -619,6 +626,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classconstruction_af223946ccf1a3278e9998da1cc93b362_icgraph.png" border="0" usemap="#classconstruction_af223946ccf1a3278e9998da1cc93b362_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -689,7 +697,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="construction_8class_8php.html">construction.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:31 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:29 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

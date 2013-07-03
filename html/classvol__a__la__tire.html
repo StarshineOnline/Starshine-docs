@@ -44,7 +44,8 @@ Graphe de collaboration de vol_a_la_tire:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvol__a__la__tire.html#ae844ebd37da4c0d24fe24d3db314bc98">__construct</a> ($aEffet, $aEffet2, $aDuree)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvol__a__la__tire.html#adad92fae390f6f32cab353648eb41e68">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvol__a__la__tire.html#a3516bf19a396b35ddccb16d6a68982b0">fin_round</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a3516bf19a396b35ddccb16d6a68982b0"></a><br/></td></tr>
 </table>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="ae844ebd37da4c0d24fe24d3db314bc98"></a><!-- doxytag: member="vol_a_la_tire::__construct" ref="ae844ebd37da4c0d24fe24d3db314bc98" args="($aEffet, $aEffet2, $aDuree)" -->
@@ -83,7 +84,7 @@ Graphe de collaboration de vol_a_la_tire:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="adad92fae390f6f32cab353648eb41e68"></a><!-- doxytag: member="vol_a_la_tire::fin_round" ref="adad92fae390f6f32cab353648eb41e68" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a3516bf19a396b35ddccb16d6a68982b0"></a><!-- doxytag: member="vol_a_la_tire::fin_round" ref="a3516bf19a396b35ddccb16d6a68982b0" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -91,27 +92,29 @@ Graphe de collaboration de vol_a_la_tire:</div>
           <td class="memname">vol_a_la_tire::fin_round </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Action a effectuer en fin de round. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a232772b01018ceecab5a839cdc23a8ac">effect</a>.</p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classvol__a__la__tire_adad92fae390f6f32cab353648eb41e68_cgraph.png" border="0" usemap="#classvol__a__la__tire_adad92fae390f6f32cab353648eb41e68_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -121,7 +124,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="competence_8class_8php.html">competence.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:13 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:59:26 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

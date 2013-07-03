@@ -35,12 +35,10 @@
 <div class="dynheader">
 Graphe d'héritage de ensable:</div>
 <div class="dynsection">
-<div class="center"><img src="classensable__inherit__graph.png" border="0" usemap="#ensable_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de ensable:</div>
 <div class="dynsection">
-<div class="center"><img src="classensable__coll__graph.png" border="0" usemap="#ensable_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classensable-members.html">Liste de tous les membres</a></p>
@@ -48,10 +46,8 @@ Graphe de collaboration de ensable:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#a46ac442d53ca05447d0340da2021627e">__construct</a> ($aEffet)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a46ac442d53ca05447d0340da2021627e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#ac7f544a6b20ea7ac8a1c3141731fc8e6">calcul_attaque_magique</a> (&amp;$actif, &amp;$passif, $att)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#ac7f544a6b20ea7ac8a1c3141731fc8e6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#a50a7d281df66b6d44a7d7ecbab122cd5">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a50a7d281df66b6d44a7d7ecbab122cd5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#a1ebfce74c3e98e26c4b96cb4de910dfe">calcul_attaque_magique</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#a1ebfce74c3e98e26c4b96cb4de910dfe"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classensable.html#ae26f88715c4251b14f1d350af4556adb">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#ae26f88715c4251b14f1d350af4556adb"></a><br/></td></tr>
@@ -88,7 +84,7 @@ Graphe de collaboration de ensable:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="ac7f544a6b20ea7ac8a1c3141731fc8e6"></a><!-- doxytag: member="ensable::calcul_attaque_magique" ref="ac7f544a6b20ea7ac8a1c3141731fc8e6" args="(&amp;$actif, &amp;$passif, $att)" -->
+<a class="anchor" id="a1ebfce74c3e98e26c4b96cb4de910dfe"></a><!-- doxytag: member="ensable::calcul_attaque_magique" ref="a1ebfce74c3e98e26c4b96cb4de910dfe" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -96,24 +92,9 @@ Graphe de collaboration de ensable:</div>
           <td class="memname">ensable::calcul_attaque_magique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>att</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -130,57 +111,11 @@ Graphe de collaboration de ensable:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel toucher après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#afbfa14e62cda95021f732d736cc6fbeb">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a75d41e6b5aca81fd355675cdb44a9b17">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classensable_ac7f544a6b20ea7ac8a1c3141731fc8e6_cgraph.png" border="0" usemap="#classensable_ac7f544a6b20ea7ac8a1c3141731fc8e6_cgraph_map" alt=""></div>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a50a7d281df66b6d44a7d7ecbab122cd5"></a><!-- doxytag: member="ensable::debut_round" ref="a50a7d281df66b6d44a7d7ecbab122cd5" args="(&amp;$actif, &amp;$passif)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ensable::debut_round </td>
-          <td>(</td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Action a effectuer en début de round. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a4cabf23d0fccc8184be223b7faacc981">effect</a>.</p>
-
-<p><div class="dynheader">
-Voici le graphe d'appel pour cette fonction :</div>
-<div class="dynsection">
-<div class="center"><img src="classensable_a50a7d281df66b6d44a7d7ecbab122cd5_cgraph.png" border="0" usemap="#classensable_a50a7d281df66b6d44a7d7ecbab122cd5_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -242,7 +177,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:36 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:35 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

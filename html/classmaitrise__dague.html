@@ -45,9 +45,10 @@ Graphe de collaboration de maitrise_dague:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmaitrise__dague.html#a8049aa783151930b2b338a8e09e37306">__construct</a> ($aPrintUp=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a8049aa783151930b2b338a8e09e37306"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmaitrise__dague.html#a65ddfe6588c5e924a367ac2ae8996d88">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a65ddfe6588c5e924a367ac2ae8996d88"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmaitrise__dague.html#a7f0a0b02f95cda54f951b2b162dbc8a3">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmaitrise__dague.html#a48927e7a5c147570448a8cd6931b39e2">debut_round</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a48927e7a5c147570448a8cd6931b39e2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmaitrise__dague.html#a9013d2626e28e6e5f73172ed836bc2d7">fin_round</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a9013d2626e28e6e5f73172ed836bc2d7"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmaitrise__dague.html#a3837420dbec871a1d4e1e9e51f44dd59">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a3837420dbec871a1d4e1e9e51f44dd59"></a><br/></td></tr>
@@ -82,7 +83,7 @@ Graphe de collaboration de maitrise_dague:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a65ddfe6588c5e924a367ac2ae8996d88"></a><!-- doxytag: member="maitrise_dague::debut_round" ref="a65ddfe6588c5e924a367ac2ae8996d88" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a48927e7a5c147570448a8cd6931b39e2"></a><!-- doxytag: member="maitrise_dague::debut_round" ref="a48927e7a5c147570448a8cd6931b39e2" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -90,18 +91,9 @@ Graphe de collaboration de maitrise_dague:</div>
           <td class="memname">maitrise_dague::debut_round </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -116,7 +108,7 @@ Graphe de collaboration de maitrise_dague:</div>
   </dd>
 </dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a4cabf23d0fccc8184be223b7faacc981">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#af7640e97173bab6f91d22031ebb4995f">effect</a>.</p>
 
 </div>
 </div>
@@ -172,7 +164,7 @@ Graphe de collaboration de maitrise_dague:</div>
 
 </div>
 </div>
-<a class="anchor" id="a7f0a0b02f95cda54f951b2b162dbc8a3"></a><!-- doxytag: member="maitrise_dague::fin_round" ref="a7f0a0b02f95cda54f951b2b162dbc8a3" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a9013d2626e28e6e5f73172ed836bc2d7"></a><!-- doxytag: member="maitrise_dague::fin_round" ref="a9013d2626e28e6e5f73172ed836bc2d7" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -180,27 +172,29 @@ Graphe de collaboration de maitrise_dague:</div>
           <td class="memname">maitrise_dague::fin_round </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Action a effectuer en fin de round. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a232772b01018ceecab5a839cdc23a8ac">effect</a>.</p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmaitrise__dague_a7f0a0b02f95cda54f951b2b162dbc8a3_cgraph.png" border="0" usemap="#classmaitrise__dague_a7f0a0b02f95cda54f951b2b162dbc8a3_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -210,7 +204,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="competence_8class_8php.html">competence.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:52 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:46 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

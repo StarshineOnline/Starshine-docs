@@ -35,12 +35,10 @@
 <div class="dynheader">
 Graphe d'héritage de debilitant:</div>
 <div class="dynsection">
-<div class="center"><img src="classdebilitant__inherit__graph.png" border="0" usemap="#debilitant_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de debilitant:</div>
 <div class="dynsection">
-<div class="center"><img src="classdebilitant__coll__graph.png" border="0" usemap="#debilitant_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classdebilitant-members.html">Liste de tous les membres</a></p>
@@ -48,10 +46,10 @@ Graphe de collaboration de debilitant:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebilitant.html#ac40e2b62e5316cace77c2fc917731532">__construct</a> ($aEffet)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#ac40e2b62e5316cace77c2fc917731532"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebilitant.html#a5f18e272460498cdc233b7917baaf8a1">debut_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a5f18e272460498cdc233b7917baaf8a1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebilitant.html#aa0b63de2c0aa7154ecaee96e82f466d9">fin_round</a> (&amp;$actif, &amp;$passif, $mode)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#aa0b63de2c0aa7154ecaee96e82f466d9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebilitant.html#a01be1e035d39e514850f8786fd7419a4">calcul_attaque_magique</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en début de round.  <a href="#a01be1e035d39e514850f8786fd7419a4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebilitant.html#a862ae2292059cfd6fd15cce547f3089e">fin_round</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a862ae2292059cfd6fd15cce547f3089e"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebilitant.html#ac2cd960cca15828f600e2ce68d5aecae">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#ac2cd960cca15828f600e2ce68d5aecae"></a><br/></td></tr>
@@ -88,26 +86,17 @@ Graphe de collaboration de debilitant:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a5f18e272460498cdc233b7917baaf8a1"></a><!-- doxytag: member="debilitant::debut_round" ref="a5f18e272460498cdc233b7917baaf8a1" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a01be1e035d39e514850f8786fd7419a4"></a><!-- doxytag: member="debilitant::calcul_attaque_magique" ref="a01be1e035d39e514850f8786fd7419a4" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">debilitant::debut_round </td>
+          <td class="memname">debilitant::calcul_attaque_magique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -115,7 +104,7 @@ Graphe de collaboration de debilitant:</div>
 
 <p>Action a effectuer en début de round. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a4cabf23d0fccc8184be223b7faacc981">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a75d41e6b5aca81fd355675cdb44a9b17">effect</a>.</p>
 
 </div>
 </div>
@@ -171,7 +160,7 @@ Graphe de collaboration de debilitant:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa0b63de2c0aa7154ecaee96e82f466d9"></a><!-- doxytag: member="debilitant::fin_round" ref="aa0b63de2c0aa7154ecaee96e82f466d9" args="(&amp;$actif, &amp;$passif, $mode)" -->
+<a class="anchor" id="a862ae2292059cfd6fd15cce547f3089e"></a><!-- doxytag: member="debilitant::fin_round" ref="a862ae2292059cfd6fd15cce547f3089e" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -179,24 +168,9 @@ Graphe de collaboration de debilitant:</div>
           <td class="memname">debilitant::fin_round </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>mode</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -212,7 +186,7 @@ Graphe de collaboration de debilitant:</div>
   </dd>
 </dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classetat.html#a73c4fdce22a711baee0d0cb9d99f1ee5">etat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classetat.html#a8b772d2a97700d581e24e0e3475cd396">etat</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -226,7 +200,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:35 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:32 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

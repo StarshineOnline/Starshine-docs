@@ -35,10 +35,12 @@
 <div class="dynheader">
 Graphe d'héritage de placement:</div>
 <div class="dynsection">
+<div class="center"><img src="classplacement__inherit__graph.png" border="0" usemap="#placement_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de placement:</div>
 <div class="dynsection">
+<div class="center"><img src="classplacement__coll__graph.png" border="0" usemap="#placement_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classplacement-members.html">Liste de tous les membres</a></p>
@@ -46,8 +48,8 @@ Graphe de collaboration de placement:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#ac0faca67ad8c09e97fab253c82409235">get_coeff_carac</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coefficient pour modifier les caractéristique.  <a href="#ac0faca67ad8c09e97fab253c82409235"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#af63fd5879b04fbe98adefcee89691d4b">get_coeff_comp</a> ($<a class="el" href="classperso.html">perso</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coefficient pour modifier les compétences.  <a href="#af63fd5879b04fbe98adefcee89691d4b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#ab4c5ef50b92e3ec39f51b25f079cb746">get_coeff_comp</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$def)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coefficient pour modifier les compétences.  <a href="#ab4c5ef50b92e3ec39f51b25f079cb746"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a118af8202511fce723d44f4ebba46cd2">get_placement_buff</a> ($id)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'ensemble des buffs / débuffs actif sur un bâtiment.  <a href="#a118af8202511fce723d44f4ebba46cd2"></a><br/></td></tr>
@@ -79,8 +81,8 @@ Graphe de collaboration de placement:</div>
 <tr><td colspan="2"><h2>Accès à la base de données</h2></td></tr>
 <tr><td colspan="2"><p><a class="anchor" id="amgrpa8c235a792b4c3a0a6cf063ef6a1f11a"></a>Méthode gérant la lecture et l'écriture dans la base de données </p>
 <br/><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a7e5ccd219776ec5262b078ae5e98b0b6">__construct</a> ($id=0, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $debut_placement=0, $fin_placement=0, $id_batiment=0, $hp= '', $nom= '', $rez=0, $point_victoire=0)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a7e5ccd219776ec5262b078ae5e98b0b6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a0e6df5877420b2fd1ed59f108b6c3789">__construct</a> ($id=0, $<a class="el" href="action__modif__t_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>= '', $x=0, $y=0, $<a class="el" href="classroyaume.html">royaume</a>=0, $debut_placement=0, $fin_placement=0, $id_batiment=0, $hp=0, $nom= '', $rez=0, $point_victoire=0)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a0e6df5877420b2fd1ed59f108b6c3789"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a0967159e460eda3b55b78e997b60828b">get_liste_champs</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la liste des champs pour une insertion dans la base.  <a href="#a0967159e460eda3b55b78e997b60828b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplacement.html#a2a260a36b0f92eb6e9648a21644f9e68">get_liste_update</a> ()</td></tr>
@@ -93,7 +95,7 @@ Graphe de collaboration de placement:</div>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Classe <a class="el" href="classplacement.html" title="Classe placement Classe représentant un bâtiment en cosntruction sur la carte.">placement</a> Classe représentant un bâtiment en cosntruction sur la carte. </p>
 <hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a7e5ccd219776ec5262b078ae5e98b0b6"></a><!-- doxytag: member="placement::__construct" ref="a7e5ccd219776ec5262b078ae5e98b0b6" args="($id=0, $type= '', $x=0, $y=0, $royaume=0, $debut_placement=0, $fin_placement=0, $id_batiment=0, $hp= '', $nom= '', $rez=0, $point_victoire=0)" -->
+<a class="anchor" id="a0e6df5877420b2fd1ed59f108b6c3789"></a><!-- doxytag: member="placement::__construct" ref="a0e6df5877420b2fd1ed59f108b6c3789" args="($id=0, $type= '', $x=0, $y=0, $royaume=0, $debut_placement=0, $fin_placement=0, $id_batiment=0, $hp=0, $nom= '', $rez=0, $point_victoire=0)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -149,7 +151,7 @@ Graphe de collaboration de placement:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>hp</em> = <code>''</code>, </td>
+          <td class="paramname"> <em>hp</em> = <code>0</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -200,7 +202,6 @@ Graphe de collaboration de placement:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classplacement_a7e5ccd219776ec5262b078ae5e98b0b6_cgraph.png" border="0" usemap="#classplacement_a7e5ccd219776ec5262b078ae5e98b0b6_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -235,17 +236,26 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="af63fd5879b04fbe98adefcee89691d4b"></a><!-- doxytag: member="placement::get_coeff_comp" ref="af63fd5879b04fbe98adefcee89691d4b" args="($perso)" -->
+<a class="anchor" id="ab4c5ef50b92e3ec39f51b25f079cb746"></a><!-- doxytag: member="placement::get_coeff_comp" ref="ab4c5ef50b92e3ec39f51b25f079cb746" args="(&amp;$perso, &amp;$def)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">placement::get_coeff_comp </td>
           <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>perso</em></td>
-          <td>&nbsp;)&nbsp;</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>def</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -253,12 +263,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Renvoie le coefficient pour modifier les compétences. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#ae3dea9204fb45b14531d0cbf1134b600">entnj_incarn</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classentnj__incarn.html#ae74c81f77d5a30f955582a5bb283f5a6">entnj_incarn</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classplacement_af63fd5879b04fbe98adefcee89691d4b_cgraph.png" border="0" usemap="#classplacement_af63fd5879b04fbe98adefcee89691d4b_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -439,7 +448,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classplacement_a5133380abd9b4c6e3fc04e6758569d3f_icgraph.png" border="0" usemap="#classplacement_a5133380abd9b4c6e3fc04e6758569d3f_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -484,7 +492,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classplacement_a85a209ace55f1d04e9031d372156c7c5_icgraph.png" border="0" usemap="#classplacement_a85a209ace55f1d04e9031d372156c7c5_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -614,7 +621,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="placement_8class_8php.html">placement.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:59 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:59:04 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

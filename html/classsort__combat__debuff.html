@@ -35,18 +35,20 @@
 <div class="dynheader">
 Graphe d'héritage de sort_combat_debuff:</div>
 <div class="dynsection">
+<div class="center"><img src="classsort__combat__debuff__inherit__graph.png" border="0" usemap="#sort__combat__debuff_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de sort_combat_debuff:</div>
 <div class="dynsection">
+<div class="center"><img src="classsort__combat__debuff__coll__graph.png" border="0" usemap="#sort__combat__debuff_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classsort__combat__debuff-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__debuff.html#a5441e06308c366e7c3bb513b62aa8b17">__construct</a> ($tbl, $debuff=null)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__debuff.html#a1f307e030a8972c380b66709292a56cf">touche</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#a1f307e030a8972c380b66709292a56cf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__debuff.html#a99df87a92315d5337f6a434d258e415a">touche</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#a99df87a92315d5337f6a434d258e415a"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs protégés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__debuff.html#ac4a86e6981646c41914278b74ae036ea">$debuff</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Débuff.  <a href="#ac4a86e6981646c41914278b74ae036ea"></a><br/></td></tr>
@@ -89,7 +91,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a1f307e030a8972c380b66709292a56cf"></a><!-- doxytag: member="sort_combat_debuff::touche" ref="a1f307e030a8972c380b66709292a56cf" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<a class="anchor" id="a99df87a92315d5337f6a434d258e415a"></a><!-- doxytag: member="sort_combat_debuff::touche" ref="a99df87a92315d5337f6a434d258e415a" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -97,24 +99,9 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">sort_combat_debuff::touche </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -122,9 +109,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classsort__combat.html#a7600334842b7502b89b0f9d5b992534a">sort_combat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classsort__combat.html#a6f7af5480b5d0999532e3ade3ec1bc64">sort_combat</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classsort__combat__enracinement.html#a050c8e1f6d27c930571a1130f57f7609">sort_combat_enracinement</a>, et <a class="el" href="classsort__combat__nostalgie.html#a0a3419f77875b03b65b709ed57463f43">sort_combat_nostalgie</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classsort__combat__enracinement.html#a8004cdfe8d6d275c5f09a766c8eee631">sort_combat_enracinement</a>, et <a class="el" href="classsort__combat__nostalgie.html#af95f6b3cbd45fe722ee6c33e011b0126">sort_combat_nostalgie</a>.</p>
 
 </div>
 </div>
@@ -148,7 +135,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="sort__combat_8class_8php.html">sort_combat.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:04 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:59:14 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

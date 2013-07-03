@@ -48,7 +48,7 @@
 <tr><td class="memItemLeft" align="right" valign="top">global&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map__full_8php.html#a4b2a4547bbd9a45f163adccfe8b45980">$xmin</a> = 1</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">global&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map__full_8php.html#a1443f20f1ed7a3b93e67f797e4916e4d">$ymax</a> = $ymin + 29</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">global&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map__full_8php.html#a7e30a161a1e1199d07c180857926eaa3">$ymin</a> = 1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map__full_8php.html#af5cecd7e9f05dc014e78053200d71866">for</a> ($x=$xmin;$x&lt;=$xmax;$x++) = &quot;SELECT COUNT(*) AS tot, ceil(x/10) as cx, ceil(y/10) as cy FROM journal WHERE DAY(time )=DAY(CURDATE())AND MONTH(time )=MONTH(CURDATE())AND YEAR(time )=YEAR(CURDATE())AND action ='attaque' AND x &lt;&gt; 0 AND y &lt;&gt; 0 GROUP BY cx, cy ORDER BY tot DESC&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map__full_8php.html#af5cecd7e9f05dc014e78053200d71866">for</a> ($x=$xmin;$x&lt;=$xmax;$x++) = &quot;SELECT COUNT(*) AS tot, ceil(x/10) as cx, ceil(y/10) as cy FROM journal WHERE DAY(time )=DAY(CURDATE())AND MONTH(time )=MONTH(CURDATE())AND YEAR(time )=YEAR(CURDATE())AND action ='<a class="el" href="classattaque.html">attaque</a>' AND x &lt;&gt; 0 AND y &lt;&gt; 0 GROUP BY cx, cy ORDER BY tot DESC&quot;</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="edit__map__full_8php.html#a3d2ca6398f6ecf91aeb210c2e369c6d6">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req))</td></tr>
 </table>
 <hr/><h2>Documentation du type de l'énumération</h2>
@@ -251,7 +251,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a6c5147bc079b14b2f1de8960571bb86d">for</a> = &quot;SELECT COUNT(*) AS tot, ceil(x/10) as cx, ceil(y/10) as cy FROM journal WHERE DAY(time )=DAY(CURDATE())AND MONTH(time )=MONTH(CURDATE())AND YEAR(time )=YEAR(CURDATE())AND action ='attaque' AND x &lt;&gt; 0 AND y &lt;&gt; 0 GROUP BY cx, cy ORDER BY tot DESC&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a6c5147bc079b14b2f1de8960571bb86d">for</a> = &quot;SELECT COUNT(*) AS tot, ceil(x/10) as cx, ceil(y/10) as cy FROM journal WHERE DAY(time )=DAY(CURDATE())AND MONTH(time )=MONTH(CURDATE())AND YEAR(time )=YEAR(CURDATE())AND action ='<a class="el" href="classattaque.html">attaque</a>' AND x &lt;&gt; 0 AND y &lt;&gt; 0 GROUP BY cx, cy ORDER BY tot DESC&quot;</td>
         </tr>
       </table>
 </div>
@@ -273,7 +273,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:20:57 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:57:59 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -32,8 +32,12 @@
 <h1>Référence du fichier action.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8php.html#aa720998827fe9e92a5fe573a62edc0b8">$connexion</a> = true</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8php.html#af789423037bbc89dc7c850e761177570">$count</a> = count($actionexplode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&lt;/script &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8php.html#afed2b19231b3efb3fd62c7bd33b250b6">$i</a> = 0</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8php.html#a044e319a55400154f4353881bf312ac8">if</a> (array_key_exists('action', $_GET)&amp;&amp;$_GET['action']== 'change_nom') = &quot;select * from arenes&quot;</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8php.html#a77a724d8e1167e9cc3db8e8db3712eca">while</a> ($i&lt; $count) = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select x, y from <a class="el" href="classmap.html">map</a> where (y &gt; 190 and x &lt; 190) and (info &gt; 99 or (info % 10 = 5 and info &gt;= 15))&quot;)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Augmente la dette des batiments inactifs (de la moitie de l'entretien).  <a href="#a77a724d8e1167e9cc3db8e8db3712eca"></a><br/></td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="aa720998827fe9e92a5fe573a62edc0b8"></a><!-- doxytag: member="action.php::$connexion" ref="aa720998827fe9e92a5fe573a62edc0b8" args="" -->
@@ -42,6 +46,32 @@
       <table class="memname">
         <tr>
           <td class="memname">$connexion = true</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af789423037bbc89dc7c850e761177570"></a><!-- doxytag: member="action.php::$count" ref="af789423037bbc89dc7c850e761177570" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$count = count($actionexplode)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afed2b19231b3efb3fd62c7bd33b250b6"></a><!-- doxytag: member="action.php::$i" ref="afed2b19231b3efb3fd62c7bd33b250b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&lt;/script&gt; $i = 0</td>
         </tr>
       </table>
 </div>
@@ -75,8 +105,23 @@
 
 </div>
 </div>
+<a class="anchor" id="a77a724d8e1167e9cc3db8e8db3712eca"></a><!-- doxytag: member="action.php::while" ref="a77a724d8e1167e9cc3db8e8db3712eca" args="($i&lt; $count)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> = $<a class="el" href="classdb.html">db</a>-&gt;query(&quot;select x, y from <a class="el" href="classmap.html">map</a> where (y &gt; 190 and x &lt; 190) and (info &gt; 99 or (info % 10 = 5 and info &gt;= 15))&quot;)</td>
+        </tr>
+      </table>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:20:55 2013 pour Starshine Online par&nbsp;
+<div class="memdoc">
+
+<p>Augmente la dette des batiments inactifs (de la moitie de l'entretien). </p>
+
+</div>
+</div>
+</div>
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:57:58 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

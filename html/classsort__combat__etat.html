@@ -35,19 +35,21 @@
 <div class="dynheader">
 Graphe d'héritage de sort_combat_etat:</div>
 <div class="dynsection">
+<div class="center"><img src="classsort__combat__etat__inherit__graph.png" border="0" usemap="#sort__combat__etat_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de sort_combat_etat:</div>
 <div class="dynsection">
+<div class="center"><img src="classsort__combat__etat__coll__graph.png" border="0" usemap="#sort__combat__etat_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classsort__combat__etat-members.html">Liste de tous les membres</a></p>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__etat.html#ac91e2340fd88dadc935cd2524501aa76">action</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#ac91e2340fd88dadc935cd2524501aa76"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__etat.html#a13afb03a0599f0e336866ec6b3dfdd92">touche</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#a13afb03a0599f0e336866ec6b3dfdd92"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__etat.html#a1451762197bcc64a0ec8d0e3a57285cc">action</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#a1451762197bcc64a0ec8d0e3a57285cc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__etat.html#a23c6b80131bfb3d0c0b0d93507cafaaa">touche</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès.  <a href="#a23c6b80131bfb3d0c0b0d93507cafaaa"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres protégées</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsort__combat__etat.html#a166ce413c428be2968edd8a190afff10">ajout_effet2</a> ($<a class="el" href="classetat.html">etat</a>, &amp;$cible)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">ajoute un effet2 si besoin  <a href="#a166ce413c428be2968edd8a190afff10"></a><br/></td></tr>
@@ -57,7 +59,7 @@ Graphe de collaboration de sort_combat_etat:</div>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
 <p>Classe gérant les sorts à état sans dégâts. </p>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="ac91e2340fd88dadc935cd2524501aa76"></a><!-- doxytag: member="sort_combat_etat::action" ref="ac91e2340fd88dadc935cd2524501aa76" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<a class="anchor" id="a1451762197bcc64a0ec8d0e3a57285cc"></a><!-- doxytag: member="sort_combat_etat::action" ref="a1451762197bcc64a0ec8d0e3a57285cc" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -65,24 +67,9 @@ Graphe de collaboration de sort_combat_etat:</div>
           <td class="memname">sort_combat_etat::action </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -90,14 +77,13 @@ Graphe de collaboration de sort_combat_etat:</div>
 
 <p>Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classsort__combat.html#abecd229602bf4a118fea1065797d11cf">sort_combat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classsort__combat.html#aac3f0754e8bd385e2e808e808986488e">sort_combat</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classsort__combat__aura.html#a5fbb23bef3f864a59801da0ef1bbc144">sort_combat_aura</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classsort__combat__aura.html#a2230f0c271bcffd6fae99c1a138703af">sort_combat_aura</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classsort__combat__etat_ac91e2340fd88dadc935cd2524501aa76_cgraph.png" border="0" usemap="#classsort__combat__etat_ac91e2340fd88dadc935cd2524501aa76_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -171,7 +157,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a13afb03a0599f0e336866ec6b3dfdd92"></a><!-- doxytag: member="sort_combat_etat::touche" ref="a13afb03a0599f0e336866ec6b3dfdd92" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<a class="anchor" id="a23c6b80131bfb3d0c0b0d93507cafaaa"></a><!-- doxytag: member="sort_combat_etat::touche" ref="a23c6b80131bfb3d0c0b0d93507cafaaa" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -179,24 +165,9 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">sort_combat_etat::touche </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -204,19 +175,17 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Méthode gérant ce qu'il se passe lorsque la coméptence à été utilisé avec succès. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classsort__combat__degat__etat.html#a84c73db98d367cbc4a603a393cd606ab">sort_combat_degat_etat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classsort__combat__degat__etat.html#a6351365da24f76d1ad16027ee1b80b8d">sort_combat_degat_etat</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classsort__combat__etat_a13afb03a0599f0e336866ec6b3dfdd92_cgraph.png" border="0" usemap="#classsort__combat__etat_a13afb03a0599f0e336866ec6b3dfdd92_cgraph_map" alt=""></div>
 </div>
 </p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classsort__combat__etat_a13afb03a0599f0e336866ec6b3dfdd92_icgraph.png" border="0" usemap="#classsort__combat__etat_a13afb03a0599f0e336866ec6b3dfdd92_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -226,7 +195,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="sort__combat_8class_8php.html">sort_combat.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:05 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:59:17 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

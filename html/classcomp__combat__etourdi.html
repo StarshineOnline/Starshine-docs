@@ -35,10 +35,12 @@
 <div class="dynheader">
 Graphe d'héritage de comp_combat_etourdi:</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__combat__etourdi__inherit__graph.png" border="0" usemap="#comp__combat__etourdi_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de comp_combat_etourdi:</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__combat__etourdi__coll__graph.png" border="0" usemap="#comp__combat__etourdi_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classcomp__combat__etourdi-members.html">Liste de tous les membres</a></p>
@@ -46,10 +48,10 @@ Graphe de collaboration de comp_combat_etourdi:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etourdi.html#a8756332c52354aef628c3e767942fce6">__construct</a> ($tbl, $msg=true)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a8756332c52354aef628c3e767942fce6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etourdi.html#a53ccf0e27a050714e8774c5daf4d8ec9">lance</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation d'une compétence.  <a href="#a53ccf0e27a050714e8774c5daf4d8ec9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etourdi.html#ad088c55cb43a49b4e508048549413ad7">touche</a> ($attaque, &amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la compétence à été utilisé avec succès.  <a href="#ad088c55cb43a49b4e508048549413ad7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etourdi.html#abd54cba354953af78f0e9f9124d7c154">lance</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation d'une compétence.  <a href="#abd54cba354953af78f0e9f9124d7c154"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etourdi.html#a7ca6cb1f04ff857dfc4843bdd457c4c6">touche</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant ce qu'il se passe lorsque la compétence à été utilisé avec succès.  <a href="#a7ca6cb1f04ff857dfc4843bdd457c4c6"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs protégés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etourdi.html#af6e6d18dbbc9630f9a536b3f9c95cadd">$message</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si on affiche un message ou non.  <a href="#af6e6d18dbbc9630f9a536b3f9c95cadd"></a><br/></td></tr>
@@ -87,13 +89,14 @@ Graphe de collaboration de comp_combat_etourdi:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__combat__etourdi_a8756332c52354aef628c3e767942fce6_cgraph.png" border="0" usemap="#classcomp__combat__etourdi_a8756332c52354aef628c3e767942fce6_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a53ccf0e27a050714e8774c5daf4d8ec9"></a><!-- doxytag: member="comp_combat_etourdi::lance" ref="a53ccf0e27a050714e8774c5daf4d8ec9" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<a class="anchor" id="abd54cba354953af78f0e9f9124d7c154"></a><!-- doxytag: member="comp_combat_etourdi::lance" ref="abd54cba354953af78f0e9f9124d7c154" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -101,24 +104,9 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">comp_combat_etourdi::lance </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -126,49 +114,27 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Méthode gérant l'utilisation d'une compétence. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classcomp__combat__degat__etat.html#a25665c89dc7108a5f20900a3020ff9e9">comp_combat_degat_etat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classcomp__combat__degat__etat.html#a1625ba5f4be3057b87abf1cac268755e">comp_combat_degat_etat</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classcomp__combat__etourdi_a53ccf0e27a050714e8774c5daf4d8ec9_cgraph.png" border="0" usemap="#classcomp__combat__etourdi_a53ccf0e27a050714e8774c5daf4d8ec9_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad088c55cb43a49b4e508048549413ad7"></a><!-- doxytag: member="comp_combat_etourdi::touche" ref="ad088c55cb43a49b4e508048549413ad7" args="($attaque, &amp;$actif, &amp;$passif, &amp;$effets)" -->
+<a class="anchor" id="a7ca6cb1f04ff857dfc4843bdd457c4c6"></a><!-- doxytag: member="comp_combat_etourdi::touche" ref="a7ca6cb1f04ff857dfc4843bdd457c4c6" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">comp_combat_etourdi::touche </td>
           <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>attaque</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -176,7 +142,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Méthode gérant ce qu'il se passe lorsque la compétence à été utilisé avec succès. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classcomp__combat__degat__etat.html#ad0b86b39b04c5c2cee63586f9e565478">comp_combat_degat_etat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classcomp__combat__degat__etat.html#a33ccc26dd11615bf0ca7fc62046b804d">comp_combat_degat_etat</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -206,7 +172,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="comp__combat_8class_8php.html">comp_combat.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:26 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:24 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

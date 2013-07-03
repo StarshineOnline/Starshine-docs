@@ -46,10 +46,10 @@
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#ade8488be9c61e8ae3aa296f8edac0d9f">lance_sort</a> ($id, $acteur, &amp;$effects)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lance un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> lors d'un <a class="el" href="classcombat.html">combat</a>.  <a href="#ade8488be9c61e8ae3aa296f8edac0d9f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a027c7068b4766ffccc1b02d1a15d96d0">projection</a> (&amp;$actif, &amp;$passif, $effet)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#afab8ed8f21d2300e7050803fd135bc35">script_action</a> ($<a class="el" href="classjoueur.html">joueur</a>, $ennemi, $mode, &amp;$effects)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'action a effectuer, si le personnage peut en faire une.  <a href="#afab8ed8f21d2300e7050803fd135bc35"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a6c1df0e9cad506668d18af71399721e6">sub_script_action</a> ($<a class="el" href="classjoueur.html">joueur</a>, $ennemi, $mode, &amp;$effects)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Détermine l'action a effectuer, si on peut.  <a href="#a6c1df0e9cad506668d18af71399721e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#a9ae86dda2e09c0e701a38962d9071a3e">script_action</a> ($<a class="el" href="classjoueur.html">joueur</a>, $ennemi, $mode, &amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'action a effectuer, si le personnage peut en faire une.  <a href="#a9ae86dda2e09c0e701a38962d9071a3e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#ade863f27b9758097d4ec166a9660eae1">sub_script_action</a> ($<a class="el" href="classjoueur.html">joueur</a>, $ennemi, $mode, &amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Détermine l'action a effectuer, si on peut.  <a href="#ade863f27b9758097d4ec166a9660eae1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="action_8inc_8php.html#ab84cf53d0ede5c02935eeb584d196233">translation</a> ($x, $y, $direction)</td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Description détaillée</h2>
@@ -171,7 +171,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a0e3e3226a83e9a4a2de6e8ada6a62fdb_icgraph.png" border="0" usemap="#action_8inc_8php_a0e3e3226a83e9a4a2de6e8ada6a62fdb_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -355,7 +354,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="afab8ed8f21d2300e7050803fd135bc35"></a><!-- doxytag: member="action.inc.php::script_action" ref="afab8ed8f21d2300e7050803fd135bc35" args="($joueur, $ennemi, $mode, &amp;$effects)" -->
+<a class="anchor" id="a9ae86dda2e09c0e701a38962d9071a3e"></a><!-- doxytag: member="action.inc.php::script_action" ref="a9ae86dda2e09c0e701a38962d9071a3e" args="($joueur, $ennemi, $mode, &amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -381,7 +380,7 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effects</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>attaque</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -393,17 +392,17 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Renvoie l'action a effectuer, si le personnage peut en faire une. </p>
-<p>Récupère l'action à effectuer à l'aide à l'aide de la fonction <a class="el" href="action_8inc_8php.html#a6c1df0e9cad506668d18af71399721e6" title="Détermine l&#39;action a effectuer, si on peut.">sub_script_action()</a>, vérifie si une dissimulation ne l'empêche pas et si c'est le cas renvoie cette action.</p>
+<p>Récupère l'action à effectuer à l'aide à l'aide de la fonction <a class="el" href="action_8inc_8php.html#ade863f27b9758097d4ec166a9660eae1" title="Détermine l&#39;action a effectuer, si on peut.">sub_script_action()</a>, vérifie si une dissimulation ne l'empêche pas et si c'est le cas renvoie cette action.</p>
 <dl><dt><b>Paramètres:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$joueur</em>&nbsp;</td><td>Pesonnage du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$ennemi</em>&nbsp;</td><td>Adversaire. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Indique si le personnage attaque ("attaquant") ou défend. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Indique si le personnage <a class="el" href="classattaque.html" title="Classe attaque Classe attaque regroupant les variables et actions utiliséees lors...">attaque</a> ("attaquant") ou défend. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>liste des effets.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, "lance_comp" pour une compétence, "attaque" pour une attaque simple, "" si le personnage ne peut pas effectuer d'action </dd>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, "lance_comp" pour une compétence, "attaque" pour une <a class="el" href="classattaque.html" title="Classe attaque Classe attaque regroupant les variables et actions utiliséees lors...">attaque</a> simple, "" si le personnage ne peut pas effectuer d'action </dd>
 <dd>
 [1] ID d la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>. </dd>
 <dd>
@@ -417,7 +416,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
-<a class="anchor" id="a6c1df0e9cad506668d18af71399721e6"></a><!-- doxytag: member="action.inc.php::sub_script_action" ref="a6c1df0e9cad506668d18af71399721e6" args="($joueur, $ennemi, $mode, &amp;$effects)" -->
+<a class="anchor" id="ade863f27b9758097d4ec166a9660eae1"></a><!-- doxytag: member="action.inc.php::sub_script_action" ref="ade863f27b9758097d4ec166a9660eae1" args="($joueur, $ennemi, $mode, &amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -443,7 +442,7 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effects</em></td><td>&nbsp;</td>
+          <td class="paramname"> <em>attaque</em></td><td>&nbsp;</td>
         </tr>
         <tr>
           <td></td>
@@ -460,12 +459,12 @@ Voici le graphe d'appel pour cette fonction :</div>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>$joueur</em>&nbsp;</td><td>Pesonnage du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$ennemi</em>&nbsp;</td><td>Adversaire. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Indique si le personnage attaque ("attaquant") ou défend. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Indique si le personnage <a class="el" href="classattaque.html" title="Classe attaque Classe attaque regroupant les variables et actions utiliséees lors...">attaque</a> ("attaquant") ou défend. </td></tr>
     <tr><td valign="top"></td><td valign="top"><em>$effects</em>&nbsp;</td><td>liste des effets.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, "lance_comp" pour une compétence, "attaque" pour une attaque simple, "" si le personnage ne peut pas effectuer d'action </dd>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>[0] Type d'action : "lance_sort" pour un <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>, "lance_comp" pour une compétence, "attaque" pour une <a class="el" href="classattaque.html" title="Classe attaque Classe attaque regroupant les variables et actions utiliséees lors...">attaque</a> simple, "" si le personnage ne peut pas effectuer d'action </dd>
 <dd>
 [1] ID d la compétence ou du <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a>. </dd>
 <dd>
@@ -480,7 +479,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_icgraph.png" border="0" usemap="#action_8inc_8php_a6c1df0e9cad506668d18af71399721e6_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -527,7 +525,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:05 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:03 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

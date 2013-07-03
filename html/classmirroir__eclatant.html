@@ -44,8 +44,8 @@ Graphe de collaboration de mirroir_eclatant:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmirroir__eclatant.html#a23a7c9369c4bfc6ff1e3076bfc6dbf82">__construct</a> ($aEffet, $aNom=null)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmirroir__eclatant.html#a85733f2be74c59ec949a34cebc4ece6f">applique_bloquage</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués) Ceci se fait apres l'affichage du blocage, donc si les degats sont modifies, la modification ne sera pas imputee au bouclier lui-meme.  <a href="#a85733f2be74c59ec949a34cebc4ece6f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmirroir__eclatant.html#a0ab0abff6c6c8f3e04913dd66d5a33aa">applique_bloquage</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués) Ceci se fait apres l'affichage du blocage, donc si les degats sont modifies, la modification ne sera pas imputee au bouclier lui-meme.  <a href="#a0ab0abff6c6c8f3e04913dd66d5a33aa"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmirroir__eclatant.html#a885dbc80f21af08dbb692c48d5f89633">$effet</a></td></tr>
 </table>
@@ -78,7 +78,7 @@ Graphe de collaboration de mirroir_eclatant:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a85733f2be74c59ec949a34cebc4ece6f"></a><!-- doxytag: member="mirroir_eclatant::applique_bloquage" ref="a85733f2be74c59ec949a34cebc4ece6f" args="(&amp;$actif, &amp;$passif, $degats)" -->
+<a class="anchor" id="a0ab0abff6c6c8f3e04913dd66d5a33aa"></a><!-- doxytag: member="mirroir_eclatant::applique_bloquage" ref="a0ab0abff6c6c8f3e04913dd66d5a33aa" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -86,24 +86,9 @@ Graphe de collaboration de mirroir_eclatant:</div>
           <td class="memname">mirroir_eclatant::applique_bloquage </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>degats</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -121,12 +106,11 @@ Graphe de collaboration de mirroir_eclatant:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Dégâts infligés après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a0ce31601ca3b9a4dc1cd3c874fa87bc7">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a48b99432a08d5a6823eb8397845c4f4f">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classmirroir__eclatant_a85733f2be74c59ec949a34cebc4ece6f_cgraph.png" border="0" usemap="#classmirroir__eclatant_a85733f2be74c59ec949a34cebc4ece6f_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -150,7 +134,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:54 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:49 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -176,6 +176,8 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Potentiel lancer magique.  <a href="#a5d81e8c376522c71144880f2ad9ef167"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a268e9013b566bbd86b8e02d28c0075bd">$potentiel_parer_magique</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Potentiel parer magique.  <a href="#a268e9013b566bbd86b8e02d28c0075bd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#ad3968b2fb27b9c4f2d3f7a7d00afc207">$potentiel_toucher_magique</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Potentiel toucher magique.  <a href="#ad3968b2fb27b9c4f2d3f7a7d00afc207"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a42b2637d7951d34a80f26a7717767895">$action</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Contenu du script de <a class="el" href="classcombat.html">combat</a> utilisé.  <a href="#a42b2637d7951d34a80f26a7717767895"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a8031e913e8f0237ac62e5d1997686e8d">$potentiel_parer</a></td></tr>
@@ -214,12 +216,16 @@ Graphe de collaboration de entite:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel parer physique.  <a href="#ad9aaad3721b1ddc161f9b6cb9489ca2e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a3250a12c51b795318448670b16fff47d">get_potentiel_toucher</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel toucher physique.  <a href="#a3250a12c51b795318448670b16fff47d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a9f0f3d4011d88dd0b6cc04563ae233e5">get_potentiel_toucher_magique</a> ($comp_assoc)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul et renvoie le potentiel toucher magique.  <a href="#a9f0f3d4011d88dd0b6cc04563ae233e5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a07d9473fe4dfd2a7943bc3d2cdf3fb79">get_reserve</a> ($base=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la réserve de mana.  <a href="#a07d9473fe4dfd2a7943bc3d2cdf3fb79"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#addfd5983cd179c29dfb120a0e0d76040">get_rm_restant</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie la réserve de mana.  <a href="#addfd5983cd179c29dfb120a0e0d76040"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#aa18e1b1e4fa26beec8a9dd79187ce5b5">init_round</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialise l'objet pour un nouveau round de <a class="el" href="classcombat.html">combat</a>.  <a href="#aa18e1b1e4fa26beec8a9dd79187ce5b5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a7165b9a3f9c51e76e507e3d13447806a">mult_potentiel_toucher_magique</a> ($valeur)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique en le multipliant.  <a href="#a7165b9a3f9c51e76e507e3d13447806a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a63a5305a4819f39fb4b47301fbfb8e86">peut_attaquer</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indique si l'entité peut attaquer.  <a href="#a63a5305a4819f39fb4b47301fbfb8e86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentite.html#a0fa0f72426b9c48014c88690c92452fc">set_comp_att</a> ($valeur)</td></tr>
@@ -833,6 +839,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_aca75a951cd404b2e2109e73f4987542f_icgraph.png" border="0" usemap="#classentite_aca75a951cd404b2e2109e73f4987542f_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -978,6 +985,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph.png" border="0" usemap="#classentite_aed45d22bb625cd6260cbd735c62b8ae6_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1381,7 +1389,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph.png" border="0" usemap="#classentite_a4c75ba7841bb4a398b664d762e7c710a_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1536,6 +1543,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_a0b9f4554a0735f3f04f47bf8a25f6d1b_icgraph.png" border="0" usemap="#classentite_a0b9f4554a0735f3f04f47bf8a25f6d1b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1587,6 +1595,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_a996e5143659e5f4add73d86183b0c48b_icgraph.png" border="0" usemap="#classentite_a996e5143659e5f4add73d86183b0c48b_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1633,6 +1642,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_a6825d31b3108c9bcd58aa76c043712f7_icgraph.png" border="0" usemap="#classentite_a6825d31b3108c9bcd58aa76c043712f7_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1792,6 +1802,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_ab34c8ec50cc6373d5c46fdbfc0b3ce90_icgraph.png" border="0" usemap="#classentite_ab34c8ec50cc6373d5c46fdbfc0b3ce90_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -1982,6 +1993,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_adf515065d5ea697ddc5069963114a95c_cgraph.png" border="0" usemap="#classentite_adf515065d5ea697ddc5069963114a95c_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2014,6 +2026,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_ad9aaad3721b1ddc161f9b6cb9489ca2e_cgraph.png" border="0" usemap="#classentite_ad9aaad3721b1ddc161f9b6cb9489ca2e_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2039,8 +2052,35 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_a3250a12c51b795318448670b16fff47d_cgraph.png" border="0" usemap="#classentite_a3250a12c51b795318448670b16fff47d_cgraph_map" alt=""></div>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f0f3d4011d88dd0b6cc04563ae233e5"></a><!-- doxytag: member="entite::get_potentiel_toucher_magique" ref="a9f0f3d4011d88dd0b6cc04563ae233e5" args="($comp_assoc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::get_potentiel_toucher_magique </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>comp_assoc</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calcul et renvoie le potentiel toucher magique. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$comp_assoc</em>&nbsp;</td><td>Coméptence associé au <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2109,6 +2149,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_a1a12fcd2dbb967f145f1a33f09fd9971_icgraph.png" border="0" usemap="#classentite_a1a12fcd2dbb967f145f1a33f09fd9971_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2399,6 +2440,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_ab4c56b24d587a328484e76ff4e7be089_icgraph.png" border="0" usemap="#classentite_ab4c56b24d587a328484e76ff4e7be089_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2493,6 +2535,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentite_a225099bd3284b916049d8b8588f95399_icgraph.png" border="0" usemap="#classentite_a225099bd3284b916049d8b8588f95399_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -2594,6 +2637,32 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="memdoc">
 
 <p>Mise-à-jour des compétences à partir de l'objet. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7165b9a3f9c51e76e507e3d13447806a"></a><!-- doxytag: member="entite::mult_potentiel_toucher_magique" ref="a7165b9a3f9c51e76e507e3d13447806a" args="($valeur)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::mult_potentiel_toucher_magique </td>
+          <td>(</td>
+          <td class="paramtype">$&nbsp;</td>
+          <td class="paramname"> <em>valeur</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modifie le potentiel toucher magique en le multipliant. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$comp_assoc</em>&nbsp;</td><td>Coméptence associé au <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -3548,6 +3617,21 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 </div>
 </div>
+<a class="anchor" id="ad3968b2fb27b9c4f2d3f7a7d00afc207"></a><!-- doxytag: member="entite::$potentiel_toucher_magique" ref="ad3968b2fb27b9c4f2d3f7a7d00afc207" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">entite::$potentiel_toucher_magique<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Potentiel toucher magique. </p>
+
+</div>
+</div>
 <a class="anchor" id="afb5b99f24c61ec190d6d2e9db4c99386"></a><!-- doxytag: member="entite::$pp" ref="afb5b99f24c61ec190d6d2e9db4c99386" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -3747,7 +3831,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="entite_8class_8php.html">entite.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:37 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:36 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

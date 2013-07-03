@@ -35,10 +35,12 @@
 <div class="dynheader">
 Graphe d'héritage de comp_combat_etat:</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__combat__etat__inherit__graph.png" border="0" usemap="#comp__combat__etat_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de comp_combat_etat:</div>
 <div class="dynsection">
+<div class="center"><img src="classcomp__combat__etat__coll__graph.png" border="0" usemap="#comp__combat__etat_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classcomp__combat__etat-members.html">Liste de tous les membres</a></p>
@@ -46,8 +48,8 @@ Graphe de collaboration de comp_combat_etat:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etat.html#ac99e205e3e00a218ce3275e868ced0ad">__construct</a> ($tbl, $msg=null, $<a class="el" href="classetat.html">etat</a>=null, $duree=null, $effet=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#ac99e205e3e00a218ce3275e868ced0ad"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etat.html#a861d0dfbaa1915d4925565a32a409efb">lance</a> (&amp;$actif, &amp;$passif, &amp;$effets)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation d'une compétence.  <a href="#a861d0dfbaa1915d4925565a32a409efb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etat.html#a449079774da1a99e459be4ee2cda2df4">lance</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode gérant l'utilisation d'une compétence.  <a href="#a449079774da1a99e459be4ee2cda2df4"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs protégés</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcomp__combat__etat.html#a0cd0d64ee70f6431c160f747883172fc">$message</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">État à ajouter si le <a class="el" href="classsort.html" title="Classe sort Classe sort servant de base aux sorts de combat et hors combat.">sort</a> touche.  <a href="#a0cd0d64ee70f6431c160f747883172fc"></a><br/></td></tr>
@@ -121,7 +123,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a861d0dfbaa1915d4925565a32a409efb"></a><!-- doxytag: member="comp_combat_etat::lance" ref="a861d0dfbaa1915d4925565a32a409efb" args="(&amp;$actif, &amp;$passif, &amp;$effets)" -->
+<a class="anchor" id="a449079774da1a99e459be4ee2cda2df4"></a><!-- doxytag: member="comp_combat_etat::lance" ref="a449079774da1a99e459be4ee2cda2df4" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -129,24 +131,9 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">comp_combat_etat::lance </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>effets</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -154,9 +141,9 @@ Voici le graphe d'appel pour cette fonction :</div>
 
 <p>Méthode gérant l'utilisation d'une compétence. </p>
 
-<p>Réimplémentée à partir de <a class="el" href="classcomp__combat__degat__etat.html#a25665c89dc7108a5f20900a3020ff9e9">comp_combat_degat_etat</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classcomp__combat__degat__etat.html#a1625ba5f4be3057b87abf1cac268755e">comp_combat_degat_etat</a>.</p>
 
-<p>Réimplémentée dans <a class="el" href="classcomp__combat__dissim.html#aceef5f266646ff2e56b9a7d0f4e47989">comp_combat_dissim</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classcomp__combat__dissim.html#afb59de3d9b4543fcac4d0926ed64189e">comp_combat_dissim</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -186,7 +173,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="comp__combat_8class_8php.html">comp_combat.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:26 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:23 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

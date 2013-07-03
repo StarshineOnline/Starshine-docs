@@ -44,10 +44,10 @@ Graphe de collaboration de pierre_precision:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpierre__precision.html#a7db397c481a0a9502d3182baec15e31d">__construct</a> ($aEffet, $aNom)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpierre__precision.html#a71d3f52862a83fad3f8adbd224456f8c">calcul_attaque_magique</a> (&amp;$actif, &amp;$passif, $potentiel)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#a71d3f52862a83fad3f8adbd224456f8c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpierre__precision.html#a70d7be13ad5330e1b6a799c7391027db">calcul_attaque_physique</a> (&amp;$actif, &amp;$passif, $potentiel)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#a70d7be13ad5330e1b6a799c7391027db"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpierre__precision.html#a1efc019914842807f88e653f455507c8">calcul_attaque_magique</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#a1efc019914842807f88e653f455507c8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpierre__precision.html#a3392d2eb8e83b2eb7e1c8f583116b7b7">calcul_attaque_physique</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#a3392d2eb8e83b2eb7e1c8f583116b7b7"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpierre__precision.html#aca3304e92f93676abc0be83dc372d7cb">$effet</a></td></tr>
 </table>
@@ -80,7 +80,7 @@ Graphe de collaboration de pierre_precision:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a71d3f52862a83fad3f8adbd224456f8c"></a><!-- doxytag: member="pierre_precision::calcul_attaque_magique" ref="a71d3f52862a83fad3f8adbd224456f8c" args="(&amp;$actif, &amp;$passif, $potentiel)" -->
+<a class="anchor" id="a1efc019914842807f88e653f455507c8"></a><!-- doxytag: member="pierre_precision::calcul_attaque_magique" ref="a1efc019914842807f88e653f455507c8" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -88,24 +88,9 @@ Graphe de collaboration de pierre_precision:</div>
           <td class="memname">pierre_precision::calcul_attaque_magique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>att</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -122,18 +107,17 @@ Graphe de collaboration de pierre_precision:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel toucher après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#afbfa14e62cda95021f732d736cc6fbeb">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a75d41e6b5aca81fd355675cdb44a9b17">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classpierre__precision_a71d3f52862a83fad3f8adbd224456f8c_cgraph.png" border="0" usemap="#classpierre__precision_a71d3f52862a83fad3f8adbd224456f8c_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a70d7be13ad5330e1b6a799c7391027db"></a><!-- doxytag: member="pierre_precision::calcul_attaque_physique" ref="a70d7be13ad5330e1b6a799c7391027db" args="(&amp;$actif, &amp;$passif, $potentiel)" -->
+<a class="anchor" id="a3392d2eb8e83b2eb7e1c8f583116b7b7"></a><!-- doxytag: member="pierre_precision::calcul_attaque_physique" ref="a3392d2eb8e83b2eb7e1c8f583116b7b7" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -141,24 +125,9 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">pierre_precision::calcul_attaque_physique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>att</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -175,12 +144,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel toucher après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a9efcd30034830b43d47209fcd0ba5625">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#acc16ea53fc72251c89fbf511ba9f0b84">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classpierre__precision_a70d7be13ad5330e1b6a799c7391027db_cgraph.png" border="0" usemap="#classpierre__precision_a70d7be13ad5330e1b6a799c7391027db_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -204,7 +172,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:59 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:59:00 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

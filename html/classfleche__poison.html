@@ -44,11 +44,12 @@ Graphe de collaboration de fleche_poison:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#ad7168de65b65c2564fd558d486bec221">__construct</a> ($aEffet, $aEffet2, $aDuree=5)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#a76478216e4eb90c3051c7ba48bbb788a">calcul_arme</a> (&amp;$actif, &amp;$passif, $<a class="el" href="classarme.html">arme</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le facteur de dégâts de l'arme.  <a href="#a76478216e4eb90c3051c7ba48bbb788a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#aa268d3331a123d871170899452a8ef90">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#ad0c01ef2b8d32af6595eadd8780a1274">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#ad0c01ef2b8d32af6595eadd8780a1274"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#a66cb1d69b88663ea817039d826192c4d">calcul_arme</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le facteur de dégâts de l'arme.  <a href="#a66cb1d69b88663ea817039d826192c4d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#aa2f5562b8ca403397b2c8de663b481eb">fin_round</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#aa2f5562b8ca403397b2c8de663b481eb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#ade54020f21fb0e032acb29814df59a7d">inflige_degats</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#ade54020f21fb0e032acb29814df59a7d"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfleche__poison.html#abda6e171a3fc5f88dbffc56234a0fea1">$poison</a></td></tr>
 </table>
@@ -89,7 +90,7 @@ Graphe de collaboration de fleche_poison:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a76478216e4eb90c3051c7ba48bbb788a"></a><!-- doxytag: member="fleche_poison::calcul_arme" ref="a76478216e4eb90c3051c7ba48bbb788a" args="(&amp;$actif, &amp;$passif, $arme)" -->
+<a class="anchor" id="a66cb1d69b88663ea817039d826192c4d"></a><!-- doxytag: member="fleche_poison::calcul_arme" ref="a66cb1d69b88663ea817039d826192c4d" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -97,24 +98,9 @@ Graphe de collaboration de fleche_poison:</div>
           <td class="memname">fleche_poison::calcul_arme </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>arme</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -131,18 +117,17 @@ Graphe de collaboration de fleche_poison:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Facteur de dégâts après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a3cb7f9caa0cb892aa871e3ac228f3d7f">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#abf16b7c744ff62dbe4d834430b54c0d1">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classfleche__poison_a76478216e4eb90c3051c7ba48bbb788a_cgraph.png" border="0" usemap="#classfleche__poison_a76478216e4eb90c3051c7ba48bbb788a_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa268d3331a123d871170899452a8ef90"></a><!-- doxytag: member="fleche_poison::fin_round" ref="aa268d3331a123d871170899452a8ef90" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="aa2f5562b8ca403397b2c8de663b481eb"></a><!-- doxytag: member="fleche_poison::fin_round" ref="aa2f5562b8ca403397b2c8de663b481eb" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -150,33 +135,35 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">fleche_poison::fin_round </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Action a effectuer en fin de round. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a232772b01018ceecab5a839cdc23a8ac">effect</a>.</p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classfleche__poison_aa268d3331a123d871170899452a8ef90_cgraph.png" border="0" usemap="#classfleche__poison_aa268d3331a123d871170899452a8ef90_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad0c01ef2b8d32af6595eadd8780a1274"></a><!-- doxytag: member="fleche_poison::inflige_degats" ref="ad0c01ef2b8d32af6595eadd8780a1274" args="(&amp;$actif, &amp;$passif, $degats)" -->
+<a class="anchor" id="ade54020f21fb0e032acb29814df59a7d"></a><!-- doxytag: member="fleche_poison::inflige_degats" ref="ade54020f21fb0e032acb29814df59a7d" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -184,24 +171,9 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">fleche_poison::inflige_degats </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>degats</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -217,12 +189,11 @@ Voici le graphe d'appel pour cette fonction :</div>
   </dd>
 </dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#ab6256cf28dfab34967d52788b29ff6a1">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classfleche__poison_ad0c01ef2b8d32af6595eadd8780a1274_cgraph.png" border="0" usemap="#classfleche__poison_ad0c01ef2b8d32af6595eadd8780a1274_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -246,7 +217,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="competence_8class_8php.html">competence.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:40 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:40 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

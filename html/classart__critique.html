@@ -45,9 +45,10 @@ Graphe de collaboration de art_critique:</div>
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#afc9e86b5cf30ac1ac1852b4328eb846a">__construct</a> ($aPrintUp=false)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#afc9e86b5cf30ac1ac1852b4328eb846a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#af48f757a707fdf2b973b7ea003fe01bf">calcul_mult_critique</a> (&amp;$actif, &amp;$passif, $mult)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le multiplicateur de dégâts en cas ce coup critique.  <a href="#af48f757a707fdf2b973b7ea003fe01bf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#a5c053fdffbe1e4a74ef6fc4a1f4c88f6">fin_round</a> (&amp;$actif, &amp;$passif)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#ab3f08cad530e701cc3d09667464c9db9">calcul_mult_critique</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le multiplicateur de dégâts en cas ce coup critique.  <a href="#ab3f08cad530e701cc3d09667464c9db9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#a9b5b80795748831bac06c4224ce5c979">fin_round</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Action a effectuer en fin de round.  <a href="#a9b5b80795748831bac06c4224ce5c979"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Attributs publics</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classart__critique.html#a63ec2787d244ac98236c50330919a336">$critique</a></td></tr>
 </table>
@@ -81,7 +82,7 @@ Graphe de collaboration de art_critique:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="af48f757a707fdf2b973b7ea003fe01bf"></a><!-- doxytag: member="art_critique::calcul_mult_critique" ref="af48f757a707fdf2b973b7ea003fe01bf" args="(&amp;$actif, &amp;$passif, $mult)" -->
+<a class="anchor" id="ab3f08cad530e701cc3d09667464c9db9"></a><!-- doxytag: member="art_critique::calcul_mult_critique" ref="ab3f08cad530e701cc3d09667464c9db9" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -89,24 +90,9 @@ Graphe de collaboration de art_critique:</div>
           <td class="memname">art_critique::calcul_mult_critique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>mult</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -123,11 +109,11 @@ Graphe de collaboration de art_critique:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Multiplicateur de dégâts après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#ab2fa97e104853c3a3ee47a6f1f164d99">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a6181b43887c6af25a8b72ef3229acc5d">effect</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5c053fdffbe1e4a74ef6fc4a1f4c88f6"></a><!-- doxytag: member="art_critique::fin_round" ref="a5c053fdffbe1e4a74ef6fc4a1f4c88f6" args="(&amp;$actif, &amp;$passif)" -->
+<a class="anchor" id="a9b5b80795748831bac06c4224ce5c979"></a><!-- doxytag: member="art_critique::fin_round" ref="a9b5b80795748831bac06c4224ce5c979" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -135,27 +121,29 @@ Graphe de collaboration de art_critique:</div>
           <td class="memname">art_critique::fin_round </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Action a effectuer en fin de round. </p>
+<dl><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>$mode</em>&nbsp;</td><td>Connaitre le mode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a232772b01018ceecab5a839cdc23a8ac">effect</a>.</p>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classart__critique_a5c053fdffbe1e4a74ef6fc4a1f4c88f6_cgraph.png" border="0" usemap="#classart__critique_a5c053fdffbe1e4a74ef6fc4a1f4c88f6_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -179,7 +167,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="competence_8class_8php.html">competence.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:18 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:15 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -45,7 +45,7 @@
   <tr class="memlist"><td><a class="el" href="classentitenj__constr.html#a10bb4be28418c0f51a831a8d1b06d990">$type</a></td><td><a class="el" href="classentitenj__constr.html">entitenj_constr</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classplacable.html#a8348f67076e5973e9de93feb4e2d9c08">$x</a></td><td><a class="el" href="classplacable.html">placable</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classplacable.html#ac0d7e1edd92b2320fc3ec77f96d66241">$y</a></td><td><a class="el" href="classplacable.html">placable</a></td><td><code> [protected]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="classconstruction.html#a873cf45957d98d210a8c4d90c87c2a91">__construct</a>($id=0, $id_batiment=0, $x=0, $y=0, $royaume=0, $hp=0, $nom= '', $type= '', $rez= '', $rechargement= '', $image= '', $date_construction= '', $point_victoire= '')</td><td><a class="el" href="classconstruction.html">construction</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classconstruction.html#a6a65d28d9c81154dfc4113b62dc23ff7">__construct</a>($id=0, $id_batiment=0, $x=0, $y=0, $royaume=0, $hp=0, $nom= '', $type= '', $rez=0, $rechargement=0, $image= '', $date_construction=0, $point_victoire=0)</td><td><a class="el" href="classconstruction.html">construction</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentitenj__constr.html#a9d1bd2c186b424ecce84ab2b5839c46b">entitenj_constr::__construct</a>($id=0, $id_batiment=0, $x=0, $y=0, $royaume=0, $hp=0, $nom= '', $type= '', $rez=0, $point_victoire=0)</td><td><a class="el" href="classentitenj__constr.html">entitenj_constr</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentnj__incarn.html#a44064f33cf4c013e4d01c5ca71939e28">entnj_incarn::__construct</a>($nom= '', $x=0, $y=0, $hp=0, $id=-1)</td><td><a class="el" href="classentnj__incarn.html">entnj_incarn</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classplacable.html#a304750356b70a7108f80b4e0764fe211">placable::__construct</a>($nom= '', $x=0, $y=0, $id=-1)</td><td><a class="el" href="classplacable.html">placable</a></td><td></td></tr>
@@ -64,7 +64,7 @@
   <tr class="memlist"><td><a class="el" href="classtable.html#a9cc0113a3d97b3971c1fcdff587c67c1">get_champ</a>($champ)</td><td><a class="el" href="classtable.html">table</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#aa50c0dadb81888ec73272f13b75142fc">get_champ_id</a>()</td><td><a class="el" href="classtable.html">table</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classentnj__incarn.html#aa5ae9e722387c180199eb4f8c10d01d6">get_coeff_carac</a>()</td><td><a class="el" href="classentnj__incarn.html">entnj_incarn</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classentnj__incarn.html#ae3dea9204fb45b14531d0cbf1134b600">get_coeff_comp</a>($perso)</td><td><a class="el" href="classentnj__incarn.html">entnj_incarn</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classentnj__incarn.html#ae74c81f77d5a30f955582a5bb283f5a6">get_coeff_comp</a>(&amp;$perso, &amp;$def)</td><td><a class="el" href="classentnj__incarn.html">entnj_incarn</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentitenj__constr.html#a9a2981b6b58b00f73fd30d30e6ba1ddd">get_construction_buff</a>($id)</td><td><a class="el" href="classentitenj__constr.html">entitenj_constr</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classconstruction.html#a9e32dc052e16717ff76337aaad7c0def">get_cout_attaque</a>(&amp;$perso, $cible=null)</td><td><a class="el" href="classconstruction.html">construction</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classentitenj__constr.html#abf230a75dad454cbc556c12fde92ccd0">get_cout_attaque_base</a>(&amp;$perso)</td><td><a class="el" href="classentitenj__constr.html">entitenj_constr</a></td><td></td></tr>
@@ -111,7 +111,7 @@
   <tr class="memlist"><td><a class="el" href="classplacable.html#ad90e2ca599a913dd7bc50a19cf7f7a88">set_y</a>($y)</td><td><a class="el" href="classplacable.html">placable</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classtable.html#abcbadd7a797d5f97ad937506e7884b1a">supprimer</a>()</td><td><a class="el" href="classtable.html">table</a></td><td></td></tr>
 </table></div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:31 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:29 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

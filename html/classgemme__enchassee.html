@@ -46,13 +46,9 @@ Graphe de collaboration de gemme_enchassee:</div>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a24394ccc62b8642e1dc97610097c2100">__construct</a> ($aNom)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur.  <a href="#a24394ccc62b8642e1dc97610097c2100"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a3075289d64883083e79fcb577bb10005">applique_bloquage</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués) Ceci se fait apres l'affichage du blocage, donc si les degats sont modifies, la modification ne sera pas imputee au bouclier lui-meme.  <a href="#a3075289d64883083e79fcb577bb10005"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#ae28469065f103669deef5cb6d2599cbd">calcul_bloquage</a> (&amp;$actif, &amp;$passif)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Effectue les modifications concernant le blocage (potentiel blocage, maitrise du bouclier).  <a href="#ae28469065f103669deef5cb6d2599cbd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a337d253e84ac75fa9a533832feb63151">calcul_mp</a> (&amp;$actif, $mp)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcul du mana requis.  <a href="#a337d253e84ac75fa9a533832feb63151"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#a406b1cbd878545179cf69caf23474550">inflige_degats</a> (&amp;$actif, &amp;$passif, $degats)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Applique les effets ayant lieu lorsque les dégâts ont lieu.  <a href="#a406b1cbd878545179cf69caf23474550"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#aff51a43589766dc43b8cce330f7081e1">init</a> ($aReq)</td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgemme__enchassee.html#ab3ef89d2a8aade379226eca3644328ef">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
@@ -132,20 +128,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Modifie les dégâts lorsque le coup est bloqué (en plus des dégâts bloqués) Ceci se fait apres l'affichage du blocage, donc si les degats sont modifies, la modification ne sera pas imputee au bouclier lui-meme. </p>
-<p>Il y a peu de raisons de modifier les degats a ce niveau.</p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés avant modification.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>Dégâts infligés après modification. </dd></dl>
-
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a0ce31601ca3b9a4dc1cd3c874fa87bc7">effect</a>.</p>
-
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
@@ -180,17 +162,6 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div>
 <div class="memdoc">
 
-<p>Effectue les modifications concernant le blocage (potentiel blocage, maitrise du bouclier). </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#ab9bb1a0cc66823062995c0bce19a1aab">effect</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a337d253e84ac75fa9a533832feb63151"></a><!-- doxytag: member="gemme_enchassee::calcul_mp" ref="a337d253e84ac75fa9a533832feb63151" args="(&amp;$actif, $mp)" -->
@@ -217,18 +188,6 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Calcul du mana requis. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$mp</em>&nbsp;</td><td>MP requis</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>MP requis </dd></dl>
-
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#aa870f4930d597671c2b63bea973af99f">effect</a>.</p>
 
 </div>
 </div>
@@ -306,18 +265,6 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Applique les effets ayant lieu lorsque les dégâts ont lieu. </p>
-<dl><dt><b>Paramètres:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>$actif</em>&nbsp;</td><td>Personnage actif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$passif</em>&nbsp;</td><td>Personnage passif lors de l'action. </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>$degats</em>&nbsp;</td><td>Dégâts infligés. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a6066d3efba0d40d45b81e0f8239ecf4e">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -423,7 +370,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="gemmes_8class_8php.html">gemmes.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:40 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:41 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

@@ -32,21 +32,12 @@
 <h1>Référence du fichier interface.php</h1><table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#adc5bfc941d40883a35083b4167529fec">$_SESSION</a> ['position'] = convert_in_pos($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#ab3d34ca762ace01b99eca4298053d9b7">$arene</a> = $<a class="el" href="classjoueur.html">joueur</a>-&gt;in_arene()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = convert_in_pos($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#aa720998827fe9e92a5fe573a62edc0b8">$connexion</a> = true</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#a6a598773e35ce39dbde3e34ec448a462">$interface_v2</a> = true</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#a36fae1c9b05198f0e26e1c22d4f2d2c6">$page_info</a> = 'informationcase.php'</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#a78db1a0602e3b6ac1d9a1b5ec103c160">$time</a> = time()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&lt;/div &gt;&lt; divid='communaute_menu'style='display:none;'&gt;<br class="typebreak"/>
-&lt; spanclass='menu'&gt;&lt; ahref=&quot;http:<br class="typebreak"/>
-&lt;/div&gt;&lt;divid='menu_deco'&gt; <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> <br class="typebreak"/>
-((array_key_exists('nbr_perso', <br class="typebreak"/>
-$_SESSION)&amp;&amp;$_SESSION['nbr_perso'] &gt;<br class="typebreak"/>
- 1) OR(array_key_exists('droits', <br class="typebreak"/>
-$_SESSION)&amp;&amp;($_SESSION['droits']&amp;<a class="el" href="classjoueur.html#a35790f975ca7c079c24a942518993291">joueur::droit_pnj</a>))) <br class="typebreak"/>
-<a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), <br class="typebreak"/>
-$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#a66e51ccc8c24dd75829d692845d7d7a4">else</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), <br class="typebreak"/>
+$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8php.html#a9a85b93b6a4b279e6bcbc5b3f65b0628">else</a></td></tr>
 </table>
 <hr/><h2>Documentation des variables</h2>
 <a class="anchor" id="adc5bfc941d40883a35083b4167529fec"></a><!-- doxytag: member="interface.php::$_SESSION" ref="adc5bfc941d40883a35083b4167529fec" args="['position']" -->
@@ -55,19 +46,6 @@ $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()))&nbsp;</td><td cl
       <table class="memname">
         <tr>
           <td class="memname">$_SESSION['position'] = convert_in_pos($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab3d34ca762ace01b99eca4298053d9b7"></a><!-- doxytag: member="interface.php::$arene" ref="ab3d34ca762ace01b99eca4298053d9b7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$<a class="el" href="classarene.html">arene</a> = $<a class="el" href="classjoueur.html">joueur</a>-&gt;in_arene()</td>
         </tr>
       </table>
 </div>
@@ -127,25 +105,12 @@ $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()))&nbsp;</td><td cl
 
 </div>
 </div>
-<a class="anchor" id="a78db1a0602e3b6ac1d9a1b5ec103c160"></a><!-- doxytag: member="interface.php::$time" ref="a78db1a0602e3b6ac1d9a1b5ec103c160" args="" -->
+<a class="anchor" id="a9a85b93b6a4b279e6bcbc5b3f65b0628"></a><!-- doxytag: member="interface.php::else" ref="a9a85b93b6a4b279e6bcbc5b3f65b0628" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$time = time()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a66e51ccc8c24dd75829d692845d7d7a4"></a><!-- doxytag: member="interface.php::else" ref="a66e51ccc8c24dd75829d692845d7d7a4" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">&lt;/div&gt;&lt;divid='communaute_menu'style='display:none;'&gt;&lt;spanclass='menu'&gt;&lt;ahref=&quot;http:&lt;/div&gt;&lt;divid='menu_deco'&gt; <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ((array_key_exists('nbr_perso', $_SESSION)&amp;&amp;$_SESSION['nbr_perso'] &gt; 1) OR(array_key_exists('droits', $_SESSION)&amp;&amp;($_SESSION['droits']&amp;<a class="el" href="classjoueur.html#a35790f975ca7c079c24a942518993291">joueur::droit_pnj</a>))) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a></td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (is_donjon($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())) <a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a></td>
         </tr>
       </table>
 </div>
@@ -154,7 +119,7 @@ $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y()))&nbsp;</td><td cl
 </div>
 </div>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:11 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:07 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

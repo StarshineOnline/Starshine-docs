@@ -47,10 +47,10 @@ Graphe de collaboration de toucher_humainnoir:</div>
 <table border="0" cellpadding="0" cellspacing="0">
 <tr><td colspan="2"><h2>Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoucher__humainnoir.html#a292d9ea0a7ef097e128505e614ed5618">__construct</a> ($aPhy, $aMag)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoucher__humainnoir.html#a998872a4cf2102308effe2479fe8b341">calcul_attaque_magique</a> (&amp;$actif, &amp;$passif, $att)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#a998872a4cf2102308effe2479fe8b341"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoucher__humainnoir.html#ad3523236b350b8229d459c58956e1d3f">calcul_attaque_physique</a> (&amp;$actif, &amp;$passif, $att)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#ad3523236b350b8229d459c58956e1d3f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoucher__humainnoir.html#af0756c2cdf1575e9cbe0b899863e71ae">calcul_attaque_magique</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher magique.  <a href="#af0756c2cdf1575e9cbe0b899863e71ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoucher__humainnoir.html#a1ad4b04aceea92e2aab9fcb40145e8f6">calcul_attaque_physique</a> (&amp;$<a class="el" href="classattaque.html">attaque</a>)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifie le potentiel toucher physique.  <a href="#a1ad4b04aceea92e2aab9fcb40145e8f6"></a><br/></td></tr>
 <tr><td colspan="2"><h2>Fonctions membres publiques statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtoucher__humainnoir.html#a0ba87e10f5c5b5448d51b77cde30d5f4">factory</a> (&amp;$effects, &amp;$actif, &amp;$passif, $acteur= '')</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Crée l'effet.  <a href="#a0ba87e10f5c5b5448d51b77cde30d5f4"></a><br/></td></tr>
@@ -91,7 +91,7 @@ Graphe de collaboration de toucher_humainnoir:</div>
 </div>
 </div>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a998872a4cf2102308effe2479fe8b341"></a><!-- doxytag: member="toucher_humainnoir::calcul_attaque_magique" ref="a998872a4cf2102308effe2479fe8b341" args="(&amp;$actif, &amp;$passif, $att)" -->
+<a class="anchor" id="af0756c2cdf1575e9cbe0b899863e71ae"></a><!-- doxytag: member="toucher_humainnoir::calcul_attaque_magique" ref="af0756c2cdf1575e9cbe0b899863e71ae" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -99,24 +99,9 @@ Graphe de collaboration de toucher_humainnoir:</div>
           <td class="memname">toucher_humainnoir::calcul_attaque_magique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>att</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -133,18 +118,17 @@ Graphe de collaboration de toucher_humainnoir:</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel toucher après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#afbfa14e62cda95021f732d736cc6fbeb">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a75d41e6b5aca81fd355675cdb44a9b17">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classtoucher__humainnoir_a998872a4cf2102308effe2479fe8b341_cgraph.png" border="0" usemap="#classtoucher__humainnoir_a998872a4cf2102308effe2479fe8b341_cgraph_map" alt=""></div>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad3523236b350b8229d459c58956e1d3f"></a><!-- doxytag: member="toucher_humainnoir::calcul_attaque_physique" ref="ad3523236b350b8229d459c58956e1d3f" args="(&amp;$actif, &amp;$passif, $att)" -->
+<a class="anchor" id="a1ad4b04aceea92e2aab9fcb40145e8f6"></a><!-- doxytag: member="toucher_humainnoir::calcul_attaque_physique" ref="a1ad4b04aceea92e2aab9fcb40145e8f6" args="(&amp;$attaque)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -152,24 +136,9 @@ Voici le graphe d'appel pour cette fonction :</div>
           <td class="memname">toucher_humainnoir::calcul_attaque_physique </td>
           <td>(</td>
           <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>actif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"> <em>attaque</em></td>
+          <td>&nbsp;)&nbsp;</td>
           <td></td>
-          <td class="paramtype">&amp;$&nbsp;</td>
-          <td class="paramname"> <em>passif</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>att</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -186,12 +155,11 @@ Voici le graphe d'appel pour cette fonction :</div>
 </dl>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>Potentiel toucher après modification. </dd></dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classeffect.html#a9efcd30034830b43d47209fcd0ba5625">effect</a>.</p>
+<p>Réimplémentée à partir de <a class="el" href="classeffect.html#acc16ea53fc72251c89fbf511ba9f0b84">effect</a>.</p>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
-<div class="center"><img src="classtoucher__humainnoir_ad3523236b350b8229d459c58956e1d3f_cgraph.png" border="0" usemap="#classtoucher__humainnoir_ad3523236b350b8229d459c58956e1d3f_cgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -287,7 +255,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="effect_8class_8php.html">effect.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:22:13 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:59:26 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>

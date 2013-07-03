@@ -35,10 +35,12 @@
 <div class="dynheader">
 Graphe d'héritage de entnj_incarn:</div>
 <div class="dynsection">
+<div class="center"><img src="classentnj__incarn__inherit__graph.png" border="0" usemap="#entnj__incarn_inherit__map" alt="Inheritance graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 <div class="dynheader">
 Graphe de collaboration de entnj_incarn:</div>
 <div class="dynsection">
+<div class="center"><img src="classentnj__incarn__coll__graph.png" border="0" usemap="#entnj__incarn_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">légende</a>]</span></center></div>
 
 <p><a href="classentnj__incarn-members.html">Liste de tous les membres</a></p>
@@ -60,8 +62,8 @@ Graphe de collaboration de entnj_incarn:</div>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie l'ensemble des buffs / débuffs actif sur le bâtiment.  <a href="#a4eb58631cc73619bf24c40863fee152d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#aa5ae9e722387c180199eb4f8c10d01d6">get_coeff_carac</a> ()</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coefficient pour modifier les caractéristique.  <a href="#aa5ae9e722387c180199eb4f8c10d01d6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#ae3dea9204fb45b14531d0cbf1134b600">get_coeff_comp</a> ($<a class="el" href="classperso.html">perso</a>)</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coefficient pour modifier les compétences.  <a href="#ae3dea9204fb45b14531d0cbf1134b600"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#ae74c81f77d5a30f955582a5bb283f5a6">get_coeff_comp</a> (&amp;$<a class="el" href="classperso.html">perso</a>, &amp;$def)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coefficient pour modifier les compétences.  <a href="#ae74c81f77d5a30f955582a5bb283f5a6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#a973f2364697bee877c005747f7d4bcb7">get_cout_attaque</a> (&amp;$<a class="el" href="classperso.html">perso</a>, $cible=null)</td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Renvoie le coût en PA de l'attaque.  <a href="#a973f2364697bee877c005747f7d4bcb7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentnj__incarn.html#abb192765d5f9a73ceb38a2503c018766">get_cout_attaque_base</a> (&amp;$<a class="el" href="classperso.html">perso</a>)</td></tr>
@@ -384,17 +386,26 @@ Graphe de collaboration de entnj_incarn:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae3dea9204fb45b14531d0cbf1134b600"></a><!-- doxytag: member="entnj_incarn::get_coeff_comp" ref="ae3dea9204fb45b14531d0cbf1134b600" args="($perso)" -->
+<a class="anchor" id="ae74c81f77d5a30f955582a5bb283f5a6"></a><!-- doxytag: member="entnj_incarn::get_coeff_comp" ref="ae74c81f77d5a30f955582a5bb283f5a6" args="(&amp;$perso, &amp;$def)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">entnj_incarn::get_coeff_comp </td>
           <td>(</td>
-          <td class="paramtype">$&nbsp;</td>
-          <td class="paramname"> <em>perso</em></td>
-          <td>&nbsp;)&nbsp;</td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&amp;$&nbsp;</td>
+          <td class="paramname"> <em>def</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
         </tr>
       </table>
 </div>
@@ -402,7 +413,7 @@ Graphe de collaboration de entnj_incarn:</div>
 
 <p>Renvoie le coefficient pour modifier les compétences. </p>
 
-<p>Réimplémentée dans <a class="el" href="classarme__siege.html#a76fb917b59f914fb6ed9ae87cdee04f5">arme_siege</a>, <a class="el" href="classpet.html#a1a392ac545e8a2b4ba31d52c2a5591c2">pet</a>, et <a class="el" href="classplacement.html#af63fd5879b04fbe98adefcee89691d4b">placement</a>.</p>
+<p>Réimplémentée dans <a class="el" href="classpet.html#a3893dd757eb073b5f1c75a8aaa5616c0">pet</a>, et <a class="el" href="classplacement.html#ab4c5ef50b92e3ec39f51b25f079cb746">placement</a>.</p>
 
 </div>
 </div>
@@ -521,6 +532,7 @@ Graphe de collaboration de entnj_incarn:</div>
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dynsection">
+<div class="center"><img src="classentnj__incarn_a99c52620dc369ed8a64d454f38589766_icgraph.png" border="0" usemap="#classentnj__incarn_a99c52620dc369ed8a64d454f38589766_icgraph_map" alt=""></div>
 </div>
 </p>
 
@@ -744,7 +756,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <li>SSO/Starshine-Online/class/<a class="el" href="entnj__incarn_8class_8php.html">entnj_incarn.class.php</a></li>
 </ul>
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Sun Apr 28 07:21:39 2013 pour Starshine Online par&nbsp;
+<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:37 2013 pour Starshine Online par&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
 </body>
