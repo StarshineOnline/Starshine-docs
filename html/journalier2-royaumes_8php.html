@@ -2,45 +2,75 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Starshine Online: Référence du fichier SSO/Starshine-Online/journalier2-royaumes.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Généré par Doxygen 1.6.1 -->
-<div class="navigation" id="top">
-  <div class="tabs">
-    <ul>
-      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Starshine Online
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
-      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="tabs">
-    <ul>
-      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
-  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_17ec1164fa269827557175e430959292.html">SSO</a></li><li class="navelem"><a class="el" href="dir_cf5c97232cd3bb863c7b9a1462e0dded.html">Starshine-Online</a></li>  </ul>
 </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier journalier2-royaumes.php</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h1>Référence du fichier journalier2-royaumes.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#af1d5ccdee975b8f4d20aaffc5b28557c">$now</a> = time()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#a8d765c75faa6af90622d36d17bc6b5e4">$requete</a> = &quot;select id from <a class="el" href="classroyaume.html">royaume</a> where fin_raz_capitale &gt; 0 and fin_raz_capitale &lt; $now&quot;</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Augmente la dette des batiments inactifs (de la moitie de l'entretien).  <a href="#a8d765c75faa6af90622d36d17bc6b5e4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#a4820d696737bb1b850dbb7bd14c59a90">$roy</a> = royaume::create(null, null, 'id ASC', false, 'id &lt;&gt; 0')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_row($req))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#ae06c8a9e35a513a4a555fbb2a13b43ee">$tableau_race</a> = array()</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stats à mémoriser pour chaque race.  <a href="#ae06c8a9e35a513a4a555fbb2a13b43ee"></a><br/></td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af1d5ccdee975b8f4d20aaffc5b28557c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#af1d5ccdee975b8f4d20aaffc5b28557c">$now</a> = time()</td></tr>
+<tr class="separator:af1d5ccdee975b8f4d20aaffc5b28557c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a7a283ea5dee8af1e2d5a3435bf370"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr class="separator:a63a7a283ea5dee8af1e2d5a3435bf370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d765c75faa6af90622d36d17bc6b5e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#a8d765c75faa6af90622d36d17bc6b5e4">$requete</a> = &quot;select id from <a class="el" href="classroyaume.html">royaume</a> where fin_raz_capitale &gt; 0 and fin_raz_capitale &lt; $now&quot;</td></tr>
+<tr class="memdesc:a8d765c75faa6af90622d36d17bc6b5e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Augmente la dette des batiments inactifs (de la moitie de l'entretien)  <a href="#a8d765c75faa6af90622d36d17bc6b5e4">Plus de détails...</a><br/></td></tr>
+<tr class="separator:a8d765c75faa6af90622d36d17bc6b5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4820d696737bb1b850dbb7bd14c59a90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#a4820d696737bb1b850dbb7bd14c59a90">$roy</a> = <a class="el" href="classroyaume.html#a936b372193438a11e204e16b86ac4437">royaume::create</a>(null, null, 'id ASC', false, 'id &lt;&gt; 0')</td></tr>
+<tr class="separator:a4820d696737bb1b850dbb7bd14c59a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06c8a9e35a513a4a555fbb2a13b43ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_row($req))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="journalier2-royaumes_8php.html#ae06c8a9e35a513a4a555fbb2a13b43ee">$tableau_race</a> = array()</td></tr>
+<tr class="memdesc:ae06c8a9e35a513a4a555fbb2a13b43ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stats à mémoriser pour chaque race.  <a href="#ae06c8a9e35a513a4a555fbb2a13b43ee">Plus de détails...</a><br/></td></tr>
+<tr class="separator:ae06c8a9e35a513a4a555fbb2a13b43ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2>Documentation des variables</h2>
-<a class="anchor" id="af1d5ccdee975b8f4d20aaffc5b28557c"></a><!-- doxytag: member="journalier2&#45;royaumes.php::$now" ref="af1d5ccdee975b8f4d20aaffc5b28557c" args="" -->
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="af1d5ccdee975b8f4d20aaffc5b28557c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -48,12 +78,11 @@
           <td class="memname">$now = time()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="journalier2&#45;royaumes.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -61,12 +90,11 @@
           <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a8d765c75faa6af90622d36d17bc6b5e4"></a><!-- doxytag: member="journalier2&#45;royaumes.php::$requete" ref="a8d765c75faa6af90622d36d17bc6b5e4" args="" -->
+<a class="anchor" id="a8d765c75faa6af90622d36d17bc6b5e4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -74,28 +102,26 @@
           <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($royaumes as $<a class="el" href="classroyaume.html">royaume</a>) $requete = &quot;select id from <a class="el" href="classroyaume.html">royaume</a> where fin_raz_capitale &gt; 0 and fin_raz_capitale &lt; $now&quot;</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
-<p>Augmente la dette des batiments inactifs (de la moitie de l'entretien). </p>
+<p>Augmente la dette des batiments inactifs (de la moitie de l'entretien) </p>
 <p>Calcule l'entertien courant des batiments. </p>
 
 </div>
 </div>
-<a class="anchor" id="a4820d696737bb1b850dbb7bd14c59a90"></a><!-- doxytag: member="journalier2&#45;royaumes.php::$roy" ref="a4820d696737bb1b850dbb7bd14c59a90" args="" -->
+<a class="anchor" id="a4820d696737bb1b850dbb7bd14c59a90"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$roy = royaume::create(null, null, 'id ASC', false, 'id &lt;&gt; 0')</td>
+          <td class="memname">$roy = <a class="el" href="classroyaume.html#a936b372193438a11e204e16b86ac4437">royaume::create</a>(null, null, 'id ASC', false, 'id &lt;&gt; 0')</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ae06c8a9e35a513a4a555fbb2a13b43ee"></a><!-- doxytag: member="journalier2&#45;royaumes.php::$tableau_race" ref="ae06c8a9e35a513a4a555fbb2a13b43ee" args="" -->
+<a class="anchor" id="ae06c8a9e35a513a4a555fbb2a13b43ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -103,16 +129,15 @@
           <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_row($req)) $tableau_race = array()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>Stats à mémoriser pour chaque race. </p>
 <p>Tableau bi-dimensionnel, la première clé est la race, la deuxième un indice indexant les stats à conserver : </p>
 <ol>
 <li>
-Population du <a class="el" href="classroyaume.html">royaume</a> </li>
+Population du royaume </li>
 <li>
-Stars du <a class="el" href="classroyaume.html">royaume</a> </li>
+Stars du royaume </li>
 <li>
 Argent gagné par l'hotel de vente </li>
 <li>
@@ -128,7 +153,7 @@ Argent gagné par l'enchanteur </li>
 <li>
 Argent gagné par l'école de magie </li>
 <li>
-Argent gagné par l'école de <a class="el" href="classcombat.html">combat</a> </li>
+Argent gagné par l'école de combat </li>
 <li>
 Argent gagné par la téléportation </li>
 <li>
@@ -175,9 +200,12 @@ Consommation de nouriture théorique </li>
 
 </div>
 </div>
-</div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:08 2013 pour Starshine Online par&nbsp;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 28 Septembre 2014 12:24:04 pour Starshine Online par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

@@ -2,44 +2,75 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Starshine Online: Référence du fichier SSO/Starshine-Online/liste_monstre.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Généré par Doxygen 1.6.1 -->
-<div class="navigation" id="top">
-  <div class="tabs">
-    <ul>
-      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Starshine Online
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
-      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="tabs">
-    <ul>
-      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
-  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_17ec1164fa269827557175e430959292.html">SSO</a></li><li class="navelem"><a class="el" href="dir_cf5c97232cd3bb863c7b9a1462e0dded.html">Starshine-Online</a></li>  </ul>
 </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier liste_monstre.php</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h1>Référence du fichier liste_monstre.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($tab as $key=&gt; $t)&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a670ebdc753c9b7251200aa5920449517">$i</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT lib, <a class="el" href="classterrain.html">terrain</a>, nom, level FROM <a class="el" href="classmonstre.html">monstre</a> WHERE affiche = 'y' AND (<a class="el" href="classterrain.html">terrain</a> = '&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '&quot;.$terrain.&quot;;%' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;;%') ORDER BY level ASC, xp ASC&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#aab50d97eed7abd779caf1f2de48c1c5f">$tab</a> = array('', 'Plaine', 'Forêt', 'Désert', 'Glace', 'Eau', 'Montagne', 'Marais', 'Route', '', '', 'Terre maudite')</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a65007153a2861a4a1f1852090cff35a5">$terrain</a> = 1</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a9430426c726664eef5ce44a701b64238">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a670ebdc753c9b7251200aa5920449517"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a>($tab as $key=&gt; $t)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a670ebdc753c9b7251200aa5920449517">$i</a> = 0</td></tr>
+<tr class="separator:a670ebdc753c9b7251200aa5920449517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a7a283ea5dee8af1e2d5a3435bf370"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
+<tr class="separator:a63a7a283ea5dee8af1e2d5a3435bf370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea21bf4b1af1ebda1b8c63b0e364ce9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT lib, <a class="el" href="classterrain.html">terrain</a>, nom, level FROM <a class="el" href="classmonstre.html">monstre</a> WHERE affiche = 'y' AND (<a class="el" href="classterrain.html">terrain</a> = '&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '&quot;.$terrain.&quot;;%' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;;%') ORDER BY level ASC, xp ASC&quot;</td></tr>
+<tr class="separator:a1ea21bf4b1af1ebda1b8c63b0e364ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab50d97eed7abd779caf1f2de48c1c5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#aab50d97eed7abd779caf1f2de48c1c5f">$tab</a> = array('', 'Plaine', 'Forêt', 'Désert', 'Glace', 'Eau', 'Montagne', 'Marais', 'Route', '', '', 'Terre maudite')</td></tr>
+<tr class="separator:aab50d97eed7abd779caf1f2de48c1c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65007153a2861a4a1f1852090cff35a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a65007153a2861a4a1f1852090cff35a5">$terrain</a> = 1</td></tr>
+<tr class="separator:a65007153a2861a4a1f1852090cff35a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9430426c726664eef5ce44a701b64238"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="liste__monstre_8php.html#a9430426c726664eef5ce44a701b64238">while</a> ($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td></tr>
+<tr class="separator:a9430426c726664eef5ce44a701b64238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2>Documentation des variables</h2>
-<a class="anchor" id="a670ebdc753c9b7251200aa5920449517"></a><!-- doxytag: member="liste_monstre.php::$i" ref="a670ebdc753c9b7251200aa5920449517" args="" -->
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a670ebdc753c9b7251200aa5920449517"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -47,12 +78,11 @@
           <td class="memname"><a class="el" href="vote__roi_8php.html#a3b8abc85b9d71728dc08f1669309d8d4">foreach</a> ($tab as $key=&gt; $t) $i = 0</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="liste_monstre.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -60,12 +90,11 @@
           <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="liste_monstre.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -73,12 +102,11 @@
           <td class="memname">$requete = &quot;SELECT lib, <a class="el" href="classterrain.html">terrain</a>, nom, level FROM <a class="el" href="classmonstre.html">monstre</a> WHERE affiche = 'y' AND (<a class="el" href="classterrain.html">terrain</a> = '&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '&quot;.$terrain.&quot;;%' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;' OR <a class="el" href="classterrain.html">terrain</a> LIKE '%;&quot;.$terrain.&quot;;%') ORDER BY level ASC, xp ASC&quot;</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aab50d97eed7abd779caf1f2de48c1c5f"></a><!-- doxytag: member="liste_monstre.php::$tab" ref="aab50d97eed7abd779caf1f2de48c1c5f" args="" -->
+<a class="anchor" id="aab50d97eed7abd779caf1f2de48c1c5f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -86,40 +114,40 @@
           <td class="memname">$tab = array('', 'Plaine', 'Forêt', 'Désert', 'Glace', 'Eau', 'Montagne', 'Marais', 'Route', '', '', 'Terre maudite')</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a65007153a2861a4a1f1852090cff35a5"></a><!-- doxytag: member="liste_monstre.php::$terrain" ref="a65007153a2861a4a1f1852090cff35a5" args="" -->
+<a class="anchor" id="a65007153a2861a4a1f1852090cff35a5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $<a class="el" href="classterrain.html">terrain</a> = 1</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a> $<a class="el" href="classterrain.html">terrain</a> = 1</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a9430426c726664eef5ce44a701b64238"></a><!-- doxytag: member="liste_monstre.php::while" ref="a9430426c726664eef5ce44a701b64238" args="($row=$db&#45;&gt;read_array($req))" -->
+<a class="anchor" id="a9430426c726664eef5ce44a701b64238"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a223fe6cddffc1406cf93390144f0f6f7">while</a>($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
+          <td class="memname">while($row=$<a class="el" href="classdb.html">db</a>-&gt;read_array($req))</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-</div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:08 2013 pour Starshine Online par&nbsp;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 28 Septembre 2014 12:24:04 pour Starshine Online par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

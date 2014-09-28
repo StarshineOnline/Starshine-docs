@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Starshine Online: Référence du fichier SSO/Starshine-Online/calendrier/sworling_bis.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Starshine Online
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_17ec1164fa269827557175e430959292.html">SSO</a></li><li class="navelem"><a class="el" href="dir_cf5c97232cd3bb863c7b9a1462e0dded.html">Starshine-Online</a></li><li class="navelem"><a class="el" href="dir_ba577c0280156ea3e42441d69d9a1798.html">calendrier</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier sworling_bis.php</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a19655ecca257a134034e17d5bedc0f75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#a19655ecca257a134034e17d5bedc0f75">$found</a> = false</td></tr>
+<tr class="separator:a19655ecca257a134034e17d5bedc0f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d2e459193313b71494801a69ade623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#a68d2e459193313b71494801a69ade623">$ID</a> = 'sworling_bis'</td></tr>
+<tr class="separator:a68d2e459193313b71494801a69ade623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a7a283ea5dee8af1e2d5a3435bf370"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;param_query('SELECT * FROM <a class="el" href="classmap__monstre.html">map_monstre</a> mm, <a class="el" href="classmonstre.html">monstre</a> m WHERE mm.type = m.id AND m.id_manuel = ?', array($ID), 's')</td></tr>
+<tr class="separator:a63a7a283ea5dee8af1e2d5a3435bf370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27a9140d5f2658693e7fd107f716449"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#af27a9140d5f2658693e7fd107f716449">$stmt</a> = $<a class="el" href="classdb.html">db</a>-&gt;prepare('select info, type from <a class="el" href="classmap.html">map</a> where x = ? and y = ?')</td></tr>
+<tr class="separator:af27a9140d5f2658693e7fd107f716449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39768a2b775d87925e0b9928c54740e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#a39768a2b775d87925e0b9928c54740e6">$sworling_present</a> = $req &amp;&amp; $req-&gt;num_rows</td></tr>
+<tr class="separator:a39768a2b775d87925e0b9928c54740e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a16c5f0dd7a74cf9acf6a49fff73a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a> = 0</td></tr>
+<tr class="separator:af3a16c5f0dd7a74cf9acf6a49fff73a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b973d137fb33212e018b042df6e3e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a> = 0</td></tr>
+<tr class="separator:a77b973d137fb33212e018b042df6e3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad733c8e10cb9c9e13904ccec80c8f6d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($sworling_present)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sworling__bis_8php.html#ad733c8e10cb9c9e13904ccec80c8f6d0">else</a></td></tr>
+<tr class="separator:ad733c8e10cb9c9e13904ccec80c8f6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a19655ecca257a134034e17d5bedc0f75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$found = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68d2e459193313b71494801a69ade623"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$ID = 'sworling_bis'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;param_query('SELECT * FROM <a class="el" href="classmap__monstre.html">map_monstre</a> mm, <a class="el" href="classmonstre.html">monstre</a> m WHERE mm.type = m.id AND m.id_manuel = ?', array($ID), 's')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af27a9140d5f2658693e7fd107f716449"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$stmt = $<a class="el" href="classdb.html">db</a>-&gt;prepare('select info, type from <a class="el" href="classmap.html">map</a> where x = ? and y = ?')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a39768a2b775d87925e0b9928c54740e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$sworling_present = $req &amp;&amp; $req-&gt;num_rows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3a16c5f0dd7a74cf9acf6a49fff73a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$x = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a77b973d137fb33212e018b042df6e3e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$y = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad733c8e10cb9c9e13904ccec80c8f6d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($sworling_present) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div>
+<div class="line">  <a class="code" href="dernieres__paroles_8php.html#a907d78797a1b764e913b0c565a5097b0">$db</a>-&gt;param_query(<span class="stringliteral">&#39;INSERT INTO map_monstre (type,x,y,hp,mort_naturelle) SELECT id, ?, ?, hp, UNIX_TIMESTAMP(NOW()) + (3600 * 31) FROM monstre WHERE id_manuel = ?&#39;</span>,</div>
+<div class="line">                   array(<a class="code" href="sworling__bis_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a>, <a class="code" href="sworling__bis_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a>, <a class="code" href="sworling__bis_8php.html#a68d2e459193313b71494801a69ade623">$ID</a>), <span class="stringliteral">&#39;iis&#39;</span>)</div>
+<div class="ttc" id="dernieres__paroles_8php_html_a907d78797a1b764e913b0c565a5097b0"><div class="ttname"><a href="dernieres__paroles_8php.html#a907d78797a1b764e913b0c565a5097b0">$db</a></div><div class="ttdeci">global $db</div><div class="ttdef"><b>Definition:</b> dernieres_paroles.php:20</div></div>
+<div class="ttc" id="sworling__bis_8php_html_a77b973d137fb33212e018b042df6e3e7"><div class="ttname"><a href="sworling__bis_8php.html#a77b973d137fb33212e018b042df6e3e7">$y</a></div><div class="ttdeci">$y</div><div class="ttdef"><b>Definition:</b> sworling_bis.php:14</div></div>
+<div class="ttc" id="sworling__bis_8php_html_af3a16c5f0dd7a74cf9acf6a49fff73a7"><div class="ttname"><a href="sworling__bis_8php.html#af3a16c5f0dd7a74cf9acf6a49fff73a7">$x</a></div><div class="ttdeci">$x</div><div class="ttdef"><b>Definition:</b> sworling_bis.php:13</div></div>
+<div class="ttc" id="sworling__bis_8php_html_a68d2e459193313b71494801a69ade623"><div class="ttname"><a href="sworling__bis_8php.html#a68d2e459193313b71494801a69ade623">$ID</a></div><div class="ttdeci">$ID</div><div class="ttdef"><b>Definition:</b> sworling_bis.php:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 28 Septembre 2014 12:24:02 pour Starshine Online par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

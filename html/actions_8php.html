@@ -2,124 +2,207 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Starshine Online: Référence du fichier SSO/Starshine-Online/actions.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Généré par Doxygen 1.6.1 -->
-<div class="navigation" id="top">
-  <div class="tabs">
-    <ul>
-      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Starshine Online
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
-      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="tabs">
-    <ul>
-      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
-  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_17ec1164fa269827557175e430959292.html">SSO</a></li><li class="navelem"><a class="el" href="dir_cf5c97232cd3bb863c7b9a1462e0dded.html">Starshine-Online</a></li>  </ul>
 </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier actions.php</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h1>Référence du fichier actions.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#aa720998827fe9e92a5fe573a62edc0b8">$connexion</a> = true</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = &quot;SELECT * FROM action_perso WHERE id_joueur = &quot;.$joueur-&gt;get_id().&quot; ORDER BY nom ASC&quot;</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a0f1852b7f000b9789a50af7c071d8a66">$script_attaque</a> = recupaction_all($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_action_a())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#af3ef1db02318bc59f0d806f69597bde0">$script_defense</a> = recupaction_all($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_action_d())</td></tr>
+
+<p>Gestion des scripts.  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa698a3e72116e8e778be0e95d908ee30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#aa698a3e72116e8e778be0e95d908ee30">$action</a> = array_key_exists('<a class="el" href="classaction.html">action</a>', $_GET) ? $_GET['<a class="el" href="classaction.html">action</a>'] : null</td></tr>
+<tr class="separator:aa698a3e72116e8e778be0e95d908ee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8762aab733589641ef7ef8040cb572a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="messagerie__ajax_8php.html#ac9d0d302b483c666e1972bc68ef323bf">switch</a>($<a class="el" href="classaction.html">action</a>) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($change_script)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a8762aab733589641ef7ef8040cb572a4">$cadre</a> = $<a class="el" href="classinterf__princ.html">interf_princ</a>-&gt;set_droite( $G_interf-&gt;creer_droite('Scripts de combat') )</td></tr>
+<tr class="separator:a8762aab733589641ef7ef8040cb572a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d926843e8af874877a4fe7b73dcaf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('ajax', <br class="typebreak"/>
+$_GET)&amp;&amp;$_GET['ajax']==2)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a68d926843e8af874877a4fe7b73dcaf2">$change_script</a> = false</td></tr>
+<tr class="separator:a68d926843e8af874877a4fe7b73dcaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72eec5f275aab33191ee37d5c831bcbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($<a class="el" href="classpet.html">pet</a>=array_key_exists('id', <br class="typebreak"/>
+$_GET)) <a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a72eec5f275aab33191ee37d5c831bcbb">$entite</a> = &amp;$<a class="el" href="classperso.html">perso</a></td></tr>
+<tr class="separator:a72eec5f275aab33191ee37d5c831bcbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a128c9d2f70a0ff8bcab0b3ae2e1743f4">$interf_princ</a> = $G_interf-&gt;creer_jeu()</td></tr>
+<tr class="separator:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648bcc9981df7cceb4b931a80064a6c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a648bcc9981df7cceb4b931a80064a6c5">$perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td></tr>
+<tr class="separator:a648bcc9981df7cceb4b931a80064a6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98178227c67ffcc725cc948fe11882b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#ad98178227c67ffcc725cc948fe11882b">$pets</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_pets(true)</td></tr>
+<tr class="separator:ad98178227c67ffcc725cc948fe11882b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7a0288110e9a3d70ad0294fd0ae37c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(array_key_exists('<a class="el" href="classscript.html">script</a>', <br class="typebreak"/>
+$_GET)) <a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a1d7a0288110e9a3d70ad0294fd0ae37c">$script</a> = null</td></tr>
+<tr class="separator:a1d7a0288110e9a3d70ad0294fd0ae37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029f5e4843b9d73c9fafc4d485213168"><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($<a class="el" href="classscript.html">script</a>)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="actions_8php.html#a029f5e4843b9d73c9fafc4d485213168">else</a></td></tr>
+<tr class="separator:a029f5e4843b9d73c9fafc4d485213168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2>Documentation des variables</h2>
-<a class="anchor" id="aa720998827fe9e92a5fe573a62edc0b8"></a><!-- doxytag: member="actions.php::$connexion" ref="aa720998827fe9e92a5fe573a62edc0b8" args="" -->
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion des scripts. </p>
+</div><h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="aa698a3e72116e8e778be0e95d908ee30"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$connexion = true</td>
+          <td class="memname">$<a class="el" href="classaction.html">action</a> = array_key_exists('<a class="el" href="classaction.html">action</a>', $_GET) ? $_GET['<a class="el" href="classaction.html">action</a>'] : null</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="actions.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
+<a class="anchor" id="a8762aab733589641ef7ef8040cb572a4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname"><a class="el" href="messagerie__ajax_8php.html#ac9d0d302b483c666e1972bc68ef323bf">switch</a> ($<a class="el" href="classaction.html">action</a>) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($change_script) $cadre = $<a class="el" href="classinterf__princ.html">interf_princ</a>-&gt;set_droite( $G_interf-&gt;creer_droite('Scripts de combat') )</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="actions.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<a class="anchor" id="a68d926843e8af874877a4fe7b73dcaf2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('ajax', $_GET)&amp;&amp;$_GET['ajax']==2) $change_script = false</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="actions.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<a class="anchor" id="a72eec5f275aab33191ee37d5c831bcbb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = &quot;SELECT * FROM action_perso WHERE id_joueur = &quot;.$joueur-&gt;get_id().&quot; ORDER BY nom ASC&quot;</td>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($<a class="el" href="classpet.html">pet</a>=array_key_exists('id', $_GET)) <a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a> $<a class="el" href="classentite.html">entite</a> = &amp;$<a class="el" href="classperso.html">perso</a></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a0f1852b7f000b9789a50af7c071d8a66"></a><!-- doxytag: member="actions.php::$script_attaque" ref="a0f1852b7f000b9789a50af7c071d8a66" args="" -->
+<a class="anchor" id="a128c9d2f70a0ff8bcab0b3ae2e1743f4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$script_attaque = recupaction_all($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_action_a())</td>
+          <td class="memname">$<a class="el" href="classinterf__princ.html">interf_princ</a> = $G_interf-&gt;creer_jeu()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="af3ef1db02318bc59f0d806f69597bde0"></a><!-- doxytag: member="actions.php::$script_defense" ref="af3ef1db02318bc59f0d806f69597bde0" args="" -->
+<a class="anchor" id="a648bcc9981df7cceb4b931a80064a6c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$script_defense = recupaction_all($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_action_d())</td>
+          <td class="memname">$<a class="el" href="classperso.html">perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
+<a class="anchor" id="ad98178227c67ffcc725cc948fe11882b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pets = $<a class="el" href="classperso.html">perso</a>-&gt;get_pets(true)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:57:58 2013 pour Starshine Online par&nbsp;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</div>
+<a class="anchor" id="a1d7a0288110e9a3d70ad0294fd0ae37c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (array_key_exists('<a class="el" href="classscript.html">script</a>', $_GET)) <a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a> $<a class="el" href="classscript.html">script</a> = null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a029f5e4843b9d73c9fafc4d485213168"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($<a class="el" href="classscript.html">script</a>) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div>
+<div class="line">        </div>
+<div class="line">        $onglets = <a class="code" href="actions_8php.html#a8762aab733589641ef7ef8040cb572a4">$cadre</a>-&gt;add( <span class="keyword">new</span> <a class="code" href="classinterf__onglets.html">interf_onglets</a>(<span class="stringliteral">&#39;ongl_scripts&#39;</span>, <span class="stringliteral">&#39;scripts&#39;</span>) )</div>
+<div class="ttc" id="classinterf__onglets_html"><div class="ttname"><a href="classinterf__onglets.html">interf_onglets</a></div><div class="ttdoc">Classe permettant un affichage avec des onglets. </div><div class="ttdef"><b>Definition:</b> interface_avance.class.php:12</div></div>
+<div class="ttc" id="actions_8php_html_a8762aab733589641ef7ef8040cb572a4"><div class="ttname"><a href="actions_8php.html#a8762aab733589641ef7ef8040cb572a4">$cadre</a></div><div class="ttdeci">switch($action) if($change_script) $cadre</div><div class="ttdef"><b>Definition:</b> actions.php:141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 28 Septembre 2014 12:24:01 pour Starshine Online par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

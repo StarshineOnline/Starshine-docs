@@ -2,47 +2,110 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Starshine Online: Référence du fichier SSO/Starshine-Online/pnj.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Généré par Doxygen 1.6.1 -->
-<div class="navigation" id="top">
-  <div class="tabs">
-    <ul>
-      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Starshine Online
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
-      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="tabs">
-    <ul>
-      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
-  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_17ec1164fa269827557175e430959292.html">SSO</a></li><li class="navelem"><a class="el" href="dir_cf5c97232cd3bb863c7b9a1462e0dded.html">Starshine-Online</a></li>  </ul>
 </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier pnj.php</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h1>Référence du fichier pnj.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#ae97941710d863131c700f069b109991e">$id</a> = $_GET['id']</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a46e85247f93878f0c82e3ddf43f9c9c1">$reponse</a> = 0</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a63a7a283ea5dee8af1e2d5a3435bf370">$req</a> = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a1ea21bf4b1af1ebda1b8c63b0e364ce9">$requete</a> = 'SELECT * FROM <a class="el" href="classpnj.html">pnj</a> WHERE id = \''.sSQL($id).'\''</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#aa1d731aa570613e5bcff831bb10e9b87">$row</a> = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a354cbaf1d3ac02e1d550c110d5f288c3">$texte</a> = new <a class="el" href="classtexte.html">texte</a>($row['<a class="el" href="classtexte.html">texte</a>'], <a class="el" href="classtexte.html#a1ab2b66be8c0648522caa6732207d98d">texte::pnj</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_poscase()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a2793f6490f947fab7ea3988778141746">if</a> ($row['x']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x()||$row['y']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())</td></tr>
+
+<p>Script gérant les intéractions avec les PNJ.  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a05511ad04257dc6937806f784271bd89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a05511ad04257dc6937806f784271bd89">$cadre</a> = $<a class="el" href="classinterf__princ.html">interf_princ</a>-&gt;set_droite( $G_interf-&gt;creer_droite($<a class="el" href="classpnj.html">pnj</a>-&gt;get_nom()) )</td></tr>
+<tr class="separator:a05511ad04257dc6937806f784271bd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67109aba0fb28246abc057ae20a7b723"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = $<a class="el" href="classperso.html">perso</a>-&gt;get_poscase()</td></tr>
+<tr class="separator:a67109aba0fb28246abc057ae20a7b723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97941710d863131c700f069b109991e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#ae97941710d863131c700f069b109991e">$id</a> = $_GET['id']</td></tr>
+<tr class="separator:ae97941710d863131c700f069b109991e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a128c9d2f70a0ff8bcab0b3ae2e1743f4">$interf_princ</a> = $G_interf-&gt;creer_jeu()</td></tr>
+<tr class="separator:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648bcc9981df7cceb4b931a80064a6c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a648bcc9981df7cceb4b931a80064a6c5">$perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td></tr>
+<tr class="separator:a648bcc9981df7cceb4b931a80064a6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b7369a7016e599ee552835abb98aa2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a87b7369a7016e599ee552835abb98aa2">$pnj</a> = new <a class="el" href="classpnj.html">pnj</a>($id)</td></tr>
+<tr class="separator:a87b7369a7016e599ee552835abb98aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e85247f93878f0c82e3ddf43f9c9c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a46e85247f93878f0c82e3ddf43f9c9c1">$reponse</a> = 0</td></tr>
+<tr class="separator:a46e85247f93878f0c82e3ddf43f9c9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a354cbaf1d3ac02e1d550c110d5f288c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a354cbaf1d3ac02e1d550c110d5f288c3">$texte</a> = new <a class="el" href="classtexte.html">texte</a>($<a class="el" href="classpnj.html">pnj</a>-&gt;get_texte(), <a class="el" href="classtexte.html#a1ab2b66be8c0648522caa6732207d98d">texte::pnj</a>)</td></tr>
+<tr class="separator:a354cbaf1d3ac02e1d550c110d5f288c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b6428014b556c8ca09897801bf9f6cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pnj_8php.html#a3b6428014b556c8ca09897801bf9f6cb">if</a> ($<a class="el" href="classpnj.html">pnj</a>-&gt;get_x()!=$<a class="el" href="classperso.html">perso</a>-&gt;get_x()||$<a class="el" href="classpnj.html">pnj</a>-&gt;get_y()!=$<a class="el" href="classperso.html">perso</a>-&gt;get_y()) <a class="el" href="reponses_8inc_8php.html#a37dc45dc8166f04edb0ddeb8ad0d318d">security_block</a>(<a class="el" href="reponses_8inc_8php.html#a8e4204fec0be915ec60e271737c3fcaa">URL_MANIPULATION</a></td></tr>
+<tr class="separator:a3b6428014b556c8ca09897801bf9f6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2>Documentation des variables</h2>
-<a class="anchor" id="ae97941710d863131c700f069b109991e"></a><!-- doxytag: member="pnj.php::$id" ref="ae97941710d863131c700f069b109991e" args="" -->
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Script gérant les intéractions avec les PNJ. </p>
+</div><h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a05511ad04257dc6937806f784271bd89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$cadre = $<a class="el" href="classinterf__princ.html">interf_princ</a>-&gt;set_droite( $G_interf-&gt;creer_droite($<a class="el" href="classpnj.html">pnj</a>-&gt;get_nom()) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a67109aba0fb28246abc057ae20a7b723"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$case = $<a class="el" href="classperso.html">perso</a>-&gt;get_poscase()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae97941710d863131c700f069b109991e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -50,118 +113,88 @@
           <td class="memname">$id = $_GET['id']</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="pnj.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
+<a class="anchor" id="a128c9d2f70a0ff8bcab0b3ae2e1743f4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classinterf__princ.html">interf_princ</a> = $G_interf-&gt;creer_jeu()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a46e85247f93878f0c82e3ddf43f9c9c1"></a><!-- doxytag: member="pnj.php::$reponse" ref="a46e85247f93878f0c82e3ddf43f9c9c1" args="" -->
+<a class="anchor" id="a648bcc9981df7cceb4b931a80064a6c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="roi_2index_8php.html#a200de3ab97c819120ea4d9e0d53a7ec2">else</a> $reponse = 0</td>
+          <td class="memname">$<a class="el" href="classperso.html">perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a63a7a283ea5dee8af1e2d5a3435bf370"></a><!-- doxytag: member="pnj.php::$req" ref="a63a7a283ea5dee8af1e2d5a3435bf370" args="" -->
+<a class="anchor" id="a87b7369a7016e599ee552835abb98aa2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$req = $<a class="el" href="classdb.html">db</a>-&gt;query($requete)</td>
+          <td class="memname">$<a class="el" href="classpnj.html">pnj</a> = new <a class="el" href="classpnj.html">pnj</a>($id)</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a1ea21bf4b1af1ebda1b8c63b0e364ce9"></a><!-- doxytag: member="pnj.php::$requete" ref="a1ea21bf4b1af1ebda1b8c63b0e364ce9" args="" -->
+<a class="anchor" id="a46e85247f93878f0c82e3ddf43f9c9c1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$requete = 'SELECT * FROM <a class="el" href="classpnj.html">pnj</a> WHERE id = \''.sSQL($id).'\''</td>
+          <td class="memname"><a class="el" href="vote__roi_8php.html#a0544c3fe466e421738dae463968b70ba">else</a> $reponse = 0</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aa1d731aa570613e5bcff831bb10e9b87"></a><!-- doxytag: member="pnj.php::$row" ref="aa1d731aa570613e5bcff831bb10e9b87" args="" -->
+<a class="anchor" id="a354cbaf1d3ac02e1d550c110d5f288c3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$row = $<a class="el" href="classdb.html">db</a>-&gt;read_assoc($req)</td>
+          <td class="memname">$<a class="el" href="classtexte.html">texte</a> = new <a class="el" href="classtexte.html">texte</a>($<a class="el" href="classpnj.html">pnj</a>-&gt;get_texte(), <a class="el" href="classtexte.html#a1ab2b66be8c0648522caa6732207d98d">texte::pnj</a>)</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a354cbaf1d3ac02e1d550c110d5f288c3"></a><!-- doxytag: member="pnj.php::$texte" ref="a354cbaf1d3ac02e1d550c110d5f288c3" args="" -->
+<a class="anchor" id="a3b6428014b556c8ca09897801bf9f6cb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classtexte.html">texte</a> = new <a class="el" href="classtexte.html">texte</a>($row['<a class="el" href="classtexte.html">texte</a>'], <a class="el" href="classtexte.html#a1ab2b66be8c0648522caa6732207d98d">texte::pnj</a>)</td>
+          <td class="memname">if($<a class="el" href="classpnj.html">pnj</a>-&gt;get_x()!=$<a class="el" href="classperso.html">perso</a>-&gt;get_x()||$<a class="el" href="classpnj.html">pnj</a>-&gt;get_y()!=$<a class="el" href="classperso.html">perso</a>-&gt;get_y()) <a class="el" href="reponses_8inc_8php.html#a37dc45dc8166f04edb0ddeb8ad0d318d">security_block</a>(<a class="el" href="reponses_8inc_8php.html#a8e4204fec0be915ec60e271737c3fcaa">URL_MANIPULATION</a></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a348857e01ece8eec9741a8aac278b4b7"></a><!-- doxytag: member="pnj.php::$W_case" ref="a348857e01ece8eec9741a8aac278b4b7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$W_case = $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_poscase()</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2793f6490f947fab7ea3988778141746"></a><!-- doxytag: member="pnj.php::if" ref="a2793f6490f947fab7ea3988778141746" args="($row['x']!=$joueur&#45;&gt;get_x()||$row['y']!=$joueur&#45;&gt;get_y())" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($row['x']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_x()||$row['y']!=$<a class="el" href="classjoueur.html">joueur</a>-&gt;get_y())</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-</div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:08 2013 pour Starshine Online par&nbsp;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 28 Septembre 2014 12:24:04 pour Starshine Online par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

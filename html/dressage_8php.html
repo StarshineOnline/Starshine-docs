@@ -2,85 +2,130 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Starshine Online: Référence du fichier SSO/Starshine-Online/dressage.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Généré par Doxygen 1.6.1 -->
-<div class="navigation" id="top">
-  <div class="tabs">
-    <ul>
-      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Starshine Online
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
-      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="tabs">
-    <ul>
-      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
-  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_17ec1164fa269827557175e430959292.html">SSO</a></li><li class="navelem"><a class="el" href="dir_cf5c97232cd3bb863c7b9a1462e0dded.html">Starshine-Online</a></li>  </ul>
 </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier dressage.php</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h1>Référence du fichier dressage.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a67109aba0fb28246abc057ae20a7b723">$case</a> = new <a class="el" href="classmap__case.html">map_case</a>($W_case)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a930d35f63a8c9ebe951b3bcc6a8412ee">$distance</a> = detection_distance($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_pos(), $<a class="el" href="classmonstre.html">monstre</a>-&gt;get_pos())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#abeea5db7af13b1bdd70c46e49f512b26">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Permet l'affichage des informations d'une case en fonction du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>.  <a href="#abeea5db7af13b1bdd70c46e49f512b26"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#acad6354f875a0b603c1567c02afa4b4b">$monstre</a> = new <a class="el" href="classmap__monstre.html">map_monstre</a>($_GET['id'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a348857e01ece8eec9741a8aac278b4b7">$W_case</a> = $_GET['case']</td></tr>
+
+<p>Dressage d'une créature.  
+<a href="#details">Plus de détails...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa698a3e72116e8e778be0e95d908ee30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#aa698a3e72116e8e778be0e95d908ee30">$action</a> = array_key_exists('<a class="el" href="classaction.html">action</a>', $_GET) ? $_GET['<a class="el" href="classaction.html">action</a>'] : null</td></tr>
+<tr class="separator:aa698a3e72116e8e778be0e95d908ee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05511ad04257dc6937806f784271bd89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a05511ad04257dc6937806f784271bd89">$cadre</a> = $<a class="el" href="classinterf__princ.html">interf_princ</a>-&gt;set_droite( $G_interf-&gt;creer_droite('Dressage') )</td></tr>
+<tr class="separator:a05511ad04257dc6937806f784271bd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930d35f63a8c9ebe951b3bcc6a8412ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a930d35f63a8c9ebe951b3bcc6a8412ee">$distance</a> = $<a class="el" href="classperso.html">perso</a>-&gt;calcule_distance($<a class="el" href="classmonstre.html">monstre</a>-&gt;get_x(), $<a class="el" href="classmonstre.html">monstre</a>-&gt;get_y())</td></tr>
+<tr class="separator:a930d35f63a8c9ebe951b3bcc6a8412ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a128c9d2f70a0ff8bcab0b3ae2e1743f4">$interf_princ</a> = $G_interf-&gt;creer_jeu()</td></tr>
+<tr class="separator:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad6354f875a0b603c1567c02afa4b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#acad6354f875a0b603c1567c02afa4b4b">$monstre</a> = new <a class="el" href="classmap__monstre.html">map_monstre</a>($_GET['id'])</td></tr>
+<tr class="separator:acad6354f875a0b603c1567c02afa4b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648bcc9981df7cceb4b931a80064a6c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a648bcc9981df7cceb4b931a80064a6c5">$perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td></tr>
+<tr class="separator:a648bcc9981df7cceb4b931a80064a6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b0dd758381c9d8370125156ca29a11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dressage_8php.html#a17b0dd758381c9d8370125156ca29a11">if</a> ($distance!=0) <a class="el" href="reponses_8inc_8php.html#a37dc45dc8166f04edb0ddeb8ad0d318d">security_block</a>(<a class="el" href="reponses_8inc_8php.html#a8e4204fec0be915ec60e271737c3fcaa">URL_MANIPULATION</a></td></tr>
+<tr class="separator:a17b0dd758381c9d8370125156ca29a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2>Documentation des variables</h2>
-<a class="anchor" id="a67109aba0fb28246abc057ae20a7b723"></a><!-- doxytag: member="dressage.php::$case" ref="a67109aba0fb28246abc057ae20a7b723" args="" -->
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Dressage d'une créature. </p>
+</div><h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="aa698a3e72116e8e778be0e95d908ee30"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$case = new <a class="el" href="classmap__case.html">map_case</a>($W_case)</td>
+          <td class="memname">$<a class="el" href="classaction.html">action</a> = array_key_exists('<a class="el" href="classaction.html">action</a>', $_GET) ? $_GET['<a class="el" href="classaction.html">action</a>'] : null</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a930d35f63a8c9ebe951b3bcc6a8412ee"></a><!-- doxytag: member="dressage.php::$distance" ref="a930d35f63a8c9ebe951b3bcc6a8412ee" args="" -->
+<a class="anchor" id="a05511ad04257dc6937806f784271bd89"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$distance = detection_distance($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_pos(), $<a class="el" href="classmonstre.html">monstre</a>-&gt;get_pos())</td>
+          <td class="memname">$cadre = $<a class="el" href="classinterf__princ.html">interf_princ</a>-&gt;set_droite( $G_interf-&gt;creer_droite('Dressage') )</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="abeea5db7af13b1bdd70c46e49f512b26"></a><!-- doxytag: member="dressage.php::$joueur" ref="abeea5db7af13b1bdd70c46e49f512b26" args="" -->
+<a class="anchor" id="a930d35f63a8c9ebe951b3bcc6a8412ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$distance = $<a class="el" href="classperso.html">perso</a>-&gt;calcule_distance($<a class="el" href="classmonstre.html">monstre</a>-&gt;get_x(), $<a class="el" href="classmonstre.html">monstre</a>-&gt;get_y())</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
-
-<p>Permet l'affichage des informations d'une case en fonction du <a class="el" href="classjoueur.html" title="Classe gérant un compte joueur.">joueur</a>. </p>
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="acad6354f875a0b603c1567c02afa4b4b"></a><!-- doxytag: member="dressage.php::$monstre" ref="acad6354f875a0b603c1567c02afa4b4b" args="" -->
+<a class="anchor" id="a128c9d2f70a0ff8bcab0b3ae2e1743f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="classinterf__princ.html">interf_princ</a> = $G_interf-&gt;creer_jeu()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acad6354f875a0b603c1567c02afa4b4b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -88,27 +133,40 @@
           <td class="memname">$<a class="el" href="classmonstre.html">monstre</a> = new <a class="el" href="classmap__monstre.html">map_monstre</a>($_GET['id'])</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a348857e01ece8eec9741a8aac278b4b7"></a><!-- doxytag: member="dressage.php::$W_case" ref="a348857e01ece8eec9741a8aac278b4b7" args="" -->
+<a class="anchor" id="a648bcc9981df7cceb4b931a80064a6c5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$W_case = $_GET['case']</td>
+          <td class="memname">$<a class="el" href="classperso.html">perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
+<a class="anchor" id="a17b0dd758381c9d8370125156ca29a11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if($distance!=0) <a class="el" href="reponses_8inc_8php.html#a37dc45dc8166f04edb0ddeb8ad0d318d">security_block</a>(<a class="el" href="reponses_8inc_8php.html#a8e4204fec0be915ec60e271737c3fcaa">URL_MANIPULATION</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:02 2013 pour Starshine Online par&nbsp;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 28 Septembre 2014 12:24:02 pour Starshine Online par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>

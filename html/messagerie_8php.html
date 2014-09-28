@@ -2,97 +2,186 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
 <title>Starshine Online: Référence du fichier SSO/Starshine-Online/messagerie.php</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!-- Généré par Doxygen 1.6.1 -->
-<div class="navigation" id="top">
-  <div class="tabs">
-    <ul>
-      <li><a href="index.html"><span>Page&nbsp;principale</span></a></li>
-      <li><a href="pages.html"><span>Pages&nbsp;associées</span></a></li>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Starshine Online
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
-      <li><a href="dirs.html"><span>Répertoires</span></a></li>
     </ul>
   </div>
-  <div class="tabs">
-    <ul>
-      <li><a href="files.html"><span>Liste&nbsp;des&nbsp;fichiers</span></a></li>
-      <li><a href="globals.html"><span>Membres&nbsp;de&nbsp;fichier</span></a></li>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
     </ul>
   </div>
-  <div class="navpath"><a class="el" href="dir_7dc388f9038f92638199d907d7128f21.html">SSO</a>&nbsp;&raquo&nbsp;<a class="el" href="dir_fc4783848e8180fcf200063c2730ed60.html">Starshine-Online</a>
-  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_17ec1164fa269827557175e430959292.html">SSO</a></li><li class="navelem"><a class="el" href="dir_cf5c97232cd3bb863c7b9a1462e0dded.html">Starshine-Online</a></li>  </ul>
 </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier messagerie.php</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h1>Référence du fichier messagerie.php</h1><table border="0" cellpadding="0" cellspacing="0">
-<tr><td colspan="2"><h2>Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(!array_key_exists('ID', <br class="typebreak"/>
-$_SESSION)||empty($_SESSION['ID']))&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#a49a0c0972db0775b27b2c05bfa839080">$joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#ad235545a8d1696b59690bf3920d7c889">$messagerie</a> = new <a class="el" href="classmessagerie.html">messagerie</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_id(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe())</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#a5ed916957d828c52566dc4f805d79c10">$non_lu</a> = $<a class="el" href="classmessagerie.html">messagerie</a>-&gt;get_non_lu()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#afccc4c82b7a6633c85ba204d717a80d3">if</a> ($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe()!='0')</td></tr>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa698a3e72116e8e778be0e95d908ee30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#aa698a3e72116e8e778be0e95d908ee30">$action</a> = array_key_exists('<a class="el" href="classaction.html">action</a>', $_GET) ? $_GET['<a class="el" href="classaction.html">action</a>'] : null</td></tr>
+<tr class="separator:aa698a3e72116e8e778be0e95d908ee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9b4eabceb162a0d757e5665fa38acb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#acf9b4eabceb162a0d757e5665fa38acb">$ajax</a> = array_key_exists('ajax', $_GET) ? $_GET['ajax'] : 0</td></tr>
+<tr class="separator:acf9b4eabceb162a0d757e5665fa38acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#a128c9d2f70a0ff8bcab0b3ae2e1743f4">$interf_princ</a> = $G_interf-&gt;creer_jeu()</td></tr>
+<tr class="separator:a128c9d2f70a0ff8bcab0b3ae2e1743f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a44e6760141442bb439b1ab1395d8ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#a0a44e6760141442bb439b1ab1395d8ff">$page</a> = null</td></tr>
+<tr class="separator:a0a44e6760141442bb439b1ab1395d8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6670d0a7acfb32da9b0872eca5d0a312"><td class="memItemLeft" align="right" valign="top"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>(!array_key_exists('ID', <br class="typebreak"/>
+$_SESSION)||empty($_SESSION['ID']))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#a6670d0a7acfb32da9b0872eca5d0a312">$perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td></tr>
+<tr class="separator:a6670d0a7acfb32da9b0872eca5d0a312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1644c98c51e2fc96ae13b35e1457019a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#a1644c98c51e2fc96ae13b35e1457019a">$sujet</a> = false</td></tr>
+<tr class="separator:a1644c98c51e2fc96ae13b35e1457019a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4a6fba2208984cabb3afacadf33919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#a9a4a6fba2208984cabb3afacadf33919">$type</a> = array_key_exists('type', $_GET) ? $_GET['type'] : null</td></tr>
+<tr class="separator:a9a4a6fba2208984cabb3afacadf33919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7133bd3107b3a197ff682c5c4390525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="messagerie__ajax_8php.html#ac9d0d302b483c666e1972bc68ef323bf">switch</a>($<a class="el" href="classaction.html">action</a>) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($ajax==2)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="messagerie_8php.html#ab7133bd3107b3a197ff682c5c4390525">else</a></td></tr>
+<tr class="separator:ab7133bd3107b3a197ff682c5c4390525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><h2>Documentation des variables</h2>
-<a class="anchor" id="a49a0c0972db0775b27b2c05bfa839080"></a><!-- doxytag: member="messagerie.php::$joueur" ref="a49a0c0972db0775b27b2c05bfa839080" args="" -->
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="aa698a3e72116e8e778be0e95d908ee30"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (!array_key_exists('ID', $_SESSION)||empty($_SESSION['ID'])) $<a class="el" href="classjoueur.html">joueur</a> = new <a class="el" href="classperso.html">perso</a>($_SESSION['ID'])</td>
+          <td class="memname">$<a class="el" href="classaction.html">action</a> = array_key_exists('<a class="el" href="classaction.html">action</a>', $_GET) ? $_GET['<a class="el" href="classaction.html">action</a>'] : null</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ad235545a8d1696b59690bf3920d7c889"></a><!-- doxytag: member="messagerie.php::$messagerie" ref="ad235545a8d1696b59690bf3920d7c889" args="" -->
+<a class="anchor" id="acf9b4eabceb162a0d757e5665fa38acb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$<a class="el" href="classmessagerie.html">messagerie</a> = new <a class="el" href="classmessagerie.html">messagerie</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_id(), $<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe())</td>
+          <td class="memname">$ajax = array_key_exists('ajax', $_GET) ? $_GET['ajax'] : 0</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a5ed916957d828c52566dc4f805d79c10"></a><!-- doxytag: member="messagerie.php::$non_lu" ref="a5ed916957d828c52566dc4f805d79c10" args="" -->
+<a class="anchor" id="a128c9d2f70a0ff8bcab0b3ae2e1743f4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">$non_lu = $<a class="el" href="classmessagerie.html">messagerie</a>-&gt;get_non_lu()</td>
+          <td class="memname">$<a class="el" href="classinterf__princ.html">interf_princ</a> = $G_interf-&gt;creer_jeu()</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="afccc4c82b7a6633c85ba204d717a80d3"></a><!-- doxytag: member="messagerie.php::if" ref="afccc4c82b7a6633c85ba204d717a80d3" args="($joueur&#45;&gt;get_groupe()!='0')" -->
+<a class="anchor" id="a0a44e6760141442bb439b1ab1395d8ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a>($<a class="el" href="classjoueur.html">joueur</a>-&gt;get_groupe()!='0')</td>
+          <td class="memname">$page = null</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 </div>
 </div>
+<a class="anchor" id="a6670d0a7acfb32da9b0872eca5d0a312"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> (!array_key_exists('ID', $_SESSION)||empty($_SESSION['ID'])) $<a class="el" href="classperso.html">perso</a> = <a class="el" href="classjoueur.html#ad730af0f73ad3d41da71d6fa3462820a">joueur::get_perso</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
-<hr size="1"/><address style="text-align: right;"><small>Généré le Tue Jul 2 14:58:08 2013 pour Starshine Online par&nbsp;
-<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</div>
+<a class="anchor" id="a1644c98c51e2fc96ae13b35e1457019a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$sujet = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a4a6fba2208984cabb3afacadf33919"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$type = array_key_exists('type', $_GET) ? $_GET['type'] : null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab7133bd3107b3a197ff682c5c4390525"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="messagerie__ajax_8php.html#ac9d0d302b483c666e1972bc68ef323bf">switch</a> ($<a class="el" href="classaction.html">action</a>) <a class="el" href="viewarene2_8php.html#a898248c6f0772cc779881fffc50ca91a">if</a> ($ajax==2) else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="actions_8php.html#a8762aab733589641ef7ef8040cb572a4">$cadre</a> = <a class="code" href="messagerie_8php.html#a128c9d2f70a0ff8bcab0b3ae2e1743f4">$interf_princ</a>-&gt;set_droite( <a class="code" href="fp_8php.html#ab400ca8c69d9fc5f5e0eba0342139805">$G_interf</a>-&gt;creer_droite(<span class="stringliteral">&#39;Messagerie&#39;</span>) )</div>
+<div class="ttc" id="messagerie_8php_html_a128c9d2f70a0ff8bcab0b3ae2e1743f4"><div class="ttname"><a href="messagerie_8php.html#a128c9d2f70a0ff8bcab0b3ae2e1743f4">$interf_princ</a></div><div class="ttdeci">$interf_princ</div><div class="ttdef"><b>Definition:</b> messagerie.php:21</div></div>
+<div class="ttc" id="fp_8php_html_ab400ca8c69d9fc5f5e0eba0342139805"><div class="ttname"><a href="fp_8php.html#ab400ca8c69d9fc5f5e0eba0342139805">$G_interf</a></div><div class="ttdeci">$G_interf</div><div class="ttdef"><b>Definition:</b> fp.php:91</div></div>
+<div class="ttc" id="actions_8php_html_a8762aab733589641ef7ef8040cb572a4"><div class="ttname"><a href="actions_8php.html#a8762aab733589641ef7ef8040cb572a4">$cadre</a></div><div class="ttdeci">switch($action) if($change_script) $cadre</div><div class="ttdef"><b>Definition:</b> actions.php:141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 28 Septembre 2014 12:24:04 pour Starshine Online par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
 </body>
 </html>
